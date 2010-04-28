@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Supporting Fine-grain TLP with Selective Timesharing</title>
+  </head>
+
+  <body>
+    <h1>Supporting Fine-grain TLP with Selective Timesharing</h1>
+
+The industry wide shift to parallel architectures is a serious problem
+for sequential applications. Application developers can no longer rely
+on increases in transistor count and fabrication technology to
+increase performance without their intervention.  The question today
+is, "how do we continue to increase the performance of sequential
+applications on parallel platforms?" We believe that fine-grain thread
+level parallelism (TLP) is a viable approach for many applications on
+general-purpose multicore/multiprocessor machines given: 1) a low
+overhead software-only core-to-core communication primitive (our
+previous work), and 2) the ability to control timing jitter between
+threads.  (In this context, we operationally define fine-grain TLP as
+0.5 to 5 times the overhead of an empty interrupt handler per
+unit-of-work, e.g., approximately 100-1000 nanoseconds).
+<p>
+Under reasonable loads interrupts, including non-I/O interrupts, were
+found to have an observable effect on user-space applications
+implementing fine-grain TLP.  This talk presents our initial work on
+using Selective Timesharing to control operating system related jitter
+thereby allowing for the effective use of fine-grain TLP without
+sacrificing the benefits of a general purpose parallel processing
+platform.
+
+
+    <hr>
+    <address><a href="mailto:john.giacomoni@colorado.edu">John Giacomoni</a></address>
+<!-- Created: Mon Mar 24 14:12:12 MDT 2008 -->
+<!-- hhmts start -->
+Last modified: Wed Apr  9 19:35:39 MDT 2008
+<!-- hhmts end -->
+  </body>
+</html>

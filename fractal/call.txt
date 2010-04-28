@@ -1,0 +1,48 @@
+We are pleased to announce the fifth Front Range Architecture, Compilers, Tools, and Languages Workshop on the CU campus in Boulder, Colorado on Saturday, December 5, 2009.  The keynote speaker at the upcoming FRACTAL will be Dick Sites from Google.
+
+********************** FRACTAL Call For Presentations *******************
+
+When: Saturday, December 5, 2009
+Where: University of Colorado at Boulder
+Organizers: Amer Diwan, Jeremy G. Siek, and Bor-Yuh Evan Chang
+URL: http://www.cs.du.edu/fractal
+
+If you are interested in presenting your work or research ideas at FRACTAL, please send a title and abstract of no more than 300 words to the organizers at fractal.workshop@gmail.com by Tuesday, November 10, 2009.  Please indicate if your presentation has already been given at another venue.  Preferential treatment will be given to up-and-coming work that has not yet been presented elsewhere.
+
+Topics of interest include (the list is not intended to be exclusive):
+
+ * Architecture Design (case studies, simulation)
+ * Program Analysis
+ * Program Verification and Debugging Tools
+ * Automatic Parallelization
+ * High-Performance Computing
+ * Embedded Systems
+ * Language Design
+ * Reconfigurable Computing
+ * Compilers
+ * Virtual Machines
+ * Profiling
+ * Cluster or Distributed Computing
+
+We will try to accommodate all talk requests, but there are a limited number of presentation slots and they may go fast.
+
+Important dates are as follows:
+
+  Abstract Submission: Tuesday, November 10, 2009
+  Author Notification: Friday, November 13, 2009
+  Registration: Friday, November 20, 2009
+  Workshop Date: Saturday, December 5, 2009
+
+For more information go to
+
+  http://www.cs.du.edu/fractal
+
+*************************************************************************
+
+Please send this email to any students and colleagues who may be interested in attending FRACTAL.
+
+To subscribe to or unsubscribe from the FRACTAL mailing list, please let me know or visit
+
+  https://listserv.du.edu/mailman/listinfo/fractal-list
+
+*************************************************************************

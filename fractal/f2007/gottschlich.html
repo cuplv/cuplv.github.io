@@ -1,0 +1,43 @@
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Characterizing Optimization Potential in Lock-based Software Transactional Memory</title>
+  </head>
+
+  <body>
+    <h1>Characterizing Optimization Potential in Lock-based Software Transactional Memory</h1> 
+<p>
+Transactional memory (TM) is a recently developed parallel programming
+mechanism which reduces the complexity of multi-threaded programming by
+moving thread coordination and memory synchronization into a system
+infrastructure. TM systems implement their underlying memory synchronization
+by using either (1) non-blocking atomic primitives, such as compare-and-swap
+(CAS) or (2) lock-based synchronization mechanisms, such as mutex locks.
+Previous lock-based direct updating software transactional memory (STM)
+systems have been shown to outperform non-blocking deferred updating STM
+systems. Conclusions are then presented stating lock-based systems
+outperform non-blocking systems due to direct updating, which naturally
+optimizes the common transactional commit case and reduces cache misses.
+</p>
+<p>
+Our STM system, DracoSTM, the first lock-based system to implement both
+direct updating and deferred updating, shows that deferred updating
+outperforms direct updating in most cases, except highly innately parallel
+data structures. Through careful analysis of three variably performing data
+structures, we explain the underlying foundational differences causing
+transactional performance variation within these data structures. Our
+findings prompt new questions regarding parallel algorithms and complexity
+analysis, especially concerning optimization potential. We show that neither
+direct or deferred updating perform optimally for all data structures, but,
+counter intuitively, deferred updating tends to perform better especially
+when coupled with commit-time invalidation. Our findings give new
+theoretical and practical performance foundations in which to consider
+direct and deferred updating in lock-based STM systems. These findings
+suggest that other lock-based STM systems should also implement both direct
+and deferred updating strategies.
+</p>
+<p>
+<a href="http://eces.colorado.edu/~gottschl/">Justin Gottschlich, University of Colorado at Boulder</a>
+  </body>
+</html>

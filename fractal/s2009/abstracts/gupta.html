@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title> The COREquations Engine: Tools for HPC </title>
+  </head>
+
+  <body>
+    <h1> The COREquations Engine: Tools for HPC</h1>
+
+
+Gautam Gupta and DaeGon Kim -Apolent Corporation
+<br>
+  We will describe and demonstrate a tool that produces optimized  
+programs starting with specifications in "scientific notation" such as  
+mathematical equations. Formal methods are used to check the  
+specification for completeness and consistency, as a result, the  
+generated code is correct-by-construction, e.g., it is guaranteed to  
+be free of out-of-bounds accesses.
+Typically weeks, or a few months are spent in the performance tuning  
+of scientific kernels exploring design choices such as memory  
+alignments, iteration order and tile shape and size selection. We will  
+demonstrate how our high level tool provides inexpensive design space  
+exploration through single-line commands for program transformations.  
+Our automation of loop fusion and fission also provides performance  
+gains over hand-optimization (which is limited by the users' capacity  
+for exhausting all possibilities). As a case study, we will present  
+performance gains of using our tool over hand tuning of some stencil  
+codes that arise in Atmospheric Science (shallow water models).
+We currently generate MPI for small clusters as well as (tiled)  
+optimized sequential code. If there is time, we will describe some  
+choices that went into the MPI code generator.
+
+
+
+    <hr>
+  </body>
+</html>
+

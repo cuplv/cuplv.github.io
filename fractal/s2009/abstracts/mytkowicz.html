@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Inferred Call Path Profiling (ICPP) 
+ </title>
+  </head>
+
+  <body>
+    <h1> Inferred Call Path Profiling (ICPP) </h1>
+
+
+<br>
+Presenter:
+Todd Mytkowicz
+<br>
+
+Abstract:
+Runtime measurements of program performance are useful for both
+program understanding and optimization.  Most approaches that collect
+runtime information employ an active approach---they add
+instrumentation to a program in order to calculate a metric of
+interest at runtime (e.g.  caller-callee relationships in gprof).
+This type of measurement is limited in that (i) in many cases it
+requires the source of a program in order to add instrumentation and
+(ii) it alters the program's memory layout which may drastically alter
+the behavior of the program we are measuring.
+<br>
+
+In this talk we collect rich runtime information without instrumenting
+the binary.  Specifically, we illustrate a passive approach to
+building calling context profiles.  With passive measurement we
+innocuously observe certain aspects of a running program and then use
+those observations to infer runtime characteristics of the program.
+This technique does not require the source of a program nor does it
+alter the static memory layout of the program, thereby circumventing
+the two issues above.
+
+<br>
+We conclude by exploring the effectiveness of our passive calling
+context profiler on the 2006 SPEC C/C++ benchmark suite.
+
+
+
+    <hr>
+  </body>
+</html>
+

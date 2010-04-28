@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Build to Order Linear Algebra Kernels</title>
+  </head>
+
+  <body>
+    <h1>Build to Order Linear Algebra Kernels</h1>
+
+The performance bottleneck for many scientific applications is the
+cost of memory access inside linear algebra kernels. Tuning such
+kernels for memory efficiency is a complex task that reduces the
+productivity of computational scientists.  Software libraries such
+as the Basic Linear Algebra Subprograms (BLAS) ameliorate this
+problem by providing a standard interface for which computer
+scientists and hardware vendors have created highly-tuned
+implementations.  Scientific applications often require a sequence
+of BLAS operations, which presents further opportunities for memory
+optimization.  However, because BLAS are tuned in isolation they do
+not take advantage of these opportunities.  This phenomenon
+motivated the recent addition to the BLAS of several routines that
+perform sequences of operations.  Unfortunately, the exact sequence
+of operations needed in a given situation is highly application
+dependent, so many more routines are needed.
+<p>
+In this talk I present preliminary work on a domain-specific
+compiler that generates implementations for arbitrary sequences of
+basic linear algebra operations and tunes them for memory
+efficiency. We report experimental results for dense kernels and
+show speedups of 25% to 120% relative to sequences of calls to
+GotoBLAS and vendor-tuned BLAS on Intel Xeon and IBM PowerPC
+platforms.
+
+    <hr>
+    <address><a href="mailto:Jeremy.Siek@colorado.edu">Jeremy Siek</a></address>
+<!-- Created: Mon Mar 24 14:12:12 MDT 2008 -->
+<!-- hhmts start -->
+Last modified: Fri Apr 11 17:20:56 MDT 2008
+<!-- hhmts end -->
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title> NCAR Weather and Climate Code Optimized on Nvidia CUDA </title>
+  </head>
+
+  <body>
+    <h1> NCAR Weather and Climate Code Optimized on Nvidia CUDA</h1>
+
+
+Tony Heller - Pixl-HPC
+Dan Connors - CSU
+<br>
+A demonstration of impressive speedups of Fortran weather code using  
+off-the-shelf PC graphics cards.  Critical portions of NCAR's  
+(National Center for Atmospheric Research) WRF weather code were  
+ported to Nvidia's CUDA architecture, achieving a performance gain of  
+close to 500X relative to the CPU, on a single consumer PC containing  
+dual Nvidia 9800GX2 cards.
+
+<br>
+The parallelization which achieves this gain is achieved at several  
+levels of granularity.  Coarse grained parallelism is architected  
+across a two dimensional geographic grid representing the earth's  
+surface.  Speedup at this level scales nearly linearly with the number  
+of multiprocessors in the system.  In addition to the coarse grained X- 
+Y parallelism, the code is organized fine grained parallel along the Z- 
+axis, and distributed amongst individual processors within each  
+multiprocessor, corresponding to layers of the atmosphere.
+<br>
+There is very little algorithmic communication per time step required  
+between computational nodes, allowing for the majority of local  
+variables to be stored in single-cycle hardware registers.  The  
+minimal memory traffic makes possible very high performance and  
+scalable computing.  Preliminary experiments have also been performed  
+on NCAR climate code, and similar speedups are expected.
+
+    <hr>
+  </body>
+</html>
+

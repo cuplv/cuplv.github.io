@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Runtime Analysis of Concurrency Errors for Multithreaded Programs</title>
+  </head>
+
+  <body>
+    <h1>Runtime Analysis of Concurrency Errors for Multithreaded Programs</h1>
+
+Multithreading has become a common programming technique. However,
+concurrency introduces the possibility of errors that do not exist in
+sequential programs. Data races and deadlocks are well-known
+concurrency errors. Atomicity violation is another important kind of
+concurrency defect that is not yet as well known and deeply studied.
+Atomicity is a higher-level correctness condition for concurrent
+systems. Informally, a code block is atomic if every execution of the
+program is equivalent to an execution in which that code block
+executes without interruption by other threads. Tools that
+automatically detect violations of atomicity can uncover subtle errors
+that are hard to find with traditional debugging and testing
+techniques.
+
+I will present a tool that can detect deadlocks, data races, and
+atomicity violations efficiently and accurately. The tool found many
+subtle and previously unreported concurrency errors in the Sun JDK and
+other programs. In this talk, I will focus on an algorithm for runtime
+(dynamic) detection of violations of conflict-atomicity and
+view-atomicity, which are analogous to conflict-serializability and
+view-serializability in database systems. In the algorithm, the
+recorded events are formed into a graph with edges representing the
+synchronization within each transaction and possible interactions
+between transactions. We give conditions on the graph that imply
+conflict-atomicity and view-atomicity. Experiments show that the
+algorithm is more efficient in most experiments and is more accurate
+than previous algorithms with comparable asymptotic complexity.
+
+<p>
+<a href="http://www.cs.uwyo.edu/~lwang7/">Liqiang (Eric) Wang, University of Wyoming</a>
+  </body>
+</html>

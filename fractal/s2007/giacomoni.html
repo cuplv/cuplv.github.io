@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Development Support for Concurrent Threaded Pipelining</title>
+  </head>
+
+  <body>
+    <h1>Development Support for Concurrent Threaded Pipelining</h1>
+
+Single-core performance increases have stalled. To increase available
+cycles, microprocessor designers have shifted to chip-multiprocessor
+(CMP) designs. These designs will provide tens to hundreds of
+processing cores per system that may be asymmetric in performance and
+heterogeneous in capability. Harnessing these resources is critical as
+these cores may individually be less powerful than existing single
+core solutions. Unfortunately, the additional cores provided by CMPs
+may remain idle because most applications lack data-parallelism and
+task-parallelism is unlikely to saturate future CMP designs. The
+systems community needs to rethink how software is developed to fully
+utilize CMPs.
+<p>
+We propose that programming languages and system libraries be extended
+to explicitly support Concurrent Threaded Pipeline (pipeline-
+parallel) organizations. Pipeline-parallel organizations differ from
+traditional data- and task-parallelism in that most inter-data
+dependencies are automatically handled. However, harnessing any
+potential performance improvements requires careful management of the
+underlying computer architecture to achieve the necessary core-to-
+core communication performance. In this talk we will discuss the
+potential performance improvements of Concurrent Threaded Pipelining
+and the language support necessary to support it at both the compiler
+and programmer levels.
+<p>
+<a href="http://www.cs.colorado.edu/~jgiacomo/">John.Giacomoni@colorado.edu, University of Colorado at Boulder</a>
+  </body>
+</html>

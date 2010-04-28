@@ -1,0 +1,53 @@
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Mallice - A Computer Memory Fragmentation Analysis Tool</title>
+  </head>
+
+  <body>
+    <h1>Mallice - A Computer Memory Fragmentation Analysis Tool</h1> 
+<p>
+Applications often request significantly more memory from the operating
+system than what is actually needed to store the data of the application.
+Such inefficient use of memory degenerates system performance (by making
+caching on all levels less effective). Total memory consumption can also be
+crucial factor in terms of battery life and overall hardware cost for
+embedded systems.  Reducing inefficiencies in memory utilization by
+applications thus holds the promise of significantly improving application
+performance and reducing system costs.
+</p>
+<p>
+Inefficient use of memory by applications can have a multitude of causes;
+the dominant causes are internal memory management overheads and memory
+fragmentation. Fragmentation becomes problematic when applications generate
+many unused, discontinuous memory areas (fragments) which are too small to
+be re-used for larger allocation requests.  Manually optimizing programs to
+reduce memory management overheads and fragmentation is a major challenge
+beyond the abilities of most developers.  The reason for this is that the
+program statements causing fragmentation cannot be identified by simple code
+inspection.  Furthermore, the causes for fragmentation are likely to be
+widely dispersed throughout the code, with no one statement being the cause
+of a particular fragment. In all cases fragmentation is a product of
+multiple statements in code that, when executed in sequence, cause the
+introduction of a new fragment.
+</p>
+<p>
+In order to address this issue, we are implementing a new memory analysis
+tool called "Mallice", which helps software engineers to detect and analyze
+the causes of application-level fragmentation in computer memory.  An
+important challenge in this context is to avoid changes to the application
+behavior due to the presence of the analyzer.  As a result, Mallice is not
+allowed to perform any dynamic memory allocations as part of the process
+that is being analyzed.  Our approach is to intercept all memory requests
+and transmit the event sequence for analysis to a different process.
+</p>
+<p>
+<a href="http://mysite.du.edu/~malbow/">Mohammed Albow, University of Denver</a><br/>
+<a href="http://www.cs.du.edu/~jedgingt/">Jeffrey Edgington, University of Denver</a><br />
+Yan Mayster, University of Denver<br />
+<a href="http://www.cs.du.edu/~dpittman/">Daniel Pittman, University of Denver</a> <br />
+<a href="http://grothoff.org/christian/">Christian Grothoff, University of Denver</a>
+</p>
+  </body>
+</html>

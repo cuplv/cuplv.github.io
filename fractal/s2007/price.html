@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Finding Large-scale Parallelism using BDDs</title>
+  </head>
+
+  <body>
+    <h1>Finding Large-scale Parallelism using BDDs</h1>
+
+Recently, difficulties in managing power consumption, wire delays and
+design complexity have forced designers to shift from faster
+uni-processor designs to chip multiprocessors (CMPs).  Unfortunately,
+CMPs require programmers to expose thread-level parallelism to
+continue the performance scaling previously provided by faster
+hardware.  However, parallel programs are notoriously difficult to
+develop and debug.<p>
+
+This talk will present an approach to examining the dynamic execution
+of sequential applications to find opportunities for construction of
+parallel codes.  A key challenge in this work is representing the
+relationships between computations in the dynamic trace; consider that
+a dynamic trace data set may contain billions of members.  Worse,
+data-dependence visualization, program slicing, and variable liveness
+techniques (all important for finding parallelism) require global
+access to this data.  This talk will discuss the novel observation
+that traces stored as Binary Decision Diagrams (BDDs) are compact and
+can be analyzed so that the analysis has complexity that is a function
+of the compressed size.  The talk will discuss how to represent trace
+data in BDD form and how this data can be used for global analysis and
+visualization.
+
+
+<p>
+Graham D. Price, University of Colorado at Boulder
+  </body>
+</html>

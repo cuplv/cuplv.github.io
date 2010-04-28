@@ -1,0 +1,72 @@
+08:00-08:55 Breakfast
+
+08:55-09:00 Workshop Welcome (Evan Chang)
+
+09:00-10:00 Invited Talk (chair: Amer Diwan)
+
+    What Your Mother Never Taught You About Multicore Programming
+      by Dick Sites, Google, Inc.
+
+10:00-11:00 Low-Power and Embedded Systems (chair: Dan Connors)
+
+   Power Efficiency Evaluation of Commodity Processors on Earth
+   Science Workloads
+      by Benjamin Mayer, National Center for Atmospheric Research
+
+   Design Issues in Hybrid Embedded Systems
+      by Irvin R. Jones Jr., US Air Force Academy
+
+   A Low-Power Dynamically Reconfigurable Nanophotonic-electric
+   Network-on-Chip Architecture
+      by Shirish Bahirat, Colorado State University
+
+11:00-11:20 Break
+
+11:20-12:00 Static Analysis (chair: Sanjay Rajopadhye)
+
+    Mixing Type Checking and Symbolic Evaluation
+      by Bor-Yuh Evan Chang, University of Colorado at Boulder
+
+    Generating and Analyzing Symbolic Traces of Simulink/Stateflow(tm)
+    Models of Control Systems
+      by Sriram Sankaranarayanan, University of Colorado at Boulder
+
+12:00-01:00 Lunch
+
+01:00-02:00 Madness (chair: Evan Chang)
+
+02:00-02:20 Break
+
+02:20-03:20 High-Performance Computing (chair: Jeremy Siek)
+
+    Modeling Ion Channel Kinetics with High-Performance Computation
+      by Allison Gehrke, University of Colorado at Denver
+
+    GPU Parallelization of RNA Folding
+      by Guillaume Rizk, INRIA/Irisa
+
+    Introducing the Sparse Polyhedral Framework (SPF)
+      by Michelle Mills Strout, Colorado State University
+
+03:20-03:30 Break
+
+03:30-04:10 Programming Languages Medley (chair: Sriram Sankaranarayanan)
+
+    A Calculus for Reflective Metaprogramming
+      by Weiyu Miao, University of Colorado at Boulder
+
+    The Semantic Gap in Java Programs
+      by Devin Coughlin, University of Colorado at Boulder
+
+04:10-04:30 Break
+
+04:30-05:30 System Simulation and Analysis (chair: Manish Vachharajani)
+
+    Large Program Trace Analysis and Compression with ZDDs
+      by Graham Price, University of Colorado at Boulder
+
+    Topological Entropy as a Metric for Computer System Performance
+      by Zach Alexander, University of Colorado at Boulder
+
+    Scalable Simulation of Complex Network Routing Policies
+      by Andy Stone, Colorado State University

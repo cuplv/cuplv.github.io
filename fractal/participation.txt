@@ -1,0 +1,108 @@
+We have a great set of talks lined up for Fractal Fall 2009!
+
+For this Fractal, we are introducing the Madness Session where we invite all
+participants to give a short presentation on, for example, a wild and crazy
+idea, a recent discovery, or a challenge problem.  You will have approximately
+5 minutes for your madness talk.  We especially encourage all students who
+are not giving a full-length presentation to consider speaking in the Madness
+Session.
+
+Presenters, please note that the talk slots are 20 minutes including questions.
+Please limit your presentation to 17 minutes to allow time for discussion.
+
+All participants, please help us plan for food by completing the registration
+form on the Fractal website by next Friday, November 20, 2009.
+
+********************** FRACTAL Call For Participation *******************
+
+When: Saturday, December 5, 2009
+Where: University of Colorado at Boulder
+Organizers: Amer Diwan, Jeremy G. Siek, and Bor-Yuh Evan Chang
+URL: http://www.cs.du.edu/fractal
+
+
+If you are interested in attending FRACTAL, please help us plan by completing
+the following registration form:
+
+  http://www.cs.du.edu/fractal/registration.html
+
+by Friday, November 20, 2009.  There is no cost to attend FRACTAL.
+
+
+PROGRAM
+
+09:00-10:00 Invited Talk
+
+    What Your Mother Never Taught You About Multicore Programming
+      by Dick Sites, Google, Inc.
+
+10:00-10:40 Low-Power and Embedded Systems
+
+   Power Efficiency Evaluation of Commodity Processors on Earth
+   Science Workloads
+      by Benjamin Mayer, National Center for Atmospheric Research
+
+    Design Issues in Hybrid Embedded Systems
+      by Irvin R. Jones Jr., US Air Force Academy
+
+10:40-11:00 Break
+
+11:00-12:00 Static Analysis
+
+    Mixing Type Checking and Symbolic Evaluation
+      by Bor-Yuh Evan Chang, University of Colorado at Boulder
+
+    The Complexity of Andersen's Analysis in Practice
+      by Manu Sridharan, IBM Research
+
+    Generating and Analyzing Symbolic Traces of Simulink/Stateflow(tm)
+    Models of Control Systems
+      by Sriram Sankaranarayanan, University of Colorado at Boulder
+
+12:00-01:00 Lunch
+
+01:00-02:00 Madness
+
+02:00-02:20 Break
+
+02:20-03:20 High-Performance Computing 
+
+    Modeling Ion Channel Kinetics with High-Performance Computation
+      by Allison Gehrke, University of Colorado at Denver
+
+    GPU Parallelization of RNA Folding
+      by Guillaume Rizk, INRIA/Irisa
+
+    Introducing the Sparse Polyhedral Framework (SPF)
+      by Michelle Mills Strout, Colorado State University
+
+03:20-03:30 Break
+
+03:30-04:10 Programming Languages Medley
+
+    A Calculus for Reflective Metaprogramming
+      by Weiyu Miao, University of Colorado at Boulder
+
+    The Semantic Gap in Java Programs
+      by Devin Coughlin, University of Colorado at Boulder
+
+04:10-04:30 Break
+
+04:30-05:30 System Simulation and Analysis
+
+    Large Program Trace Analysis and Compression with ZDDs
+      by Graham Price, University of Colorado at Boulder
+
+    Topological Entropy as a Metric for Computer System Performance
+      by Zach Alexander, University of Colorado at Boulder
+
+    Scalable Simulation of Complex Network Routing Policies
+      by Andy Stone, Colorado State University
+
+*************************************************************************
+
+Please send this email to any students and colleagues who may be interested in attending FRACTAL.
+
+*************************************************************************
+
+

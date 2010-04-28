@@ -1,0 +1,36 @@
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Aligning traces for performance evaluation</title>
+  </head>
+
+  <body>
+    <h1>Aligning traces for performance evaluation</h1> 
+
+Architects commonly use traces containing hardware and software
+metrics to understand performance.  Unfortunately, it is not feasible
+to collect all metrics in a single trace.  For example, modern
+processors can collect hundreds of distinct hardware events, but they
+can collect only a few at a time, requiring multiple runs to collect
+all the metrics.  Unfortunately there is enough non-determinism, even
+in carefully controlled experiments, that we cannot immediately reason
+across traces from different runs: instead we need to align the traces
+before we can reason across them.  This paper describes and evaluates
+techniques for aligning traces.
+
+Our trace alignment techniques enable performance analysts to safely
+and effectively reason across traces.  We evaluate two different
+alignment techniques: Dynamic Time Warping (DTW) and Full Uniform
+Scaling (FUS), and demonstrate that DTW consistently outperforms FUS.
+To align two traces, DTW requires at least one metric (the alignment
+metric) common to both traces.  We demonstrate that the choice of
+alignment metric is critical to the performance of DTW.  We introduce
+and evaluate two novel techniques for picking a good alignment metric.
+Both techniques significantly outperform a carefully, but manually,
+picked alignment metric.  Finally, we describe a novel criteria which
+indicates a priori whether nor not DTW will yield a good alignment.
+<p>
+<a href="http://www-plan.cs.colorado.edu/diwan/">Amer Diwan, University of Colorado at Boulder</a>
+  </body>
+</html>

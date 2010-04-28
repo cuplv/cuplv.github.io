@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title> Reducing BDD Creation Time for Dynamic Trace Information </title>
+  </head>
+
+  <body>
+    <h1>Reducing BDD Creation Time for Dynamic Trace Information</h1>
+
+
+Presenter: Graham Price
+
+<br>
+Dynamic program analysis can aid the development of parallel codes.  
+However, dynamic
+analyses often use collections of trace information that can exceed  
+gigabytes in size. It
+is possible to make dynamic trace information space efficient, and  
+useful for a variety of
+analyses, by utilizing reduced, ordered binary decision diagrams  
+(BDDs). A BDD
+representation can store sets of states with a size that depends more  
+on the amount of
+similarity between states than the number of represented states.  
+Dynamic trace
+information, in tuple form, often contains similar states and can be  
+efficiently
+represented by BDDs. Unfortunately, creating a BDD representation of  
+trace data
+generally takes many hours. This is due, in part, to the overhead cost  
+of memory
+management.
+<br>
+
+This talk will present a technique that can reduce the amount of  
+memory allocated and
+freed during BDD creation, and therefore reduce creation time. A  
+common BDD creation
+method for sets of integers, as well as trace tuples, initially builds  
+a BDD that represents
+the identity function of each trace tuple member. This BDD is then  
+disjoined with
+another BDD that represents all tuples that have been previously  
+extracted from the
+dynamic trace. The result of this operation is a new up-to-date BDD.  
+Both operand
+BDDs used in the disjunction operation are then marked for garbage  
+collection. This
+process, including BDD memory allocation and deletion, is repeated for  
+every tuple in the
+dynamic trace.
+
+<br>
+This talk will discuss a possible alternative technique based on the  
+idea that a trace BDD
+can be formed by combining small, identical, regions of variables from  
+each tuple in the
+trace. During the process of forming a BDD for each new region it is  
+combined with prior
+regions, ultimately resulting a a single complete trace BDD. This  
+technique does not
+create a new BDD for each tuple member, and therefore has the  
+potential to reduce
+memory management costs. This talk will conclude with a discussion of  
+technique
+implementations, including a "brute-force'' method and a pre-pass sort  
+algorithm.
+
+
+
+    <hr>
+  </body>
+</html>
+

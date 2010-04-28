@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title> An Instruction Level Representation for Portable 
+Stream Parallelism </title>
+  </head>
+
+  <body>
+    <h1> An Instruction Level Representation for Portable 
+Stream Parallelism 
+ </h1>
+
+Jeff Fifield
+<br>
+
+As the diversity and heterogeneity of mainstream multi-core hardware increases, developers seeking acceptable performance from their parallel applications are often required decompose and tune their algorithms by hand. To get good performance, it may be necessary to consider the number of cores in a system, the system’s memory organization, any instruction set extensions available, and core-to-core communication characteristics. Performing these optimizations 
+by hand can greatly increase performance but this performance comes with considerable cost to portability and programmer productivity. When one considers 
+using heterogeneous computing environments, the requirements for this sort of 
+hand optimization is even greater. For heterogeneous platforms such as the Cell 
+processor or graphics processors coupled with traditional multi-core processors, 
+getting good performance depends on all of the above factors plus special tools, 
+libraries, and languages. The result is that it is very cumbersome and time 
+consuming to develop and maintain a single parallel application that runs well 
+on a variety of heterogeneous platforms. Furthermore, it may be impossible to 
+develop and optimize such an application for future hardware. Ideally a developer would be able to compile and debug their parallel code once and get 
+good performance on a variety of current and future machines as has long been 
+possible for sequential programs running on single CPUs. 
+<br>
+Researchers and industry have developed many parallel programming abstractions and languages. Stream processing represents one such abstraction 
+used for parallel programing. In stream programs, the programmer first divides 
+their algorithm into small computational kernels. These kernels are much like 
+a traditional procedure except that their parameters are continuous streams 
+of data and their outputs are continuous streams of data. Access to the input and output streams is tightly controlled using push/pop semantics and 
+all streams operate in a first-in, first-out manner. The programmer connects 
+instances of kernels together with instances of streams to form a graph representing the stream program. This well deﬁned construction of the program 
+structure and communication makes the program much easier to analyze and 
+parallelize than the equivalent program expressed using arrays and loops. We 
+propose mechanisms for expressing stream programs at the level of a virtual 
+machine instruction set, extending the benfits and portability associated with 
+virtual machine representations of to parallel code. In doing so, we show that 
+the ﬁne grained task, data, and pipeline parallelism of stream programs can be 
+represented efficiently in low level sequential code and that such a representation can be executed effciently on parallel hardware. 
+
+
+    <hr>
+  </body>
+</html>
+

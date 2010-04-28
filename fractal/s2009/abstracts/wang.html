@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title> HAVE: Detecting Atomicity Violations via Integrated Dynamic and 
+Static Analysis </title>
+  </head>
+
+  <body>
+    <h1>HAVE: Detecting Atomicity Violations via Integrated Dynamic and 
+Static Analysis</h1>
+
+
+Authors: Qichang Chen (presenter) and Liqiang Wang (University of Wyoming) and Zijiang Yang (Western Michigan University) and Scott Stoller (Stony Brook University)
+
+<br>
+
+Today, multi-core hardware has become ubiquitous, which puts us at a fundamental turning 
+point in software development. In order for software applications to benefit from the continued 
+exponential throughput advances in new processors, the applications will need to be well-written 
+multi-threaded programs. However, writing correct multi-threaded programs is difficult, because 
+concurrency can introduce subtle errors that do not exist in sequential programs, if concurrent 
+accesses to shared data are not properly synchronized. A common kind of concurrency error is 
+atomicity violation, which occurs when an interleaved execution of a set of code blocks (expected 
+to be atomic) by multiple threads is not equivalent to any serial execution of the same code blocks. 
+
+<br>
+<br>
+
+Most existing approaches to detect atomicity violations are either purely dynamic (e.g. [3, 8, 7, 
+6]) or purely static (e.g. [5, 4]). The strength of static analysis is that it can consider all possible 
+behaviors of a program. However, it may produce false positives (i.e., false alarms), because some 
+aspects of a program's behavior, such as alias relationships, values of array indices, and happens- 
+before relationships, are very difficult to analyze statically. Moreover, many static analyses, such as 
+the type system for atomicity in [5], require either manual annotation of the program or rewriting of 
+the program into a special language. Dynamic analysis observes and analyzes the actual behaviors 
+of a program by executing it. Generally, dynamic analysis is unsound compared to static analysis, 
+because it does not analyze unobserved behaviors of programs. On the positive side, it generally 
+produces much fewer false positives. Furthermore, dynamic analysis generally does not require 
+manual annotation of code that is often required in static analysis; this is a significant practical 
+advantage. 
+
+<br>
+<br>
+
+In order to exploit the complementary benefits of static and dynamic analyses, we propose 
+a hybrid approach to detect atomicity violations. In our approach, we perform a conservative 
+intraprocedural static analysis to generate a summary for each method in the program. Our 
+runtime system tracks and records the values of reference variables during execution. When we 
+observe an unexecuted branch during dynamic analysis, the static summary of that unexplored 
+branch is retrieved and instantiated using the recorded values. Thus, the instantiated summary 
+speculatively approximates what would have happened if the branch had been executed. Compared 
+to dynamic analysis, the hybrid approach is able to detect atomicity violations in unexecuted parts 
+of the code. Compared to static analysis, the hybrid approach produces fewer false alarms. 
+
+
+
+
+
+    <hr>
+  </body>
+</html>
+

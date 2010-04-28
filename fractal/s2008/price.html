@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Visualizing Potential Parallelism in Sequential Programs with ParaMeter</title>
+  </head>
+
+  <body>
+    <h1>Visualizing Potential Parallelism in Sequential Programs with ParaMeter</h1>
+
+Parallelizing sequential applications is non-trivial, but is
+increasingly important with the rise of multicore systems.  We show a
+case study that supports the idea that finding and extracting regions
+of code for parallelism can be aided by analysis of dynamic program
+trace information.  However, program traces for just a few seconds of
+execution are enormous, up to several terabytes in size, uncompressed.
+<p>
+Specialized compression can shrink traces to a few gigabytes, but
+trace analyzers typically stream the decompressed trace through
+the analysis engine.  Thus, the complexity of analysis depends on the
+decompressed trace size (even though the decompressed trace is never
+stored to disk).  This makes many global or interactive analysis
+infeasible.
+<p>
+This presentation discusses how to use BDDs to compress traces in a
+way that yields reasonable size, rapid analysis and rapid
+visualization.  BDDs intrinsically support operations common to many
+desirable program analyses and these analyses operate directly on the
+BDD, avoiding decompression.  Furthermore, we show that BDDs also give
+the ability to rapidly visualize and explore potential parallelism in
+the dynamic trace.  ParaMeter, our BDD-based trace analysis tool, can
+perform visualization up to 75,000 times faster than prior approaches
+while still maintaining up to 60x compression.  The talk will
+demonstrate the effectiveness of ParaMeter by using it to parallelize a
+region of the SPEC INT 2000 benchmark 175.vpr.
+    <hr>
+    <address><a href="mailto:graham.price@colorado.edu">Graham Price</a></address>
+<!-- Created: Mon Mar 24 14:12:12 MDT 2008 -->
+<!-- hhmts start -->
+Last modified: Thu Apr 17 20:17:55 MDT 2008
+<!-- hhmts end -->
+  </body>
+</html>

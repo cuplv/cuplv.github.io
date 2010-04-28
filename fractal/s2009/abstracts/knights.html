@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>  Blind Optimization for Exploiting Hardware Features </title>
+  </head>
+
+  <body>
+    <h1>  Blind Optimization for Exploiting Hardware Features</h1>
+
+
+Authors: Dan Knights, Todd Mytkowicz, Peter F. Sweeney, Michael C.
+Mozer and Amer Diwan
+
+<br>
+Software systems typically exploit only a small fraction of the
+realizable performance from the underlying microprocessors. While
+there has been much work on hardware-aware optimizations, two factors
+limit their benefit. First, microprocessors are so complex that it is
+unlikely that even an aggressively optimizing compiler will be able to
+satisfy all the constraints necessary to obtain the best performance.
+Thus, most optimizations use a simplified model of the hardware (e.g.,
+they may be cache-aware but they may ignore other hardware structures,
+such as TLBs, etc.). Second, hardware manufacturers do not reveal all
+details of their microprocessors so even if the authors of
+optimizations want to simultaneously optimize for all components of
+the hardware, they may be unable to do so because they are working
+with limited knowledge. This paper presents and evaluates our blind
+optimization approach which provides a way to circumvent these issues.
+<br>
+Blind optimization uses the insight that we can generate many variants
+of an application by altering semantic preserving parameters of an
+application; for example our variants can cover the space of code and
+data layout by shifting the positions of code and data in memory, or
+by inverting conditional branches. Our optimization strategy attempts
+to find a variant that performs well with respect to an optimization
+objective. We show that even our first implementation of blind
+optimization speeds up a number of programs from the SPECint 2006
+benchmark suite.
+
+
+
+    <hr>
+  </body>
+</html>
+

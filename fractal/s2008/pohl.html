@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Monads through program extraction</title>
+  </head>
+
+  <body>
+    <h1>Monads through program extraction</h1>
+
+Closing the gap between formalized proof and practical programming has long
+been an  objective of working in type theory.  Monads epitomize this
+balance.  They are a formal construct but have revolutionized programming in
+purely functional environments.  We play on this relationship by formalizing
+the structure of a monad as a type.  By instantiating the type constructor
+and its associated operators in a dependent type theory we are able to
+reason about monads as we would a type.  By
+the fact that we are working in a constructive context this reasoning means
+that we can begin to close that gap between a formal proof and practical
+programming when it comes to monads.  We are able to extract instances of
+the operators by the fact that we can prove propositions that correspond to
+that type.  In this paper we will do this in
+two varieties.  The first is that by knowing the algorithm the operators
+correspond to we can easily state them as an object in our language. We then
+prove that they have the correct type, the type of the output for which we
+are trying to generate. The second methodology is to prove a  behavior
+specification and there by obtain an extract based on what the program is
+supposed to do.  Our extract is in the form of a term in a purely functional
+programming language that is just as powerful as any more common language.
+We contrast this with the first method which
+is a statement of verification, or of how to do a certain computation.
+In our process of verifying and specifying (extracting) monads we show
+that particular instances of common monads are definable in our type
+theory.  We show that the monad is a well defined type. And
+we give examples showing that our monads are usable.
+
+
+    <hr>
+    <address><a href="mailto:jpohl@cs.uwyo.edu">Josef Pohl</a></address>
+<!-- Created: Mon Mar 24 14:12:12 MDT 2008 -->
+<!-- hhmts start -->
+Last modified: Fri Apr 11 17:20:56 MDT 2008
+<!-- hhmts end -->
+  </body>
+</html>
