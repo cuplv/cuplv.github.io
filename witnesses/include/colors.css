@@ -1,0 +1,43 @@
+/* Background color */
+body {
+    background-color: #ffffd4;
+}
+
+blockquote {
+	background-color: #faf9db;
+	border-color: #732803;
+}
+
+#menu span.here {
+    background-color: #ffffd4;
+    border-color: #ffffd4;
+}
+
+#menu a {
+    background-color: #fee7ba;
+    border-color: #ffffd4;
+}
+
+#menu a:hover {
+    border-color: #fe9929;
+}
+
+#header, #menu, #footer, .box {
+    background-color: #fed98e;
+}
+
+.box img {
+    border-color: #fed98e;
+}
+/* Header text and link text */
+#title, h1, h2, h3, a {
+    color: #732803;
+}
+
+.here {
+    color: #3b3b3b;
+}
+/* Link hover text */
+a:hover {
+    color: #fe9929;
+}
