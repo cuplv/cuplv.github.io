@@ -115,11 +115,12 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 <div class="page" id="page">
 	<div class="content">
 		<?php ($notoc) ?  tpl_content(false) : tpl_content() ?>
+<!--
 		<div class="meta">
 			<?php tpl_userinfo()?>
 	    	<?php tpl_pageinfo()?>
 		</div>
-		
+-->		
 
 	    
 		
