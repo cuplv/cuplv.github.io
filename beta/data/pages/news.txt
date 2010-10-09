@@ -1,5 +1,0 @@
-====== News ======
-
-===== Sept 7, 2010 =====
-
-Began experimenting with using Dokuwiki as a home for our research group.

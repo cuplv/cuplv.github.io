@@ -1,4 +1,0 @@
-====== Poslať nové heslo ======
-
-Vyplňte nižšie požadované informácie pre získanie nového hesla pre váš účet v tejto wiki. Vaše nové heslo bude zaslané na vašu registrovanú e-mailovú adresu. Užívateľské meno má byť vaše prihlasovacie meno do wiki.
-
