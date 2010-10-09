@@ -104,13 +104,13 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 <?php } ?>
 
 
-
+<!--
 <div class="sidebar" id="sidebar">          
 <?php if(!tpl_sidebar_hide()){  
 			tpl_sidebar(tpl_getConf('sidebar'));
 		  } ?>
 </div>
-
+-->
 
 <div class="page" id="page">
 	<div class="content">
