@@ -1,0 +1,76 @@
+/* ---------- Sidebar menu appearance ------- */
+#sidebar ul ul,
+#sidebar ul li:hover ul ul,
+#sidebar ul ul li:hover ul ul {
+/*  display: none;*/
+}
+
+#sidebar ul li:hover ul,
+#sidebar ul ul li:hover ul,
+#sidebar ul ul ul li:hover ul {
+  display: block;
+}
+
+.dokuwiki #sidebar ul.primary {
+	width: 15em;
+}
+
+.dokuwiki #sidebar ul {
+	margin: 0;
+	font-size: 12px;
+}
+
+.dokuwiki #sidebar li.level1 {
+	list-style-type: none;
+	display: block;
+}
+
+.dokuwiki #sidebar li:hover {
+/*	border-top: 1px solid #8CACBB;
+	border-bottom: 1px solid #8CACBB;*/
+}
+
+.dokuwiki #sidebar li a {
+	text-decoration: none;
+	display: block;
+}
+
+.dokuwiki #sidebar li a:hover {
+	background-color: #AFD2E6;
+}
+
+.dokuwiki #sidebar li.level1 ul {
+	padding-left: 1.5em;
+}
+
+.dokuwiki #sidebar li.level2 ul {
+	padding-left: 1.5em;
+}
+
+.dokuwiki #sidebar ul li.level2,
+.dokuwiki #sidebar ul li.level3,
+.dokuwiki #sidebar ul li.level4 {
+	list-style-type: circle;
+}
+
+/* ACTIONS */
+#pageActionTableId a,
+#wikiActionTableId a,
+#userActionTableId a,
+#submitActionTableId a {
+	width: 15em;
+	display: block;
+}
+
+#pageActionTableId a:hover,
+#wikiActionTableId a:hover, 
+#userActionTableId a:hover,
+#submitActionTableId a:hover {
+	background-color: #AFD2E6;
+	color: #000;
+}
+
+div.smallpadding {
+	margin: 0;
+	padding: 0;
+}
