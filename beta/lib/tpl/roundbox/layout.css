@@ -1,0 +1,122 @@
+/**
+ * Layout template matching the style of my website
+ *
+ * @author Andreas Gohr <andi@splitbrain.org>
+ * @author Anika Henke <henke@cosmocode.de>
+ * @author Christopher Arndt <chris@chrisarndt.de>
+ * @author Don Bowman  <don@lynsoft.co.uk>
+ */
+
+/* -------------- top row --------------- */
+div.dokuwiki #header {
+  color: __text_alt__;
+  background-color: __background_alt__;
+  font-family: "Times New Roman","Times",serif;
+  border: solid 1px __border__;
+  padding: 0.2em;
+  margin-bottom: 1em;
+}
+
+
+div.dokuwiki #header a {
+  color: __text_alt__;
+}
+
+div.dokuwiki #header_title {
+  font-weight: normal;
+  font-style: italic;
+/*  color: __text__;*/
+}
+
+/* ---------------  header bar ---------------- */
+div.dokuwiki #header_bar {
+/*  color: __text__;*/
+  background-color: __background__;
+  clear: both;
+  border: solid 1px __border__;
+  height: 2em;
+  padding-top: 0.3em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+/* the site name */
+div.dokuwiki .logo {
+  font-size: 250%;
+  float: left;
+  text-align: left;
+  margin-top: 0.4em;
+  padding-bottom: 0.1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+div.dokuwiki .logo a:link, .logo a:visited, .logo a:hover, .logo a:active {
+  font-weight: bold;
+  text-decoration:none;
+}
+
+/* the current page name */
+div.dokuwiki .pagename {
+/*  color: __text__;*/
+  font-size: 150%;
+  font-weight: bold;
+  float: right;
+  text-align: right;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+div.dokuwiki .bar_left {
+  padding-top: 0.3em;
+  float: left;
+  text-align: left;
+}
+
+div.dokuwiki .bar_right {
+  float: right;
+  text-align: right;
+}
+
+div.dokuwiki .tagline {
+  margin-left: 2em;
+  letter-spacing: 0.2em;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* ---------- the sidebar ---------- */
+
+/* see "sidebar.css" */
+
+/* ---------- the content area (including the wiki document) ---------- */
+
+div.dokuwiki #content {
+  background-color: __background_alt__;
+  border: solid 1px __border__;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+div.dokuwiki #page {
+  border: solid 1px __border__;
+  margin: 0px;
+  padding-top: 0.2em;
+  padding-bottom: 0.4em;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+}
+
+/* ------------- File Metadata ----------------------- */
+
+div.dokuwiki div.meta {
+  clear: both;
+  margin-top: 1em;
+  font-size: 70%;
+  text-align: right;
+}
+
