@@ -58,7 +58,7 @@ require_once(dirname(__FILE__).'/tpl_functions.php');
 
 	<h1 id="sitename"><?php tpl_link(wl(),$conf['title'],'name="dokuwiki__top" accesskey="h" title="[ALT+H]"')?></h1>
         <img src="<?php echo DOKU_TPL?>images/boulder_banner2.png" alt="Picture of Boulder" border="0" />
-	<h1 id="pagename"><!--<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>--></h1>
+	<h1 id="pagename"><?php tpl_pagetitle($ID, true) ?><!--<?php tpl_link(wl($ID,'do=backlink'),tpl_pagetitle($ID,true))?>--></h1>
 
       
 
