@@ -1,0 +1,43 @@
+/**
+ * Tableless Layout for default template
+ *
+ * @author Andreas Gohr <andi@splitbrain.org>
+ * @author moraes <moraes@tipos.com.br>
+ */
+
+/* -------------- top row --------------- */
+
+
+/* ---------------  top and bottom bar ---------------- */
+div.dokuwiki .bar {
+
+  clear: both;
+}
+
+div.dokuwiki .bar-left {
+  float: left;
+}
+
+div.dokuwiki .bar-right {
+  float: right;
+  text-align: right;
+}
+
+
+
+/* ------------- File Metadata ----------------------- */
+
+div.dokuwiki div.meta {
+  clear: both;
+  margin-top: 1em;
+  color: __text_alt__;
+  font-size: 70%;
+}
+
+div.dokuwiki div.meta div.user {
+  float: left;
+}
+
+div.dokuwiki div.meta div.doc {
+  text-align: right;
+}
