@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE cv [
+<!ENTITY emdash "&#8212;">
+]>
+
+<cv>
+  <news-list>
+    <news date="2011.07.01" id="sanchez-2011">
+      <news-snippet>
+	<ref table="person" key="cesar" /> visits July 5-August 12.
+      </news-snippet>
+    </news>
+    <news date="2011.02.22" id="stump-2011">
+      <news-snippet>
+	<ref table="person" key="astump"/> visits February 24-25.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="astump"/> from U of Iowa is visiting
+	us February 24-25, 2011.  He is giving a talk on Thursday,
+	February 24 at 4:30pm in ECOT 832.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="astump"/></speaker>
+	<affiliation>University of Iowa</affiliation>
+	<when>02-24-2011 16:30</when>
+	<where>ECOT 832</where>
+	<abstract>
+	  <p>Recent years have seen intensive interest among
+	  Programming Language (PL) researchers in connecting PL and
+	  Verification.  Static analyses which once were primarily
+	  intended for enabling optimizations in compilers are now
+	  used also for program verification and bug finding.  Type
+	  systems, which had been used to detect (either statically or
+	  dynamically) low-level bugs, are now pushed to express
+	  stronger and stronger semantic properties of code.  Arguably
+	  the most powerful such systems known are so-called dependent
+	  type systems, which combine programming and theorem proving,
+	  and use rich types to express general logical specifications
+	  of programs.</p>
+	  <p>In this talk, I will describe ongoing work in my group to
+	  design, prove, and implement dependently typed programming
+	  languages, and apply them for challenging case studies.  I
+	  will summarize the design of the Guru dependently typed
+	  programming language, and explain how it overcomes some
+	  traditional difficulties for dependently typed languages,
+	  concerning general recursion and also the treatment of
+	  equality.  For a case study, I will describe recent work of
+	  my doctoral student Duckki Oe to implement a statically
+	  verified modern SAT solver called versat in Guru. Versat
+	  uses the efficient low-level data structures and algorithms
+	  of modern solvers like Minisat, but has been statically
+	  verified to be sound: if versat reports "unsat", then the
+	  input formula is truly contradictory.  Versat can solve
+	  benchmarks on the modern scale, including some from the SAT
+	  Competition 2009.  I will conclude with a glimpse at a new
+	  dependently typed language called Trellys, being designed
+	  and implemented in a collaborative project with Stephanie
+	  Weirich at U. Pennsylvania and Tim Sheard at Portland
+	  State.</p>
+	</abstract>
+	<bio>
+	  Aaron Stump is an associate professor of Computer Science at
+	  The University of Iowa, where he co-leads the U. Iowa
+	  Computational Logic Center with Cesare Tinelli.  Aaron
+	  received his PhD in Computer Science in 2002 from Stanford
+	  University.  His research interests are in Computational
+	  Logic and Programming Languages, with current focus on
+	  dependently typed programming languages and high-performance
+	  proof checking.
+	</bio>
+      </talk-announcement>
+    </news>
+  </news-list>
+
+  <projects>
+  </projects>
+
+  <publications>
+    <pub id="stack-popl11">
+      <title>Calling Context Abstraction with Shapes</title>
+      <authors>
+	<author person="rival" />
+	<author person="bec" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/popl11-stack.pdf</url>
+	<url name="ps">papers/popl11-stack.ps</url>
+      </urls>
+      <howpub>
+	<proceedings event="popl11" />
+      </howpub>
+      <abstract>
+	<p>Interprocedural program analysis is often performed by
+	computing procedure summaries.  While possible, computing
+	adequate summaries is difficult, particularly in the presence
+	of recursive procedures.  In this paper, we propose a
+	complementary framework for interprocedural analysis based on
+	a direct abstraction of the calling context.  Specifically,
+	our approach exploits the inductive structure of a calling
+	context by treating it directly as a stack of activation
+	records.  We then build an abstraction based on separation
+	logic with inductive definitions.  A key element of this
+	abstract domain is the use of parameters to refine the meaning
+	of such call stack summaries and thus express relations across
+	activation records and with the heap.  In essence, we define
+	an abstract interpretation-based analysis framework for
+	recursive programs that permits a fluid per call site
+	abstraction of the call stack&emdash;much like how shape analyzers
+	enable a fluid per program point abstraction of the heap.</p>
+      </abstract>
+    </pub>
+    <pub id="accessnets-vmcai11">
+      <title>Access Nets: Modeling Access to Physical Spaces</title>
+      <authors>
+	<author person="frohardt" />
+	<author person="bec" />
+	<author person="srirams" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/accessnets-vmcai11.pdf</url>
+	<url name="ps">papers/accessnets-vmcai11.ps</url>
+      </urls>
+      <howpub>
+	<proceedings event="vmcai11" />
+      </howpub>
+      <note>
+	<tr>
+	  <extendedtr />
+	  <number>CU-CS-1076-10</number>
+	  <url>papers/CU-CS-1076-10.pdf</url>
+	</tr>
+      </note>
+      <abstract>
+	<p>Electronic, software-managed mechanisms using, for example,
+	radio-frequency identification (RFID) cards, enable great
+	flexibility in specifying access control policies to physical
+	spaces.  For example, access rights may vary based on time of
+	day or could differ in normal versus emergency situations.
+	With such fine-grained control, understanding and reasoning
+	about what a policy permits becomes surprisingly difficult
+	requiring knowledge of permission levels, spatial layout, and
+	time.  In this paper, we present a formal modeling framework,
+	called <fmt kind="tool">Access Nets</fmt>, suitable for describing a
+	combination of access permissions, physical spaces, and
+	temporal constraints.  Furthermore, we provide evidence that
+	model checking techniques are effective in reasoning about
+	physical access control policies.  We describe our results
+	from a tool that uses reachability analysis to validate
+	security policies.</p>
+      </abstract>
+    </pub>
+    <pub id="mix-pldi10">
+      <title>Mixing Type Checking and Symbolic Execution</title>
+      <authors>
+	<author person="khooyp" />
+	<author person="bec" />
+	<author person="jfoster" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/pldi10-mix.pdf</url>
+	<url name="ps">papers/pldi10-mix.ps</url>
+      </urls>
+      <howpub>
+	<proceedings event="pldi10" />
+      </howpub>
+      <note>
+	<tr>
+	  <extendedtr />
+	  <number>CS-TR-4954</number>
+	  <url>http://hdl.handle.net/1903/10115</url>
+	</tr>
+      </note>
+      <abstract>
+	<p>Static analysis designers must carefully balance precision
+	and efficiency.  In our experience, many static analysis tools
+	are built around an elegant, core algorithm, but that
+	algorithm is then extensively tweaked to add just enough
+	precision for the coding idioms seen in practice, without
+	sacrificing too much efficiency.  There are several downsides
+	to adding precision in this way: the tool's implementation
+	becomes much more complicated; it can be hard for an end-user
+	to interpret the tool's results; and as software systems vary
+	tremendously in their coding styles, it may require
+	significant algorithmic engineering to enhance a tool to
+	perform well in a particular software domain.</p>
+	<p>In this paper, we present Mix, a novel system that mixes
+	type checking and symbolic execution.  The key aspect of our
+	approach is that these analyses are applied independently on
+	disjoint parts of the program, in an off-the-shelf manner.  At
+	the boundaries between nested type checked and symbolically
+	executed code regions, we use special mix rules to communicate
+	information between the off-the-shelf systems.  The resulting
+	mixture is a provably sound analysis that is more precise than
+	type checking alone and more efficient than exclusive symbolic
+	execution.  In addition, we also describe a prototype
+	implementation, <fmt kind="tool">Mixy</fmt>, for C.  Mixy
+	checks for potential null dereferences by mixing a
+	null/non-null type qualifier inference system with a symbolic
+	executor.</p>
+      </abstract>
+    </pub>
+    <pub id="ssg-esop10">
+      <title>Separating Shape Graphs</title>
+      <authors>
+	<author person="laviron" />
+	<author person="bec" />
+	<author person="rival" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/esop10-sepshapegraph.pdf</url>
+      </urls>
+      <howpub>
+	  <proceedings event="esop10" />
+      </howpub>
+      <abstract>
+	<p>Detailed memory models that expose individual fields are
+	necessary to precisely analyze code that makes use of
+	low-level aspects such as, pointers to fields and untagged
+	unions.  Yet, higher-level representations that collect fields
+	into records are often used because they are typically more
+	convenient and efficient in modeling the program heap.  In
+	this paper, we present a shape graph representation of memory
+	that exposes individual fields while largely retaining the
+	convenience of an object-level model.  This representation has
+	a close connection to particular kinds of formulas in
+	separation logic.  Then, with this representation, we show how
+	to extend the <fmt kind="tool">Xisa</fmt> shape analyzer for
+	low-level aspects, including pointers to fields, C-style
+	nested structures and unions, malloc and free, and array
+	values, with minimal changes to the core algorithms (e.g.,
+	materialization and summarization).</p>
+      </abstract>
+    </pub>
+    <pub id="gradprog-pldifit09">
+      <title>
+	Gradual Programming: Bridging the Semantic Gap (Position Paper)
+      </title>
+      <authors>
+	<author person="bec" />
+	<author person="diwan" />
+	<author person="siek" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/pldifit09-gradprog.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="pldi-fit09" />
+      </howpub>
+    </pub>
+  </publications>
+
+  <persons>
+    <person id="bec" group="faculty">
+      <name>Bor-Yuh Evan Chang</name>
+      <url>http://www.cs.colorado.edu/~bec/</url>
+      <face>pics/chang.jpg</face>
+    </person>
+    <person id="diwan" group="faculty">
+      <name>Amer Diwan</name>
+      <url>http://www.cs.colorado.edu/~diwan/</url>
+      <face>pics/diwan.jpg</face>
+    </person>
+    <person id="srirams" group="faculty">
+      <name>Sriram Sankaranarayanan</name>
+      <url>http://www.cs.colorado.edu/~srirams/</url>
+      <face>pics/sankaranarayanan.jpg</face>
+    </person>
+    <person id="siek" group="faculty">
+      <name>Jeremy G. Siek</name>
+      <url>http://ecee.colorado.edu/~siek/</url>
+      <face>pics/siek.jpg</face>
+    </person>
+    <person id="fabio" group="faculty">
+      <name>Fabio Somenzi</name>
+      <url>http://vlsi.colorado.edu/~fabio/</url>
+      <face>pics/somenzi.jpg</face>
+    </person>
+    <person id="msridhar">
+      <name>Manu Sridharan</name>
+      <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
+    </person>
+    <person id="blackshear" group="phd">
+      <name>Sam Blackshear</name>
+    </person>
+    <person id="coughlin" group="phd">
+      <name>Devin Coughlin</name>
+    </person>
+    <person id="frohardt">
+      <name>Robert Frohardt</name>
+      <url>http://www.cs.colorado.edu/~frohardt/</url>
+    </person>
+    <person id="khooyp">
+      <name>Khoo Yit Phang</name>
+      <url>http://www.cs.umd.edu/~khooyp/</url>
+    </person>
+    <person id="jfoster">
+      <name>Jeffrey S. Foster</name>
+      <url>http://www.cs.umd.edu/~jfoster/</url>
+    </person>
+    <person id="laviron">
+      <name>Vincent Laviron</name>
+    </person>
+    <person id="rival">
+      <name>Xavier Rival</name>
+      <url>http://www.di.ens.fr/~rival/</url>
+    </person>
+    <person id="fp">
+      <name>Frank Pfenning</name>
+      <url>http://www.cs.cmu.edu/~fp/</url>
+    </person>
+    <person id="astump">
+      <name>Aaron Stump</name>
+      <url>http://www.cs.uiowa.edu/~astump/</url>
+    </person>
+    <person id="cesar">
+      <name>César Sánchez</name>
+      <url>http://software.imdea.org/~cesar/</url>
+    </person>
+  </persons>
+
+  <events>
+    <series id="popl">
+      <name>Principles of Programming Languages</name>
+      <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
+      <event id="popl11">
+	<date>2011-01</date>
+	<location>Austin, Texas, USA</location>
+	<nth>Thirty-Eighth</nth>
+	<url>http://www.cse.psu.edu/popl/11/</url>
+      </event>
+      <event id="popl10">
+	<date>2010</date>
+	<location>Madrid, Spain</location>
+	<nth>Thirty-Seventh</nth>
+	<url>http://www.cse.psu.edu/popl/10/</url>
+      </event>
+      <event id="popl08">
+	<date>2008</date>
+	<location>San Francisco, California, USA</location>
+	<nth>Thirty-Fifth</nth>
+	<url>http://www.cs.ucsd.edu/popl/08/</url>
+      </event>
+    </series>
+    <series id="pldi">
+      <name>Programming Language Design and Implementation</name>
+      <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="pldi10">
+	<date>2010-06</date>
+	<location>Toronto, Ontario, Canada</location>
+	<url>http://www.cs.stanford.edu/pldi10/</url>
+      </event>
+      <event id="pldi09">
+	<date>2009</date>
+	<location>Dublin, Ireland</location>
+	<url>http://www.cs.colorado.edu/pldi09/</url>
+      </event>
+    </series>
+    <series id="esop">
+      <name>European Symposium on Programming</name>
+      <event id="esop10"> 
+	<date>2010-03</date>
+	<location>Paphos, Cyprus</location>
+	<nth>Nineteenth</nth>
+	<url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
+      </event>
+    </series>
+    <series id="sas">
+      <name>Static Analysis Symposium</name>
+      <longPrefix>International</longPrefix>
+      <event id="sas07">
+	<date>2007</date>
+	<nth>Fourteenth</nth>
+	<url>http://www2.imm.dtu.dk/sas2007/</url>
+      </event>
+    </series>
+    <series id="vmcai">
+      <name>Verification, Model Checking, and Abstract Interpretation</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="vmcai11">
+	<date>2011-01</date>
+	<location>Austin, Texas, USA</location>
+	<nth>Twelfth</nth>
+	<url>http://vmcai11.cis.ksu.edu/</url>
+      </event>
+    </series>
+    <series id="nsad">
+      <name>Numerical and Symbolic Abstract Domains</name>
+      <longPrefix>International Workshop on</longPrefix>
+      <event id="nsad11">
+	<date>2011</date>
+	<nth>Third</nth>
+	<url>http://software.imdea.org/events/nsad2011/</url>
+      </event>
+    </series>
+    <series id="paste">
+      <name>Program Analysis for Software Tools and Engineering</name>
+      <longPrefix>ACM SIGPLAN-SIGSOFT Workshop on</longPrefix>
+      <event id="paste11">
+	<date>2011</date>
+	<nth>Tenth</nth>
+	<url>https://sites.google.com/site/paste2011/</url>
+      </event>
+    </series>
+    <series id="pldi-fit">
+      <name>Fun Ideas and Thoughts at PLDI</name>
+      <event id="pldi-fit09">
+	<date>2009</date>
+	<url>http://www.cs.colorado.edu/pldi09/fit/</url>
+	<location>Dublin, Ireland</location>
+      </event>
+    </series>
+    <series id="fractal">
+      <name>Front Range Architecture Compilers Tools and Languages Workshop</name>
+      <event id="fractal-f09">
+	<date>F2009</date>
+	<url>http://fractal.cs.colorado.edu/</url>
+	<location>Boulder, Colorado, USA</location>
+      </event>
+    </series>
+  </events>
+</cv>
