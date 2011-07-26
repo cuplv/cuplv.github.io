@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>SAS 2011:
+         	The Flow-Insensitive Precision of Andersen's Analysis in Practice  |  
+         CUPLV
+         
+      </title>
+      <link href="pl.css" rel="stylesheet" type="text/css"></link>
+      <base xmlns="" href="http://pl.cs.colorado.edu/tmp/">
+   </head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href=".">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner1.jpg" height="50"></img><img src="pics/banner2.jpg" height="50"></img><img src="pics/banner3.jpg" height="50"></img><img src="pics/banner4.jpg" height="50"></img><img src="pics/banner5.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">The Flow-Insensitive Precision of Andersen's Analysis in Practice</div>
+               <div xmlns="" class="subtitle"><a href="http://sas2011.cs.technion.ac.il/">SAS 2011</a></div>
+            </div>
+            <h3 xmlns="">Reference</h3>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2011</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/ptaprecision-sas11.html">summary</a></li>
+                     <li><a href="papers/sas11-ptaprecision.pdf">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">The Flow-Insensitive Precision of Andersen's Analysis in Practice</div>
+                  <div class="hanging">Sam Blackshear, <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a>, <a href="http://www.cs.colorado.edu/~srirams/">Sriram Sankaranarayanan</a>,  and <a href="https://researcher.ibm.com/researcher/view.php?person=us-msridhar">Manu Sridharan</a></div>
+                  <div class="hanging"><a href="http://sas2011.cs.technion.ac.il/">SAS 2011</a>:
+                     International Static Analysis Symposium
+                  </div>
+               </div>
+            </div>
+            <h3 xmlns="">Abstract</h3>
+            <p xmlns="">We present techniques for determining the precision gap
+               	between Andersen's points-to analysis and precise
+               	flow-insensitive points-to analysis in practice.  While
+               	previous work has shown that such a gap may exist, no
+               	efficient algorithm for precise flow-insensitive analysis is
+               	known, making measurement of the gap on real-world programs
+               	difficult.  We give an algorithm for precise flow-insensitive
+               	analysis of programs with finite memory, based on a novel
+               	technique for refining any points-to analysis with a search
+               	for flow-insensitive witnesses.  We give a compact symbolic
+               	encoding of the technique that enables computing the search
+               	using a tuned SAT solver.  We also present extensions of the
+               	algorithm that enable computing lower and upper bounds on the
+               	precision gap in the presence of dynamic memory allocation. In
+               	our experimental evaluation over a suite of small- to
+               	medium-sized C programs, we never observed a precision gap
+               	between Andersen's analysis and the precise analysis. In other
+               	words, Andersen's analysis computed a precise flow-insensitive
+               	result for all of our benchmarks.  Hence, we conclude that
+               	while better algorithms for the precise flow-insensitive
+               	analysis are still of theoretical interest, their practical
+               	impact for C programs is likely to be negligible.
+            </p>
+         </div>
+      </div>
+   </body>
+</html>
