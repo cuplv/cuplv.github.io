@@ -321,9 +321,18 @@
     </person>
     <person id="blackshear" group="phd">
       <name>Sam Blackshear</name>
+      <face>pics/blackshear.jpg</face>
     </person>
-    <person id="coughlin" group="phd">
+    <person id="coughlin">
       <name>Devin Coughlin</name>
+    </person>
+    <person id="turner" group="phd">
+      <name>Jonathan Turner</name>
+      <face>pics/turner.jpg</face>
+    </person>
+    <person id="bennett" group="ms">
+      <name>Huck Bennett</name>
+      <face>pics/bennett.jpg</face>
     </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>

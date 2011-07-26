@@ -56,6 +56,13 @@ width: 200px;
 color: rgb(162,164,163);
 }
 
+#rsidebar h3, #rsidebar h4 {
+margin-bottom: 0.5ex;
+}
+#rsidebar h4 {
+margin-top: 1ex;
+}
+
 #banner a, #rsidebar h1, #rsidebar h2, #rsidebar h3, #rsidebar h4, #rsidebar a {
 color: rgb(207,185,124);
 }
@@ -110,7 +117,7 @@ img.small-face { width: 15px; margin-right: 0.5em; }
 h1 { font-size: 2em; line-height: 1.7em; }
 h2 { font-size: 1.5em; line-height: 1.6em; }
 h3 { font-size: 1.25em; line-height: 1.5em; }
-h4 { font-size: 1em; line-height: 1.3em; margin-top: 3ex; }
+h4 { font-size: 1em; line-height: 1.3em; }
 
 p {
 font-size: 1em;

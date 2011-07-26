@@ -52,6 +52,14 @@ name="html" />
       </xsl:for-each>
 
       <h3>Students</h3>
+      <h4>PhD</h4>
+      <xsl:for-each select="cv/persons/person[@group='phd']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <h4>MS</h4>
+      <xsl:for-each select="cv/persons/person[@group='ms']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
 
       <h3>Focus Areas</h3>
 
