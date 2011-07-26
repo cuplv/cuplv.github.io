@@ -6,6 +6,31 @@
 
 <cv>
   <news-list>
+    <news date="2011.07.11" id="summer-workshop">
+      <news-snippet>
+	Summer workshop July 12.
+      </news-snippet>
+      <news-detail>
+	We will have a workshop with visitors
+	<ref table="person" key="swarat" /> (Rice University, USA),
+	<ref table="person" key="goubault"/> (CEA, France),
+	<ref table="person" key="putot"/> (CEA, France), and
+	<ref table="person" key="cesar" /> (IMDEA, Spain)
+	in ECOT 832 on July 12 10:00am-6:00pm.
+      </news-detail>
+    </news>
+    <news date="2011.07.07" id="goubault-putot-2011">
+      <news-snippet>
+	<ref table="person" key="goubault"/> and
+	<ref table="person" key="putot"/>
+	visit July 11-12.
+      </news-snippet>
+    </news>
+    <news date="2011.07.07" id="chauduri-2011">
+      <news-snippet>
+	<ref table="person" key="swarat" /> visits July 11-15.
+      </news-snippet>
+    </news>
     <news date="2011.07.01" id="sanchez-2011">
       <news-snippet>
 	<ref table="person" key="cesar" /> visits July 5-August 12.
@@ -364,6 +389,18 @@
     <person id="cesar">
       <name>César Sánchez</name>
       <url>http://software.imdea.org/~cesar/</url>
+    </person>
+    <person id="swarat">
+      <name>Swarat Chaudhuri</name>
+      <url>http://www.cse.psu.edu/~swarat/</url>
+    </person>
+    <person id="putot">
+      <name>Sylvie Putot</name>
+      <url>http://www.lix.polytechnique.fr/Labo/Sylvie.Putot/</url>
+    </person>
+    <person id="goubault">
+      <name>Eric Goubault</name>
+      <url>http://www.lix.polytechnique.fr/~goubault/</url>
     </person>
   </persons>
 
