@@ -356,7 +356,7 @@ name="html" />
   <xsl:call-template name="page">
     <xsl:with-param name="this">
       <head>
-	<base href="http://pl.cs.colorado.edu/" />
+	<base href="http://pl.cs.colorado.edu/tmp/" />
       </head>
       <header>
 	<div class="small-title"><xsl:value-of select="title"/></div>
