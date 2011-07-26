@@ -68,7 +68,8 @@ margin-bottom: 1em;
 
 #header .title { font-size: 2em; line-height: 1.5em; font-weight: bold; }
 #header .small-title { font-size: 1.25em; line-height: 1.5em; font-weight: bold; }
-#header .subtitle { font-size: 1.1em; line-height: 1.5em; font-variant: small-caps; margin-left: 2em; }
+#header .subtitle { font-size: 1.1em; line-height: 1.5em; }
+#header span.subtitle { font-variant: small-caps; margin-left: 2em; }
 #header .tagline { text-align: center; padding-top: 1.5ex; padding-bottom: 1.5ex; font-style: italic; }
 
 #news { padding: 0; }
