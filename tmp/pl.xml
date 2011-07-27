@@ -915,6 +915,11 @@
       <url>http://www.cs.colorado.edu/~diwan/</url>
       <face>pics/diwan.jpg</face>
     </person>
+    <person id="grunwald" group="faculty">
+      <name>Dirk Grunwald</name>
+      <url>http://systems.cs.colorado.edu/people/faculty/dirk-grunwald/</url>
+      <face>pics/grunwald.jpg</face>
+    </person>
     <person id="srirams" group="faculty">
       <name>Sriram Sankaranarayanan</name>
       <url>http://www.cs.colorado.edu/~srirams/</url>
