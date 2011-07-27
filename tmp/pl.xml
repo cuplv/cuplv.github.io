@@ -36,6 +36,53 @@
 	<ref table="person" key="cesar" /> visits July 5-August 12.
       </news-snippet>
     </news>
+    <news date="2011.06.02" id="ivancic-2011">
+      <news-snippet>
+	<ref table="person" key="ivancic" /> visits June 4.
+      </news-snippet>
+    </news>
+    <news date="2011.04.25" id="reichenbach-2011">
+      <news-snippet>
+	<ref table="person" key="creichen"/> visits April 25.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="creichen"/> from U of Massachusetts,
+	Amherst and alumnus of this group is visiting us on Monday,
+	April 25, 2011.  He is giving a talk at 10:00am in ECOT 832.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="creichen"/></speaker>
+	<affiliation>University of Massachusetts, Amherst</affiliation>
+	<when>04-25-2011 10:00</when>
+	<where>ECOT 832</where>
+	<title>
+	  What can the Garbage Collector compute efficiently? A
+	  Language for Heap Assertions at Garbage Collection Time
+	</title>
+	<abstract>
+	  <p>Finding bugs is among the most challenging tasks in
+	  software development.  For this reason, modern software
+	  development methodologies encourage programmers to use
+	  assertions throughout their code to express the assumptions
+	  they are making.  At runtime, these assertions then detect
+	  whenever the assumptions do not match the program; in other
+	  words, they detect bugs early.  However, traditional
+	  assertion mechanisms in mainstream languages such as C or
+	  Java are limited in their expressivity.</p>
+	  <p>This talk presents DeAL, a rich heap assertion language
+	  for Java that extends over the expressive power of
+	  traditional assertions.  DeAL introduces additional
+	  primitives to reason over heap layout, allowing programmers
+	  to assert global invariants, ownership, and other properties
+	  that would be impossible to express in traditional
+	  assertions.</p>
+	  <p>By design, all DeAL assertions require only a single heap
+	  traversal and can execute as part of garbage collection.
+	  Consequently, DeAL is not only expressive, but also ensures
+	  a very low execution overhead.</p>
+	</abstract>
+      </talk-announcement>
+    </news>
     <news date="2011.02.22" id="stump-2011">
       <news-snippet>
 	<ref table="person" key="astump"/> visits February 24-25.
@@ -50,6 +97,7 @@
 	<affiliation>University of Iowa</affiliation>
 	<when>02-24-2011 16:30</when>
 	<where>ECOT 832</where>
+	<title>Building Verified Software with Dependent Types</title>
 	<abstract>
 	  <p>Recent years have seen intensive interest among
 	  Programming Language (PL) researchers in connecting PL and
@@ -95,6 +143,548 @@
 	  proof checking.
 	</bio>
       </talk-announcement>
+    </news>
+    <news date="2011.02.06" id="cook-2011">
+      <news-snippet>
+	<ref table="person" key="bycook"/> visits February 8.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bycook"/> from MSR Cambridge and Queen
+	Mary, University of London is visiting us Tuesday, February 8,
+	2011.  He is giving a talk at 3:00pm in ECOT 831.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="cook"/></speaker>
+	<affiliation>MSR Cambridge and Queen Mary, University of London</affiliation>
+	<when>02-08-2011 15:00</when>
+	<where>ECOT 831</where>
+	<title>Proving stabilisation of biological models</title>
+	<abstract>
+	  I will describe an efficient procedure for proving
+	  stabilisation of biological systems when modeled as
+	  qualitative networks or genetic regulatory networks. For
+	  scalability, we use modular proof techniques, where
+	  state-space exploration is applied only locally to small
+	  pieces of the system rather than the entire system as a
+	  whole. Our procedure exploits the observation that, in
+	  practice, the form of modular proofs can be restricted to a
+	  very limited set.  Using our new procedure, we have solved a
+	  number of challenging published examples, including: a 3-D
+	  model of the mammalian epidermis; a model of metabolic
+	  networks operating in type-2 diabetes; a model of fate
+	  determination of vulval precursor cells in the C. elegans
+	  worm; and a model of pair-rule regulation during
+	  segmentation in the Drosophila embryo. Our results show many
+	  orders of magnitude speedup in cases where previous
+	  stabilization proving techniques were known to succeed, and
+	  new results in cases where tools had previously failed.
+	</abstract>
+	<bio>
+	  Dr. Byron Cook is a principal researcher at Microsoft
+	  Research Cambridge, as well as Professor of Computer Science
+	  at Queen Mary, University of London.  Byron is one of the
+	  developers behind the Terminator program termination prover,
+	  as well as the SLAM symbolic software model checker which
+	  forms the basis of the Windows Static Driver Verifier tool.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.08.01" id="wang-2010">
+      <news-snippet>
+	<ref table="person" key="chaowang" /> visits August 26-27.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="chaowang" /> from NEC Laboratories
+	and CU alumnus is visiting us August 26-27.  He is giving a
+	talk in the CS Colloquium on Thursday, August 26 3:30pm-4:30pm
+	in ECCR 150.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="chaowang"/></speaker>
+	<affiliation>NEC Laboratories</affiliation>
+	<when>08-26-2010 15:30</when>
+	<where>ECCR 150</where>
+	<title>Symbolic Predictive Analysis for Concurrent Programs</title>
+	<abstract>
+	  <p>Multi-core and multi-processor systems are becoming
+	  increasingly popular. However, our ability to effectively
+	  harness the power of parallelism is predicated upon advances
+	  in tools and algorithms for verifying concurrent
+	  programs. Concurrent programs are notoriously difficult to
+	  verify, and a key reason for this is the behavioral
+	  complexity resulting from the large number of interleavings
+	  of concurrent threads.</p>
+	  <p>In this talk, I will introduce a symbolic predictive
+	  analysis for runtime detection of concurrency errors, by
+	  monitoring and subsequently analyzing the execution traces
+	  of a program. In this analysis, we first derive a symbolic
+	  predictive model using the trace information collected at
+	  run time as well as the program source code. What this model
+	  captures are not just the given traces, but all possible
+	  interleavings of events of these traces. Then we use
+	  symbolic reasoning to check whether there are concurrency
+	  errors in any of these interleavings. This is done by
+	  capturing these interleavings and the error conditions using
+	  a set of first-order logic formulas, and then deciding the
+	  formulas using an off-the-shelf Satisfiability Modulo Theory
+	  (SMT) solver.</p>
+	</abstract>
+	<bio>
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.07.27" id="rival-2010">
+      <news-snippet>
+	<ref table="person" key="rival" /> visits August 19-25.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="rival"/> from INRIA Roquencourt and
+	ENS Paris is visiting us August 19-25.  He is giving a talk on
+	the Astrée Static Analyzer on Tuesday, August 24 at 11:00am in
+	ECOT 831, and he is also giving a more in-depth demonstration
+	of Astrée on Wednesday, August 25 4:00pm-5:00pm in ECST 1B21.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="rival"/></speaker>
+	<affiliation>INRIA Roquencourt and ENS Paris</affiliation>
+	<when>08-24-2010 11:00</when>
+	<where>ECOT 831</where>
+	<title>The Astrée Analyzer: Proving the absence of New methods for proving temporal properties of infinite-state systems</title>
+	<abstract>
+	  <p>Runtime errors in embedded softwares may have disastrous
+	  consequences, e.g. in transportation or energy production
+	  systems.</p>
+	  <p>The Astrée analyzer aims at proving the absence of
+	  runtime errors in C programs and was designed specifically
+	  for synchronous applications as found in fly-by-wire
+	  systems. The analysis process is conservative, that is, it
+	  may fail to establish the correctness of some safe programs,
+	  but it is sound, that is it will report any runtime error.</p>
+	  <p>Astrée performs Abstract Interpretation based static
+	  analysis, that is abstract execution, using families of
+	  predicates formed by abstract domains. Astrée relies on a
+	  library of numerical and symbolic abstract domains, which
+	  allow to capture salient properties of embedded softwares,
+	  so as to establish absence of runtime errors. The analysis
+	  process is fully automatic, and involves automatic
+	  parameterization of the abstract domains.</p>
+	  <p>We will present the underlying concepts of Astrée, and
+	  examplify the use of the analyzer on a few selected
+	  examples.</p>
+	  <p>The Astrée analyzer has allowed to prove the absence of
+	  runtime errors in industrial size avionics programs. As of
+	  today, Absint Angewandte Informatik provides commercial
+	  diffusion and support of Astrée.</p>
+	</abstract>
+      </talk-announcement>
+    </news>
+    <news date="2010.07.27" id="ivancic-2010">
+      <news-snippet>
+	<ref table="person" key="ivancic" /> visits August 2.
+      </news-snippet>
+    </news>
+    <news date="2010.07.26" id="cook-2010">
+      <news-snippet>
+	<ref table="person" key="bycook"/> visits July 29.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bycook"/> from MSR Cambridge and
+	Queen Mary, University of London is visiting us Thursday, July
+	29, 2010.  He is giving a talk in the CS Colloquium at 11:00am
+	in ECOT 831.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="bycook"/></speaker>
+	<affiliation>MSR Cambridge and Queen Mary, University of London</affiliation>
+	<when>07-29-2010 11:00</when>
+	<where>ECOT 831</where>
+	<title>New methods for proving temporal properties of infinite-state systems</title>
+	<abstract>
+	  I will describe some new methods of proving temporal
+	  properties of infinite-state programs.  Our approach takes
+	  advantage of the fact that linear-temporal properties can
+	  often be proved more efficiently using proof techniques
+	  usually associated with the branching-time logic CTL.  The
+	  caveat is that, in certain instances, nondeterminism in the
+	  system's transition relation can cause CTL methods to report
+	  counterexamples that are spurious in LTL. To address this
+	  problem we describe an algorithm that, as it attempts to
+	  apply CTL proof methods, finds and then removes problematic
+	  nondeterminism via an analysis on the spurious
+	  counterexamples. We must also develop CTL symbolic model
+	  checking tools for infinite-state systems.
+	</abstract>
+	<bio>
+	  Dr. Byron Cook is a Principal Researcher at Microsoft
+	  Research in Cambridge, UK as well as Professor of Computer
+	  Science at Queen Mary, University of London.  He is one of
+	  the developers of the Terminator program termination proving
+	  tool, as well as the SLAM software model checker.  Before
+	  joining Microsoft Research he was a developer in the WIndows
+	  OS kernel group.  See research.microsoft.com/~bycook/ for
+	  more information.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.07.05" id="suryanarayanan-2010">
+      <news-snippet>
+	<ref table="person" key="ssuryana" /> visits July 19.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="ssuryana"/> from Colorado School of Mines
+	is visiting us on Monday, July 19, 2010.  He is giving a talk in
+	the CS Colloquium at 3:00pm in DLC 1B70.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="ssuryana"/></speaker>
+	<affiliation>Colorado School of Mines</affiliation>
+	<when>07-19-2010 15:00</when>
+	<where>DLC 1B70</where>
+	<title>Realizing the Smart Grid through smart interfaces, microgrids, and active distribution networks</title>
+	<abstract>
+	  <p>The electricity infrastructure in the US is poised to
+	  undergo unprecedented modernization aided by the "Smart Grid
+	  Initiative" for achieving high levels of reliability,
+	  efficiency, and interconnection of "green" resources. While
+	  the advantages of achieving the Smart Grid Initiative appear
+	  bountiful, there are concomitant challenges to realizing
+	  this transformation. This talk will describe the present
+	  state and future trends of the electricity infrastructure,
+	  and the need for Smart Grid legislation. The crux of the
+	  seminar will focus on how to realize the Smart Grid
+	  Initiative's full impact by innovative research and
+	  development on:</p>
+	  <ul>
+	    <li>Smart interfaces between renewable sources and the
+	    electricity grid,</li>
+	    <li>Energy efficient electric power microgrids, and</li>
+	    <li> Transformation from a passive to active electric
+	    distribution network.</li>
+	  </ul>
+	</abstract>
+	<bio>
+	  Sid Suryanarayanan is from Chennai, India. He received the
+	  Ph.D. in electrical engineering from Arizona State
+	  University (ASU) in May 2004. Since January 2008 he has held
+	  an Assistant Professor position in the Division of
+	  Engineering at Colorado School of Mines (CSM) in Golden,
+	  CO. From fall 2010, he will begin an Assistant Professorship
+	  in the Dept. of Electrical and Computer Engineering (ECE) at
+	  Colorado State University. Prior to that he held research
+	  appointments in the faculties of Florida State University
+	  and ASU. Sid currently performs sponsored research in the
+	  areas of electric power microgrids and the impact of the
+	  Smart Grid Initiative on electric power systems.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.03.15" id="pierce-2010">
+      <news-snippet>
+	<ref table="person" key="bcpierce"/> visits April 29.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bcpierce"/> from UPenn
+	is visiting Thursday, April 29, 2010.  He is giving
+	a talk in the CS Colloquium at 3:30pm in ECCR 265.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="bcpierce"/></speaker>
+	<affiliation>University of Pennsylvania</affiliation>
+	<when>04-29-2010 15:30</when>
+	<where>ECCR 265</where>
+	<title>How to Build Your Own Bidirectional Programming Language</title>
+	<abstract>
+	  <p>Most programs get used in just one direction, from input
+	  to output. But sometimes, having computed an output, we need
+	  to be able to update this output and then "calculate
+	  backwards" to find a correspondingly updated input. The
+	  problem of writing such bidirectional transformations --
+	  often called lenses -- arises in applications across a
+	  multitude of domains and has been attacked from many
+	  perspectives. Potential applications include synchronization
+	  of replicated data, system configuration management tools
+	  (such as RedHat's Augeas system), bidirectional
+	  transformations between software models, and updatable
+	  "security views."</p>
+	  <p>The Harmony project at the University of Pennsylvania is
+	  exploring a linguistic approach to bidirectional
+	  programming, designing domain-specific languages in which
+	  every expression simultaneously describes both parts of a
+	  lens. When read from left to right, an expression denotes an
+	  ordinary function that maps inputs to outputs. When read
+	  from right to left, it denotes an "update translator" that
+	  takes an input together with an updated output and produces
+	  a new input that reflects the update. These languages share
+	  some common elements with modern functional languages -- in
+	  particular, they come with very expressive type systems. In
+	  other respects, they are rather novel and surprising.</p>
+	  <p>We have designed, implemented, and applied bi-directional
+	  languages in three quite different domains: a language for
+	  bidirectional transformations on trees (such as XML
+	  documents), based on a collection of primitive bidirectional
+	  tree transformation operations and
+	  "bidirectionality-preserving" combining forms; a language
+	  for bidirectional views of relational data, using
+	  bidirectionalized versions of the operators of relational
+	  algebra as primitives; and, most recently, a language for
+	  bidirectional string transformations, with primitives based
+	  on standard notations for finite-state transduction and a
+	  type system based on regular expressions. The string case is
+	  especially interesting, both in its own right and because it
+	  exposes a number of foundational issues common to all
+	  bidirectional programming languages in a simple and familiar
+	  setting. We are also exploring how lenses and their types
+	  can be enriched to embody privacy and integrity policies.</p>
+	  <p>This talk explores the design of bidirectional languages,
+	  starting from the very simplest imaginable variant
+	  (bijective languages) and then developing several
+	  refinements.</p>
+	</abstract>
+	<bio>
+	  Benjamin Pierce joined the CIS Department at Penn in
+	  1998. Previously, he was on the faculty at Indiana
+	  University and held research fellowships at Cambridge
+	  University, the University of Edinburgh, and
+	  INRIA-Roquencourt. He received his PhD in Computer Science
+	  at Carnegie Mellon University in 1991. His research centers
+	  on programming languages, static type systems, concurrent
+	  and distributed programming, and synchronization
+	  technologies. His books include the widely used graduate
+	  text Types and Programming Languages. He is also the lead
+	  designer of the popular Unison file synchronizer.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.03.12" id="burtscher-2010">
+      <news-snippet>
+	<ref table="person" key="burtscher"/> visits March 18.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="burtscher"/> from UT Austin and CU
+	alumnus is visiting Thursday, March 18, 2010.  He is giving
+	a talk in the CS Colloquium at 3:30pm in ECCR 265.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="burtscher"/></speaker>
+	<affiliation>The University of Texax at Austin</affiliation>
+	<when>03-18-2010 15:30</when>
+	<where>ECCR 265</where>
+	<title>Towards a Science of Parallel Programming</title>
+	<abstract>
+	  <p>When parallel programming started in the 70s and 80s, it
+	  was mostly art: languages such as functional and logic
+	  programming languages were designed and appreciated mainly
+	  for their elegance and beauty. More recently, parallel
+	  programming has become engineering: conventional languages
+	  like FORTRAN and C++ have been extended with constructs such
+	  as OpenMP, and we now spend our time benchmarking and
+	  tweaking large programs nobody understands to obtain
+	  performance improvements of 5-10%. In spite of all this
+	  activity, we have few insights into how to write parallel
+	  programs to exploit the performance potential of multicore
+	  processors.</p>
+	  <p>To break this impasse, we need a science of parallel
+	  programming. In this talk, I will introduce a concept called
+	  "amorphous data-parallelism" that provides a simple, unified
+	  picture of parallelism in a host of diverse applications
+	  ranging from mesh generation/refinement/partitioning to SAT
+	  solvers, maxflow algorithms, stencil computations, and
+	  event-driven simulation. Then I will present a natural
+	  classification that provides insight into the structure of
+	  parallelism and locality in these algorithms and into
+	  appropriate language and systems support for exploiting this
+	  parallelism.</p>
+	</abstract>
+	<bio>
+	  Martin Burtscher received the combined BS/MS degree in
+	  computer science from the Swiss Federal Institute of
+	  Technology (ETH) Zurich in 1996 and the PhD degree in
+	  computer science from the University of Colorado Boulder in
+	  2000. Since then, he has been an assistant professor in the
+	  School of Electrical and Computer Engineering at Cornell
+	  University and a Research Scientist in the Institute for
+	  Computational Engineering and Sciences at the University of
+	  Texas at Austin. His current research focuses on automatic
+	  parallelization of irregular programs for multicore and GPU
+	  architectures as well as on automatic performance assessment
+	  and optimization of HPC applications. He is an associate
+	  editor of the Journal of Instruction-Level Parallelism and a
+	  senior member of the IEEE, its Computer Society, and the
+	  ACM.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.02.22" id="chen-2010">
+      <news-snippet>
+	<ref table="person" key="bradchen"/> visits February 25.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bradchen"/> from Google is visiting
+	us Thursday, February 25, 2010.  He is giving a talk in the CS
+	Colloquium at 3:30pm in ECCR 265.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="bradchen"/></speaker>
+	<affiliation>Google</affiliation>
+	<when>02-25-2010 15:30</when>
+	<where>ECCR 265</where>
+	<title>The Desktop: Frontiers in Systems Research</title>
+	<host person="diwan"/>
+	<abstract>
+	  Desktop software, in the form of web browsers, browser
+	  features, and OS distributions, are a growing area of
+	  engineering activity at Google. This talk will give an
+	  overview of this work, looking in detail at Native Client as
+	  an example project in the space. Native Client is an
+	  open-source research technology for running x86 native code
+	  in web applications, with the goal of maintaining the
+	  browser neutrality, OS portability, and safety that people
+	  expect from web apps. It supports performance-oriented
+	  features generally absent from web application programming
+	  environments, such as thread support, instruction set
+	  extensions such as SSE, and use of compiler intrinsics and
+	  hand-coded assembler. We combine these properties in an open
+	  architecture designed to leverage existing web standards,
+	  and to encourage community review and third-party
+	  tools. Overall, Google's desktop efforts seek to enable new
+	  Web applications, improve end-user experience, and enable a
+	  more flexible balance between client and server
+	  computing. Google has open sourced many of our desktop
+	  efforts, in part to encourage collaboration and independent
+	  innovation.
+	</abstract>
+	<bio>
+	  J. Bradley Chen manages the Native Client project at Google,
+	  where he has also worked on cluster performance analysis
+	  projects. Prior to joining Google, he was Director of the
+	  Performance Tools Lab in Intel's Software Products
+	  Division. Chen served on the faculty of Harvard University
+	  from 1994-1998, conducting research in operating systems,
+	  computer architecture and distributed system, and teaching a
+	  variety of related graduate and undergraduate courses. He
+	  has published widely on the subjects of systems performance
+	  and computer architecture. Dr. Chen has bachelors and
+	  masters degrees from Stanford University and a PhD from
+	  Carnegie Mellon University.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.01.13" id="strout-2010">
+      <news-snippet>
+	<ref table="person" key="mstrout"/> visits January 28.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="mstrout"/> from Colorado State is
+	visiting us Thursday, January 28, 2010.  She is giving a talk
+	in the CS Colloquium at 3:30pm in ECCR 265.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="mstrout"/></speaker>
+	<affiliation>Colorado State University</affiliation>
+	<when>01-28-2010 15:30</when>
+	<where>ECCR 265</where>
+	<title>Introducing the Sparse Polyhedral Framework</title>
+	<abstract>
+	  <p>Loops often dominate the execution time of
+	  applications. Various transformation frameworks have been
+	  developed to enable the automatic compile-time
+	  transformation of loops. Many of the existing models fit
+	  within the polyhedral framework and although they are quite
+	  powerful, they are restricted to compile-time
+	  transformations and loop bounds and memory accesses that are
+	  affine or can be approximated as affine.</p>
+	  <p>In this talk, I will present the Sparse Polyhedral
+	  Framework (SPF). The SPF builds on the polyhedral
+	  programming model, but is also capable of expressing and
+	  supporting the code generation for run-time reordering
+	  transformations implemented with inspector/executor
+	  strategies. I will then discuss the idea of abstractions for
+	  exposing transformation frameworks in performance programmer
+	  models.</p>
+	</abstract>
+	<bio>
+	  Michelle Mills Strout is an assistant professor of computer
+	  science at Colorado State University. She obtained her PhD
+	  in Computer Science from the University of California, San
+	  Diego in June 2003. In 2008, Michelle received a CAREER
+	  Award from the National Science Foundation for her research
+	  in parallelization techniques for irregular applications,
+	  such as molecular dynamics simulations. Her main research
+	  area is high performance computing and her research
+	  interests include compilers and run-time systems, scientific
+	  computing, and software engineering.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2010.01.06" id="bodik-2010">
+      <news-snippet>
+	<ref table="person" key="bodik"/> visits January 11.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bodik"/> from UC Berkeley is visiting
+	us Tuesday, January 11, 2011.  He is giving a talk at 3:00pm
+	in DLC 1B70.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="bodik"/></speaker>
+	<affiliation>University of California Berkeley</affiliation>
+	<when>01-11-2010 15:00</when>
+	<where>DLC 1B70</where>
+	<title>Algorithmic Program Synthesis with Partial Programs</title>
+	<abstract>
+	  <p>Why hasn't Moore's Law revolutionize programming?  In
+	  model checking, cycles fuel bug discovery, improving code
+	  quality, but programmers still write programs with their
+	  bare hands.  In fact, their work has not changed much since
+	  the CRT terminal, except that they think in better
+	  languages.</p>
+	  <p>Program synthesis might be a way to reduce
+	  the programmer's cognitive load.  Synthesizers have derived
+	  programs that were highly efficient, and sometimes even
+	  surprising.  Of course, they had to be first "programmed"
+	  with the human insights about the domain at hand.</p>
+	  <p>Which brings us to a key problem in program synthesis ---
+	  how to communicate human expertise to the synthesizer.  In
+	  deductive synthesis, this expertise is captured in a domain
+	  theory.  Often elusive even to formally trained experts, a
+	  domain theory is probably not a shortcut to programmer
+	  productivity.</p> <p>This talk will describe a growing
+	  family of synthesizers based on partial programs.  Their
+	  premise is that programs can be decomposed into insight and
+	  mechanics: if the programmer encodes her insight as a
+	  partial program, the mechanics can then be synthesized given
+	  a specification.  Partial programs lend themselves to
+	  algorithmic synthesis: rather than deducing a program with a
+	  theorem prover, algorithmic synthesis finds the program in a
+	  space of candidate implementations described by the partial
+	  program.</p>
+	  <p>Among five synthesizers, I will describe an algorithm for
+	  finding a candidate by constraint solving, rather than via
+	  generate-and-test, and a system for programming with angelic
+	  non-determinism which computes the insight into a
+	  programming problem.</p>
+	</abstract>
+	<bio>
+	  Ras Bodik is an Associate Professor of Computer Science at
+	  UC Berkeley.  He is interested in programming systems, from
+	  static and dynamic analysis to programmer tools.  He leads a
+	  project of program synthesis for high-performance programs
+	  based on the idea of program sketches.  He also leads a
+	  project on parallel web browsers for mobile devices, which
+	  develops parallel parsing and page layout algorithms, as
+	  well as a constraints-based scripting language.
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2009.06.05" id="birkedal-2009">
+      <news-snippet>
+	<ref table="person" key="birkedal" /> visits July 3.
+      </news-snippet>
+    </news>
+    <news date="2009.03.04" id="pfenning-2009">
+      <news-snippet>
+	<ref table="person" key="fp" /> visits March 6.
+      </news-snippet>
     </news>
   </news-list>
 
@@ -363,6 +953,10 @@
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
     </person>
+    <person id="creichen">
+      <name>Christoph Reichenbach</name>
+      <url>http://www.cs.umass.edu/~creichen/</url>
+    </person>
     <person id="khooyp">
       <name>Khoo Yit Phang</name>
       <url>http://www.cs.umd.edu/~khooyp/</url>
@@ -401,6 +995,46 @@
     <person id="goubault">
       <name>Eric Goubault</name>
       <url>http://www.lix.polytechnique.fr/~goubault/</url>
+    </person>
+    <person id="bycook">
+      <name>Byron Cook</name>
+      <url>http://research.microsoft.com/en-us/people/bycook/</url>
+    </person>
+    <person id="chaowang">
+      <name>Chao Wang</name>
+      <url>http://www.nec-labs.com/~chaowang/</url>
+    </person>
+    <person id="ivancic">
+      <name>Franjo Ivančić</name>
+      <url>http://www.nec-labs.com/~ivancic/</url>
+    </person>
+    <person id="burtscher">
+      <name>Martin Burtscher</name>
+      <url>http://www.cs.txstate.edu/~mb92/</url>
+    </person>
+    <person id="bradchen">
+      <name>Brad Chen</name>
+      <url>http://research.google.com/pubs/author37895.html</url>
+    </person>
+    <person id="bodik">
+      <name>Rastislav Bodik</name>
+      <url>http://www.cs.berkeley.edu/~bodik/</url>
+    </person>
+    <person id="bcpierce">
+      <name>Benjamin C. Pierce</name>
+      <url>http://www.cis.upenn.edu/~bcpierce/</url>
+    </person>
+    <person id="birkedal">
+      <name>Lars Birkedal</name>
+      <url>http://www.itu.dk/~birkedal/</url>
+    </person>
+    <person id="mstrout">
+      <name>Michelle Mills Strout</name>
+      <url>http://www.cs.colostate.edu/~mstrout/</url>
+    </person>
+    <person id="ssuryana">
+      <name>Siddharth Suryanarayanan</name>
+      <url>http://www.engr.colostate.edu/~ssuryana/</url>
     </person>
   </persons>
 
