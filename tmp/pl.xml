@@ -154,7 +154,7 @@
 	2011.  He is giving a talk at 3:00pm in ECOT 831.
       </news-detail>
       <talk-announcement>
-	<speaker><ref table="person" key="cook"/></speaker>
+	<speaker><ref table="person" key="bycook"/></speaker>
 	<affiliation>MSR Cambridge and Queen Mary, University of London</affiliation>
 	<when>02-08-2011 15:00</when>
 	<where>ECOT 831</where>
@@ -249,7 +249,8 @@
 	<affiliation>INRIA Roquencourt and ENS Paris</affiliation>
 	<when>08-24-2010 11:00</when>
 	<where>ECOT 831</where>
-	<title>The Astrée Analyzer: Proving the absence of New methods for proving temporal properties of infinite-state systems</title>
+	<title>The Astrée Analyzer: Proving the absence of runtime
+	errors automatically</title>
 	<abstract>
 	  <p>Runtime errors in embedded softwares may have disastrous
 	  consequences, e.g. in transportation or energy production
@@ -887,9 +888,7 @@
       </abstract>
     </pub>
     <pub id="gradprog-pldifit09">
-      <title>
-	Gradual Programming: Bridging the Semantic Gap (Position Paper)
-      </title>
+      <title>Gradual Programming: Bridging the Semantic Gap (Position Paper)</title>
       <authors>
 	<author person="bec" />
 	<author person="diwan" />

@@ -8,6 +8,8 @@
 <xsl:stylesheet version="2.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+<xsl:import href="pl.bib.xsl" />
+
 <xsl:output method="text" />
 <xsl:output method="html"
 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
@@ -131,15 +133,15 @@ name="html" />
      </xsl:if>
      CUPLV
    </title>
+   <xsl:copy-of select="$this/head/node()" />
    <link href="pl.css" rel="stylesheet" type="text/css" />
-   <xsl:copy-of select="$this/head/*" />
  </head>
  	
  <body>
  <div id="container">
  
  <div id="rsidebar">
-  <xsl:copy-of select="$this/rsidebar/*" />
+  <xsl:copy-of select="$this/rsidebar/node()" />
  </div>
 
  <div id="banner">
@@ -157,7 +159,7 @@ name="html" />
   <div id="header">
     <xsl:choose>
       <xsl:when test="$this/header">
-	<xsl:copy-of select="$this/header/*" />
+	<xsl:copy-of select="$this/header/node()" />
       </xsl:when>
       <xsl:when test="$this/title">
 	<div class="title"><xsl:value-of select="$this/title" /></div>
@@ -165,7 +167,7 @@ name="html" />
     </xsl:choose>
   </div>
 
-  <xsl:copy-of select="$this/content/*" />
+  <xsl:copy-of select="$this/content/node()" />
  </div>
  
  </div>
@@ -199,7 +201,7 @@ name="html" />
       <ul class="hlinks">
 	<li>
 	  <xsl:apply-templates select="." mode="ref">
-	    <xsl:with-param name="text">summary</xsl:with-param>
+	    <xsl:with-param name="text">detail</xsl:with-param>
 	  </xsl:apply-templates>
 	</li>
 	<xsl:apply-templates select="urls" />
@@ -220,10 +222,6 @@ name="html" />
     </div>
   </div>
 </xsl:template>
-<xsl:template match="line|note">
-  <xsl:apply-templates select="child::*|child::text()" />
-</xsl:template>
-
 
 <!-- Elements -->
 
@@ -246,11 +244,9 @@ name="html" />
   <p>
     <xsl:apply-templates select="news-snippet" mode="get-detail" />
   </p>
+  <xsl:apply-templates select="(news-snippet|news-detail)[last()]/following-sibling::*" />
 </xsl:template>
 
-<xsl:template match="news-snippet">
-  <xsl:apply-templates select="child::*|child::text()" />
-</xsl:template>
 <xsl:template match="news-snippet" mode="as-item">
   <xsl:variable name="id">
     <xsl:value-of select="parent::news/@id" />
@@ -276,8 +272,30 @@ name="html" />
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
-<xsl:template match="news-detail">
-  <xsl:apply-templates select="child::*|child::text()" />
+
+<xsl:template match="talk-announcement">
+  <h3>PLV Seminar</h3>
+  <div class="item">
+    <div class="item-icon">
+    </div>
+    <div class="item-block">
+      <xsl:call-template name="div-list">
+	<xsl:with-param name="items" select="speaker|affiliation" />
+      </xsl:call-template>
+      <br/>
+      <xsl:call-template name="div-list">
+	<xsl:with-param name="items" select="when|where" />
+      </xsl:call-template>
+      <h4><em><xsl:apply-templates select="title" /></em></h4>
+      <xsl:call-template name="div-list">
+	<xsl:with-param name="items" select="abstract|bio" />
+      </xsl:call-template>
+    </div>
+  </div>
+</xsl:template>
+<xsl:template match="bio">
+  <h4>Biography</h4>
+  <xsl:apply-templates />
 </xsl:template>
 
 <xsl:template match="projects">
@@ -364,6 +382,16 @@ name="html" />
   <xsl:call-template name="page">
     <xsl:with-param name="this">
       <head>
+	<script type="text/javascript" src="js/sh_main.min.js" />
+	<script type="text/javascript" src="js/sh_bib.js" />
+	<link href="js/sh_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script>
 	<base href="http://pl.cs.colorado.edu/tmp/" />
       </head>
       <header>
@@ -375,18 +403,29 @@ name="html" />
 	<div class="small-title"><xsl:value-of select="title"/></div>
       </title>
       <content>
-	<h3>Reference</h3>
+	<h4>Reference</h4>
 	<xsl:apply-templates select="." />
-	<xsl:if test="abstract">
-	  <h3>Abstract</h3>
-	  <xsl:apply-templates select="abstract" />
-	</xsl:if>
+	<xsl:apply-templates select="abstract" />
+	<xsl:apply-templates select="." mode="bib-section" />
       </content>
     </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
 
+<xsl:template match="pub" mode="bib-section">
+  <xsl:variable name="bibtexhtml">
+    <xsl:apply-templates select="." mode="bib" />
+  </xsl:variable>
+  <xsl:if test="$bibtexhtml != ''">
+    <h3>BibTeX</h3>
+    <pre class="sh_bib">
+      <xsl:value-of select="$bibtexhtml"/>
+    </pre>
+  </xsl:if>
+</xsl:template>
+
 <xsl:template match="abstract">
+  <h4>Abstract</h4>
   <xsl:apply-templates/>
 </xsl:template>
 
@@ -404,10 +443,10 @@ name="html" />
 </xsl:template>
 
 <xsl:template match="howpub">
-  <xsl:apply-templates select="child::*" />
+  <xsl:apply-templates select="node()" />
 </xsl:template>
 <xsl:template match="howpub" mode="abbrev">
-  <xsl:apply-templates select="child::*" mode="abbrev" />
+  <xsl:apply-templates select="node()" mode="abbrev" />
 </xsl:template>
 <xsl:template match="proceedings">
   <xsl:apply-templates select="key('event', @event)" />
@@ -424,7 +463,7 @@ name="html" />
     <xsl:when test="@event">
       <xsl:apply-templates select="key('event', @event)" />
     </xsl:when>
-    <xsl:otherwise><xsl:copy-of select="child::*|child::text()" /></xsl:otherwise>
+    <xsl:otherwise><xsl:copy-of select="node()" /></xsl:otherwise>
   </xsl:choose>
 </xsl:template>
 
@@ -487,8 +526,10 @@ name="html" />
 </xsl:template>
 
 <xsl:template match="series">
-  <xsl:value-of select="longPrefix" />
-  &space;
+  <xsl:if test="longPrefix">
+    <xsl:value-of select="longPrefix" />
+    &space;
+  </xsl:if>
   <xsl:value-of select="name" />
 </xsl:template>
 <xsl:template match="series" mode="abbrev">
@@ -645,8 +686,14 @@ name="html" />
 </xsl:template>
 <xsl:template name="div-list">
   <xsl:param name="items" select="child::*" />
+  <xsl:param name="class" />
   <xsl:for-each select="$items">
-    <div><xsl:apply-templates select="." /></div>
+    <div>
+      <xsl:if test="$class">
+	<xsl:attribute name="class">{$class}</xsl:attribute>
+      </xsl:if>
+      <xsl:apply-templates select="." />
+    </div>
   </xsl:for-each>
 </xsl:template>
 

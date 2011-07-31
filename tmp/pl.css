@@ -137,6 +137,7 @@ font-variant: small-caps;
 .clearer { clear: both; }
 .rspace { margin-right: 1em; }
 .hanging { padding-left: 0.75em; text-indent: -0.75em; }
+.centered { text-align: center; }
 
 .rounded {
 -moz-border-radius: 5px;
