@@ -27,8 +27,8 @@ name="html" />
     <href>index.html</href>
     <url>.</url>
     <head>
-      <script src="jquery-1.5.1.min.js" type="text/javascript"></script>
-      <script src="news.js" type="text/javascript"></script>
+      <script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
+      <script src="js/news.js" type="text/javascript"></script>
     </head>
     <header>
       <div>
@@ -79,6 +79,25 @@ name="html" />
     <url>news.html</url>
     <content>
       <xsl:apply-templates select="cv/news-list" />
+    </content>
+  </page>
+  <page>
+    <name>People</name>
+    <title>People</title>
+    <url>people.html</url>
+    <content>
+      <h2>Faculty</h2>
+      <xsl:apply-templates select="cv/persons/person[@group='faculty']" mode="detail" />
+      <div class="clearer" />
+
+      <h2>Students</h2>
+      <h3>PhD</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='phd']" mode="detail" />
+      <div class="clearer" />
+
+      <h3>MS</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='ms']" mode="detail" />
+      <div class="clearer" />
     </content>
   </page>
   <page>
@@ -470,6 +489,9 @@ name="html" />
 <xsl:template match="person">
   <xsl:call-template name="withurl" />
 </xsl:template>
+<xsl:template match="person" mode="ref">
+  <xsl:apply-templates select="." />
+</xsl:template>
 <xsl:template match="person" mode="with-small-face">
   <xsl:if test="face">
     <xsl:variable name="imgsrc" select="face"/>
@@ -477,8 +499,20 @@ name="html" />
   </xsl:if>
   <xsl:call-template name="withurl" />
 </xsl:template>
-<xsl:template match="person" mode="ref">
-  <xsl:apply-templates select="." />
+<xsl:template match="person" mode="detail">
+  <div class="person">
+    <xsl:call-template name="withurl">
+      <xsl:with-param name="text">
+	<div>
+	  <xsl:if test="face">
+	    <xsl:variable name="imgsrc" select="face"/>
+	    <img class="face" src="{$imgsrc}"/>
+	  </xsl:if>
+	</div>
+	<div><xsl:value-of select="name"/></div>
+      </xsl:with-param>
+    </xsl:call-template>
+  </div>
 </xsl:template>
 
 <xsl:template match="event" mode="header">
