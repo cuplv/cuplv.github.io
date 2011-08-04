@@ -1071,8 +1071,13 @@ an application example.</p>
       <name>Sam Blackshear</name>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="coughlin">
+    <person id="chakarov" group="phd">
+     <name> Aleksandar Chakarov </name>
+     <face> pics/generic-male.gif </face>
+    </person>
+    <person id="coughlin" group="phd">
       <name>Devin Coughlin</name>
+      <face> pics/generic-male.gif </face>
     </person>
     <person id="cox" group="phd">
       <name>Arlen Cox</name>
@@ -1081,6 +1086,10 @@ an application example.</p>
     <person id="turner" group="phd">
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
+    </person>
+    <person id="adityaz" group="phd">
+    <name> Aditya Zutshi </name>
+    <face> pics/zutshi.jpg </face>
     </person>
     <person id="bennett" group="ms">
       <name>Huck Bennett</name>
