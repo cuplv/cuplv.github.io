@@ -945,6 +945,10 @@
     <person id="coughlin">
       <name>Devin Coughlin</name>
     </person>
+    <person id="cox" group="phd">
+      <name>Arlen Cox</name>
+      <face>pics/cox.jpg</face>
+    </person>
     <person id="turner" group="phd">
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
