@@ -1,6 +1,6 @@
 HTML_OUTPUT = index.html news.html papers.html
 OUTPUT = $(HTML_OUTPUT)
-
+SAXON = saxon
 INCLUDE = pl.keys.xsl
 DATA = pl.xml
 
@@ -12,10 +12,10 @@ clean:
 html: $(HTML_OUTPUT)
 $(HTML_OUTPUT): pl.html.log
 %.log: %.xsl $(DATA)
-	saxon -o $@ -s $(DATA) $<
+	$(SAXON) -o $@ -s $(DATA) $<
 
 %.bib: %.bib.xsl $(DATA)
-	saxon -o $@ -s $(DATA) $<
+	$(SAXON) -o $@  -s $(DATA) $<
 
 commit: html
 	svn add *.html

@@ -693,6 +693,7 @@
   </projects>
 
   <publications>
+    
     <pub id="ptaprecision-sas11">
       <title>The Flow-Insensitive Precision of Andersen's Analysis in Practice</title>
       <authors>
@@ -731,6 +732,134 @@
 	analysis are still of theoretical interest, their practical
 	impact for C programs is likely to be negligible.</p>
       </abstract>
+    </pub>
+    <pub id="relationalization-cav11">
+      <title> Relational Abstractions for Continuous and Hybrid Systems </title>
+      <authors>
+      <author person="srirams">
+      <author person="atiwari">
+      </authors>
+      <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/cav11-relational.pdf </url>
+      </urls>
+      <howpub> <proceedings event="cav11" /> </howpub>
+      <abstract> 
+  <p> In this paper, we define relational abstractions of hybrid systems.
+  A relational abstraction is obtained by replacing the continuous
+  dynamics in each mode by a binary transition relation that relates a
+  state of the system to any state that can potentially be reached at
+  some future time instant using the continuous dynamics.  We
+  construct relational abstractions by reusing template-based
+  invariant generation techniques for continuous systems described by
+  Ordinary Differential Equations (ODE).  As a result, we abstract a
+  given hybrid system as a purely discrete, infinite-state system.  We
+  apply k-induction to this abstraction to prove safety properties,
+  and use bounded model-checking to find potential falsifications.  We
+  present the basic underpinnings of our approach and demonstrate its
+  use on many benchmark systems to derive simple and usable
+  abstractions. </p>
+      </abstract>
+    </pub>
+    <pub id="linearization-hscc11">
+        <title> Automatic Abstraction of Non-Linear Systems Using Change of Variables Transformations </title> 
+    <authors>
+    <author person="srirams"/>
+    </authors>
+    <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/hscc11.pdf</url>
+    </urls>
+    <howpub> 
+    <proceedings event="hscc11"/>
+    </howpub>
+    <abstract>
+ <p>      We present abstraction techniques that transform a given non-linear
+  dynamical system into a linear system, such that, invariant
+  properties of the resulting linear abstraction can be used to infer
+  invariants for the original system. The abstraction techniques rely
+  on a change of bases transformation that associates each state
+  variable of the abstract system with a function involving the state
+  variables of the original system. We present conditions under which
+  a given change of basis transformation for a non-linear system can
+  define an abstraction. </p>
+  
+<p>  Furthermore, we present a technique to discover, given a non-linear
+  system, if a change of bases transformation involving degree-bounded
+  polynomials yielding a linear system abstraction exists. If so, our
+  technique yields the resulting abstract linear system, as well. This
+  approach is further extended to search for a change of bases
+  transformation that abstracts a given non-linear system into a
+  system of linear differential inclusions.  Our techniques enable the
+  use of analysis techniques for linear systems to infer invariants
+  for non-linear systems. We present preliminary evidence of the
+  practical feasibility of our ideas using a prototype implementation. </p>
+    </abstract>
+    </pub>
+    <pub id="staliro-tool-paper">
+    <title> S-Taliro: A tool for the temporal falsification of hybrid systems </title>
+    <authors>
+    <author person="yeshwanta"/>
+    <author person="liuche"/>
+    <author person="fainekosg"/>
+    <author person="srirams"/>
+    </authors>
+    <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/sTaliro-tacas11.pdf"</url>
+    </urls>
+    <howpub> 
+    <proceedings event="tacas11"/>
+    </howpub>
+    <abstract>
+<p> S-TaLiRo is a Matlab (TM) toolbox that searches for trajectories of
+minimal robustness in Simulink/Stateflow diagrams. It can analyze
+arbitrary Simulink models or user defined functions that model the
+system. At the heart of the tool, we use randomized testing based on
+stochastic optimization techniques including Monte-Carlo methods and
+Ant-Colony Optimization. Among the advantages of the toolbox is the
+seamless integration inside the Matlab environment, which is widely
+used in the industry for model-based development of control
+software. We present the architecture of S-TaLiRo and its working on
+an application example.</p>
+    </abstract>
+    </pub>
+
+    <pub id="template-esop11">
+    <title> Generalizing the Template Polyhedral Domain </title>
+    <authors>
+    <author person="colonm"/>
+    <author person="srirams"/>
+    </authors>
+    <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/gtp-esop10.pdf"</url>
+    </urls>
+    <howpub> 
+    <proceedings event="esop11"/>
+    </howpub>
+    <abstract>
+  <p>Template polyhedra generalize weakly relational domains by
+  specifying arbitrary fixed linear expressions on the left-hand sides
+  of inequalities and undetermined constants on the right. The domain
+  operations required for analysis over template polyhedra can be
+  computed in polynomial time using linear programming.  In this
+  paper, we introduce the generalized template polyhedral domain that
+  extends template polyhedra using fixed left-hand side expressions
+  with bilinear forms involving program variables and unknown
+  parameters to the right. We prove that the domain operations over
+  generalized templates can be defined as the ``best possible
+  abstractions'' of the corresponding polyhedral domain
+  operations. The resulting analysis can straddle the entire space of
+  linear relation analysis starting from the template domain to the
+  full polyhedral domain.</p>
+
+
+<p>  We show that analysis in the generalized template domain can be
+  performed by dualizing the join, post-condition and widening
+  operations.  We also investigate the special case of template
+  polyhedra wherein each bilinear form has at most two parameters. For
+  this domain, we use the special properties of two dimensional
+  polyhedra and techniques from fractional linear programming to
+  derive domain operations that can be implemented in polynomial time
+  over the number of variables in the program and the size of the
+  polyhedra. We present applications of generalized template polyhedra
+  to strengthen previously obtained invariants by converting them into
+  templates.  We describe an experimental evaluation of an
+  implementation over several benchmark systems.</p>
+    </abstract>
     </pub>
     <pub id="stack-popl11">
       <title>Calling Context Abstraction with Shapes</title>
@@ -980,6 +1109,13 @@
       <name>Xavier Rival</name>
       <url>http://www.di.ens.fr/~rival/</url>
     </person>
+    <person id="atiwari">
+    <name> Ashish Tiwari </name>
+    <url> http://csl.sri.com/~tiwari </url>
+    <person id="colonm">
+    <name> Michael Colon </name>
+    <url> mailto:colon@itd.nrl.gov </url>
+    </person>
     <person id="fp">
       <name>Frank Pfenning</name>
       <url>http://www.cs.cmu.edu/~fp/</url>
@@ -1044,6 +1180,18 @@
       <name>Siddharth Suryanarayanan</name>
       <url>http://www.engr.colostate.edu/~ssuryana/</url>
     </person>
+    <person id="fainekosg">
+    <name> Georgios Fainekos </name>
+    <url> http://www.public.asu.edu/~gfaineko/ </url>
+    </person>
+    <person id="yeshwanta">
+    <name> Yashwant Annapureddy </name>
+    <url> http://un.kn.own </url>
+    </person>
+    <person id="liuche">
+    <name> Che Liu </name>
+    <url> http://un.kn.own </url>
+    </person>
   </persons>
 
   <events>
@@ -1091,6 +1239,19 @@
 	<nth>Nineteenth</nth>
 	<url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
       </event>
+      <event id="esop11">
+	<date>2011-03</date>
+        <location> Saarbruecken, Germany </location>
+        <url> http://www.etaps.org/etaps-2011/esop </url>
+      </event>
+    </series>
+    <series id="tacas">
+    <name> Tools and Algorithms for the Constructiona and Analysis of Systems </name>
+     <event id="tacas11">
+     <date>2011-03</date>
+     <location> Saarbruecken, Germany </location>
+     <url> http://www.etaps.org/etaps-2011/tacas </url>
+     </event>
     </series>
     <series id="sas">
       <name>Static Analysis Symposium</name>

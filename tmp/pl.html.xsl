@@ -363,7 +363,7 @@ name="html" />
 
 <xsl:template match="pub" mode="ref">
   <xsl:param name="mode" />
-  <xsl:param name="text" />
+  <xsl:param name="text" /> 
   <xsl:variable name="text">
     <xsl:choose>
       <xsl:when test="$text">
