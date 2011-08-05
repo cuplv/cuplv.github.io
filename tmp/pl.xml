@@ -734,12 +734,13 @@
       </abstract>
     </pub>
     <pub id="relationalization-cav11">
-      <title> Relational Abstractions for Continuous and Hybrid Systems </title>
+      <title>Relational Abstractions for Continuous and Hybrid Systems</title>
       <authors>
-      <author person="srirams">
-      <author person="atiwari">
+	<author person="srirams" />
+	<author person="atiwari"/>
       </authors>
-      <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/cav11-relational.pdf </url>
+      <urls>
+	<url name="pdf">http://www.cs.colorado.edu/~srirams/papers/cav11-relational.pdf</url>
       </urls>
       <howpub> <proceedings event="cav11" /> </howpub>
       <abstract> 
@@ -1072,7 +1073,7 @@ an application example.</p>
       <face>pics/blackshear.jpg</face>
     </person>
     <person id="chakarov" group="phd">
-     <name> Aleksandar Chakarov </name>
+     <name>Aleksandar Chakarov</name>
      <face> pics/generic-male.gif </face>
     </person>
     <person id="coughlin" group="phd">
@@ -1088,8 +1089,8 @@ an application example.</p>
       <face>pics/turner.jpg</face>
     </person>
     <person id="adityaz" group="phd">
-    <name> Aditya Zutshi </name>
-    <face> pics/zutshi.jpg </face>
+      <name>Aditya Zutshi</name>
+      <face> pics/zutshi.jpg </face>
     </person>
     <person id="bennett" group="ms">
       <name>Huck Bennett</name>
@@ -1119,11 +1120,12 @@ an application example.</p>
       <url>http://www.di.ens.fr/~rival/</url>
     </person>
     <person id="atiwari">
-    <name> Ashish Tiwari </name>
-    <url> http://csl.sri.com/~tiwari </url>
+      <name>Ashish Tiwari</name>
+      <url>http://csl.sri.com/~tiwari/</url>
+    </person>
     <person id="colonm">
-    <name> Michael Colon </name>
-    <url> mailto:colon@itd.nrl.gov </url>
+      <name> Michael Colon </name>
+      <url> mailto:colon@itd.nrl.gov </url>
     </person>
     <person id="fp">
       <name>Frank Pfenning</name>
@@ -1190,16 +1192,16 @@ an application example.</p>
       <url>http://www.engr.colostate.edu/~ssuryana/</url>
     </person>
     <person id="fainekosg">
-    <name> Georgios Fainekos </name>
-    <url> http://www.public.asu.edu/~gfaineko/ </url>
+      <name>Georgios Fainekos</name>
+      <url>http://www.public.asu.edu/~gfaineko/</url>
     </person>
     <person id="yeshwanta">
-    <name> Yashwant Annapureddy </name>
-    <url> http://un.kn.own </url>
+      <name>Yashwant Annapureddy</name>
+      <url> http://un.kn.own </url>
     </person>
     <person id="liuche">
-    <name> Che Liu </name>
-    <url> http://un.kn.own </url>
+      <name>Che Liu</name>
+      <url> http://un.kn.own </url>
     </person>
   </persons>
 
@@ -1240,27 +1242,37 @@ an application example.</p>
 	<url>http://www.cs.colorado.edu/pldi09/</url>
       </event>
     </series>
+    <series id="cav">
+      <name>Computer Aided Verification</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="cav11">
+	<date>2011-07</date>
+	<location>Snowbird, Utah, USA</location>
+	<url>http://www.cs.utah.edu/events/conferences/cav2011/</url>
+      </event>
+    </series>
     <series id="esop">
       <name>European Symposium on Programming</name>
+      <event id="esop11">
+	<date>2011-03</date>
+	<location> Saarbrücken, Germany </location>
+        <url>http://www.etaps.org/etaps-2011/esop</url>
+      </event>
       <event id="esop10"> 
 	<date>2010-03</date>
 	<location>Paphos, Cyprus</location>
 	<nth>Nineteenth</nth>
 	<url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
       </event>
-      <event id="esop11">
-	<date>2011-03</date>
-        <location> Saarbruecken, Germany </location>
-        <url> http://www.etaps.org/etaps-2011/esop </url>
-      </event>
     </series>
     <series id="tacas">
-    <name> Tools and Algorithms for the Constructiona and Analysis of Systems </name>
-     <event id="tacas11">
-     <date>2011-03</date>
-     <location> Saarbruecken, Germany </location>
-     <url> http://www.etaps.org/etaps-2011/tacas </url>
-     </event>
+      <name>Tools and Algorithms for the Construction and Analysis of Systems</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="tacas11">
+	<date>2011-03</date>
+	<location> Saarbrücken, Germany </location>
+	<url>http://www.etaps.org/etaps-2011/tacas</url>
+      </event>
     </series>
     <series id="sas">
       <name>Static Analysis Symposium</name>
@@ -1285,6 +1297,15 @@ an application example.</p>
 	<location>Austin, Texas, USA</location>
 	<nth>Twelfth</nth>
 	<url>http://vmcai11.cis.ksu.edu/</url>
+      </event>
+    </series>
+    <series id="hscc">
+      <name>Hybrid Systems: Computation and Control</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="hscc11">
+	<date>2011-04</date>
+	<location>Chicago, Illinois, USA</location>
+	<url>http://hscc2011.cs.sunysb.edu/</url>
       </event>
     </series>
     <series id="nsad">

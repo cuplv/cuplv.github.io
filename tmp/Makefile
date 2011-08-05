@@ -17,6 +17,12 @@ $(HTML_OUTPUT): pl.html.log
 %.bib: %.bib.xsl $(DATA)
 	$(SAXON) -o $@  -s $(DATA) $<
 
+%.txt: %.txt.xsl $(DATA)
+	saxon -o $@ -s $(DATA) $<
+
+%.abstract.txt.xsl: abstract.txt.xsl $(DATA)
+	sed 's/ID/$*/g' $< >$@
+
 commit: html
 	svn add *.html
 	svn add papers/*.html
