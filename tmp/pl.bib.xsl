@@ -116,22 +116,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:call-template name="text-list-bib">
     <xsl:with-param name="items" select="$items" />
     <xsl:with-param name="sep"> and </xsl:with-param>
-    <xsl:with-param name="conj"></xsl:with-param>
   </xsl:call-template>
 </xsl:template>
 
 <xsl:template name="text-list-bib">
   <xsl:param name="items" select="child::*" />
   <xsl:param name="sep">, </xsl:param>
-  <xsl:param name="conj"> and </xsl:param>
   <xsl:if test="count($items) > 0">
     <xsl:apply-templates select="$items[1]" mode="bib" />
     <xsl:for-each select="$items[position() > 1]">
-      <xsl:if test="count($items) > 2">
+      <xsl:if test="count($items) >= 2">
 	<xsl:value-of select="$sep" />
-      </xsl:if>
-      <xsl:if test="position() = last()">
-	<xsl:value-of select="$conj" />
       </xsl:if>
       <xsl:apply-templates select="." mode="bib" />
     </xsl:for-each>
