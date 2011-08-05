@@ -794,20 +794,21 @@
     </abstract>
     </pub>
     <pub id="staliro-tool-paper">
-    <title> S-Taliro: A tool for the temporal falsification of hybrid systems </title>
-    <authors>
-    <author person="yeshwanta"/>
-    <author person="liuche"/>
-    <author person="fainekosg"/>
-    <author person="srirams"/>
-    </authors>
-    <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/sTaliro-tacas11.pdf"</url>
-    </urls>
-    <howpub> 
-    <proceedings event="tacas11"/>
-    </howpub>
-    <abstract>
-<p> S-TaLiRo is a Matlab (TM) toolbox that searches for trajectories of
+      <title>S-Taliro: A Tool for Temporal Logic Falsification for Hybrid Systems</title>
+      <authors>
+	<author person="yeshwanta"/>
+	<author person="liuche"/>
+	<author person="fainekosg"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+	<url name="pdf">http://www.cs.colorado.edu/~srirams/papers/sTaliro-tacas11.pdf</url>
+      </urls>
+      <howpub> 
+	<proceedings event="tacas11"/>
+      </howpub>
+      <abstract>
+<p>S-TaLiRo is a Matlab (TM) toolbox that searches for trajectories of
 minimal robustness in Simulink/Stateflow diagrams. It can analyze
 arbitrary Simulink models or user defined functions that model the
 system. At the heart of the tool, we use randomized testing based on
@@ -826,7 +827,8 @@ an application example.</p>
     <author person="colonm"/>
     <author person="srirams"/>
     </authors>
-    <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/gtp-esop10.pdf"</url>
+    <urls>
+      <url name="pdf">http://www.cs.colorado.edu/~srirams/papers/gtp-esop10.pdf</url>
     </urls>
     <howpub> 
     <proceedings event="esop11"/>
