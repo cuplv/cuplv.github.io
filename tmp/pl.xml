@@ -703,7 +703,7 @@
 	<author person="msridhar" />
       </authors>
       <urls>
-	<url name="pdf">papers/sas11-ptaprecision.pdf</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/sas11-ptaprecision.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="sas11" />
@@ -871,8 +871,8 @@ an application example.</p>
 	<author person="bec" />
       </authors>
       <urls>
-	<url name="pdf">papers/popl11-stack.pdf</url>
-	<url name="ps">papers/popl11-stack.ps</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/popl11-stack.pdf</url>
+	<url name="ps">http://www.cs.colorado.edu/~bec/papers/popl11-stack.ps</url>
       </urls>
       <howpub>
 	<proceedings event="popl11" />
@@ -905,8 +905,8 @@ an application example.</p>
 	<author person="srirams" />
       </authors>
       <urls>
-	<url name="pdf">papers/accessnets-vmcai11.pdf</url>
-	<url name="ps">papers/accessnets-vmcai11.ps</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/accessnets-vmcai11.pdf</url>
+	<url name="ps">http://www.cs.colorado.edu/~bec/papers/accessnets-vmcai11.ps</url>
       </urls>
       <howpub>
 	<proceedings event="vmcai11" />
@@ -915,7 +915,7 @@ an application example.</p>
 	<tr>
 	  <extendedtr />
 	  <number>CU-CS-1076-10</number>
-	  <url>papers/CU-CS-1076-10.pdf</url>
+	  <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1076-10.pdf</url>
 	</tr>
       </note>
       <abstract>
@@ -945,8 +945,8 @@ an application example.</p>
 	<author person="jfoster" />
       </authors>
       <urls>
-	<url name="pdf">papers/pldi10-mix.pdf</url>
-	<url name="ps">papers/pldi10-mix.ps</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/pldi10-mix.pdf</url>
+	<url name="ps">http://www.cs.colorado.edu/~bec/papers/pldi10-mix.ps</url>
       </urls>
       <howpub>
 	<proceedings event="pldi10" />
@@ -995,7 +995,7 @@ an application example.</p>
 	<author person="rival" />
       </authors>
       <urls>
-	<url name="pdf">papers/esop10-sepshapegraph.pdf</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/esop10-sepshapegraph.pdf</url>
       </urls>
       <howpub>
 	  <proceedings event="esop10" />
@@ -1027,7 +1027,7 @@ an application example.</p>
 	<author person="siek" />
       </authors>
       <urls>
-	<url name="pdf">papers/pldifit09-gradprog.pdf</url>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/pldifit09-gradprog.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="pldi-fit09" />
@@ -1126,8 +1126,7 @@ an application example.</p>
       <url>http://csl.sri.com/~tiwari/</url>
     </person>
     <person id="colonm">
-      <name> Michael Colon </name>
-      <url> mailto:colon@itd.nrl.gov </url>
+      <name>Michael Colon</name>
     </person>
     <person id="fp">
       <name>Frank Pfenning</name>
@@ -1199,11 +1198,9 @@ an application example.</p>
     </person>
     <person id="yeshwanta">
       <name>Yashwant Annapureddy</name>
-      <url> http://un.kn.own </url>
     </person>
     <person id="liuche">
       <name>Che Liu</name>
-      <url> http://un.kn.own </url>
     </person>
   </persons>
 
