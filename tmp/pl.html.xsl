@@ -26,6 +26,7 @@ name="html" />
     <name>Welcome</name>
     <href>index.html</href>
     <url>.</url>
+    <subtitle>Programming Languages and Verification at the University of Colorado Boulder</subtitle>
     <head>
       <script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
       <script src="js/news.js" type="text/javascript"></script>
@@ -150,7 +151,9 @@ name="html" />
        <xsl:value-of select="$this/title" />
        &space; | &space;
      </xsl:if>
-     CUPLV
+     CUPLV<xsl:if test="$this/subtitle">:
+       <xsl:value-of select="$this/subtitle" />
+     </xsl:if>
    </title>
    <xsl:copy-of select="$this/head/node()" />
    <link href="pl.css" rel="stylesheet" type="text/css" />
@@ -418,8 +421,8 @@ name="html" />
 	<div class="subtitle"><xsl:apply-templates select="howpub" mode="abbrev"/></div>
       </header>
       <title>
-	<div class="subtitle"><xsl:apply-templates select="howpub" mode="abbrev"/></div>:
-	<div class="small-title"><xsl:value-of select="title"/></div>
+	<xsl:apply-templates select="howpub" mode="abbrev"/>:
+	<xsl:value-of select="title"/>
       </title>
       <content>
 	<h4>Reference</h4>
