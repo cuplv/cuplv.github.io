@@ -1076,11 +1076,11 @@ an application example.</p>
     </person>
     <person id="chakarov" group="phd">
      <name>Aleksandar Chakarov</name>
-     <face> pics/generic-male.gif </face>
+     <face>pics/generic-male.jpg</face>
     </person>
     <person id="coughlin" group="phd">
       <name>Devin Coughlin</name>
-      <face> pics/generic-male.gif </face>
+      <face>pics/generic-male.jpg</face>
     </person>
     <person id="cox" group="phd">
       <name>Arlen Cox</name>
