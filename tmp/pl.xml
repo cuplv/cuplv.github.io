@@ -693,7 +693,6 @@
   </projects>
 
   <publications>
-    
     <pub id="ptaprecision-sas11">
       <title>The Flow-Insensitive Precision of Andersen's Analysis in Practice</title>
       <authors>
@@ -864,6 +863,39 @@ an application example.</p>
   implementation over several benchmark systems.</p>
     </abstract>
     </pub>
+    <pub id="blame-popl11">
+      <title>Blame for All</title>
+      <authors>
+	<author person="amal" />
+	<author person="robby" />
+	<author person="siek" />
+	<author person="wadler" />
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="popl11" />
+      </howpub>
+      <abstract>
+	<p>Several programming languages are beginning to integrate
+	static and dynamic typing, including Racket (formerly PLT
+	Scheme), Perl 6, and C# 4.0 and the research languages Sage
+	(Gronski, Knowles, Tomb, Freund, and Flanagan, 2006) and Thorn
+	(Wrigstad, Eugster, Field, Nystrom, and Vitek, 2009). However,
+	an important open question remains, which is how to add
+	parametric polymorphism to languages that combine static and
+	dynamic typing. We present a system that permits a value of
+	dynamic type to be cast to a polymorphic type and vice versa,
+	with relational parametricity enforced by a kind of dynamic
+	sealing along the lines proposed by Matthews and Ahmed (2008)
+	and Neis, Dreyer, and Rossberg (2009). Our system includes a
+	notion of blame, which allows us to show that when casting
+	between a more-precise type and a less-precise type, any cast
+	failures are due to the less-precisely-typed portion of the
+	program. We also show that a cast from a subtype to its
+	supertype cannot fail.</p>
+      </abstract>
+    </pub>
     <pub id="stack-popl11">
       <title>Calling Context Abstraction with Shapes</title>
       <authors>
@@ -987,6 +1019,49 @@ an application example.</p>
 	executor.</p>
       </abstract>
     </pub>
+    <pub id="profilers-pldi10">
+      <title>Evaluating the Accuracy of Java Profilers</title>
+      <authors>
+	<author person="toddm" />
+	<author person="diwan" />
+	<author person="hauswirth" />
+	<author person="sweeney" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/mytkowicz-pldi10.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="pldi10" />
+      </howpub>
+      <abstract>
+	<p>
+	  Performance analysts profile their programs to find methods
+	  that are worth optimizing: the "hot" methods. This paper
+	  shows that four commonly-used Java profilers (xprof, hprof,
+	  jprofile, and yourkit) often disagree on the identity of the
+	  hot methods. If two profilers disagree, at least one must be
+	  incorrect. Thus, there is a good chance that a profiler will
+	  mislead a performance analyst into wasting time optimizing a
+	  cold method with little or no performance improvement.
+	</p>
+	<p>
+	  This paper uses causality analysis to evaluate profilers and
+	  to gain insight into the source of their incorrectness. It
+	  shows that these profilers all violate a fundamental
+	  requirement for sampling-based profilers: to be correct, a
+	  sampling-based profiler must collect samples randomly.
+	</p>
+	<p>
+	  We show that a proof-of-concept profiler, which collects
+	  samples randomly, does not suffer from the above
+	  problems. Specifically, we show, using a number of case
+	  studies, that our profiler correctly identifies methods that
+	  are important to optimize; in some cases other profilers
+	  report that these methods are cold and thus not worth
+	  optimizing.
+	</p>
+      </abstract>
+    </pub>
     <pub id="ssg-esop10">
       <title>Separating Shape Graphs</title>
       <authors>
@@ -1074,11 +1149,11 @@ an application example.</p>
       <name>Sam Blackshear</name>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="chakarov" group="phd">
+    <person id="chakarov">
      <name>Aleksandar Chakarov</name>
      <face>pics/generic-male.jpg</face>
     </person>
-    <person id="coughlin" group="phd">
+    <person id="coughlin">
       <name>Devin Coughlin</name>
       <face>pics/generic-male.jpg</face>
     </person>
@@ -1086,7 +1161,7 @@ an application example.</p>
       <name>Arlen Cox</name>
       <face>pics/cox.jpg</face>
     </person>
-    <person id="nelson" group="phd">
+    <person id="nelson">
       <name>Thomas Nelson</name>
       <face>pics/generic-male.jpg</face>
     </person>
@@ -1205,6 +1280,30 @@ an application example.</p>
     </person>
     <person id="liuche">
       <name>Che Liu</name>
+    </person>
+    <person id="amal">
+      <name>Amal Ahmed</name>
+      <url>https://www.cs.indiana.edu/~amal/</url>
+    </person>
+    <person id="robby">
+      <name>Robert Bruce Findler</name>
+      <url>http://www.eecs.northwestern.edu/~robby/</url>
+    </person>
+    <person id="wadler">
+      <name>Philip Wadler</name>
+      <url>http://homepages.inf.ed.ac.uk/wadler/</url>
+    </person>
+    <person id="toddm">
+      <name>Todd Mytkowicz</name>
+      <url>http://research.microsoft.com/en-us/people/toddm/</url>
+    </person>
+    <person id="sweeney">
+      <name>Peter F. Sweeney</name>
+      <url>https://researcher.ibm.com/researcher/view.php?person=us-pfs</url>
+    </person>
+    <person id="hauswirth">
+      <name>Matthias Hauswirth</name>
+      <url>http://www.inf.usi.ch/faculty/hauswirth/</url>
     </person>
   </persons>
 

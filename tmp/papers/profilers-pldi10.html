@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         	PLDI 2010
+         :
+         	Evaluating the Accuracy of Java Profilers  |  
+         CUPLV
+      </title><script xmlns="" type="text/javascript" src="js/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="js/sh_bib.js"></script><link xmlns="" href="js/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/tmp/">
+      <link href="pl.css" rel="stylesheet" type="text/css"></link>
+   </head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href=".">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="people.html">People</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner1.jpg" height="50"></img><img src="pics/banner2.jpg" height="50"></img><img src="pics/banner3.jpg" height="50"></img><img src="pics/banner4.jpg" height="50"></img><img src="pics/banner5.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Evaluating the Accuracy of Java Profilers</div>
+               <div xmlns="" class="subtitle">
+                  	<a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2010</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/profilers-pldi10.html">detail</a></li>
+                     <li><a href="papers/mytkowicz-pldi10.pdf">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Evaluating the Accuracy of Java Profilers</div>
+                  <div class="hanging"><a href="http://research.microsoft.com/en-us/people/toddm/">Todd Mytkowicz</a>, <a href="http://www.cs.colorado.edu/~diwan/">Amer Diwan</a>, <a href="http://www.inf.usi.ch/faculty/hauswirth/">Matthias Hauswirth</a>,  and <a href="https://researcher.ibm.com/researcher/view.php?person=us-pfs">Peter F. Sweeney</a></div>
+                  <div class="hanging">
+                     	<a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>:
+                     ACM SIGPLAN Conference on Programming Language Design and Implementation
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns="">
+               	  Performance analysts profile their programs to find methods
+               	  that are worth optimizing: the "hot" methods. This paper
+               	  shows that four commonly-used Java profilers (xprof, hprof,
+               	  jprofile, and yourkit) often disagree on the identity of the
+               	  hot methods. If two profilers disagree, at least one must be
+               	  incorrect. Thus, there is a good chance that a profiler will
+               	  mislead a performance analyst into wasting time optimizing a
+               	  cold method with little or no performance improvement.
+               	
+            </p>
+            	
+            <p xmlns="">
+               	  This paper uses causality analysis to evaluate profilers and
+               	  to gain insight into the source of their incorrectness. It
+               	  shows that these profilers all violate a fundamental
+               	  requirement for sampling-based profilers: to be correct, a
+               	  sampling-based profiler must collect samples randomly.
+               	
+            </p>
+            	
+            <p xmlns="">
+               	  We show that a proof-of-concept profiler, which collects
+               	  samples randomly, does not suffer from the above
+               	  problems. Specifically, we show, using a number of case
+               	  studies, that our profiler correctly identifies methods that
+               	  are important to optimize; in some cases other profilers
+               	  report that these methods are cold and thus not worth
+               	  optimizing.
+               	
+            </p>
+            
+            <h3 xmlns="">BibTeX</h3><pre xmlns="" class="sh_bib">
+@string{PLDI = "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"}
+@inproceedings{profilers-pldi10,
+  author = {Todd Mytkowicz and Amer Diwan and Matthias Hauswirth and Peter F. Sweeney},
+  title = {Evaluating the Accuracy of Java Profilers},
+  booktitle = PLDI,
+  year = {2010},
+}
+</pre></div>
+      </div>
+   </body>
+</html>

@@ -64,7 +64,7 @@ name="html" />
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
-      <h3>Focus Areas</h3>
+      <!-- <h3>Focus Areas</h3> -->
 
       <h3>Affiliates</h3>
       <div class="hanging"><a href="http://systems.cs.colorado.edu/"><b>Computer Systems</b> @ Colorado</a></div>
@@ -356,7 +356,7 @@ name="html" />
       <xsl:call-template name="get-year" />
     </xsl:variable>
     <xsl:if test="$pub-year >= year-from-date(current-date()) - 1">
-      <xsl:if test="position()=1 or preceding-sibling::*/descendant::proceedings[1]/@event != descendant::proceedings[1]/@event">
+      <xsl:if test="(position() = 1) or (preceding-sibling::*[1]/descendant::proceedings[1]/@event != descendant::proceedings[1]/@event)">
 	<xsl:apply-templates select="descendant::proceedings" mode="header" />
       </xsl:if>
       <xsl:apply-templates select="." />
