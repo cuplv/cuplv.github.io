@@ -414,7 +414,7 @@ name="html" />
 	     };
 	  })(window)
 	</script>
-	<base href="http://pl.cs.colorado.edu/tmp/" />
+	<base href="http://pl.cs.colorado.edu/" />
       </head>
       <header>
 	<div class="small-title"><xsl:value-of select="title"/></div>
