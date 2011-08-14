@@ -1,4 +1,0 @@
-  * [[:News]]
-  * [[:People]]
-  * [[:Projects]]
-  * [[:Papers]]
