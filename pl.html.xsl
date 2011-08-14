@@ -157,6 +157,16 @@ name="html" />
    </title>
    <xsl:copy-of select="$this/head/node()" />
    <link href="pl.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
  </head>
  	
  <body>
@@ -635,13 +645,11 @@ name="html" />
   <a>
     <xsl:attribute name="href"><xsl:apply-templates select="child::node()" /></xsl:attribute>
     <xsl:if test="not(starts-with($href, 'http') or ends-with($href,'html') or ends-with($href,'/'))">
-      <!--
       <xsl:attribute name="onClick">
-	<xsl:text>_gaq.push(['_trackPageview', '/~bec/</xsl:text>
+	<xsl:text>_gaq.push(['_trackPageview', '/</xsl:text>
 	<xsl:apply-templates select="child::node()" />
 	<xsl:text>']);</xsl:text>
       </xsl:attribute>
-      -->
     </xsl:if>
     <xsl:copy-of select="$anchor/node()" />
   </a>
