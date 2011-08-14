@@ -28,8 +28,8 @@ name="html" />
     <url>.</url>
     <subtitle>Programming Languages and Verification at the University of Colorado Boulder</subtitle>
     <head>
-      <script src="js/jquery-1.5.1.min.js" type="text/javascript"></script>
-      <script src="js/news.js" type="text/javascript"></script>
+      <script src="lib/jquery-1.5.1.min.js" type="text/javascript"></script>
+      <script src="lib/news.js" type="text/javascript"></script>
     </head>
     <header>
       <div>
@@ -404,9 +404,9 @@ name="html" />
   <xsl:call-template name="page">
     <xsl:with-param name="this">
       <head>
-	<script type="text/javascript" src="js/sh_main.min.js" />
-	<script type="text/javascript" src="js/sh_bib.js" />
-	<link href="js/sh_style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="lib/sh_main.min.js" />
+	<script type="text/javascript" src="lib/sh_bib.js" />
+	<link href="lib/sh_style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript">
 	  (function(w) { var p = w.onload;
 	     w.onload = function() {
