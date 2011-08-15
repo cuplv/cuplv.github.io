@@ -872,6 +872,7 @@ an application example.</p>
 	<author person="wadler" />
       </authors>
       <urls>
+	<url name="pdf">http://ecee.colorado.edu/~siek/blame-forall-2011.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="popl11" />
