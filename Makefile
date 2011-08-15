@@ -1,6 +1,6 @@
 HTML_OUTPUT = index.html news.html papers.html people.html
 OUTPUT = $(HTML_OUTPUT)
-SAXON = saxon
+SAXON = java -jar bin/saxon8.jar
 INCLUDE = pl.keys.xsl
 DATA = pl.xml
 
