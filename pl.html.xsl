@@ -449,7 +449,7 @@ name="html" />
     <xsl:apply-templates select="." mode="bib" />
   </xsl:variable>
   <xsl:if test="$bibtexhtml != ''">
-    <h3>BibTeX</h3>
+    <h4>BibTeX</h4>
     <pre class="sh_bib">
       <xsl:value-of select="$bibtexhtml"/>
     </pre>
