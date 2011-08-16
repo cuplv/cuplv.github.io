@@ -1303,7 +1303,7 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
-    <person id="gottschlich" group="phd">
+    <person id="gottschlich">
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.jpg</face>
     </person>
@@ -1311,7 +1311,7 @@ an application example.</p>
       <name>E.R. Jessup</name>
       <url>http://www.cs.colorado.edu/~jessup/</url>
     </person>
-    <person id="karlin" group="phd">
+    <person id="karlin">
       <name>Ian Karlin</name>
       <face>pics/generic-male.jpg</face>
     </person>
