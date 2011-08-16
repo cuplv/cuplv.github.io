@@ -1178,13 +1178,13 @@ an application example.</p>
       <name>Thomas Nelson</name>
       <face>pics/generic-male.jpg</face>
     </person>
-    <person id="turner" group="phd">
-      <name>Jonathan Turner</name>
-      <face>pics/turner.jpg</face>
-    </person>
     <person id="tsai" group="phd">
       <name>Yi-Fan Tsai</name>
       <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="turner" group="phd">
+      <name>Jonathan Turner</name>
+      <face>pics/turner.jpg</face>
     </person>
     <person id="vitousek" group="phd">
       <name>Michael Vitousek</name>
