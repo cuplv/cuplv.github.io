@@ -1063,6 +1063,54 @@ an application example.</p>
 	</p>
       </abstract>
     </pub>
+    <pub id="threesomes-popl10">
+      <title>Threesomes, With and Without Blame</title>
+      <authors>
+	<author person="siek" />
+	<author person="wadler" />
+      </authors>
+      <urls>
+	<url name="pdf">http://ecee.colorado.edu/~siek/popl10.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="popl10" />
+      </howpub>
+      <abstract>
+	<p>The blame calculus of Wadler and Findler gives a high-level
+	semantics to casts in higher-order languages. The coercion
+	calculus of Henglein, on the other hand, provides an
+	instruction set for casts whose normal forms ensure space
+	efficiency. In this paper we address two questions: 1) can
+	space efficiency be obtained in a high-level semantics? and 2)
+	can we precisely characterize the relationship between the
+	high and low-level semantics of casts? Towards answering both
+	of these questions, we design a cast calculus that summarizes
+	a sequence of casts as a threesome cast that contains a source
+	type, a target type, and a third middle type that is the
+	greatest lower bound of all the types in the sequence. We show
+	that the threesome calculus is equivalent to the blame
+	calculus and to one of the coercion-based, blame-tracking
+	calculi of Siek, Garcia, and Taha. We also show that the
+	threesome calculus is space efficient and obtain a tighter
+	bound than that of Herman, Tomb, and Flanagan.</p>
+      </abstract>
+    </pub>
+    <pub id="incremental-gpce10">
+      <title>Incremental Type-Checking for Type-Reflective Metaprograms</title>
+      <authors>
+	<author person="miao" />
+	<author person="siek" />
+      </authors>
+      <urls>
+	<url name="pdf">http://ecee.colorado.edu/~siek/gpce10.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="gpce10" />
+      </howpub>
+      <abstract>
+	<p></p>
+      </abstract>
+    </pub>
     <pub id="ssg-esop10">
       <title>Separating Shape Graphs</title>
       <authors>
@@ -1095,6 +1143,49 @@ an application example.</p>
 	materialization and summarization).</p>
       </abstract>
     </pub>
+    <pub id="invalidation-cgo10">
+      <title>An efficient software transactional memory using commit-time invalidation</title>
+      <authors>
+	<author person="gottschlich" />
+	<author person="vachharajani" />
+	<author person="siek" />
+      </authors>
+      <urls>
+	<url name="pdf">http://ecee.colorado.edu/~siek/cgo10.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="cgo10" />
+      </howpub>
+      <abstract>
+	<p>To improve the performance of transactional memory (TM),
+	researchers have found many eager and lazy optimizations for
+	conflict detection, the process of determining if transactions
+	can commit. Despite these optimizations, nearly all TMs
+	perform one aspect of lazy conflict detection in the same
+	manner to preserve serializability. That is, they perform
+	commit-time validation, where a transaction is checked for
+	conflicts with previously committed transactions during its
+	commit phase. While commit-time validation is efficient for
+	workloads that exhibit limited contention, it can limit
+	transaction throughput for contending workloads.
+
+        This paper presents an efficient implementation of commit-time
+        invalidation, a strategy where transactions resolve their
+        conflicts with in-flight (uncommitted) transactions before
+        they commit. Commit-time invalidation supplies the contention
+        manager (CM) with data that is unavailable through commit-time
+        validation, allowing the CM to make decisions that increase
+        transaction throughput. Commit-time invalidation also requires
+        notably fewer operations than commit-time validation for
+        memory-intensive transactions, uses zero commit-time
+        operations for dynamically detected read-only transactions,
+        and guarantees full opacity for any transaction in O(N) time,
+        an improvement over incremental validation's O(N2) time. Our
+        experimental results show that for contending workloads, our
+        efficient commit-time invalidating software TM (STM) is up to
+        3 x faster than TL2, a state-of-the-art validating STM.</p>
+      </abstract>
+    </pub>
     <pub id="gradprog-pldifit09">
       <title>Gradual Programming: Bridging the Semantic Gap (Position Paper)</title>
       <authors>
@@ -1108,6 +1199,42 @@ an application example.</p>
       <howpub>
 	<proceedings event="pldi-fit09" />
       </howpub>
+    </pub>
+
+    <pub id="bto-sc09">
+      <title>Automating the Generation of Composed Linear Algebra Kernels</title>
+      <authors>
+	<author person="belter" />
+	<author person="jessup" />
+	<author person="karlin" />
+	<author person="siek" />
+      </authors>
+      <urls>
+	<url name="pdf">http://ecee.colorado.edu/~siek/sc09.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="sc09" />
+      </howpub>
+      <abstract>
+	<p>Memory bandwidth limits the performance of important
+	kernels in many scientific applications. Such applications
+	often use sequences of Basic Linear Algebra Subprograms
+	(BLAS), and highly efficient implementations of those routines
+	enable scientists to achieve high performance at little
+	cost. However, tuning the BLAS in isolation misses
+	opportunities for memory optimization that result from
+	composing multiple subprograms. Because it is not practical to
+	create a library of all BLAS combinations, we have developed a
+	domain-specific compiler that generates them on demand. In
+	this paper, we describe a novel algorithm for compiling linear
+	algebra kernels and searching for the best combination of
+	optimization choices. We also present a new hybrid
+	analytic/empirical method for quickly evaluating the
+	profitability of each optimization. We report experimental
+	results showing speedups of up to 130% relative to the
+	GotoBLAS on an AMD Opteron and up to 137% relative to MKL on
+	an Intel Core 2.</p>
+      </abstract>
     </pub>
   </publications>
 
@@ -1142,6 +1269,11 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
+    <person id="vachharajani" group="faculty">
+      <name>Manish Vachharajani</name>
+      <url>http://ecee.colorado.edu/~manishv/</url>
+      <face>pics/generic-male.jpg</face>
+    </person>
     <person id="msridhar">
       <name>Manu Sridharan</name>
       <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
@@ -1170,6 +1302,18 @@ an application example.</p>
       <name>Arlen Cox</name>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
+    </person>
+    <person id="gottschlich" group="phd">
+      <name>Justin E. Gottschlich</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="jessup" group="faculty">
+      <name>E.R. Jessup</name>
+      <url>http://www.cs.colorado.edu/~jessup/</url>
+    </person>
+    <person id="karlin" group="phd">
+      <name>Ian Karlin</name>
+      <face>pics/generic-male.jpg</face>
     </person>
     <person id="miao" group="phd">
       <name>Weiyu Miao</name>
@@ -1473,6 +1617,29 @@ an application example.</p>
 	<url>http://fractal.cs.colorado.edu/</url>
 	<location>Boulder, Colorado, USA</location>
       </event>
+    </series>
+    <series id="gpce">
+      <name>Generative programming and component engineering</name>
+      <event id="gpce10">
+         <date>2010-10</date>
+         <location>Eindhoven, The Netherlands</location>
+         <nth>ninth</nth>
+         <url>http://www.program-transformation.org/GPCE10/WebHome</url>
+      </event>
+    </series>
+    <series id="sc">
+     <name>International Conference on High Performance Computing Networking, Storage and Analysis</name>
+     <event id="sc09">
+       <location>Portland, Oregon, USA</location>
+       <date>2009-11</date>
+     </event>
+    </series>
+    <series id="cgo">
+     <name>International Symposium on Code Generation and Optimization</name>
+     <event id="cgo10">
+       <location>Toronto, Canada</location>
+       <date>2010-4</date>
+     </event>
     </series>
   </events>
 </cv>

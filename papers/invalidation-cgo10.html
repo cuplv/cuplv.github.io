@@ -1,0 +1,105 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         	CGO 2010
+         :
+         	An efficient software transactional memory using commit-time invalidation  |  
+         CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link href="pl.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href="." onClick="_gaq.push(['_trackPageview', '/.']);">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="people.html">People</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner1.jpg" height="50"></img><img src="pics/banner2.jpg" height="50"></img><img src="pics/banner3.jpg" height="50"></img><img src="pics/banner4.jpg" height="50"></img><img src="pics/banner5.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">An efficient software transactional memory using commit-time invalidation</div>
+               <div xmlns="" class="subtitle">
+                  	CGO 2010
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2010</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/invalidation-cgo10.html">detail</a></li>
+                     <li><a href="http://ecee.colorado.edu/~siek/cgo10.pdf">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">An efficient software transactional memory using commit-time invalidation</div>
+                  <div class="hanging">Justin E. Gottschlich, <a href="http://ecee.colorado.edu/~manishv/">Manish Vachharajani</a>,  and <a href="http://ecee.colorado.edu/~siek/">Jeremy G. Siek</a></div>
+                  <div class="hanging">
+                     	CGO 2010:
+                     International Symposium on Code Generation and Optimization
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns="">To improve the performance of transactional memory (TM),
+               	researchers have found many eager and lazy optimizations for
+               	conflict detection, the process of determining if transactions
+               	can commit. Despite these optimizations, nearly all TMs
+               	perform one aspect of lazy conflict detection in the same
+               	manner to preserve serializability. That is, they perform
+               	commit-time validation, where a transaction is checked for
+               	conflicts with previously committed transactions during its
+               	commit phase. While commit-time validation is efficient for
+               	workloads that exhibit limited contention, it can limit
+               	transaction throughput for contending workloads.
+               
+               This paper presents an efficient implementation of commit-time
+               invalidation, a strategy where transactions resolve their
+               conflicts with in-flight (uncommitted) transactions before
+               they commit. Commit-time invalidation supplies the contention
+               manager (CM) with data that is unavailable through commit-time
+               validation, allowing the CM to make decisions that increase
+               transaction throughput. Commit-time invalidation also requires
+               notably fewer operations than commit-time validation for
+               memory-intensive transactions, uses zero commit-time
+               operations for dynamically detected read-only transactions,
+               and guarantees full opacity for any transaction in O(N) time,
+               an improvement over incremental validation's O(N2) time. Our
+               experimental results show that for contending workloads, our
+               efficient commit-time invalidating software TM (STM) is up to
+               3 x faster than TL2, a state-of-the-art validating STM.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{CGO = "International Symposium on Code Generation and Optimization (CGO)"}
+@inproceedings{invalidation-cgo10,
+  author = {Justin E. Gottschlich and Manish Vachharajani and Jeremy G. Siek},
+  title = {An efficient software transactional memory using commit-time invalidation},
+  booktitle = CGO,
+  year = {2010},
+}
+</pre></div>
+      </div>
+   </body>
+</html>
