@@ -1146,15 +1146,23 @@ an application example.</p>
       <name>Manu Sridharan</name>
       <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
     </person>
+    <person id="belter" group="phd">
+      <name>Geoffrey Belter</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
     <person id="blackshear" group="phd">
       <name>Sam Blackshear</name>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="chakarov">
+    <person id="blomstedt" group="phd">
+      <name>Joseph Blomstedt</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="chakarov" group="phd">
      <name>Aleksandar Chakarov</name>
      <face>pics/chakarov.jpg</face>
     </person>
-    <person id="coughlin">
+    <person id="coughlin" group="phd">
       <name>Devin Coughlin</name>
       <face>pics/generic-male.jpg</face>
     </person>
@@ -1162,13 +1170,25 @@ an application example.</p>
       <name>Arlen Cox</name>
       <face>pics/cox.jpg</face>
     </person>
-    <person id="nelson">
+    <person id="miao" group="phd">
+      <name>Weiyu Miao</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="nelson" group="phd">
       <name>Thomas Nelson</name>
       <face>pics/generic-male.jpg</face>
     </person>
     <person id="turner" group="phd">
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
+    </person>
+    <person id="tsai" group="phd">
+      <name>Yi-Fan Tsai</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="vitousek" group="phd">
+      <name>Michael Vitousek</name>
+      <face>pics/generic-male.jpg</face>
     </person>
     <person id="adityaz" group="phd">
       <name>Aditya Zutshi</name>
@@ -1177,6 +1197,14 @@ an application example.</p>
     <person id="bennett" group="ms">
       <name>Huck Bennett</name>
       <face>pics/bennett.jpg</face>
+    </person>
+    <person id="bharadwaj" group="ms">
+      <name>Shashank Bharadwaj</name>
+      <face>pics/generic-male.jpg</face>
+    </person>
+    <person id="silkensen" group="ms">
+      <name>Erik Silkensen</name>
+      <face>pics/generic-male.jpg</face>
     </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>
