@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <!DOCTYPE cv [
 <!ENTITY emdash "&#8212;">
@@ -1341,7 +1341,8 @@ an application example.</p>
     </person>
     <person id="bennett" group="ms">
       <name>Huck Bennett</name>
-      <face>pics/bennett.jpg</face>
+  <url>http://csel.cs.colorado.edu/~bennethd</url>  
+  <face>pics/bennett.jpg</face>
     </person>
     <person id="bharadwaj" group="ms">
       <name>Shashank Bharadwaj</name>
