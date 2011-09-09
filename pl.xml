@@ -707,6 +707,13 @@
       <howpub>
 	<proceedings event="sas11" />
       </howpub>
+      <note>
+	<tr>
+	  <extendedtr />
+	  <number>CU-CS-1083-11</number>
+	  <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1083-11-ptaprecision.pdf</url>
+	</tr>
+      </note>
       <abstract>
 	<p>We present techniques for determining the precision gap
 	between Andersen's points-to analysis and precise
