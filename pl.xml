@@ -6,7 +6,18 @@
 
 <cv>
   <news-list>
-    <news date="2011.07.11" id="summer-workshop">
+    <news date="2011.09.09" id="talk-sas11">
+      <news-snippet>
+	<ref table="person" key="blackshear" /> presenting at
+	<ref table="event" key="sas11" /> September 14.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="blackshear" /> is presenting
+	the paper "<ref table="pub" key="ptaprecision-sas11" />" at
+	<ref table="event" key="sas11" /> on September 14.
+      </news-detail>
+    </news>
+    <news date="2011.07.11" id="summer-workshop-2011">
       <news-snippet>
 	Summer workshop July 12.
       </news-snippet>
