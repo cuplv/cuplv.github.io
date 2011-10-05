@@ -1290,7 +1290,7 @@ an application example.</p>
     <person id="vachharajani">
       <name>Manish Vachharajani</name>
       <url>http://ecee.colorado.edu/~manishv/</url>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="msridhar">
       <name>Manu Sridharan</name>
@@ -1298,7 +1298,7 @@ an application example.</p>
     </person>
     <person id="belter" group="phd">
       <name>Geoffrey Belter</name>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="blackshear" group="phd">
       <name>Sam Blackshear</name>
@@ -1306,7 +1306,7 @@ an application example.</p>
     </person>
     <person id="blomstedt" group="phd">
       <name>Joseph Blomstedt</name>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="chakarov" group="phd">
      <name>Aleksandar Chakarov</name>
@@ -1323,7 +1323,7 @@ an application example.</p>
     </person>
     <person id="gottschlich">
       <name>Justin E. Gottschlich</name>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="jessup">
       <name>E.R. Jessup</name>
@@ -1331,11 +1331,11 @@ an application example.</p>
     </person>
     <person id="karlin">
       <name>Ian Karlin</name>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="miao" group="phd">
       <name>Weiyu Miao</name>
-      <face>pics/generic-male.jpg</face>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="nelson" group="phd">
       <name>Thomas Nelson</name>
