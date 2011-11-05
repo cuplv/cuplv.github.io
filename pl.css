@@ -5,7 +5,7 @@ font-size: 85%;
 font-family: "Helvetica Neue", helvetica, verdana, arial, sans-serif;
 }
 
-body {
+body, .contentbox {
 background-color: rgb(86,90,92);
 }
 
@@ -53,6 +53,9 @@ padding: 0;
 float: right;
 clear: right;
 width: 200px;
+}
+
+#rsidebar, .contentbox {
 color: rgb(162,164,163);
 }
 
@@ -63,8 +66,12 @@ margin-bottom: 0.5ex;
 margin-top: 1ex;
 }
 
-#banner a, #rsidebar h1, #rsidebar h2, #rsidebar h3, #rsidebar h4, #rsidebar a {
+#banner a, #rsidebar h1, #rsidebar h2, #rsidebar h3, #rsidebar h4, #rsidebar a,
+#content .contentbox a {
 color: rgb(207,185,124);
+}
+
+color: rgb(0,0,0);
 }
 
 #header {
@@ -78,6 +85,11 @@ margin-bottom: 1em;
 #header .subtitle { font-size: 1.1em; line-height: 1.5em; }
 #header span.subtitle { font-variant: small-caps; margin-left: 2em; }
 #header .tagline { text-align: center; padding-top: 1.5ex; padding-bottom: 1.5ex; font-style: italic; }
+
+.contentbox {
+padding: 0.5ex 0.5em 0.5ex 0.5em;
+margin-bottom: 2ex;
+}
 
 #news { padding: 0; }
 #news-box {
@@ -140,7 +152,7 @@ font-variant: small-caps;
 .hanging { padding-left: 0.75em; text-indent: -0.75em; }
 .centered { text-align: center; }
 
-.rounded {
+.rounded, .contentbox {
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 }
