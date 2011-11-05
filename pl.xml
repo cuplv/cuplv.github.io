@@ -68,7 +68,14 @@
 	Call for Ph.D. applicants for Fall 2012.  Application deadline
 	is December 15, 2011.
       </news-snippet>
+      <news-detail>
+	Call for Ph.D. applicants for Fall 2012.  Application deadline
+	is December 15, 2011. Check out our latest <a
+	href="http://www.cs.colorado.edu/~bec/talks/openhouse11.swf">recruiting
+	talk</a> from February 25, 2011.
+      </news-detail>
       <news-page header="Ph.D. Positions">
+	<p>
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.  Our
 	group has active projects in areas such as static and dynamic
@@ -82,6 +89,12 @@
 	Admissions</a> (deadline December 15, 2011) and <a
 	href="http://ecee.colorado.edu/prospective/grad/intro.html">ECEE
 	Admissions</a> (deadline February 1, 2012 but earlier for financial aid consideration).
+	</p>
+	<p>
+	  Check out our latest <a
+	  href="http://www.cs.colorado.edu/~bec/talks/openhouse11.swf">recruiting
+	  talk</a> from February 25, 2011.
+	</p>
       </news-page>
     </news>
     <news date="2011.09.09" id="talk-sas11">
