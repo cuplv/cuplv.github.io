@@ -45,14 +45,14 @@ name="html" />
       </div>
     </header>
     <content>
-      <div class="contentbox" style="width: 48%; float: right;">
+      <div class="contentbox" style="width: 48%; float: right; height: 10ex;">
 	<a
 	href="news.html#phd-call-2012"><b>Ph.D. Positions</b></a>.
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.
 	Application deadline is December 15, 2011.
       </div>
-      <div class="contentbox" style="width: 48%;">
+      <div class="contentbox" style="width: 48%; height: 10ex;">
 	<a href="news.html#faculty-openings-2012"><b>Faculty
 	Positions</b></a>.  Two tenure-track position openings
 	targeted at the Assistant Professor level.  Evaluation starts
