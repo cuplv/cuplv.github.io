@@ -1215,40 +1215,8 @@ an application example.</p>
 	<p></p>
       </abstract>
     </pub>
-    <pub id="ssg-esop10">
-      <title>Separating Shape Graphs</title>
-      <authors>
-	<author person="laviron" />
-	<author person="bec" />
-	<author person="rival" />
-      </authors>
-      <urls>
-	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/esop10-sepshapegraph.pdf</url>
-      </urls>
-      <howpub>
-	  <proceedings event="esop10" />
-      </howpub>
-      <abstract>
-	<p>Detailed memory models that expose individual fields are
-	necessary to precisely analyze code that makes use of
-	low-level aspects such as, pointers to fields and untagged
-	unions.  Yet, higher-level representations that collect fields
-	into records are often used because they are typically more
-	convenient and efficient in modeling the program heap.  In
-	this paper, we present a shape graph representation of memory
-	that exposes individual fields while largely retaining the
-	convenience of an object-level model.  This representation has
-	a close connection to particular kinds of formulas in
-	separation logic.  Then, with this representation, we show how
-	to extend the <fmt kind="tool">Xisa</fmt> shape analyzer for
-	low-level aspects, including pointers to fields, C-style
-	nested structures and unions, malloc and free, and array
-	values, with minimal changes to the core algorithms (e.g.,
-	materialization and summarization).</p>
-      </abstract>
-    </pub>
     <pub id="invalidation-cgo10">
-      <title>An efficient software transactional memory using commit-time invalidation</title>
+      <title>An Efficient Software Transactional Memory Using Commit-Time Invalidation</title>
       <authors>
 	<author person="gottschlich" />
 	<author person="vachharajani" />
@@ -1288,6 +1256,38 @@ an application example.</p>
         experimental results show that for contending workloads, our
         efficient commit-time invalidating software TM (STM) is up to
         3 x faster than TL2, a state-of-the-art validating STM.</p>
+      </abstract>
+    </pub>
+    <pub id="ssg-esop10">
+      <title>Separating Shape Graphs</title>
+      <authors>
+	<author person="laviron" />
+	<author person="bec" />
+	<author person="rival" />
+      </authors>
+      <urls>
+	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/esop10-sepshapegraph.pdf</url>
+      </urls>
+      <howpub>
+	  <proceedings event="esop10" />
+      </howpub>
+      <abstract>
+	<p>Detailed memory models that expose individual fields are
+	necessary to precisely analyze code that makes use of
+	low-level aspects such as, pointers to fields and untagged
+	unions.  Yet, higher-level representations that collect fields
+	into records are often used because they are typically more
+	convenient and efficient in modeling the program heap.  In
+	this paper, we present a shape graph representation of memory
+	that exposes individual fields while largely retaining the
+	convenience of an object-level model.  This representation has
+	a close connection to particular kinds of formulas in
+	separation logic.  Then, with this representation, we show how
+	to extend the <fmt kind="tool">Xisa</fmt> shape analyzer for
+	low-level aspects, including pointers to fields, C-style
+	nested structures and unions, malloc and free, and array
+	values, with minimal changes to the core algorithms (e.g.,
+	materialization and summarization).</p>
       </abstract>
     </pub>
     <pub id="gradprog-pldifit09">
@@ -1725,12 +1725,13 @@ an application example.</p>
       </event>
     </series>
     <series id="gpce">
-      <name>Generative programming and component engineering</name>
+      <name>Generative Programming and Component Engineering</name>
+      <longPrefix>International Conference on</longPrefix>
       <event id="gpce10">
          <date>2010-10</date>
          <location>Eindhoven, The Netherlands</location>
-         <nth>ninth</nth>
-         <url>http://www.program-transformation.org/GPCE10/WebHome</url>
+         <nth>Ninth</nth>
+         <url>http://www.program-transformation.org/GPCE10/</url>
       </event>
     </series>
     <series id="sc">
@@ -1741,10 +1742,12 @@ an application example.</p>
      </event>
     </series>
     <series id="cgo">
-     <name>International Symposium on Code Generation and Optimization</name>
+     <name>Code Generation and Optimization</name>
+     <longPrefix>International Symposium on</longPrefix>
      <event id="cgo10">
-       <location>Toronto, Canada</location>
-       <date>2010-4</date>
+       <location>Toronto, Ontario, Canada</location>
+       <date>2010-04</date>
+       <url>http://www.cgo.org/cgo2010/</url>
      </event>
     </series>
   </events>

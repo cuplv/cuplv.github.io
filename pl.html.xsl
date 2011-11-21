@@ -198,7 +198,7 @@ name="html" />
 	</xsl:with-param>
       </xsl:apply-templates>
     </ul>
-    <img src="pics/banner1.jpg" height="50"/><img src="pics/banner2.jpg" height="50"/><img src="pics/banner3.jpg" height="50"/><img src="pics/banner4.jpg" height="50"/><img src="pics/banner5.jpg" height="50"/>
+    <img src="pics/banner.jpg" height="50"/>
  </div>
  
  <div id="content">
