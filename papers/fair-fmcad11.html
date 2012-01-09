@@ -1,0 +1,96 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         	FMCAD 2011
+         :
+         	An Incremental Approach to Model Checking Progress Properties  |  
+         CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link href="pl.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href="." onClick="_gaq.push(['_trackPageview', '/.']);">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="people.html">People</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">An Incremental Approach to Model Checking Progress Properties</div>
+               <div xmlns="" class="subtitle">
+                  	<a href="http://www.cs.utexas.edu/~ragerdl/fmcad11/">FMCAD 2011</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2011</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/fair-fmcad11.html">detail</a></li>
+                     <li><a href="http://theory.stanford.edu/~arbrad/papers/fair.pdf">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">An Incremental Approach to Model Checking Progress Properties</div>
+                  <div class="hanging"><a href="http://ece.colorado.edu/~bradleya/">Aaron R. Bradley</a>, <a href="http://vlsi.colorado.edu/~fabio/">Fabio Somenzi</a>, <a href="http://eces.colorado.edu/~hassanz/">Zyad Hassan</a>,  and Yan Zhang
+                  </div>
+                  <div class="hanging">
+                     	<a href="http://www.cs.utexas.edu/~ragerdl/fmcad11/">FMCAD 2011</a>:
+                     International Conference on Formal Methods in Computer Aided Design
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns="">An incremental algorithm for model checking progress
+               	properties is proposed. It follows from the following insight:
+               	any SCC-closed region of a system’s state graph can be
+               	represented by a sequence of inductive assertions. Each
+               	iteration of the algorithm selects a set of states, called a
+               	skeleton, that together satisfy all fairness conditions; it
+               	then applies safety model checkers to attempt to connect the
+               	states into a reachable fair cycle. If this attempt fails, the
+               	resulting learned lemma takes one of two forms: an inductive
+               	reachability assertion that shows that at least one state of
+               	the skeleton is unreachable, or an inductive wall that deﬁnes
+               	two SCC-closed regions of the state graph. Subsequent
+               	skeletons must be chosen entirely from one side of the
+               	wall. Because a lemma often applies more generally than to the
+               	one skeleton from which it was derived, property-directed
+               	abstraction is achieved. The algorithm is highly
+               	parallelizable.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{FMCAD = "International Conference on Formal Methods in Computer Aided Design (FMCAD)"}
+@inproceedings{fair-fmcad11,
+  author = {Aaron R. Bradley and Fabio Somenzi and Zyad Hassan and Yan Zhang},
+  title = {An Incremental Approach to Model Checking Progress Properties},
+  booktitle = FMCAD,
+  year = {2011},
+}
+</pre></div>
+      </div>
+   </body>
+</html>

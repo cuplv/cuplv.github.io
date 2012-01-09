@@ -6,10 +6,10 @@
 
 <cv>
   <news-list>
-    <news date="11.2011.02" id="faculty-openings-2012">
+    <news date="2011.11.04" id="best-paper-fmcad-2011">
       <news-snippet>
-	Best paper at FMCAD 2011 goes to <em>An Incremental Approach to Model Checking Progress Properties</em> by
-   Aaron Bradley, Fabio Somenzi, Zyad Hassan, and Yan Zhang.
+	Best paper at <ref table="event" key="fmcad11"/> goes to
+	"<ref table="pub" key="fair-fmcad11"/>".
       </news-snippet>
     </news>
     <news date="2011.11.04" id="faculty-openings-2012">
@@ -827,6 +827,40 @@
 	satisfiability-modulo-theories (SMT) solvers.</p>
       </abstract>
     </pub>
+    <pub id="fair-fmcad11">
+      <title>An Incremental Approach to Model Checking Progress Properties</title>
+      <authors>
+	<author person="arbrad" />
+	<author person="fabio" />
+	<author person="hassanz" />
+	<author person="yanzhang" />
+      </authors>
+      <urls>
+	<url name="pdf">http://theory.stanford.edu/~arbrad/papers/fair.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="fmcad11" />
+      </howpub>
+      <abstract>
+	<p>An incremental algorithm for model checking progress
+	properties is proposed. It follows from the following insight:
+	any SCC-closed region of a system’s state graph can be
+	represented by a sequence of inductive assertions. Each
+	iteration of the algorithm selects a set of states, called a
+	skeleton, that together satisfy all fairness conditions; it
+	then applies safety model checkers to attempt to connect the
+	states into a reachable fair cycle. If this attempt fails, the
+	resulting learned lemma takes one of two forms: an inductive
+	reachability assertion that shows that at least one state of
+	the skeleton is unreachable, or an inductive wall that deﬁnes
+	two SCC-closed regions of the state graph. Subsequent
+	skeletons must be chosen entirely from one side of the
+	wall. Because a lemma often applies more generally than to the
+	one skeleton from which it was derived, property-directed
+	abstraction is achieved. The algorithm is highly
+	parallelizable.</p>
+      </abstract>
+    </pub>
     <pub id="ptaprecision-sas11">
       <title>The Flow-Insensitive Precision of Andersen's Analysis in Practice</title>
       <authors>
@@ -1415,6 +1449,10 @@ an application example.</p>
       <url>http://ecee.colorado.edu/~manishv/</url>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="arbrad">
+      <name>Aaron R. Bradley</name>
+      <url>http://ece.colorado.edu/~bradleya/</url>
+    </person>
     <person id="msridhar">
       <name>Manu Sridharan</name>
       <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
@@ -1622,6 +1660,13 @@ an application example.</p>
       <name>Matthias Hauswirth</name>
       <url>http://www.inf.usi.ch/faculty/hauswirth/</url>
     </person>
+    <person id="hassanz">
+      <name>Zyad Hassan</name>
+      <url>http://eces.colorado.edu/~hassanz/</url>
+    </person>
+    <person id="yanzhang">
+      <name>Yan Zhang</name>
+    </person>
   </persons>
 
   <events>
@@ -1731,6 +1776,15 @@ an application example.</p>
 	<date>2011-04</date>
 	<location>Chicago, Illinois, USA</location>
 	<url>http://hscc2011.cs.sunysb.edu/</url>
+      </event>
+    </series>
+    <series id="fmcad">
+      <name>Formal Methods in Computer Aided Design</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="fmcad11">
+	<date>2011-10</date>
+	<location>Austin, Texas, USA</location>
+	<url>http://www.cs.utexas.edu/~ragerdl/fmcad11/</url>
       </event>
     </series>
     <series id="nsad">
