@@ -796,6 +796,37 @@
   </projects>
 
   <publications>
+    <pub id="filters-tacas12">
+      <title>A Bit Too Precise? Bounded Verification of Quantized Digital Filters</title>
+      <authors>
+	<author person="cox" />
+	<author person="srirams" />
+	<author person="bec" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/tacas12-filter_verification.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="tacas12" />
+      </howpub>
+      <abstract>
+	<p>Digital filters are simple yet ubiquitous components of a wide
+	variety of digital processing and control systems. Errors in
+	the filters can be catastrophic.  Traditionally digital
+	filters have been verified using methods from control theory
+	and extensive testing.  We study two alternative verification
+	techniques: bit-precise analysis and real-valued error
+	approximations.  In this paper, we empirically evaluate
+	several variants of these two fundamental approaches for
+	verifying fixed-point implementations of digital filters. We
+	design our comparison to reveal the best possible approach
+	towards verifying real-world designs of infinite impulse
+	response (IIR) digital filters. Our study reveals broader
+	insights into cases where bit-reasoning is absolutely
+	necessary and suggests efficient approaches using modern
+	satisfiability-modulo-theories (SMT) solvers.</p>
+      </abstract>
+    </pub>
     <pub id="ptaprecision-sas11">
       <title>The Flow-Insensitive Precision of Andersen's Analysis in Practice</title>
       <authors>
@@ -1656,9 +1687,15 @@ an application example.</p>
     <series id="tacas">
       <name>Tools and Algorithms for the Construction and Analysis of Systems</name>
       <longPrefix>International Conference on</longPrefix>
+      <event id="tacas12">
+	<date>2012-03</date>
+	<location>Tallinn, Estonia</location>
+	<nth>Eighteenth</nth>
+	<url>http://www.etaps.org/2012/tacas/</url>
+      </event>
       <event id="tacas11">
 	<date>2011-03</date>
-	<location> Saarbrücken, Germany </location>
+	<location>Saarbrücken, Germany</location>
 	<url>http://www.etaps.org/etaps-2011/tacas</url>
       </event>
     </series>
