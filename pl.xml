@@ -6,10 +6,79 @@
 
 <cv>
   <news-list>
-    <news date="2011.02.23" id="phdvisit-2011">
+    <news date="2012.02.23" id="phdvisit-2012">
       <news-snippet>
 	Prospective Ph.D. students visit February 24.
       </news-snippet>
+    </news>
+    <news date="2012.02.02" id="jeannet-2012">
+      <news-snippet>
+	<ref table="person" key="bjeannet"/> and <ref table="person"
+	key="schramme"/> visit February 6-17.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="bjeannet"/> and <ref table="person"
+	key="schramme"/> from INRIA Rhône-Alpes in Grenoble, France
+	are visiting us for two weeks from February 6, 2012 to
+	February 17, 2012.  Bertrand is giving a talk at 3:30pm in
+	ECOT 831 on Friday, February 10, 2012, and Peter is presenting
+	at 3:30pm in ECOT 831 on Friday, February 17, 2012.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="schramme"/></speaker>
+	<affiliation>INRIA Rhône-Alpes</affiliation>
+	<when>02-17-2012 15:30</when>
+	<where>ECOT 831</where>
+	<title>
+	  Towards the Verification of Hybrid Data-Flow Languages
+	</title>
+	<abstract>
+	  <p>Hybrid systems are used to model embedded computing
+	  systems interacting with their physical environment. There
+	  is a conceptual mismatch between high-level hybrid system
+	  languages, like Simulink, which are used for simulation, and
+	  hybrid automata, the most suitable representation for safety
+	  verification. Indeed, in simulation languages the
+	  interaction between discrete and continuous execution steps
+	  is specified using the concept of zero-crossings, whereas
+	  hybrid automata exploit the notion of staying conditions.
+	  In this talk we first briefly present Zelus, a synchronous
+	  data-flow language extended with ordinary differential
+	  equations.  Then we propose a sound translation from a
+	  Zelus-like hybrid data-flow formalism to logico-numerical
+	  hybrid automata discussing various zero-crossing semantics
+	  and the extent to which the original semantics is preserved.
+	  At last we sketch how existing continuous reachability
+	  analysis methods can be applied to logico-numerical hybrid
+	  automata.</p>
+	</abstract>
+      </talk-announcement>
+      <talk-announcement>
+	<speaker><ref table="person" key="bjeannet"/></speaker>
+	<affiliation>INRIA Rhône-Alpes</affiliation>
+	<when>02-10-2012 15:30</when>
+	<where>ECOT 831</where>
+	<title>
+	  The BDDAPRON Logico-Numerical Abstract Domain Library
+	</title>
+	<abstract>
+	  <p>We describe BDDAPRON, a freely available library
+	  dedicated to the static analysis of finite-type and
+	  numerical variables.</p> 
+	  <p>BDDAPRON provides ready-to-use logico-numerical
+	  abstractions for combinations of finite-type and numerical
+	  variables, as well as powerful symbolic manipulations of
+	  expressions.</p> 
+	  <p>Algorithmically, BDDAPRON combines BDD techniques (using
+	  the CUDD library) with numerical abstract domains provided
+	  by the APRON library. We describe the principles behind this
+	  combination and the various available options for the
+	  computation of abstract transfer functions.</p>
+	  <p>At last, we present some applications of the BDDAPRON
+	  abstract domain to program verification, including recursive
+	  program with pointers.</p>
+	</abstract>
+      </talk-announcement>
     </news>
     <news date="2011.11.04" id="best-paper-fmcad-2011">
       <news-snippet>
@@ -1672,6 +1741,14 @@ an application example.</p>
     </person>
     <person id="yanzhang">
       <name>Yan Zhang</name>
+    </person>
+    <person id="schramme">
+      <name>Peter Schrammel</name>
+      <url>http://pop-art.inrialpes.fr/people/schramme/</url>
+    </person>
+    <person id="bjeannet">
+      <name>Bertrand Jeannet</name>
+      <url>http://pop-art.inrialpes.fr/~bjeannet/</url>
     </person>
   </persons>
 
