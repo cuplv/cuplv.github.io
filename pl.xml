@@ -6,6 +6,11 @@
 
 <cv>
   <news-list>
+    <news date="2011.02.23" id="phdvisit-2011">
+      <news-snippet>
+	Prospective Ph.D. students visit February 24.
+      </news-snippet>
+    </news>
     <news date="2011.11.04" id="best-paper-fmcad-2011">
       <news-snippet>
 	Best paper at <ref table="event" key="fmcad11"/> goes to
