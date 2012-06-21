@@ -6,6 +6,29 @@
 
 <cv>
   <news-list>
+    <news date="2012.04.20" id="paper-issta12">
+      <news-snippet>
+	Paper accepted to <ref table="event" key="issta12"/>
+	(by <ref table="pub" key="enforcements-issta12" text="Coughlin et al."/>).
+      </news-snippet>
+    </news>
+    <news date="2012.03.27" id="talk-tacas12">
+      <news-snippet>
+	<ref table="person" key="cox"/> is presenting
+	at <ref table="event" key="tacas12"/> March 27.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="cox"/> is presenting
+	the paper "<ref table="pub" key="filters-tacas12"/>"
+	at <ref table="event" key="tacas12"/> on March 27.
+      </news-detail>
+    </news>
+    <news date="2012.03.23" id="papers-cav12">
+      <news-snippet>
+	3 papers with CUPLV authors accepted to <ref table="event" key="cav12"/>
+	(by Hassan et al., Zutshi et al., and Berdine et al.)
+      </news-snippet>
+    </news>
     <news date="2012.02.23" id="phdvisit-2012">
       <news-snippet>
 	Prospective Ph.D. students visit February 24.
@@ -870,6 +893,57 @@
   </projects>
 
   <publications>
+    <pub id="enforcements-issta12">
+      <title>Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say</title>
+      <authors>
+	<author person="coughlin" />
+	<author person="bec" />
+	<author person="diwan" />
+	<author person="siek" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/issta12-enforcements.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="issta12" />
+      </howpub>
+      <note>
+	<tr>
+	  <extendedtr />
+	  <number>CU-CS-1093-12</number>
+	  <url>papers/CU-CS-1093-12-enforcements.pdf</url>
+	</tr>
+      </note>
+      <abstract>
+	<p>A static analysis design is <em>sufficient</em> if it can
+	prove the property of interest with an acceptable number of
+	false alarms.  Ultimately, the only way to confirm that an
+	analysis design is sufficient is to implement it and run it on
+	real-world programs.  If the evaluation shows that the design
+	is insufficient, the designer must return to the drawing board
+	and repeat the process&emdash;wasting expensive implementation
+	effort over and over again.  In this paper, we make the
+	observation that there is a minimal range of code needed to
+	prove a property of interest under an ideal static analysis;
+	we call such a range of code a <em>validation scope</em>.
+	Armed with this observation, we create a dynamic measurement
+	framework that quantifies validation scopes and thus enables
+	designers to rule out insufficient designs at lower cost.  A
+	novel attribute of our framework is the ability to model
+	aspects of static reasoning using dynamic execution
+	measurements.  To evaluate the flexibility of our framework,
+	we instantiate it on an example property&emdash;null
+	dereference errors&emdash;and measure validation scopes on
+	real-world programs. We use a broad range of metrics that
+	capture the difficulty of analyzing programs along varying
+	dimensions.  We also examine how validation scopes evolve as
+	developers fix null dereference errors and as code matures.
+	We find that bug fixes shorten validation scopes, that longer
+	validation scopes are more likely to be buggy, and that
+	overall validation scopes are remarkably stable as programs
+	evolve.</p>
+      </abstract>
+    </pub>
     <pub id="filters-tacas12">
       <title>A Bit Too Precise? Bounded Verification of Quantized Digital Filters</title>
       <authors>
@@ -1797,6 +1871,11 @@ an application example.</p>
 	<location>Snowbird, Utah, USA</location>
 	<url>http://www.cs.utah.edu/events/conferences/cav2011/</url>
       </event>
+      <event id="cav12">
+	<date>2012-07</date>
+	<location>Berkeley, California, USA</location>
+	<url>http://cav12.cs.illinois.edu/</url>
+      </event>
     </series>
     <series id="esop">
       <name>European Symposium on Programming</name>
@@ -1850,6 +1929,16 @@ an application example.</p>
 	<location>Austin, Texas, USA</location>
 	<nth>Twelfth</nth>
 	<url>http://vmcai11.cis.ksu.edu/</url>
+      </event>
+    </series>
+    <series id="issta">
+      <name>Software Testing and Analysis</name>
+      <longPrefix>International Symposium on</longPrefix>
+      <event id="issta12">
+	<date>2012-07</date>
+	<location>Minneapolis, Minnesota, USA</location>
+	<nth>Twenty-First</nth>
+	<url>http://crisys.cs.umn.edu/issta2012/</url>
       </event>
     </series>
     <series id="hscc">

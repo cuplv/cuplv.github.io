@@ -485,9 +485,19 @@ name="html" />
 </xsl:template>
 
 <xsl:template match="ref">
-  <xsl:apply-templates select="key(@table, @key)" mode="ref">
-    <xsl:with-param name="mode" select="@mode" />
-  </xsl:apply-templates>
+  <xsl:choose>
+    <xsl:when test="@text">
+      <xsl:apply-templates select="key(@table, @key)" mode="ref">
+	<xsl:with-param name="mode" select="@mode" />
+	<xsl:with-param name="text" select="@text" />
+      </xsl:apply-templates>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="key(@table, @key)" mode="ref">
+	<xsl:with-param name="mode" select="@mode" />
+      </xsl:apply-templates>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="author">
