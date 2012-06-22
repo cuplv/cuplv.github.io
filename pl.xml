@@ -8,6 +8,9 @@
   <news-list>
     <news date="2012.04.20" id="paper-issta12">
       <news-snippet>
+        Congratulations to <ref table="person" key="vitousek"/> for being awarded 3rd place in the the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project, Gradual Typing with Efficient Object Casts. 
+      </news-snippet>
+      <news-snippet>
 	Paper accepted to <ref table="event" key="issta12"/>
 	(by <ref table="pub" key="enforcements-issta12" text="Coughlin et al."/>).
       </news-snippet>
