@@ -898,6 +898,41 @@
   </projects>
 
   <publications>
+    <pub id="self-reflection-sas12">
+      <title>Invariant Generation for Parametrized Systems using Self-Reflection</title>
+      <authors>
+        <author person="asanchez" />
+        <author person="srirams" />
+        <author person="cesar" />
+        <author person="bec" />
+      </authors>
+      <urls>
+        <url name="pdf">papers/sas12-reflective.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="sas12" />
+      </howpub>
+      <abstract>
+        We examine the problem of inferring invariants for
+        parametrized systems. Parametrized systems are concurrent
+        systems consisting of an a priori unbounded number of process
+        instances running the same program. Such systems are commonly
+        encountered in many situations including device drivers,
+        distributed systems, and robotic swarms. In this paper we
+        describe a technique that enables leveraging off-the-shelf
+        invariant generators designed for sequential programs to infer
+        invariants of parametrized systems. The central challenge in
+        invariant inference for parametrized systems is that näıvely
+        exploding the transition system with all interleavings is not
+        just impractical but impossible. In our approach, the key
+        enabler is the notion of a reﬂective abstraction that we prove
+        has an important correspondence with inductive
+        invariants. This correspondence naturally gives rise to an
+        iterative invariant generation procedure that alternates
+        between computing candidate invariants and creating reﬂective
+        abstractions.
+      </abstract>
+    </pub>
     <pub id="enforcements-issta12">
       <title>Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say</title>
       <authors>
@@ -947,6 +982,127 @@
 	validation scopes are more likely to be buggy, and that
 	overall validation scopes are remarkably stable as programs
 	evolve.</p>
+      </abstract>
+    </pub>
+    <pub id="sl-cav12">
+      <title>Diagnosing Abstraction Failure in Separation Logic-based Analyses</title>
+      <authors>
+        <author person="berdine" />
+        <author person="cox" />
+        <author person="ishtiaq" />
+        <author person="wintersteiger" />
+      </authors>
+      <urls>
+        <url name="pdf">papers/cav12-diag-abs-fail.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="cav12" />
+      </howpub>
+      <abstract>
+        <p>Abstraction refinement is an effective verification
+        technique for automatically proving safety properties of
+        software. Application of this technique in shape analyses has proved
+        impractical as core components of existing refinement techniques such
+        as backward analysis, general conjunction, and identification of
+        unreachable but doomed states are computationally infeasible in such
+        domains.</p>
+        <p>We propose a new method to diagnose proof failures to
+        be used in a refinement scheme for Separation Logic–based shape
+        analyses. To check feasibility of abstract error traces, we perform
+        Bounded Model Checking over the traces using a novel encoding into
+        SMT. A subsequent diagnosis finds discontinuities on infeasible
+        traces, and identifies doomed states admitted by the abstraction. To
+        construct doomed states, we give a model-finding algorithm for
+        “symbolic heap” Separation Logic formulas, employing the execution
+        machinery of the feasibility checker to search for concrete
+        counter-examples. The diagnosis has been implemented in SLAyer, and we
+        present a simple scheme for refining the abstraction of hierarchical
+        data structures, and illustrate its effectiveness on benchmarks from
+        the SLAyer test suite.</p>
+      </abstract>
+    </pub>
+    <pub id="timed-relational-cav12">
+      <title>Timed Relational Abstractions of Sampled-Data Control Systems</title>
+      <authors>
+        <author person="adityaz" />
+        <author person="srirams" />
+        <author person="atiwari" />
+      </authors>
+      <urls>
+        <url name="pdf">papers/cav12-timed-relational.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="cav12" />
+      </howpub>
+      <abstract>
+        <p>
+          In this paper, we define timed relational abstractions for
+          verifying sampled data control systems. Sampled data control
+          systems consist of a plant, modeled as a hybrid system and a
+          synchronous controller, modeled as a discrete transition
+          system. The controller computes control inputs and/or sends
+          control events to the plant based on the periodically
+          sampled state of the plant. The correctness of the system
+          depends on the controller design as well as an appropriate
+          choice of the controller sampling period.
+        </p>
+        <p>
+          Our approach constructs a timed relational abstraction of
+          the hybrid plant by replacing the continuous plant dynamics
+          by relations. These relations map a state of the plant to
+          states reachable within the sampling time period. We present
+          techniques for building timed relational abstractions, while
+          taking care of discrete transitions that can be taken by the
+          plant between samples. The resulting abstractions are better
+          suited for the verification of sampled data control
+          systems. The abstractions focus on the states that can be
+          observed by the controller at the sample times, while
+          abstracting away behaviors between sample times
+          conservatively. The resulting abstractions are discrete,
+          infinite-state transition systems. Thus conventional
+          verification tools can be used to verify safety properties
+          of these abstractions. We use k-induction to prove safety
+          properties and bounded model checking (BMC) to find
+          potential falsifications. We present our idea, its
+          implementation and results on many benchmark examples.
+        </p>
+      </abstract>
+    </pub>
+    <pub id="iictl-cav12">
+      <title>Incremental Inductive CTL Model Checking</title>
+      <authors>
+        <author person="hassanz" />
+        <author person="arbrad" />
+        <author person="fabio" />
+      </authors>
+      <urls>
+        <url name="pdf">papers/cav12-iictl.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="cav12" />
+      </howpub>
+      <abstract>
+        <p>A SAT-based incremental, inductive algorithm for model
+        checking CTL properties is proposed. As in classic CTL model
+        checking, the parse graph of the property shapes the
+        analysis. However, in the proposed algorithm, called IICTL,
+        the analysis is directed by task states that are pushed down
+        the parse tree. To each node is associated over- and
+        under-approximations to the set of states satisfying that
+        node’s property; these approximations are refined until a
+        proof that the property does or does not hold is
+        obtained. Each CTL operator corresponds naturally to an
+        incremental sub-query: given a task state, an EX node executes
+        a SAT query; an EU node applies IC3; and an EG node applies
+        FAIR. In each case, the query result provides more general
+        information than necessary to satisfy the task. When a query
+        is satisfiable, the returned trace is generalized using
+        forall-exists reasoning, during which IC3 is applied to obtain
+        new reachability information that enables greater
+        generalization. When a query is unsatisfiable, the proof
+        provides the generalization. In this way, property-directed
+        abstraction is achieved.
+        </p>
       </abstract>
     </pub>
     <pub id="filters-tacas12">
@@ -1614,6 +1770,10 @@ an application example.</p>
       <name>Geoffrey Belter</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="berdine">
+      <name>Josh Berdine</name>
+      <url>http://research.microsoft.com/en-us/people/jjb</url>
+    </person>
     <person id="blackshear" group="phd">
       <name>Sam Blackshear</name>
       <url>http://cs.colorado.edu/~sabl4745</url>
@@ -1639,6 +1799,10 @@ an application example.</p>
     <person id="gottschlich">
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
+    </person>
+    <person id="ishtiaq">
+      <name>Samin Ishtiaq</name>
+      <url>http://research.microsoft.com/en-us/people/sishtiaq</url>
     </person>
     <person id="jessup">
       <name>E.R. Jessup</name>
@@ -1728,6 +1892,10 @@ an application example.</p>
       <name>César Sánchez</name>
       <url>http://software.imdea.org/~cesar/</url>
     </person>
+    <person id="asanchez">
+      <name>Alejandro Sánchez</name>
+      <url>http://software.imdea.org/people/alejandro.sanchez/index.html</url>
+    </person>
     <person id="swarat">
       <name>Swarat Chaudhuri</name>
       <url>http://www.cse.psu.edu/~swarat/</url>
@@ -1743,6 +1911,10 @@ an application example.</p>
     <person id="bycook">
       <name>Byron Cook</name>
       <url>http://research.microsoft.com/en-us/people/bycook/</url>
+    </person>
+    <person id="wintersteiger">
+      <name>Christoph Wintersteiger</name>
+      <url>http://research.microsoft.com/en-us/people/cwinter</url>
     </person>
     <person id="chaowang">
       <name>Chao Wang</name>
@@ -1919,6 +2091,12 @@ an application example.</p>
 	<location>Venice, Italy</location>
 	<nth>Eighteenth</nth>
 	<url>http://sas2011.cs.technion.ac.il/</url>
+      </event>
+      <event id="sas12">
+	<date>2012-09</date>
+	<location>Deauville, France</location>
+	<nth>Nineteenth</nth>
+	<url>http://www.sas2012.ens.fr/</url>
       </event>
       <event id="sas07">
 	<date>2007</date>

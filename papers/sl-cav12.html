@@ -1,0 +1,100 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         CAV 2012
+         :
+         	Diagnosing Abstraction Failure in Separation Logic-based Analyses  |  
+         CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link href="pl.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href="." onClick="_gaq.push(['_trackPageview', '/.']);">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="people.html">People</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Diagnosing Abstraction Failure in Separation Logic-based Analyses</div>
+               <div xmlns="" class="subtitle">
+                  <a href="http://cav12.cs.illinois.edu/">CAV 2012</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2012</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/sl-cav12.html">detail</a></li>
+                     <li><a href="papers/cav12-diag-abs-fail.pdf" onClick="_gaq.push(['_trackPageview', '/papers/cav12-diag-abs-fail.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Diagnosing Abstraction Failure in Separation Logic-based Analyses</div>
+                  <div class="hanging"><a href="http://research.microsoft.com/en-us/people/jjb">Josh Berdine</a>, <a href="http://eces.colorado.edu/~coxaj/">Arlen Cox</a>, <a href="http://research.microsoft.com/en-us/people/sishtiaq">Samin Ishtiaq</a>,  and <a href="http://research.microsoft.com/en-us/people/cwinter">Christoph Wintersteiger</a></div>
+                  <div class="hanging">
+                     <a href="http://cav12.cs.illinois.edu/">CAV 2012</a>:
+                     International Conference on Computer Aided Verification
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns="">Abstraction refinement is an effective verification
+               technique for automatically proving safety properties of
+               software. Application of this technique in shape analyses has proved
+               impractical as core components of existing refinement techniques such
+               as backward analysis, general conjunction, and identification of
+               unreachable but doomed states are computationally infeasible in such
+               domains.
+            </p>
+            
+            <p xmlns="">We propose a new method to diagnose proof failures to
+               be used in a refinement scheme for Separation Logic–based shape
+               analyses. To check feasibility of abstract error traces, we perform
+               Bounded Model Checking over the traces using a novel encoding into
+               SMT. A subsequent diagnosis finds discontinuities on infeasible
+               traces, and identifies doomed states admitted by the abstraction. To
+               construct doomed states, we give a model-finding algorithm for
+               “symbolic heap” Separation Logic formulas, employing the execution
+               machinery of the feasibility checker to search for concrete
+               counter-examples. The diagnosis has been implemented in SLAyer, and we
+               present a simple scheme for refining the abstraction of hierarchical
+               data structures, and illustrate its effectiveness on benchmarks from
+               the SLAyer test suite.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{CAV = "International Conference on Computer Aided Verification (CAV)"}
+@inproceedings{sl-cav12,
+  author = {Josh Berdine and Arlen Cox and Samin Ishtiaq and Christoph Wintersteiger},
+  title = {Diagnosing Abstraction Failure in Separation Logic-based Analyses},
+  booktitle = CAV,
+  year = {2012},
+}
+</pre></div>
+      </div>
+   </body>
+</html>

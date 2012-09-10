@@ -1,0 +1,99 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         CAV 2012
+         :
+         	Incremental Inductive CTL Model Checking  |  
+         CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link href="pl.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="rsidebar"></div>
+         <div id="banner">
+            <ul>
+               <li xmlns=""><a href="." onClick="_gaq.push(['_trackPageview', '/.']);">Welcome</a></li>
+               <li xmlns=""><a href="news.html">News</a></li>
+               <li xmlns=""><a href="people.html">People</a></li>
+               <li xmlns=""><a href="papers.html">Papers</a></li>
+            </ul><img src="pics/banner.jpg" height="50"></img></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Incremental Inductive CTL Model Checking</div>
+               <div xmlns="" class="subtitle">
+                  <a href="http://cav12.cs.illinois.edu/">CAV 2012</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-block">
+                  <div class="item-date">2012</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/iictl-cav12.html">detail</a></li>
+                     <li><a href="papers/cav12-iictl.pdf" onClick="_gaq.push(['_trackPageview', '/papers/cav12-iictl.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Incremental Inductive CTL Model Checking</div>
+                  <div class="hanging"><a href="http://eces.colorado.edu/~hassanz/">Zyad Hassan</a>, <a href="http://ece.colorado.edu/~bradleya/">Aaron R. Bradley</a>,  and <a href="http://vlsi.colorado.edu/~fabio/">Fabio Somenzi</a></div>
+                  <div class="hanging">
+                     <a href="http://cav12.cs.illinois.edu/">CAV 2012</a>:
+                     International Conference on Computer Aided Verification
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns="">A SAT-based incremental, inductive algorithm for model
+               checking CTL properties is proposed. As in classic CTL model
+               checking, the parse graph of the property shapes the
+               analysis. However, in the proposed algorithm, called IICTL,
+               the analysis is directed by task states that are pushed down
+               the parse tree. To each node is associated over- and
+               under-approximations to the set of states satisfying that
+               node’s property; these approximations are refined until a
+               proof that the property does or does not hold is
+               obtained. Each CTL operator corresponds naturally to an
+               incremental sub-query: given a task state, an EX node executes
+               a SAT query; an EU node applies IC3; and an EG node applies
+               FAIR. In each case, the query result provides more general
+               information than necessary to satisfy the task. When a query
+               is satisfiable, the returned trace is generalized using
+               forall-exists reasoning, during which IC3 is applied to obtain
+               new reachability information that enables greater
+               generalization. When a query is unsatisfiable, the proof
+               provides the generalization. In this way, property-directed
+               abstraction is achieved.
+               
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{CAV = "International Conference on Computer Aided Verification (CAV)"}
+@inproceedings{iictl-cav12,
+  author = {Zyad Hassan and Aaron R. Bradley and Fabio Somenzi},
+  title = {Incremental Inductive CTL Model Checking},
+  booktitle = CAV,
+  year = {2012},
+}
+</pre></div>
+      </div>
+   </body>
+</html>
