@@ -35,6 +35,11 @@
 	</p>
       </news-page>
     </news>
+    <news date="2012.09.19" id="mvd-2012">
+      <news-snippet>
+	CUPLV goes to <ref table="event" key="mvd12"/> September 20-21.
+      </news-snippet>
+    </news>
     <news date="2012.07.30" id="rival-2012">
       <news-snippet>
 	<ref table="person" key="rival" /> visits July 30-August 16.
@@ -2374,6 +2379,14 @@ an application example.</p>
 	<date>F2009</date>
 	<url>http://fractal.cs.colorado.edu/</url>
 	<location>Boulder, Colorado, USA</location>
+      </event>
+    </series>
+    <series id="mvd">
+      <name>Midwest Verification Day</name>
+      <event id="mvd12">
+	<date>2012-09</date>
+	<url>http://www.ittc.ku.edu/mvd12/</url>
+	<location>Lawrence, Kansas, USA</location>
       </event>
     </series>
     <series id="gpce">
