@@ -6,9 +6,58 @@
 
 <cv>
   <news-list>
+    <news date="2012.09.25" id="phd-call-2013">
+      <news-snippet>
+	Call for Ph.D. applicants for Fall 2013.  Application deadline
+	is December 15, 2012.
+      </news-snippet>
+      <news-detail>
+	Call for Ph.D. applicants for Fall 2013.  Application deadline
+	is December 15, 2012. Check out our latest <a
+	href="http://www.cs.colorado.edu/~bec/talks/openhouse11.swf">recruiting
+	talk</a> from February 25, 2011.
+      </news-detail>
+      <news-page header="Ph.D. Positions">
+	<p>
+	We are looking for strong students to join our diverse and
+	dynamic group in programming languages and verification.  Our
+	group has active projects in areas such as static and dynamic
+	program analysis; verification, debugging, and programmer
+	productivity tools; language-based security; type systems;
+	language design, compilation, and analysis for dynamic, web
+	languages; performance analysis of data center-scale systems;
+	analysis of hybrid and embedded systems.  We have a track
+	record of publishing in top venues, such as POPL and PLDI.  <a
+	href="http://www.colorado.edu/cs/sites/default/files/Department%20of%20Computer%20Science%20Graduate%20Admissions.pdf">CS
+	Admissions</a> (deadline December 15, 2012) and <a
+	href="http://ecee.colorado.edu/prospective/grad/intro.html">ECEE
+	Admissions</a> (deadline February 1, 2013 but earlier for financial aid consideration).
+	</p>
+      </news-page>
+    </news>
+    <news date="2012.07.19" id="talk-issta12">
+      <news-snippet>
+	<ref table="person" key="coughlin"/> is presenting
+	at <ref table="event" key="issta12"/> July 19.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="coughlin"/> is presenting
+	the paper "<ref table="pub" key="enforcements-issta12"/>"
+	at <ref table="event" key="issta12"/> on July 19.
+      </news-detail>
+    </news>
     <news date="2012.06.21" id="pldisrc12">
       <news-snippet>
-        Congratulations to <ref table="person" key="vitousek"/> for being awarded 3rd place in the the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project, Gradual Typing with Efficient Object Casts. 
+        <ref table="person" key="vitousek"/> awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">PLDI Student Research Competition (SRC)</a>.
+      </news-snippet>
+      <news-detail>
+        Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts. 
+      </news-detail>
+    </news>
+    <news date="2012.05.21" id="paper-sas12">
+      <news-snippet>
+	Paper accepted to <ref table="event" key="sas12"/>
+	(by <ref table="pub" key="self-reflection-sas12" text="Sanchez et al."/>).
       </news-snippet>
     </news>
     <news date="2012.04.20" id="paper-issta12">
@@ -31,7 +80,7 @@
     <news date="2012.03.23" id="papers-cav12">
       <news-snippet>
 	3 papers with CUPLV authors accepted to <ref table="event" key="cav12"/>
-	(by Hassan et al., Zutshi et al., and Berdine et al.)
+	(by <ref table="pub" key="iictl-cav12" text="Hassan et al."/>, <ref table="pub" key="timed-relational-cav12" text="Zutshi et al."/>, and <ref table="pub" key="sl-cav12" text="Berdine et al."/>)
       </news-snippet>
     </news>
     <news date="2012.02.23" id="phdvisit-2012">
@@ -107,6 +156,16 @@
 	  program with pointers.</p>
 	</abstract>
       </talk-announcement>
+    </news>
+    <news date="2012.01.25" id="students-popl12">
+      <news-snippet>
+	<ref table="person" key="agrawal"/>,
+	<ref table="person" key="coughlin"/>,
+	<ref table="person" key="cox"/>, and
+	<ref table="person" key="silkensen"/> finalists
+	at the <ref table="event" key="popl12"/> 
+	Student Lightning Talks.
+      </news-snippet>
     </news>
     <news date="2011.11.04" id="best-paper-fmcad-2011">
       <news-snippet>
@@ -1836,6 +1895,10 @@ an application example.</p>
       <name>Aditya Zutshi</name>
       <face> pics/zutshi.jpg </face>
     </person>
+    <person id="agrawal" group="ms">
+      <name>Neelam Agrawal</name>
+      <face>pics/generic-female.png</face>
+    </person>
     <person id="bennett" group="ms">
       <name>Huck Bennett</name>
       <url>http://csel.cs.colorado.edu/~bennethd</url>  
@@ -2007,6 +2070,12 @@ an application example.</p>
     <series id="popl">
       <name>Principles of Programming Languages</name>
       <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
+      <event id="popl12">
+	<date>2012-01</date>
+	<location>Philadelphia, Pennsylvania, USA</location>
+	<nth>Thirty-Ninth</nth>
+	<url>http://www.cse.psu.edu/popl/12/</url>
+      </event>
       <event id="popl11">
 	<date>2011-01</date>
 	<location>Austin, Texas, USA</location>
