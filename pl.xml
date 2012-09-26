@@ -35,6 +35,11 @@
 	</p>
       </news-page>
     </news>
+    <news date="2012.07.30" id="rival-2012">
+      <news-snippet>
+	<ref table="person" key="rival" /> visits July 30-August 16.
+      </news-snippet>
+    </news>
     <news date="2012.07.19" id="talk-issta12">
       <news-snippet>
 	<ref table="person" key="coughlin"/> is presenting
@@ -46,6 +51,13 @@
 	at <ref table="event" key="issta12"/> on July 19.
       </news-detail>
     </news>
+    <news date="2011.07.15" id="goubault-putot-2012">
+      <news-snippet>
+	<ref table="person" key="goubault"/> and
+	<ref table="person" key="putot"/>
+	visit July 16-20.
+      </news-snippet>
+    </news>
     <news date="2012.06.21" id="pldisrc12">
       <news-snippet>
         <ref table="person" key="vitousek"/> awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">PLDI Student Research Competition (SRC)</a>.
@@ -53,6 +65,121 @@
       <news-detail>
         Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts. 
       </news-detail>
+    </news>
+    <news date="2012.06.30" id="ivancic-2012">
+      <news-snippet>
+	<ref table="person" key="ivancic"/> visits July 2.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="ivancic"/>
+	from NEC Laboratories in Princeton, New Jersey
+	is visiting us on July 2, 2012.
+	Franjo is giving a talk at 2:00pm in
+	ECOT 832 on Monday, July 2, 2012.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="ivancic"/></speaker>
+	<affiliation>NEC Laboratories</affiliation>
+	<when>07-02-2012 14:00</when>
+	<where>ECOT 832</where>
+	<title>
+	  Program Analysis for C++
+	</title>
+	<abstract>
+	  <p>Program analyzes have been successful in finding serious
+	  program defects such as NULL pointer accesses or buffer
+	  overflows in programs written in C. However, industry relies
+	  heavily on object-oriented languages, such as Java and C++.
+	  This talk presents our recent advances in static analysis
+	  for C++. It focuses on C++ specific difficulties such as
+	  multiple inheritance, conversion from C++ strings to C
+	  strings and vice versa, and C++ exception semantics.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="ivancic"/> is currently a Senior
+	  Research Staff Member at NEC Laboratories America in
+	  Princeton, NJ. Prior to joining NEC, he received his
+	  Ph.D. and MSE degrees in Computer and Information Science
+	  from the University of Pennsylvania in Philadelphia,
+	  PA. Earlier, he received his diploma (Dipl.-Inform.) degree
+	  from the Rheinische Friedrich-Wilhelms-University in Bonn,
+	  Germany, for his research performed at the Fraunhofer
+	  Institute in St. Augustin, Germany. His areas of research
+	  include software verification, model checking, formal
+	  modeling and analysis of hybrid systems, and design
+	  automation for embedded software. He received the Morris and
+	  Dorothy Rubinoff dissertation award from the University of
+	  Pennsylvania.</p>
+	</bio>
+      </talk-announcement>
+    </news>
+    <news date="2012.06.11" id="chauduri-2012">
+      <news-snippet>
+	<ref table="person" key="swarat" /> visits June 12.
+      </news-snippet>
+    </news>
+    <news date="2012.05.31" id="thiagarajan-2012">
+      <news-snippet>
+	<ref table="person" key="thiagu"/> visits June 4-5.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="thiagu"/>
+	from National University of Singapore
+	is visiting us on June 4-5, 2012.
+	He is giving a talk at 2:00pm in
+	ECOT 831 on Monday, June 4, 2012.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="thiagu"/></speaker>
+	<affiliation>National University of Singapore</affiliation>
+	<when>06-04-2012 14:00</when>
+	<where>ECOT 831</where>
+	<title>
+	  Probabilistic Approximation and Analysis Bio-pathways Dynamics
+	</title>
+	<abstract>
+	  <p>A system of Ordinary Differential Equations (ODEs) is
+	  often used to model the dynamics of a bio-chemical
+	  network. Such systems are difficult to analyze. To get
+	  around this, we construct a discrete probabilistic
+	  approximation of the ODE dynamics as a dynamic Bayesian
+	  network.  Consequently, pathway properties can be analyzed
+	  using standard Bayesian inference techniques. Apart from
+	  testing our method on ODEs models drawn from the biomodels
+	  data base, we have used our technique in a combined
+	  computational and experimental study of the human complement
+	  system under inflammation conditions.  Our results are very
+	  encouraging in terms of accuracy and efficiency. Finally, we
+	  have extended the scalability of our approach via a GPU
+	  implementation.</p>
+	</abstract>
+	<bio>
+	  <p>P.S. Thiagarajan received his B.Tech (Electrical
+	  Engineering) from the Indian Institute of Technology (IIT),
+	  Madras (1970) and his Ph.D. in Computer Science from Rice
+	  university, Houston, Texas, USA (1973).  He is currently a
+	  Professor of Computer Science at the National University of
+	  Singapore.</p>
+	  <p>He has held appointments at the Project MAC (the
+	  predecessor of the current Laboratory for Computer Science),
+	  Massachusetts Institute of Technology (MIT) (1973-1975),
+	  Gesellschaft fuer Mathematik und Datenverarbeitung,
+	  St. Augustin, Germany (1975-83), Aarhus University, Denmark
+	  (1983-86), Indian Institute of Mathematical Sciences,
+	  Chennai, India (1986-89) and the Chennai Mathematical
+	  Institute (1989-).</p>
+	  <p>He has served as a member of the editorial boards of the
+	  journals Theoretical Computer Science and the International
+	  Journal on Foundations of Computing . He served two terms
+	  (1997 - 2003) as a member of the Governing Council of the
+	  European Association for Theoretical Computer Science
+	  (EATCS). He is a Fellow of the Indian Academy of Sciences
+	  and the Indian National Academy of Sciences.</p>
+	  <p>His current research interests are: System-level design
+	  and analysis methods for real time embedded systems and
+	  computational systems biology.</p>
+	</bio>
+      </talk-announcement>
     </news>
     <news date="2012.05.21" id="paper-sas12">
       <news-snippet>
@@ -2063,6 +2190,10 @@ an application example.</p>
     <person id="bjeannet">
       <name>Bertrand Jeannet</name>
       <url>http://pop-art.inrialpes.fr/~bjeannet/</url>
+    </person>
+    <person id="thiagu">
+      <name>P.S. Thiagarajan</name>
+      <url>http://www.comp.nus.edu.sg/~thiagu/</url>
     </person>
   </persons>
 
