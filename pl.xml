@@ -1116,7 +1116,7 @@
 	<proceedings event="sas12" />
       </howpub>
       <abstract>
-        We examine the problem of inferring invariants for
+        <p>We examine the problem of inferring invariants for
         parametrized systems. Parametrized systems are concurrent
         systems consisting of an a priori unbounded number of process
         instances running the same program. Such systems are commonly
@@ -1133,7 +1133,7 @@
         invariants. This correspondence naturally gives rise to an
         iterative invariant generation procedure that alternates
         between computing candidate invariants and creating reﬂective
-        abstractions.
+        abstractions.</p>
       </abstract>
     </pub>
     <pub id="enforcements-issta12">

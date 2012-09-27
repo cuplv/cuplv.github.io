@@ -272,9 +272,9 @@ name="html" />
 <xsl:template match="news-list" mode="display-recent">
   <div id="news">
     <div id="news-box">
-      <xsl:apply-templates select="descendant::news-snippet[10 >= position()]" mode="as-detail"/>
+      <xsl:apply-templates select="descendant::news-snippet[15 >= position()]" mode="as-detail"/>
     </div>
-    <xsl:apply-templates select="descendant::news-snippet[10 >= position()]" mode="as-item"/>
+    <xsl:apply-templates select="descendant::news-snippet[15 >= position()]" mode="as-item"/>
   </div>
 </xsl:template>
 
