@@ -129,6 +129,7 @@ margin-bottom: 1em;
 
 .person { float: left; text-align: center; margin-right: 10px; margin-bottom: 3ex; width: 180px; }
 img.face { width: 100px; }
+img.medium-face { width: 50px; }
 img.small-face { width: 15px; margin-right: 0.5em; }
 
 .subh { margin-left: 2em; font-size: 80%; }
@@ -159,6 +160,8 @@ font-variant: small-caps;
 .rspace { margin-right: 1em; }
 .hanging { padding-left: 0.75em; text-indent: -0.75em; }
 .centered { text-align: center; }
+.float-right { float: right; margin-left: 1em; }
+.float-left { float: left; margin-right: 1em; }
 
 .rounded, .contentbox {
 -moz-border-radius: 5px;

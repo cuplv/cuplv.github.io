@@ -326,6 +326,7 @@ name="html" />
   <h3>PLV Seminar</h3>
   <div class="item">
     <div class="item-icon">
+      <xsl:apply-templates select="speaker" mode="face"/>
     </div>
     <div class="item-block">
       <xsl:call-template name="div-list">
@@ -345,6 +346,11 @@ name="html" />
 <xsl:template match="bio">
   <h4>Biography</h4>
   <xsl:apply-templates />
+</xsl:template>
+<xsl:template match="speaker" mode="face">
+  <xsl:apply-templates select="child::node()">
+    <xsl:with-param name="mode">face</xsl:with-param>
+  </xsl:apply-templates>
 </xsl:template>
 
 <xsl:template match="projects">
@@ -479,16 +485,17 @@ name="html" />
 </xsl:template>
 
 <xsl:template match="ref">
+  <xsl:param name="mode" select="@mode"/>
   <xsl:choose>
     <xsl:when test="@text">
       <xsl:apply-templates select="key(@table, @key)" mode="ref">
-	<xsl:with-param name="mode" select="@mode" />
+	<xsl:with-param name="mode" select="$mode"/>
 	<xsl:with-param name="text" select="@text" />
       </xsl:apply-templates>
     </xsl:when>
     <xsl:otherwise>
       <xsl:apply-templates select="key(@table, @key)" mode="ref">
-	<xsl:with-param name="mode" select="@mode" />
+	<xsl:with-param name="mode" select="$mode"/>
       </xsl:apply-templates>
     </xsl:otherwise>
   </xsl:choose>
@@ -530,7 +537,20 @@ name="html" />
   <xsl:call-template name="withurl" />
 </xsl:template>
 <xsl:template match="person" mode="ref">
-  <xsl:apply-templates select="." />
+  <xsl:param name="mode"/>
+  <xsl:choose>
+    <xsl:when test="'face'=$mode">
+      <xsl:apply-templates select="face"/>
+    </xsl:when>
+    <xsl:when test="'medium-face'=$mode">
+      <xsl:apply-templates select="face">
+	<xsl:with-param name="class">medium-face</xsl:with-param>
+      </xsl:apply-templates>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="."/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 <xsl:template match="person" mode="with-small-face">
   <xsl:if test="face">
@@ -544,15 +564,24 @@ name="html" />
     <xsl:call-template name="withurl">
       <xsl:with-param name="text">
 	<div>
-	  <xsl:if test="face">
-	    <xsl:variable name="imgsrc" select="face"/>
-	    <img class="face" src="{$imgsrc}"/>
-	  </xsl:if>
+	  <xsl:apply-templates select="face"/>
 	</div>
 	<div><xsl:value-of select="name"/></div>
       </xsl:with-param>
     </xsl:call-template>
   </div>
+</xsl:template>
+<xsl:template match="face">
+  <xsl:param name="class"/>
+  <xsl:variable name="imgsrc" select="."/>
+  <xsl:choose>
+    <xsl:when test="$class">
+      <img class="{$class}" src="{$imgsrc}"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <img class="face" src="{$imgsrc}"/>
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 <xsl:template match="event" mode="header">
@@ -695,6 +724,11 @@ name="html" />
 
 <xsl:template match="a">
   <xsl:copy-of select="."/>
+</xsl:template>
+
+<xsl:template match="div">
+  <xsl:variable name="class"><xsl:value-of select="@class"/></xsl:variable>
+  <div class="{$class}"><xsl:apply-templates select="child::node()" /></div>
 </xsl:template>
 
 <!-- Special Formatting -->

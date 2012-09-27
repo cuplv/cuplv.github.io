@@ -51,6 +51,9 @@
 	at <ref table="event" key="issta12"/> July 19.
       </news-snippet>
       <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="coughlin" mode="medium-face"/>
+	</div>
 	<ref table="person" key="coughlin"/> is presenting
 	the paper "<ref table="pub" key="enforcements-issta12"/>"
 	at <ref table="event" key="issta12"/> on July 19.
@@ -68,6 +71,9 @@
         <ref table="person" key="vitousek"/> awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">PLDI Student Research Competition (SRC)</a>.
       </news-snippet>
       <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="vitousek" mode="medium-face"/>
+	</div>
         Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts. 
       </news-detail>
     </news>
@@ -204,6 +210,9 @@
 	at <ref table="event" key="tacas12"/> March 27.
       </news-snippet>
       <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="cox" mode="medium-face"/>
+	</div>
 	<ref table="person" key="cox"/> is presenting
 	the paper "<ref table="pub" key="filters-tacas12"/>"
 	at <ref table="event" key="tacas12"/> on March 27.
@@ -397,6 +406,9 @@
 	<ref table="event" key="sas11" /> September 14.
       </news-snippet>
       <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="blackshear" mode="medium-face"/>
+	</div>
 	<ref table="person" key="blackshear" /> is presenting
 	the paper "<ref table="pub" key="ptaprecision-sas11" />" at
 	<ref table="event" key="sas11" /> on September 14.
@@ -2052,6 +2064,7 @@ an application example.</p>
     <person id="creichen">
       <name>Christoph Reichenbach</name>
       <url>http://www.cs.umass.edu/~creichen/</url>
+      <face>pics/reichenbach.png</face>
     </person>
     <person id="khooyp">
       <name>Khoo Yit Phang</name>
@@ -2118,6 +2131,7 @@ an application example.</p>
     <person id="ivancic">
       <name>Franjo Ivančić</name>
       <url>http://www.nec-labs.com/~ivancic/</url>
+      <face>pics/ivancic.jpg</face>
     </person>
     <person id="burtscher">
       <name>Martin Burtscher</name>
