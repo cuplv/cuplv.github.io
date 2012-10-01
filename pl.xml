@@ -6,6 +6,27 @@
 
 <cv>
   <news-list>
+    <news date="2012.09.30" id="cernyp-joins">
+      <news-snippet>
+	<ref table="person" key="cernyp"/> joins <a
+	href="http://www.colorado.edu">CU-Boulder</a> and <a
+	href="http://pl.cs.colorado.edu">CUPLV</a> as an Assistant
+	Professor of <a href="http://ecee.colorado.edu/">ECEE</a>
+	in January 2013.
+      </news-snippet>
+      <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="cernyp" mode="medium-face"/>
+	</div>
+	<ref table="person" key="cernyp"/> joins the <a
+	href="http://www.colorado.edu">University of Colorado Boulder</a>
+	(CU-Boulder) and <a href="http://pl.cs.colorado.edu">CU
+	Programming Languages and Verification</a> (CUPLV) as an
+	Assistant Professor of <a
+	href="http://ecee.colorado.edu/">Electrical, Computer, and
+	Energy Engineering</a> (ECEE) in January 2013.
+      </news-detail>
+    </news>
     <news date="2012.09.27" id="srirams-colloquium-2012">
       <news-snippet>
 	<ref table="person" key="srirams"/> is speaking
@@ -2000,6 +2021,11 @@ an application example.</p>
   </publications>
 
   <persons>
+    <person id="cernyp" group="faculty">
+      <name>Pavol Černý</name>
+      <url>http://pub.ist.ac.at/~cernyp/</url>
+      <face>pics/cerny.jpg</face>
+    </person>
     <person id="bec" group="faculty">
       <name>Bor-Yuh Evan Chang</name>
       <url>http://www.cs.colorado.edu/~bec/</url>
