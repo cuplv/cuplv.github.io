@@ -232,10 +232,12 @@ name="html" />
 </xsl:template>
 
 <xsl:template name="item">
+  <xsl:param name="icon" />
   <xsl:param name="date" select="date" />
   <xsl:param name="lines" />
   <xsl:param name="notes" />
   <div class="item">
+    <div class="item-icon"><xsl:copy-of select="$icon" /></div>
     <div class="item-block">
       <div class="item-date"><xsl:value-of select="$date" /></div>
       <ul class="hlinks">
