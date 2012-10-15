@@ -1196,6 +1196,21 @@
   </projects>
 
   <publications>
+    <pub id="reducedproduct-vmcai13">
+      <title>Reduced Product Combination of Abstract Domains for Shapes</title>
+      <authors>
+	<author person="toubhans"/>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="vmcai13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="self-reflection-sas12">
       <title>Invariant Generation for Parametrized Systems using Self-Reflection</title>
       <authors>
@@ -2181,6 +2196,10 @@ an application example.</p>
       <name>Xavier Rival</name>
       <url>http://www.di.ens.fr/~rival/</url>
     </person>
+    <person id="toubhans">
+      <name>Antoine Toubhans</name>
+      <url>http://www.di.ens.fr/~toubhans/</url>
+    </person>
     <person id="atiwari">
       <name>Ashish Tiwari</name>
       <url>http://csl.sri.com/~tiwari/</url>
@@ -2426,6 +2445,12 @@ an application example.</p>
     <series id="vmcai">
       <name>Verification, Model Checking, and Abstract Interpretation</name>
       <longPrefix>International Conference on</longPrefix>
+      <event id="vmcai13">
+	<date>2013-01</date>
+	<location>Rome, Italy</location>
+	<nth>Fourteenth</nth>
+	<url>http://vmcai13.di.univr.it/</url>
+      </event>
       <event id="vmcai11">
 	<date>2011-01</date>
 	<location>Austin, Texas, USA</location>
