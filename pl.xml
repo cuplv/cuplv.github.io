@@ -2108,6 +2108,7 @@ an application example.</p>
     <person id="coughlin" group="phd">
       <name>Devin Coughlin</name>
       <face>pics/coughlin.jpg</face>
+      <url>http://www.cs.colorado.edu/~coughlid</url>
     </person>
     <person id="cox" group="phd">
       <name>Arlen Cox</name>
