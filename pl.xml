@@ -1204,6 +1204,7 @@
 	<author person="rival"/>
       </authors>
       <urls>
+	<url name="pdf">papers/reducedproduct-vmcai13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="vmcai13" />
