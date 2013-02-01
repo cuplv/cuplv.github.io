@@ -6,6 +6,37 @@
 
 <cv>
   <news-list>
+  	<news date="2013.1.31" id="sigcse2013src">
+      <news-snippet>
+	Poster accepted to <ref table="event" key="sigcse2013"/>
+	Student Research Competition
+	(by <ref table="person" key="lapinski"/> et al.).
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="lapinski"/> and
+	<ref table="person" key="srirams" />
+	have had their poster accepted to the
+	 <ref table="event" key="sigcse2013"/>
+	Student Research Competition.
+    </news-detail>
+    </news>
+    
+    <news date="2013.1.31" id="icse2013nier">
+      <news-snippet>
+		Paper accepted to <ref table="event" key="icse2013"/>
+		(New and Emerging Results Track) 
+		(by <ref table="person" key="givens"/> et al.).
+      	</news-snippet>
+      <news-detail>
+	<ref table="person" key="givens"/>,
+	<ref table="person" key="chakarov"/>,
+	<ref table="person" key="srirams"/>, and
+	<ref table="person" key="yeh" />
+	have had their paper accepted for a presentation
+	at <ref table="event" key="icse2013"/>
+	(New and Emerging Results Track) in May.
+    </news-detail>
+    </news>
     <news date="2012.09.30" id="cernyp-joins">
       <news-snippet>
 	<ref table="person" key="cernyp"/> joins <a
@@ -2117,6 +2148,10 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
+    <person id="givens">
+      <name>Paul Givens</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="gottschlich">
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
@@ -2131,6 +2166,10 @@ an application example.</p>
     </person>
     <person id="karlin">
       <name>Ian Karlin</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="lapinski">
+      <name>Nathan Lapinksi</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="miao" group="phd">
@@ -2336,6 +2375,10 @@ an application example.</p>
       <name>P.S. Thiagarajan</name>
       <url>http://www.comp.nus.edu.sg/~thiagu/</url>
     </person>
+    <person id="yeh">
+      <name>Tom Yeh</name>
+      <url>http://www.tomyeh.info/</url>
+    </person>
   </persons>
 
   <events>
@@ -2459,6 +2502,26 @@ an application example.</p>
 	<location>Austin, Texas, USA</location>
 	<nth>Twelfth</nth>
 	<url>http://vmcai11.cis.ksu.edu/</url>
+      </event>
+    </series>
+    <series id="sigcse">
+      <name>Computer Science Education</name>
+      <longPrefix>ACM Technical Symposium on</longPrefix>
+      <event id="sigcse2013">
+		<date>2013-03</date>
+		<location>Denver, Colorado, USA</location>
+		<nth>Forty-Fourth</nth>
+		<url>http://www.sigcse.org/sigcse2013/</url>
+      </event>
+    </series>
+	<series id="icse">
+      <name>Software Engineering</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="icse2013">
+	<date>2013-05</date>
+	<location>San Francisco, California, USA</location>
+	<nth>Thirty-Fifth</nth>
+	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
       </event>
     </series>
     <series id="issta">
