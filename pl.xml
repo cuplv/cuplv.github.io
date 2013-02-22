@@ -13,8 +13,22 @@
     </news>
     <news date="2012.02.04" id="papers-pldi13">
       <news-snippet>
-	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: papers <ref table="pub" key="thresher-pldi13" text="Blackshear et al."/> and <ref table="pub" key="acspec-pldi13" text="Blackshear and Lahiri"/> accepted!
+	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: papers <ref table="pub" key="thresher-pldi13" text="Blackshear et al."/> and <ref table="pub" key="acspec-pldi13" text="Blackshear and Lahiri"/> accepted.
       </news-snippet>
+      <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="blackshear" mode="medium-face"/>
+	  <ref table="person" key="bec" mode="medium-face"/>
+	</div>
+	CUPLV authors <ref table="person" key="blackshear"/> and <ref table="person" key="bec"/>
+	with collaborators <ref table="person" key="msridhar"/> and
+	<ref table="person" key="shuvendu"/>
+	have had papers accepted for presentation at <ref
+	table="event" key="pldi13"/> in June (<ref table="pub"
+	key="thresher-pldi13" text="Blackshear et al."/> and <ref
+	table="pub" key="acspec-pldi13" text="Blackshear and
+	Lahiri"/>).
+      </news-detail>
     </news>
     <news date="2013.01.31" id="sigcse2013src">
       <news-snippet>
@@ -32,10 +46,10 @@
     </news>
     <news date="2013.01.31" id="icse2013nier">
       <news-snippet>
-		Paper accepted to <ref table="event" key="icse2013"/>
-		(New and Emerging Results Track) 
-		(by <ref table="person" key="givens"/> et al.).
-      	</news-snippet>
+	Paper accepted to <ref table="event" key="icse2013"/> (New and
+	Emerging Results Track) (by <ref table="person" key="givens"/>
+	et al.).
+      </news-snippet>
       <news-detail>
 	<ref table="person" key="givens"/>,
 	<ref table="person" key="chakarov"/>,
@@ -1226,7 +1240,7 @@
       </news-snippet>
       <news-detail>
 	<ref table="person" key="bodik"/> from UC Berkeley is visiting
-	us Tuesday, January 11, 2011.  He is giving a talk at 3:00pm
+	us Tuesday, January 11, 2010.  He is giving a talk at 3:00pm
 	in DLC 1B70.
       </news-detail>
       <talk-announcement>
@@ -2330,6 +2344,7 @@ an application example.</p>
     <person id="msridhar">
       <name>Manu Sridharan</name>
       <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
+      <face>pics/sridharan.jpg</face>
     </person>
     <person id="berdine">
       <name>Josh Berdine</name>
