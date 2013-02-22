@@ -6,7 +6,17 @@
 
 <cv>
   <news-list>
-  	<news date="2013.1.31" id="sigcse2013src">
+    <news date="2012.02.21" id="phdvisit-2013">
+      <news-snippet>
+	Prospective Ph.D. students visit February 22. Welcome!
+      </news-snippet>
+    </news>
+    <news date="2012.02.04" id="papers-pldi13">
+      <news-snippet>
+	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: papers <ref table="pub" key="thresher-pldi13" text="Blackshear et al."/> and <ref table="pub" key="acspec-pldi13" text="Blackshear and Lahiri"/> accepted!
+      </news-snippet>
+    </news>
+    <news date="2013.01.31" id="sigcse2013src">
       <news-snippet>
 	Poster accepted to <ref table="event" key="sigcse2013"/>
 	Student Research Competition
@@ -18,10 +28,9 @@
 	have had their poster accepted to the
 	 <ref table="event" key="sigcse2013"/>
 	Student Research Competition.
-    </news-detail>
+      </news-detail>
     </news>
-    
-    <news date="2013.1.31" id="icse2013nier">
+    <news date="2013.01.31" id="icse2013nier">
       <news-snippet>
 		Paper accepted to <ref table="event" key="icse2013"/>
 		(New and Emerging Results Track) 
@@ -36,6 +45,66 @@
 	at <ref table="event" key="icse2013"/>
 	(New and Emerging Results Track) in May.
     </news-detail>
+    </news>
+    <news date="2012.11.13" id="sarnat-colloquium-2012">
+      <news-snippet>
+	<ref table="person" key="sarnat"/> visits November 15.
+      </news-snippet>
+      <news-detail>
+	<div class="float-right">
+	  <ref table="person" key="sarnat" mode="medium-face"/>
+	</div>
+	<ref table="person" key="sarnat"/> from Twitter is visiting us
+	on November 13, 2012. He is giving a Computer Science
+	Colloquium entitled "Getting Off the Monorail or: How Twitter
+	Learned to Stop Worrying and Love Monads" at 3:30pm in ECCR
+	265 on Thursday, November 13, 2012.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="sarnat"/></speaker>
+	<affiliation>Twitter</affiliation>
+	<when>11-13-2012 15:30</when>
+	<where>ECCR 265</where>
+	<title>
+	  Getting Off the Monorail or: How Twitter Learned to Stop Worrying and Love Monads
+	</title>
+	<abstract>
+	  <p>Twitter is one of the most heavily trafficked sites on
+	  the internet, with over 140 million active users and serving
+	  over 400 million Tweets per day. Historically, nearly all of
+	  Twitter's traffic has been served by a monolithic
+	  application written in Ruby on Rails, referred to internally
+	  as "the monorail." Although Twitter has seen remarkable
+	  growth in its six years of existence, scaling this
+	  monolithic architecture has proved to be both error-prone
+	  and expensive, not only in terms of computational
+	  efficiency, but in terms of developer efficiency as well.</p>
+	  <p>More recently, Twitter has begun the process of replacing
+	  the monorail with a Services Oriented Architecture (SOA),
+	  where the services are JVM processes--mostly written in
+	  Scala--that communicate with one-another asynchronously over
+	  a network connection. Naively written, asynchronous code is
+	  often both tedious to write and difficult to reason about;
+	  at Twitter, the asynchronous code implementing Scala
+	  services is both simple and beautiful, thanks in large part
+	  to an internally-developed, open-source library called
+	  Finagle.</p>
+	  <p>In this talk, I will attempt to explain how Finagle's
+	  strong grounding in programming language theory has
+	  facilitated this transition to an SOA, and how Scala's
+	  advanced features allow for a library as expressive as
+	  Finagle to have been written in the first place.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="sarnat"/> (B.S. in Computer
+	  Science., CMU 2002, Ph.D. in Computer Science, Yale 2010) is
+	  a former programming languages researcher who currently
+	  works for Twitter on a team that builds large scale
+	  distributed systems. He enjoys candlelit dinners and long
+	  walks on the beach. Follow him on Twitter as <a
+	  href="https://twitter.com/eigenvariable">@Eigenvariable</a>.</p>
+	</bio>
+      </talk-announcement>
     </news>
     <news date="2012.09.30" id="cernyp-joins">
       <news-snippet>
@@ -1227,6 +1296,36 @@
   </projects>
 
   <publications>
+    <pub id="thresher-pldi13">
+      <title>Thresher: Precise Refutations for Heap Reachability</title>
+      <authors>
+	<author person="blackshear"/>
+	<author person="bec"/>
+	<author person="msridhar"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="pldi13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="acspec-pldi13">
+      <title>Almost-Correct Specifications: A Modular Semantic
+      Framework for Assigning Confidence to Warnings</title>
+      <authors>
+	<author person="blackshear"/>
+	<author person="shuvendu"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="pldi13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="reducedproduct-vmcai13">
       <title>Reduced Product Combination of Abstract Domains for Shapes</title>
       <authors>
@@ -2079,7 +2178,7 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~bec/</url>
       <face>pics/chang.jpg</face>
     </person>
-    <person id="diwan" group="faculty">
+    <person id="diwan" group="faculty-alumni">
       <name>Amer Diwan</name>
       <url>http://www.cs.colorado.edu/~diwan/</url>
       <face>pics/diwan.jpg</face>
@@ -2104,33 +2203,16 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
-    <person id="vachharajani">
-      <name>Manish Vachharajani</name>
-      <url>http://ecee.colorado.edu/~manishv/</url>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="arbrad">
-      <name>Aaron R. Bradley</name>
-      <url>http://ece.colorado.edu/~bradleya/</url>
-    </person>
-    <person id="msridhar">
-      <name>Manu Sridharan</name>
-      <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
-    </person>
-    <person id="belter" group="phd">
+    <person id="belter" group="phd-alumni">
       <name>Geoffrey Belter</name>
       <face>pics/generic-male.png</face>
-    </person>
-    <person id="berdine">
-      <name>Josh Berdine</name>
-      <url>http://research.microsoft.com/en-us/people/jjb</url>
     </person>
     <person id="blackshear" group="phd">
       <name>Sam Blackshear</name>
       <url>http://cs.colorado.edu/~sabl4745</url>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="blomstedt" group="phd">
+    <person id="blomstedt">
       <name>Joseph Blomstedt</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -2148,45 +2230,39 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
-    <person id="givens">
-      <name>Paul Givens</name>
-      <face>pics/generic-male.png</face>
+    <person id="frohardt">
+      <name>Robert Frohardt</name>
+      <url>http://www.cs.colorado.edu/~frohardt/</url>
     </person>
-    <person id="gottschlich">
+    <person id="gottschlich" group="phd-alumni">
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="ishtiaq">
-      <name>Samin Ishtiaq</name>
-      <url>http://research.microsoft.com/en-us/people/sishtiaq</url>
-    </person>
-    <person id="jessup">
-      <name>E.R. Jessup</name>
-      <url>http://www.cs.colorado.edu/~jessup/</url>
-    </person>
-    <person id="karlin">
+    <person id="karlin" group="phd-alumni">
       <name>Ian Karlin</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="lapinski">
-      <name>Nathan Lapinksi</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="miao" group="phd">
       <name>Weiyu Miao</name>
       <face>pics/miao.jpg</face>
     </person>
+    <person id="toddm" group="phd-alumni">
+      <name>Todd Mytkowicz</name>
+      <url>http://research.microsoft.com/en-us/people/toddm/</url>
+      <face>pics/mytkowicz.jpg</face>
+    </person>
     <person id="nelson" group="phd">
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
+    <person id="creichen" group="phd-alumni">
+      <name>Christoph Reichenbach</name>
+      <url>http://www.cs.umass.edu/~creichen/</url>
+      <face>pics/reichenbach.png</face>
+    </person>
     <person id="tsai" group="phd">
       <name>Yi-Fan Tsai</name>
       <face>pics/tsai.jpg</face>
-    </person>
-    <person id="turner" group="phd">
-      <name>Jonathan Turner</name>
-      <face>pics/turner.jpg</face>
     </person>
     <person id="vitousek" group="phd">
       <name>Michael Vitousek</name>
@@ -2196,32 +2272,68 @@ an application example.</p>
       <name>Aditya Zutshi</name>
       <face> pics/zutshi.jpg </face>
     </person>
-    <person id="agrawal" group="ms">
-      <name>Neelam Agrawal</name>
-      <face>pics/generic-female.png</face>
+    <person id="quan" group="bsms">
+      <name>Kira Quan</name>
+      <face>pics/quan.jpg</face>
     </person>
-    <person id="bennett" group="ms">
-      <name>Huck Bennett</name>
-      <url>http://csel.cs.colorado.edu/~bennethd</url>  
-      <face>pics/bennett.jpg</face>
-    </person>
-    <person id="bharadwaj" group="ms">
-      <name>Shashank Bharadwaj</name>
-      <face>pics/bharadwaj.jpg</face>
-    </person>
-    <person id="silkensen" group="ms">
+    <person id="silkensen" group="bsms-alumni">
       <name>Erik Silkensen</name>
       <url>http://csel.cs.colorado.edu/~silkense</url>
       <face>pics/silkensen.jpg</face>
     </person>
-    <person id="frohardt">
-      <name>Robert Frohardt</name>
-      <url>http://www.cs.colorado.edu/~frohardt/</url>
+    <person id="agrawal" group="ms-alumni">
+      <name>Neelam Agrawal</name>
+      <face>pics/generic-female.png</face>
     </person>
-    <person id="creichen">
-      <name>Christoph Reichenbach</name>
-      <url>http://www.cs.umass.edu/~creichen/</url>
-      <face>pics/reichenbach.png</face>
+    <person id="bennett" group="ms-alumni">
+      <name>Huck Bennett</name>
+      <url>http://csel.cs.colorado.edu/~bennethd</url>  
+      <face>pics/bennett.jpg</face>
+    </person>
+    <person id="bharadwaj" group="ms-alumni">
+      <name>Shashank Bharadwaj</name>
+      <face>pics/bharadwaj.jpg</face>
+    </person>
+    <person id="turner" group="ms-alumni">
+      <name>Jonathan Turner</name>
+      <face>pics/turner.jpg</face>
+    </person>
+    <person id="beal" group="bs">
+      <name>Alex Beal</name>
+      <face>pics/beal.png</face>
+    </person>
+    <person id="givens" group="bs">
+      <name>Paul Givens</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="lapinski" group="bs">
+      <name>Nathan Lapinksi</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="vachharajani">
+      <name>Manish Vachharajani</name>
+      <url>http://ecee.colorado.edu/~manishv/</url>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="arbrad">
+      <name>Aaron R. Bradley</name>
+      <url>http://ece.colorado.edu/~bradleya/</url>
+    </person>
+    <person id="msridhar">
+      <name>Manu Sridharan</name>
+      <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
+    </person>
+    <person id="berdine">
+      <name>Josh Berdine</name>
+      <url>http://research.microsoft.com/en-us/people/jjb</url>
+    </person>
+    <person id="ishtiaq">
+      <name>Samin Ishtiaq</name>
+      <url>http://research.microsoft.com/en-us/people/sishtiaq</url>
+    </person>
+    <person id="jessup">
+      <name>E.R. Jessup</name>
+      <url>http://www.cs.colorado.edu/~jessup/</url>
     </person>
     <person id="khooyp">
       <name>Khoo Yit Phang</name>
@@ -2344,10 +2456,6 @@ an application example.</p>
       <name>Philip Wadler</name>
       <url>http://homepages.inf.ed.ac.uk/wadler/</url>
     </person>
-    <person id="toddm">
-      <name>Todd Mytkowicz</name>
-      <url>http://research.microsoft.com/en-us/people/toddm/</url>
-    </person>
     <person id="sweeney">
       <name>Peter F. Sweeney</name>
       <url>https://researcher.ibm.com/researcher/view.php?person=us-pfs</url>
@@ -2378,6 +2486,14 @@ an application example.</p>
     <person id="yeh">
       <name>Tom Yeh</name>
       <url>http://www.tomyeh.info/</url>
+    </person>
+    <person id="shuvendu">
+      <name>Shuvendu Lahiri</name>
+      <url>http://research.microsoft.com/en-us/people/shuvendu/</url>
+    </person>
+    <person id="sarnat">
+      <name>Jeffrey Sarnat</name>
+      <face>pics/sarnat.jpg</face>
     </person>
   </persons>
 
@@ -2413,13 +2529,23 @@ an application example.</p>
     <series id="pldi">
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="pldi13">
+	<date>2013-06</date>
+	<location>Seattle, Washington, USA</location>
+	<url>http://pldi2013.ucombinator.org/</url>
+      </event>
+      <event id="pldi12">
+	<date>2012-06</date>
+	<location>Beijing, China</location>
+	<url>http://pldi12.cs.purdue.edu/</url>
+      </event>
       <event id="pldi10">
 	<date>2010-06</date>
 	<location>Toronto, Ontario, Canada</location>
 	<url>http://www.cs.stanford.edu/pldi10/</url>
       </event>
       <event id="pldi09">
-	<date>2009</date>
+	<date>2009-06</date>
 	<location>Dublin, Ireland</location>
 	<url>http://www.cs.colorado.edu/pldi09/</url>
       </event>

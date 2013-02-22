@@ -127,7 +127,7 @@ margin-bottom: 1em;
 .item-header { font-weight: bold; }
 .item-note { margin-left: 1.5em; margin-top: 1ex; font-size: 90%; }
 
-.person { float: left; text-align: center; margin-right: 10px; margin-bottom: 3ex; width: 180px; }
+.person { display: inline-block; text-align: center; margin-right: 10px; margin-bottom: 3ex; width: 180px; }
 img.face { width: 100px; }
 img.medium-face { width: 50px; }
 img.small-face { width: 15px; margin-right: 0.5em; }

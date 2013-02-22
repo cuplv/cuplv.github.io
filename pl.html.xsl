@@ -67,8 +67,43 @@ name="html" />
       <xsl:for-each select="cv/persons/person[@group='phd']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
-      <h4>MS</h4>
+
+      <xsl:if test="cv/persons/person[@group='bsms']">
+	<h4>BS/BA+MS</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='bsms']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
+      <xsl:if test="cv/persons/person[@group='ms']">
+	<h4>MS</h4>
+      </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='ms']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
+      <xsl:if test="cv/persons/person[@group='bs']">
+	<h4>BS/BA</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='bs']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
+      <h3>Alumni</h3>
+      <h4>Faculty</h4>
+      <xsl:for-each select="cv/persons/person[@group='faculty-alumni']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <h4>PhD</h4>
+      <xsl:for-each select="cv/persons/person[@group='phd-alumni']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <h4>BS/BA+MS</h4>
+      <xsl:for-each select="cv/persons/person[@group='bsms-alumni']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <h4>MS</h4>
+      <xsl:for-each select="cv/persons/person[@group='ms-alumni']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
@@ -104,8 +139,39 @@ name="html" />
       <xsl:apply-templates select="cv/persons/person[@group='phd']" mode="detail" />
       <div class="clearer" />
 
-      <h3>MS</h3>
+      <xsl:if test="cv/persons/person[@group='bsms']">
+	<h3>BS/BA+MS</h3>
+      </xsl:if>
+      <xsl:apply-templates select="cv/persons/person[@group='bsms']" mode="detail" />
+      <div class="clearer" />
+
+      <xsl:if test="cv/persons/person[@group='ms']">
+	<h3>MS</h3>
+      </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='ms']" mode="detail" />
+      <div class="clearer" />
+
+      <xsl:if test="cv/persons/person[@group='bs']">
+	<h3>BS/BA</h3>
+      </xsl:if>
+      <xsl:apply-templates select="cv/persons/person[@group='bs']" mode="detail" />
+      <div class="clearer" />
+
+      <h2>Alumni</h2>
+      <h3>Faculty</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='faculty-alumni']" mode="detail" />
+      <div class="clearer" />
+
+      <h3>PhD</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='phd-alumni']" mode="detail" />
+      <div class="clearer" />
+
+      <h3>BS/BA+MS</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='bsms-alumni']" mode="detail" />
+      <div class="clearer" />
+
+      <h3>MS</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='ms-alumni']" mode="detail" />
       <div class="clearer" />
     </content>
   </page>
