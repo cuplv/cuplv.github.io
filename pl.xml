@@ -2268,9 +2268,17 @@ an application example.</p>
       <name>Michael Vitousek</name>
       <face>pics/vitousek.jpg</face>
     </person>
+    <person id="wailes" group="phd">
+      <name>Chris Wailes</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="yanzhang" group="phd">
+      <name>Yan Zhang</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="adityaz" group="phd">
       <name>Aditya Zutshi</name>
-      <face> pics/zutshi.jpg </face>
+      <face>pics/zutshi.jpg</face>
     </person>
     <person id="quan" group="bsms">
       <name>Kira Quan</name>
@@ -2467,9 +2475,6 @@ an application example.</p>
     <person id="hassanz">
       <name>Zyad Hassan</name>
       <url>http://eces.colorado.edu/~hassanz/</url>
-    </person>
-    <person id="yanzhang">
-      <name>Yan Zhang</name>
     </person>
     <person id="schramme">
       <name>Peter Schrammel</name>
