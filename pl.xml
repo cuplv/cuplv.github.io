@@ -4,14 +4,14 @@
 <!ENTITY emdash "&#8212;">
 ]>
 
-<cv>
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://localhost/Users/bec/vc/pl/web/cv.xsd">
   <news-list>
-    <news date="2012.02.21" id="phdvisit-2013">
+    <news date="2013.02.21" id="phdvisit-2013">
       <news-snippet>
 	Prospective Ph.D. students visit February 22. Welcome!
       </news-snippet>
     </news>
-    <news date="2012.02.04" id="papers-pldi13">
+    <news date="2013.02.04" id="papers-pldi13">
       <news-snippet>
 	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: papers <ref table="pub" key="thresher-pldi13" text="Blackshear et al."/> and <ref table="pub" key="acspec-pldi13" text="Blackshear and Lahiri"/> accepted.
       </news-snippet>
