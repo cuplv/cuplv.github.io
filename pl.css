@@ -105,7 +105,7 @@ position: relative;
 overflow: hidden;
 background-color: rgb(216,214,196);
 width: 100%;
-height: 6.5em;
+height: 8.5em;
 margin-bottom: 1em;
 }
 .news-detail { display: none; opacity: 0; padding: 1em; text-align: justify; }

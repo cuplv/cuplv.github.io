@@ -13,21 +13,25 @@
     </news>
     <news date="2013.02.04" id="papers-pldi13">
       <news-snippet>
-	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: papers <ref table="pub" key="thresher-pldi13" text="Blackshear et al."/> and <ref table="pub" key="acspec-pldi13" text="Blackshear and Lahiri"/> accepted.
+	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: 3 papers accepted! [<ref table="pub" key="thresher-pldi13" text="1"/>, <ref table="pub" key="probabilistic-pldi13" text="2"/>, <ref table="pub" key="acspec-pldi13" text="3"/>]
       </news-snippet>
       <news-detail>
 	<div class="float-right">
 	  <ref table="person" key="blackshear" mode="medium-face"/>
 	  <ref table="person" key="bec" mode="medium-face"/>
+	  <ref table="person" key="srirams" mode="medium-face"/>
+	  <ref table="person" key="chakarov" mode="medium-face"/>
 	</div>
-	CUPLV authors <ref table="person" key="blackshear"/> and <ref table="person" key="bec"/>
-	with collaborators <ref table="person" key="msridhar"/> and
+	CUPLV authors <ref table="person" key="blackshear"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="chakarov"/>
+	with collaborators <ref table="person" key="msridhar"/>,
+	<ref table="person" key="sumitg"/>, and
 	<ref table="person" key="shuvendu"/>
 	have had papers accepted for presentation at <ref
 	table="event" key="pldi13"/> in June (<ref table="pub"
-	key="thresher-pldi13" text="Blackshear et al."/> and <ref
-	table="pub" key="acspec-pldi13" text="Blackshear and
-	Lahiri"/>).
+	key="thresher-pldi13" text="Blackshear et al."/>, <ref
+	table="pub" key="probabilistic-pldi13" text="Sankaranarayanan
+	et al."/>, and <ref table="pub" key="acspec-pldi13"
+	text="Blackshear and Lahiri"/>).
       </news-detail>
     </news>
     <news date="2013.01.31" id="sigcse2013src">
@@ -1328,6 +1332,21 @@
       <abstract>
       </abstract>
     </pub>
+    <pub id="probabilistic-pldi13">
+      <title>Towards Static Analysis for Probabilistic Programs</title>
+      <authors>
+	<author person="srirams"/>
+	<author person="chakarov"/>
+	<author person="sumitg"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="pldi13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="acspec-pldi13">
       <title>Almost-Correct Specifications: A Modular Semantic
       Framework for Assigning Confidence to Warnings</title>
@@ -2512,11 +2531,15 @@ an application example.</p>
     </person>
     <person id="shuvendu">
       <name>Shuvendu Lahiri</name>
-      <url>http://research.microsoft.com/en-us/people/shuvendu/</url>
+      <url>http://research.microsoft.com/~shuvendu/</url>
     </person>
     <person id="sarnat">
       <name>Jeffrey Sarnat</name>
       <face>pics/sarnat.jpg</face>
+    </person>
+    <person id="sumitg">
+      <name>Sumit Gulwani</name>
+      <url>http://research.microsoft.com/~sumitg/</url>
     </person>
   </persons>
 
