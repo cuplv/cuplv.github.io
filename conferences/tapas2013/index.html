@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>TAPAS 2013: Workshop on Tools for Automatic Program Analysis</title>
+  <meta name="description" content="The Fourth Workshop on Tools for Automatic Program Analysis" />
+  <meta name="keywords" content="tools, program analysis, static analysis" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+     <script type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <div id="welcome">
+	      <h1>TAPAS 2013</h1>
+	    </div><!--close welcome-->
+	    <div id="welcome_slogan">
+	      <h1>The Fourth Workshop on <u>T</u>ools for
+	      <u>A</u>utomatic <u>P</u>rogram <u>A</u>nalysi<u>s</u></h1>
+	    </div><!--close welcome_slogan-->
+	  </div><!--close banner-->
+    </div><!--close header-->
+
+	<div id="site_content">		
+
+	  <div class="sidebar_container">       
+	    
+	  <div class="sidebar">
+	  <div class="sidebar_item">
+	    <p>affiliated with
+	    <a
+	    href="http://research.microsoft.com/en-us/events/sas2013/">SAS
+	    2013</a></p>
+	    <p>co-located with
+	    <a href="http://pldi2013.ucombinator.org/">PLDI 2013</a></p>
+	  </div>
+	  </div>
+	  
+	  <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Important Dates</h2>
+	    <h3>Submission Deadline</h3>
+	    <p><b>13 April 2013</b> (<a
+		href="http://www.timeanddate.com/worldclock/fixedtime.html?msg=TAPAS+2013+Submission&iso=20130413T2355&p1=1033">23:55 UTC-11</a>)</p>
+	    <h3>Notification</h3>
+	    <p>4 May 2013</p>
+	    <h3>Camera-Ready</h3>
+	    <p>18 May 2013</p>
+	    <h3>Workshop</h3>
+	    <p>19 June 2013</p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+
+<!--
+	<div class="sidebar">
+	<div class="sidebar_item">
+	  <h2>Latest Update</h2>
+	  <h3>September 2012</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>         
+	</div>
+	</div>
+-->
+
+	</div><!--close sidebar_container-->	
+	
+      <ul class="slideshow">
+        <li class="show"><img width="680" height="250"
+        src="images/seattle_1.jpg" alt="Submit Analyzer Pearls to
+        TAPAS 2013, a SAS-Affiliated Event, by 13 April 2013" /></li>
+        <li><img width="680" height="250" src="images/seattle_2.jpg"
+        alt="Co-Located with PLDI 2013 in Seattle, Washington, USA on
+        19 June 2013" /></li>
+      </ul>   	 
+	 
+  <div id="content">
+  <div class="content_item">
+    <h1>Objective</h1> 
+    <p>In the last ten years, a wide range of static analysis tools
+    have emerged, some of which are currently in industrial use or are
+    well beyond the advanced prototype level. Many impressive
+    practical results have been obtained, which allow complex
+    properties to be proven or checked in a fully or semi-automatic
+    way, even in the context of complex software developments. In
+    parallel, the techniques to design and implement static analysis
+    tools have improved significantly. This workshop is intended to
+    promote discussions between specialists in all areas of program
+    analysis design and implementation and static analysis tool users.</p>
+    
+    <h1>Scope</h1>
+    <p>The technical program for TAPAS 2013 will consist of invited
+    lectures from leading experts in analysis design and
+    implementation and contributed presentations of
+    <a href="#pearls">Analyzer Pearls</a>.
+    <ul>
+      <li>design and implementation of static analysis tools;
+      <li>components of static analysis tools (front-ends, abstract domains, etc);
+      <li>integration of static analyzers (in proof assistants, test generation tools, etc);
+      <li>experience reports on the use of static analyzers;
+      <li>challenges, such as new properties to address or bottlenecks to overcome; or
+      <li>proposals that contribute to the dissemination of static analysis techniques to a wider audience.
+    </ul>
+    <p>Analyzer Pearls can cover any aspect of program analysis tools
+    including, but not limited to the following
+    <ul>
+      <li>design and implementation of static analysis tools;
+      <li>components of static analysis tools (front-ends, abstract domains, etc);
+      <li>integration of static analyzers (in proof assistants, test generation tools, etc);
+      <li>experience reports on the use of static analyzers;
+      <li>challenges, such as new properties to address or bottlenecks to overcome; or
+      <li>proposals that contribute to the dissemination of static analysis techniques to a wider audience.
+    </ul>
+    </p>
+
+    <h1 id="pearls">Analyzer Pearls</h1>
+
+    <p>TAPAS 2013 will solicit submissions for Analyzer Pearls that
+    should be distinguished from standard research or tool papers.</p>
+
+    <p>Drawing inspiration from <a
+     href="http://www.cs.ox.ac.uk/people/jeremy.gibbons/pearls/">Functional
+    Pearls</a> appearing in JFP, Analyzer Pearls should contribute
+    instructive essays that describe "tricks of the trade" in
+    formalizing and constructing analyzer tools. An Analyzer Pearl may
+    consider any aspect of the design and implementation of program
+    analyzers--both theoretical and practical.</p>
+
+    <p>An Analyzer Pearl need not report original research results or
+    describe a specific research tool; they may instead present a
+    distillation or elegant new way of approaching the task of
+    designing and implementing a program analyzer. An Analyzer Pearl
+    could, for example, be supplemented with project files for a
+    homework exercise. They should be "polished, elegant, instructive,
+    entertaining." [<a
+    href="http://icfp06.cs.uchicago.edu/bird-talk.pdf">Bird
+    2006</a>]</p>
+
+    <p>Following Functional Pearls, reviewers will be instructed to
+    stop reading when:
+    <ul>
+      <li>they get bored;
+      <li>the material gets too complicated;
+      <li>too much specialist knowledge is needed; or
+      <li>the writing is bad.
+    </ul></p>
+
+    <h1>Submissions</h1>
+
+    <p>All submitted pearls will be peer-reviewed by the program
+    committee.</p>
+
+    <p>Submitted pearls should be 10-12 pages in length excluding
+    bibliography and follow the <a
+     href="http://www.entcs.org/prelim.html">ENTCS
+    guidelines</a>. Pearls must be written and presented in English
+    and must not substantially overlap with papers that have been
+    published or that are simultaneously submitted to a journal,
+    conference, or workshop with refereed proceedings.</p>
+
+    <p>The TAPAS 2013 proceedings has received preliminary approval to
+    be published electronically in a volume of the Electronic Notes in
+    Theoretical Computer Science series.</p>
+
+    <h1>Organizers</h1>
+
+    <h3>Program Chair</h3>
+
+    <p><a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a> (University of Colorado Boulder, USA)</p>
+
+    <h3>Program Committee</h3>
+
+    <p><a href="http://www.eecs.qmul.ac.uk/~ddino/">Dino Distefano</a> (Queen Mary, University of London, UK)</p>
+    <p><a href="http://www.cs.ucsb.edu/~benh">Ben Hardekopf</a> (University of California, Santa Barbara, USA)</p>
+    <p><a href="http://www.nec-labs.com/~ivancic/">Franjo Ivancic</a> (NEC Labs America, USA)</p>
+    <p><a href="http://www.cs.bgu.ac.il/~romanm/">Roman Manevich</a> (Ben-Gurion University of the Negev, Israel)</p>
+    <p><a href="http://research.microsoft.com/~moskal/">Michał
+    Moskal</a> (Microsoft Research Redmond, USA)</p>
+
+    <h3>Steering Committee</h3>
+
+    <p><a href="http://www.di.ens.fr/~rcousot/">Radhia Cousot</a> (CNRS and Ecole Normale Supérieure, France)</p>
+    <p><a href="http://www.di.ens.fr/~rival/">Xavier Rival</a> (INRIA and Ecole Normale Supérieure, France)</p>
+
+    <h3>Local Arrangements (SAS Chairs)</h3>
+
+    <p><a href="http://research.microsoft.com/~logozzo">Francesco
+    Logozzo</a> (Microsoft Research Redmond, USA)</p>
+    <p><a href="http://research.microsoft.com/~maf">Manuel
+    Fahndrich</a> (Microsoft Research Redmond, USA)</p>
+
+    <h1>Venue</h1>
+
+    <p>TAPAS 2013 is an affiliated event of <a
+      href="http://research.microsoft.com/en-us/events/sas2013/j">SAS
+     2013</a>.  It will be co-located with ACM <a
+      href="http://pldi2013.ucombinator.org/">PLDI 2013</a> and will
+     take place at the Red Lion Hotel on 5th Ave in downtown Seattle,
+     Washington, USA. Seattle, home to Amazon, Starbucks, Microsoft,
+     and Boeing is famous for its coffee houses and its beautiful
+     surroundings such as the Puget Sound and its numerous islands, as
+     well as the Olympic Peninsula and nearby Cascades mountains.</p>
+		  
+  </div>
+  </div>
+  </div><!-- close site_content -->
+    
+  </div><!--close main-->
+  
+  <div id="footer">
+    Credits:
+    <a href="http://www.araynordesign.co.uk">Template</a>
+    | Images: <a
+    href="http://www.flickr.com/photos/carplips/1128037583/">1</a>,
+    <a href="http://www.flickr.com/photos/inarges/181200673/">2</a>
+  </div><!--close footer-->  
+  
+</body>
+</html>
