@@ -277,7 +277,7 @@
 	at <ref table="event" key="issta12"/> on July 19.
       </news-detail>
     </news>
-    <news date="2011.07.15" id="goubault-putot-2012">
+    <news date="2012.07.15" id="goubault-putot-2012">
       <news-snippet>
 	<ref table="person" key="goubault"/> and
 	<ref table="person" key="putot"/>
