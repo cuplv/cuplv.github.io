@@ -6,6 +6,11 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://localhost/Users/bec/vc/pl/web/cv.xsd">
   <news-list>
+    <news date="2013.03.04" id="tapascfp-2013">
+      <news-snippet>
+	Submit Analyzer Pearls to <ref table="event" key="tapas13" />!
+      </news-snippet>
+    </news>
     <news date="2013.02.21" id="phdvisit-2013">
       <news-snippet>
 	Prospective Ph.D. students visit February 22. Welcome!
@@ -2731,6 +2736,20 @@ an application example.</p>
 	<date>2011</date>
 	<nth>Third</nth>
 	<url>http://software.imdea.org/events/nsad2011/</url>
+      </event>
+    </series>
+    <series id="tapas">
+      <name>Tools for Automatic Program Analysis</name>
+      <longPrefix>International Workshop on</longPrefix>
+      <event id="tapas13">
+	<date>2013</date>
+	<nth>Fourth</nth>
+	<url>http://pl.cs.colorado.edu/tapas2013/</url>
+      </event>
+      <event id="tapas12">
+	<date>2012</date>
+	<nth>Third</nth>
+	<url>http://tapas2012.inrialpes.fr/</url>
       </event>
     </series>
     <series id="paste">
