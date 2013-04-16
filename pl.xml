@@ -4,7 +4,7 @@
 <!ENTITY emdash "&#8212;">
 ]>
 
-<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://localhost/Users/bec/vc/pl/web/cv.xsd">
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cv.xsd">
   <news-list>
     <news date="2013.03.04" id="tapascfp-2013">
       <news-snippet>
@@ -1327,13 +1327,11 @@
 	<author person="msridhar"/>
       </authors>
       <urls>
+	<url name="pdf">papers/thresher-pldi13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="pldi13" />
       </howpub>
-      <note>
-	Draft available on request.
-      </note>
       <abstract>
       </abstract>
     </pub>
