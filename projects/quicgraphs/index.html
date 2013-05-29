@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>QUIC Graphs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!--<link rel="shortcut icon" href="ico/favicon.png">-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">QUIC Graphs</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <!--<li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>-->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>QUIC Graphs: Relational Invariant Generation for Containers</h1><hr/>
+
+      <p>
+        <a href="http://eces.colorado.edu/~coxaj">Arlen Cox</a>,
+        <a href="http://cs.colorado.edu/~bec">Bor-Yuh Evan Chang</a>, and
+        <a href="http://cs.colorado.edu/~srirams">Sriram Sankaranarayanan</a>
+      </p>
+
+      <p>
+        QUIC Graphs offer an efficient means for generating abstract
+        domains representing sets and set properties of containers.
+        To demonstrate the analyzer, we present two demo programs
+        using two different underlying scalar domains.  These will
+        demonstrate the results of the analysis and the flexibility of
+        the analysis.
+      </p>
+
+      <h2>Video Demonstration</h2>
+
+      <center><iframe src="http://player.vimeo.com/video/61400175" width="1024" height="768" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></center>
+
+      <h2>Download</h2>
+
+      <ul>
+        <li><a href="https://github.com/cuplv/ECOOP2013/raw/master/QUICGraphs.zip">VirtualBox Virtual Machine
+        Image</a> (Warning: 644MB Download - Extracts to 2.5GB) Contains
+        excutable analyzer based on QUIC graphs, full source code for
+        the analyzer and the full benchmark suite used for the
+        evaluation.
+        <li><a href="QUIC Graphs Tutorial.pdf">QUIC Graphs
+        Tutorial</a>
+        <li><a href="http://www.vimeo.com/61400175">Demo Video</a>
+      </ul>
+
+      <h2>Instructions</h2>
+
+      <p>This information is also contained in the tutorial PDF included
+      with the virtual machine image and linked above.  It is
+      duplicated here for convenience.</p>
+      
+      <h3>Preparing to Run Demos</h3>
+
+      <p>
+        The analyzer is provided as a VirtualBox virtual machine.
+      Install the virtual machine and run it.  It will boot to a Linux
+      desktop.  Start the terminal and enter the following
+      commands:
+      </p>
+
+      <code>$ cd set_analysis/demo</code>
+
+      <h3>Selecting Scalar Domains</h3>
+      <p>
+        Because QUIC graphs build abstract domains from scalar
+      abstract domains we can select from two different abstract
+      domains.  The default scalar abstract domain is the APRON
+      polyhedron-based domain, but there are a variety of domains from
+      which to choose:
+      </p>
+
+      <table border>
+        <tr><th>Flag</th><th>Domain</th><th></th></tr>
+        <tr>
+          <td><code>-eq</code></td>
+          <td>Equivalence Class</td>
+          <td>
+            Represents equivalence classes of variables and constants.
+            It uses a naïve implementation of union find and partition
+            refinement to implement basic domain operations.  It is
+            implemented in the following file:<br/>
+            <code>~/set_analysis/src/EqClassDomain.ml</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>-oct</code></td>
+          <td>Octagon</td>
+          <td>
+            This is the APRON abstract domain for octagons.  Octagons
+            represent constraints of the form ±x±y±c≤0 where x and y
+            are variables and c is a constant.  It is implemented in
+            the following file: <br/>
+            <code>~/set_analysis/src/ApronDomain.ml</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>-poly</code></td>
+          <td>Octagon</td>
+          <td>
+            This is the APRON abstract domain for octagons.  Octagons
+            represent constraints of the form ±x±y±c≤0 where x and y
+            are variables and c is a constant.  It is implemented in
+            the following file: <br/>
+            <code>~/set_analysis/src/ApronDomain.ml</code>
+          </td>
+        </tr>
+      </table>
+
+      <p>Note that all available abstract domains are relational.
+      This implementation of QUIC graphs relies upon relations in the
+      scalar domain to perform reductions.  The domain is sound
+      without a relational scalar domain, but it loses most
+      precision.</p>
+
+      <h3>Analyzing Copy Using a Polyhedron-based Scalar Domain</h3>
+
+      <p>
+        Run the this basic analysis using the following command:
+      </p>
+
+      <code>$ ../Main –poly copy.js0</code>
+
+      <p>
+        This will run the analysis on the copy program, attempting to
+        prove assertions present in the program.  It will also produce
+        auxiliary files showing the generated invariants at many
+        program points in the intermediate language.  They are most
+        easily viewed in the generated HTML file:
+      </p>
+
+      <code>$ firefox copy.html</code>
+
+      <p>
+        This shows the set and numeric constraints generated
+        throughout the program in red.
+      </p>
+
+      <h3>Analyzing Copy Using an Equivalence Class Scalar Domain</h3>
+
+      <p>
+        Identical to the polyhedron-based analysis, run the analysis
+        using an equivalence class domain:
+      </p>
+      
+      <code>$ ../Main –eq copy.js0</code>
+
+      <p>
+        Because the QUIC graph domain is constructed on the fly, it
+        can easily be switched to this simpler domain that is not part
+        of the APRON library.  Similarly this domain is sufficient to
+        prove all properties in this program, so the output is empty.
+      </p>
+      
+      <h3>Analyzing Filter</h3>
+
+      <p>
+        The filter program is like the copy program except that it
+        does not copy every element.  It only copies the elements
+        greater than 10 and less than or equal to 11.  This may seem
+        like a trivial program, but it allows us to state an invariant
+        at the end of the program that is expressible in both the
+        polyhedron domain and in the equivalence class
+        domain. However, because we used inequalities in the
+        specification of the filter, the equivalence class domain
+        loses too much information about what is in the set to prove
+        the second property.  Note that it can still prove that the
+        result set r is a subset of the input set s:
+      </p>
+
+      <code>$ ../Main –eq filter.js0</code>
+
+      <p>
+        Now we see that a property could not be proven.  This is due
+        to the imprecision of the equivalence class abstract domain.
+        This is because elements that are included are those greater
+        than 10 and less than or equal to 11, which is not
+        representable using equivalence classes.  However polyhedrons
+        can represent this fact:
+      </p>
+
+      <code>$ ../Main –poly filter.js0</code>
+
+      <p>
+        If we view the generate invariants, we see that they are quite
+        complex:
+      </p>
+
+      <code>$ firefox filter.html</code>
+
+      <p>
+        This complexity comes from history variables and variables
+        introduced by converting the program to A-normal form.  If we
+        look for critical facts, such as r ⊆ {ω ∈ s | ω &gt; 10 ∧ ω ≤
+        11} are represented in the constraints where the verification
+        happens.
+      </p>
+
+      <h3>Running Benchmarks</h3>
+
+      <p>
+        The benchmarks and many other sample programs are contained in
+        a different directory:
+      </p>
+
+      <code>$ cd ~/set_analysis/test.js0</code>
+
+      <p>
+        They are written in a special language for encoding set
+        constraints.  Some of the programs have been translated from
+        functions in the python test suite with the matching name.
+        Others are adapted from the python test suite:
+      </p>
+
+      <table border>
+        <tr>
+          <td><code>./factored_original/*</code></td>
+          <td>
+            Programs adapted directly from the Python test suite.
+            They are typically finite state.
+          </td>
+        </tr>
+        <tr>
+          <td><code>./factored_nondet/*</code></td>
+          <td>
+            Modified programs from the Python test suite.  They have
+            been modified to make them more generic.  They are
+            typically infinite state.
+          </td>
+        </tr>
+        <tr>
+          <td><code>./other_tests/*</code></td>
+          <td>
+            Simple sanity check tests 
+          </td>
+        </tr>
+        <tr>
+          <td><code>./*</code></td>
+          <td>
+            A variety of tests developed over the course of the
+            project; some before and some after publication.
+          </td>
+        </tr>
+      </table>
+
+      <p>
+        The tests from the paper can be run using
+        the <code>./run_tests.sh</code> script.  The results are in
+        the various log files generated for each benchmark run.
+      </p>
+
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
