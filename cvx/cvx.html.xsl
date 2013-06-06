@@ -63,7 +63,7 @@ name="html" />
        <xsl:value-of select="$this/title" />
        &space; | &space;
      </xsl:if>
-     <xsl:value-of select="$site-title" />
+     <xsl:value-of select="$site/title" />
      <xsl:if test="$this/subtitle">:
        <xsl:value-of select="$this/subtitle" />
      </xsl:if>
@@ -80,7 +80,7 @@ name="html" />
  </div> 
 
  <div id="rsidebarfloat"><div id="rsidebar">
-   <xsl:copy-of select="$this/rsidebar/*" />
+   <xsl:copy-of select="$this/rsidebar/node()" />
  </div></div>
 
  <div id="banner">
@@ -90,7 +90,7 @@ name="html" />
  <div id="content">
   <xsl:copy-of select="$site/content-top/node()" />
   <div id="header">
-    <xsl:copy-of select="$site/header/node()" />
+    <xsl:call-template name="site-header" />
     <xsl:choose>
       <xsl:when test="$this/header">
 	<xsl:copy-of select="$this/header/node()" />
@@ -183,14 +183,13 @@ name="html" />
   </div>
 </xsl:template>
 
-<xsl:template match="news">
+<xsl:template match="news" mode="p-list">
   <p>
     <xsl:value-of select="@date" />:
     <xsl:apply-templates select="child::node()" />
   </p>
 </xsl:template>
 
-  <!-- DUP -->
 <xsl:template match="news">
   <xsl:variable name="id"><xsl:value-of select="@id"/></xsl:variable>
   <h2 id="{$id}"><xsl:value-of select="@date"/></h2>
@@ -268,6 +267,12 @@ name="html" />
 
 <!-- Students -->
 
+<xsl:template match="students">
+  <table class="columns">
+    <xsl:apply-templates select="student" />
+  </table>
+</xsl:template>
+
 <xsl:template match="student">
   <tr><td>
     <xsl:apply-templates select="key('person', @person)" />
@@ -284,7 +289,7 @@ name="html" />
 
 <xsl:template match="courses">
   <table class="columns line-spaced">
-    <xsl:apply-templates select="series" mode="long">
+    <xsl:apply-templates select="series" mode="long-right">
       <xsl:with-param name="sub">course</xsl:with-param>
     </xsl:apply-templates>
   </table>
@@ -624,7 +629,7 @@ name="html" />
 <xsl:template match="series" mode="abbrev">
   <xsl:choose>
     <xsl:when test="abbrev">
-      <xsl:value-of select="abbrev" />
+      <xsl:apply-templates select="abbrev" />
     </xsl:when>
     <xsl:otherwise>
       <xsl:value-of select="translate(@id,
@@ -651,6 +656,27 @@ name="html" />
 	  <xsl:with-param name="items" select="child::*[name()=$sub]" />
 	</xsl:call-template>
       </div>
+    </td>
+  </tr>
+</xsl:template>
+
+<xsl:template match="series" mode="long-right">
+  <xsl:param name="sub" />
+  <tr>
+    <td>
+      <div><xsl:value-of select="name" /></div>
+      <div class="item-note">
+	<xsl:call-template name="text-list">
+	  <xsl:with-param name="items" select="child::*[name()=$sub]" />
+	</xsl:call-template>
+      </div>
+    </td>
+    <td>
+      <xsl:call-template name="withurl">
+	<xsl:with-param name="text">
+	  <xsl:apply-templates select="." mode="abbrev" />
+	</xsl:with-param>
+      </xsl:call-template>
     </td>
   </tr>
 </xsl:template>
@@ -687,9 +713,9 @@ name="html" />
   <xsl:variable name="href"><xsl:value-of select="." /></xsl:variable>
   <a>
     <xsl:attribute name="href"><xsl:apply-templates select="child::node()" /></xsl:attribute>
-    <xsl:if test="not(starts-with($href, 'http') or ends-with($href,'html') or ends-with($href,'/'))">
+    <xsl:if test="not(starts-with($href, 'http') or ends-with($href,'html') or ends-with($href,'/') or ends-with($href,'.'))">
       <xsl:attribute name="onClick">
-	<xsl:text>_gaq.push(['_trackPageview', '/{$trackPageviewRoot}</xsl:text>
+	<xsl:text>_gaq.push(['_trackPageview', '/</xsl:text><xsl:value-of select="$trackPageviewRoot"/>
 	<xsl:apply-templates select="child::node()" />
 	<xsl:text>']);</xsl:text>
       </xsl:attribute>
