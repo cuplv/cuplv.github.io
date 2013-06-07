@@ -23,6 +23,13 @@ name="html" />
 
 <xsl:include href="cvx.keys.xsl" />
 
+<xsl:template name="site-banner">
+</xsl:template>
+<xsl:template name="site-header">
+</xsl:template>
+<xsl:template name="site-header-tail">
+</xsl:template>
+
 <!-- Main -->
 
 <xsl:template match="/">
@@ -84,7 +91,7 @@ name="html" />
  </div></div>
 
  <div id="banner">
-   <xsl:copy-of select="$site/banner/node()" />
+   <xsl:call-template name="site-banner" />
  </div>
  
  <div id="content">
@@ -99,7 +106,7 @@ name="html" />
 	<div class="title"><xsl:value-of select="$this/title" /></div>
       </xsl:when>
     </xsl:choose>
-    <div class="clearer"></div>
+    <xsl:call-template name="site-header-tail" />
   </div>
 
   <xsl:copy-of select="$this/content/node()" />
@@ -220,9 +227,37 @@ name="html" />
       <xsl:apply-templates select="parent::news/child::news-detail" />
     </xsl:when>
     <xsl:otherwise>
+      <xsl:call-template name="float-or-persons" />
       <xsl:apply-templates select="." />
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+
+<xsl:template match="news-detail">
+  <xsl:call-template name="float-or-persons" />
+  <xsl:apply-templates select="child::node()" />
+</xsl:template>
+
+<xsl:template name="float-or-persons">
+  <xsl:choose>
+    <xsl:when test="float">
+    </xsl:when>
+    <xsl:otherwise>
+      <div class="float-right">
+	<xsl:for-each select="ref['person'=@table]">
+	  <xsl:apply-templates select=".">
+	    <xsl:with-param name="mode">medium-face</xsl:with-param>
+	  </xsl:apply-templates>
+	  &space;
+	</xsl:for-each>
+      </div>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+<xsl:template match="float">
+  <div class="float-right">
+    <xsl:apply-templates select="child::node()" />
+  </div>    
 </xsl:template>
 
 <xsl:template match="news-page">

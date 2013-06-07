@@ -6,8 +6,7 @@
       <title>
          	ISSTA 2012
          :
-         	Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say  |  
-         CUPLV
+         	Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say  |  CUPLV
       </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
 	  (function(w) { var p = w.onload;
 	     w.onload = function() {
@@ -15,7 +14,7 @@
 	     };
 	  })(window)
 	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
-      <link href="pl.css" rel="stylesheet" type="text/css"></link><script type="text/javascript">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
      var _gaq = _gaq || [];
      _gaq.push(['_setAccount', 'UA-25127606-1']);
      _gaq.push(['_trackPageview']);
@@ -27,14 +26,17 @@
    </script></head>
    <body>
       <div id="container">
-         <div id="rsidebar"></div>
+         <div id="lsidebar"></div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
          <div id="banner">
-            <ul>
-               <li xmlns=""><a href="." onClick="_gaq.push(['_trackPageview', '/.']);">Welcome</a></li>
-               <li xmlns=""><a href="news.html">News</a></li>
-               <li xmlns=""><a href="people.html">People</a></li>
-               <li xmlns=""><a href="papers.html">Papers</a></li>
-            </ul><img src="pics/banner.jpg" height="50"></img></div>
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
          <div id="content">
             <div id="header">
                <div xmlns="" class="small-title">Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say</div>
@@ -72,7 +74,7 @@
             </div>
             <h4 xmlns="">Abstract</h4>
             	
-            <p xmlns="">A static analysis design is sufficient if it can
+            <p xmlns="">A static analysis design is <em>sufficient</em> if it can
                	prove the property of interest with an acceptable number of
                	false alarms.  Ultimately, the only way to confirm that an
                	analysis design is sufficient is to implement it and run it on
@@ -82,7 +84,7 @@
                	effort over and over again.  In this paper, we make the
                	observation that there is a minimal range of code needed to
                	prove a property of interest under an ideal static analysis;
-               	we call such a range of code a validation scope.
+               	we call such a range of code a <em>validation scope</em>.
                	Armed with this observation, we create a dynamic measurement
                	framework that quantifies validation scopes and thus enables
                	designers to rule out insufficient designs at lower cost.  A

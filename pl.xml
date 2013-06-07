@@ -4,8 +4,68 @@
 <!ENTITY emdash "&#8212;">
 ]>
 
-<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cv.xsd">
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2013.05.21" id="cox-chateaubriand13">
+      <news-snippet>
+	<ref table="person" key="cox"/> wins a
+	<a href="http://france-science.org/chateaubriand">Chateaubriand Fellowship</a>!
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="cox"/> wins a
+	<a href="http://france-science.org/chateaubriand">Chateaubriand Fellowship</a>
+	in Science, Technology, Engineering, and Mathematics
+	from the Embassy of France in the United States to study and conduct research in France.
+      </news-detail>
+    </news>
+    <news date="2013.05.07" id="artifact-ecoop13">
+      <news-snippet>
+	"<ref table="pub" key="quicgraphs-ecoop13"/>" wins <ref table="event" key="ecoop13"/> distinguished artifact award!
+      </news-snippet>
+      <news-detail>
+	<float>
+  	  <ref table="person" key="cox" mode="medium-face"/>
+	  <ref table="person" key="bec" mode="medium-face"/>
+	  <ref table="person" key="srirams" mode="medium-face"/>
+	</float>
+	The artifact supplementing "<ref table="pub" key="quicgraphs-ecoop13"/>" has been
+	<a href="http://www.lirmm.fr/ecoop13/index.php/validated-artifacts">validated</a>
+	and has received the distinguished artifact award at <ref table="event" key="ecoop13"/>!
+      </news-detail>
+    </news>
+    <news date="2013.05.25" id="cox-facebook13">
+      <news-snippet>
+	<ref table="person" key="cox"/> named a <a href="https://www.facebook.com/notes/facebook-academics/announcing-the-2013-2014-facebook-graduate-fellows/514353405282738">2013-2014 Facebook Graduate Fellowship Finalist</a>.
+      </news-snippet>
+    </news>
+    <news date="2013.03.06" id="papers-cav13">
+      <news-snippet>
+	Three papers with CUPLV authors accepted to <ref table="event" key="cav13"/>!
+	[<ref table="pub" key="concursyn-cav13" text="1"/>,
+	 <ref table="pub" key="martingales-cav13" text="2"/>,
+	 <ref table="pub" key="flowstar-cav13" text="3"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="cernyp"/>, <ref table="person" key="chakarov"/>, and <ref table="person" key="srirams"/>
+	with collaborators 
+	have had papers accepted for presentation at <ref
+	table="event" key="cav13"/> in July (<ref table="pub"
+	key="concursyn-cav13" text="Černý et al."/>, <ref
+	table="pub" key="martingales-cav13" text="Chakarov and Sankaranarayanan"/>,
+	and <ref table="pub" key="flowstar-cav13" text="Chen et al."/>).
+      </news-detail>
+    </news>
+    <news date="2012.03.04" id="paper-ecoop13">
+      <news-snippet>
+	Paper by <ref table="pub" key="quicgraphs-ecoop13" text="Cox et al."/>
+	accepted to <ref table="event" key="ecoop13"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
+	have had paper "<ref table="pub" key="quicgraphs-ecoop13"/>"
+	accepted for presentation at <ref table="event" key="ecoop13"/> in July.
+      </news-detail>
+    </news>
     <news date="2013.03.04" id="tapascfp-2013">
       <news-snippet>
 	Submit Analyzer Pearls to <ref table="event" key="tapas13" />!
@@ -21,12 +81,12 @@
 	Great showing for CUPLV authors at <ref table="event" key="pldi13"/>: 3 papers accepted! [<ref table="pub" key="thresher-pldi13" text="1"/>, <ref table="pub" key="probabilistic-pldi13" text="2"/>, <ref table="pub" key="acspec-pldi13" text="3"/>]
       </news-snippet>
       <news-detail>
-	<div class="float-right">
+	<float>
 	  <ref table="person" key="blackshear" mode="medium-face"/>
 	  <ref table="person" key="bec" mode="medium-face"/>
 	  <ref table="person" key="srirams" mode="medium-face"/>
 	  <ref table="person" key="chakarov" mode="medium-face"/>
-	</div>
+	</float>
 	CUPLV authors <ref table="person" key="blackshear"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="chakarov"/>
 	with collaborators <ref table="person" key="msridhar"/>,
 	<ref table="person" key="sumitg"/>, and
@@ -74,9 +134,6 @@
 	<ref table="person" key="sarnat"/> visits November 15.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="sarnat" mode="medium-face"/>
-	</div>
 	<ref table="person" key="sarnat"/> from Twitter is visiting us
 	on November 13, 2012. He is giving a Computer Science
 	Colloquium entitled "Getting Off the Monorail or: How Twitter
@@ -138,9 +195,6 @@
 	in January 2013.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="cernyp" mode="medium-face"/>
-	</div>
 	<ref table="person" key="cernyp"/> joins the <a
 	href="http://www.colorado.edu">University of Colorado Boulder</a>
 	(CU-Boulder) and <a href="http://pl.cs.colorado.edu">CU
@@ -156,9 +210,6 @@
 	at the <ref table="event" key="cs-colloquium"/> September 27.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="srirams" mode="medium-face"/>
-	</div>
 	<ref table="person" key="srirams"/> is giving a Computer
 	Science Colloquium entitled "Finding Falsifications in Complex
 	Cyber-Physical Systems" at 3:30pm in ECCR 265 on Thursday,
@@ -269,9 +320,6 @@
 	at <ref table="event" key="issta12"/> July 19.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="coughlin" mode="medium-face"/>
-	</div>
 	<ref table="person" key="coughlin"/> is presenting
 	the paper "<ref table="pub" key="enforcements-issta12"/>"
 	at <ref table="event" key="issta12"/> on July 19.
@@ -289,9 +337,6 @@
         <ref table="person" key="vitousek"/> awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">PLDI Student Research Competition (SRC)</a>.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="vitousek" mode="medium-face"/>
-	</div>
         Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts. 
       </news-detail>
     </news>
@@ -428,9 +473,6 @@
 	at <ref table="event" key="tacas12"/> March 27.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="cox" mode="medium-face"/>
-	</div>
 	<ref table="person" key="cox"/> is presenting
 	the paper "<ref table="pub" key="filters-tacas12"/>"
 	at <ref table="event" key="tacas12"/> on March 27.
@@ -624,9 +666,6 @@
 	<ref table="event" key="sas11" /> September 14.
       </news-snippet>
       <news-detail>
-	<div class="float-right">
-	  <ref table="person" key="blackshear" mode="medium-face"/>
-	</div>
 	<ref table="person" key="blackshear" /> is presenting
 	the paper "<ref table="pub" key="ptaprecision-sas11" />" at
 	<ref table="event" key="sas11" /> on September 14.
@@ -1319,6 +1358,67 @@
   </projects>
 
   <publications>
+    <pub id="concursyn-cav13">
+      <title>Efficient Synthesis for Concurrency using Semantics-Preserving Transformations</title>
+      <authors>
+	<author person="cernyp"/>
+	<author person="tah"/>
+	<author person="radhakrishna"/>
+	<author person="leonidr"/>
+	<author person="tarrach"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="cav13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="martingales-cav13">
+      <title>Probabilistic Program Analysis with Martingales</title>
+      <authors>
+	<author person="chakarov"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="cav13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="flowstar-cav13">
+      <title>Flow*: An Analyzer for Non-Linear Hybrid Systems</title>
+      <authors>
+	<author person="xinchen"/>
+	<author person="erikaabraham"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="cav13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="quicgraphs-ecoop13">
+      <title>QUIC Graphs: Relational Invariant Generation for Containers</title>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="ecoop13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="thresher-pldi13">
       <title>Thresher: Precise Refutations for Heap Reachability</title>
       <authors>
@@ -1335,14 +1435,15 @@
       <abstract>
       </abstract>
     </pub>
-    <pub id="probabilistic-pldi13">
-      <title>Towards Static Analysis for Probabilistic Programs</title>
+    <pub id="acspec-pldi13">
+      <title>Almost-Correct Specifications: A Modular Semantic
+      Framework for Assigning Confidence to Warnings</title>
       <authors>
-	<author person="srirams"/>
-	<author person="chakarov"/>
-	<author person="sumitg"/>
+	<author person="blackshear"/>
+	<author person="shuvendu"/>
       </authors>
       <urls>
+	<url name="pdf">papers/papers/pldi13-acspec.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="pldi13" />
@@ -1350,12 +1451,12 @@
       <abstract>
       </abstract>
     </pub>
-    <pub id="acspec-pldi13">
-      <title>Almost-Correct Specifications: A Modular Semantic
-      Framework for Assigning Confidence to Warnings</title>
+    <pub id="probabilistic-pldi13">
+      <title>Towards Static Analysis for Probabilistic Programs</title>
       <authors>
-	<author person="blackshear"/>
-	<author person="shuvendu"/>
+	<author person="srirams"/>
+	<author person="chakarov"/>
+	<author person="sumitg"/>
       </authors>
       <urls>
       </urls>
@@ -2209,7 +2310,7 @@ an application example.</p>
   <persons>
     <person id="cernyp" group="faculty">
       <name>Pavol Černý</name>
-      <url>http://pub.ist.ac.at/~cernyp/</url>
+      <url>http://ecee.colorado.edu/pavol/</url>
       <face>pics/cerny.jpg</face>
     </person>
     <person id="bec" group="faculty">
@@ -2544,6 +2645,27 @@ an application example.</p>
       <name>Sumit Gulwani</name>
       <url>http://research.microsoft.com/~sumitg/</url>
     </person>
+    <person id="tah">
+      <name>Thomas A. Henzinger</name>
+      <url>http://pub.ist.ac.at/~tah/</url>
+    </person>
+    <person id="xinchen">
+      <name>Xin Chen</name>
+      <url>http://www-i2.informatik.rwth-aachen.de/i2/chen/</url>
+    </person>
+    <person id="erikaabraham">
+      <name>Erika Abraham</name>
+    </person>
+    <person id="radhakrishna">
+      <name>Arjun Radhakrishna</name>
+    </person>
+    <person id="leonidr">
+      <name>Leonid Ryzhyk</name>
+      <url>http://www.cse.unsw.edu.au/~leonidr/</url>
+    </person>
+    <person id="tarrach">
+      <name>Thorsten Tarrach</name>
+    </person>
   </persons>
 
   <events>
@@ -2602,22 +2724,37 @@ an application example.</p>
     <series id="cav">
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
-      <event id="cav11">
-	<date>2011-07</date>
-	<location>Snowbird, Utah, USA</location>
-	<url>http://www.cs.utah.edu/events/conferences/cav2011/</url>
+     <event id="cav13">
+	<date>2013-07</date>
+	<location>Saint Petersburg, Russia</location>
+	<url>http://cav2013.forsyte.at/</url>
       </event>
       <event id="cav12">
 	<date>2012-07</date>
 	<location>Berkeley, California, USA</location>
 	<url>http://cav12.cs.illinois.edu/</url>
       </event>
+      <event id="cav11">
+	<date>2011-07</date>
+	<location>Snowbird, Utah, USA</location>
+	<url>http://www.cs.utah.edu/events/conferences/cav2011/</url>
+      </event>
+    </series>
+    <series id="ecoop">
+      <name>Object-Oriented Programming</name>
+      <longPrefix>European Conference on</longPrefix>
+      <event id="ecoop13">
+	<date>2013-07</date>
+	<location>Montpellier, France</location>
+	<nth>Twenty-Seventh</nth>
+        <url>http://www.lirmm.fr/ecoop13/</url>
+      </event>
     </series>
     <series id="esop">
       <name>European Symposium on Programming</name>
       <event id="esop11">
 	<date>2011-03</date>
-	<location> Saarbrücken, Germany </location>
+	<location>Saarbrücken, Germany</location>
         <url>http://www.etaps.org/etaps-2011/esop</url>
       </event>
       <event id="esop10"> 
