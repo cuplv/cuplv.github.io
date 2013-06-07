@@ -62,6 +62,11 @@ name="html" />
 
 <xsl:template match="page" name="page">
   <xsl:param name="this" select="."/>
+  <xsl:comment>
+  Automatically generated. Do not edit directly!
+  </xsl:comment>
+  <xsl:text>
+  </xsl:text>
  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
  <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
