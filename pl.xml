@@ -458,7 +458,7 @@
     <news date="2012.05.21" id="paper-sas12">
       <news-snippet>
 	Paper accepted to <ref table="event" key="sas12"/>
-	(by <ref table="pub" key="self-reflection-sas12" text="Sanchez et al."/>).
+	(by <ref table="pub" key="reflective-sas12" text="Sanchez et al."/>).
       </news-snippet>
     </news>
     <news date="2012.04.20" id="paper-issta12">
@@ -1482,7 +1482,7 @@
       <abstract>
       </abstract>
     </pub>
-    <pub id="self-reflection-sas12">
+    <pub id="reflective-sas12">
       <title>Invariant Generation for Parametrized Systems using Self-Reflection</title>
       <authors>
         <author person="asanchez" />
@@ -2672,6 +2672,18 @@ an application example.</p>
     <series id="popl">
       <name>Principles of Programming Languages</name>
       <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
+      <event id="popl14">
+	<date>2014-01</date>
+	<location>San Diego, California, USA</location>
+	<nth>Forty-First</nth>
+	<url>http://popl.mpi-sws.org/2014/</url>
+      </event>
+      <event id="popl13">
+	<date>2013-01</date>
+	<location>Rome, Italy</location>
+	<nth>Fortieth</nth>
+	<url>http://popl.mpi-sws.org/2013/</url>
+      </event>
       <event id="popl12">
 	<date>2012-01</date>
 	<location>Philadelphia, Pennsylvania, USA</location>
@@ -2691,7 +2703,7 @@ an application example.</p>
 	<url>http://www.cse.psu.edu/popl/10/</url>
       </event>
       <event id="popl08">
-	<date>2008</date>
+	<date>2008-01</date>
 	<location>San Francisco, California, USA</location>
 	<nth>Thirty-Fifth</nth>
 	<url>http://www.cs.ucsd.edu/popl/08/</url>
@@ -2794,10 +2806,20 @@ an application example.</p>
 	<nth>Nineteenth</nth>
 	<url>http://www.sas2012.ens.fr/</url>
       </event>
+      <event id="sas11">
+	<date>2011-09</date>
+	<nth>Eighteenth</nth>
+	<url>http://sas2011.cs.technion.ac.il/</url>
+      </event>
       <event id="sas07">
-	<date>2007</date>
+	<date>2007-08</date>
 	<nth>Fourteenth</nth>
 	<url>http://www2.imm.dtu.dk/sas2007/</url>
+      </event>
+      <event id="sas06">
+	<date>2006-08</date>
+	<nth>Thirteenth</nth>
+	<url>http://ropas.snu.ac.kr/sas06/</url>
       </event>
     </series>
     <series id="vmcai">
@@ -2809,11 +2831,26 @@ an application example.</p>
 	<nth>Fourteenth</nth>
 	<url>http://vmcai13.di.univr.it/</url>
       </event>
+      <event id="vmcai12">
+	<date>2012-01</date>
+	<nth>Thirteenth</nth>
+	<url>http://lara.epfl.ch/vmcai2012/</url>
+      </event>
       <event id="vmcai11">
 	<date>2011-01</date>
 	<location>Austin, Texas, USA</location>
 	<nth>Twelfth</nth>
 	<url>http://vmcai11.cis.ksu.edu/</url>
+      </event>
+      <event id="vmcai06">
+	<date>2006-01</date>
+	<nth>Seventh</nth>
+	<url>http://www.cs.utexas.edu/~vmcai06/</url>
+      </event>
+      <event id="vmcai05">
+	<date>2005-01</date>
+	<nth>Sixth</nth>
+	<url>http://www.polytechnique.fr/vmcai05/</url>
       </event>
     </series>
     <series id="sigcse">
@@ -2864,6 +2901,24 @@ an application example.</p>
 	<url>http://www.cs.utexas.edu/~ragerdl/fmcad11/</url>
       </event>
     </series>
+    <series id="fmco">
+      <name>Formal Methods for Components and Objects</name>
+      <longPrefix>International Symposium on</longPrefix>
+      <event id="fmco05">
+	<date>2005</date>
+	<nth>Fourth</nth>
+	<url>http://fmco.liacs.nl/fmco05.html</url>
+      </event>
+    </series>
+    <series id="tldi">
+      <name>Types in Language Design and Implementation</name>
+      <longPrefix>ACM SIGPLAN International Workshop on</longPrefix>
+      <event id="tldi05">
+	<date>2005</date>
+	<nth>Second</nth>
+	<url>http://research.microsoft.com/~maf/tldi05/</url>
+      </event>
+    </series>
     <series id="nsad">
       <name>Numerical and Symbolic Abstract Domains</name>
       <longPrefix>International Workshop on</longPrefix>
@@ -2894,6 +2949,51 @@ an application example.</p>
 	<date>2011</date>
 	<nth>Tenth</nth>
 	<url>https://sites.google.com/site/paste2011/</url>
+      </event>
+    </series>
+    <series id="lcpc">
+      <name>Languages and Compilers for Parallel Computing</name>
+      <longPrefix>International Workshop on</longPrefix>
+      <event id="lcpc11">
+	<date>2011</date>
+	<nth>Twenty-Fourth</nth>
+	<url>http://lcpc11.cs.colostate.edu/</url>
+      </event>
+    </series>
+    <series id="aiool">
+      <name>Abstract Interpretation of Object-Oriented Languages</name>
+      <longPrefix>International Workshop on</longPrefix>
+      <event id="aiool05">
+	<date>2005</date>
+	<nth>First</nth>
+	<url>http://www.polytechnique.fr/vmcai05/Aiool.html</url>
+      </event>
+    </series>
+    <series id="bioconcur">
+      <name>Concurrent Models in Molecular Biology</name>
+      <longPrefix>Workshop on</longPrefix>
+      <abbrev>BioConcur</abbrev>
+      <event id="bioconcur03">
+	<date>2003</date>
+	<url>http://www.pps.jussieu.fr/~bioconcu/</url>
+      </event>
+    </series>
+    <series id="grid">
+      <name>Grid Computing</name>
+      <longPrefix>International Workshop on</longPrefix>
+      <event id="grid02">
+	<date>2002</date>
+	<url>http://www.gridcomputing.org/grid2002</url>
+      </event>
+    </series>
+    <series id="ptp">
+      <name>
+	Proof Transformations, Proof Presentations, and Complexity of Proofs
+      </name>
+      <longPrefix>Workshop on</longPrefix>
+      <event id="ptp01">
+	<date>2001</date>
+	<url>http://www.ags.uni-sb.de/~ptp-01/</url>
       </event>
     </series>
     <series id="pldi-fit">

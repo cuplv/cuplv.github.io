@@ -63,7 +63,7 @@ name="html" />
 <xsl:template match="page" name="page">
   <xsl:param name="this" select="."/>
   <xsl:comment>
-  Automatically generated. Do not edit directly!
+    Automatically generated. Do not edit directly!
   </xsl:comment>
   <xsl:text>
   </xsl:text>
