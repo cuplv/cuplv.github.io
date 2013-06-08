@@ -50,14 +50,14 @@
 	with collaborators 
 	have had papers accepted for presentation at <ref
 	table="event" key="cav13"/> in July (<ref table="pub"
-	key="concursyn-cav13" text="Černý et al."/>, <ref
-	table="pub" key="martingales-cav13" text="Chakarov and Sankaranarayanan"/>,
-	and <ref table="pub" key="flowstar-cav13" text="Chen et al."/>).
+	key="concursyn-cav13" mode="authors"/>, <ref
+	table="pub" key="martingales-cav13" mode="authors"/>,
+	and <ref table="pub" key="flowstar-cav13" mode="authors"/>).
       </news-detail>
     </news>
     <news date="2012.03.04" id="paper-ecoop13">
       <news-snippet>
-	Paper by <ref table="pub" key="quicgraphs-ecoop13" text="Cox et al."/>
+	Paper by <ref table="pub" key="quicgraphs-ecoop13" mode="authors"/>
 	accepted to <ref table="event" key="ecoop13"/>.
       </news-snippet>
       <news-detail>
@@ -93,10 +93,10 @@
 	<ref table="person" key="shuvendu"/>
 	have had papers accepted for presentation at <ref
 	table="event" key="pldi13"/> in June (<ref table="pub"
-	key="thresher-pldi13" text="Blackshear et al."/>, <ref
-	table="pub" key="probabilistic-pldi13" text="Sankaranarayanan
-	et al."/>, and <ref table="pub" key="acspec-pldi13"
-	text="Blackshear and Lahiri"/>).
+	key="thresher-pldi13" mode="authors"/>, <ref
+	table="pub" key="probabilistic-pldi13" mode="authors" />,
+	and <ref table="pub" key="acspec-pldi13"
+	mode="authors" />).
       </news-detail>
     </news>
     <news date="2013.01.31" id="sigcse2013src">
@@ -458,13 +458,13 @@
     <news date="2012.05.21" id="paper-sas12">
       <news-snippet>
 	Paper accepted to <ref table="event" key="sas12"/>
-	(by <ref table="pub" key="reflective-sas12" text="Sanchez et al."/>).
+	(by <ref table="pub" key="reflective-sas12" mode="authors" />).
       </news-snippet>
     </news>
     <news date="2012.04.20" id="paper-issta12">
       <news-snippet>
 	Paper accepted to <ref table="event" key="issta12"/>
-	(by <ref table="pub" key="enforcements-issta12" text="Coughlin et al."/>).
+	(by <ref table="pub" key="enforcements-issta12" mode="authors" />).
       </news-snippet>
     </news>
     <news date="2012.03.27" id="talk-tacas12">
@@ -481,7 +481,7 @@
     <news date="2012.03.23" id="papers-cav12">
       <news-snippet>
 	3 papers with CUPLV authors accepted to <ref table="event" key="cav12"/>
-	(by <ref table="pub" key="iictl-cav12" text="Hassan et al."/>, <ref table="pub" key="timed-relational-cav12" text="Zutshi et al."/>, and <ref table="pub" key="sl-cav12" text="Berdine et al."/>)
+	(by <ref table="pub" key="iictl-cav12" mode="authors" />, <ref table="pub" key="timed-relational-cav12" mode="authors" />, and <ref table="pub" key="sl-cav12" mode="authors" />)
       </news-snippet>
     </news>
     <news date="2012.02.23" id="phdvisit-2012">
@@ -1355,8 +1355,25 @@
   </news-list>
 
   <projects>
+    <project id="quicgraphs">
+      <name>QUIC Graphs</name>
+      <url>http://pl.cs.colorado.edu/projects/quicgraphs/</url>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="srirams"/>
+      </authors>
+      <title>Relational Invariant Generation for Containers</title>
+      <snippet>
+	<p>An abstract domain constructor for inferring invariants
+	about sets and sets properties of containers.</p>
+      </snippet>
+      <references>
+	<ref table="pub" key="quicgraphs-ecoop13" mode="abbrev" />
+      </references>
+    </project>
   </projects>
-
+  
   <publications>
     <pub id="concursyn-cav13">
       <title>Efficient Synthesis for Concurrency using Semantics-Preserving Transformations</title>

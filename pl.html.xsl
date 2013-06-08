@@ -74,15 +74,19 @@ name="html" />
       </div>
     </header>
     <content>
+      <xsl:apply-templates select="cv/news-list" mode="display-recent" />
       <div class="contentbox" style="width: 98%;">
 	<a
-	href="news.html#phd-call-2013"><b>Ph.D. Positions</b></a>.
+	href="http://www.colorado.edu/cs/admissions/how-apply"><b>Ph.D. Positions</b></a>.
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.
-	Application deadline is December 15, 2012.
+	Application deadline is December 15, 2013.
       </div>
-      <div style="clear: left;"></div>
-      <xsl:apply-templates select="cv/news-list" mode="display-recent" />
+      <hr></hr>
+      <h4>Projects</h4>
+      <xsl:apply-templates select="cv/projects" mode="line" />
+      <hr></hr>
+      <h4>Publications</h4>
       <xsl:apply-templates select="cv/publications" mode="recent-by-event" />
     </content>
     <rsidebar>
@@ -210,6 +214,14 @@ name="html" />
     <url>papers.html</url>
     <content>
       <xsl:apply-templates select="cv/publications/pub" />
+    </content>
+  </page>
+  <page>
+    <name>Projects</name>
+    <title>Projects</title>
+    <url>projects.html</url>
+    <content>
+      <xsl:apply-templates select="cv/projects/project" />
     </content>
   </page> 
 </xsl:variable>

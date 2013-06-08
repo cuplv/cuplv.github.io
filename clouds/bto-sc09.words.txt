@@ -1,0 +1,22 @@
+Automating the Generation of Composed Linear Algebra Kernels
+	Memory bandwidth limits the performance of important
+	kernels in many scientific applications. Such applications
+	often use sequences of Basic Linear Algebra Subprograms
+	(BLAS), and highly efficient implementations of those routines
+	enable scientists to achieve high performance at little
+	cost. However, tuning the BLAS in isolation misses
+	opportunities for memory optimization that result from
+	composing multiple subprograms. Because it is not practical to
+	create a library of all BLAS combinations, we have developed a
+	domain-specific compiler that generates them on demand. In
+	this paper, we describe a novel algorithm for compiling linear
+	algebra kernels and searching for the best combination of
+	optimization choices. We also present a new hybrid
+	analytic/empirical method for quickly evaluating the
+	profitability of each optimization. We report experimental
+	results showing speedups of up to 130% relative to the
+	GotoBLAS on an AMD Opteron and up to 137% relative to MKL on
+	an Intel Core 2.
+
+
+      

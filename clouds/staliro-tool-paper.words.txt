@@ -1,0 +1,14 @@
+S-Taliro: A Tool for Temporal Logic Falsification for Hybrid Systems
+S-TaLiRo is a Matlab (TM) toolbox that searches for trajectories of
+minimal robustness in Simulink/Stateflow diagrams. It can analyze
+arbitrary Simulink models or user defined functions that model the
+system. At the heart of the tool, we use randomized testing based on
+stochastic optimization techniques including Monte-Carlo methods and
+Ant-Colony Optimization. Among the advantages of the toolbox is the
+seamless integration inside the Matlab environment, which is widely
+used in the industry for model-based development of control
+software. We present the architecture of S-TaLiRo and its working on
+an application example.
+
+
+    

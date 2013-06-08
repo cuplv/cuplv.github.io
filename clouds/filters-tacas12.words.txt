@@ -1,0 +1,19 @@
+A Bit Too Precise? Bounded Verification of Quantized Digital Filters
+	Digital filters are simple yet ubiquitous components of a wide
+	variety of digital processing and control systems. Errors in
+	the filters can be catastrophic.  Traditionally digital
+	filters have been verified using methods from control theory
+	and extensive testing.  We study two alternative verification
+	techniques: bit-precise analysis and real-valued error
+	approximations.  In this paper, we empirically evaluate
+	several variants of these two fundamental approaches for
+	verifying fixed-point implementations of digital filters. We
+	design our comparison to reveal the best possible approach
+	towards verifying real-world designs of infinite impulse
+	response (IIR) digital filters. Our study reveals broader
+	insights into cases where bit-reasoning is absolutely
+	necessary and suggests efficient approaches using modern
+	satisfiability-modulo-theories (SMT) solvers.
+
+
+      

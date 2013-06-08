@@ -1,0 +1,21 @@
+An Incremental Approach to Model Checking Progress Properties
+	An incremental algorithm for model checking progress
+	properties is proposed. It follows from the following insight:
+	any SCC-closed region of a system’s state graph can be
+	represented by a sequence of inductive assertions. Each
+	iteration of the algorithm selects a set of states, called a
+	skeleton, that together satisfy all fairness conditions; it
+	then applies safety model checkers to attempt to connect the
+	states into a reachable fair cycle. If this attempt fails, the
+	resulting learned lemma takes one of two forms: an inductive
+	reachability assertion that shows that at least one state of
+	the skeleton is unreachable, or an inductive wall that deﬁnes
+	two SCC-closed regions of the state graph. Subsequent
+	skeletons must be chosen entirely from one side of the
+	wall. Because a lemma often applies more generally than to the
+	one skeleton from which it was derived, property-directed
+	abstraction is achieved. The algorithm is highly
+	parallelizable.
+
+
+      

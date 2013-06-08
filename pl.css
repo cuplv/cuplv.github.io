@@ -96,6 +96,7 @@ margin-bottom: 1em;
 
 .contentbox {
 padding: 0.5ex 0.5em 0.5ex 0.5em;
+margin-top: 2ex;
 margin-bottom: 2ex;
 }
 
@@ -117,22 +118,29 @@ margin-bottom: 1em;
 .hlinks li, .hlinks a { display: inline; }
 .link-here { color: rgb(86,90,92); }
 
-.item { margin-top: 2ex; margin-bottom: 2ex; clear: left; }
-.item-icon { float: left; width: 100px; height: 60px; margin-right: 15px; }
+.item { margin-top: 2ex; margin-bottom: 2ex; position: relative; }
+.item-icon { float: left; width: 60px; height: 60px; margin-right: 15px; position: absolute; left: 0px; }
+.item .links { float: left; width: 2.5em; margin-right: 1em; font-size: 85%; }
 .item-block .hlinks, .item-date
 { float: right; padding: 0; margin: 0; margin-bottom: 1ex; font-size: 85%; }
 .item-block .hlinks { margin-left: 2em; }
 .item-date { margin-left: 2em; }
-.item-block { margin-left: 115px; }
+.item-block { margin-left: 75px; }
 .item-header { font-weight: bold; }
 .item-note { margin-left: 1.5em; margin-top: 1ex; font-size: 90%; }
 
 .person { display: inline-block; text-align: center; margin-right: 10px; margin-bottom: 3ex; width: 180px; }
-img.face { width: 100px; }
-img.medium-face { width: 50px; }
-img.small-face { width: 15px; margin-right: 0.5em; }
+img.face { width: 100px; height:100px; }
+img.icon { width: 60px; height: 60px; }
+img.medium-face { width: 50px; height: 50px; }
+img.small-face { width: 15px; height: 15px; margin-right: 0.5em; }
 
 .subh { margin-left: 2em; font-size: 80%; }
+
+table.columns { width: 100%; border-collapse: collapse; }
+table.columns td { padding: 0; border-left: 0.5em solid transparent; }
+table.columns td:first-child { border: none; }
+table.line-spaced td { padding-bottom: 1.5ex; }
 
 /***** Global Elements *****/
 

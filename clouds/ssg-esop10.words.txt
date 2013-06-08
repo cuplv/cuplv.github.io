@@ -1,0 +1,20 @@
+Separating Shape Graphs
+	Detailed memory models that expose individual fields are
+	necessary to precisely analyze code that makes use of
+	low-level aspects such as, pointers to fields and untagged
+	unions.  Yet, higher-level representations that collect fields
+	into records are often used because they are typically more
+	convenient and efficient in modeling the program heap.  In
+	this paper, we present a shape graph representation of memory
+	that exposes individual fields while largely retaining the
+	convenience of an object-level model.  This representation has
+	a close connection to particular kinds of formulas in
+	separation logic.  Then, with this representation, we show how
+	to extend the Xisa shape analyzer for
+	low-level aspects, including pointers to fields, C-style
+	nested structures and unions, malloc and free, and array
+	values, with minimal changes to the core algorithms (e.g.,
+	materialization and summarization).
+
+
+      
