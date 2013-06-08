@@ -8,7 +8,6 @@
 <xsl:stylesheet version="2.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:import href="cvx/cvx.bib.xsl" />
 <xsl:import href="cvx/cvx.html.xsl" />
 
 <xsl:output method="text" />
@@ -17,8 +16,6 @@ doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
 doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
 indent="yes"
 name="html" />
-
-<xsl:include href="cvx/cvx.keys.xsl" />
 
 <!-- Global page declarations -->
 

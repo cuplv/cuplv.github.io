@@ -16,6 +16,7 @@ commit: html
 html: $(HTML_OUTPUT)
 $(HTML_OUTPUT): pl.html.log
 %.log: %.xsl $(DATA)
+	rm -f $(HTML_OUTPUT)
 	$(SAXON) -o $@ -s $(DATA) $<
 	chmod -w $(HTML_OUTPUT)
 
