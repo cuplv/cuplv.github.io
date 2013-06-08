@@ -1,4 +1,4 @@
-HTML_OUTPUT = index.html news.html papers.html people.html $(wildcard papers/*.html)
+HTML_OUTPUT = index.html news.html papers.html people.html projects.html $(wildcard papers/*.html)
 WORDS_OUTPUT = $(wildcard clouds/*.words.png)
 OUTPUT = $(HTML_OUTPUT) $(WORDS_OUTPUT)
 SAXON = java -jar bin/saxon8.jar
