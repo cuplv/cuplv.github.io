@@ -5,11 +5,13 @@ all: $(WORDS:%.txt=%.png)
 clean:
 	rm -f $(WORDS:%.txt=%.png)
 
-%.cloud.png:
-	$(WORDCLOUD) -w 400 -h 400 -i $*.txt -o $@
-
-%.flat.png: %.cloud.png
-	convert -extent 400x400 -background "#CCCCCC" -gravity center $< $@
-
-%.png: %.flat.png
-	convert -raise 2 $< $@
+%.words.png: %.words.txt
+	[ ! -e $@ ] || (svn status $< | grep "^M" >/dev/null); \
+	if [ $$? -eq 0 ]; then \
+          $(WORDCLOUD) -w 400 -h 400 -i $< -o $*.cloud.png; \
+	  convert -extent 400x400 -background "#CCCCCC" -gravity center \
+            $*.cloud.png $*.flat.png; \
+          rm -f $*.cloud.png; \
+	  convert -raise 2 $*.flat.png $@; \
+          rm -f $*.flat.png; \
+        fi
