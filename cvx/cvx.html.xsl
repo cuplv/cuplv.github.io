@@ -857,11 +857,21 @@ name="html" />
 </xsl:template>
 
 <xsl:template match="p|div">
-  <xsl:apply-templates/>
+  <xsl:call-template name="copy-and-apply"/>
 </xsl:template>
 
 <xsl:template match="em|a|img|span">
   <xsl:copy-of select="."/>
+</xsl:template>
+
+<xsl:template name="copy-and-apply">
+  <xsl:copy>
+    <xsl:for-each select="@*">
+      <xsl:variable name="name" select="name()" />
+      <xsl:attribute name="{$name}"><xsl:value-of select="." /></xsl:attribute>
+    </xsl:for-each>
+    <xsl:apply-templates/>
+  </xsl:copy>
 </xsl:template>
 
 <!-- Special Formatting -->

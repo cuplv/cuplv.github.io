@@ -71,33 +71,35 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
-            	To improve the performance of transactional memory (TM),
-            	researchers have found many eager and lazy optimizations for
-            	conflict detection, the process of determining if transactions
-            	can commit. Despite these optimizations, nearly all TMs
-            	perform one aspect of lazy conflict detection in the same
-            	manner to preserve serializability. That is, they perform
-            	commit-time validation, where a transaction is checked for
-            	conflicts with previously committed transactions during its
-            	commit phase. While commit-time validation is efficient for
-            	workloads that exhibit limited contention, it can limit
-            	transaction throughput for contending workloads.
-            
-            This paper presents an efficient implementation of commit-time
-            invalidation, a strategy where transactions resolve their
-            conflicts with in-flight (uncommitted) transactions before
-            they commit. Commit-time invalidation supplies the contention
-            manager (CM) with data that is unavailable through commit-time
-            validation, allowing the CM to make decisions that increase
-            transaction throughput. Commit-time invalidation also requires
-            notably fewer operations than commit-time validation for
-            memory-intensive transactions, uses zero commit-time
-            operations for dynamically detected read-only transactions,
-            and guarantees full opacity for any transaction in O(N) time,
-            an improvement over incremental validation's O(N2) time. Our
-            experimental results show that for contending workloads, our
-            efficient commit-time invalidating software TM (STM) is up to
-            3 x faster than TL2, a state-of-the-art validating STM.
+            	
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">To improve the performance of transactional memory (TM),
+               	researchers have found many eager and lazy optimizations for
+               	conflict detection, the process of determining if transactions
+               	can commit. Despite these optimizations, nearly all TMs
+               	perform one aspect of lazy conflict detection in the same
+               	manner to preserve serializability. That is, they perform
+               	commit-time validation, where a transaction is checked for
+               	conflicts with previously committed transactions during its
+               	commit phase. While commit-time validation is efficient for
+               	workloads that exhibit limited contention, it can limit
+               	transaction throughput for contending workloads.
+               
+               This paper presents an efficient implementation of commit-time
+               invalidation, a strategy where transactions resolve their
+               conflicts with in-flight (uncommitted) transactions before
+               they commit. Commit-time invalidation supplies the contention
+               manager (CM) with data that is unavailable through commit-time
+               validation, allowing the CM to make decisions that increase
+               transaction throughput. Commit-time invalidation also requires
+               notably fewer operations than commit-time validation for
+               memory-intensive transactions, uses zero commit-time
+               operations for dynamically detected read-only transactions,
+               and guarantees full opacity for any transaction in O(N) time,
+               an improvement over incremental validation's O(N2) time. Our
+               experimental results show that for contending workloads, our
+               efficient commit-time invalidating software TM (STM) is up to
+               3 x faster than TL2, a state-of-the-art validating STM.
+            </p>
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{CGO = "International Symposium on Code Generation and Optimization (CGO)"}

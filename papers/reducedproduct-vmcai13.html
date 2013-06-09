@@ -71,26 +71,28 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
-            	Real-world data structures are often enhanced with additional
-            	pointers capturing alternative paths through a basic inductive skeleton
-            (e.g., back pointers, head pointers). From the static analysis point of view,
-            	we must obtain several interlocking shape invariants. At the same time, it is
-            	well understood in abstract interpretation design that supporting a separation
-            	of concerns is critically important to designing powerful static analyses.
-            	Such a separation of concerns is often obtained via a reduced product on a
-            	case-by-case basis. In this paper, we lift this idea to abstract domains for
-            	shape analyses, introducing a domain combination operator for memory
-            	abstractions. As an example, we present <em xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">simultaneous separating shape
-               	graphs</em>, a product construction that combines instances of
-            	separation logic-based shape domains. The key enabler for this
-            	construction is a static analysis on inductive data structure
-            	definitions to derive relations between the skeleton and the alternative
-            	paths. From the engineering standpoint, this construction allows each
-            	component to reason independently about different aspects of the data
-            	structure invariant and then separately exchange information via a
-            	reduction operator. From the usability standpoint, we enable describing
-            	a data structure invariant in terms of several inductive definitions
-            	that hold simultaneously.
+            	
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Real-world data structures are often enhanced with additional
+               	pointers capturing alternative paths through a basic inductive skeleton
+               (e.g., back pointers, head pointers). From the static analysis point of view,
+               	we must obtain several interlocking shape invariants. At the same time, it is
+               	well understood in abstract interpretation design that supporting a separation
+               	of concerns is critically important to designing powerful static analyses.
+               	Such a separation of concerns is often obtained via a reduced product on a
+               	case-by-case basis. In this paper, we lift this idea to abstract domains for
+               	shape analyses, introducing a domain combination operator for memory
+               	abstractions. As an example, we present <em>simultaneous separating shape
+                  	graphs</em>, a product construction that combines instances of
+               	separation logic-based shape domains. The key enabler for this
+               	construction is a static analysis on inductive data structure
+               	definitions to derive relations between the skeleton and the alternative
+               	paths. From the engineering standpoint, this construction allows each
+               	component to reason independently about different aspects of the data
+               	structure invariant and then separately exchange information via a
+               	reduction operator. From the usability standpoint, we enable describing
+               	a data structure invariant in terms of several inductive definitions
+               	that hold simultaneously.
+            </p>
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{VMCAI = "International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI)"}

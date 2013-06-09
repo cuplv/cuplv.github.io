@@ -71,26 +71,30 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
-            Abstraction refinement is an effective verification
-            technique for automatically proving safety properties of
-            software. Application of this technique in shape analyses has proved
-            impractical as core components of existing refinement techniques such
-            as backward analysis, general conjunction, and identification of
-            unreachable but doomed states are computationally infeasible in such
-            domains.
-            We propose a new method to diagnose proof failures to
-            be used in a refinement scheme for Separation Logic–based shape
-            analyses. To check feasibility of abstract error traces, we perform
-            Bounded Model Checking over the traces using a novel encoding into
-            SMT. A subsequent diagnosis finds discontinuities on infeasible
-            traces, and identifies doomed states admitted by the abstraction. To
-            construct doomed states, we give a model-finding algorithm for
-            “symbolic heap” Separation Logic formulas, employing the execution
-            machinery of the feasibility checker to search for concrete
-            counter-examples. The diagnosis has been implemented in SLAyer, and we
-            present a simple scheme for refining the abstraction of hierarchical
-            data structures, and illustrate its effectiveness on benchmarks from
-            the SLAyer test suite.
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Abstraction refinement is an effective verification
+               technique for automatically proving safety properties of
+               software. Application of this technique in shape analyses has proved
+               impractical as core components of existing refinement techniques such
+               as backward analysis, general conjunction, and identification of
+               unreachable but doomed states are computationally infeasible in such
+               domains.
+            </p>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">We propose a new method to diagnose proof failures to
+               be used in a refinement scheme for Separation Logic–based shape
+               analyses. To check feasibility of abstract error traces, we perform
+               Bounded Model Checking over the traces using a novel encoding into
+               SMT. A subsequent diagnosis finds discontinuities on infeasible
+               traces, and identifies doomed states admitted by the abstraction. To
+               construct doomed states, we give a model-finding algorithm for
+               “symbolic heap” Separation Logic formulas, employing the execution
+               machinery of the feasibility checker to search for concrete
+               counter-examples. The diagnosis has been implemented in SLAyer, and we
+               present a simple scheme for refining the abstraction of hierarchical
+               data structures, and illustrate its effectiveness on benchmarks from
+               the SLAyer test suite.
+            </p>
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{CAV = "International Conference on Computer Aided Verification (CAV)"}
