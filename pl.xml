@@ -62,7 +62,7 @@
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
-	have had paper "<ref table="pub" key="quicgraphs-ecoop13"/>"
+	have had a paper "<ref table="pub" key="quicgraphs-ecoop13"/>"
 	accepted for presentation at <ref table="event" key="ecoop13"/> in July.
       </news-detail>
     </news>
@@ -115,17 +115,16 @@
     </news>
     <news date="2013.01.31" id="icse2013nier">
       <news-snippet>
-	Paper accepted to <ref table="event" key="icse2013"/> (New and
-	Emerging Results Track) (by <ref table="person" key="givens"/>
-	et al.).
+	Paper accepted to <ref table="event" key="icse13"/> (New and
+	Emerging Results Track) (by <ref table="pub" key="ui-icse-nier13" mode="authors"/>).
       </news-snippet>
       <news-detail>
 	<ref table="person" key="givens"/>,
 	<ref table="person" key="chakarov"/>,
 	<ref table="person" key="srirams"/>, and
 	<ref table="person" key="yeh" />
-	have had their paper accepted for a presentation
-	at <ref table="event" key="icse2013"/>
+	have had their paper accepted for presentation
+	at <ref table="event" key="icse13"/>
 	(New and Emerging Results Track) in May.
     </news-detail>
     </news>
@@ -185,6 +184,17 @@
 	  href="https://twitter.com/eigenvariable">@Eigenvariable</a>.</p>
 	</bio>
       </talk-announcement>
+    </news>
+    <news date="2012.10.02" id="paper-popl13">
+      <news-snippet>
+	Paper by <ref table="pub" key="quantitative-popl13" mode="authors"/>
+	accepted to <ref table="event" key="popl13"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV author <ref table="person" key="cernyp"/>
+	has had a paper "<ref table="pub" key="quantitative-popl13"/>"
+	accepted for presentation at <ref table="event" key="popl13"/> in January.
+      </news-detail>
     </news>
     <news date="2012.09.30" id="cernyp-joins">
       <news-snippet>
@@ -1560,6 +1570,23 @@
 	as a whole.  We demonstrate promising results on a suite of
 	benchmarks from many different sources including robotic
 	manipulators and medical decision making programs.</p>
+      </abstract>
+    </pub>
+    <pub id="ui-icse-nier13">
+      <title>Exploring the Internal State of User Interfaces by Combining Computer Vision Techniques with Grammatical Inference</title>
+      <authors>
+	<author person="givens"/>
+	<author person="chakarov"/>
+	<author person="srirams"/>
+	<author person="yeh"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/ui-icse-nier13.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="icse-nier13" />
+      </howpub>
+      <abstract>
       </abstract>
     </pub>
     <pub id="quantitative-popl13">
@@ -2995,14 +3022,22 @@ an application example.</p>
 		<url>http://www.sigcse.org/sigcse2013/</url>
       </event>
     </series>
-	<series id="icse">
+    <series id="icse">
       <name>Software Engineering</name>
       <longPrefix>International Conference on</longPrefix>
-      <event id="icse2013">
+      <event id="icse13">
 	<date>2013-05</date>
 	<location>San Francisco, California, USA</location>
 	<nth>Thirty-Fifth</nth>
 	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
+      </event>
+    </series>
+    <series id="icse-nier">
+      <name>New and Emerging Results Track at ICSE</name>
+      <event id="icse-nier13">
+	<date>2013-05</date>
+	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
+	<location>San Francisco, California, USA</location>
       </event>
     </series>
     <series id="issta">
