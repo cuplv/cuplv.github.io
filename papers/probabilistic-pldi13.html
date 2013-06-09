@@ -54,11 +54,12 @@
             </div>
             <h4 xmlns="">Reference</h4>
             <div xmlns="" class="item">
-               <div class="item-icon"><img src="clouds/probabilistic-pldi13.words.png" class="icon"></div>
+               <div class="item-icon"><a href="papers/probabilistic-pldi13.pdf" onClick="_gaq.push(['_trackPageview', '/papers/probabilistic-pldi13.pdf']);"><img src="clouds/probabilistic-pldi13.words.png" class="icon"></a></div>
                <div class="item-block">
                   <div class="item-date">2013</div>
                   <ul class="hlinks">
                      <li><a href="papers/probabilistic-pldi13.html">detail</a></li>
+                     <li><a href="papers/probabilistic-pldi13.pdf" onClick="_gaq.push(['_trackPageview', '/papers/probabilistic-pldi13.pdf']);">pdf</a></li>
                   </ul>
                   <div class="item-header hanging">Towards Static Analysis for Probabilistic Programs</div>
                   <div class="hanging"><a href="http://www.cs.colorado.edu/~srirams/">Sriram Sankaranarayanan</a>, Aleksandar Chakarov,  and <a href="http://research.microsoft.com/~sumitg/">Sumit Gulwani</a></div>
@@ -70,6 +71,27 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">We propose an approach for the static analysis of probabilistic
+               	programs that sense, manipulate, and control based on uncertain
+               	data. Examples include programs used in risk analysis, medical
+               	decision making and cyber-physical systems. Correctness properties
+               	of such programs take the form of <em>queries</em> that seek the
+               	probabilities of assertions over program variables.  We present a
+               	static analysis approach that provides guaranteed interval bounds on
+               	the values (assertion probabilities) of such queries.  First, we
+               	observe that for probabilistic programs, it is possible to conclude
+               	facts about the behavior of the entire program by choosing a finite,
+               	<em>adequate set</em> of its paths. We provide strategies for choosing
+               	such a set of paths and verifying its adequacy.  The queries are
+               	evaluated over each path by a combination of symbolic execution and
+               	probabilistic volume-bound computations. Each path yields interval
+               	bounds that can be summed up with a "coverage"  bound to yield an
+               	interval that encloses the probability of assertion for the program
+               	as a whole.  We demonstrate promising results on a suite of
+               	benchmarks from many different sources including robotic
+               	manipulators and medical decision making programs.
+            </p>
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{PLDI = "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"}

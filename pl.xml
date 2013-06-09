@@ -1404,6 +1404,20 @@
 	<proceedings event="cav13" />
       </howpub>
       <abstract>
+	<p>We present techniques for the analysis of infinite state
+	probabilistic programs to synthesize probabilistic invariants and prove
+	almost-sure termination. Our analysis is based on the notion of (super)
+	martingales from probability theory. First, we define the concept of
+	(super) martingales for loops in probabilistic programs. Next, we
+	present the use of concentration of measure inequalities to bound the
+	values of martingales with high probability. This directly allows us to
+	infer probabilistic bounds on assertions involving the program
+	variables. Next, we present the notion of a super martingale ranking
+	function (SMRF) to prove almost sure termination of probabilistic
+	programs. Finally, we extend constraint-based techniques to synthesize
+	martingales and super-martingale ranking functions for probabilistic
+	programs. We present some applications of our approach to reason about
+	invariance and termination of small but complex probabilistic programs.</p>
       </abstract>
     </pub>
     <pub id="flowstar-cav13">
@@ -1419,6 +1433,17 @@
 	<proceedings event="cav13" />
       </howpub>
       <abstract>
+	<p>The tool Flow* performs Taylor model-based flowpipe construction for
+	non-linear (polynomial) hybrid systems. Flow* combines well-known Taylor
+	model arithmetic techniques for guaranteed approximations of the
+	continuous dynamics in each mode with a combination of approaches for
+	handling mode invariants and discrete transitions. Flow* supports a wide
+	variety of optimizations including adaptive step sizes, adaptive
+	selection of approximation orders and the heuristic selection of
+	template directions for aggregating flowpipes. This paper describes
+	Flow* and demonstrates its performance on a series of non-linear
+	continuous and hybrid system benchmarks. Our comparisons show that Flow*
+	is competitive with other tool</p>
       </abstract>
     </pub>
     <pub id="quicgraphs-ecoop13">
@@ -1507,11 +1532,31 @@
 	<author person="sumitg"/>
       </authors>
       <urls>
+	<url name="pdf">papers/probabilistic-pldi13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="pldi13" />
       </howpub>
       <abstract>
+	<p>We propose an approach for the static analysis of probabilistic
+	programs that sense, manipulate, and control based on uncertain
+	data. Examples include programs used in risk analysis, medical
+	decision making and cyber-physical systems. Correctness properties
+	of such programs take the form of <em>queries</em> that seek the
+	probabilities of assertions over program variables.  We present a
+	static analysis approach that provides guaranteed interval bounds on
+	the values (assertion probabilities) of such queries.  First, we
+	observe that for probabilistic programs, it is possible to conclude
+	facts about the behavior of the entire program by choosing a finite,
+	<em>adequate set</em> of its paths. We provide strategies for choosing
+	such a set of paths and verifying its adequacy.  The queries are
+	evaluated over each path by a combination of symbolic execution and
+	probabilistic volume-bound computations. Each path yields interval
+	bounds that can be summed up with a "coverage"  bound to yield an
+	interval that encloses the probability of assertion for the program
+	as a whole.  We demonstrate promising results on a suite of
+	benchmarks from many different sources including robotic
+	manipulators and medical decision making programs.</p>
       </abstract>
     </pub>
     <pub id="reducedproduct-vmcai13">
