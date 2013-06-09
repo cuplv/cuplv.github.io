@@ -90,6 +90,16 @@ name="html" />
       <xsl:apply-templates select="cv/publications" mode="recent-by-event" />
     </content>
     <rsidebar>
+      <div class="item">
+        <ul class="hlinks">
+	  <li>
+	    <a href="https://github.com/cuplv">
+	      <img src="pics/github-octocat.png" class="small-icon"/>
+	    </a>
+	  </li>
+        </ul>
+      </div>
+
       <h3>Faculty</h3>
       <xsl:for-each select="cv/persons/person[@group='faculty']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
