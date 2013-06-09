@@ -1401,7 +1401,7 @@
   <projects>
     <project id="quicgraphs">
       <name>QUIC Graphs</name>
-      <url>http://pl.cs.colorado.edu/projects/quicgraphs/</url>
+      <url>projects/quicgraphs/</url>
       <authors>
 	<author person="cox"/>
 	<author person="bec"/>
