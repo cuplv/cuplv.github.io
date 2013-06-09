@@ -845,7 +845,7 @@ name="html" />
 	<xsl:text>']);</xsl:text>
       </xsl:attribute>
     </xsl:if>
-    <xsl:apply-templates select="$anchor/node()" mode="clean-text"/>
+    <xsl:apply-templates select="$anchor/node()"/>
 </a>
 </xsl:template>
 <xsl:template match="urls">
@@ -915,7 +915,7 @@ name="html" />
 
 <xsl:template name="etal-list">
   <xsl:param name="items" select="child::*" />
-  <xsl:param name="conj"> and </xsl:param>
+  <xsl:param name="conj"><xsl:text> and </xsl:text></xsl:param>
   <xsl:if test="count($items) > 0">
     <xsl:apply-templates select="$items[1]" mode="lastname" />
     <xsl:choose>
