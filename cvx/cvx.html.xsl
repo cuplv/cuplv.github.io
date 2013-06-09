@@ -321,7 +321,7 @@ name="html" />
 </xsl:template>
 <xsl:template match="speaker" mode="face">
   <xsl:apply-templates select="child::node()">
-    <xsl:with-param name="mode">face</xsl:with-param>
+    <xsl:with-param name="mode">medium-face</xsl:with-param>
   </xsl:apply-templates>
 </xsl:template>
 
