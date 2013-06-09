@@ -86,7 +86,7 @@ name="html" />
       <h4>Projects</h4>
       <xsl:apply-templates select="cv/projects" mode="line" />
       <hr></hr>
-      <h4>Publications</h4>
+      <h4>Recent Publications</h4>
       <xsl:apply-templates select="cv/publications" mode="recent-by-event" />
     </content>
     <rsidebar>

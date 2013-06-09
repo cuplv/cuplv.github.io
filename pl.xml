@@ -1385,6 +1385,7 @@
 	<author person="tarrach"/>
       </authors>
       <urls>
+	<url name="pdf">papers/concursyn-cav13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="cav13" />
@@ -1559,6 +1560,22 @@
 	as a whole.  We demonstrate promising results on a suite of
 	benchmarks from many different sources including robotic
 	manipulators and medical decision making programs.</p>
+      </abstract>
+    </pub>
+    <pub id="quantitative-popl13">
+      <title>Quantitative Abstraction Refinement</title>
+      <authors>
+	<author person="cernyp"/>
+	<author person="tah"/>
+	<author person="radhakrishna"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/quantitative-popl13.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="popl13" />
+      </howpub>
+      <abstract>
       </abstract>
     </pub>
     <pub id="reducedproduct-vmcai13">
