@@ -54,11 +54,12 @@
             </div>
             <h4 xmlns="">Reference</h4>
             <div xmlns="" class="item">
-               <div class="item-icon"><img src="clouds/quicgraphs-ecoop13.words.png" class="icon"></div>
+               <div class="item-icon"><a href="papers/quicgraphs-ecoop13.pdf" onClick="_gaq.push(['_trackPageview', '/papers/quicgraphs-ecoop13.pdf']);"><img src="clouds/quicgraphs-ecoop13.words.png" class="icon"></a></div>
                <div class="item-block">
                   <div class="item-date">2013</div>
                   <ul class="hlinks">
                      <li><a href="papers/quicgraphs-ecoop13.html">detail</a></li>
+                     <li><a href="papers/quicgraphs-ecoop13.pdf" onClick="_gaq.push(['_trackPageview', '/papers/quicgraphs-ecoop13.pdf']);">pdf</a></li>
                   </ul>
                   <div class="item-header hanging">QUIC Graphs: Relational Invariant Generation for Containers</div>
                   <div class="hanging"><a href="http://eces.colorado.edu/~coxaj/">Arlen Cox</a>, <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a>,  and <a href="http://www.cs.colorado.edu/~srirams/">Sriram Sankaranarayanan</a></div>
@@ -70,6 +71,22 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Programs written in modern languages perform intricate
+               	manipulations of containers such as arrays, lists, dictionaries,
+               	and sets. We present an abstract interpretation-based framework
+               	for automatically inferring <em>relations</em> between the set of values
+               	stored in these containers. Relations include inclusion relations over
+               	unions and intersections, as well as quantified relationships with
+               	scalar variables. We develop an abstract domain constructor that builds
+               	a container domain out of a
+               	<em>Quantified Union-Intersection Constraint</em> (QUIC) graph
+               	parameterized by an arbitrary <em>base domain</em>.  We instantiate
+               	our domain with a polyhedral base domain and evaluate it on
+               	programs extracted from the Python test suite.  Over traditional,
+               	non-relational domains, we find significant precision improvements
+               	with minimal performance cost.
+            </p>
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{ECOOP = "European Conference on Object-Oriented Programming (ECOOP)"}

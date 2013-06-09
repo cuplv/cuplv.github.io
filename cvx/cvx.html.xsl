@@ -856,21 +856,8 @@ name="html" />
   <xsl:apply-templates select="child::node()" />
 </xsl:template>
 
-<xsl:template match="p">
-  <p><xsl:apply-templates select="child::node()" /></p>
-</xsl:template>
-
-<xsl:template match="em">
-  <em><xsl:apply-templates select="child::node()" /></em>
-</xsl:template>
-
-<xsl:template match="a">
+<xsl:template match="p|em|span|div">
   <xsl:copy-of select="."/>
-</xsl:template>
-
-<xsl:template match="div">
-  <xsl:variable name="class"><xsl:value-of select="@class"/></xsl:variable>
-  <div class="{$class}"><xsl:apply-templates select="child::node()" /></div>
 </xsl:template>
 
 <!-- Special Formatting -->

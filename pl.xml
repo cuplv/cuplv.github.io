@@ -1429,11 +1429,26 @@
 	<author person="srirams"/>
       </authors>
       <urls>
+	<url name="pdf">papers/quicgraphs-ecoop13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="ecoop13" />
       </howpub>
       <abstract>
+	<p>Programs written in modern languages perform intricate
+	manipulations of containers such as arrays, lists, dictionaries,
+	and sets. We present an abstract interpretation-based framework
+	for automatically inferring <em>relations</em> between the set of values
+	stored in these containers. Relations include inclusion relations over
+	unions and intersections, as well as quantified relationships with
+	scalar variables. We develop an abstract domain constructor that builds
+	a container domain out of a
+	<em>Quantified Union-Intersection Constraint</em> (QUIC) graph
+	parameterized by an arbitrary <em>base domain</em>.  We instantiate
+	our domain with a polyhedral base domain and evaluate it on
+	programs extracted from the Python test suite.  Over traditional,
+	non-relational domains, we find significant precision improvements
+	with minimal performance cost.</p>
       </abstract>
     </pub>
     <pub id="thresher-pldi13">
@@ -1450,6 +1465,22 @@
 	<proceedings event="pldi13" />
       </howpub>
       <abstract>
+	  <p>We present a precise, path-sensitive static analysis for reasoning about
+	  <em>heap reachability</em>; that is, whether an object can be reached
+	  from another variable or object via pointer dereferences. Precise
+	  reachability information is useful for a number of clients, including
+	  static detection of a class of Android memory leaks. For this client,
+	  we found that the heap reachability information computed by a
+	  state-of-the-art points-to analysis was too imprecise, leading to
+	  numerous false-positive leak reports. Our analysis combines a symbolic
+	  execution capable of path-sensitivity and strong updates with abstract
+	  heap information computed by an initial flow-insensitive points-to
+	  analysis. This novel <em>mixed</em> representation allows us to
+	  achieve both precision and scalability by leveraging the pre-computed
+	  points-to facts to guide execution and prune infeasible paths. We have
+	  evaluated our techniques in the <span style="font-variant:
+	  small-caps">Thresher</span> tool, which we used to find several
+	  developer-confirmed leaks in Android applications.</p>
       </abstract>
     </pub>
     <pub id="acspec-pldi13">
@@ -1497,6 +1528,26 @@
 	<proceedings event="vmcai13" />
       </howpub>
       <abstract>
+	<p>Real-world data structures are often enhanced with additional
+	pointers capturing alternative paths through a basic inductive skeleton
+        (e.g., back pointers, head pointers). From the static analysis point of view,
+	we must obtain several interlocking shape invariants. At the same time, it is
+	well understood in abstract interpretation design that supporting a separation
+	of concerns is critically important to designing powerful static analyses.
+	Such a separation of concerns is often obtained via a reduced product on a
+	case-by-case basis. In this paper, we lift this idea to abstract domains for
+	shape analyses, introducing a domain combination operator for memory
+	abstractions. As an example, we present <em>simultaneous separating shape
+	graphs</em>, a product construction that combines instances of
+	separation logic-based shape domains. The key enabler for this
+	construction is a static analysis on inductive data structure
+	definitions to derive relations between the skeleton and the alternative
+	paths. From the engineering standpoint, this construction allows each
+	component to reason independently about different aspects of the data
+	structure invariant and then separately exchange information via a
+	reduction operator. From the usability standpoint, we enable describing
+	a data structure invariant in terms of several inductive definitions
+	that hold simultaneously.</p>
       </abstract>
     </pub>
     <pub id="reflective-sas12">
