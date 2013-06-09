@@ -6,6 +6,38 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2013.06.08" id="cuplv-summer13">
+      <news-snippet>
+	Check out CUPLV at
+	<ref table="event" key="pldi13"/>,
+	<ref table="event" key="lics13"/>,
+	<ref table="event" key="ecoop13"/>, and
+	<ref table="event" key="cav13"/> this summer.
+      </news-snippet>
+      <news-detail>
+	<float>
+	  <ref table="person" key="blackshear" mode="medium-face"/>
+	  <ref table="person" key="cox" mode="medium-face"/>
+	  <ref table="person" key="chakarov" mode="medium-face"/>
+	  <ref table="person" key="bec" mode="medium-face"/>
+	  <ref table="person" key="srirams" mode="medium-face"/>
+	  <ref table="person" key="cernyp" mode="medium-face"/>
+	</float>
+	Eight CUPLV papers are being presented this summer:
+	<ref table="event" key="pldi13"/> June 16-22
+	[<ref table="pub" key="thresher-pldi13" mode="authors"/>,
+	<ref table="pub" key="probabilistic-pldi13" mode="authors"/>,
+	<ref table="pub" key="acspec-pldi13" mode="authors"/>],
+	<ref table="event" key="lics13"/> June 25-28
+	[<ref table="pub" key="automata-lics13" mode="authors"/>],
+	<ref table="event" key="ecoop13"/> July 1-5
+	[<ref table="pub" key="quicgraphs-ecoop13" mode="authors"/>], and
+	<ref table="event" key="cav13"/> July 13-19
+	[<ref table="pub" key="concursyn-cav13" mode="authors"/>,
+	<ref table="pub" key="martingales-cav13" mode="authors"/>,
+	<ref table="pub" key="flowstar-cav13" mode="authors"/>].
+      </news-detail>
+    </news>
     <news date="2013.05.21" id="cox-chateaubriand13">
       <news-snippet>
 	<ref table="person" key="cox"/> wins a
@@ -157,11 +189,6 @@
 	</bio>
       </talk-announcement>
     </news>
-    <news date="2012.10.28" id="bolz-2012">
-      <news-snippet>
-	<ref table="person" key="bolz" /> visits October 29-November 2.
-      </news-snippet>
-    </news>
     <news date="2012.11.13" id="sarnat-colloquium-2012">
       <news-snippet>
 	<ref table="person" key="sarnat"/> visits November 15.
@@ -218,6 +245,11 @@
 	  href="https://twitter.com/eigenvariable">@Eigenvariable</a>.</p>
 	</bio>
       </talk-announcement>
+    </news>
+    <news date="2012.10.28" id="bolz-2012">
+      <news-snippet>
+	<ref table="person" key="bolz" /> visits October 29-November 2.
+      </news-snippet>
     </news>
     <news date="2012.10.02" id="paper-popl13">
       <news-snippet>
@@ -1410,7 +1442,7 @@
       <title>Relational Invariant Generation for Containers</title>
       <snippet>
 	<p>An abstract domain constructor for inferring invariants
-	about sets and sets properties of containers.</p>
+	about sets and set properties of containers.</p>
       </snippet>
       <references>
 	<ref table="pub" key="quicgraphs-ecoop13" mode="abbrev" />
@@ -1521,6 +1553,22 @@
 	programs extracted from the Python test suite.  Over traditional,
 	non-relational domains, we find significant precision improvements
 	with minimal performance cost.</p>
+      </abstract>
+    </pub>
+    <pub id="automata-lics13">
+      <title>Regular Real Analysis</title>
+      <authors>
+	<author person="swarat"/>
+	<author person="srirams"/>
+	<author person="vardi"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/automata-lics13.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="lics13" />
+      </howpub>
+      <abstract>
       </abstract>
     </pub>
     <pub id="thresher-pldi13">
@@ -2867,6 +2915,10 @@ an application example.</p>
       <name>Carl Friedrich Bolz</name>
       <url>http://cfbolz.de/</url>
     </person>
+    <person id="vardi">
+      <name>Moshe Vardi</name>
+      <url>http://www.rice.edu/~vardi</url>
+    </person>
   </persons>
 
   <events>
@@ -3052,6 +3104,16 @@ an application example.</p>
 	<date>2005-01</date>
 	<nth>Sixth</nth>
 	<url>http://www.polytechnique.fr/vmcai05/</url>
+      </event>
+    </series>
+    <series id="lics">
+      <name>Logic in Computer Science</name>
+      <longPrefix>IEEE Symposium on</longPrefix>
+      <event id="lics13">
+	<date>2013-06</date>
+	<location>New Orleans, Louisiana, USA</location>
+	<nth>Twenty-Eighth</nth>
+	<url>http://lii.rwth-aachen.de/lics/lics13/</url>
       </event>
     </series>
     <series id="sigcse">

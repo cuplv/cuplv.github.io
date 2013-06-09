@@ -4,8 +4,8 @@ Relational Invariant Generation for ContainersQUIC Graphs QUIC Graphs QUIC Graph
 	
           Relational Invariant Generation for Containers 
 	An abstract domain constructor for inferring invariants
-	about sets and sets properties of containers.
+	about sets and set properties of containers.
        An abstract domain constructor for inferring invariants
-	about sets and sets properties of containers. 
+	about sets and set properties of containers. 
 	
        
