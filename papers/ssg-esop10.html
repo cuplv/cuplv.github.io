@@ -71,25 +71,22 @@
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
-            	
-            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Detailed memory models that expose individual fields are
-               	necessary to precisely analyze code that makes use of
-               	low-level aspects such as, pointers to fields and untagged
-               	unions.  Yet, higher-level representations that collect fields
-               	into records are often used because they are typically more
-               	convenient and efficient in modeling the program heap.  In
-               	this paper, we present a shape graph representation of memory
-               	that exposes individual fields while largely retaining the
-               	convenience of an object-level model.  This representation has
-               	a close connection to particular kinds of formulas in
-               	separation logic.  Then, with this representation, we show how
-               	to extend the 
-               <fmt kind="tool">Xisa</fmt> shape analyzer for
-               	low-level aspects, including pointers to fields, C-style
-               	nested structures and unions, malloc and free, and array
-               	values, with minimal changes to the core algorithms (e.g.,
-               	materialization and summarization).
-            </p>
+            	Detailed memory models that expose individual fields are
+            	necessary to precisely analyze code that makes use of
+            	low-level aspects such as, pointers to fields and untagged
+            	unions.  Yet, higher-level representations that collect fields
+            	into records are often used because they are typically more
+            	convenient and efficient in modeling the program heap.  In
+            	this paper, we present a shape graph representation of memory
+            	that exposes individual fields while largely retaining the
+            	convenience of an object-level model.  This representation has
+            	a close connection to particular kinds of formulas in
+            	separation logic.  Then, with this representation, we show how
+            	to extend the <span xmlns="" class="fmt-tool">Xisa</span> shape analyzer for
+            	low-level aspects, including pointers to fields, C-style
+            	nested structures and unions, malloc and free, and array
+            	values, with minimal changes to the core algorithms (e.g.,
+            	materialization and summarization).
             
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{ESOP = "European Symposium on Programming (ESOP)"}

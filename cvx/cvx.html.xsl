@@ -856,7 +856,11 @@ name="html" />
   <xsl:apply-templates select="child::node()" />
 </xsl:template>
 
-<xsl:template match="p|em|span|div|a|img">
+<xsl:template match="p|div">
+  <xsl:apply-templates/>
+</xsl:template>
+
+<xsl:template match="em|a|img|span">
   <xsl:copy-of select="."/>
 </xsl:template>
 
