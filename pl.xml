@@ -52,7 +52,7 @@
     </news>
     <news date="2013.05.07" id="artifact-ecoop13">
       <news-snippet>
-	"<ref table="pub" key="quicgraphs-ecoop13"/>" wins <ref table="event" key="ecoop13"/> distinguished artifact award!
+	<ref table="pub" key="quicgraphs-ecoop13" mode="authors"/> wins <ref table="event" key="ecoop13"/> distinguished artifact award!
       </news-snippet>
       <news-detail>
 	<float>
