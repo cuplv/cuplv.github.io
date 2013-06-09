@@ -1399,6 +1399,7 @@
 	<author person="srirams"/>
       </authors>
       <urls>
+	<url name="pdf">papers/martingales-cav13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="cav13" />
@@ -1428,6 +1429,7 @@
 	<author person="srirams"/>
       </authors>
       <urls>
+	<url name="pdf">papers/flowstar-cav13.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="cav13" />
