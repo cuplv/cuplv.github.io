@@ -96,6 +96,9 @@ name="html" />
 	    <a href="https://github.com/cuplv">
 	      <img src="pics/github-octocat.png" class="small-icon"/>
 	    </a>
+	    <a href="https://twitter.com/cuplv">
+	      <img src="pics/twitter-bird.png" class="small-icon"/>
+	    </a>
 	  </li>
         </ul>
       </div>
