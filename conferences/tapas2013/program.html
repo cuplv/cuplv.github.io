@@ -130,6 +130,7 @@
 		<b>Invited Talk</b><br>
 	        <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-dolby">Julian
 	        Dolby</a> (IBM T.J. Watson Research Center)
+	        <p><i><a href="#dolby">The End of Pointer Analysis?</a></i></p>
 	      </td>
 	    </tr>
 	    <tr>
@@ -165,7 +166,16 @@ Joint work with Tewodros Beyene, Nikolaj Bjorner, Swarat Chaudhuri, Ken McMillan
 
           <p>Arguably the hardest problem in automatic program analysis is designing appropriate techniques for discovering loop invariants (or, more generally, for recursive procedures).  Certainly, if invariants are known, the rest of the analysis problem becomes easier.   This talk presents a family of invariant inference techniques based on using test cases to generate an underapproximation of program behavior and then using machine learning algorithms to generalize the underapproximation to an invariant.  These techniques are simpler, much more efficient, and appear to be more robust than previous approaches to the problem. If time permits, some open problems will also be discussed.</p>
 	  
+	  <h3 id="dolby">Julian Dolby</h3>
 	  
+	  <p>The End of Pointer Analysis?</p>
+	  
+	  <p>
+	    Pointer analysis means computing an approximation of the possible objects to which any program variable may refer; it has traditionally been done by conservatively approximating all possible data flow in the program, resulting in a conservative approximation of the objects held by any variable.  This has always been a bit fake---no tools soundly approximates all possible reflective and JNI behavior in Java, for instance---but even the comforting illusion of soundness has become unsustainable in the world of framework- and browser-based Web applications.  The frameworks are built on ubiquitous complex reflective behavior, and the browser appears as a large, complex, poorly-specified native API; the frameworks and the applications themselves are written in JavaScript, the lingua franca of the Web, the dynamic nature of which give pointer analysis no help.  Whether this world can be analyzed soundly is perhaps technically still an open problem, but the prognosis seems grim at best.
+          </p>
+	  <p> 
+            We have been exploring deliberately unsound analyses which make no attempt to approximate all possible data flow in a program; certain constructs are ignored not because they are unimportant, but simply because they are too hard.  The tradeoff is now between how much can we ignore and still provide useful information versus how little can we ignore and still be tractable in practice.  The good news so far is that there appear to be good tradeoffs, at least for a range of applications supporting IDE services.  I will discuss recent and ongoing work in providing key information for IDE services: callgraphs and smart completions.
+	  </p>
 	  
 		</div><!--close content_item-->
       </div><!--close content-->   
