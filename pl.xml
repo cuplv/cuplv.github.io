@@ -41,11 +41,12 @@
     <news date="2013.05.21" id="cox-chateaubriand13">
       <news-snippet>
 	<ref table="person" key="cox"/> wins a
-	<a href="http://france-science.org/chateaubriand">Chateaubriand Fellowship</a>!
+	<a href="http://france-science.org/Chateaubriand-Fellowship-2013.html
+">Chateaubriand Fellowship</a>!
       </news-snippet>
       <news-detail>
 	<ref table="person" key="cox"/> wins a
-	<a href="http://france-science.org/chateaubriand">Chateaubriand Fellowship</a>
+	<a href="http://france-science.org/Chateaubriand-Fellowship-2013.html">Chateaubriand Fellowship</a>
 	in Science, Technology, Engineering, and Mathematics
 	from the Embassy of France in the United States to study and conduct research in France.
       </news-detail>

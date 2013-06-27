@@ -218,7 +218,7 @@ name="html" />
 <xsl:template match="news" mode="p-list">
   <p>
     <xsl:value-of select="@date" />:
-    <xsl:apply-templates select="child::node()" />
+    <xsl:apply-templates select="child::node()" mode="p" />
   </p>
 </xsl:template>
 
@@ -256,6 +256,9 @@ name="html" />
       <xsl:apply-templates select="." />
     </xsl:otherwise>
   </xsl:choose>
+</xsl:template>
+<xsl:template match="news-snippet" mode="p">
+  <xsl:apply-templates select="child::node()"/>
 </xsl:template>
 
 <xsl:template match="news-detail">
