@@ -394,7 +394,7 @@ name="html" />
       <xsl:call-template name="withurl">
 	<xsl:with-param name="text" select="name" />
       </xsl:call-template>
-      <span style="position: relative; left: 100px;"><xsl:value-of select="title"/></span>
+      <span style="position: absolute; left: 250px;"><xsl:value-of select="title"/></span>
     </xsl:with-param>
     <xsl:with-param name="lines" select="snippet" />
     <xsl:with-param name="notes" select="authors|references" />
@@ -411,7 +411,7 @@ name="html" />
       <xsl:call-template name="withurl">
 	<xsl:with-param name="text" select="name" />
       </xsl:call-template>
-      <span style="position: relative; left: 60px;">
+      <span style="position: absolute; left: 150px;">
 	  <xsl:value-of select="title"/>
 	  <span style="margin-left: 1em">
 	    <xsl:apply-templates select="authors/author" mode="small-face"/>

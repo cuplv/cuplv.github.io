@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Derived using MOSO Xmplify 1.2.2 by Evan Chang on 2013-02-24 04:50:21 +0000 -->
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema' elementFormDefault='qualified'>
+    <xs:element name='cv'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='news-list'/>
+                <xs:element ref='projects'/>
+                <xs:element ref='publications'/>
+                <xs:element ref='persons'/>
+                <xs:element ref='events'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='news-list'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='news'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='news'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='news-snippet'/>
+                <xs:element minOccurs='0' ref='news-detail'/>
+                <xs:choice>
+                    <xs:element ref='news-page'/>
+                    <xs:element minOccurs='0' maxOccurs='unbounded' ref='talk-announcement'/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name='date' use='required'/>
+            <xs:attribute name='id' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='news-snippet'>
+        <xs:complexType mixed='true'>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='a'/>
+                <xs:element ref='ref'/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='news-detail'>
+        <xs:complexType mixed='true'>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='a'/>
+                <xs:element ref='ref'/>
+                <xs:element ref='div'/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='div'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='ref'/>
+            </xs:sequence>
+            <xs:attribute name='class' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='news-page'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='p'/>
+            </xs:sequence>
+            <xs:attribute name='header' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='talk-announcement'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='speaker'/>
+                <xs:element ref='affiliation'/>
+                <xs:element ref='when'/>
+                <xs:element ref='where'/>
+                <xs:element ref='title'/>
+                <xs:element minOccurs='0' ref='host'/>
+                <xs:element ref='abstract'/>
+                <xs:element minOccurs='0' ref='bio'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='speaker'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='ref'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='affiliation' type='xs:string'/>
+    <xs:element name='when' type='xs:string'/>
+    <xs:element name='where' type='xs:string'/>
+    <xs:element name='host'>
+        <xs:complexType>
+            <xs:attribute name='person' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='bio'>
+        <xs:complexType mixed='true'>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='p'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='projects'>
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name='publications'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='pub'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='pub'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='title'/>
+                <xs:element ref='authors'/>
+                <xs:element ref='urls'/>
+                <xs:element ref='howpub'/>
+                <xs:element minOccurs='0' ref='note'/>
+                <xs:element minOccurs='0' ref='abstract'/>
+            </xs:sequence>
+            <xs:attribute name='id' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='authors'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='author'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='author'>
+        <xs:complexType>
+            <xs:attribute name='person' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='urls'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs='0' maxOccurs='unbounded' ref='url'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='howpub'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='proceedings'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='proceedings'>
+        <xs:complexType>
+            <xs:attribute name='event' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='note'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs='0' ref='tr'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='tr'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='extendedtr'/>
+                <xs:element ref='number'/>
+                <xs:element ref='url'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='extendedtr'>
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name='number' type='xs:string'/>
+    <xs:element name='persons'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='person'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='person'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='name'/>
+                <xs:choice minOccurs='0' maxOccurs='unbounded'>
+                    <xs:element ref='url'/>
+                    <xs:element ref='face'/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name='group'/>
+            <xs:attribute name='id' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='face' type='xs:string'/>
+    <xs:element name='events'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='series'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='series'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref='name'/>
+                <xs:choice minOccurs='0'>
+                    <xs:element ref='abbrev'/>
+                    <xs:element ref='longPrefix'/>
+                </xs:choice>
+                <xs:element maxOccurs='unbounded' ref='event'/>
+            </xs:sequence>
+            <xs:attribute name='id' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='abbrev' type='xs:string'/>
+    <xs:element name='longPrefix' type='xs:string'/>
+    <xs:element name='event'>
+        <xs:complexType>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='url'/>
+                <xs:element ref='date'/>
+                <xs:element ref='location'/>
+                <xs:element ref='nth'/>
+            </xs:choice>
+            <xs:attribute name='id' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='date' type='xs:string'/>
+    <xs:element name='location' type='xs:string'/>
+    <xs:element name='nth' type='xs:string'/>
+    <xs:element name='ref'>
+        <xs:complexType>
+            <xs:attribute name='key' use='required'/>
+            <xs:attribute name='mode'/>
+            <xs:attribute name='table' use='required'/>
+            <xs:attribute name='text'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='a'>
+        <xs:complexType mixed='true'>
+            <xs:attribute name='href' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='title' type='xs:string'/>
+    <xs:element name='abstract'>
+        <xs:complexType mixed='true'>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='p'/>
+                <xs:element ref='ul'/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='ul'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs='unbounded' ref='li'/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='li' type='xs:string'/>
+    <xs:element name='p'>
+        <xs:complexType mixed='true'>
+            <xs:choice maxOccurs='unbounded'>
+                <xs:element ref='a'/>
+                <xs:element ref='ref'/>
+                <xs:element ref='em'/>
+                <xs:element ref='fmt'/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='em' type='xs:string'/>
+    <xs:element name='fmt'>
+        <xs:complexType mixed='true'>
+            <xs:attribute name='kind' use='required'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='url'>
+        <xs:complexType mixed='true'>
+            <xs:attribute name='name'/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name='name' type='xs:string'/>
+</xs:schema>
