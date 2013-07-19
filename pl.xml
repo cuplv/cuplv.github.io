@@ -1451,7 +1451,7 @@
     <project id="thresher">
       <name>Thresher</name>
       <url>projects/thresher/</url>
-      <icon>projects/thresher/img/thresherIcon.png</icon>
+      <icon>pics/thresherIcon.jpg</icon>
       <authors>
 	<author person="blackshear"/>
 	<author person="bec"/>
