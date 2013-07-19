@@ -1448,6 +1448,22 @@
 	<ref table="pub" key="quicgraphs-ecoop13" mode="abbrev" />
       </references>
     </project>
+    <project id="thresher">
+      <name>Thresher</name>
+      <url>projects/thresher/</url>
+      <authors>
+	<author person="blackshear"/>
+	<author person="bec"/>
+	<author person="msridhar"/>
+      </authors>
+      <title>Precise Refutations for Heap Reachability</title>
+      <snippet>
+	<p>A tool for checking heap reachability properties in Java programs</p>
+      </snippet>
+      <references>
+	<ref table="pub" key="thresher-pldi13" mode="abbrev" />
+      </references>
+    </project>
   </projects>
   
   <publications>
