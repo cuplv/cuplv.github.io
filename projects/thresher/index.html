@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Thresher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+      padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!--<link rel="shortcut icon" href="ico/favicon.png">-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Thresher</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">News</a></li>
+              <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#bugs">Bugs</a></li>
+              <li><a href="#instructions">Instructions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+	<div class="span10"><h1>Thresher: Precise Refutations for Heap Reachability</h1> </div>
+        <div class="span2"><img class="img-small" src="img/thresherIcon.png"/></div>
+      </div>
+	<hr></hr>
+      <p>
+        <a href="http://cs.colorado.edu/~sabl4745">Sam Blackshear</a>,
+        <a href="http://cs.colorado.edu/~bec">Bor-Yuh Evan Chang</a>, and
+        <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-msridhar">Manu Sridharan</a>
+      </p>
+
+      <p>
+	Thresher is a static analysis tool that specializes in checking heap reachability properties. Its secret sauce is using a coarse up-front points-to analysis to focus a precise symbolic analysis on the alarms reported by the points-to analysis. See our PLDI '13 <a href="http://cs.colorado.edu/~sabl4745/papers/pldi13-thresher.pdf">paper</a> for more details.
+      </p>
+
+      <a name="news"></a>
+
+      <h2>News</h2>
+      <ul>
+	<li> 7/11/2013: Posted screencast version of Thresher <a href="http://www.vimeo.com/69907276">talk</a> given at PLDI '13.
+	<li> 6/18/2013: Thresher paper presented at PLDI '13.
+        <li> 5/3/2013: Thresher source code <a href="https://github.com/cuplv/thresher">released</a>.
+	<li> 2/22/2013: Google confirmed and <a href="https://code.google.com/p/android/issues/detail?id=48055">fixed</a> a bug found by Thresher in the Android implementation of HashMap, Hashtable, and LinkedHashMap.
+      </ul>
+
+      <a name="downloads"></a>
+
+      <h2>Downloads</h2>
+
+      <ul>
+        <li><a href="https://github.com/cuplv/thresher">Source Code</a> 
+	<li>PLDI '13 <a href="http://cs.colorado.edu/~sabl4745/papers/pldi13-thresher.pdf">Paper</a>
+        <li>PLDI '13 Slides (<a href="http://cs.colorado.edu/~sabl4745/talks/pldi13-thresher.key">Keynote</a>) (<a href="http://cs.colorado.edu/~sabl4745/talks/pldi13-thresher.pdf">PDF</a>) (<a href="http://www.vimeo.com/69907276">Screencast</a>)
+	<li>PLDI '13 <a href="http://cs.colorado.edu/~sabl4745/posters/pldi13-thresher.pdf">Poster</a>
+	<li>PLDI '13 <a href="http://pl.cs.colorado.edu/downloads/pldi13_benchmarks.zip">Benchmarks</a> (Bytecodes only. Does not include PulsePoint, which is not open-source.)
+      </ul>
+
+      <a name="bugs"></a>
+
+      <h2>Bugs</h2>
+
+      <ul>
+	<li> Thresher found a bug in the implementation of HashMap, Hashtable, and LinkedHashMap in the core Android libraries. Google confirmed and <a href="https://code.google.com/p/android/issues/detail?id=48055">fixed</a> the bug.
+	<li> Thresher found a memory <a href="https://groups.google.com/forum/?fromgroups=#!topic/k-9-mail/JhoXL2c4UfU">leak</a> in the K9Mail app. The developers confirmed the bug, but they had already fixed the problem in a subsequent version of the app. 
+      </ul>
+
+      <a name="instructions"></a>
+
+      <h2>Instructions</h2>
+
+      <p>This information is copied from the Github page for Thresher and may be out of date.</p>
+
+      <div id="readme" class="clearfix announce instapaper_body md">
+	<span class="octicon octicon-book"></span><article class="markdown-body entry-content" itemprop="mainContentOfPage"><h3>
+	    <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+	  <p>(1) You can download all dependencies by running:</p>
+
+	  <pre><code> make install-deps</code></pre>
+	  
+	  <p>Go to step (2) if this works. Otherwise, go to step (3).</p>
+	  
+	  <p>(2) Download WALA (git clone <a href="https://github.com/wala/WALA.git">https://github.com/wala/WALA.git</a>) and move it to /lib.</p>
+	  
+	  <p>(3) Build dependencies by running:</p>
+	  
+	  <pre><code>make deps</code></pre>
+
+	  <p>If this works, all dependencies have been installed and built and Thresher should build without a hitch.</p>
+	  
+	  <p>(5) Once all dependencies have been built successfully, return to the top-level Thresher directory and run</p>
+	  
+	  <pre><code>make; make tests</code></pre>
+	  
+	  <p>to build Thresher and its regression tests. </p>
+	  
+	  <h3>
+	    <a name="running-thresher" class="anchor" href="#running-thresher"><span class="octicon octicon-link"></span></a>Running Thresher</h3>
+	  
+	  <p>Right now, Thresher can do four things:</p>
+	  
+	  <p>(1) Check for Android Activity leaks (see our PLDI '13 paper). Run:</p>
+	  
+	  <pre><code>./thresher.sh -android_leak -app &lt;path_to_bin_dir_for_your_app&gt;</code></pre>
+	  
+	  <p>(2) Check downcast safety. Run: </p>
+	  
+	  <pre><code>./thresher.sh -check_casts -app &lt;path_to_bin_dir&gt; &lt;path_to_bin_dir_for_your_app&gt; -main_class &lt;class_with_entrypoint_method&gt; -main_method &lt;entrypoint_method&gt;</code></pre>
+	  
+	  <p>(3) Check assertions from edu.colorado.external.Assertions.java. Run:</p>
+	  
+	  <pre><code>./thresher.sh -check_assertions -app &lt;path_to_bin_dir_for_your_app&gt; -main_class &lt;class_with_entrypoint_method&gt; -main_method &lt;entrypoint_method&gt;</code></pre>
+	  
+	  <p>(4) Check annotations from edu.colorado.external.Annotations.java. Run:</p>
+	  
+	  <pre><code>./thresher.sh -check_annotations -app &lt;path_to_bin_dir_for_your_app&gt; -main_class &lt;class_with_entrypoint_method&gt; -main_method &lt;entrypoint_method&gt;</code></pre>
+	  
+	  <p>When Thresher says that a leak does not exits/cast cannot fail/assertion cannot fail/annotation holds, this is a "soundy" guarantee (modulo reflection, exceptions, and bugs in the implementation). When Thresher cannot prove any of the above, the program may contain either a real bug or a false alarm.</p>
+
+	 </article>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+  </body>
+</html>
