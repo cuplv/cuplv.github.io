@@ -99,6 +99,9 @@ name="html" />
 	    <a href="https://twitter.com/cuplv">
 	      <img src="pics/twitter-bird.png" class="small-icon"/>
 	    </a>
+	    <a href="https://vimeo.com/channels/cuplv">
+	      <img src="pics/vimeo.png" class="small-icon"/>
+	    </a>
 	  </li>
         </ul>
       </div>
