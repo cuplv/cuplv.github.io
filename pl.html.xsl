@@ -155,6 +155,13 @@ name="html" />
       <xsl:for-each select="cv/persons/person[@group='ms-alumni']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
+      <xsl:if test="cv/persons/person[@group='bs-alumni']">
+	<h4>BS/BA</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='bs-alumni']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
 
       <!-- <h3>Focus Areas</h3> -->
 
