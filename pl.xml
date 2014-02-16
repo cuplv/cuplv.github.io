@@ -147,7 +147,7 @@
 	CUPLV authors <ref table="person" key="blackshear"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="chakarov"/>
 	with collaborators <ref table="person" key="msridhar"/>,
 	<ref table="person" key="sumitg"/>, and
-	<ref table="person" key="shuvendu"/>
+	<ref table="person" key="slahiri"/>
 	have had papers accepted for presentation at <ref
 	table="event" key="pldi13"/> in June (<ref table="pub"
 	key="thresher-pldi13" mode="authors"/>, <ref
@@ -1495,6 +1495,18 @@
   </projects>
   
   <publications>
+    <pub id="vmv-pldi14">
+      <title>Verification Modulo Versions: Towards Usable Verification</title>
+      <authors>
+	<author person="flogozzo" />
+	<author person="mfahndrich" />
+	<author person="slahiri" />
+	<author person="blackshear" />
+      </authors>
+      <howpub>
+	<proceedings event="pldi14" />
+      </howpub>
+    </pub>
     <pub id="fissile-popl14">
       <title>Fissile Type Analysis: Modular Checking of Almost Everywhere Invariants</title>
       <authors>
@@ -1722,7 +1734,7 @@
       Framework for Assigning Confidence to Warnings</title>
       <authors>
 	<author person="blackshear"/>
-	<author person="shuvendu"/>
+	<author person="slahiri"/>
       </authors>
       <urls>
 	<url name="pdf">papers/papers/pldi13-acspec.pdf</url>
@@ -2767,7 +2779,7 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~srirams/</url>
       <face>pics/sankaranarayanan.jpg</face>
     </person>
-    <person id="siek" group="faculty">
+    <person id="siek" group="faculty-alumni">
       <name>Jeremy G. Siek</name>
       <url>http://ecee.colorado.edu/~siek/</url>
       <face>pics/siek.jpg</face>
@@ -3067,7 +3079,7 @@ an application example.</p>
       <name>Tom Yeh</name>
       <url>http://www.tomyeh.info/</url>
     </person>
-    <person id="shuvendu">
+    <person id="slahiri">
       <name>Shuvendu Lahiri</name>
       <url>http://research.microsoft.com/~shuvendu/</url>
     </person>
@@ -3140,6 +3152,13 @@ an application example.</p>
       <name>Kenneth L. McMillan</name>
       <url>http://www.kenmcmil.com/</url>
     </person>
+    <person id="flogozzo">
+      <name>Francesco Logozzo</name>
+      <url>http://research.microsoft.com/en-us/people/logozzo/</url>
+    </person>
+    <person id="mfahndrich">
+      <name>Manuel Fähndrich</name>
+    </person>
   </persons>
 
   <events>
@@ -3204,6 +3223,11 @@ an application example.</p>
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="pldi14">
+	<date>2014-06</date>
+	<location>Edinburgh, UK</location>
+	<url>http://conferences.inf.ed.ac.uk/pldi2014/</url>
+      </event>
       <event id="pldi13">
 	<date>2013-06</date>
 	<location>Seattle, Washington, USA</location>
