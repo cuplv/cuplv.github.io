@@ -6,6 +6,31 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.02.03" id="blackshear-facebook14">
+      <news-snippet>
+	<ref table="person" key="blackshear"/> wins a
+	<a href="https://www.facebook.com/notes/facebook-fellowship-program/announcing-the-facebook-graduate-fellowship-2014-2015-winners/1516002375292350">Facebook Graduate Fellowship</a>!
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="blackshear"/> is one of only eleven winners of a
+	<a href="https://www.facebook.com/notes/facebook-fellowship-program/announcing-the-facebook-graduate-fellowship-2014-2015-winners/1516002375292350">2014-2015 Facebook Graduate Fellowship</a>!
+      </news-detail>
+    </news>
+    <news date="2013.10.01" id="papers-popl14">
+      <news-snippet>
+	Two papers with CUPLV authors accepted to <ref table="event" key="popl14"/>!
+	[<ref table="pub" key="fissile-popl14" text="1"/>,
+	 <ref table="pub" key="acceleration-popl14" text="2"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="coughlin"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
+	with collaborators 
+	have had papers accepted for presentation at <ref
+	table="event" key="popl14"/> in January (<ref table="pub"
+	key="fissile-popl14" mode="authors"/>
+	and <ref table="pub" key="acceleration-popl14" mode="authors"/>).
+      </news-detail>
+    </news>
     <news date="2013.06.08" id="cuplv-summer13">
       <news-snippet>
 	Check out CUPLV at
@@ -1470,6 +1495,65 @@
   </projects>
   
   <publications>
+    <pub id="fissile-popl14">
+      <title>Fissile Type Analysis: Modular Checking of Almost Everywhere Invariants</title>
+      <authors>
+	<author person="coughlin" student="y" />
+	<author person="bec"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/fissile-popl14.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="popl14" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="acceleration-popl14">
+      <title>Abstract Acceleration of General Linear Loops</title>
+      <authors>
+	<author person="bjeannet"/>
+	<author person="schramme"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="popl14" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="refutation-vmcai14" type="invited">
+      <title>Refuting Heap Rechability (Extended Abstract)</title>
+      <authors>
+	<author person="bec"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/refutation-vmcai14.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="vmcai14" />
+      </howpub>
+      <abstract>
+      </abstract>
+      <bibnote>
+	<b>Invited contribution</b>.
+      </bibnote>
+    </pub>
+    <pub id="shapenumeric-sairp13" type="reviewed-invited">
+      <title>Modular Construction of Shape-Numeric Analyzers</title>
+      <authors>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <howpub>
+	<proceedings event="sairp13" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="concursyn-cav13">
       <title>Efficient Synthesis for Concurrency using Semantics-Preserving Transformations</title>
       <authors>
@@ -1554,6 +1638,9 @@
       <urls>
 	<url name="pdf">papers/quicgraphs-ecoop13.pdf</url>
       </urls>
+      <pages>401-425</pages>
+      <doi>10.1007/978-3-642-39038-8_17</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-39038-8_17</ee>
       <howpub>
 	<proceedings event="ecoop13" />
       </howpub>
@@ -1573,6 +1660,9 @@
 	non-relational domains, we find significant precision improvements
 	with minimal performance cost.</p>
       </abstract>
+      <bibnote>
+	<b>Distinguished Artifact Award</b>.
+      </bibnote>
     </pub>
     <pub id="automata-lics13">
       <title>Regular Real Analysis</title>
@@ -1600,6 +1690,11 @@
       <urls>
 	<url name="pdf">papers/thresher-pldi13.pdf</url>
       </urls>
+      <pages>275-286</pages>
+      <doi>10.1145/2462156.2462186</doi>
+      <ee>http://doi.acm.org/10.1145/2462156.2462186</ee>
+      <doi>10.1145/2499370.2462186</doi>
+      <ee>http://doi.acm.org/10.1145/2499370.2462186</ee>
       <howpub>
 	<proceedings event="pldi13" />
       </howpub>
@@ -1690,6 +1785,51 @@
       <abstract>
       </abstract>
     </pub>
+    <pub id="filters-sttt13">
+      <title>A Bit Too Precise? Verification of Quantized Digital Filters</title>
+      <authors>
+	<author person="cox" student="y" />
+	<author person="srirams" />
+	<author person="bec" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/sttt13-filter_verification.pdf</url>
+      </urls>
+      <pages>16 pages</pages>
+      <doi>10.1007/s10009-013-0279-9</doi>
+      <ee>http://dx.doi.org/10.1007/s10009-013-0279-9</ee>
+      <howpub>
+	<issue journal="sttt" />
+	<date>2013-6</date>
+      </howpub>
+      <bibnote>
+	Published online first, not yet assigned issue for print.
+      </bibnote>
+      <abstract>
+	<p>Fixed point digital filters are simple yet ubiquitous components of a
+	wide variety of digital processing and control systems. Common errors
+        in fixed point filters include arithmetic round-off (truncation) errors,
+	overflows and the presence of limit cycles. These errors can potentially
+	compromise the correctness of the system as a whole. Traditionally digital
+	filters have been verified using a combination of design techniques from control
+	theory and extensive testing. In this paper, we examine the use of formal
+	verification techniques as part of the design flow for fixed point digital
+	filters. We study two classes of verification techniques involving bit-precise
+	analysis and real-valued error approximations, respectively. We empirically
+	evaluate several variants of these two fundamental approaches for verifying
+	fixed-point implementations of digital filters. We design our comparison to
+	reveal the best possible approach towards verifying real-world designs of
+	infinite impulse response (IIR) digital filters. Our study compares the
+	strengths and weaknesses of different verification techniques for digital
+	filters and suggests efficient approaches using modern
+	satisfiability-modulo-theories solvers (SMT) and hardware model checkers. This
+	manuscript extends our previous work evaluating bounded verification, where a
+	limited number of iterations of the system are explored, with unbounded
+	verification, where an unlimited number of iterations of the system are
+	considered. Doing so allows us to evaluate techniques that can prove the
+	correctness of fixed point digital filter implementations.</p>
+      </abstract>
+    </pub>
     <pub id="quantitative-popl13">
       <title>Quantitative Abstraction Refinement</title>
       <authors>
@@ -1709,13 +1849,16 @@
     <pub id="reducedproduct-vmcai13">
       <title>Reduced Product Combination of Abstract Domains for Shapes</title>
       <authors>
-	<author person="toubhans"/>
+	<author person="toubhans" student="y" />
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
       <urls>
 	<url name="pdf">papers/reducedproduct-vmcai13.pdf</url>
       </urls>
+      <pages>375-395</pages>
+      <doi>10.1007/978-3-642-35873-9_23</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-35873-9_23</ee>
       <howpub>
 	<proceedings event="vmcai13" />
       </howpub>
@@ -1745,7 +1888,7 @@
     <pub id="reflective-sas12">
       <title>Invariant Generation for Parametrized Systems using Self-Reflection</title>
       <authors>
-        <author person="asanchez" />
+        <author person="asanchez" student="y" />
         <author person="srirams" />
         <author person="cesar" />
         <author person="bec" />
@@ -1753,6 +1896,9 @@
       <urls>
         <url name="pdf">papers/sas12-reflective.pdf</url>
       </urls>
+      <pages>146-163</pages>
+      <doi>10.1007/978-3-642-33125-1_12</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-33125-1_12</ee>
       <howpub>
 	<proceedings event="sas12" />
       </howpub>
@@ -1780,7 +1926,7 @@
     <pub id="enforcements-issta12">
       <title>Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say</title>
       <authors>
-	<author person="coughlin" />
+	<author person="coughlin" student="y" />
 	<author person="bec" />
 	<author person="diwan" />
 	<author person="siek" />
@@ -1789,6 +1935,9 @@
 	<url name="pdf">papers/issta12-enforcements.pdf</url>
         <url name="video">http://youtu.be/N_jQ6K8BCc0</url>
       </urls>
+      <pages>276-286</pages>
+      <doi>10.1145/2338965.2336786</doi>
+      <ee>http://doi.acm.org/10.1145/2338965.2336786</ee>
       <howpub>
 	<proceedings event="issta12" />
       </howpub>
@@ -1796,6 +1945,7 @@
 	<tr>
 	  <extendedtr />
 	  <number>CU-CS-1093-12</number>
+          <institute>University of Colorado Boulder</institute>
 	  <url>papers/CU-CS-1093-12-enforcements.pdf</url>
 	</tr>
       </note>
@@ -1953,13 +2103,16 @@
     <pub id="filters-tacas12">
       <title>A Bit Too Precise? Bounded Verification of Quantized Digital Filters</title>
       <authors>
-	<author person="cox" />
+	<author person="cox" student="y" />
 	<author person="srirams" />
 	<author person="bec" />
       </authors>
       <urls>
 	<url name="pdf">papers/tacas12-filter_verification.pdf</url>
       </urls>
+      <pages>33-47</pages>
+      <doi>10.1007/978-3-642-28756-5_4</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-28756-5_4</ee>
       <howpub>
 	<proceedings event="tacas12" />
       </howpub>
@@ -2018,7 +2171,7 @@
     <pub id="ptaprecision-sas11">
       <title>The Flow-Insensitive Precision of Andersen's Analysis in Practice</title>
       <authors>
-	<author person="blackshear" />
+	<author person="blackshear" student="y" />
 	<author person="bec" />
 	<author person="srirams" />
 	<author person="msridhar" />
@@ -2026,6 +2179,9 @@
       <urls>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/sas11-ptaprecision.pdf</url>
       </urls>
+      <pages>60-76</pages>
+      <doi>10.1007/978-3-642-23702-7_9</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-23702-7_9</ee>
       <howpub>
 	<proceedings event="sas11" />
       </howpub>
@@ -2033,6 +2189,7 @@
 	<tr>
 	  <extendedtr />
 	  <number>CU-CS-1083-11</number>
+          <institute>University of Colorado Boulder</institute>
 	  <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1083-11-ptaprecision.pdf</url>
 	</tr>
       </note>
@@ -2236,6 +2393,9 @@ an application example.</p>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/popl11-stack.pdf</url>
 	<url name="ps">http://www.cs.colorado.edu/~bec/papers/popl11-stack.ps</url>
       </urls>
+      <pages>173-186</pages>
+      <doi>10.1145/1926385.1926406</doi>
+      <ee>http://doi.acm.org/10.1145/1926385.1926406</ee>
       <howpub>
 	<proceedings event="popl11" />
       </howpub>
@@ -2262,7 +2422,7 @@ an application example.</p>
     <pub id="accessnets-vmcai11">
       <title>Access Nets: Modeling Access to Physical Spaces</title>
       <authors>
-	<author person="frohardt" />
+	<author person="frohardt" student="y" />
 	<author person="bec" />
 	<author person="srirams" />
       </authors>
@@ -2270,6 +2430,9 @@ an application example.</p>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/accessnets-vmcai11.pdf</url>
 	<url name="ps">http://www.cs.colorado.edu/~bec/papers/accessnets-vmcai11.ps</url>
       </urls>
+      <pages>184-198</pages>
+      <doi>10.1007/978-3-642-18275-4_14</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-18275-4_14</ee>
       <howpub>
 	<proceedings event="vmcai11" />
       </howpub>
@@ -2277,6 +2440,7 @@ an application example.</p>
 	<tr>
 	  <extendedtr />
 	  <number>CU-CS-1076-10</number>
+          <institute>University of Colorado Boulder</institute>
 	  <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1076-10.pdf</url>
 	</tr>
       </note>
@@ -2302,7 +2466,7 @@ an application example.</p>
     <pub id="mix-pldi10">
       <title>Mixing Type Checking and Symbolic Execution</title>
       <authors>
-	<author person="khooyp" />
+	<author person="khooyp" student="y" />
 	<author person="bec" />
 	<author person="jfoster" />
       </authors>
@@ -2310,6 +2474,11 @@ an application example.</p>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/pldi10-mix.pdf</url>
 	<url name="ps">http://www.cs.colorado.edu/~bec/papers/pldi10-mix.ps</url>
       </urls>
+      <pages>436-447</pages>
+      <doi>10.1145/1809028.1806645</doi>
+      <ee>http://doi.acm.org/10.1145/1809028.1806645</ee>
+      <doi>10.1145/1806596.1806645</doi>
+      <ee>http://doi.acm.org/10.1145/1806596.1806645</ee>
       <howpub>
 	<proceedings event="pldi10" />
       </howpub>
@@ -2317,6 +2486,7 @@ an application example.</p>
 	<tr>
 	  <extendedtr />
 	  <number>CS-TR-4954</number>
+          <institute>University of Maryland, College Park</institute>
 	  <url>http://hdl.handle.net/1903/10115</url>
 	</tr>
       </note>
@@ -2486,13 +2656,16 @@ an application example.</p>
     <pub id="ssg-esop10">
       <title>Separating Shape Graphs</title>
       <authors>
-	<author person="laviron" />
+	<author person="laviron" student="y" />
 	<author person="bec" />
 	<author person="rival" />
       </authors>
       <urls>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/esop10-sepshapegraph.pdf</url>
       </urls>
+      <pages>387-406</pages>
+      <doi>10.1007/978-3-642-11957-6_21</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-11957-6_21</ee>
       <howpub>
 	  <proceedings event="esop10" />
       </howpub>
@@ -2525,6 +2698,7 @@ an application example.</p>
       <urls>
 	<url name="pdf">http://www.cs.colorado.edu/~bec/papers/pldifit09-gradprog.pdf</url>
       </urls>
+      <pages>2 pages</pages>
       <howpub>
 	<proceedings event="pldi-fit09" />
       </howpub>
@@ -2938,17 +3112,54 @@ an application example.</p>
       <name>Moshe Vardi</name>
       <url>http://www.rice.edu/~vardi</url>
     </person>
+    <person id="gcastagna">
+      <name>Giuseppe Castagna</name>
+    </person>
+    <person id="hjboehm">
+      <name>Hans-Juergen Boehm</name>
+    </person>
+    <person id="cflanagan">
+      <name>Cormac Flanagan</name>
+    </person>
+    <person id="rgiacobazzi">
+      <name>Roberto Giacobazzi</name>
+    </person>
+    <person id="imastroeni">
+      <name>Isabella Mastroeni</name>
+    </person>
+    <person id="ekowalczyk">
+      <name>Emily Kowalczyk</name>
+    </person>
+    <person id="amemon">
+      <name>Atif Memon</name>
+    </person>
+    <person id="kalharbi">
+      <name>Khalid Alharbi</name>
+    </person>
+    <person id="kmcmillan">
+      <name>Kenneth L. McMillan</name>
+      <url>http://www.kenmcmil.com/</url>
+    </person>
   </persons>
 
   <events>
     <series id="popl">
       <name>Principles of Programming Languages</name>
       <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
+      <issue journal="sigplannot"/>
+      <event id="popl15">
+	<date>2015-01</date>
+	<location>Mumbai, India</location>
+	<nth>Forty-Second</nth>
+	<url>http://popl.mpi-sws.org/2015/</url>
+      </event>
       <event id="popl14">
 	<date>2014-01</date>
 	<location>San Diego, California, USA</location>
 	<nth>Forty-First</nth>
 	<url>http://popl.mpi-sws.org/2014/</url>
+	<acceptance>51/220</acceptance>
+	<acceptanceRate>23.2%</acceptanceRate>
       </event>
       <event id="popl13">
 	<date>2013-01</date>
@@ -2967,6 +3178,10 @@ an application example.</p>
 	<location>Austin, Texas, USA</location>
 	<nth>Thirty-Eighth</nth>
 	<url>http://www.cse.psu.edu/popl/11/</url>
+	<acceptance>49/209</acceptance>
+	<acceptanceRate>23.4%</acceptanceRate>
+	<volume>46</volume>
+	<number>1</number>
       </event>
       <event id="popl10">
 	<date>2010-01</date>
@@ -2979,15 +3194,28 @@ an application example.</p>
 	<location>San Francisco, California, USA</location>
 	<nth>Thirty-Fifth</nth>
 	<url>http://www.cs.ucsd.edu/popl/08/</url>
+	<acceptance>35/212</acceptance>
+	<acceptanceRate>16.5%</acceptanceRate>
+	<volume>43</volume>
+	<number>1</number>
       </event>
     </series>
     <series id="pldi">
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <issue journal="sigplannot"/>
       <event id="pldi13">
 	<date>2013-06</date>
 	<location>Seattle, Washington, USA</location>
 	<url>http://pldi2013.ucombinator.org/</url>
+	<acceptance>46/267</acceptance>
+	<acceptanceRate>17.2%</acceptanceRate>
+	<volume>48</volume>
+	<number>6</number>
+	<editors>
+	  <author person="hjboehm"/>
+	  <author person="cflanagan"/>
+	</editors>
       </event>
       <event id="pldi12">
 	<date>2012-06</date>
@@ -2998,6 +3226,10 @@ an application example.</p>
 	<date>2010-06</date>
 	<location>Toronto, Ontario, Canada</location>
 	<url>http://www.cs.stanford.edu/pldi10/</url>
+	<acceptance>41/204</acceptance>
+	<acceptanceRate>20.1%</acceptanceRate>
+	<volume>45</volume>
+	<number>6</number>
       </event>
       <event id="pldi09">
 	<date>2009-06</date>
@@ -3027,15 +3259,23 @@ an application example.</p>
     <series id="ecoop">
       <name>Object-Oriented Programming</name>
       <longPrefix>European Conference on</longPrefix>
+      <issue journal="lncs"/>
       <event id="ecoop13">
 	<date>2013-07</date>
 	<location>Montpellier, France</location>
 	<nth>Twenty-Seventh</nth>
         <url>http://www.lirmm.fr/ecoop13/</url>
+	<acceptance>29/116</acceptance>
+	<acceptanceRate>25.0%</acceptanceRate>
+	<volume>7920</volume>
+	<editors>
+	  <author person="gcastagna"/>
+	</editors>
       </event>
     </series>
     <series id="esop">
       <name>European Symposium on Programming</name>
+      <issue journal="lncs"/>
       <event id="esop11">
 	<date>2011-03</date>
 	<location>Saarbrücken, Germany</location>
@@ -3046,16 +3286,23 @@ an application example.</p>
 	<location>Paphos, Cyprus</location>
 	<nth>Nineteenth</nth>
 	<url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
+	<acceptance>30/121</acceptance>
+	<acceptanceRate>24.8%</acceptanceRate>
+	<volume>6012</volume>
       </event>
     </series>
     <series id="tacas">
       <name>Tools and Algorithms for the Construction and Analysis of Systems</name>
       <longPrefix>International Conference on</longPrefix>
+      <issue journal="lncs"/>
       <event id="tacas12">
 	<date>2012-03</date>
 	<location>Tallinn, Estonia</location>
 	<nth>Eighteenth</nth>
 	<url>http://www.etaps.org/2012/tacas/</url>
+	<acceptance>36/147</acceptance>
+	<acceptanceRate>24.5%</acceptanceRate>
+	<volume>7214</volume>
       </event>
       <event id="tacas11">
 	<date>2011-03</date>
@@ -3066,42 +3313,70 @@ an application example.</p>
     <series id="sas">
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
-      <event id="sas11">
-	<date>2011-09</date>
-	<location>Venice, Italy</location>
-	<nth>Eighteenth</nth>
-	<url>http://sas2011.cs.technion.ac.il/</url>
-      </event>
+      <issue journal="lncs"/>
       <event id="sas12">
 	<date>2012-09</date>
 	<location>Deauville, France</location>
 	<nth>Nineteenth</nth>
 	<url>http://www.sas2012.ens.fr/</url>
+	<acceptance>25/62</acceptance>
+	<acceptanceRate>40.3%</acceptanceRate>
+	<volume>7460</volume>
       </event>
       <event id="sas11">
 	<date>2011-09</date>
+	<location>Venice, Italy</location>
 	<nth>Eighteenth</nth>
 	<url>http://sas2011.cs.technion.ac.il/</url>
+	<acceptance>22/67</acceptance>
+	<acceptanceRate>32.8%</acceptanceRate>
+	<volume>6887</volume>
       </event>
       <event id="sas07">
 	<date>2007-08</date>
 	<nth>Fourteenth</nth>
 	<url>http://www2.imm.dtu.dk/sas2007/</url>
+	<acceptance>26/85</acceptance>
+	<acceptanceRate>30.6%</acceptanceRate>
+	<volume>4634</volume>
       </event>
       <event id="sas06">
 	<date>2006-08</date>
 	<nth>Thirteenth</nth>
 	<url>http://ropas.snu.ac.kr/sas06/</url>
+	<acceptance>23/80</acceptance>
+	<acceptanceRate>28.8%</acceptanceRate>
+	<volume>4134</volume>
       </event>
     </series>
     <series id="vmcai">
       <name>Verification, Model Checking, and Abstract Interpretation</name>
       <longPrefix>International Conference on</longPrefix>
+      <issue journal="lncs"/>
+      <event id="vmcai14">
+	<date>2014-01</date>
+	<location>San Diego, California, USA</location>
+	<nth>Fifteenth</nth>
+	<url>http://vmcai2014.di.ens.fr/</url>
+	<volume>8318</volume>
+	<editors>
+	  <author person="kmcmillan"/>
+	  <author person="rival"/>
+	</editors>
+      </event>
       <event id="vmcai13">
 	<date>2013-01</date>
 	<location>Rome, Italy</location>
 	<nth>Fourteenth</nth>
 	<url>http://vmcai13.di.univr.it/</url>
+	<acceptance>27/72</acceptance>
+	<acceptanceRate>37.5%</acceptanceRate>
+	<volume>7737</volume>
+	<editors>
+	  <author person="rgiacobazzi"/>
+	  <author person="berdine"/>
+	  <author person="imastroeni"/>
+	</editors>
       </event>
       <event id="vmcai12">
 	<date>2012-01</date>
@@ -3113,16 +3388,22 @@ an application example.</p>
 	<location>Austin, Texas, USA</location>
 	<nth>Twelfth</nth>
 	<url>http://vmcai11.cis.ksu.edu/</url>
+	<acceptance>24/71</acceptance>
+	<acceptanceRate>33.8%</acceptanceRate>
       </event>
       <event id="vmcai06">
 	<date>2006-01</date>
 	<nth>Seventh</nth>
 	<url>http://www.cs.utexas.edu/~vmcai06/</url>
+	<acceptance>28/58</acceptance>
+	<acceptanceRate>48.3%</acceptanceRate>
       </event>
       <event id="vmcai05">
 	<date>2005-01</date>
 	<nth>Sixth</nth>
 	<url>http://www.polytechnique.fr/vmcai05/</url>
+	<acceptance>27/92</acceptance>
+	<acceptanceRate>29.3%</acceptanceRate>
       </event>
     </series>
     <series id="lics">
@@ -3171,6 +3452,8 @@ an application example.</p>
 	<location>Minneapolis, Minnesota, USA</location>
 	<nth>Twenty-First</nth>
 	<url>http://crisys.cs.umn.edu/issta2012/</url>
+	<acceptance>31/108</acceptance>
+	<acceptanceRate>28.7%</acceptanceRate>
       </event>
     </series>
     <series id="hscc">
@@ -3194,22 +3477,33 @@ an application example.</p>
     <series id="fmco">
       <name>Formal Methods for Components and Objects</name>
       <longPrefix>International Symposium on</longPrefix>
+      <issue journal="lncs"/>
       <event id="fmco05">
 	<date>2005</date>
 	<nth>Fourth</nth>
 	<url>http://fmco.liacs.nl/fmco05.html</url>
+	<volume>4111</volume>
       </event>
     </series>
-    <series id="tldi">
+    <series id="chi">
+      <name>Human Factors in Computing Systems</name>
+      <longPrefix>ACM SIGCHI Conference on</longPrefix>
+      <event id="chi14">
+        <date>2014</date>	
+      </event>
+    </series>
+    <series id="tldi" type="workshop">
       <name>Types in Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN International Workshop on</longPrefix>
       <event id="tldi05">
-	<date>2005</date>
+	<date>2005-01</date>
 	<nth>Second</nth>
 	<url>http://research.microsoft.com/~maf/tldi05/</url>
+	<acceptance>10/23</acceptance>
+	<acceptanceRate>43.5%</acceptanceRate>
       </event>
     </series>
-    <series id="nsad">
+    <series id="nsad" type="workshop">
       <name>Numerical and Symbolic Abstract Domains</name>
       <longPrefix>International Workshop on</longPrefix>
       <event id="nsad11">
@@ -3218,7 +3512,7 @@ an application example.</p>
 	<url>http://software.imdea.org/events/nsad2011/</url>
       </event>
     </series>
-    <series id="tapas">
+    <series id="tapas" type="workshop">
       <name>Tools for Automatic Program Analysis</name>
       <longPrefix>International Workshop on</longPrefix>
       <event id="tapas13">
@@ -3232,7 +3526,7 @@ an application example.</p>
 	<url>http://tapas2012.inrialpes.fr/</url>
       </event>
     </series>
-    <series id="paste">
+    <series id="paste" type="workshop">
       <name>Program Analysis for Software Tools and Engineering</name>
       <longPrefix>ACM SIGPLAN-SIGSOFT Workshop on</longPrefix>
       <event id="paste11">
@@ -3241,7 +3535,7 @@ an application example.</p>
 	<url>https://sites.google.com/site/paste2011/</url>
       </event>
     </series>
-    <series id="lcpc">
+    <series id="lcpc" type="workshop">
       <name>Languages and Compilers for Parallel Computing</name>
       <longPrefix>International Workshop on</longPrefix>
       <event id="lcpc11">
@@ -3250,46 +3544,54 @@ an application example.</p>
 	<url>http://lcpc11.cs.colostate.edu/</url>
       </event>
     </series>
-    <series id="aiool">
+    <series id="aiool" type="workshop">
       <name>Abstract Interpretation of Object-Oriented Languages</name>
       <longPrefix>International Workshop on</longPrefix>
+      <issue journal="entcs"/>
       <event id="aiool05">
-	<date>2005</date>
+	<date>2005-01</date>
 	<nth>First</nth>
 	<url>http://www.polytechnique.fr/vmcai05/Aiool.html</url>
+	<acceptance>11/13</acceptance>
+	<acceptanceRate>84.6%</acceptanceRate>
       </event>
     </series>
-    <series id="bioconcur">
+    <series id="bioconcur" type="workshop">
       <name>Concurrent Models in Molecular Biology</name>
       <longPrefix>Workshop on</longPrefix>
       <abbrev>BioConcur</abbrev>
+      <issue journal="entcs"/>
       <event id="bioconcur03">
-	<date>2003</date>
+	<date>2003-09</date>
 	<url>http://www.pps.jussieu.fr/~bioconcu/</url>
+	<volume>180</volume>
+	<number>3</number>
       </event>
     </series>
-    <series id="grid">
+    <series id="grid" type="workshop">
       <name>Grid Computing</name>
       <longPrefix>International Workshop on</longPrefix>
+      <issue journal="lncs"/>
       <event id="grid02">
-	<date>2002</date>
+	<date>2002-11</date>
 	<url>http://www.gridcomputing.org/grid2002</url>
+	<volume>2536</volume>
       </event>
     </series>
-    <series id="ptp">
+    <series id="ptp" type="workshop">
       <name>
 	Proof Transformations, Proof Presentations, and Complexity of Proofs
       </name>
       <longPrefix>Workshop on</longPrefix>
       <event id="ptp01">
-	<date>2001</date>
+	<date>2001-06</date>
 	<url>http://www.ags.uni-sb.de/~ptp-01/</url>
       </event>
     </series>
-    <series id="pldi-fit">
-      <name>Fun Ideas and Thoughts at PLDI</name>
+    <series id="pldi-fit" type="workshop">
+      <name>Fun Ideas and Thoughts at <ref table="series" key="pldi"/></name>
       <event id="pldi-fit09">
-	<date>2009</date>
+	<date>2009-06</date>
 	<url>http://www.cs.colorado.edu/pldi09/fit/</url>
 	<location>Dublin, Ireland</location>
       </event>
@@ -3344,5 +3646,37 @@ an application example.</p>
        <url>http://www.cgo.org/cgo2010/</url>
      </event>
     </series>
+    <series id="sairp">
+      <name>Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. Schmidt on the Occasion of his Sixtieth Birthday</name>
+      <issue journal="eptcs"/>
+      <event id="sairp13">
+	<date>2013-09</date>
+	<location>Manhattan, Kansas, USA</location>
+	<volume>129</volume>
+      </event>
+    </series>
   </events>
+  
+  <journals>
+    <journal id="sigplannot">
+      <name>ACM SIGPLAN Notices</name>
+      <short>ACM SIGPLAN Notices</short>
+    </journal>
+    <journal id="lncs">
+      <name>Lecture Notes in Computer Science</name>
+      <short>Lect Notes Comput Sc</short>
+    </journal>
+    <journal id="entcs">
+      <name>Electronic Notes in Theoretical Computer Science</name>
+      <short>Electr Notes Theor Comput Sc</short>
+    </journal>
+    <journal id="sttt">
+      <name>International Journal on Software Tools for Technology Transfer (STTT)</name>
+      <short>Int J Softw Tools Technol Transfer</short>
+    </journal>
+    <journal id="eptcs">
+      <name>Electronic Proceedings in Theoretical Computer Science</name>
+      <short>Electr P in Theor Comput Sc</short>
+    </journal>
+  </journals>
 </cv>

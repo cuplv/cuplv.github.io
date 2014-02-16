@@ -331,21 +331,27 @@ name="html" />
 <!-- Students -->
 
 <xsl:template match="students">
-  <table class="columns">
-    <xsl:apply-templates select="student" />
+  <table class="columns line-spaced">
+    <xsl:apply-templates select="student[@group='current']" />
   </table>
 </xsl:template>
 
 <xsl:template match="student">
-  <tr><td>
-    <xsl:apply-templates select="key('person', @person)" />
-    <xsl:if test="coadvisor">
-      (co-advised with
-      <xsl:call-template name="text-list">
-	<xsl:with-param name="items" select="key('person', coadvisor/@person)" />
-      </xsl:call-template>)</xsl:if>.
-    <xsl:apply-templates select="child::node()" />
-  </td></tr>
+  <tr>
+    <td>
+      <xsl:apply-templates select="key('person', @person)" />
+    </td>
+    <td>
+      <p>
+      <xsl:apply-templates select="child::node()" />
+      <xsl:if test="coadvisor">
+        Co-advised with
+        <xsl:call-template name="text-list">
+	  <xsl:with-param name="items" select="key('person', coadvisor/@person)" />
+        </xsl:call-template>.</xsl:if>
+      </p>
+    </td>
+  </tr>
 </xsl:template>
 
 <!-- Courses -->
