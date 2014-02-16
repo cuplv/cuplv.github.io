@@ -2828,7 +2828,7 @@ an application example.</p>
       <name>Ian Karlin</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="miao" group="phd">
+    <person id="miao" group="phd-alumni">
       <name>Weiyu Miao</name>
       <face>pics/miao.jpg</face>
     </person>
@@ -2892,7 +2892,7 @@ an application example.</p>
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
     </person>
-    <person id="beal" group="bs">
+    <person id="beal" group="bs-alumni">
       <name>Alex Beal</name>
       <face>pics/beal.png</face>
     </person>
