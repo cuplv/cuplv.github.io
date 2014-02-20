@@ -6,6 +6,11 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.02.19" id="phdvisit-2014">
+      <news-snippet>
+	Prospective Ph.D. students visit February 21. Welcome!
+      </news-snippet>
+    </news>
     <news date="2014.02.03" id="blackshear-facebook14">
       <news-snippet>
 	<ref table="person" key="blackshear"/> wins a
@@ -1458,7 +1463,7 @@
   <projects>
     <project id="quicgraphs">
       <name>QUIC Graphs</name>
-      <url>projects/quicgraphs/</url>
+      <url>http://pl.cs.colorado.edu/projects/quicgraphs/</url>
       <authors>
 	<author person="cox"/>
 	<author person="bec"/>
@@ -1475,7 +1480,7 @@
     </project>
     <project id="thresher">
       <name>Thresher</name>
-      <url>projects/thresher/</url>
+      <url>http://pl.cs.colorado.edu/projects/thresher/</url>
       <icon>pics/thresherIcon.jpg</icon>
       <authors>
 	<author person="blackshear"/>
