@@ -45,7 +45,9 @@
           <a class="brand" href="#">Missile</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
+              <li><a href="#news">News</a></li>
               <li><a href="#downloads">Downloads</a></li>
+              <li><a href="#instructions">Instructions</a></li>
             </ul>
           </div>
         </div>
@@ -54,31 +56,155 @@
 
     <div class="container">
       <div class="row">
-	<div class="span10"><h1>Missile: An Interactive Tool for Modular Verification with Fissile Type Analysis</h1> </div>
-        <div class="span2"><!-- <img class="img-small" src="img/thresherIcon.png"/> --></div>
+		  <div class="span10"><h1>Missile: An Interactive Tool for Modular Verification with Fissile Type Analysis</h1> </div>
       </div>
-	<hr></hr>
       <p>
         <a href="http://cs.colorado.edu/~coughlid">Devin Coughlin</a> and
         <a href="http://cs.colorado.edu/~bec">Bor-Yuh Evan Chang</a>
       </p>
 
-      <p>
-	Missile is a plugin for the clang static analyzer that enables
-programmers to modularly specify and verify almost-everywhere
-invariants---invariants that generally hold but that programmers
-violate temporarily---with dependent refinement types in C
-and Objective-C.      </p>
+	 
+	  
+	  
+	  	<div class="row">
+		  	<div class="span10"> 
+		  		Missile is a plugin for the clang static analyzer that enables
+			  	programmers to modularly specify and verify almost-everywhere
+			  	invariants&mdash;invariants that generally hold but that programmers
+			  	violate temporarily&mdash;with dependent refinement types in C
+			  	and Objective-C.
+			  	<hr />
+			</div>
+		</div>
+		
+      	<div class="row">
+      		<div class="span1"></div>
+		  	<div class="span6"><img class="img-large" src="img/counterexample-visualization-hidpi.png"/></div>
+		</div>  
+ 
+       
+	<div class="row">
+		<div class="span8">
+	  <a name="news"></a>
 
+      <h2>News</h2>
+      <ul>
+		  <li> 2/07/2014: <a href="http://cs.colorado.edu/~coughlid/missile.tar.gz">Source code, binary, and benchmarks for Missile clang plugin</a> are now available.</li>
+		  <li> 1/22/2014: Fissile Type Analysis paper presented at POPL '14. [<a href="http://pl.cs.colorado.edu/papers/fissile-popl14.html">paper</a>][<a href="talks/Fissile_Type_Analysis_POPL_2014_Talk.pdf">slides</a>][<a href="posters/Fissile_Type_Analysis_POPL_2014_Poster.pdf">poster</a>] </li>
+      </ul>
+      
       <a name="downloads"></a>
 
       <h2>Downloads</h2>
 
       <ul>
-        <li><a href="http://cs.colorado.edu/~coughlid/missile.tar.gz">Source Code, Binary, and Benchmarks</a> 
+        <li><a href="http://cs.colorado.edu/~coughlid/missile.tar.gz">Source Code, Binary, and Benchmarks for Missile clang plugin.</a>
+        <li>POPL '14 <a href="talks/Fissile_Type_Analysis_POPL_2014_Talk.pdf">Slides</a>
+        <li>POPL '14 <a href="posters/Fissile_Type_Analysis_POPL_2014_Poster.pdf">Poster</a>
      </ul>
 
 
+	 <a name="instructions"></a>
+
+     <h2>Instructions</h2>
+     
+     <p>Missile requires OS X 10.8 and Xcode 4.6 to run as well as z3.</p>
+
+	 <h4>Download Contents</h4>
+
+<p>The download tarball contains 6 items:</p>
+
+<h6>plugin_source/</h6>
+
+<p>This contains an Xcode project with the source of our plugin for the
+clang static analyzer. Perhaps the most interesting parts here
+are MethodReflectionTypeChecker.{cpp,h}, which contains our
+flow-insensitive analysis and SymbolicChecker.{cpp,h}, which contains
+our path-sensitive symbolic analysis.</p>
+
+<h6>2. benchmarks/</h6>
+
+<p>The benchmarks directory contains 9 Objective-C benchmarks which
+we have used to verify the safety of reflective method calls.
+We provide each of these benchmarks in their original, unaltered form
+and also with our annotations.</p>
+
+<p>Of particular interest may be the TestCommandLineTool Xcode project in
+this directory, which contains a large number of tests for Missile.
+The ShouldAllPass target contains tests that should pass the
+flow-sensitive analysis (i.e., without the ability to switch to the
+symbolic analysis). The ShouldAllFail target contains tests that
+should fail the intertwined flow-insensitive/symbolic analysis
+and the ShouldAllPassSymbolic target contains tests that should pass
+the intertwined analysis.</p>
+
+<p>The benchmark/run_benchmarks_cav.rb script contains the ruby script
+we used to generate the data.</p>
+
+<h6>data-cav-2014.tar.gz</h6>
+
+<p>This is a tarball of our logs from running the experiments for our CAV 2014 submission
+experiments, which we
+provide to aid reproduction. Be warned: uncompressed, it is larger
+than 3GB.</p>
+
+<h6>plugin_bin/</h6>
+
+<p>This directory contains a binary version of the plugin.</p>
+
+<h6>build/</h6>
+
+<p>The build directory contains binaries for our custom version of clang;
+adding support for new __attribute__ annotations required small
+modifications to the clang frontend.</p>
+
+
+<h6>Clang LLVM 1.0.xcspec</h6>
+
+<p>This file is a *modified* version of an Xcode configuration file that tells
+Xcode to use the custom version of clang and the Missile plugin.</p>
+
+<h6>CAV-demo/</h6>
+
+<p>This directory contains a simple Xcode project with the two examples
+from our CAV submission.</p>
+
+
+<h4>Instructions for Running</h4>
+<hr />
+
+<p><b>Step 1:</b> Install Xcode 4.6, if you do not already have it.</p>
+<p><b>Step 2:</b> Modify the Missile version of Clang LLVM 1.0.xcspec:</p>
+
+<p>Modify the 'Clang LLVM 1.0.xcspec' file to change the DefaultValue
+value of the option with name MISSILE_INSTALL_PATH (grep in the
+file for this) to the absolute path of your untar'd missile directory.</p>
+
+
+<p><b>Step 3:</b> Make a backup of the version of this file in the Xcode bundle:</p>
+
+<pre><code>'/Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library/Xcode/Plug-ins/Clang LLVM 1.0.xcplugin/Contents/Resources/Clang LLVM 1.0.xcspec'</code></pre>
+
+<p><b>Step 4:</b> Replace the version of that file in Xcode with your
+modified version.</p>
+
+<p><b>Step 5:</b> Install libz3.dylib in /usr/local/lib</p>
+
+<p><b>Step 6:</b> Double-click CAV-demo/CAV/CAV.xcodeproj</p>
+
+<p><b>Step 7:</b> Use Xcode to build the project (Product > Build)</p>
+
+<p><b>Step 8:</b> If all went well, you should see 'Global invariant could not be
+restored' in CallbackV2.m.  Click on it (in the editor pane) to see
+the visualization.</p>
+
+<p>You can now muck around with CAV.xcodeproj (or
+benchmarks/TestCommandLineTool/TestCommandLineTool.xcodeproj )
+to explore the tool.</p>
+
+      
+	 </div>
+	</div>
     
     </div> <!-- /container -->
 
