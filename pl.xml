@@ -1497,6 +1497,23 @@
 	<ref table="pub" key="thresher-pldi13" mode="abbrev" />
       </references>
     </project>
+    <project id="fissile-types">
+      <name>Fissile Type Analysis</name>
+      <url>http://pl.cs.colorado.edu/projects/fissile/</url>
+      <authors>
+		<author person="coughlin"/>
+		<author person="bec"/>
+      </authors>
+      <title>Modular Checking of Almost-Everywhere Invariants</title>
+      <snippet>
+	<p>A static analysis tool for C and Objective-C that verifies
+	invariants that hold almost everywhere, including the safety of
+	reflective method calls.</p>
+      </snippet>
+      <references>
+	<ref table="pub" key="fissile-popl14" mode="abbrev" />
+      </references>
+    </project>
   </projects>
   
   <publications>
