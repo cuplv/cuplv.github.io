@@ -2923,6 +2923,10 @@ an application example.</p>
       <name>Alex Beal</name>
       <face>pics/beal.png</face>
     </person>
+    <person id="vanderweit" group="bs-alumni">
+      <name>Nicholas Vanderweit</name>
+      <face>pics/vanderweit.jpg</face>
+    </person>
     <person id="givens" group="bs">
       <name>Paul Givens</name>
       <face>pics/generic-male.png</face>
