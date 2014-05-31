@@ -226,6 +226,10 @@ name="html" />
       <xsl:apply-templates select="cv/persons/person[@group='bsms-alumni']" mode="detail" />
       <div class="clearer" />
 
+      <h3>BS/BA</h3>
+      <xsl:apply-templates select="cv/persons/person[@group='bs-alumni']" mode="detail" />
+      <div class="clearer" />
+
       <h3>MS</h3>
       <xsl:apply-templates select="cv/persons/person[@group='ms-alumni']" mode="detail" />
       <div class="clearer" />
