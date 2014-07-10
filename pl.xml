@@ -6,6 +6,38 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.07.10" id="schkufza-seminar-2014">
+      <news-snippet>
+	<ref table="person" key="eschkufza"/> visits July 15.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="eschkufza"/> from
+	Stanford
+	is visiting us on July 15, 2014. He is giving a
+	CUPLV Seminar
+	entitled
+	"Stochastic Optimization of x86_64 Binaries"
+	at 11:00am
+	in KOBL	300 on Tuesday, July 15, 2014.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="eschkufza"/></speaker>
+	<affiliation>Stanford University</affiliation>
+	<when>07-14-2014 11:00</when>
+	<where>KOBL 300</where>
+	<title>
+	  Stochastic Optimization of x86_64 Binaries 
+	</title>
+	<abstract>
+	  <p>The optimization of short sequences of loop-free fixed-point x86_64 code sequences is an important problem in high-performance computing. Unfortunately, the competing constraints of transformation correctness and performance improvement often force even special purpose compilers to produce sub-optimal code. We show that by encoding these constraints as terms in a cost function, and using a Markov Chain Monte Carlo sampler to rapidly explore the space of all possible programs, we are able to generate aggressively optimized versions of a given target program. Beginning from binaries compiled by gcc -O0, we are able to produce provably correct code sequences that either match or outperform the code produced by gcc -O3, and in some cases expert hand-written assembly.</p>
+          <p>Because most high-performance applications contain floating-point computations, we extend our technique to this domain and show a novel approach to trading full floating-point precision for further increases in performance. We demonstrate the ability to generate reduced precision implementations of Intel's handwritten C numerics library that are up to six times faster than the original code, and achieve end-to-end speedups of over 30% on a direct numeric simulation and a ray tracer. Because optimizations that contain floating-point computations are not amenable to formal verification using the state of the art, we present a technique for characterizing maximum error and providing strong evidence for correctness.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="eschkufza"/>
+	  is a PhD candidate at Stanford University (a few signatures away from graduating!) working with Professor Alex Aiken. He is interested in applying machine learning and stochastic search techniques to the design of optimizing compilers.</p>
+	</bio>
+      </talk-announcement>
+    </news>
     <news date="2014.02.19" id="phdvisit-2014">
       <news-snippet>
 	Prospective Ph.D. students visit February 21. Welcome!
@@ -3190,6 +3222,11 @@ an application example.</p>
     <person id="mfahndrich">
       <name>Manuel Fähndrich</name>
     </person>
+    <person id="eschkufza">
+      <name>Eric Schkufza</name>
+      <url>http://cs.stanford.edu/people/eschkufz/</url>
+      <face>pics/eschkufza.jpg</face>
+    </person> 
   </persons>
 
   <events>
