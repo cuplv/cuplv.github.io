@@ -23,7 +23,7 @@
       <talk-announcement>
 	<speaker><ref table="person" key="eschkufza"/></speaker>
 	<affiliation>Stanford University</affiliation>
-	<when>07-14-2014 11:00</when>
+	<when>07-15-2014 11:00</when>
 	<where>KOBL 300</where>
 	<title>
 	  Stochastic Optimization of x86_64 Binaries 
