@@ -10,6 +10,9 @@
       <news-snippet>
 	Call for Postdoc <a href="news.html#postdoc-call-2014">applicants</a> for Fall 2014.
       </news-snippet>
+      <news-detail>
+	There is a postdoctoral research associate position open with the opportunity to work with Profs. <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="cernyp"/>. Highly-qualified candidates may be considered for a research assistant professor position.
+      </news-detail>
       <news-page header="Postdoc Position">
 	<p>
 The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for exceptional candidates for a postdoctoral research associate in the area of program analysis and program synthesis.
