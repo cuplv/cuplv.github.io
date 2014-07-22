@@ -75,6 +75,34 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	</bio>
       </talk-announcement>
     </news>
+    <news date="2014.06.01" id="paper-sas14">
+      <news-snippet>
+	Three papers with CUPLV authors accepted to <ref table="event" key="sas14"/>!
+	[<ref table="pub" key="expectation-sas14" text="1"/>,
+	 <ref table="pub" key="hoo-sas14" text="2"/>,
+	 <ref table="pub" key="sepdom-sas14" text="3"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV authors
+	<ref table="person" key="chakarov"/>, <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
+	with collaborators 
+	have had papers
+	accepted for presentation at <ref table="event" key="sas14"/> in September (<ref table="pub" key="expectation-sas14" mode="authors"/>,
+	<ref table="pub" key="hoo-sas14" mode="authors"/>, and <ref table="pub"
+	key="sepdom-sas14" mode="authors"/>).
+      </news-detail>
+    </news>    
+    <news date="2014.04.18" id="paper-cav14">
+      <news-snippet>
+	Paper by <ref table="pub" key="quicr-cav14" mode="authors"/>
+	accepted to <ref table="event" key="cav14"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
+	have had a paper "<ref table="pub" key="quicr-cav14"/>"
+	accepted for presentation at <ref table="event" key="cav14"/> in July.
+      </news-detail>
+    </news> 
     <news date="2014.02.19" id="phdvisit-2014">
       <news-snippet>
 	Prospective Ph.D. students visit February 21. Welcome!
@@ -88,6 +116,16 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <news-detail>
 	<ref table="person" key="blackshear"/> is one of only eleven winners of a
 	<a href="https://www.facebook.com/notes/facebook-fellowship-program/announcing-the-facebook-graduate-fellowship-2014-2015-winners/1516002375292350">2014-2015 Facebook Graduate Fellowship</a>!
+      </news-detail>
+    </news>
+    <news date="2014.01.22" id="coughlin-popl14">
+      <news-snippet>
+	<ref table="person" key="coughlin"/> presenting at
+	<ref table="event" key="popl14"/> today.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="coughlin"/> presenting "<ref table="pub" key="fissile-popl14" mode="title"/>" at
+	<ref table="event" key="popl14"/> today.
       </news-detail>
     </news>
     <news date="2013.10.01" id="papers-popl14">
@@ -1586,6 +1624,72 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+     <pub id="expectation-sas14">
+      <title>Expectation Invariants for Probabilistic Program Loops as Fixed Points</title>
+      <authors>
+	<author person="chakarov"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+	<proceedings event="sas14" />
+      </howpub>
+      <abstract>
+	<p></p>
+      </abstract>
+    </pub>
+    <pub id="hoo-sas14">
+      <title>Automatic Analysis of Open Objects in Dynamic Language Programs</title>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/hoo-sas14.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="sas14" />
+      </howpub>
+      <abstract>
+	<p>In dynamic languages, objects are <em>open</em>&emdash;they support iteration over and dynamic addition/deletion of their attributes. Open objects, because they have an unbounded number of attributes, are difficult to abstract without a priori knowledge of all or nearly all of the attributes and thus pose a significant challenge for precise static analysis. To address this challenge, we present the HOO (Heap with Open Objects) abstraction that can precisely represent and infer properties about open-object-manipulating programs without any knowledge of specific attributes.  It achieves this by building upon a relational abstract domain for sets that is used to reason about partitions of object attributes.  An implementation of the resulting static analysis is used to verify specifications for dynamic language framework code that makes extensive use of open objects, thus demonstrating the effectiveness of this approach.</p>
+      </abstract>
+    </pub>
+    <pub id="sepdom-sas14">
+      <title>An Abstract Domain Combinator for Separately Conjoining Memory Abstractions</title>
+      <authors>
+	<author person="toubhans"/>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/sepdom-sas14.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="sas14" />
+      </howpub>
+      <abstract>
+	<p>The breadth and depth of heap properties that can be inferred by the union of today's shape analyses is quite astounding.  Yet, achieving scalability while supporting a wide range of complex data structures in a generic way remains a long-standing challenge. In this paper, we propose a way to side-step this issue by defining a generic abstract domain combinator for combining memory abstractions on disjoint regions. In essence, our abstract domain construction is to the separating conjunction in separation logic as the reduced product construction is to classical, non-separating conjunction. This approach eases the design of the analysis as memory abstract domains can be re-used by applying our separating conjunction domain combinator. And more importantly, this combinator enables an analysis designer to easily create a combined domain that applies computationally-expensive abstract domains only where it is required.</p>
+      </abstract>
+    </pub>
+    <pub id="quicr-cav14">
+      <title>QUICr: A Reusable Library for Parametric Abstraction of Sets and Numbers</title>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/quicr-cav14.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="cav14" />
+      </howpub>
+      <abstract>
+	<p>This paper introduces QUICr, an abstract domain combinator library that lifts any domain for numbers into an efficient domain for numbers and <em>sets</em> of numbers.  As a library, it is useful for inferring relational data invariants in programs that manipulate data structures.  As a testbed, it allows easy extension of widening and join heuristics, enabling adaptations to new and varied applications.  In this paper we present the architecture of the library, guidelines on how to select heuristics, and an example instantiation of the library using the Apron library to verify set-manipulating programs.</p>
+      </abstract>
+    </pub>
     <pub id="vmv-pldi14">
       <title>Verification Modulo Versions: Towards Usable Verification</title>
       <authors>
@@ -1640,6 +1744,25 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<proceedings event="vmcai14" />
       </howpub>
       <abstract>
+	<p>Precise heap reachability information is a prerequisite for many
+  static verification clients. However, the typical scenario is that
+  the available heap information, computed by say an up-front
+  points-to analysis, is not precise enough for the client of
+  interest. This imprecise heap information in turn leads to a deluge
+  of false alarms for the tool user to triage. Our position is to
+  approach the false alarm problem not just by improving the up-front
+  analysis but by also employing after-the-fact, goal-directed
+  <em>refutation analyses</em> that yield targeted precision
+  improvements. We have investigated refutation analysis in the
+  context of detecting statically a class of Android memory leaks. For
+  this client, we have found the necessity for an overall analysis
+  capable of path-sensitive reasoning interprocedurally and with
+  strong updates---a level of precision difficult to achieve globally
+  in an up-front manner. Instead, our approach uses a
+  refutation analysis that mixes highly precise, goal-directed
+  reasoning with facts derived from the up-front analysis
+  to prove alarms false and thus enabling effective and sound
+  filtering of the overall list of alarms.</p>
       </abstract>
       <bibnote>
 	<b>Invited contribution</b>.
@@ -1651,10 +1774,15 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
+      <urls>
+	<url name="pdf">papers/shapenumeric-sairp13.pdf</url>
+      </urls>
       <howpub>
 	<proceedings event="sairp13" />
       </howpub>
       <abstract>
+	<p>The aim of static analysis is to infer invariants about programs that are precise enough to establish semantic properties, such as the absence of run-time errors. Broadly speaking, there are two major branches of static analysis for imperative programs.  Pointer and <em>shape</em> analyses focus on inferring properties of pointers, dynamically-allocated memory, and recursive data structures, while <em>numeric</em> analyses seek to derive invariants on numeric values. Although simultaneous inference of shape-numeric invariants is often needed, this case is especially challenging and is not particularly well explored.  Notably, simultaneous shape-numeric inference raises complex issues in the design of the static analyzer itself.
+In this paper, we study the construction of such shape-numeric, static analyzers. We set up an abstract interpretation framework that allows us to reason about simultaneous shape-numeric properties by combining shape and numeric abstractions into a modular, expressive abstract domain.  Such a modular structure is highly desirable to make its formalization and implementation easier to do and get correct. To achieve this, we choose a concrete semantics that can be abstracted step-by-step, while preserving a high level of expressiveness.  The structure of abstract operations (i.e., transfer, join, and comparison) follows the structure of this semantics.  The advantage of this construction is to divide the analyzer in modules and functors that implement abstractions of distinct features.</p>
       </abstract>
     </pub>
     <pub id="concursyn-cav13">
@@ -3369,7 +3497,12 @@ an application example.</p>
     <series id="cav">
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
-     <event id="cav13">
+      <event id="cav14">
+	<date>2014-07</date>
+	<location>Vienna, Austria</location>
+	<url>http://cavconference.org/</url>
+      </event>
+      <event id="cav13">
 	<date>2013-07</date>
 	<location>Saint Petersburg, Russia</location>
 	<url>http://cav2013.forsyte.at/</url>
@@ -3443,6 +3576,12 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas14">
+	<date>2014-09</date>
+	<location>Munich, Germany</location>
+	<nth>Twenty-First</nth>
+	<url>http://cs.uni-muenster.de/sev/sas14/</url>
+      </event>
       <event id="sas12">
 	<date>2012-09</date>
 	<location>Deauville, France</location>

@@ -339,7 +339,7 @@ name="html" />
 <xsl:template match="student">
   <tr>
     <td>
-      <xsl:apply-templates select="key('person', @person)" />
+      <xsl:apply-templates select="key('person', @person)" mode="detail" />
     </td>
     <td>
       <p>
