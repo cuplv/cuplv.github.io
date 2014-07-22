@@ -118,6 +118,18 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<a href="https://www.facebook.com/notes/facebook-fellowship-program/announcing-the-facebook-graduate-fellowship-2014-2015-winners/1516002375292350">2014-2015 Facebook Graduate Fellowship</a>!
       </news-detail>
     </news>
+    <news date="2014.02.05" id="paper-pldi14">
+      <news-snippet>
+	Paper by <ref table="pub" key="vmv-pldi14" mode="authors"/>
+	accepted to <ref table="event" key="pldi14"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV author <ref table="person" key="blackshear"/>
+	with collaborators
+	have had a paper "<ref table="pub" key="vmv-pldi14"/>"
+	accepted for presentation at <ref table="event" key="pldi14"/> in June.
+      </news-detail>
+    </news>
     <news date="2014.01.22" id="coughlin-popl14">
       <news-snippet>
 	<ref table="person" key="coughlin"/> presenting at
