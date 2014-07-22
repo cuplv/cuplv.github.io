@@ -1,6 +1,6 @@
 HTML_OUTPUT = index.html news.html papers.html people.html projects.html $(wildcard papers/*.html)
 WORDS_OUTPUT = $(wildcard clouds/*.words.txt) $(wildcard clouds/*.words.png)
-OUTPUT = $(HTML_OUTPUT) $(WORDS_OUTPUT)
+OUTPUT = $(HTML_OUTPUT) $(WORDS_OUTPUT) $(wildcard papers/*.pdf)
 SAXON = java -jar bin/saxon8.jar
 INCLUDE = pl.keys.xsl
 DATA = pl.xml
@@ -14,8 +14,7 @@ really-clean:
 	rm -f $(WORDS_OUTPUT)
 
 commit: html
-	svn add $(OUTPUT)
-	svn commit
+	svn add $(OUTPUT); svn commit
 
 html: pl.html.log words
 
