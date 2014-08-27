@@ -102,7 +102,16 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	have had a paper "<ref table="pub" key="quicr-cav14"/>"
 	accepted for presentation at <ref table="event" key="cav14"/> in July.
       </news-detail>
-    </news> 
+    </news>
+    <news date="2014.02.19" id="phdvisit-2014">
+      <news-snippet>
+	<a href="http://embedded-computing.com/articles/improving-system-effectiveness-model-based-development/">Press coverage</a> on S-Taliro in Embedded Computing Design.
+      </news-snippet>
+      <news-detail>
+	S-Taliro developed by <ref table="person" key="srirams"/> and collaborators receives <a href="http://embedded-computing.com/articles/improving-system-effectiveness-model-based-development/">press coverage</a>
+	in Embedded Computing Design.
+      </news-detail>
+    </news>    
     <news date="2014.02.19" id="phdvisit-2014">
       <news-snippet>
 	Prospective Ph.D. students visit February 21. Welcome!
@@ -1671,7 +1680,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
     <pub id="sepdom-sas14">
       <title>An Abstract Domain Combinator for Separately Conjoining Memory Abstractions</title>
       <authors>
-	<author person="toubhans"/>
+	<author person="toubhans" student="y" />
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
@@ -1688,7 +1697,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
     <pub id="quicr-cav14">
       <title>QUICr: A Reusable Library for Parametric Abstraction of Sets and Numbers</title>
       <authors>
-	<author person="cox"/>
+	<author person="cox" student="y" />
 	<author person="bec"/>
 	<author person="srirams"/>
       </authors>
@@ -1874,7 +1883,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
     <pub id="quicgraphs-ecoop13">
       <title>QUIC Graphs: Relational Invariant Generation for Containers</title>
       <authors>
-	<author person="cox"/>
+	<author person="cox" student="y" />
 	<author person="bec"/>
 	<author person="srirams"/>
       </authors>
@@ -1926,7 +1935,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
     <pub id="thresher-pldi13">
       <title>Thresher: Precise Refutations for Heap Reachability</title>
       <authors>
-	<author person="blackshear"/>
+	<author person="blackshear" student="y" />
 	<author person="bec"/>
 	<author person="msridhar"/>
       </authors>
