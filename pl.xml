@@ -6,6 +6,31 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.09.12" id="radhia-cousot-award-2014">
+      <news-snippet>
+	<ref table="person" key="chakarov"/> wins
+	the Radhia Cousot Young Researcher Best Paper Award
+	at <ref table="event" key="sas14"/>.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="chakarov"/>
+	wins 
+	the Radhia Cousot Young Researcher Best Paper Award
+	at <ref table="event" key="sas14"/>
+	for his paper
+	"<ref table="pub" key="expectation-sas14"/>"
+	co-authored with
+	<ref table="person" key="srirams"/>.
+      </news-detail>
+      <news-page header="Radhia Cousot Young Researcher Best Paper Award">
+	<p>
+	<float img="pics/chakarov-radhia-cousot-award-2014.jpg">
+	  Aleks Chakarov with his award!
+	</float>
+	Congratulations, Aleks!
+	</p>
+      </news-page>      
+    </news>
     <news date="2014.07.10" id="postdoc-call-2014">
       <news-snippet>
 	Call for Postdoc <a href="news.html#postdoc-call-2014">applicants</a> for Fall 2014.
@@ -1704,6 +1729,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <urls>
 	<url name="pdf">papers/quicr-cav14.pdf</url>
       </urls>
+      <pages>866-873</pages>
+      <doi>10.1007/978-3-319-08867-9_57</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-319-08867-9_57</ee>
       <howpub>
 	<proceedings event="cav14" />
       </howpub>
@@ -1723,6 +1751,27 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<proceedings event="pldi14" />
       </howpub>
     </pub>
+    <pub id="outlier-chi-ext14">
+      <title>Android Apps Consistency Scrutinized</title>
+      <authors>
+	<author person="kalharbi" student="y"/>
+	<author person="blackshear" student="y"/>
+	<author person="ekowalczyk" student="y"/>
+	<author person="amemon"/>
+	<author person="bec"/>
+	<author person="yeh"/>
+      </authors>
+      <urls>
+      </urls>
+      <pages>2347-2352</pages>
+      <doi>10.1145/2559206.2581352</doi>
+      <ee>http://doi.acm.org/10.1145/2559206.2581352</ee>
+      <howpub>
+	<proceedings event="chi-ext14" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="fissile-popl14">
       <title>Fissile Type Analysis: Modular Checking of Almost Everywhere Invariants</title>
       <authors>
@@ -1732,6 +1781,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <urls>
 	<url name="pdf">papers/fissile-popl14.pdf</url>
       </urls>
+      <pages>73-86</pages>
+      <doi>10.1145/2535838.2535855</doi>
+      <ee>http://doi.acm.org/10.1145/2535838.2535855</ee>
       <howpub>
 	<proceedings event="popl14" />
       </howpub>
@@ -2047,16 +2099,15 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       <urls>
 	<url name="pdf">papers/sttt13-filter_verification.pdf</url>
       </urls>
-      <pages>16 pages</pages>
+      <pages>175-190</pages>
       <doi>10.1007/s10009-013-0279-9</doi>
       <ee>http://dx.doi.org/10.1007/s10009-013-0279-9</ee>
       <howpub>
 	<issue journal="sttt" />
-	<date>2013-6</date>
+	<date>2014</date>
+	<volume>16</volume>
+	<number>2</number>
       </howpub>
-      <bibnote>
-	Published online first, not yet assigned issue for print.
-      </bibnote>
       <abstract>
 	<p>Fixed point digital filters are simple yet ubiquitous components of a
 	wide variety of digital processing and control systems. Common errors
@@ -3522,6 +3573,8 @@ an application example.</p>
 	<date>2014-07</date>
 	<location>Vienna, Austria</location>
 	<url>http://cavconference.org/</url>
+	<acceptance>57/229</acceptance>
+	<acceptanceRate>24.9%</acceptanceRate>
       </event>
       <event id="cav13">
 	<date>2013-07</date>
@@ -3778,7 +3831,17 @@ an application example.</p>
       <name>Human Factors in Computing Systems</name>
       <longPrefix>ACM SIGCHI Conference on</longPrefix>
       <event id="chi14">
-        <date>2014</date>	
+        <date>2014-04</date>	
+	<url>http://chi2014.acm.org/</url>
+	<location>Toronto, Ontario, Canada</location>
+      </event>
+    </series>
+    <series id="chi-ext" type="workshop">
+      <name>Extended Abstracts at <ref table="series" key="chi"/></name>
+      <event id="chi-ext14">
+	<date>2014-04</date>
+	<url>http://chi2014.acm.org/</url>
+	<location>Toronto, Ontario, Canada</location>
       </event>
     </series>
     <series id="tldi" type="workshop">

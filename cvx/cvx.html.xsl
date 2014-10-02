@@ -229,6 +229,7 @@ name="html" />
     <xsl:apply-templates select="news-snippet" mode="get-detail" />
   </p>
   <xsl:apply-templates select="(news-snippet|news-detail)[last()]/following-sibling::*" />
+  <div class="clearer"></div>
 </xsl:template>
 
 <xsl:template match="news-snippet" mode="as-item">
@@ -284,7 +285,16 @@ name="html" />
 </xsl:template>
 <xsl:template match="float">
   <div class="float-right">
-    <xsl:apply-templates select="child::node()" />
+  <xsl:choose>
+    <xsl:when test="@img">
+      <xsl:variable name="imgsrc" select="@img"/>
+      <xsl:variable name="imgalt" select="child::text()"/>
+      <img src="{$imgsrc}" alt ="{$imgalt}" class="article"></img>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:apply-templates select="child::node()" />
+    </xsl:otherwise>
+  </xsl:choose>
   </div>    
 </xsl:template>
 
@@ -753,7 +763,10 @@ name="html" />
     <xsl:value-of select="longPrefix" />
     &space;
   </xsl:if>
-  <xsl:value-of select="name" />
+  <xsl:apply-templates select="name/child::node()" />
+</xsl:template>
+<xsl:template match="series" mode="ref">
+  <xsl:apply-templates select="." />
 </xsl:template>
 <xsl:template match="series" mode="abbrev">
   <xsl:choose>
@@ -767,6 +780,7 @@ name="html" />
     </xsl:otherwise>
   </xsl:choose>
 </xsl:template>
+  
 
 <xsl:template match="series" mode="long">
   <xsl:param name="sub" />
