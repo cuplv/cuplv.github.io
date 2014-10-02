@@ -6,6 +6,44 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.10.02" id="dimoulas-seminar-2014">
+      <news-snippet>
+	<ref table="person" key="cdimoulas"/> visits October 7.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="cdimoulas"/> from
+	Harvard
+	is visiting us on October 7, 2014. He is giving a
+	CUPLV Seminar
+	entitled
+	"Behavioral contracts and security"
+	at 11:00am
+	in ECCR	151 on Tuesday, October 7, 2014.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="cdimoulas"/></speaker>
+	<affiliation>Harvard University</affiliation>
+	<when>10-02-2014 11:00</when>
+	<where>ECCR 151</where>
+	<title>
+	  Behavioral contracts and security
+	</title>
+	<abstract>
+	  <p>
+	  Behavioral contracts are a widely used specification tool for software components, which enrich interface information with logical assertions. The rigorous enforcement of contracts provides to programmers precise guarantees about a program's execution, and offers useful feedback for debugging upon contract violations. However, almost all of research on contracts focuses on contracts as a specification tool for partial correctness of programs and ignores another vital requirement of modern software; security.
+	  </p>
+          <p>In this talk, I will demonstrate how contracts can specify and enforce security policies. Specifically, I will focus on two applications of contracts in capability-based security. First, I will describe Shill; a secure shell scripting language where contracts specify and enforce
+policies about which OS resources scripts intend to use and how they use them. This way, Shill's contracts help script authors and users to adhere to the principle of least privilege. Second, I will present a contract system that complements the contract system of Shill by
+describing and enforcing declarative policies for the flow of capabilities between components. This manner, components can specify not only what capabilities they require from their users, but also how they intend to share these capabilities with other components.
+          </p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="cdimoulas"/>
+	  is a Postdoctoral Fellow in Computer Science at the School of Engineering and Applied Sciences of Harvard University working with Stephen Chong and his group. Before coming to Harvard, Christos completed a PhD in Computer Science at the College of Computer and Information Science of Northeastern University under the supervision of Matthias Felleisen. Christos is interested in the design and semantics of programming languages. More specifically, his goal is to develop programming languages technology that facilitates the construction of secure and robust component-based software systems.
+	  </p>
+	</bio>
+      </talk-announcement>
+    </news>
     <news date="2014.09.12" id="radhia-cousot-award-2014">
       <news-snippet>
 	<ref table="person" key="chakarov"/> wins
@@ -3463,7 +3501,12 @@ an application example.</p>
       <name>Eric Schkufza</name>
       <url>http://cs.stanford.edu/people/eschkufz/</url>
       <face>pics/eschkufza.jpg</face>
-    </person> 
+    </person>
+    <person id="cdimoulas">
+      <name>Christos Dimoulas</name>
+      <url>http://people.seas.harvard.edu/~chrdimo/</url>
+      <face>pics/cdimoulas.jpg</face>
+    </person>
   </persons>
 
   <events>
