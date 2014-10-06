@@ -23,7 +23,7 @@
       <talk-announcement>
 	<speaker><ref table="person" key="cdimoulas"/></speaker>
 	<affiliation>Harvard University</affiliation>
-	<when>10-02-2014 11:00</when>
+	<when>10-07-2014 11:00</when>
 	<where>ECCR 151</where>
 	<title>
 	  Behavioral contracts and security
@@ -3498,11 +3498,11 @@ an application example.</p>
       <name>Manuel Fähndrich</name>
     </person>
     <person id="eschkufza">
+    <person id="cdimoulas">                                                  
       <name>Eric Schkufza</name>
       <url>http://cs.stanford.edu/people/eschkufz/</url>
       <face>pics/eschkufza.jpg</face>
     </person>
-    <person id="cdimoulas">
       <name>Christos Dimoulas</name>
       <url>http://people.seas.harvard.edu/~chrdimo/</url>
       <face>pics/cdimoulas.jpg</face>
