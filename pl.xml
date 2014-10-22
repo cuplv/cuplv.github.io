@@ -6,6 +6,38 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.10.15" id="faculty-2014">
+      <news-snippet>
+	Multiple <a href="news.html#faculty-2014">tenure-track openings</a> in CS, including in <em>secure and reliable software systems</em>. 
+      </news-snippet>
+      <news-detail>
+        Please consider applying or encourage your students and postdocs to apply for a tenure-track position in the Department of Computer Science at the University of Colorado Boulder. We have multiple openings with one particular interest area being <em>secure and reliable software systems</em>.
+        Applications will be evaluated beginning on December 1, 2014, will continue until the position is filled, and are to be submitted on-line at <a href="http://www.jobsatcu.com/postings/89652">http://www.jobsatcu.com/postings/89652</a>.
+      </news-detail>
+      <news-page header="Tenure-Track Position">
+	<p>
+	The Department of Computer Science (CS) at the University of Colorado Boulder seeks outstanding candidates, for multiple tenure-track positions. The openings are targeted at the level of Assistant Professor, although exceptional candidates at higher ranks may be considered. Research areas of particular interest include the areas of secure and reliable software systems, numerical optimization and high-performance scientific computing, and network science and machine learning.
+	</p>
+	<p>
+Candidates for these positions must demonstrate excellence in both research and teaching, have a strong interest in interdisciplinary collaboration, and aim to lead a highly visible, externally funded research program. Candidates must have a Ph.D. in computer science or a related discipline and must show promise in their ability to develop an independent and internationally recognized research program. They must also display a demonstrated commitment to teaching and working with both undergraduate and graduate students.
+	</p>
+	<p>
+Applications will be evaluated beginning on December 1, 2014 and will continue until the position is filled. Applications must include a cover letter specifying the applicant’s areas of specialization and describing their interest in the Department of Computer Science at CU Boulder. Applications must also include a curriculum vitae, statements of research and teaching interests, and names and contact information for three references.
+	</p>
+	<p>
+The Department’s research and education efforts interact broadly with many interdisciplinary programs and collaborators in the Boulder area, including national labs at NIST, NOAA, NREL, and NCAR, and CU Boulder research institutes including the BioFrontiers Institute and the Institute for Cognitive Science. The Department also has extensive ties with the thriving local tech community and inhabits a picturesque location in the foothills of the Rocky Mountains.
+	</p>
+	<p>
+The University of Colorado Boulder is an Equal Opportunity Employer committed to building a diverse workforce. We encourage applications from women, racial and ethnic minorities, individuals with disabilities and veterans. Alternative formats of this ad can be provided upon request for individuals with disabilities by contacting the ADA Coordinator at <a href="mailto:hrada@colorado.edu">hrada@colorado.edu</a>.
+	</p>
+	<p>
+The University of Colorado Boulder is committed to providing a safe and productive learning and living community. To achieve that goal, we conduct background investigations for all final applicants being considered for employment. Background investigations include reference checks, a criminal history record check, and when appropriate, a financial and/or motor vehicle history.
+	</p>
+	<p>
+Applications must be submitted on-line at <a href="http://www.jobsatcu.com/postings/89652">http://www.jobsatcu.com/postings/89652</a>.
+	</p>
+      </news-page>
+    </news>     
     <news date="2014.10.02" id="dimoulas-seminar-2014">
       <news-snippet>
 	<ref table="person" key="cdimoulas"/> visits October 7.
