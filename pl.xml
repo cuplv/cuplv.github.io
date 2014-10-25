@@ -6,6 +6,32 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.10.24" id="splash-src-2014">
+      <news-snippet>
+	<ref table="person" key="coughlin"/>
+        comes in second at the <ref table="event" key="splash-src14"/>.
+      </news-snippet>
+    </news> 
+    <news date="2014.10.16" id="emsoft-award-2014">
+      <news-snippet>
+	<ref table="person" key="adityaz"/> and <ref table="person" key="srirams"/>
+	receive the best paper award at <ref table="event" key="emsoft14"/>.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="adityaz"/> and <ref table="person" key="srirams"/>
+	receive the best paper award
+	for their paper
+	"<ref table="pub" key=""/>
+	at <rev table="event" key="emsoft14"/>.
+      </news-detail>
+      <news-page header="EMSOFT 2014 Best Paper Award">
+	<p>
+	The conference on embedded software was held in New Delhi this year as part of a broader series of conferences called Embedded Systems week (ESWeek).
+	120 papers were submitted, 29 were accepted, and one paper was given this award.
+	More details at <a href="http://esweek.acm.org/bestpaper.shtml">http://esweek.acm.org/bestpaper.shtml</a>.
+	</p>
+      </news-page>      
+    </news>
     <news date="2014.10.15" id="faculty-2014">
       <news-snippet>
 	Multiple <a href="news.html#faculty-2014">tenure-track openings</a> in CS, including in <em>secure and reliable software systems</em>. 
@@ -173,6 +199,21 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	</bio>
       </talk-announcement>
     </news>
+    <news date="2014.06.27" id="paper-emsoft">
+        <news-snippet>
+	Two papers with CUPLV authors accepted to <ref table="event" key="emsoft14"/>!
+	[<ref table="pub" key="controller-emsoft14" text="1"/>,
+	 <ref table="pub" key="shooting-emsoft14" text="2"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV authors
+	<ref table="person" key="hravanbakhsh"/>, <ref table="person" key="adityaz"/>, and <ref table="person" key="srirams"/>
+	with collaborators 
+	have had papers
+	accepted for presentation at <ref table="event" key="emsoft14"/> in October (<ref table="pub" key="controller-emsoft14" mode="authors"/>,
+	and <ref table="pub" key="shooting-emsoft14" mode="authors"/>).
+      </news-detail>
+    </news>        
     <news date="2014.06.01" id="paper-sas14">
       <news-snippet>
 	Three papers with CUPLV authors accepted to <ref table="event" key="sas14"/>!
@@ -1743,7 +1784,41 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
-     <pub id="expectation-sas14">
+    <pub id="controller-emsoft14">
+      <title>Infinite Horizon Safety Controller Synthesis through Disjunctive Polyhedral Abstract Interpretation</title>
+      <authors>
+	<author person="hravanbakhsh"/>
+	<author person="srirams"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/emsoft14-synthesis.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="emsoft14" />
+      </howpub>
+      <abstract>
+	<p>This paper presents a controller synthesis approach using disjunctive polyhedral abstract interpretation. Our approach synthesizes infinite time-horizon controllers for safety properties with discrete-time, linear plant model and a switching feedback controller that is suitable for time-triggered implementations. The core idea behind our approach is to perform an abstract interpretation over disjunctions of convex polyhedra to identify states that are potentially uncontrollable. Complementing this set yields the set of controllable states, starting from which, the safety property can be guaranteed by an appropriate control function. Since, a straightforward disjunctive domain is computationally inefficient, we present an abstract domain based on a state partitioning scheme that allows us to efficiently control the complexity of the intermediate representations. Next, we focus on the automatic generation of controller implementation from our final fixed point. We show that a balanced tree approach can yield efficient controller code with guarantees on the worst-case execution time of the controller. Finally, we evaluate our approach on a suite of benchmarks, comparing different instantiations with related synthesis tools. Our evaluation shows that our approach can successfully synthesize controller implementations for small to medium sized benchmarks.</p>
+      </abstract>
+    </pub>
+    <pub id="shooting-emsoft14">
+      <title>Multiple Shooting, CEGAR-based Falsification for Hybrid Systems</title>
+      <authors>
+	<author person="adityaz"/>
+	<author person="srirams"/>
+	<author person="jdeshmukh"/>
+	<author person="jkapinski"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/emsoft14-multipleShooting.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="emsoft14" />
+      </howpub>
+      <abstract>
+	<p>In this paper, we present an approach for finding violations of safety properties of hybrid systems. Existing approaches search for complete system trajectories that begin from an initial state and reach some unsafe state. We present an approach that searches over segmented trajectories, consisting of a sequence of segments starting from any system state. Adjacent segments may have gaps, which our approach then seeks to narrow iteratively. We show that segmented trajectories are actually paths in the abstract state graph obtained by tiling the state space with cells. Instead of creating the prohibitively large abstract state graph explicitly, our approach implicitly performs a randomized search on it using a {em scatter-and-simulate} technique. This involves repeated simulations, graph search to find likeliest abstract counterexamples, and iterative refinement of the abstract state graph. Finally, we demonstrate our technique on a number of case studies ranging from academic examples to models of industrial-scale control systems.</p>
+      </abstract>
+    </pub>
+    <pub id="expectation-sas14">
       <title>Expectation Invariants for Probabilistic Program Loops as Fixed Points</title>
       <authors>
 	<author person="chakarov"/>
@@ -1824,7 +1899,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<proceedings event="pldi14" />
       </howpub>
     </pub>
-    <pub id="outlier-chi-ext14">
+    <pub id="outlier-chi-ea14">
       <title>Android Apps Consistency Scrutinized</title>
       <authors>
 	<author person="kalharbi" student="y"/>
@@ -1840,7 +1915,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <doi>10.1145/2559206.2581352</doi>
       <ee>http://doi.acm.org/10.1145/2559206.2581352</ee>
       <howpub>
-	<proceedings event="chi-ext14" />
+	<proceedings event="chi-ea14" />
       </howpub>
       <abstract>
       </abstract>
@@ -3210,6 +3285,10 @@ an application example.</p>
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
+    <person id="hravanbakhsh" group="phd">
+      <name>Hadi Ravanbakhsh</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="creichen" group="phd-alumni">
       <name>Christoph Reichenbach</name>
       <url>http://www.cs.umass.edu/~creichen/</url>
@@ -3537,13 +3616,19 @@ an application example.</p>
       <url>http://cs.stanford.edu/people/eschkufz/</url>
       <face>pics/eschkufza.jpg</face>
     </person>
-    <person id="cdimoulas">                                                  
+    <person id="cdimoulas">
       <name>Christos Dimoulas</name>
       <url>http://people.seas.harvard.edu/~chrdimo/</url>
       <face>pics/cdimoulas.jpg</face>
     </person>
+    <person id="jdeshmukh">
+      <name>Jyotirmoy V. Deshmukh</name>
+      <url>http://www.cs.utexas.edu/~deshmukh/</url>
+    </person>
+    <person id="jkapinski">
+      <name>James Kapinski</name>
+    </person>
   </persons>
-
   <events>
     <series id="popl">
       <name>Principles of Programming Languages</name>
@@ -3914,9 +3999,18 @@ an application example.</p>
 	<location>Toronto, Ontario, Canada</location>
       </event>
     </series>
-    <series id="chi-ext" type="workshop">
+    <series id="emsoft">
+      <name>Embedded Software</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="emsoft14">
+        <date>2014-10</date>	
+	<url>http://esweek.acm.org/emsoft/</url>
+	<location>New Delhi, India</location>
+      </event>
+    </series>
+    <series id="chi-ea" type="workshop">
       <name>Extended Abstracts at <ref table="series" key="chi"/></name>
-      <event id="chi-ext14">
+      <event id="chi-ea14">
 	<date>2014-04</date>
 	<url>http://chi2014.acm.org/</url>
 	<location>Toronto, Ontario, Canada</location>
@@ -4026,7 +4120,7 @@ an application example.</p>
 	<location>Dublin, Ireland</location>
       </event>
     </series>
-    <series id="fractal">
+    <series id="fractal" type="workshop">
       <name>Front Range Architecture Compilers Tools and Languages Workshop</name>
       <event id="fractal-f09">
 	<date>F2009</date>
@@ -4034,7 +4128,7 @@ an application example.</p>
 	<location>Boulder, Colorado, USA</location>
       </event>
     </series>
-    <series id="mvd">
+    <series id="mvd" type="workshop">
       <name>Midwest Verification Day</name>
       <event id="mvd12">
 	<date>2012-09</date>
@@ -4042,6 +4136,24 @@ an application example.</p>
 	<location>Lawrence, Kansas, USA</location>
       </event>
     </series>
+    <series id="sairp" type="workshop">
+      <name>Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. Schmidt on the Occasion of his Sixtieth Birthday</name>
+      <issue journal="eptcs"/>
+      <event id="sairp13">
+	<date>2013-09</date>
+	<location>Manhattan, Kansas, USA</location>
+	<volume>129</volume>
+      </event>
+    </series>
+    <series id="splash-src" type="workshop">
+      <name>Systems, Programming, Languages and Applications: Software for Humanity</name>
+      <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="splash-src14">
+	<date>2014-10</date>
+	<location>Portland, Oregon, USA</location>
+	<url>http://2014.splashcon.org/track/splash2014-src</url>
+      </event>
+    </series> 
     <series id="cs-colloquium">
       <name>University of Colorado Boulder Computer Science Colloquium</name>
       <abbrev>CU CS Colloquium</abbrev>
@@ -4075,15 +4187,6 @@ an application example.</p>
        <date>2010-04</date>
        <url>http://www.cgo.org/cgo2010/</url>
      </event>
-    </series>
-    <series id="sairp">
-      <name>Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. Schmidt on the Occasion of his Sixtieth Birthday</name>
-      <issue journal="eptcs"/>
-      <event id="sairp13">
-	<date>2013-09</date>
-	<location>Manhattan, Kansas, USA</location>
-	<volume>129</volume>
-      </event>
     </series>
   </events>
   
