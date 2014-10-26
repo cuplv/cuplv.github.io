@@ -21,7 +21,7 @@
 	<ref table="person" key="adityaz"/> and <ref table="person" key="srirams"/>
 	receive the best paper award
 	for their paper
-	"<ref table="pub" key="shooting-emsoft14"/>
+	"<ref table="pub" key="shooting-emsoft14"/>"
 	at <ref table="event" key="emsoft14"/>.
       </news-detail>
       <news-page header="EMSOFT 2014 Best Paper Award">
