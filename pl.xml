@@ -2373,6 +2373,14 @@ In this paper, we study the construction of such shape-numeric, static analyzers
         between computing candidate invariants and creating reﬂective
         abstractions.</p>
       </abstract>
+      <note>
+	 <tr>
+	    <extendedtr/>
+	    <number>CU-CS-1094-12</number>
+	    <institute>University of Colorado Boulder</institute>
+	    <url>papers/CU-CS-1094-12-reflective.pdf</url>
+	 </tr>
+      </note>
     </pub>
     <pub id="enforcements-issta12">
       <title>Measuring Enforcement Windows with Symbolic Trace Interpretation: What Well-Behaved Programs Say</title>
