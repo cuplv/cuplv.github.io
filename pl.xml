@@ -6,6 +6,142 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.11.30" id="lryzhyk-seminar-2014">
+      <news-snippet>
+	<ref table="person" key="lryzhyk"/> visits December 5.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="lryzhyk"/> from
+	Carnegie Mellon University
+	is visiting us on December 5, 2014. He is giving a
+	CUPLV Seminar
+	entitled
+	"Automatic Device Driver Synthesis"
+	at 4:00pm
+	in ECOT 831 on Friday, December 5, 2014.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="lryzhyk"/></speaker>
+	<affiliation>Carnegie Mellon University</affiliation>
+	<when>12-05-2014 16:00</when>
+	<where>ECOT 831</where>
+	<title>Automatic Device Driver Synthesis</title>
+	<abstract>
+	  <p>Automatic device driver synthesis is a radical approach to
+creating drivers faster and with fewer defects by generating them
+automatically based on hardware device specifications. I will present
+the design and implementation of a new driver synthesis toolkit, called
+Termite. Termite is the first tool to combine the power of automation
+with the flexibility of conventional development. It is also the first
+practical synthesis tool based on abstraction refinement. Finally, it is
+the first synthesis tool to support automated debugging of input
+specifications. I will explain the main principles behind the tool and
+give a brief demo of its capabilities.
+	  </p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="lryzhyk"/> is a postdoctoral researcher in the Carnegie Mellon
+University School of Computer Science.  Leonid's research focuses on
+applying rigorous formal techniques to the design, implementation, and
+verification of operating systems.  He received his PhD from the
+University of New South Wales in 2010.  Prior to joining CMU, Leonid
+worked as a researcher at NICTA and a postdoctoral fellow at the
+University of Toronto.
+	  </p>
+	</bio>
+	<host><ref table="person" key="cernyp"/></host>
+      </talk-announcement>
+    </news>    
+    <news date="2014.11.30" id="msridhar-seminar-2014">
+      <news-snippet>
+	<ref table="person" key="msridhar"/> visits December 3.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="msridhar"/> from
+	Samsung Research America
+	is visiting us on December 3, 2014. He is giving a
+	CUPLV Seminar
+	entitled
+	"MemInsight: Platform-Independent Memory Profiling for JavaScript"
+	at 4:00pm
+	in ECCR 116 on Wednesday, December 3, 2014.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="msridhar"/></speaker>
+	<affiliation>Samsung Research America</affiliation>
+	<when>12-03-2014 16:00</when>
+	<where>ECCR 116</where>
+	<title>MemInsight: Platform-Independent Memory Profiling for JavaScript</title>
+	<abstract>
+	  <p>JavaScript programs tend to suffer from memory issues that can either hurt performance, or worse, make programs crash due to slow exhaustion of memory. We present a new memory profiling tool MemInsight for JavaScript applications, including web applications. MemInsight is platform independent: it employs source-code instrumentation to generate a trace of memory allocations and accesses, and it uses standard browser features to track precise information for DOM (document object model) objects. The information thus collected enables detailed, time-varying analysis of memory behavior, including that of DOM objects.
+	  </p>
+	  <p>We describe several client analyses built into MemInsight. For instance, it points out situations in which there may be a memory leak, and it reports opportunities for replacing dynamic allocation with stack allocation. MemInsight is extensible to custom analyses as well. Our experimental evaluation showed that our client analyses found interesting memory issues in several publicly available apps, and that MemInsight had reasonable overhead. 
+	  </p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="msridhar"/> is a researcher at Samsung Research America in the area of programming languages and software engineering. He received his PhD from the University of California, Berkeley in 2007. His dissertation focused on refinement-based program analysis tools. Since then, he has done research on a variety of topics in static analysis, dynamic analysis, and software engineering. He worked at IBM Research from 2008–2013.  For further details, see <a href="http://manu.sridharan.net">http://manu.sridharan.net</a>.
+	  </p>
+	</bio>
+	<host><ref table="person" key="bec"/></host>
+      </talk-announcement>
+    </news>    
+    <news date="2014.11.30" id="nnarodytska-seminar-2014">
+      <news-snippet>
+	<ref table="person" key="nnarodytska"/> visits December 1.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="nnarodytska"/> from
+	Carnegie Mellon University
+	is visiting us on December 1, 2014. She is giving a
+	CUPLV Seminar
+	entitled
+	"SAT-based Techniques for Reactive Synthesis"
+	at 3:00pm
+	in ECEE 1B55 on Monday, December 1, 2014.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="nnarodytska"/></speaker>
+	<affiliation>Carnegie Mellon University</affiliation>
+	<when>12-01-2014 15:00</when>
+	<where>ECEE 1B55</where>
+	<title>SAT-based Techniques for Reactive Synthesis</title>
+	<abstract>
+	  <p>Two-player games are a useful formalism for the synthesis of reactive
+systems. The traditional approach to solving such games iteratively
+computes the set of winning states for one of the players. This requires
+keeping track of all discovered winning states and can lead to space
+explosion even when using efficient symbolic representations.  I will
+present a new game solving method that works by exploring a subset of
+all possible concrete runs of the game and proving that these runs can
+be generalised into a winning strategy on behalf of one of the players.
+We use counterexample-guided backtracking search, inspired by the RaReQs
+QBF solver, to identify a subset of runs  that are sufficient to
+consider to solve the game. Our search procedure performs learning from
+both players' failures, gradually shrinking winning regions for both
+players.  In addition, it allows extracting compact winning/spoiling
+strategies using interpolation procedures.  We evaluate our algorithm on
+several families of benchmarks derived from real-world device driver
+synthesis problems.  Our approach outperforms  state-of-the-art BDD
+solvers on some families of benchmarks. We  demonstrated that our
+strategy extraction procedure is efficient and introduces low overhead
+on top of the main solver.
+	  </p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="nnarodytska"/> is a visiting researcher in the Carnegie Mellon
+University School of Computer Science.  She received her PhD from the
+University of New South Wales in 2011.  Nina works on developing
+efficient algorithms for decision and optimization problems.  She was
+named one of "AI's 10 to Watch" young researches in the field of AI. She
+also received an Outstanding Paper Award at AAAI 2011 and an outstanding
+program committee member award at the Australasian Joint Conference on
+Artificial Intelligence 2012. Her EvaMaxSAT Solver is a winner of the
+Ninth Evaluation of Max-SAT Solvers in 2014. 
+	  </p>
+	</bio>
+	<host><ref table="person" key="cernyp"/></host>
+      </talk-announcement>
+    </news>    
     <news date="2014.10.24" id="splash-src-2014">
       <news-snippet>
 	<ref table="person" key="coughlin"/>
@@ -3636,6 +3772,16 @@ an application example.</p>
     <person id="jkapinski">
       <name>James Kapinski</name>
     </person>
+    <person id="nnarodytska">
+      <name>Nina Narodytska</name>
+      <url>http://www.cse.unsw.edu.au/~ninan/</url>
+      <face>pics/nnarodytska.jpg</face>
+    </person>
+    <person id="lryzhyk">
+      <name>Leonid Ryzhyk</name>
+      <url>http://www.cs.cmu.edu/~ryzhyk/</url>
+      <face>pics/lryzhyk.jpg</face>
+    </person>    
   </persons>
   <events>
     <series id="popl">

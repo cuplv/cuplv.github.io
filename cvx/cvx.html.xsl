@@ -323,7 +323,7 @@ name="html" />
       </xsl:call-template>
       <h4><em><xsl:apply-templates select="title" /></em></h4>
       <xsl:call-template name="div-list">
-	<xsl:with-param name="items" select="abstract|bio" />
+	<xsl:with-param name="items" select="abstract|bio|host" />
       </xsl:call-template>
     </div>
   </div>
@@ -331,6 +331,9 @@ name="html" />
 <xsl:template match="bio">
   <h4>Biography</h4>
   <xsl:apply-templates />
+</xsl:template>
+<xsl:template match="host">
+  Hosted by <xsl:apply-templates />.
 </xsl:template>
 <xsl:template match="speaker" mode="face">
   <xsl:apply-templates select="child::node()">
