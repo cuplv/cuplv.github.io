@@ -6,6 +6,20 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.12.16" id="paper-esop15">
+      <news-snippet>
+	Two papers with CUPLV authors accepted to <ref table="event" key="esop15"/>!
+	[<ref table="pub" key="desynchronized-esop15" text="1"/>,
+	 <ref table="pub" key="wcet-esop15" text="2"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="cernyp"/>
+	with collaborators 
+	have had papers accepted for presentation at <ref table="event" key="esop15"/> in April (<ref table="pub"
+	key="desynchronized-esop15" mode="authors"/> and <ref table="pub"
+	key="wcet-esop15" mode="authors"/>).
+      </news-detail>
+    </news>    
     <news date="2014.11.30" id="lryzhyk-seminar-2014">
       <news-snippet>
 	<ref table="person" key="lryzhyk"/> visits December 5.
@@ -1920,6 +1934,36 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="desynchronized-esop15">
+      <title>Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages</title>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/desynchronized-esop15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="esop15" />
+      </howpub>
+    </pub>
+    <pub id="wcet-esop15">
+      <title>Segment Abstraction for Worst-Case Execution Time Analysis</title>
+      <authors>
+	<author person="cernyp"/>
+	<author person="tah"/>
+	<author person="lkovacs"/>
+	<author person="radhakrishna"/>
+	<author person="jzwirchmayr"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/wcet-esop15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="esop15" />
+      </howpub>
+    </pub>    
     <pub id="controller-emsoft14">
       <title>Infinite Horizon Safety Controller Synthesis through Disjunctive Polyhedral Abstract Interpretation</title>
       <authors>
@@ -2148,7 +2192,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	<author person="cernyp"/>
 	<author person="tah"/>
 	<author person="radhakrishna"/>
-	<author person="leonidr"/>
+	<author person="lryzhyk"/>
 	<author person="tarrach"/>
       </authors>
       <urls>
@@ -3511,7 +3555,7 @@ an application example.</p>
     </person>
     <person id="msridhar">
       <name>Manu Sridharan</name>
-      <url>https://researcher.ibm.com/researcher/view.php?person=us-msridhar</url>
+      <url>http://manu.sridharan.net</url>
       <face>pics/sridharan.jpg</face>
     </person>
     <person id="berdine">
@@ -3701,10 +3745,6 @@ an application example.</p>
     <person id="radhakrishna">
       <name>Arjun Radhakrishna</name>
     </person>
-    <person id="leonidr">
-      <name>Leonid Ryzhyk</name>
-      <url>http://www.cse.unsw.edu.au/~leonidr/</url>
-    </person>
     <person id="tarrach">
       <name>Thorsten Tarrach</name>
     </person>
@@ -3781,7 +3821,14 @@ an application example.</p>
       <name>Leonid Ryzhyk</name>
       <url>http://www.cs.cmu.edu/~ryzhyk/</url>
       <face>pics/lryzhyk.jpg</face>
-    </person>    
+    </person>
+    <person id="lkovacs">
+      <name>Laura Kovács</name>
+      <url>http://www.cse.chalmers.se/~laurako/</url>
+    </person>
+    <person id="jzwirchmayr">
+      <name>Jakob Zwirchmayr</name>
+    </person>
   </persons>
   <events>
     <series id="popl">
@@ -3929,6 +3976,11 @@ an application example.</p>
     <series id="esop">
       <name>European Symposium on Programming</name>
       <issue journal="lncs"/>
+      <event id="esop15">
+	<date>2015-04</date>
+	<location>London, United Kingdom</location>
+        <url>http://conf.researchr.org/home/esop-2015</url>
+      </event>
       <event id="esop11">
 	<date>2011-03</date>
 	<location>Saarbrücken, Germany</location>
