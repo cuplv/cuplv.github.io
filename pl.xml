@@ -3447,6 +3447,11 @@ an application example.</p>
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
     </person>
+    <person id="gendreau" group="phd">
+      <name>Alex Gendreau</name>
+      <url>http://www.cs.colorado.edu/~alge6158/</url>
+      <face>pics/gendreau.jpg</face>
+    </person>
     <person id="gottschlich" group="phd-alumni">
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
