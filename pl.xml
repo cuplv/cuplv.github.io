@@ -6,6 +6,11 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.02.16" id="phdvisit-2015">
+      <news-snippet>
+	Prospective Ph.D. students visit February 20. Welcome!
+      </news-snippet>
+    </news>
     <news date="2015.02.11" id="netsynth-pldi15">
       <news-snippet>
 	<ref table="pub" key="netsynth-pldi15" mode="authors"/> paper accepted to <ref table="event" key="pldi15"/>!
