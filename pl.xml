@@ -3467,6 +3467,15 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
+    <person id="yvoronin" group="postdoc">
+      <name>Mohamed Amin Ben Sassi</name>
+      <face>pics/aminbensassi.png</face>
+    </person>
+    <person id="yvoronin" group="postdoc">
+      <name>Yuen-Lam Voronin</name>
+      <url>http://www.cs.colorado.edu/~yuvo9296/</url>
+      <face>pics/yvoronin.jpg</face>
+    </person>
     <person id="belter" group="phd-alumni">
       <name>Geoffrey Belter</name>
       <face>pics/generic-male.png</face>
@@ -3476,20 +3485,16 @@ an application example.</p>
       <url>http://cs.colorado.edu/~sabl4745</url>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="blomstedt">
-      <name>Joseph Blomstedt</name>
-      <face>pics/generic-male.png</face>
-    </person>
     <person id="chakarov" group="phd">
      <name>Aleksandar Chakarov</name>
      <face>pics/chakarov.jpg</face>
     </person>
-    <person id="coughlin" group="phd">
+    <person id="coughlin" group="phd-alumni">
       <name>Devin Coughlin</name>
       <face>pics/coughlin.jpg</face>
       <url>http://www.cs.colorado.edu/~coughlid</url>
     </person>
-    <person id="cox" group="phd">
+    <person id="cox" group="phd-alumni">
       <name>Arlen Cox</name>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
@@ -3516,6 +3521,11 @@ an application example.</p>
       <url>http://www.jrmcclurg.com/</url>
       <face>pics/mcclurg.jpg</face>
     </person>
+    <person id="smeier" group="phd">
+      <name>Shawn Meier</name>
+      <url>http://www.cs.colorado.edu/~shme8881/</url>
+      <face>pics/meier.jpg</face>
+    </person>
     <person id="miao" group="phd-alumni">
       <name>Weiyu Miao</name>
       <face>pics/miao.jpg</face>
@@ -3525,7 +3535,7 @@ an application example.</p>
       <url>http://research.microsoft.com/en-us/people/toddm/</url>
       <face>pics/mytkowicz.jpg</face>
     </person>
-    <person id="nelson" group="phd">
+    <person id="nelson">
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
@@ -3538,19 +3548,15 @@ an application example.</p>
       <url>http://www.cs.umass.edu/~creichen/</url>
       <face>pics/reichenbach.png</face>
     </person>
-    <person id="tsai" group="phd">
-      <name>Yi-Fan Tsai</name>
-      <face>pics/tsai.jpg</face>
-    </person>
-    <person id="vitousek" group="phd">
+    <person id="vitousek">
       <name>Michael Vitousek</name>
       <face>pics/vitousek.jpg</face>
     </person>
-    <person id="wailes" group="phd">
+    <person id="wailes">
       <name>Chris Wailes</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="yanzhang" group="phd">
+    <person id="yanzhang" group="phd-alumni">
       <name>Yan Zhang</name>
       <face>pics/zhang.png</face>
     </person>
@@ -3558,7 +3564,7 @@ an application example.</p>
       <name>Aditya Zutshi</name>
       <face>pics/zutshi.jpg</face>
     </person>
-    <person id="quan" group="bsms">
+    <person id="quan" group="bsms-alumni">
       <name>Kira Quan</name>
       <face>pics/quan.jpg</face>
     </person>
@@ -3580,6 +3586,10 @@ an application example.</p>
       <name>Shashank Bharadwaj</name>
       <face>pics/bharadwaj.jpg</face>
     </person>
+    <person id="tsai" group="ms-alumni">
+      <name>Yi-Fan Tsai</name>
+      <face>pics/tsai.jpg</face>
+    </person>
     <person id="turner" group="ms-alumni">
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
@@ -3592,17 +3602,25 @@ an application example.</p>
       <name>Nicholas Vanderweit</name>
       <face>pics/vanderweit.jpg</face>
     </person>
-    <person id="givens" group="bs">
+    <person id="givens" group="bs-alumni">
       <name>Paul Givens</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="lapinski" group="bs">
+    <person id="khowell" group="bs">
+      <name>Kyle Howell</name>
+      <face>pics/khowell.jpg</face>
+    </person>
+    <person id="lapinski">
       <name>Nathan Lapinksi</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="vachharajani">
       <name>Manish Vachharajani</name>
       <url>http://ecee.colorado.edu/~manishv/</url>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="blomstedt">
+      <name>Joseph Blomstedt</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="arbrad">
