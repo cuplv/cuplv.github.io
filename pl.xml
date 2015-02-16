@@ -1945,6 +1945,18 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="netsynth-pldi15">
+      <title>Efficient Synthesis of Network Updates</title>
+      <authors>
+	<author person="mcclurg" />
+	<author person="hojjat" />
+	<author person="cernyp" />
+	<author person="jnfoster" />
+      </authors>
+      <howpub>
+	<proceedings event="pldi15" />
+      </howpub>
+    </pub> 
     <pub id="desynchronized-esop15">
       <title>Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages</title>
       <authors>
@@ -2009,6 +2021,20 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<p>In this paper, we present an approach for finding violations of safety properties of hybrid systems. Existing approaches search for complete system trajectories that begin from an initial state and reach some unsafe state. We present an approach that searches over segmented trajectories, consisting of a sequence of segments starting from any system state. Adjacent segments may have gaps, which our approach then seeks to narrow iteratively. We show that segmented trajectories are actually paths in the abstract state graph obtained by tiling the state space with cells. Instead of creating the prohibitively large abstract state graph explicitly, our approach implicitly performs a randomized search on it using a {em scatter-and-simulate} technique. This involves repeated simulations, graph search to find likeliest abstract counterexamples, and iterative refinement of the abstract state graph. Finally, we demonstrate our technique on a number of case studies ranging from academic examples to models of industrial-scale control systems.</p>
       </abstract>
     </pub>
+    <pub id="absdom-isola14" type="reviewed-invited">
+      <title>Construction of Abstract Domains for Heterogeneous Properties (Position Paper)</title>
+      <authors>
+	<author person="rival"/>
+	<author person="toubhans"/>
+	<author person="bec"/>
+      </authors>
+      <howpub>
+        <proceedings event="isola14" />
+      </howpub>
+      <pages>489-492</pages>
+      <doi>10.1007/978-3-662-45231-8_40</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-662-45231-8_40</ee>
+    </pub>
     <pub id="expectation-sas14">
       <title>Expectation Invariants for Probabilistic Program Loops as Fixed Points</title>
       <authors>
@@ -2037,6 +2063,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
 	<proceedings event="sas14" />
       </howpub>
+      <pages>134-150</pages>
+      <doi>10.1007/978-3-319-10936-7_9</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-319-10936-7_9</ee>
       <abstract>
 	<p>In dynamic languages, objects are <em>open</em>&emdash;they support iteration over and dynamic addition/deletion of their attributes. Open objects, because they have an unbounded number of attributes, are difficult to abstract without a priori knowledge of all or nearly all of the attributes and thus pose a significant challenge for precise static analysis. To address this challenge, we present the HOO (Heap with Open Objects) abstraction that can precisely represent and infer properties about open-object-manipulating programs without any knowledge of specific attributes.  It achieves this by building upon a relational abstract domain for sets that is used to reason about partitions of object attributes.  An implementation of the resulting static analysis is used to verify specifications for dynamic language framework code that makes extensive use of open objects, thus demonstrating the effectiveness of this approach.</p>
       </abstract>
@@ -2054,6 +2083,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
 	<proceedings event="sas14" />
       </howpub>
+      <pages>285-301</pages>
+      <doi>10.1007/978-3-319-10936-7_18</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-319-10936-7_18</ee>
       <abstract>
 	<p>The breadth and depth of heap properties that can be inferred by the union of today's shape analyses is quite astounding.  Yet, achieving scalability while supporting a wide range of complex data structures in a generic way remains a long-standing challenge. In this paper, we propose a way to side-step this issue by defining a generic abstract domain combinator for combining memory abstractions on disjoint regions. In essence, our abstract domain construction is to the separating conjunction in separation logic as the reduced product construction is to classical, non-separating conjunction. This approach eases the design of the analysis as memory abstract domains can be re-used by applying our separating conjunction domain combinator. And more importantly, this combinator enables an analysis designer to easily create a combined domain that applies computationally-expensive abstract domains only where it is required.</p>
       </abstract>
@@ -2077,18 +2109,6 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <abstract>
 	<p>This paper introduces QUICr, an abstract domain combinator library that lifts any domain for numbers into an efficient domain for numbers and <em>sets</em> of numbers.  As a library, it is useful for inferring relational data invariants in programs that manipulate data structures.  As a testbed, it allows easy extension of widening and join heuristics, enabling adaptations to new and varied applications.  In this paper we present the architecture of the library, guidelines on how to select heuristics, and an example instantiation of the library using the Apron library to verify set-manipulating programs.</p>
       </abstract>
-    </pub>
-    <pub id="netsynth-pldi15">
-      <title>Efficient Synthesis of Network Updates</title>
-      <authors>
-	<author person="mcclurg" />
-	<author person="hojjat" />
-	<author person="cernyp" />
-	<author person="jnfoster" />
-      </authors>
-      <howpub>
-	<proceedings event="pldi15" />
-      </howpub>
     </pub>
     <pub id="vmv-pldi14">
       <title>Verification Modulo Versions: Towards Usable Verification</title>
@@ -2167,6 +2187,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
 	<proceedings event="vmcai14" />
       </howpub>
+      <pages>137-141</pages>
+      <doi>10.1007/978-3-642-54013-4_8</doi>
+      <ee>http://dx.doi.org/10.1007/978-3-642-54013-4_8</ee>
       <abstract>
 	<p>Precise heap reachability information is a prerequisite for many
   static verification clients. However, the typical scenario is that
@@ -3871,6 +3894,10 @@ an application example.</p>
       <name>Principles of Programming Languages</name>
       <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="popl16">
+	<date>2016-01</date>
+	<nth>Forty-Third</nth>
+      </event>
       <event id="popl15">
 	<date>2015-01</date>
 	<location>Mumbai, India</location>
@@ -3884,6 +3911,8 @@ an application example.</p>
 	<url>http://popl.mpi-sws.org/2014/</url>
 	<acceptance>51/220</acceptance>
 	<acceptanceRate>23.2%</acceptanceRate>
+	<volume>49</volume>
+	<number>1</number>
       </event>
       <event id="popl13">
 	<date>2013-01</date>
@@ -3976,12 +4005,14 @@ an application example.</p>
     <series id="cav">
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
+      <issue journal="lncs"/>
       <event id="cav14">
 	<date>2014-07</date>
 	<location>Vienna, Austria</location>
 	<url>http://cavconference.org/</url>
 	<acceptance>57/229</acceptance>
 	<acceptanceRate>24.9%</acceptanceRate>
+	<volume>8859</volume>
       </event>
       <event id="cav13">
 	<date>2013-07</date>
@@ -4023,6 +4054,8 @@ an application example.</p>
 	<date>2015-04</date>
 	<location>London, United Kingdom</location>
         <url>http://conf.researchr.org/home/esop-2015</url>
+	<acceptance>33/115</acceptance>
+	<acceptanceRate>28.7%</acceptanceRate>
       </event>
       <event id="esop11">
 	<date>2011-03</date>
@@ -4067,6 +4100,9 @@ an application example.</p>
 	<location>Munich, Germany</location>
 	<nth>Twenty-First</nth>
 	<url>http://cs.uni-muenster.de/sev/sas14/</url>
+	<acceptance>20/53</acceptance>
+	<acceptanceRate>37.7%</acceptanceRate>
+	<volume>8723</volume>
       </event>
       <event id="sas12">
 	<date>2012-09</date>
@@ -4170,6 +4206,16 @@ an application example.</p>
 	<url>http://lii.rwth-aachen.de/lics/lics13/</url>
       </event>
     </series>
+    <series id="vstte">
+      <name>Verified Software: Theories, Tools, and Experiments</name>
+      <longPrefix>IFIP Working Conference on</longPrefix>
+      <event id="vstte15">
+	<date>2015-07</date>
+	<location>San Francisco, California, USA</location>
+	<nth>Seventh</nth>
+	<url>https://sites.google.com/site/vstte2015/</url>
+      </event>
+    </series>
     <series id="sigcse">
       <name>Computer Science Education</name>
       <longPrefix>ACM Technical Symposium on</longPrefix>
@@ -4255,6 +4301,18 @@ an application example.</p>
         <date>2014-10</date>	
 	<url>http://esweek.acm.org/emsoft/</url>
 	<location>New Delhi, India</location>
+      </event>
+    </series>
+    <series id="isola">
+      <name>Leveraging Applications of Formal Methods, Verification and Validation</name>
+      <longPrefix>International Symposium on</longPrefix>
+      <issue journal="lncs"/>
+      <event id="isola14">
+	<date>2014-10</date>
+	<nth>Sixth</nth>
+	<url>http://www.cs.uni-potsdam.de/isola/isola2014/</url>
+	<location>Imperial, Corfu, Greece</location>
+	<volume>8803</volume>
       </event>
     </series>
     <series id="chi-ea" type="workshop">
@@ -4385,7 +4443,7 @@ an application example.</p>
 	<location>Lawrence, Kansas, USA</location>
       </event>
     </series>
-    <series id="sairp" type="workshop">
+    <series id="sairp">
       <name>Semantics, Abstract Interpretation, and Reasoning about Programs: Essays Dedicated to David A. Schmidt on the Occasion of his Sixtieth Birthday</name>
       <issue journal="eptcs"/>
       <event id="sairp13">
