@@ -208,7 +208,7 @@ name="html" />
       <div class="clearer" />
       
       <h2>Post-Docs</h2>
-      <xsl:apply-templates select="cv/persons/person[@group='postdocs']" mode="detail" />
+      <xsl:apply-templates select="cv/persons/person[@group='postdoc']" mode="detail" />
       <div class="clearer" />
 
       <h2>Students</h2>
