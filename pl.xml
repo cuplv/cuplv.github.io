@@ -3516,6 +3516,10 @@ an application example.</p>
       <name>Ian Karlin</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="ykim" group="phd">
+      <name>Youngsung Kim</name>
+      <face>pics/ykim.png</face>
+    </person> 
     <person id="mcclurg" group="phd">
       <name>Jedidiah McClurg</name>
       <url>http://www.jrmcclurg.com/</url>
@@ -3614,6 +3618,10 @@ an application example.</p>
       <name>Nathan Lapinksi</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="eroncevich" group="bs">
+      <name>Max Russek</name>
+      <face>pics/eroncevich.png</face>
+    </person>   
     <person id="mrussek" group="bs">
       <name>Max Russek</name>
       <face>pics/mrussek.jpg</face>
