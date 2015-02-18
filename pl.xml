@@ -3568,6 +3568,10 @@ an application example.</p>
       <name>Aditya Zutshi</name>
       <face>pics/zutshi.jpg</face>
     </person>
+    <person id="rholland" group="bsms">
+      <name>Ross Holland</name>
+      <face>pics/rholland.jpg</face>
+    </person>
     <person id="quan" group="bsms-alumni">
       <name>Kira Quan</name>
       <face>pics/quan.jpg</face>
