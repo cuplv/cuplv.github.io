@@ -1,9 +1,18 @@
-Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages          Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages 
-	
-	
-	
-          
-	
-       
-	
-       
+Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages
+	Dynamic language library developers face a challenging problem:
+	ensuring that their libraries will behave correctly for a wide variety
+	of client programs without having access to those client programs. This
+	problem stems from the common use of two defining features for dynamic
+	languages: callbacks into client code and complex manipulation of
+	attribute names within objects. To remedy this problem, we introduce two
+	state-spanning abstractions. To analyze callbacks, the first abstraction
+	desynchronizes a heap, allowing partitions of the heap that may be
+	affected by a callback to an unknown function to be frozen in the state
+	prior to the call. To analyze object attribute manipulation, building
+	upon an abstraction for dynamic language heaps, the second abstraction
+	tracks attribute name/value pairs across the execution of a library. We
+	implement these abstractions and use them to verify modular
+	specifications of class-, trait-, and mixin-implementing libraries.
+
+
+      

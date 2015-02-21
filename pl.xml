@@ -1970,11 +1970,27 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="rival"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/desynchronized-esop15.pdf</url>-->
+	<url name="pdf">papers/desynchronized-esop15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="esop15" />
       </howpub>
+      <abstract>
+	<p>Dynamic language library developers face a challenging problem:
+	ensuring that their libraries will behave correctly for a wide variety
+	of client programs without having access to those client programs. This
+	problem stems from the common use of two defining features for dynamic
+	languages: callbacks into client code and complex manipulation of
+	attribute names within objects. To remedy this problem, we introduce two
+	state-spanning abstractions. To analyze callbacks, the first abstraction
+	desynchronizes a heap, allowing partitions of the heap that may be
+	affected by a callback to an unknown function to be frozen in the state
+	prior to the call. To analyze object attribute manipulation, building
+	upon an abstraction for dynamic language heaps, the second abstraction
+	tracks attribute name/value pairs across the execution of a library. We
+	implement these abstractions and use them to verify modular
+	specifications of class-, trait-, and mixin-implementing libraries.</p>
+      </abstract>
     </pub>
     <pub id="wcet-esop15">
       <title>Segment Abstraction for Worst-Case Execution Time Analysis</title>
@@ -2164,6 +2180,33 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<proceedings event="popl14" />
       </howpub>
       <abstract>
+	<p>We present a generic analysis approach to the <em>imperative
+	relationship update problem</em>, in which destructive updates
+	temporarily violate a global invariant of interest. Such invariants can
+	be conveniently and concisely specified with dependent refinement types,
+	which are efficient to check flow-insensitively. Unfortunately, while
+	traditional flow-insensitive type checking is fast, it is inapplicable
+	when the desired invariants can be temporarily broken. To overcome this
+	limitation, past works have directly ratcheted up the complexity of the
+	type analysis and associated type invariants, leading to inefficient
+	analysis and verbose specifications. In contrast, we propose a
+	<em>generic lifting</em> of modular refinement type analyses with a
+	symbolic analysis to efficiently and effectively check concise
+	invariants that hold <em>almost everywhere</em>. The result is an
+	efficient, highly modular flow-insensitive type analysis to
+	<em>optimistically</em> check the preservation of global relationship
+	invariants that can fall back to a precise, disjunctive symbolic
+	analysis when the optimistic assumption is violated. This technique
+	permits programmers to temporarily break and then re-establish
+	relationship invariants&emdash;a flexibility that is crucial for
+	checking relationships in real-world, imperative languages. A
+	significant challenge is selectively violating the global type
+	consistency invariant over heap locations, which we achieve via
+	<em>almost type-consistent heaps</em>. To evaluate our approach, we have
+	encoded the problem of verifying the safety of reflective method calls
+	in dynamic languages as a refinement type checking problem. Our analysis
+	is capable of validating reflective call safety at interactive speeds on
+	commonly-used Objective-C libraries and applications.</p>
       </abstract>
     </pub>
     <pub id="acceleration-popl14">
