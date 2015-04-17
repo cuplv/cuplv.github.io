@@ -6,6 +6,34 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.04.16" id="atrivedi-seminar-2015">
+      <news-snippet>
+	<ref table="person" key="atrivedi"/> visits April 17, 2016.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="atrivedi"/> from
+	IIT Bombay
+	is visiting us on April 17, 2015. He is giving a
+	CUPLV Seminar
+	entitled
+	"Decidable Subclasses of Multi-Mode Systems"
+	at 1:00pm
+	in KOBL 235 on Friday, April 17, 2015.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="atrivedi"/></speaker>
+	<affiliation>Indian Institute of Technology Bombay</affiliation>
+	<when>04-17-2015 13:00</when>
+	<where>KOBL 235</where>
+	<title>
+	  Decidable Subclasses of Multi-Mode Systems (Schedulability, Reachability, and Related Problems)
+	</title>
+	<abstract>
+	  <p>Hybrid automata are a natural and expressive formalism to model systems that exhibit both discrete and continuous behavior. However, the applications of hybrid automata in analyzing cyber-physical systems have been rather limited due to undecidability of simple verification problems such as reachability. This drawback of hybrid automata has fueled the investigation of the so-called compositional methodology to design complex system by sequentially composing well-understood lower-level components. This methodology has, for example, been used in the context of the motion planning problem for mobile robots, where the task is to move a robot along a pre-specified trajectory with arbitrary precision by sequentially composing a set of well-studied simple motion primitives, such as “move left”, “move right” and “go straight”.  In this talk, we summarize some of our recent results related to efficient solution of motion planning problem for systems whose motion primitives are given as constant-rate vectors with uncertainties.</p>
+	</abstract>
+	<host><ref table="person" key="srirams"/></host>
+      </talk-announcement>
+    </news>
     <news date="2014.02.16" id="phdvisit-2015">
       <news-snippet>
 	Prospective Ph.D. students visit February 20. Welcome!
@@ -3513,7 +3541,11 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
-    <person id="yvoronin" group="postdoc">
+    <person id="atrivedi">
+      <name>Ashutosh Trivedi</name>
+      <face>pics/trivedi.jpg</face>
+    </person>
+    <person id="abensassi" group="postdoc">
       <name>Mohamed Amin Ben Sassi</name>
       <face>pics/aminbensassi.png</face>
     </person>
@@ -3988,6 +4020,8 @@ an application example.</p>
 	<location>Mumbai, India</location>
 	<nth>Forty-Second</nth>
 	<url>http://popl.mpi-sws.org/2015/</url>
+	<acceptance>52/227</acceptance>
+	<acceptanceRate>22.9%</acceptanceRate>
       </event>
       <event id="popl14">
 	<date>2014-01</date>
@@ -4010,6 +4044,8 @@ an application example.</p>
 	<location>Philadelphia, Pennsylvania, USA</location>
 	<nth>Thirty-Ninth</nth>
 	<url>http://www.cse.psu.edu/popl/12/</url>
+	<acceptance>44/205</acceptance>
+	<acceptanceRate>21.5%</acceptanceRate>
       </event>
       <event id="popl11">
 	<date>2011-01</date>
@@ -4108,6 +4144,8 @@ an application example.</p>
 	<date>2012-07</date>
 	<location>Berkeley, California, USA</location>
 	<url>http://cav12.cs.illinois.edu/</url>
+	<acceptance>58 (38 regular + 20 tool)/185 (140 regular + 45 tool)</acceptance>
+	<acceptanceRate>31.4%</acceptanceRate>
       </event>
       <event id="cav11">
 	<date>2011-07</date>
