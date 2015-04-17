@@ -8,7 +8,7 @@
   <news-list>
     <news date="2015.04.16" id="atrivedi-seminar-2015">
       <news-snippet>
-	<ref table="person" key="atrivedi"/> visits April 17, 2016.
+	<ref table="person" key="atrivedi"/> visits April 17.
       </news-snippet>
       <news-detail>
 	<ref table="person" key="atrivedi"/> from
@@ -3543,6 +3543,7 @@ an application example.</p>
     </person>
     <person id="atrivedi">
       <name>Ashutosh Trivedi</name>
+      <url>http://www.cse.iitb.ac.in/~trivedi/</url>
       <face>pics/trivedi.jpg</face>
     </person>
     <person id="abensassi" group="postdoc">
