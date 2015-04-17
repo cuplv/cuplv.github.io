@@ -1958,6 +1958,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="cernyp" />
 	<author person="jnfoster" />
       </authors>
+      <urls>
+	<url name="pdf">http://jrmcclurg.com/papers/pldi_2015_paper.pdf</url>
+      </urls>
       <howpub>
 	<proceedings event="pldi15" />
       </howpub>
