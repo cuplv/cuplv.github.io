@@ -1987,11 +1987,29 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="jnfoster" />
       </authors>
       <urls>
-	<url name="pdf">http://jrmcclurg.com/papers/pldi_2015_paper.pdf</url>
+	<url name="pdf">papers/netsynth-pldi15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="pldi15" />
       </howpub>
+      <abstract>
+	<p>Software-defined networking (SDN) is revolutionizing the networking
+industry, but current SDN programming platforms do not
+provide automated mechanisms for updating global configurations
+on the fly. Implementing updates by hand is challenging for SDN
+programmers because networks are distributed systems with hundreds
+or thousands of interacting nodes. Even if initial and final
+configurations are correct, naively updating individual nodes can
+lead to incorrect transient behaviors, including loops, black holes,
+and access control violations. This paper presents an approach for
+automatically synthesizing updates that are guaranteed to preserve
+specified properties. We formalize network updates as a distributed
+programming problem and develop a synthesis algorithm based on
+counterexample-guided search and incremental model checking.
+We describe a prototype implementation, and present results from
+experiments on real-world topologies and properties demonstrating
+that our tool scales to updates involving over one-thousand nodes.</p>
+      </abstract>
     </pub> 
     <pub id="desynchronized-esop15">
       <title>Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages</title>

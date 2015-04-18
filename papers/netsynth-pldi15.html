@@ -54,12 +54,12 @@
             </div>
             <h4 xmlns="">Reference</h4>
             <div xmlns="" class="item">
-               <div class="item-icon"><a href="http://jrmcclurg.com/papers/pldi_2015_paper.pdf"><img src="clouds/netsynth-pldi15.words.png" class="icon"></a></div>
+               <div class="item-icon"><a href="netsynth-pldi15.pdf" onClick="_gaq.push(['_trackPageview', '/netsynth-pldi15.pdf']);"><img src="clouds/netsynth-pldi15.words.png" class="icon"></a></div>
                <div class="item-block">
                   <div class="item-date">2015</div>
                   <ul class="hlinks">
                      <li><a href="papers/netsynth-pldi15.html">detail</a></li>
-                     <li><a href="http://jrmcclurg.com/papers/pldi_2015_paper.pdf">pdf</a></li>
+                     <li><a href="netsynth-pldi15.pdf" onClick="_gaq.push(['_trackPageview', '/netsynth-pldi15.pdf']);">pdf</a></li>
                   </ul>
                   <div class="item-header hanging">Efficient Synthesis of Network Updates</div>
                   <div class="hanging"><a href="http://www.jrmcclurg.com/">Jedidiah McClurg</a>, <a href="http://www.cs.cornell.edu/~hojjat/">Hossein Hojjat</a>, <a href="http://ecee.colorado.edu/pavol/">Pavol Černý</a>,  and <a href="http://www.cs.cornell.edu/~jnfoster/">Nate Foster</a></div>
@@ -70,6 +70,26 @@
                   </div>
                </div>
             </div>
+            <h4 xmlns="">Abstract</h4>
+            	
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Software-defined networking (SDN) is revolutionizing the networking
+               industry, but current SDN programming platforms do not
+               provide automated mechanisms for updating global configurations
+               on the fly. Implementing updates by hand is challenging for SDN
+               programmers because networks are distributed systems with hundreds
+               or thousands of interacting nodes. Even if initial and final
+               configurations are correct, naively updating individual nodes can
+               lead to incorrect transient behaviors, including loops, black holes,
+               and access control violations. This paper presents an approach for
+               automatically synthesizing updates that are guaranteed to preserve
+               specified properties. We formalize network updates as a distributed
+               programming problem and develop a synthesis algorithm based on
+               counterexample-guided search and incremental model checking.
+               We describe a prototype implementation, and present results from
+               experiments on real-world topologies and properties demonstrating
+               that our tool scales to updates involving over one-thousand nodes.
+            </p>
+            
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{PLDI = "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"}
 @inproceedings{netsynth-pldi15,
