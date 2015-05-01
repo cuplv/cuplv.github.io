@@ -1,0 +1,6 @@
+Droidel: A General Approach to Android Framework Modeling
+	We present an approach and tool for general-purpose modeling of Android for static analysis.  Our approach is to explicate the reflective bridge between the Android framework and an application to make the framework source amenable to static analysis.  Our Droidel tool does this by automatically generating application-specific stubs that summarize the reflective behavior for a particular app.  The result is a program with a single entry-point that can be processed by any existing Java analysis platform (e.g., Soot, WALA, Chord).  We compared call graphs constructed using Droidel to call graphs constructed using a state-of-the-art Android model and found that Droidel captures more concrete behaviors.
+
+
+
+      
