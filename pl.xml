@@ -14,12 +14,11 @@
       </news-snippet>
       <news-detail>
 	CUPLV author <ref table="person" key="cernyp"/>
-	has had papers accepted for presentation at <ref table="event" key="cav15"/> in June (<ref table="pub"
+	has had papers accepted for presentation at <ref table="event" key="cav15"/> in July (<ref table="pub"
 	key="synunification-cav15" mode="authors"/> and <ref table="pub"
 	key="scheduling-cav15" mode="authors"/>).
       </news-detail>
     </news>
-   <!--
    <news date="2015.04.25" id="paper-soap15">
       <news-snippet>
 	Paper by <ref table="pub" key="droidel-soap15" mode="authors"/>
@@ -30,8 +29,7 @@
 	have had a paper "<ref table="pub" key="droidel-soap15"/>"
 	accepted for presentation at <ref table="event" key="soap15"/> in June.
       </news-detail>
-   </news
-   -->
+   </news>
    <news date="2015.04.21" id="paper-array15">
       <news-snippet>
 	Paper by <ref table="pub" key="performance-array15" mode="authors"/>
@@ -2058,25 +2056,24 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </abstract>
       -->
     </pub>
-    <!--
     <pub id="droidel-soap15">
-      <title>Droidel: A Framework Model for Android</title>
+      <title>Droidel: A General Approach to Android Framework Modeling</title>
       <authors>
 	<author person="blackshear"/>
 	<author person="agendreau"/>
 	<author person="bec"/>
       </authors>
       <urls>
-	<url name="pdf">papers/droidel-soap15.pdf</url>
+	<!--<url name="pdf">papers/droidel-soap15.pdf</url>-->
       </urls>
       <howpub>
 	<proceedings event="soap15" />
       </howpub>
       <abstract>
-	<p></p>
+	<p>We present an approach and tool for general-purpose modeling of Android for static analysis.  Our approach is to explicate the reflective bridge between the Android framework and an application to make the framework source amenable to static analysis.  Our Droidel tool does this by automatically generating application-specific stubs that summarize the reflective behavior for a particular app.  The result is a program with a single entry-point that can be processed by any existing Java analysis platform (e.g., Soot, WALA, Chord).  We compared call graphs constructed using Droidel to call graphs constructed using a state-of-the-art Android model and found that Droidel captures more concrete behaviors.
+</p>
       </abstract>
     </pub>
-    -->
     <pub id="performance-array15">
       <title>Performance Search Engine Driven by Prior Knowledge of Optimization</title>
       <authors>
