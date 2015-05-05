@@ -1958,6 +1958,22 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </news-list>
 
   <projects>
+    <project id="droidel">
+      <name>Droidel</name>
+      <url>https://github.com/cuplv/droidel</url>
+      <authors>
+	<author person="blackshear"/>
+	<author person="agendreau"/>
+	<author person="bec"/>
+      </authors>
+      <title>A Framework Model for Static Analysis of Android Applications</title>
+      <snippet>
+	<p>A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code.</p>
+      </snippet>
+      <references>
+	<ref table="pub" key="droidel-soap15" mode="abbrev" />
+      </references>
+    </project>
     <project id="quicgraphs">
       <name>QUIC Graphs</name>
       <url>http://pl.cs.colorado.edu/projects/quicgraphs/</url>
@@ -2064,7 +2080,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="bec"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/droidel-soap15.pdf</url>-->
+	<url name="pdf">papers/droidel-soap15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="soap15" />

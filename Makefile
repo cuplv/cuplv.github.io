@@ -1,6 +1,6 @@
 HTML_OUTPUT = index.html news.html papers.html people.html projects.html $(wildcard papers/*.html)
 WORDS_OUTPUT = $(wildcard clouds/*.words.txt) $(wildcard clouds/*.words.png)
-OUTPUT = $(HTML_OUTPUT) $(WORDS_OUTPUT) $(wildcard papers/*.pdf)
+OUTPUT = $(HTML_OUTPUT) $(WORDS_OUTPUT) $(wildcard papers/*.pdf) $(wildcard pics/*)
 SAXON = java -jar bin/saxon8.jar
 INCLUDE = pl.keys.xsl
 DATA = pl.xml
