@@ -323,7 +323,7 @@ the main terminal.</p>
       <p>
 	<a href="http://boulderinn.com/">Best Western Plus Boulder Inn</a>.
 	<a href="https://www.google.com/maps/place/770+28th+St,+Boulder,+CO+80303/">770 28th St, Boulder, CO 80303</a>.
-	The Best Western Plus Boulder Inn is a slightly cheaper option that is 0.6 miles or 1o-15 minute walk from the department, but there's not as much next to it (e.g., restaurants).
+	The Best Western Plus Boulder Inn is a slightly cheaper option that is 0.6 miles or 10-15 minute walk from the department, but there's not as much next to it (e.g., restaurants).
       </p>
       <p>
 	<a href="http://www.marriott.com/hotels/travel/denbo-boulder-marriott/">Boulder Marriott</a>.
