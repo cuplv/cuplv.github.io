@@ -6,6 +6,14 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.04.26" id="hammer-joins">
+      <news-snippet>
+	<ref table="person" key="hammer"/> is joining CUPLV!
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="hammer"/> joins CUPLV as an assistant professor of computer science in Fall 2015.
+      </news-detail>
+    </news>
     <news date="2015.04.25" id="paper-cav15">
       <news-snippet>
 	Two papers with CUPLV authors accepted to <ref table="event" key="cav15"/>!
@@ -3674,6 +3682,11 @@ an application example.</p>
       <name>Dirk Grunwald</name>
       <url>http://systems.cs.colorado.edu/people/faculty/dirk-grunwald/</url>
       <face>pics/grunwald.jpg</face>
+    </person>
+    <person id="hammer" group="faculty">
+      <name>Matthew A. Hammer</name>
+      <url>http://www.cs.umd.edu/~hammer/</url>
+      <face>pics/hammer.png</face>
     </person>
     <person id="srirams" group="faculty">
       <name>Sriram Sankaranarayanan</name>
