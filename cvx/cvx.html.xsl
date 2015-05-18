@@ -882,7 +882,7 @@ name="html" />
   <xsl:apply-templates select="child::node()" />
 </xsl:template>
 
-<xsl:template match="p|div">
+<xsl:template match="p|div|ol|ul|li">
   <xsl:call-template name="copy-and-apply"/>
 </xsl:template>
 

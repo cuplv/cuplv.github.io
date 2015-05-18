@@ -6,12 +6,43 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2014.05.18" id="postdoc-call-2015">
+      <news-snippet>
+	Call for postdoc <a href="news.html#postdoc-call-2015">applicants</a> for Summer or Fall 2015.
+      </news-snippet>
+      <news-detail>
+	There is a postdoctoral research associate position open with the opportunity to work with Profs. <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="cernyp"/> on program analysis and program synthesis.
+      </news-detail>
+      <news-page header="Postdoc Position">
+	<p>
+	<float img="pics/Preview_Winter_Panorama_CC141.jpg">
+	  The majestic, snow-covered Flatirons is a breathtaking backdrop with Old Main at the University of Colorado Boulder in the foreground. (Photo by Casey A. Cass/University of Colorado)
+	</float>
+	The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for exceptional candidates for a postdoctoral research associate in the area of program analysis and program synthesis.</p>
+<p>The position is on the Fixr project, a large project examining approaches to automatically mine, understand, and transfer bug fixes in large application frameworks, such as Android.</p>
+<p>The ideal candidate has a strong background in the area of programming languages, software engineering and/or formal methods, as well as an enthusiasm for mentoring junior researchers.</p>
+<p>The postdoctoral researcher would collaborate with Profs. <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="cernyp"/> and have the opportunity to lead this ambitious project that combines program analysis, probabilistic reasoning, and program synthesis. There will also be interactions with human-centered computing and big data engineering researchers on the interdisciplinary aspects of the project.</p>
+<p>The position is for one to two years, with a possible extension for additional years. A transition plan to a research assistant professor position is possible for highly-qualified candidates. While not required, teaching opportunities will also be available. Compensation is highly competitive and commensurate with experience.</p>
+<p>To apply, please send an email to <ref table="person" key="bec"/> with a CV and contact information for two to three references. Applications will be considered until the position is filled.</p>
+	<p>Our group has active projects in areas such as the following:
+<ul>
+  <li>program analysis</li>
+  <li>model checking</li>
+  <li>verification and synthesis of hybrid and embedded systems</li>
+  <li>program synthesis</li>
+</ul>
+	</p>
+        <p>Boulder, located at the base of the Rocky Mountain foothills, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and its vibrant startup community.  Located 30 miles from downtown Denver, there are convenient public transportation options between Boulder and the Denver metro area.</p>
+        <p>
+The University of Colorado is an Equal Opportunity Employer committed to building a diverse workforce. We encourage applications from women, minorities candidates, people with disabilities, and veterans.</p>
+      </news-page>
+    </news>    
     <news date="2015.04.26" id="hammer-joins">
       <news-snippet>
 	<ref table="person" key="hammer"/> is joining CUPLV!
       </news-snippet>
       <news-detail>
-	<ref table="person" key="hammer"/> joins CUPLV as an assistant professor of computer science in Fall 2015.
+	<ref table="person" key="hammer"/> joins CUPLV as an assistant professor of computer science in Fall 2015. Welcome, Matt!
       </news-detail>
     </news>
     <news date="2015.04.25" id="paper-cav15">
