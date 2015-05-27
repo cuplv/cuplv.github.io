@@ -6,6 +6,66 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.05.27" id="mnaik-seminar-2015">
+      <news-snippet>
+	<ref table="person" key="mnaik"/> visits May 28-29.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="mnaik"/> from
+	Georgia Tech
+	is visiting us on May 28-29, 2015. He is giving a
+	CUPLV Seminar
+	entitled
+	"Petablox: Declarative Program Analysis for Big Code"
+	at 10:30am
+	in DLC 1B70 on Friday, May 29, 2015.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="mnaik"/></speaker>
+	<affiliation>Georgia Tech</affiliation>
+	<when>05-29-2015 10:30</when>
+	<where>DLC 1B70</where>
+	<title>Petablox: Declarative Program Analysis for Big Code</title>
+	<abstract>
+	  <p>Most software development today leverages the world's massive collection of open source software. There is significant room for program analyses to similarly leverage Big Code, the collective knowledge amassed from analyzing existing programs, to automatically infer or predict salient behaviors and vulnerabilities in new programs. We present Petablox, a framework for automatically synthesizing use-cases of arbitrary declarative program analyses for Big Code tasks such as efficiently finding good abstractions, transferring analysis results across programs, and adapting analyses to user feedback. Despite their diversity, all these tasks entail solving large instances of MaxSAT, the maximum satisfiability problem which comprises a mix of hard (inviolable, logical) constraints and soft (violable, probabilistic) constraints. We describe demand-driven, compositional, and learning-based MaxSAT optimizations in Petablox for scaling these tasks to large code bases.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="mnaik"/> is an Assistant Professor in Computer Science at Georgia Tech since 2011. His research interests are in programming languages and software engineering, with a current emphasis on program analysis techniques and systems for improving software quality and programmer productivity on modern computing platforms such as parallel, mobile, and cloud computing. He holds a Ph.D. in Computer Science from Stanford University (2007) and was a research scientist at Intel Labs, Berkeley from 2008 to 2011.</p>
+	</bio>
+	<host><ref table="person" key="bec"/></host>
+      </talk-announcement>
+    </news>
+    <news date="2015.05.27" id="blackshear-seminar-2015">
+      <news-snippet>
+	<ref table="person" key="blackshear"/> defends his PhD on May 28.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="blackshear"/> is
+	defending his PhD on at 1:00pm in ECAE 199 on Thursday, May 28, 2015. His PhD is
+	entitled
+	"Flexible Goal-Directed Abstraction."
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="blackshear"/></speaker>
+	<affiliation>University of Colorado Boulder</affiliation>
+	<when>05-28-2015 13:00</when>
+	<where>ECAE 199</where>
+	<title>Flexible Goal-Directed Abstraction</title>
+	<abstract>
+	  <p>Static program analysis is a powerful technique for bug-finding, verification, and program understanding. Yet static analyses remain conspicuously absent from the toolbox of the average developer because they must abstract away details about concrete program behavior. Designing effective abstractions is tricky business: imprecise abstractions are inexpensive, but can be useless because they lose too much information about the program, whereas conventional wisdom states that precise abstractions are too expensive to scale.</p>
+<p>This dissertation considers the problem of goal-directed static analysis, an intriguing domain where there is hope for defying the conventional wisdom about precise and scalable abstractions. In contrast to more traditional whole-program approaches that must apply precise abstractions to the entire program, goal-directed approaches have the potential to be much more tractable because they can focus the effort of the analysis on a single goal query.</p>
+<p>There are two fundamental challenges in goal-directed analysis: (A) designing abstractions that are as flexible as possible so they can be specialized to the needs of the query and (B) using this flexibility wisely to achieve a better precision/scalability tradeoff in practice. This dissertation addresses these challenges by introducing goal-directed abstraction coarsening, a new approach to goal-directed analysis. Our approach works backward from the goal query using an abstraction that is as precise as possible by default, but can be coarsened in order to narrow the focus of the analysis and improve scalability. We meet Challenge A by introducing flexible coarsening-based techniques for store abstraction and control-flow abstraction. Our store abstraction precisely represents a small view of the store relevant to the query by combining a separation logic-based representation with a flow-insensitive points-to analysis. We present a general framework for flexible control-flow abstraction that allows the framework to coarsen the control-flow abstraction by jumping over irrelevant code. Finally, we meet Challenge B by presenting goal-directed analyses incorporating our flexible abstractions. Our analyses use programmers’ invariant-based reasoning and the structure of event-driven programs to recognize opportunities for coarsening that are likely to enhance scalability without losing precision. We have implemented these analyses and shown that they can achieve precise and scalable results for a variety of client analyses than cannot be handled effectively by previous techniques.</p>
+<p>Committee: <ref table="person" key="bec"/> (chair),
+<ref table="person" key="cernyp"/>,
+<ref table="person" key="mnaik"/>,
+<ref table="person" key="srirams"/>, and
+<ref table="person" key="msridhar"/>.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="blackshear"/> earned a BA in Computer Science and Philosophy from Williams College in 2010. He is interested in static program analysis, verification, and type systems. He has interned at Microsoft Research India, Microsoft Research Redmond, and Facebook London. He is a recipient of the 2013-2014 CU CS Outstanding Research Award, the 2015 Ralph J. Slutz Excellence Award, and a 2014-2015 Facebook Fellowship. He will work on static analysis and developer tools at Facebook after graduating.</p>
+	</bio>
+      </talk-announcement>
+    </news>
     <news date="2015.05.18" id="postdoc-call-2015">
       <news-snippet>
 	Call for postdoc <a href="news.html#postdoc-call-2015">applicants</a> for Summer or Fall 2015.
@@ -4216,6 +4276,11 @@ an application example.</p>
     <person id="rsamanta">
       <name>Roopsha Samanta</name>
       <url>http://pub.ist.ac.at/~rsamanta/</url>
+    </person>
+    <person id="mnaik">
+      <name>Mayur Naik</name>
+      <url>http://pag.gatech.edu/naik/</url>
+      <face>pics/mnaik.jpg</face>
     </person>
   </persons>
   <events>
