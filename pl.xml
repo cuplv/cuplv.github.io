@@ -6,7 +6,7 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
-    <news date="2014.05.18" id="postdoc-call-2015">
+    <news date="2015.05.18" id="postdoc-call-2015">
       <news-snippet>
 	Call for postdoc <a href="news.html#postdoc-call-2015">applicants</a> for Summer or Fall 2015.
       </news-snippet>
@@ -4226,6 +4226,7 @@ an application example.</p>
       <event id="popl16">
 	<date>2016-01</date>
 	<nth>Forty-Third</nth>
+	<url>http://conf.researchr.org/home/POPL-2016</url>
       </event>
       <event id="popl15">
 	<date>2015-01</date>
