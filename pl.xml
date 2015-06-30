@@ -6,6 +6,18 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.06.01" id="paper-sas15">
+      <news-snippet>
+	Paper by <ref table="pub" key="sharing-sas15" mode="authors"/>
+	accepted to <ref table="event" key="sas15"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV author <ref table="person" key="bec"/>
+	with collaborators 
+	has had a paper "<ref table="pub" key="sharing-sas15"/>"
+	accepted for presentation at <ref table="event" key="sas15"/> in September.
+      </news-detail>
+    </news>
     <news date="2015.05.27" id="mnaik-seminar-2015">
       <news-snippet>
 	<ref table="person" key="mnaik"/> visits May 28-29.
@@ -118,7 +130,7 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
 	key="scheduling-cav15" mode="authors"/>).
       </news-detail>
     </news>
-   <news date="2015.04.25" id="paper-soap15">
+    <news date="2015.04.25" id="paper-soap15">
       <news-snippet>
 	Paper by <ref table="pub" key="droidel-soap15" mode="authors"/>
 	accepted to <ref table="event" key="soap15"/>.
@@ -128,8 +140,22 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
 	have had a paper "<ref table="pub" key="droidel-soap15"/>"
 	accepted for presentation at <ref table="event" key="soap15"/> in June.
       </news-detail>
-   </news>
-   <news date="2015.04.21" id="paper-array15">
+    </news>
+    <news date="2015.04.21" id="grant-stac">
+      <news-snippet>
+      DARPA grant
+      "<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Space/Time_Analysis_for_Cybersecurity_%28STAC%29.aspx">STAC: Auditr: Securing Space/Time Defenses in Java Bytecode</a>"
+      awarded.
+      </news-snippet>
+      <news-detail>
+	CUPLV faculty <ref table="person" key="cernyp"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>
+	have been awarded a DARPA grant
+	"<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Space/Time_Analysis_for_Cybersecurity_%28STAC%29.aspx">STAC: Auditr: Securing Space/Time Defenses in Java Bytecode</a>"
+	with collaborators <ref table="person" key="jblack"/> at CU, <ref table="person" key="idillig"/> and
+	<ref table="person" key="mheule"/> at UT Austin, and <ref table="person" key="hsipma"/> at Kestrel Technology.
+      </news-detail>
+    </news>
+    <news date="2015.04.21" id="paper-array15">
       <news-snippet>
 	Paper by <ref table="pub" key="performance-array15" mode="authors"/>
 	accepted to <ref table="event" key="array15"/>.
@@ -169,7 +195,7 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
 	<host><ref table="person" key="srirams"/></host>
       </talk-announcement>
     </news>
-    <news date="2014.02.16" id="phdvisit-2015">
+    <news date="2015.02.16" id="phdvisit-2015">
       <news-snippet>
 	Prospective Ph.D. students visit February 20. Welcome!
       </news-snippet>
@@ -431,6 +457,19 @@ describing and enforcing declarative policies for the flow of capabilities betwe
 	</bio>
       </talk-announcement>
     </news>
+    <news date="2014.09.24" id="grant-muse">
+      <news-snippet>
+      DARPA grant
+      "<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Mining_and_Understanding_Software_Enclaves_%28MUSE%29.aspx">MUSE: Mining and Understanding Bug Fixes to Address Application-Framework Protocol Defects</a>"
+      awarded.
+      </news-snippet>
+      <news-detail>
+	CUPLV faculty <ref table="person" key="bec"/>, <ref table="person" key="cernyp"/>, <ref table="person" key="srirams"/>
+	have been awarded a DARPA grant
+      "<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Mining_and_Understanding_Software_Enclaves_%28MUSE%29.aspx">MUSE: Mining and Understanding Bug Fixes to Address Application-Framework Protocol Defects</a>"
+	with collaborators <ref table="person" key="kanderson"/> and <ref table="person" key="yeh"/>.
+      </news-detail>
+    </news> 
     <news date="2014.09.12" id="radhia-cousot-award-2014">
       <news-snippet>
 	<ref table="person" key="chakarov"/> wins
@@ -454,7 +493,7 @@ describing and enforcing declarative policies for the flow of capabilities betwe
 	</float>
 	Congratulations, Aleks!
 	</p>
-      </news-page>      
+      </news-page>
     </news>
     <news date="2014.07.10" id="postdoc-call-2014">
       <news-snippet>
@@ -2129,6 +2168,25 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="sharing-sas15">
+      <title>Shape Analysis for Unstructured Sharing</title>
+      <authors>
+	<author person="hli"/>
+	<author person="bec"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/sharing-sas15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="sas15" />
+      </howpub>
+      <!--
+      <abstract>
+	<p></p>
+      </abstract>
+      -->
+    </pub>
     <pub id="synunification-cav15">
       <title>Synthesis through Unification</title>
       <authors>
@@ -4282,6 +4340,28 @@ an application example.</p>
       <url>http://pag.gatech.edu/naik/</url>
       <face>pics/mnaik.jpg</face>
     </person>
+    <person id="kanderson">
+      <name>Kenneth M. Anderson</name>
+      <url>http://www.cs.colorado.edu/~kena/</url>
+    </person>
+    <person id="jblack">
+      <name>John Black</name>
+      <url>http://www.cs.colorado.edu/~jrblack/</url>
+    </person>
+    <person id="idillig">
+      <name>Işıl Dillig</name>
+      <url>http://www.cs.utexas.edu/~isil/</url>
+    </person>
+    <person id="mheule">
+      <name>Marijn J. H. Heule</name>
+      <url>http://www.cs.utexas.edu/~marijn/</url>
+    </person>
+    <person id="hsipma">
+      <name>Henny Sipma</name>
+    </person>
+    <person id="hli">
+      <name>Huisong Li</name>
+    </person>
   </persons>
   <events>
     <series id="popl">
@@ -4501,6 +4581,12 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas15">
+	<date>2015-09</date>
+	<location>Saint-Malo, France</location>
+	<nth>Twenty-Second</nth>
+	<url>http://sas2015.inria.fr/</url>
+      </event>
       <event id="sas14">
 	<date>2014-09</date>
 	<location>Munich, Germany</location>
