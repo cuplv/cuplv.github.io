@@ -2176,16 +2176,28 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="rival"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/sharing-sas15.pdf</url>-->
+	    <url name="pdf">papers/sharing-sas15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="sas15" />
       </howpub>
-      <!--
       <abstract>
-	<p></p>
+	  <p>Shape analysis aims to infer precise structural properties of
+  imperative memory states and has been applied heavily to verify
+  safety properties on imperative code over pointer-based data
+  structures. Recent advances in shape analysis based on separation
+  logic has leveraged summarization predicates that describe unbounded
+  heap regions like lists or trees using inductive
+  definitions. Unfortunately, data structures with <em>unstructured
+    sharing</em>, such as graphs, are challenging to describe and reason
+  about in such frameworks.
+  In particular, when the sharing is unstructured, it cannot be described
+  inductively in a local manner.
+  In this paper, we propose a global
+  abstraction of sharing based on set-valued variables that when
+  integrated with inductive definitions enables the specification and
+  shape analysis of structures with unstructured sharing.</p>
       </abstract>
-      -->
     </pub>
     <pub id="synunification-cav15">
       <title>Synthesis through Unification</title>
