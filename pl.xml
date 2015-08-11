@@ -2207,7 +2207,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="aradhakrishna"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/synunification-cav15.pdf</url>-->
+	    <url name="pdf">papers/synunification-cav15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="cav15" />
@@ -2230,7 +2230,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<author person="ttarrach"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/scheduling-cav15.pdf</url>-->
+	    <url name="pdf">papers/scheduling-cav15.pdf</url>
       </urls>
       <howpub>
 	<proceedings event="cav15" />
