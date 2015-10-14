@@ -123,6 +123,12 @@ name="html" />
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
       
+      
+      <h3>Scientists</h3>
+      <xsl:for-each select="cv/persons/person[@group='scientist']">
+	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      
       <h3>Post-Docs</h3>
       <xsl:for-each select="cv/persons/person[@group='postdoc']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
@@ -205,6 +211,10 @@ name="html" />
     <content>
       <h2>Faculty</h2>
       <xsl:apply-templates select="cv/persons/person[@group='faculty']" mode="detail" />
+      <div class="clearer" />
+      
+      <h2>Scientists</h2>
+      <xsl:apply-templates select="cv/persons/person[@group='scientist']" mode="detail" />
       <div class="clearer" />
       
       <h2>Post-Docs</h2>

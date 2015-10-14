@@ -6,6 +6,19 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.08.04" id="paper-oopsla15">
+      <news-snippet>
+	Two papers with CUPLV authors accepted to <ref table="event" key="oopsla15"/>!
+	[<ref table="pub" key="controlfeasibility-oopsla15" text="1"/>,
+	 <ref table="pub" key="adaptonwithnames-oopsla15" text="2"/>]
+      </news-snippet>
+      <news-detail>
+	CUPLV author <ref table="person" key="cernyp"/>
+	has had papers accepted for presentation at <ref table="event" key="oopsla15"/> in October (<ref table="pub"
+	key="controlfeasibility-oopsla15" mode="authors"/> and <ref table="pub"
+	key="adaptonwithnames-oopsla15" mode="authors"/>).
+      </news-detail>
+    </news> 
     <news date="2015.06.01" id="paper-sas15">
       <news-snippet>
 	Paper by <ref table="pub" key="sharing-sas15" mode="authors"/>
@@ -2168,6 +2181,44 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="controlfeasibility-oopsla15">
+      <title>Selective Control-Flow Abstraction via Jumping</title>
+      <authors>
+	<author person="blackshear"/>
+	<author person="bec"/>
+	<author person="msridhar"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/controlfeasibility-oopsla15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="oopsla15" />
+      </howpub>
+      <abstract>
+	<p>We present <em>jumping</em>, a form of selective control-flow abstraction useful for improving the scalability of goal-directed static analyses. Jumping is useful for analyzing programs with complex control-flow such as <em>event-driven</em> systems. In such systems, accounting for orderings between certain events is important for precision, yet analyzing the product graph of all possible event orderings is intractable. Jumping solves this problem by allowing the analysis to selectively abstract away control-flow between events irrelevant to a goal query while preserving information about the ordering of relevant events. We present a framework for designing sound jumping analyses and create an instantiation of the framework for performing precise inter-event analysis of Android applications. Our experimental evaluation showed that using jumping to augment a precise goal-directed analysis with inter-event reasoning enabled our analysis to prove 90--97\% of dereferences safe across our benchmarks.</p>
+      </abstract>
+    </pub>
+    <pub id="adaptonwithnames-oopsla15">
+      <title>Incremental Computation with Names</title>
+      <authors>
+	<author person="hammer"/>
+	<author person="jdunfield"/>
+	<author person="kheadley"/>
+	<author person="nlabich"/>
+	<author person="jfoster"/>
+	<author person="mhicks"/>
+	<author person="dvanhorn"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/adaptonwithnames-oopsla15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="oopsla15" />
+      </howpub>
+      <abstract>
+	<p>Over the past thirty years, there has been significant progress in developing general-purpose, language-based approaches to incremental computation, which aims to efficiently update the result of a computation when an input is changed. A key design challenge in such approaches is how to provide efficient incremental support for a broad range of programs. In this paper, we argue that first-class names are a critical linguistic feature for efficient incremental computation. Names identify computations to be reused across differing runs of a program, and making them first class gives programmers a high level of control over reuse. We demonstrate the benefits of names by presenting Nominal Adapton, an ML-like language for incremental computation with names. We describe how to use Nominal Adapton to efficiently incrementalize several standard programming patterns—including maps, folds, and unfolds—and show how to build efficient, incremental probabilistic trees and tries. Since Nominal Adapton's implementation is subtle, we formalize it as a core calculus and prove it is from-scratch consistent, meaning it always produces the same answer as simply re-running the computation. Finally, we demonstrate that Nominal Adapton can provide large speedups over both from-scratch computation and Adapton, a previous state-of-the-art incremental computation system.</p>
+      </abstract>
+    </pub>
     <pub id="sharing-sas15">
       <title>Shape Analysis for Unstructured Sharing</title>
       <authors>
@@ -3864,7 +3915,7 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
-    <person id="atrivedi">
+    <person id="atrivedi" group="scientist">
       <name>Ashutosh Trivedi</name>
       <url>http://www.cse.iitb.ac.in/~trivedi/</url>
       <face>pics/trivedi.jpg</face>
@@ -3872,6 +3923,10 @@ an application example.</p>
     <person id="abensassi" group="postdoc">
       <name>Mohamed Amin Ben Sassi</name>
       <face>pics/aminbensassi.png</face>
+    </person>
+    <person id="smover" group="postdoc">
+      <name>Sergio Mover</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="yvoronin" group="postdoc">
       <name>Yuen-Lam Voronin</name>
@@ -3882,7 +3937,7 @@ an application example.</p>
       <name>Geoffrey Belter</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="blackshear" group="phd">
+    <person id="blackshear" group="phd-alumni">
       <name>Sam Blackshear</name>
       <url>http://cs.colorado.edu/~sabl4745</url>
       <face>pics/blackshear.jpg</face>
@@ -3905,13 +3960,17 @@ an application example.</p>
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
     </person>
-    <person id="agendreau" group="phd">
+    <person id="agendreau">
       <name>Alexandra Gendreau</name>
       <url>http://www.cs.colorado.edu/~alge6158/</url>
       <face>pics/gendreau.jpg</face>
     </person>
     <person id="gottschlich" group="phd-alumni">
       <name>Justin E. Gottschlich</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="kheadley" group="phd">
+      <name>Kyle Headley</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="karlin" group="phd-alumni">
@@ -3921,7 +3980,11 @@ an application example.</p>
     <person id="ykim" group="phd">
       <name>Youngsung Kim</name>
       <face>pics/ykim.png</face>
-    </person> 
+    </person>
+    <person id="tlu" group="phd">
+      <name>Tianhan Lu</name>
+      <face>pics/generic-male.png</face>
+    </person>   
     <person id="mcclurg" group="phd">
       <name>Jedidiah McClurg</name>
       <url>http://www.jrmcclurg.com/</url>
@@ -3945,6 +4008,10 @@ an application example.</p>
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
+    <person id="sniari">
+      <name>Saeid Tizpaz Niari</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="hravanbakhsh" group="phd">
       <name>Hadi Ravanbakhsh</name>
       <face>pics/ravanbakhsh.png</face>
@@ -3953,6 +4020,10 @@ an application example.</p>
       <name>Christoph Reichenbach</name>
       <url>http://www.cs.umass.edu/~creichen/</url>
       <face>pics/reichenbach.png</face>
+    </person>
+    <person id="bstein">
+      <name>Benno Stein</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="vitousek">
       <name>Michael Vitousek</name>
@@ -3996,6 +4067,26 @@ an application example.</p>
       <name>Shashank Bharadwaj</name>
       <face>pics/bharadwaj.jpg</face>
     </person>
+    <person id="ychou" group="ms">
+      <name>Yi Chou</name>
+      <face>pics/generic-female.png</face>
+    </person>
+    <person id="deconomou" group="ms">
+      <name>Dimitrios Economou</name>
+      <face>pics/generic-female.png</face>
+    </person>    
+    <person id="alata" group="ms">
+      <name>Aniket Lata</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="vsingh" group="ms-alumni">
+      <name>Vaibhav Singh</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="ksripada" group="ms">
+      <name>Krishna Chaitanya Sripada</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="tsai" group="ms-alumni">
       <name>Yi-Fan Tsai</name>
       <face>pics/tsai.jpg</face>
@@ -4004,13 +4095,17 @@ an application example.</p>
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
     </person>
+    <person id="avillani" group="ms">
+      <name>Anna Villani</name>
+      <face>pics/generic-female.png</face>
+    </person>    
     <person id="beal" group="bs-alumni">
       <name>Alex Beal</name>
       <face>pics/beal.png</face>
     </person>
-    <person id="vanderweit" group="bs-alumni">
-      <name>Nicholas Vanderweit</name>
-      <face>pics/vanderweit.jpg</face>
+    <person id="dfisher" group="bs">
+      <name>Dakota Fisher</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="givens" group="bs-alumni">
       <name>Paul Givens</name>
@@ -4020,8 +4115,20 @@ an application example.</p>
       <name>Kyle Howell</name>
       <face>pics/khowell.jpg</face>
     </person>
-    <person id="lapinski">
+    <person id="dkazakov" group="bs">
+      <name>Denis Kazakov</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="lapinski" group="bs-alumni">
       <name>Nathan Lapinksi</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="jlecavalier" group="bs">
+      <name>Jay Lecavlier</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="rolsen" group="bs">
+      <name>Rhys Olsen</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="eroncevich" group="bs">
@@ -4031,7 +4138,11 @@ an application example.</p>
     <person id="mrussek" group="bs">
       <name>Max Russek</name>
       <face>pics/mrussek.jpg</face>
-    </person>   
+    </person>
+    <person id="vanderweit" group="bs-alumni">
+      <name>Nicholas Vanderweit</name>
+      <face>pics/vanderweit.jpg</face>
+    </person>
     <person id="vachharajani">
       <name>Manish Vachharajani</name>
       <url>http://ecee.colorado.edu/~manishv/</url>
@@ -4374,6 +4485,21 @@ an application example.</p>
     <person id="hli">
       <name>Huisong Li</name>
     </person>
+    <person id="jdunfield">
+      <name>Joshua Dunfield</name>
+      <url>http://www.cs.ubc.ca/~joshdunf/</url>
+    </person>
+    <person id="nlabich">
+      <name>Nicholas Labich</name>
+    </person>
+    <person id="mhicks">
+      <name>Michael Hicks</name>
+      <url>http://www.cs.umd.edu/~mwh/</url>
+    </person>
+    <person id="dvanhorn">
+      <name>David Van Horn</name>
+      <url>https://www.cs.umd.edu/~dvanhorn/</url>
+    </person>
   </persons>
   <events>
     <series id="popl">
@@ -4491,6 +4617,16 @@ an application example.</p>
 	<date>2009-06</date>
 	<location>Dublin, Ireland</location>
 	<url>http://www.cs.colorado.edu/pldi09/</url>
+      </event>
+    </series>
+    <series id="oopsla">
+      <name>Object Oriented Programming Systems Languages and Applications</name>
+      <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <issue journal="sigplannot"/>
+      <event id="oopsla15">
+	<date>2015-10</date>
+	<location>Pittsburgh, Pennsylvania, USA</location>
+	<url>http://2015.splashcon.org/</url>
       </event>
     </series>
     <series id="cav">
