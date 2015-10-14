@@ -4014,7 +4014,7 @@ an application example.</p>
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
-    <person id="sniari">
+    <person id="sniari" group="phd">
       <name>Saeid Tizpaz Niari</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -4027,7 +4027,7 @@ an application example.</p>
       <url>http://www.cs.umass.edu/~creichen/</url>
       <face>pics/reichenbach.png</face>
     </person>
-    <person id="bstein">
+    <person id="bstein" group="phd">
       <name>Benno Stein</name>
       <face>pics/generic-male.png</face>
     </person>
