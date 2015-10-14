@@ -80,11 +80,10 @@ name="html" />
 	href="http://www.colorado.edu/cs/admissions/how-apply"><b>Ph.D. Positions</b></a>.
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.
-	Application deadline is December 15, 2014.
+	Application deadline is December 15, 2015.
       </div>
       <div class="contentbox" style="width: 48%; height: 12ex;">
-	<a
-	href="news.html#postdoc-call-2014"><b>Postdoc Position</b></a>.
+	<b>Postdoc Position</b>.
 	There is a postdoctoral research associate position open
 	with the opportunity to work with
 	Profs.
