@@ -3925,6 +3925,11 @@ an application example.</p>
       <name>Mohamed Amin Ben Sassi</name>
       <face>pics/aminbensassi.png</face>
     </person>
+    <person id="xinchen" group="postdoc">
+      <name>Xin Chen</name>
+      <face>pics/generic-male.png</face>
+      <url>http://www-i2.informatik.rwth-aachen.de/i2/chen/</url>
+    </person>
     <person id="smover" group="postdoc">
       <name>Sergio Mover</name>
       <face>pics/generic-male.png</face>
@@ -4338,10 +4343,6 @@ an application example.</p>
     <person id="tah">
       <name>Thomas A. Henzinger</name>
       <url>http://pub.ist.ac.at/~tah/</url>
-    </person>
-    <person id="xinchen">
-      <name>Xin Chen</name>
-      <url>http://www-i2.informatik.rwth-aachen.de/i2/chen/</url>
     </person>
     <person id="erikaabraham">
       <name>Erika Abraham</name>
