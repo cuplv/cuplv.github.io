@@ -13,8 +13,9 @@
 	 <ref table="pub" key="adaptonwithnames-oopsla15" text="2"/>]
       </news-snippet>
       <news-detail>
-	CUPLV author <ref table="person" key="cernyp"/>
-	has had papers accepted for presentation at <ref table="event" key="oopsla15"/> in October (<ref table="pub"
+	CUPLV authors <ref table="person" key="blackshear"/>, <ref table="person" key="bec"/>,
+	<ref table="person" key="hammer"/>, and <ref table="person" key="kheadley"/>
+	have had papers accepted for presentation at <ref table="event" key="oopsla15"/> in October (<ref table="pub"
 	key="controlfeasibility-oopsla15" mode="authors"/> and <ref table="pub"
 	key="adaptonwithnames-oopsla15" mode="authors"/>).
       </news-detail>
