@@ -6,6 +6,36 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.10.15" id="tball-seminar-2015">
+      <news-snippet>
+	<ref table="person" key="tball"/> visits October 19-20.
+      </news-snippet>
+      <news-detail>
+	<ref table="person" key="tball"/> from
+	Microsoft Research
+	is visiting us on October 19-20, 2015. He is giving a
+	CUPLV Seminar
+	entitled
+	"Recent Results in Automated Verification from Microsoft Research"
+	at 9:30am
+	in ECCR 150 on Tuesday, October 20, 2015.
+      </news-detail>
+      <talk-announcement>
+	<speaker><ref table="person" key="tball"/></speaker>
+	<affiliation>Microsoft Research</affiliation>
+	<when>10-20-2015 9:30</when>
+	<where>ECCR 150</where>
+	<title>Recent Results in Automated Verification from Microsoft Research</title>
+	<abstract>
+	  <p>In this talk, I’ll review recent results in automated verification from members of Microsoft Research, addressing problems such as: (1) whole program analysis using automated theorem provers; (2) analyzing open programs efficiently and precisely; (3) speeding up interprocedural verifiers through apriori program transformations.</p>
+	  <p>This work is by Ankush Das, Shuvendu Lahiri, Akash Lal and Shaz Qadeer of Microsoft Research, along with their interns.</p>
+	</abstract>
+	<bio>
+	  <p><ref table="person" key="tball"/> is a research manager in the area of software engineering. His research interests are in how combinations of static/dynamic program analysis, model checking and theorem proving techniques can help improve the correctness and reliability of programs.</p>
+	</bio>
+	<host><ref table="person" key="hammer"/></host>
+      </talk-announcement>
+    </news>
     <news date="2015.08.04" id="paper-oopsla15">
       <news-snippet>
 	Two papers with CUPLV authors accepted to <ref table="event" key="oopsla15"/>!
@@ -4501,6 +4531,11 @@ an application example.</p>
     <person id="dvanhorn">
       <name>David Van Horn</name>
       <url>https://www.cs.umd.edu/~dvanhorn/</url>
+    </person>
+    <person id="tball">
+      <name>Thomas Ball</name>
+      <face>pics/tball.jpg</face>
+      <url>http://research.microsoft.com/en-us/people/tball/</url>
     </person>
   </persons>
   <events>
