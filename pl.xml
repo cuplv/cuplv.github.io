@@ -49,6 +49,13 @@
 	key="controlfeasibility-oopsla15" mode="authors"/> and <ref table="pub"
 	key="adaptonwithnames-oopsla15" mode="authors"/>).
       </news-detail>
+    </news>
+    <news date="2015.09.01" id="icfp-src-2015">
+      <news-snippet>
+	<ref table="person" key="kheadley"/>
+        comes in second at <ref table="event" key="icfp-src15"/>
+	in the undergraduate category.
+      </news-snippet>
     </news> 
     <news date="2015.06.01" id="paper-sas15">
       <news-snippet>
@@ -5156,6 +5163,15 @@ an application example.</p>
 	<date>2014-10</date>
 	<location>Portland, Oregon, USA</location>
 	<url>http://2014.splashcon.org/track/splash2014-src</url>
+      </event>
+    </series>
+    <series id="icfp-src" type="workshop">
+      <name>Functional Programming</name>
+      <longPrefix>ACM SIGPLAN International Conference on</longPrefix>
+      <event id="icfp-src15">
+	<date>2015-08</date>
+	<location>Vancouver, British Columbia, Canada</location>
+	<url>http://icfpconference.org/icfp2015/src.html</url>
       </event>
     </series> 
     <series id="cs-colloquium">
