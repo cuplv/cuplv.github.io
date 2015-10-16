@@ -189,6 +189,7 @@ name="html" />
 
       <h3>Affiliates</h3>
       <div class="hanging"><a href="http://systems.cs.colorado.edu/"><b>Computer Systems</b> @ Colorado</a></div>
+      <div class="hanging"><a href="http://hcc.colorado.edu/"><b>Human-Centered Computing</b> @ Colorado</a></div>
       <div class="hanging"><a href="http://www.cs.colorado.edu/">Department of <b>Computer Science</b></a></div>
       <div class="hanging"><a href="http://ecee.colorado.edu/">Department of <b>Electrical, Computer, and Energy Engineering</b></a></div>
       <div class="hanging"><a href="http://engineering.colorado.edu/">College of <b>Engineering and Applied Science</b></a></div>
