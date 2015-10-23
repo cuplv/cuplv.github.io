@@ -4014,7 +4014,8 @@ an application example.</p>
     </person>
     <person id="kheadley" group="phd">
       <name>Kyle Headley</name>
-      <face>pics/generic-male.png</face>
+      <url>http://kyleheadley.github.io/PHDWebsite/</url>
+      <face>pics/headley.jpg</face>
     </person>
     <person id="karlin" group="phd-alumni">
       <name>Ian Karlin</name>
@@ -4066,7 +4067,8 @@ an application example.</p>
     </person>
     <person id="bstein" group="phd">
       <name>Benno Stein</name>
-      <face>pics/generic-male.png</face>
+      <url>http://www.cs.colorado.edu/~benno/</url>
+      <face>pics/stein.png</face>
     </person>
     <person id="vitousek">
       <name>Michael Vitousek</name>
