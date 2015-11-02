@@ -6,6 +6,96 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.11.01" id="faculty-2015">
+      <news-snippet>
+	Multiple <a href="news.html#faculty-2015">tenure-track openings</a> in <a href="https://www.cs.colorado.edu/~kena/2015CSFacultySearch/">CS</a>
+	and <a href="http://ecee.colorado.edu/employ/faculty.html">ECEE</a>.
+      </news-snippet>
+      <news-detail>
+        Please consider applying or encourage your students and postdocs to apply for a tenure-track position in the
+	<a href="https://www.cs.colorado.edu/~kena/2015CSFacultySearch/">Department of Computer Science (CS)</a>
+	and
+	<a href="http://ecee.colorado.edu/employ/faculty.html">Department of Electrical, Computer, and Energy Engineering (ECEE)</a>
+	at the University of Colorado Boulder. We have multiple openings with one particular interest area in Computer Science being <em>secure and reliable software systems</em>. Applications will be evaluated beginning on November 9, 2015 with priority given to applications received by December 7, 2015, although applications will continue to be evaluated until the position is filled.
+	Apply at <a href="http://www.jobsatcu.com/postings/109940">http://www.jobsatcu.com/postings/109940</a> for CS
+	and at <a href="https://www.jobsatcu.com/postings/107808">https://www.jobsatcu.com/postings/107808</a> for ECEE.
+      </news-detail>
+      <news-page header="Tenure-Track Position">
+	<p><a href="http://www.colorado.edu/cs"><b>The Department of Computer Science (CS)</b></a> at the University of Colorado Boulder seeks applications for multiple tenure-track positions. The openings are targeted at the level of Assistant Professor, but experienced candidates may be considered for Associate or Full Professor. Research areas of particular interest include, but are not limited to, the areas of secure and reliable software systems (with an emphasis in software engineering and/or security), network science, scientific data analysis and visualization, computer systems as applied to autonomous and networked devices, and theoretical computer science. Our department values inclusive excellence and we seek candidates that understand the benefits that diversity brings to scientific innovation and who, through their work, develop technologies that impact a wide range of communities. Our department is also responsive to dual career situations.</p>
+<p>Our vision of successful candidates are those who demonstrate the potential for excellence in both research and teaching, have a strong interest in interdisciplinary collaboration, and aim to lead a visible, externally funded research program. Candidates must have a Ph.D. in computer science or a related discipline and must show promise in their ability to develop an independent and internationally recognized research program. They must also display an ability, a record of excellence, and/or a commitment to teaching and working with undergraduate and graduate students of diverse backgrounds.</p>
+<p>Applications will be evaluated beginning on November 9, 2015 with priority given to applications received by December 7, 2015, although applications will continue to be evaluated until the position is filled. Applications must include a cover letter specifying the applicant's areas of specialization and describing their interest in the Department of Computer Science at CU Boulder. Applications must also include a curriculum vita, statements of research and teaching interests, and names and contact information for three references. In their statements, candidates should describe and include specific examples of how their experience would contribute to the department's mission and values, including, but not limited to, their research record, pedagogical approaches, teaching content, mentoring and recruiting activities, community engagement, and experiences working with underrepresented communities.</p>
+<p>The Department's research and education efforts interact broadly with many interdisciplinary programs and collaborators in the Boulder area, including national labs at NIST, NOAA, NREL, and NCAR, and CU Boulder research institutes including the ATLAS Institute, the BioFrontiers Institute, and the Institute for Cognitive Science. The Department has a long-standing partnership with the National Center for Women and IT and has faculty active in increasing the broadening of participation in computer science via their research, teaching, and service. The Department also has extensive ties with the thriving local tech community and inhabits a picturesque location in the foothills of the Rocky Mountains.</p>
+	<p>
+Applications are to be submitted on-line at <a href="http://www.jobsatcu.com/postings/109940">http://www.jobsatcu.com/postings/109940</a>.
+	</p>
+	<p><a href="http://ecee.colorado.edu"><b>The Department of Electrical, Computer, and Energy Engineering (ECEE)</b></a> at the University of Colorado Boulder seeks outstanding candidates for up to three tenure-track faculty positions beginning August 2016. The openings are targeted at the level of Assistant Professor, but experienced candidates with outstanding credentials may be considered at any rank.</p>
+	<p>Hiring priority areas in ECEE include computer systems, next-generation networks, data analysis for complex systems, applied electromagnetics, RF/microwave engineering, power systems and electronics, integrated circuits, controls, nano-materials and systems, optics/photonics, and imaging. Exceptionally qualified candidates in other areas of electrical, computer, and energy engineering will be considered. Candidates involved in research bridging disciplines are highly encouraged to apply.</p>
+<p>Candidates must have a Ph.D. in electrical engineering or related disciplines; they must have the ability to develop an independent research program, enthusiasm to work with other faculty in the department and dedication to teaching at all levels.</p>
+<p>The department includes 2 University Distinguished Professors, 14 Full, 13 Associate, and 9 Assistant Professors. Faculty honors include 14 IEEE Fellows, 2 members of the US National Academy of Engineering, a Packard Fellow, a NSF Presidential Faculty Fellow and 10 NSF CAREER Award recipients. The ECEE program consists of about 350 undergraduate and 300 graduate students, and has averaged over $12.5 million in annual research grants. The department maintains close ties with local industry and national institutes/labs such as NIST, NREL, and NOAA.</p>
+<p>Complete applications submitted by December 1, 2015 will receive full consideration, though applications received after this date will continue to be reviewed until the positions are filled. Applications must include a cover letter specifying the area of specialization, complete curriculum vitae, statement of research and teaching interests, and names and contact information of at least three references.</p>
+	<p>
+Applications are to be submitted on-line at <a href="https://www.jobsatcu.com/postings/107808">https://www.jobsatcu.com/postings/107808</a>.
+	</p>
+
+      </news-page>
+    </news>         
+    <news date="2015.11.01" id="postdoc-call-2016-spring">
+      <news-snippet>
+	Call for postdoc <a href="news.html#postdoc-call-2016">applicants</a> for Spring 2016.
+      </news-snippet>
+      <news-detail>
+	There is a postdoctoral research associate position open with the opportunity to work with Profs. <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="cernyp"/> on program analysis and program synthesis.
+      </news-detail>
+      <news-page header="Postdoc Position">
+	<p>
+	<float img="pics/Preview_Winter_Panorama_CC141.jpg">
+	  The majestic, snow-covered Flatirons is a breathtaking backdrop with Old Main at the University of Colorado Boulder in the foreground. (Photo by Casey A. Cass/University of Colorado)
+	</float>
+	The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for candidates for a postdoctoral research associate in the area of program analysis and program synthesis.</p>
+<p>The position is on the Fixr project, a large project examining approaches to automatically mine, understand, and transfer bug fixes in large application frameworks, such as Android.</p>
+<p>The ideal candidate has a background in the area of programming languages, software engineering and/or formal methods, as well as an enthusiasm for mentoring junior researchers.</p>
+<p>The postdoctoral researcher would
+have the opportunity to lead this ambitious project that combines program analysis, probabilistic reasoning, and program synthesis. There will also be interactions with human-centered computing and big data engineering researchers on the interdisciplinary aspects of the project.</p>
+<p>The position is for one to two years, with a possible extension for additional years. A transition plan to a research assistant professor position is possible for highly-qualified candidates. While not required, teaching opportunities will also be available. Compensation is highly competitive and commensurate with experience.</p>
+<p>To apply, please send an email to <ref table="person" key="bec"/> with a CV and contact information for two to three references. Applications will be considered until the position is filled.</p>
+	<p>Our group has active projects in areas such as the following:
+<ul>
+  <li>program analysis</li>
+  <li>model checking</li>
+  <li>verification and synthesis of hybrid and embedded systems</li>
+  <li>program synthesis</li>
+</ul>
+	</p>
+        <p>Boulder, located at the base of the Rocky Mountain foothills, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and its vibrant startup community.  Located 30 miles from downtown Denver, there are convenient public transportation options between Boulder and the Denver metro area.</p>
+      </news-page>
+    </news>
+    <news date="2015.11.01" id="phd-call-2015">
+      <news-snippet>
+	Call for Ph.D. applicants for Fall 2016.  Application deadline
+	is December 15, 2015.
+      </news-snippet>
+      <news-detail>
+	Call for Ph.D. applicants for Fall 2016.  Application deadline
+	is December 15, 2015. Check out our latest <a
+	href="talks/openhouse15.pdf">recruiting
+	talk</a> from February 20, 2015.
+      </news-detail>
+      <news-page header="Ph.D. Positions">
+	<p>
+	We are looking for enthusiastic students to join our diverse and
+	dynamic group in programming languages and verification.  Our
+	group has active projects in areas such as static and dynamic
+	program analysis; verification, debugging, and programmer
+	productivity tools; language-based security; type systems;
+	language design; analysis of hybrid and embedded systems.  We have a track
+	record of publishing in top venues, such as POPL and PLDI.  <a
+	href="http://www.colorado.edu/cs/graduates/admissions">
+	CS Admissions</a> (deadline December 15, 2016) and <a
+	href="http://ecee.colorado.edu/prospective/grad/intro.html">ECEE
+	Admissions</a> (deadline January 15, 2016 but earlier for financial aid consideration).
+	</p>
+      </news-page>
+    </news>
     <news date="2015.10.15" id="tball-seminar-2015">
       <news-snippet>
 	<ref table="person" key="tball"/> visits October 19-20.

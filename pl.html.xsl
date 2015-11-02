@@ -77,13 +77,13 @@ name="html" />
       <xsl:apply-templates select="cv/news-list" mode="display-recent" />
       <div class="contentbox" style="width: 48%; float:right; height: 12ex;">
 	<a
-	href="http://www.colorado.edu/cs/admissions/how-apply"><b>Ph.D. Positions</b></a>.
+	href="http://www.colorado.edu/cs/graduates/admissions"><b>Ph.D. Positions</b></a>.
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.
 	Application deadline is December 15, 2015.
       </div>
       <div class="contentbox" style="width: 48%; height: 12ex;">
-	<b>Postdoc Position</b>.
+	<a href="news.html#postdoc-call-2016"><b>Postdoc Position</b></a>.
 	There is a postdoctoral research associate position open
 	with the opportunity to work with
 	Profs.
