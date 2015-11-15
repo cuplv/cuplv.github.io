@@ -2309,6 +2309,23 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="sets-lpar15">
+      <title>Abstract Domains and Solvers for Sets Reasoning</title>
+      <authors>
+	<author person="cox"/>
+	<author person="bec"/>
+	<author person="hli"/>
+	<author person="rival"/>
+      </authors>
+      <urls>
+	<!--<url name="pdf">papers/sets-lpar15.pdf</url>-->
+      </urls>
+      <howpub>
+	<proceedings event="lpar15" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="controlfeasibility-oopsla15">
       <title>Selective Control-Flow Abstraction via Jumping</title>
       <authors>
@@ -4982,6 +4999,15 @@ an application example.</p>
 	<location>New Orleans, Louisiana, USA</location>
 	<nth>Twenty-Eighth</nth>
 	<url>http://lii.rwth-aachen.de/lics/lics13/</url>
+      </event>
+    </series>
+    <series id="lpar">
+      <name>Logic for Programming, Artificial Intelligence and Reasoning</name>
+      <event id="lpar15">
+	<date>2015-11</date>
+	<location>Suva, Fiji</location>
+	<nth>Twentieth</nth>
+	<url>http://www.lpar-20.org/</url>
       </event>
     </series>
     <series id="vstte">
