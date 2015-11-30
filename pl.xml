@@ -4889,6 +4889,8 @@ an application example.</p>
 	<location>Saint-Malo, France</location>
 	<nth>Twenty-Second</nth>
 	<url>http://sas2015.inria.fr/</url>
+	<acceptance>18/44</acceptance>
+	<acceptanceRate>40.1%</acceptanceRate>
       </event>
       <event id="sas14">
 	<date>2014-09</date>
