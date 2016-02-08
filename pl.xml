@@ -351,7 +351,17 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
 	have had a paper accepted for presentation at <ref table="event" key="pldi15"/> in June (<ref table="pub"
 	key="netsynth-pldi15" mode="authors"/>).
       </news-detail>
-    </news>    
+    </news>
+    <news date="2015.01.29" id="soundiness-cacm15">
+      <news-snippet>
+	<ref table="pub" key="soundiness-cacm15" mode="authors"/> paper appeared in <ref table="journal" key="cacm"/>!
+      </news-snippet>
+      <news-detail>
+	CUPLV author <ref table="person" key="bec"/>
+	have a paper appearing in <ref table="journal" key="cacm"/> (<ref table="pub"
+	key="soundiness-cacm15" mode="authors"/>).
+      </news-detail>
+    </news>
     <news date="2014.12.16" id="paper-esop15">
       <news-snippet>
 	Two papers with CUPLV authors accepted to <ref table="event" key="esop15"/>!
@@ -2552,6 +2562,34 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       <howpub>
 	<proceedings event="esop15" />
       </howpub>
+    </pub>
+    <pub id="soundiness-cacm15">
+      <title>In Defense of Soundiness: A Manifesto</title>
+      <authors>
+	<author person="blivshits"/>
+	<author person="msridhar"/>
+	<author person="ysmaragdakis"/>
+	<author person="olhotak"/>
+	<author person="jamaral"/>
+	<author person="bec"/>
+	<author person="sguyer"/>
+	<author person="ukhedker"/>
+	<author person="amoeller"/>
+	<author person="dvardoulakis"/>
+      </authors>
+      <urls>
+      </urls>
+      <pages></pages>
+      <date>2015-02</date>
+      <volume>58</volume>
+      <number>2</number>
+      <doi>10.1145/2644805</doi>
+      <ee>http://doi.acm.org/10.1145/2644805</ee>
+      <howpub>
+        <issue journal="cacm" />
+      </howpub>
+      <abstract>
+      </abstract>
     </pub>    
     <pub id="controller-emsoft14">
       <title>Infinite Horizon Safety Controller Synthesis through Disjunctive Polyhedral Abstract Interpretation</title>
@@ -3067,13 +3105,13 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	<url name="pdf">papers/sttt13-filter_verification.pdf</url>
       </urls>
       <pages>175-190</pages>
+      <date>2014</date>
+      <volume>16</volume>
+      <number>2</number>
       <doi>10.1007/s10009-013-0279-9</doi>
       <ee>http://dx.doi.org/10.1007/s10009-013-0279-9</ee>
       <howpub>
-	<issue journal="sttt" />
-	<date>2014</date>
-	<volume>16</volume>
-	<number>2</number>
+        <issue journal="sttt" />
       </howpub>
       <abstract>
 	<p>Fixed point digital filters are simple yet ubiquitous components of a
@@ -4655,6 +4693,38 @@ an application example.</p>
       <face>pics/tball.jpg</face>
       <url>http://research.microsoft.com/en-us/people/tball/</url>
     </person>
+    <person id="blivshits">
+      <name>Benjamin Livshits</name>
+      <url>http://research.microsoft.com/en-us/um/people/livshits/</url>
+    </person>
+    <person id="ysmaragdakis">
+      <name>Yannis Smaragdakis</name>
+      <url>https://yanniss.github.io/</url>
+    </person>
+    <person id="olhotak">
+      <name>Ondřej Lhoták</name>
+      <url>https://plg.uwaterloo.ca/~olhotak/</url>
+    </person>
+    <person id="jamaral">
+      <name>J. Nelson Amaral</name>
+      <url>https://webdocs.cs.ualberta.ca/~amaral/</url>
+    </person>
+    <person id="sguyer">
+      <name>Samuel Z. Guyer</name>
+      <url>http://www.cs.tufts.edu/~sguyer/</url>
+    </person>
+    <person id="ukhedker">
+      <name>Uday P. Khedker</name>
+      <url>https://www.cse.iitb.ac.in/~uday/</url>
+    </person>
+    <person id="amoeller">
+      <name>Anders Møller</name>
+      <url>https://cs.au.dk/~amoeller/</url>
+    </person>
+    <person id="dvardoulakis">
+      <name>Dimitrios Vardoulakis</name>
+      <url>http://dimvar.github.io/</url>
+    </person>
   </persons>
   <events>
     <series id="popl">
@@ -4782,6 +4852,10 @@ an application example.</p>
 	<date>2015-10</date>
 	<location>Pittsburgh, Pennsylvania, USA</location>
 	<url>http://2015.splashcon.org/</url>
+	<acceptance>53/210</acceptance>
+	<acceptanceRate>25.2%</acceptanceRate>
+	<volume>50</volume>
+	<number>10</number>
       </event>
     </series>
     <series id="cav">
@@ -5005,11 +5079,16 @@ an application example.</p>
     </series>
     <series id="lpar">
       <name>Logic for Programming, Artificial Intelligence and Reasoning</name>
+      <longPrefix>International Conference on</longPrefix>
+      <issue journal="lncs"/>
       <event id="lpar15">
 	<date>2015-11</date>
 	<location>Suva, Fiji</location>
 	<nth>Twentieth</nth>
 	<url>http://www.lpar-20.org/</url>
+	<acceptance>43/92</acceptance>
+	<acceptanceRate>46.7%</acceptanceRate>
+	<volume>9450</volume>
       </event>
     </series>
     <series id="vstte">
@@ -5344,6 +5423,10 @@ an application example.</p>
     <journal id="entcs">
       <name>Electronic Notes in Theoretical Computer Science</name>
       <short>Electr Notes Theor Comput Sc</short>
+    </journal>
+    <journal id="cacm">
+      <name>Commnunications of the ACM (CACM)</name>
+      <short>Commun. ACM</short>
     </journal>
     <journal id="sttt">
       <name>International Journal on Software Tools for Technology Transfer (STTT)</name>

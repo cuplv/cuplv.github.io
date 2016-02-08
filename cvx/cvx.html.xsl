@@ -646,6 +646,15 @@ name="html" />
   <xsl:apply-templates select="key('event', @event)" mode="header"/>
 </xsl:template>
 
+<xsl:template match="issue">
+  <xsl:apply-templates select="key('journal',@journal)" mode="name"/>
+</xsl:template>
+<xsl:template match="journal">
+  <xsl:value-of select="name"/>
+</xsl:template>
+<xsl:template match="volume"><xsl:value-of select="."/></xsl:template>
+<xsl:template match="number">(<xsl:value-of select="."/>)</xsl:template>
+
 <xsl:template match="where">
   <xsl:choose>
     <xsl:when test="@event">
