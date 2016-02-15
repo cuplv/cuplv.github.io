@@ -1,0 +1,3 @@
+[submodule "cvx"]
+	path = cvx
+	url = git@github.com:bechang/cvx.git
