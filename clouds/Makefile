@@ -6,7 +6,7 @@ clean:
 	rm -f $(WORDS:%.txt=%.png)
 
 %.words.png: %.words.txt
-	[ ! -e $@ ] || (svn status $< | grep "^M" >/dev/null); \
+	[ ! -e $@ ] || (git status $< | grep "modified" >/dev/null); \
 	if [ $$? -eq 0 ]; then \
           $(WORDCLOUD) -w 400 -h 400 -i $< -o $*.cloud.png; \
 	  convert -extent 400x400 -background "#CCCCCC" -gravity center \

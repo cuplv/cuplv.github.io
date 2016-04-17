@@ -6,6 +6,17 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2016.04.17" id="events-pldi16">
+      <news-snippet>
+	<ref table="pub" key="events-pldi16" mode="authors"/> paper accepted to <ref table="event" key="pldi16"/>!
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="mcclurg"/> and <ref table="person" key="cernyp"/>
+	and collaborators at Cornell
+	have had a paper accepted for presentation at <ref table="event" key="pldi16"/> in June (<ref table="pub"
+	key="events-pldi16" mode="authors"/>).
+      </news-detail>
+    </news>
     <news date="2015.11.01" id="faculty-2015">
       <news-snippet>
 	Multiple <a href="news.html#faculty-2015">tenure-track openings</a> in <a href="https://www.cs.colorado.edu/~kena/2015CSFacultySearch/">CS</a>
@@ -2319,6 +2330,24 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
   
   <publications>
+    <pub id="events-pldi16">
+      <title>Efficient Synthesis of Network Updates</title>
+      <authors>
+	<author person="mcclurg" />
+	<author person="hojjat" />
+	<author person="jnfoster" />
+	<author person="cernyp" />
+      </authors>
+      <urls>
+	<url name="pdf">papers/events-pldi16.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="pldi16" />
+      </howpub>
+      <abstract>
+	<p>Software-defined networking (SDN) programs must simultaneously describe static forwarding behavior and dynamic updates in response to events. Event-driven updates are critical to get right, but difficult to implement correctly due to the high degree of concurrency in networks. Existing SDN platforms offer weak guarantees that can break application invariants, leading to problems such as dropped packets, degraded performance, security violations, etc. This paper introduces EVENT-DRIVEN CONSISTENT UPDATES that are guaranteed to preserve well-defined behaviors when transitioning between configurations in response to events. We propose NETWORK EVENT STRUCTURES (NESs) to model constraints on updates, such as which events can be enabled simultaneously and causal dependencies between events. We define an extension of the NetKAT language with mutable state, give semantics to stateful programs using NESs, and discuss provably-correct strategies for implementing NESs in SDNs. Finally, we evaluate our approach empirically, demonstrating that it gives well-defined consistency guarantees while avoiding expensive synchronization and packet buffering.</p>
+      </abstract>
+    </pub> 
     <pub id="sets-lpar15">
       <title>Abstract Domains and Solvers for Sets Reasoning</title>
       <authors>
@@ -4799,6 +4828,13 @@ an application example.</p>
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="pldi16">
+	<date>2016-06</date>
+	<location>Santa Barbara, California, USA</location>
+	<url>http://conf.researchr.org/home/pldi-2016/</url>
+	<acceptance>49/304</acceptance>
+	<acceptanceRate>16.1%</acceptanceRate>
+      </event>
       <event id="pldi15">
 	<date>2015-06</date>
 	<location>Portland, Oregon, USA</location>
