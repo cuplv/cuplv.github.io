@@ -2331,7 +2331,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   
   <publications>
     <pub id="events-pldi16">
-      <title>Efficient Synthesis of Network Updates</title>
+      <title>Event-Driven Network Programming</title>
       <authors>
 	<author person="mcclurg" />
 	<author person="hojjat" />

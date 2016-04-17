@@ -14,7 +14,7 @@ really-clean:
 	rm -f $(WORDS_OUTPUT)
 
 commit: html
-	svn add $(OUTPUT); svn commit
+	git add $(OUTPUT); git commit -a
 
 html: pl.html.log words
 
