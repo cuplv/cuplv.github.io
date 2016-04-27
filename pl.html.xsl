@@ -299,7 +299,7 @@ name="html" />
         <ul>
 	  <li>Take the <a href="http://greenrideboulder.com/">Green Ride</a> airport shuttle. It's $30 one way.</li>
           <li>Rent a car.  It is usually pretty inexpensive.  You need to take an airport bus to the rental car center.</li>
-          <li>Take the express <a href="http://www.rtd-denver.com/skyride.shtml">RTD SkyRide</a> bus: <a href="http://www3.rtd-denver.com//schedules/getSchedule.action?routeType=9&amp;routeId=AB">AB route</a>.  It goes directly from the airport, by campus, and ends in downtown Boulder.  If you stay at the Hotel Boulderado, the downtown transit center where the bus ends is only a few blocks from the hotel. The fare is $13 one way and departs at least once an hour. There are signs for this bus in the airport terminal.</li>
+          <li>Take the express <a href="http://www.rtd-denver.com/skyride.shtml">RTD SkyRide</a> bus: <a href="http://www3.rtd-denver.com//schedules/getSchedule.action?routeType=9&amp;routeId=AB">AB route</a>.  It goes directly from the airport, by campus, and ends in downtown Boulder.  If you stay at the Hotel Boulderado, the downtown transit center where the bus ends is only a few blocks from the hotel. The fare is $9 one way and departs at least once an hour. There are signs for this bus in the airport terminal.</li>
           <li>A taxi to Boulder is about $88.</li>
 	</ul>
       </p>
