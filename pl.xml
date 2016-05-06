@@ -2375,7 +2375,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </abstract>
     </pub>
     <pub id="symbolic-numeric-reach-hscc16">
-      <title></title>
+      <title>Symbolic-Numeric Reachability Analysis of Closed-Loop Control Software</title>
       <authors>
 	<author person="adityaz"/>
 	<author person="srirams"/>
@@ -2393,7 +2393,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </abstract>
     </pub>
     <pub id="affine-forms-conc-measure-tacas16">
-      <title></title>
+      <title>Uncertainty Propagation using Probabilistic Affine Forms and Concentration of Measure Inequalities</title>
       <authors>
 	<author person="obouissou"/>
 	<author person="goubault"/>
@@ -2412,7 +2412,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </abstract>
     </pub>
     <pub id="stochastic-persistence-tacas16">
-      <title></title>
+      <title>Deductive Proofs of Almost Sure Persistence and Recurrence Properties</title>
       <authors>
 	<author person="chakarov"/>
 	<author person="yvoronin"/>
@@ -4268,7 +4268,7 @@ an application example.</p>
     </person>
     <person id="kheadley" group="phd">
       <name>Kyle Headley</name>
-      <url>http://kyleheadley.github.io/</url>
+      <url>http://www.cs.colorado.edu/kyle.headley/</url>
       <face>pics/headley.jpg</face>
     </person>
     <person id="karlin" group="phd-alumni">
