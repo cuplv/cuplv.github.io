@@ -4223,7 +4223,8 @@ an application example.</p>
     </person>
     <person id="smover" group="postdoc">
       <name>Sergio Mover</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/smover.jpg</face>
+      <url>http://www.sergiomover.eu/</url>
     </person>
     <person id="yvoronin" group="postdoc">
       <name>Yuen-Lam Voronin</name>
@@ -4281,7 +4282,7 @@ an application example.</p>
     </person>
     <person id="tlu" group="phd">
       <name>Tianhan Lu</name>
-	  <url>http://tianhanlu.com</url>
+      <url>http://tianhanlu.com</url>
       <face>pics/tianhan.jpg</face>
     </person>   
     <person id="mcclurg" group="phd">
@@ -4914,6 +4915,10 @@ an application example.</p>
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="pldi17">
+	<date>2017-06</date>
+	<location>Barcelona, Spain</location>
+      </event>
       <event id="pldi16">
 	<date>2016-06</date>
 	<location>Santa Barbara, California, USA</location>
@@ -5019,6 +5024,10 @@ an application example.</p>
       <name>Object-Oriented Programming</name>
       <longPrefix>European Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="ecoop17">
+	<date>2017-06</date>
+	<location>Barcelona, Spain</location>
+      </event>
       <event id="ecoop13">
 	<date>2013-07</date>
 	<location>Montpellier, France</location>
@@ -5089,6 +5098,12 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas16">
+	<date>2016-09</date>
+	<location>Edinburgh, UK</location>
+	<nth>Twenty-Third</nth>
+	<url>http://staticanalysis.org/sas2016/</url>
+      </event>
       <event id="sas15">
 	<date>2015-09</date>
 	<location>Saint-Malo, France</location>
@@ -5145,6 +5160,12 @@ an application example.</p>
       <name>Verification, Model Checking, and Abstract Interpretation</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="vmcai16">
+	<date>2016-01</date>
+	<location>St. Petersburg, Florida, USA</location>
+	<nth>Seventeenth</nth>
+	<url>http://conf.researchr.org/home/VMCAI-2016</url>
+      </event>
       <event id="vmcai14">
 	<date>2014-01</date>
 	<location>San Diego, California, USA</location>
@@ -5270,6 +5291,15 @@ an application example.</p>
 	<url>http://crisys.cs.umn.edu/issta2012/</url>
 	<acceptance>31/108</acceptance>
 	<acceptanceRate>28.7%</acceptanceRate>
+      </event>
+    </series>
+    <series id="aplas">
+      <name>Programming Languages and Systems</name>
+      <longPrefix>Asian Symposium on</longPrefix>
+      <event id="aplas16">
+	<date>2016-11</date>
+	<location>Hanoi, Vietnam</location>
+	<url>http://soict.hust.edu.vn/~aplas2016/</url>
       </event>
     </series>
     <series id="hscc">
