@@ -6,7 +6,7 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
-    <news date="2016.06.17" id="pldisrc16">
+    <news date="2015.06.17" id="pldisrc16">
       <news-snippet>
         <ref table="person" key="bstein"/> awarded second place
         at the <a href="http://www.cs.ucsb.edu/~benh/pldi-2016/pldi-2016-SRC.html">PLDI Student Research Competition (SRC)</a>.
@@ -15,6 +15,43 @@
         Congratulations to <ref table="person" key="bstein"/> for being awarded second place in the graduate student category
         at the <a href="http://www.cs.ucsb.edu/~benh/pldi-2016/pldi-2016-SRC.html">PLDI Student Research Competition (SRC)</a>
         for his project, "Goal-Directed Abstract Interpretation for JavaScript."
+      </news-detail>
+    </news>
+    <news date="2016.06.14" id="paper-sas16">
+      <news-snippet>
+        Paper by <ref table="pub" key="sdp-sas16" mode="authors"/>
+        accepted to <ref table="event" key="sas16"/>.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="proux"/>,
+        <ref table="person" key="yvoronin"/>, and
+        <ref table="person" key="srirams"/>
+        have had a paper "<ref table="pub" key="sdp-sas16"/>"
+        accepted for presentation at <ref table="event" key="sas16"/> in September.
+      </news-detail>
+    </news>
+    <news date="2016.05.20" id="paper-emsoft16">
+      <news-snippet>
+        Paper by <ref table="pub" key="switched-systems-emsoft16" mode="authors"/>
+        accepted to <ref table="event" key="emsoft16"/>.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="hravanbakhsh"/> and <ref table="person" key="srirams"/>
+        have had a paper "<ref table="pub" key="switched-systems-emsoft16"/>"
+        accepted for presentation at <ref table="event" key="emsoft16"/> in October.
+      </news-detail>
+    </news>
+    <news date="2016.05.13" id="grant-ovv">
+      <news-snippet>
+        NSF grant
+        "<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1619282">Online Verification-Validation</a>"
+        awarded to <ref table="person" key="hammer"/> and <ref table="person" key="bec"/>.
+      </news-snippet>
+      <news-detail>
+        CUPLV faculty <ref table="person" key="hammer"/> and <ref table="person" key="bec"/>
+        have been awarded an NSF grant
+        "<a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1619282">Online Verification-Validation</a>"
+        with collaborator <ref table="person" key="dvanhorn"/> at the University of Maryland.
       </news-detail>
     </news>
     <news date="2016.05.06" id="paper-cav16">
@@ -2420,6 +2457,43 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="switched-systems-emsoft16">
+      <title>Robust Controller Synthesis of Switched Systems Using Counterexample Guided Framework</title>
+      <authors>
+        <author person="hravanbakhsh"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <!--<url name="pdf">papers/switched-systems-emsoft16.pdf</url>-->
+      </urls>
+      <howpub>
+        <proceedings event="emsoft16" />
+      </howpub>
+      <!--
+      <abstract>
+      <p></p>
+      </abstract>
+      -->
+    </pub>
+    <pub id="sdp-sas16">
+      <title>Validating Numerical Semidefinite Programming Solvers for Polynomial Invariants</title>
+      <authors>
+        <author person="proux"/>
+        <author person="yvoronin"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <!--<url name="pdf">papers/switched-systems-emsoft16.pdf</url>-->
+      </urls>
+      <howpub>
+        <proceedings event="sas16" />
+      </howpub>
+      <!--
+      <abstract>
+      <p></p>
+      </abstract>
+      -->
+    </pub>
     <pub id="clausal-cav16">
       <title>Proving Parameterized Systems Safe by Generalizing Clausal Proofs of
 Small Instances</title>
@@ -4554,6 +4628,11 @@ an application example.</p>
       <name>Nicholas Vanderweit</name>
       <face>pics/vanderweit.jpg</face>
     </person>
+    <person id="proux" group="visitor-alumni">
+      <name>Pierre Roux</name>
+      <face>pics/proux.jpg</face>
+      <url>http://perso.ens-lyon.fr/pierre.roux/</url>
+    </person>
     <person id="vachharajani">
       <name>Manish Vachharajani</name>
       <url>http://ecee.colorado.edu/~manishv/</url>
@@ -5228,61 +5307,61 @@ an application example.</p>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
       <event id="sas16">
-	<date>2016-09</date>
-	<location>Edinburgh, UK</location>
-	<nth>Twenty-Third</nth>
-	<url>http://staticanalysis.org/sas2016/</url>
+        <date>2016-09</date>
+        <location>Edinburgh, UK</location>
+        <nth>Twenty-Third</nth>
+        <url>http://staticanalysis.org/sas2016/</url>
       </event>
       <event id="sas15">
-	<date>2015-09</date>
-	<location>Saint-Malo, France</location>
-	<nth>Twenty-Second</nth>
-	<url>http://sas2015.inria.fr/</url>
-	<acceptance>18/44</acceptance>
-	<acceptanceRate>40.1%</acceptanceRate>
+        <date>2015-09</date>
+        <location>Saint-Malo, France</location>
+        <nth>Twenty-Second</nth>
+        <url>http://sas2015.inria.fr/</url>
+        <acceptance>18/44</acceptance>
+        <acceptanceRate>40.1%</acceptanceRate>
       </event>
       <event id="sas14">
-	<date>2014-09</date>
-	<location>Munich, Germany</location>
-	<nth>Twenty-First</nth>
-	<url>http://cs.uni-muenster.de/sev/sas14/</url>
-	<acceptance>20/53</acceptance>
-	<acceptanceRate>37.7%</acceptanceRate>
-	<volume>8723</volume>
+        <date>2014-09</date>
+        <location>Munich, Germany</location>
+        <nth>Twenty-First</nth>
+        <url>http://cs.uni-muenster.de/sev/sas14/</url>
+        <acceptance>20/53</acceptance>
+        <acceptanceRate>37.7%</acceptanceRate>
+        <volume>8723</volume>
       </event>
       <event id="sas12">
-	<date>2012-09</date>
-	<location>Deauville, France</location>
-	<nth>Nineteenth</nth>
-	<url>http://www.sas2012.ens.fr/</url>
-	<acceptance>25/62</acceptance>
-	<acceptanceRate>40.3%</acceptanceRate>
-	<volume>7460</volume>
+        <date>2012-09</date>
+        <location>Deauville, France</location>
+        <nth>Nineteenth</nth>
+        <url>http://www.sas2012.ens.fr/</url>
+        <acceptance>25/62</acceptance>
+        <acceptanceRate>40.3%</acceptanceRate>
+        <volume>7460</volume>
       </event>
       <event id="sas11">
-	<date>2011-09</date>
-	<location>Venice, Italy</location>
-	<nth>Eighteenth</nth>
-	<url>http://sas2011.cs.technion.ac.il/</url>
-	<acceptance>22/67</acceptance>
-	<acceptanceRate>32.8%</acceptanceRate>
-	<volume>6887</volume>
+        <date>2011-09</date>
+        <location>Venice, Italy</location>
+        <nth>Eighteenth</nth>
+        <url>http://sas2011.cs.technion.ac.il/</url>
+        <acceptance>22/67</acceptance>
+        <acceptanceRate>32.8%</acceptanceRate>
+        <volume>6887</volume>
       </event>
       <event id="sas07">
-	<date>2007-08</date>
-	<nth>Fourteenth</nth>
-	<url>http://www2.imm.dtu.dk/sas2007/</url>
-	<acceptance>26/85</acceptance>
-	<acceptanceRate>30.6%</acceptanceRate>
-	<volume>4634</volume>
+        <date>2007-08</date>
+        <nth>Fourteenth</nth>
+        <url>http://www2.imm.dtu.dk/sas2007/</url>
+        <acceptance>26/85</acceptance>
+        <acceptanceRate>30.6%</acceptanceRate>
+        <volume>4634</volume>
       </event>
       <event id="sas06">
-	<date>2006-08</date>
-	<nth>Thirteenth</nth>
-	<url>http://ropas.snu.ac.kr/sas06/</url>
-	<acceptance>23/80</acceptance>
-	<acceptanceRate>28.8%</acceptanceRate>
-	<volume>4134</volume>
+        <date>2006-08</date>
+        <nth>Thirteenth</nth>
+        <url>http://ropas.snu.ac.kr/sas06/</url>
+        <acceptance>23/80</acceptance>
+        <acceptanceRate>28.8%</acceptanceRate>
+        <volume>4134</volume>
       </event>
     </series>
     <series id="vmcai">
@@ -5476,11 +5555,16 @@ an application example.</p>
     </series>
     <series id="emsoft">
       <name>Embedded Software</name>
-      <longPrefix>International Conference on</longPrefix>
+      <longPrefix>ACM SIGBED International Conference on</longPrefix>
+      <event id="emsoft16">
+        <date>2016-10</date>
+        <url>http://emsoft.org/</url>
+        <location>Pittsburgh, Pennsylvania, USA</location>
+      </event>
       <event id="emsoft14">
         <date>2014-10</date>
-	<url>http://esweek.acm.org/emsoft/</url>
-	<location>New Delhi, India</location>
+        <url>http://emsoft.org/</url>
+        <location>New Delhi, India</location>
       </event>
     </series>
     <series id="isola">

@@ -1,0 +1,9 @@
+Validating Numerical Semidefinite Programming Solvers for Polynomial Invariants          Validating Numerical Semidefinite Programming Solvers for Polynomial Invariants 
+        
+        
+        
+          
+        
+       
+        
+       
