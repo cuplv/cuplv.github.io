@@ -136,28 +136,42 @@ name="html" />
       <h3>Students</h3>
       <h4>PhD</h4>
       <xsl:for-each select="cv/persons/person[@group='phd']">
-	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
       <xsl:if test="cv/persons/person[@group='bsms']">
-	<h4>BS/BA+MS</h4>
+	    <h4>BS/BA+MS</h4>
       </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='bsms']">
-	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
       <xsl:if test="cv/persons/person[@group='ms']">
-	<h4>MS</h4>
+	    <h4>MS</h4>
       </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='ms']">
-	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
       <xsl:if test="cv/persons/person[@group='bs']">
-	<h4>BS/BA</h4>
+	    <h4>BS/BA</h4>
       </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='bs']">
-	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
+	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
+      <xsl:if test="cv/persons/person[@group='gradintern']">
+      <h4>Graduate Interns</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='gradintern']">
+        <div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+
+      <xsl:if test="cv/persons/person[@group='visitor']">
+      <h4>Visiting Scholars</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='visitor']">
+        <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
       <h3>Alumni</h3>
@@ -182,9 +196,15 @@ name="html" />
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
       <xsl:if test="cv/persons/person[@group='bs-alumni']">
-        <h4>BS/BA</h4>
+      <h4>BS/BA</h4>
       </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='bs-alumni']">
+        <div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <xsl:if test="cv/persons/person[@group='visitor-alumni']">
+      <h4>Visiting Scholars</h4>
+      </xsl:if>
+      <xsl:for-each select="cv/persons/person[@group='visitor-alumni']">
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 

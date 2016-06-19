@@ -4560,9 +4560,21 @@ an application example.</p>
       <name>Yi Chou</name>
       <face>pics/generic-female.png</face>
     </person>
+    <person id="rdiwakaran" group="ms">
+      <name>Ram Das Diwakaran</name>
+      <face>pics/rdiwakaran.jpg</face>
+    </person>
     <person id="deconomou" group="ms">
       <name>Dimitrios Economou</name>
       <face>pics/deconomou.jpg</face>
+    </person>
+    <person id="njagnik" group="ms">
+      <name>Nilesh Jagnik</name>
+      <face>pics/njagnik.jpg</face>
+    </person>
+    <person id="skumar" group="ms">
+      <name>Suhas Akshar Kumar</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="aniket" group="ms">
       <name>Aniket Kumar Lata</name>
@@ -4570,7 +4582,7 @@ an application example.</p>
     </person>
     <person id="vsingh" group="ms-alumni">
       <name>Vaibhav Singh</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/vsingh.jpg</face>
     </person>
     <person id="ksripada" group="ms-alumni">
       <name>Krishna Chaitanya Sripada</name>
@@ -4592,6 +4604,10 @@ an application example.</p>
       <name>Alex Beal</name>
       <face>pics/beal.png</face>
     </person>
+    <person id="pevans" group="bs-alumni">
+      <name>Parker Evans</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="dfisher" group="bs">
       <name>Dakota Fisher</name>
       <face>pics/generic-male.png</face>
@@ -4608,6 +4624,10 @@ an application example.</p>
       <name>Jay Lecavlier</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="aokeson" group="bs">
+      <name>Alexandra Okeson</name>
+      <face>pics/generic-female.png</face>
+    </person>
     <person id="rolsen" group="bs">
       <name>Rhys Braginton Pettee Olsen</name>
       <face>pics/rolsen.jpg</face>
@@ -4623,6 +4643,10 @@ an application example.</p>
     <person id="vanderweit" group="bs-alumni">
       <name>Nicholas Vanderweit</name>
       <face>pics/vanderweit.jpg</face>
+    </person>
+    <person id="tgrohens" group="gradintern">
+      <name>Théotime Grohens</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="proux" group="visitor-alumni">
       <name>Pierre Roux</name>
