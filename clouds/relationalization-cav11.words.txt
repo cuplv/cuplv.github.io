@@ -1,4 +1,4 @@
-Relational Abstractions for Continuous and Hybrid Systems 
+Relational Abstractions for Continuous and Hybrid Systems
    In this paper, we define relational abstractions of hybrid systems.
   A relational abstraction is obtained by replacing the continuous
   dynamics in each mode by a binary transition relation that relates a

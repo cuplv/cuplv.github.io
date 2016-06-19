@@ -6,6 +6,44 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2016.06.17" id="pldisrc16">
+      <news-snippet>
+        <ref table="person" key="bstein"/> awarded second place
+        at the <a href="http://www.cs.ucsb.edu/~benh/pldi-2016/pldi-2016-SRC.html">PLDI Student Research Competition (SRC)</a>.
+      </news-snippet>
+      <news-detail>
+        Congratulations to <ref table="person" key="bstein"/> for being awarded second place in the graduate student category
+        at the <a href="http://www.cs.ucsb.edu/~benh/pldi-2016/pldi-2016-SRC.html">PLDI Student Research Competition (SRC)</a>
+        for his project, "Goal-Directed Abstract Interpretation for JavaScript."
+      </news-detail>
+    </news>
+    <news date="2016.05.06" id="paper-cav16">
+      <news-snippet>
+        Two papers with CUPLV authors accepted to <ref table="event" key="cav16"/>!
+        [<ref table="pub" key="clausal-cav16" text="1"/>,
+        <ref table="pub" key="implicit-cav16" text="2"/>]
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="mdooley"/>, <ref table="person" key="fabio"/>, and <ref table="person" key="smover"/>
+        have had papers accepted for presentation at <ref table="event" key="cav16"/> in July (<ref table="pub"
+        key="clausal-cav16" mode="authors"/> and <ref table="pub"
+        key="implicit-cav16" mode="authors"/>).
+      </news-detail>
+    </news>
+    <news date="2016.04.19" id="microsoft-challenge-2016">
+      <news-snippet>
+        <ref table="person" key="sniari"/> wins
+        Second Prize
+        in the <a href="http://research.microsoft.com/en-us/projects/opensource/challenge.aspx">Microsoft Open Source Challenge</a>.
+      </news-snippet>
+      <news-detail>
+        <ref table="person" key="sniari"/> wins
+        Second Prize
+        in the <a href="http://research.microsoft.com/en-us/projects/opensource/challenge.aspx">Microsoft Open Source Challenge</a>
+        for his entry
+        "CONfidentiality CERTifier: a Modeling and Verification Framework for Program Confidentiality using Z3".
+      </news-detail>
+    </news>
     <news date="2016.04.17" id="events-pldi16">
       <news-snippet>
 	<ref table="pub" key="events-pldi16" mode="authors"/> paper accepted to <ref table="event" key="pldi16"/>!
@@ -17,6 +55,32 @@
 	key="events-pldi16" mode="authors"/>).
       </news-detail>
     </news>
+    <news date="2016.04.13" id="hscc-paper-award-2016">
+      <news-snippet>
+        <ref table="person" key="adityaz"/> wins
+        the Best Student Paper Award
+        at <ref table="event" key="hscc16"/>.
+      </news-snippet>
+      <news-detail>
+        <ref table="person" key="adityaz"/>
+        wins
+        the Best Student Paper Award
+        at <ref table="event" key="hscc16"/>
+        for his paper
+        "<ref table="pub" key="symbolic-numeric-reach-hscc16"/>"
+        co-authored with
+        <ref table="person" key="srirams"/>
+        and collaborators.
+      </news-detail>
+      <news-page header="Best Student Paper Award at HSCC 2016">
+        <p>
+          <float img="pics/zutshi-hscc-award-2016.jpg">
+            Aditya with his award!
+          </float>
+          Congratulations, Aditya!
+        </p>
+      </news-page>
+    </news>
     <news date="2015.12.20" id="paper-hscc16">
       <news-snippet>
 	Paper by <ref table="pub" key="symbolic-numeric-reach-hscc16" mode="authors"/>
@@ -24,7 +88,7 @@
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="adityaz"/>, <ref table="person" key="srirams"/>, and <ref table="person" key=""/>
-	with collaborators 
+	with collaborators
 	have had a paper "<ref table="pub" key="symbolic-numeric-reach-hscc16"/>"
 	accepted for presentation at <ref table="event" key="hscc16"/> in April.
       </news-detail>
@@ -37,7 +101,7 @@
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="chakarov"/>, <ref table="person" key="yvoronin"/>, and <ref table="person" key="srirams"/>
-	with collaborators 
+	with collaborators
 	have had papers accepted for presentation at <ref table="event" key="tacas16"/> in April (<ref table="pub"
 	key="affine-forms-conc-measure-tacas16" mode="authors"/> and <ref table="pub"
 	key="stochastic-persistence-tacas16" mode="authors"/>).
@@ -75,7 +139,7 @@ Applications are to be submitted on-line at <a href="https://www.jobsatcu.com/po
 	</p>
 
       </news-page>
-    </news>         
+    </news>
     <news date="2015.11.01" id="postdoc-call-2016-spring">
       <news-snippet>
 	Call for postdoc <a href="news.html#postdoc-call-2016">applicants</a> for Spring or Summer 2016.
@@ -183,7 +247,7 @@ have the opportunity to lead this ambitious project that combines program analys
         comes in second at <ref table="event" key="icfp-src15"/>
 	in the undergraduate category.
       </news-snippet>
-    </news> 
+    </news>
     <news date="2015.06.01" id="paper-sas15">
       <news-snippet>
 	Paper by <ref table="pub" key="sharing-sas15" mode="authors"/>
@@ -191,7 +255,7 @@ have the opportunity to lead this ambitious project that combines program analys
       </news-snippet>
       <news-detail>
 	CUPLV author <ref table="person" key="bec"/>
-	with collaborators 
+	with collaborators
 	has had a paper "<ref table="pub" key="sharing-sas15"/>"
 	accepted for presentation at <ref table="event" key="sas15"/> in September.
       </news-detail>
@@ -286,7 +350,7 @@ have the opportunity to lead this ambitious project that combines program analys
         <p>
 The University of Colorado is an Equal Opportunity Employer committed to building a diverse workforce. We encourage applications from women, minorities candidates, people with disabilities, and veterans.</p>
       </news-page>
-    </news>    
+    </news>
     <news date="2015.04.26" id="hammer-joins">
       <news-snippet>
 	<ref table="person" key="hammer"/> is joining CUPLV!
@@ -340,11 +404,11 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="ykim"/> and <ref table="person" key="cernyp"/>
-	with collaborators 
+	with collaborators
 	have had a paper "<ref table="pub" key="performance-array15"/>"
 	accepted for presentation at <ref table="event" key="array15"/> in June.
       </news-detail>
-    </news> 
+    </news>
     <news date="2015.04.16" id="atrivedi-seminar-2015">
       <news-snippet>
 	<ref table="person" key="atrivedi"/> visits April 17.
@@ -407,12 +471,12 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="cernyp"/>
-	with collaborators 
+	with collaborators
 	have had papers accepted for presentation at <ref table="event" key="esop15"/> in April (<ref table="pub"
 	key="desynchronized-esop15" mode="authors"/> and <ref table="pub"
 	key="wcet-esop15" mode="authors"/>).
       </news-detail>
-    </news>    
+    </news>
     <news date="2014.11.30" id="lryzhyk-seminar-2014">
       <news-snippet>
 	<ref table="person" key="lryzhyk"/> visits December 5.
@@ -458,7 +522,7 @@ University of Toronto.
 	</bio>
 	<host><ref table="person" key="cernyp"/></host>
       </talk-announcement>
-    </news>    
+    </news>
     <news date="2014.11.30" id="msridhar-seminar-2014">
       <news-snippet>
 	<ref table="person" key="msridhar"/> visits December 3.
@@ -482,7 +546,7 @@ University of Toronto.
 	<abstract>
 	  <p>JavaScript programs tend to suffer from memory issues that can either hurt performance, or worse, make programs crash due to slow exhaustion of memory. We present a new memory profiling tool MemInsight for JavaScript applications, including web applications. MemInsight is platform independent: it employs source-code instrumentation to generate a trace of memory allocations and accesses, and it uses standard browser features to track precise information for DOM (document object model) objects. The information thus collected enables detailed, time-varying analysis of memory behavior, including that of DOM objects.
 	  </p>
-	  <p>We describe several client analyses built into MemInsight. For instance, it points out situations in which there may be a memory leak, and it reports opportunities for replacing dynamic allocation with stack allocation. MemInsight is extensible to custom analyses as well. Our experimental evaluation showed that our client analyses found interesting memory issues in several publicly available apps, and that MemInsight had reasonable overhead. 
+	  <p>We describe several client analyses built into MemInsight. For instance, it points out situations in which there may be a memory leak, and it reports opportunities for replacing dynamic allocation with stack allocation. MemInsight is extensible to custom analyses as well. Our experimental evaluation showed that our client analyses found interesting memory issues in several publicly available apps, and that MemInsight had reasonable overhead.
 	  </p>
 	</abstract>
 	<bio>
@@ -491,7 +555,7 @@ University of Toronto.
 	</bio>
 	<host><ref table="person" key="bec"/></host>
       </talk-announcement>
-    </news>    
+    </news>
     <news date="2014.11.30" id="nnarodytska-seminar-2014">
       <news-snippet>
 	<ref table="person" key="nnarodytska"/> visits December 1.
@@ -543,18 +607,18 @@ named one of "AI's 10 to Watch" young researches in the field of AI. She
 also received an Outstanding Paper Award at AAAI 2011 and an outstanding
 program committee member award at the Australasian Joint Conference on
 Artificial Intelligence 2012. Her EvaMaxSAT Solver is a winner of the
-Ninth Evaluation of Max-SAT Solvers in 2014. 
+Ninth Evaluation of Max-SAT Solvers in 2014.
 	  </p>
 	</bio>
 	<host><ref table="person" key="cernyp"/></host>
       </talk-announcement>
-    </news>    
+    </news>
     <news date="2014.10.24" id="splash-src-2014">
       <news-snippet>
 	<ref table="person" key="coughlin"/>
         comes in second at the <ref table="event" key="splash-src14"/>.
       </news-snippet>
-    </news> 
+    </news>
     <news date="2014.10.16" id="emsoft-award-2014">
       <news-snippet>
 	<ref table="person" key="adityaz"/> and <ref table="person" key="srirams"/>
@@ -573,11 +637,11 @@ Ninth Evaluation of Max-SAT Solvers in 2014.
 	120 papers were submitted, 29 were accepted, and one paper was given this award.
 	More details at <a href="http://esweek.acm.org/bestpaper.shtml">http://esweek.acm.org/bestpaper.shtml</a>.
 	</p>
-      </news-page>      
+      </news-page>
     </news>
     <news date="2014.10.15" id="faculty-2014">
       <news-snippet>
-	Multiple <a href="news.html#faculty-2014">tenure-track openings</a> in CS, including in <em>secure and reliable software systems</em>. 
+	Multiple <a href="news.html#faculty-2014">tenure-track openings</a> in CS, including in <em>secure and reliable software systems</em>.
       </news-snippet>
       <news-detail>
         Please consider applying or encourage your students and postdocs to apply for a tenure-track position in the Department of Computer Science at the University of Colorado Boulder. We have multiple openings with one particular interest area being <em>secure and reliable software systems</em>.
@@ -606,7 +670,7 @@ The University of Colorado Boulder is committed to providing a safe and producti
 Applications must be submitted on-line at <a href="http://www.jobsatcu.com/postings/89652">http://www.jobsatcu.com/postings/89652</a>.
 	</p>
       </news-page>
-    </news>     
+    </news>
     <news date="2014.10.02" id="dimoulas-seminar-2014">
       <news-snippet>
 	<ref table="person" key="cdimoulas"/> visits October 7.
@@ -657,7 +721,7 @@ describing and enforcing declarative policies for the flow of capabilities betwe
       "<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Mining_and_Understanding_Software_Enclaves_%28MUSE%29.aspx">MUSE: Mining and Understanding Bug Fixes to Address Application-Framework Protocol Defects</a>"
 	with collaborators <ref table="person" key="kanderson"/> and <ref table="person" key="yeh"/>.
       </news-detail>
-    </news> 
+    </news>
     <news date="2014.09.12" id="radhia-cousot-award-2014">
       <news-snippet>
 	<ref table="person" key="chakarov"/> wins
@@ -666,7 +730,7 @@ describing and enforcing declarative policies for the flow of capabilities betwe
       </news-snippet>
       <news-detail>
 	<ref table="person" key="chakarov"/>
-	wins 
+	wins
 	the Radhia Cousot Young Researcher Best Paper Award
 	at <ref table="event" key="sas14"/>
 	for his paper
@@ -722,7 +786,7 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
 Boulder, located at the base of the Rocky Mountain foothills, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and its vibrant startup community.
         </p>
       </news-page>
-    </news> 
+    </news>
     <news date="2014.07.10" id="schkufza-seminar-2014">
       <news-snippet>
 	<ref table="person" key="eschkufza"/> visits July 15.
@@ -743,7 +807,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<when>07-15-2014 11:00</when>
 	<where>KOBL 300</where>
 	<title>
-	  Stochastic Optimization of x86_64 Binaries 
+	  Stochastic Optimization of x86_64 Binaries
 	</title>
 	<abstract>
 	  <p>The optimization of short sequences of loop-free fixed-point x86_64 code sequences is an important problem in high-performance computing. Unfortunately, the competing constraints of transformation correctness and performance improvement often force even special purpose compilers to produce sub-optimal code. We show that by encoding these constraints as terms in a cost function, and using a Markov Chain Monte Carlo sampler to rapidly explore the space of all possible programs, we are able to generate aggressively optimized versions of a given target program. Beginning from binaries compiled by gcc -O0, we are able to produce provably correct code sequences that either match or outperform the code produced by gcc -O3, and in some cases expert hand-written assembly.</p>
@@ -764,12 +828,12 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <news-detail>
 	CUPLV authors
 	<ref table="person" key="hravanbakhsh"/>, <ref table="person" key="adityaz"/>, and <ref table="person" key="srirams"/>
-	with collaborators 
+	with collaborators
 	have had papers
 	accepted for presentation at <ref table="event" key="emsoft14"/> in October (<ref table="pub" key="controller-emsoft14" mode="authors"/>,
 	and <ref table="pub" key="shooting-emsoft14" mode="authors"/>).
       </news-detail>
-    </news>        
+    </news>
     <news date="2014.06.01" id="paper-sas14">
       <news-snippet>
 	Three papers with CUPLV authors accepted to <ref table="event" key="sas14"/>!
@@ -780,13 +844,13 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <news-detail>
 	CUPLV authors
 	<ref table="person" key="chakarov"/>, <ref table="person" key="cox"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
-	with collaborators 
+	with collaborators
 	have had papers
 	accepted for presentation at <ref table="event" key="sas14"/> in September (<ref table="pub" key="expectation-sas14" mode="authors"/>,
 	<ref table="pub" key="hoo-sas14" mode="authors"/>, and <ref table="pub"
 	key="sepdom-sas14" mode="authors"/>).
       </news-detail>
-    </news>    
+    </news>
     <news date="2014.04.18" id="paper-cav14">
       <news-snippet>
 	Paper by <ref table="pub" key="quicr-cav14" mode="authors"/>
@@ -806,7 +870,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	S-Taliro developed by <ref table="person" key="srirams"/> and collaborators receives <a href="http://embedded-computing.com/articles/improving-system-effectiveness-model-based-development/">press coverage</a>
 	in Embedded Computing Design.
       </news-detail>
-    </news>    
+    </news>
     <news date="2014.02.19" id="phdvisit-2014">
       <news-snippet>
 	Prospective Ph.D. students visit February 21. Welcome!
@@ -852,7 +916,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="coughlin"/>, <ref table="person" key="bec"/>, and <ref table="person" key="srirams"/>
-	with collaborators 
+	with collaborators
 	have had papers accepted for presentation at <ref
 	table="event" key="popl14"/> in January (<ref table="pub"
 	key="fissile-popl14" mode="authors"/>
@@ -932,7 +996,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </news-snippet>
       <news-detail>
 	CUPLV authors <ref table="person" key="cernyp"/>, <ref table="person" key="chakarov"/>, and <ref table="person" key="srirams"/>
-	with collaborators 
+	with collaborators
 	have had papers accepted for presentation at <ref
 	table="event" key="cav13"/> in July (<ref table="pub"
 	key="concursyn-cav13" mode="authors"/>, <ref
@@ -1266,7 +1330,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <ref table="person" key="vitousek"/> awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">PLDI Student Research Competition (SRC)</a>.
       </news-snippet>
       <news-detail>
-        Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts. 
+        Congratulations to <ref table="person" key="vitousek"/> for being awarded third place at the <a href="http://pldi12.cs.purdue.edu/content/student-research-competition">Programming Language Design and Implementation (PLDI) Student Research Competition (SRC)</a> for his project: Gradual Typing with Efficient Object Casts.
       </news-detail>
     </news>
     <news date="2012.06.30" id="ivancic-2012">
@@ -1471,11 +1535,11 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<abstract>
 	  <p>We describe BDDAPRON, a freely available library
 	  dedicated to the static analysis of finite-type and
-	  numerical variables.</p> 
+	  numerical variables.</p>
 	  <p>BDDAPRON provides ready-to-use logico-numerical
 	  abstractions for combinations of finite-type and numerical
 	  variables, as well as powerful symbolic manipulations of
-	  expressions.</p> 
+	  expressions.</p>
 	  <p>Algorithmically, BDDAPRON combines BDD techniques (using
 	  the CUDD library) with numerical abstract domains provided
 	  by the APRON library. We describe the principles behind this
@@ -1493,7 +1557,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<ref table="person" key="coughlin"/>,
 	<ref table="person" key="cox"/>, and
 	<ref table="person" key="silkensen"/> finalists
-	at the <ref table="event" key="popl12"/> 
+	at the <ref table="event" key="popl12"/>
 	Student Lightning Talks.
       </news-snippet>
     </news>
@@ -2354,8 +2418,49 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </references>
     </project>
   </projects>
-  
+
   <publications>
+    <pub id="clausal-cav16">
+      <title>Proving Parameterized Systems Safe by Generalizing Clausal Proofs of
+Small Instances</title>
+      <authors>
+        <author person="mdooley"/>
+        <author person="fabio"/>
+      </authors>
+      <urls>
+        <!--<url name="pdf">papers/clausal-cav16.pdf</url>-->
+      </urls>
+      <howpub>
+        <proceedings event="cav16" />
+      </howpub>
+      <!--
+      <abstract>
+        <p></p>
+      </abstract>
+      -->
+    </pub>
+    <pub id="implicit-cav16">
+      <title>Infinite-state Liveness-to-Safety via Implicit Abstraction and
+Well-founded Relations</title>
+      <authors>
+        <author person="jdaniel"/>
+        <author person="acimatti"/>
+        <author person="agriggio"/>
+        <author person="stonetta"/>
+        <author person="smover"/>
+      </authors>
+      <urls>
+        <!--<url name="pdf">papers/implicit-cav16.pdf</url>-->
+      </urls>
+      <howpub>
+        <proceedings event="cav16" />
+      </howpub>
+      <!--
+      <abstract>
+        <p></p>
+      </abstract>
+      -->
+    </pub>
     <pub id="events-pldi16">
       <title>Event-Driven Network Programming</title>
       <authors>
@@ -2625,7 +2730,7 @@ We describe a prototype implementation, and present results from
 experiments on real-world topologies and properties demonstrating
 that our tool scales to updates involving over one-thousand nodes.</p>
       </abstract>
-    </pub> 
+    </pub>
     <pub id="desynchronized-esop15">
       <title>Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages</title>
       <authors>
@@ -2699,7 +2804,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       </howpub>
       <abstract>
       </abstract>
-    </pub>    
+    </pub>
     <pub id="controller-emsoft14">
       <title>Infinite Horizon Safety Controller Synthesis through Disjunctive Polyhedral Abstract Interpretation</title>
       <authors>
@@ -3653,7 +3758,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	<url name="pdf">http://www.cs.colorado.edu/~srirams/papers/cav11-relational.pdf</url>
       </urls>
       <howpub> <proceedings event="cav11" /> </howpub>
-      <abstract> 
+      <abstract>
   <p> In this paper, we define relational abstractions of hybrid systems.
   A relational abstraction is obtained by replacing the continuous
   dynamics in each mode by a binary transition relation that relates a
@@ -3671,13 +3776,13 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       </abstract>
     </pub>
     <pub id="linearization-hscc11">
-        <title> Automatic Abstraction of Non-Linear Systems Using Change of Variables Transformations </title> 
+        <title> Automatic Abstraction of Non-Linear Systems Using Change of Variables Transformations </title>
     <authors>
     <author person="srirams"/>
     </authors>
     <urls> <url name="pdf"> http://www.cs.colorado.edu/~srirams/papers/hscc11.pdf</url>
     </urls>
-    <howpub> 
+    <howpub>
     <proceedings event="hscc11"/>
     </howpub>
     <abstract>
@@ -3690,7 +3795,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
   variables of the original system. We present conditions under which
   a given change of basis transformation for a non-linear system can
   define an abstraction. </p>
-  
+
 <p>  Furthermore, we present a technique to discover, given a non-linear
   system, if a change of bases transformation involving degree-bounded
   polynomials yielding a linear system abstraction exists. If so, our
@@ -3714,7 +3819,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       <urls>
 	<url name="pdf">http://www.cs.colorado.edu/~srirams/papers/sTaliro-tacas11.pdf</url>
       </urls>
-      <howpub> 
+      <howpub>
 	<proceedings event="tacas11"/>
       </howpub>
       <abstract>
@@ -3740,7 +3845,7 @@ an application example.</p>
     <urls>
       <url name="pdf">http://www.cs.colorado.edu/~srirams/papers/gtp-esop10.pdf</url>
     </urls>
-    <howpub> 
+    <howpub>
     <proceedings event="esop11"/>
     </howpub>
     <abstract>
@@ -4254,6 +4359,10 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
+    <person id="mdooley" group="phd">
+      <name>Michael Dooley</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
@@ -4284,7 +4393,7 @@ an application example.</p>
       <name>Tianhan Lu</name>
       <url>http://tianhanlu.com</url>
       <face>pics/tianhan.jpg</face>
-    </person>   
+    </person>
     <person id="mcclurg" group="phd">
       <name>Jedidiah McClurg</name>
       <url>http://www.jrmcclurg.com/</url>
@@ -4362,7 +4471,7 @@ an application example.</p>
     </person>
     <person id="bennett" group="ms-alumni">
       <name>Huck Bennett</name>
-      <url>http://csel.cs.colorado.edu/~bennethd</url>  
+      <url>http://csel.cs.colorado.edu/~bennethd</url>
       <face>pics/bennett.jpg</face>
     </person>
     <person id="bharadwaj" group="ms-alumni">
@@ -4376,7 +4485,7 @@ an application example.</p>
     <person id="deconomou" group="ms">
       <name>Dimitrios Economou</name>
       <face>pics/generic-female.png</face>
-    </person>    
+    </person>
     <person id="alata" group="ms">
       <name>Aniket Lata</name>
       <face>pics/generic-male.png</face>
@@ -4400,7 +4509,7 @@ an application example.</p>
     <person id="avillani" group="ms">
       <name>Anna Villani</name>
       <face>pics/generic-female.png</face>
-    </person>    
+    </person>
     <person id="beal" group="bs-alumni">
       <name>Alex Beal</name>
       <face>pics/beal.png</face>
@@ -4436,7 +4545,7 @@ an application example.</p>
     <person id="eroncevich" group="bs">
       <name>Evan Roncevich</name>
       <face>pics/eroncevich.png</face>
-    </person>   
+    </person>
     <person id="mrussek" group="bs">
       <name>Max Russek</name>
       <face>pics/mrussek.jpg</face>
@@ -4841,6 +4950,21 @@ an application example.</p>
     <person id="obouissou">
       <name>Olivier Bouissou</name>
     </person>
+    <person id="jdaniel">
+      <name>Jakub Daniel</name>
+    </person>
+    <person id="acimatti">
+      <name>Alessandro Cimatti</name>
+      <url>https://es-static.fbk.eu/people/cimatti/</url>
+    </person>
+    <person id="agriggio">
+      <name>Alberto Griggio</name>
+      <url>https://es-static.fbk.eu/people/griggio/</url>
+    </person>
+    <person id="stonetta">
+      <name>Stefano Tonetta</name>
+      <url>https://es-static.fbk.eu/people/tonetta/</url>
+    </person>
   </persons>
   <events>
     <series id="popl">
@@ -4989,6 +5113,11 @@ an application example.</p>
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="cav16">
+        <date>2016-07</date>
+        <location>Toronto, Ontario, Canada</location>
+        <url>http://i-cav.org/2016/</url>
+      </event>
       <event id="cav15">
 	<date>2015-07</date>
 	<location>San Francisco, California, USA</location>
@@ -5056,7 +5185,7 @@ an application example.</p>
 	<location>Saarbrücken, Germany</location>
         <url>http://www.etaps.org/etaps-2011/esop</url>
       </event>
-      <event id="esop10"> 
+      <event id="esop10">
 	<date>2010-03</date>
 	<location>Paphos, Cyprus</location>
 	<nth>Nineteenth</nth>
@@ -5340,7 +5469,7 @@ an application example.</p>
       <name>Human Factors in Computing Systems</name>
       <longPrefix>ACM SIGCHI Conference on</longPrefix>
       <event id="chi14">
-        <date>2014-04</date>	
+        <date>2014-04</date>
 	<url>http://chi2014.acm.org/</url>
 	<location>Toronto, Ontario, Canada</location>
       </event>
@@ -5349,7 +5478,7 @@ an application example.</p>
       <name>Embedded Software</name>
       <longPrefix>International Conference on</longPrefix>
       <event id="emsoft14">
-        <date>2014-10</date>	
+        <date>2014-10</date>
 	<url>http://esweek.acm.org/emsoft/</url>
 	<location>New Delhi, India</location>
       </event>
@@ -5426,7 +5555,7 @@ an application example.</p>
 	<url>http://www.sable.mcgill.ca/soap/</url>
 	<location>Portland, Oregon, USA</location>
       </event>
-    </series> 
+    </series>
     <series id="array" type="workshop">
       <name>Libraries, Languages and Compilers for Array Programming</name>
       <longPrefix>ACM SIGPLAN Workshop on</longPrefix>
@@ -5436,7 +5565,7 @@ an application example.</p>
 	<url>http://www.sable.mcgill.ca/array/</url>
 	<location>Portland, Oregon, USA</location>
       </event>
-    </series> 
+    </series>
     <series id="lcpc" type="workshop">
       <name>Languages and Compilers for Parallel Computing</name>
       <longPrefix>International Workshop on</longPrefix>
@@ -5540,7 +5669,7 @@ an application example.</p>
 	<location>Vancouver, British Columbia, Canada</location>
 	<url>http://icfpconference.org/icfp2015/src.html</url>
       </event>
-    </series> 
+    </series>
     <series id="cs-colloquium">
       <name>University of Colorado Boulder Computer Science Colloquium</name>
       <abbrev>CU CS Colloquium</abbrev>
@@ -5576,7 +5705,7 @@ an application example.</p>
      </event>
     </series>
   </events>
-  
+
   <journals>
     <journal id="sigplannot">
       <name>ACM SIGPLAN Notices</name>

@@ -10,7 +10,7 @@
   define an abstraction. 
 
 
-  
+
   Furthermore, we present a technique to discover, given a non-linear
   system, if a change of bases transformation involving degree-bounded
   polynomials yielding a linear system abstraction exists. If so, our
