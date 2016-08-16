@@ -4386,7 +4386,7 @@ an application example.</p>
       <url>http://vlsi.colorado.edu/~fabio/</url>
       <face>pics/somenzi.jpg</face>
     </person>
-    <person id="atrivedi" group="scientist">
+    <person id="atrivedi" group="faculty">
       <name>Ashutosh Trivedi</name>
       <url>http://www.cs.colorado.edu/~astr3586/</url>
       <face>pics/trivedi.jpg</face>
