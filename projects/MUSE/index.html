@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+		<!-- font awesome -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--gallery-->
+		<link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/activity.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#work">Current Activity</a></li>
+					<li><a href="#portfolio">People</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<h1>Fixr: Mining and Understanding Bug Fixes to Address Application-Framework Protocol Defects</h1>
+					<div class="row">
+						<div class="6u 12u(mobile)">
+							<header>
+								<h2>Overview</h2>
+							</header>
+							<span class="image fit"><img src="images/Overview.png" alt="" />
+							</span>
+
+						</div>
+						<div class="6u 12u(mobile)">
+							<p>Imagine this: an Android app developer discovers a bug in her app where she inadvertently broke a framework protocol rule. She, through great effort, for instance ransacking through Stackoverflow, and finally discovers a fix for her app that she then commits to a public code repository. Now right after her commit, an automated system recognizes her fix and synthesizes candidate patches to other apps that appear to violate the same framework rule—conceptually, transferring the original fix to these other apps. In the end, this automated system amplifies the human effort of the original fix—reifying in tools the diffusion of communal knowledge that today spreads only through informal means like developer forums.</p>
+							<p id="goal">This is the goal of the Fixr project: we propose to address application-framework protocol defects by undertaking the fundamental research needed to realize the scenario described above. In particular, we will develop a suite of program analysis, probabilistic inference, code synthesis, and social data mining tools that cooperatively and automatically infer high confidence repair specifications for app-framework protocol bugs. A repair specification is a statistical-semantic artifact inferred from observed bug fixes using a combination of program analysis (Task 1) and probabilistic inference (Task 2). The unique aspect of our proposal is the use of a feedback loop with additional code synthesis (Task 3) and social data mining (Task 4) activities to iteratively improve the confidence of inferred repair specifications. That is, our approach will leverage the large and continuously-increasing enclave of applications that program against any given framework—crucially using the MUSE database itself to generate high-quality artifacts with which to populate it.</p>
+
+						</div>
+					</div>
+				</article>
+				<a href="#work" class="button big scrolly"><i class="fa fa-angle-down fa-3x"></i></a>
+			</div>
+
+		<!-- Work -->
+			<div class="wrapper style2">
+				<article id="work">
+					<header>
+						<h2>Here's what we do.</h2>
+					</header>
+					<div class="container">
+						<!--<div class="row">
+							<div class="6u 12u(mobile)">
+								<section id="accordion" role="tablist">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+														Detection of Bugs in Android Apps via Dynamic Callback Analysis
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body" style="text-align:left;">
+													When implementing an Android application the developer will write a series of classes that implement methods called by the Android framework.  These methods are used to communicate to the app what has happened to the phone, in response the app will communicate how it wants to respond by calling methods defined by the framework.  This continuing dialog allows an application to successfully and responsively interact with its surroundings.  However this dialog can be very foreign and come with a large number of constraints that make development difficult, especially when there is an ordering of callback invocations that the developer did not realize was possible.  Our research aims to create automated methods of finding places where this ordering goes wrong in existing Android applications by monitoring the runtime behavior and searching for possible erroneous executions.
+												</div>
+											</div>
+										</div>
+								</section>
+							</div>
+
+							<div class="6u 12u(mobile)">
+								<section id="accordion" role="tablist">
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingTwo">
+											<h4 class="panel-title">
+												<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Fixr Android App Builder Farm
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+											<div class="panel-body" style="text-align:left;">
+												Far too often enough, before we can fix the apps, we have to fix the build scripts. The use of build automation tools (e.g., Gradle, Maven, Ant) is prevalent on GitHub, yet so are bad practices in the usage of such tools. From hard-coded dependencies and build paths, to improper or missing build configurations, such bad practices hampers the buildability of the app, thus blocking any efforts in automated analysis of build artifacts (e.g., bytecodes, Android apks, etc..). Part of our team's current research and engineering efforts are dedicated to mitigating this problem. In particular, our team is working to improve the buildability of unsolicited GitHub Android repositories. We have developed an app building script that applies various heuristics that fix the most common problems in Gradle, Ant and Eclipse projects, without human intervention. We have also implemented a prototype cloud service that automates the building of Android GitHub repositories from our corpus, store build outputs/meta-data and facilitate querying and retrieve of such information.
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>-->
+						<div class="row">
+							<div class="6u 12u(mobile)">
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Fixr Android App Builder Farm</a></h2>
+									</div>
+								</header>
+								<a href="images/build_farm.png" class="image featured"><img src="images/build_farm.png" alt="" /></a>
+								<div class="more">Far too often enough, before we can fix the apps, we have to fix the build scripts. The use of build automation tools (e.g., Gradle, Maven, Ant) is prevalent on GitHub, yet so are bad practices in the usage of such tools. From hard-coded dependencies and build paths, to improper or missing build configurations, such bad practices hampers the buildability of the app, thus blocking any efforts in automated analysis of build artifacts (e.g., bytecodes, Android apks, etc..). Part of our team's current research and engineering efforts are dedicated to mitigating this problem. In particular, our team is working to improve the buildability of unsolicited GitHub Android repositories. We have developed an app building script that applies various heuristics that fix the most common problems in Gradle, Ant and Eclipse projects, without human intervention. We have also implemented a prototype cloud service that automates the building of Android GitHub repositories from our corpus, store build outputs/meta-data and facilitate querying and retrieve of such information.
+								</div>
+								<footer>
+									<p><a href="assets/slides/Fixr_App_Builder_Farm_Slides.pdf">Slides</a></p>
+								</footer>
+							</article>
+							</div>
+
+							<div class="6u 12u(mobile)">
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2><a href="#">Detection of Bugs in Android Apps via Dynamic Callback Analysis</a></h2>
+										</div>
+									</header>
+									<a href="images/lambdaLifePhoto.png" class="image featured"><img src="images/lambdaLifePhoto.png" alt="" /></a>
+									<div class="more">When implementing an Android application the developer will write a series of classes that implement methods called by the Android framework.  These methods are used to communicate to the app what has happened to the phone, in response the app will communicate how it wants to respond by calling methods defined by the framework.  This continuing dialog allows an application to successfully and responsively interact with its surroundings.  However this dialog can be very foreign and come with a large number of constraints that make development difficult, especially when there is an ordering of callback invocations that the developer did not realize was possible.  Our research aims to create automated methods of finding places where this ordering goes wrong in existing Android applications by monitoring the runtime behavior and searching for possible erroneous executions.</div>
+									<footer>
+										<p><a href="assets/slides/Dynamic_Callback_Analysis_Slides.pdf">Slides</a></p>
+									</footer>
+								</article>
+							</div>
+						</div>
+					</div>
+					<footer style="margin-top:8em;">
+						<a href="#portfolio" class="button big scrolly"><i class="fa fa-angle-down fa-3x"></i></a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- Portfolio -->
+			<div class="wrapper style3">
+				<article id="portfolio">
+					<header>
+						<h2>MUSE Team</h2>
+						<p>Principal Investigators</p>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="2u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="https://avatars0.githubusercontent.com/u/1240386?v=3&s=466" alt="" /></a>
+									<h3><a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a></h3>
+								</article>
+							</div>
+							<div class="2u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="http://ecee.colorado.edu/pavol/pavol.jpg" alt="" id="pavol"/></a>
+									<h3><a href="http://ecee.colorado.edu/pavol/">Pavol Černý</a></h3>
+								</article>
+							</div>
+							<div class="2u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="http://www.cs.colorado.edu/~srirams/sxrxixrxaxm.jpg" alt="" id="sriram"/></a>
+									<h3><a href="http://www.cs.colorado.edu/~srirams/">Sriram Sankaranarayanan</a></h3>
+								</article>
+							</div>
+							<div class="2u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="https://avatars3.githubusercontent.com/u/129562?v=3&s=466" alt="" /></a>
+									<h3><a href="http://www.tomyeh.info/">Tom Yeh</a></h3>
+								</article>
+							</div>
+							<div class="2u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="https://avatars0.githubusercontent.com/u/2214231?v=3&s=466" alt="" /></a>
+									<h3><a href="http://www.cs.colorado.edu/users/kena">Kenneth M. Anderson</a></h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					<header>
+						<br><br>
+						<p>Members:</p>
+					</header>
+
+					<div class="row">
+						<div class="col-md-3">Sergio Mover</div>
+						<div class="col-md-3">Edmund Lam</div>
+						<div class="col-md-3">Shawn Meier</div>
+						<div class="col-md-3">Rhys Braginton Pettee Olsen</div>
+					</div>
+
+					<br><br>
+					<div class="row">
+						<div class="col-md-3">Maxwell Russek</div>
+						<div class="col-md-3">Yue Zhang</div>
+						<div class="col-md-3">Vaishnavi Viswanathan</div>
+						<div class="col-md-3">Peilun Zhang</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- boostrap -->
+			<script src="assets/js/bootstrap.js" type="text/javascript" ></script>
+			<script type="text/javascript"
+				src="http://viralpatel.net/blogs/demo/jquery/jquery.shorten.1.0.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			$(".more").shorten({
+				"showChars" : 200,
+				"moreText" : "Continue Reading",
+				"lessText" : "Collapse"
+			});
+
+
+			$("#goal").shorten({
+				"showChars" : 300,
+				"moreText" : "more",
+				"lessText" : "close"
+			});
+
+		});
+
+	</script>
+
+	</body>
+</html>
