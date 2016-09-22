@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Miniport by HTML5 UP</title>
+		<title>Fixr CU Boulder</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -48,6 +48,7 @@
 						<div class="6u 12u(mobile)">
 							<p>Imagine this: an Android app developer discovers a bug in her app where she inadvertently broke a framework protocol rule. She, through great effort, for instance ransacking through Stackoverflow, and finally discovers a fix for her app that she then commits to a public code repository. Now right after her commit, an automated system recognizes her fix and synthesizes candidate patches to other apps that appear to violate the same framework rule—conceptually, transferring the original fix to these other apps. In the end, this automated system amplifies the human effort of the original fix—reifying in tools the diffusion of communal knowledge that today spreads only through informal means like developer forums.</p>
 							<p id="goal">This is the goal of the Fixr project: we propose to address application-framework protocol defects by undertaking the fundamental research needed to realize the scenario described above. In particular, we will develop a suite of program analysis, probabilistic inference, code synthesis, and social data mining tools that cooperatively and automatically infer high confidence repair specifications for app-framework protocol bugs. A repair specification is a statistical-semantic artifact inferred from observed bug fixes using a combination of program analysis (Task 1) and probabilistic inference (Task 2). The unique aspect of our proposal is the use of a feedback loop with additional code synthesis (Task 3) and social data mining (Task 4) activities to iteratively improve the confidence of inferred repair specifications. That is, our approach will leverage the large and continuously-increasing enclave of applications that program against any given framework—crucially using the MUSE database itself to generate high-quality artifacts with which to populate it.</p>
+							<p><a href="assets/slides/Fixr_Sept_2016.pdf">Slides</a></p>
 
 						</div>
 					</div>
@@ -103,32 +104,88 @@
 						</div>-->
 						<div class="row">
 							<div class="6u 12u(mobile)">
-							<article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Fixr Android App Builder Farm</a></h2>
-									</div>
-								</header>
-								<a href="images/build_farm.png" class="image featured"><img src="images/build_farm.png" alt="" /></a>
-								<div class="more">Far too often enough, before we can fix the apps, we have to fix the build scripts. The use of build automation tools (e.g., Gradle, Maven, Ant) is prevalent on GitHub, yet so are bad practices in the usage of such tools. From hard-coded dependencies and build paths, to improper or missing build configurations, such bad practices hampers the buildability of the app, thus blocking any efforts in automated analysis of build artifacts (e.g., bytecodes, Android apks, etc..). Part of our team's current research and engineering efforts are dedicated to mitigating this problem. In particular, our team is working to improve the buildability of unsolicited GitHub Android repositories. We have developed an app building script that applies various heuristics that fix the most common problems in Gradle, Ant and Eclipse projects, without human intervention. We have also implemented a prototype cloud service that automates the building of Android GitHub repositories from our corpus, store build outputs/meta-data and facilitate querying and retrieve of such information.
-								</div>
-								<footer>
-									<p><a href="assets/slides/Fixr_App_Builder_Farm_Slides.pdf">Slides</a></p>
-								</footer>
-							</article>
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2>Detection of Bugs in Android Apps via Dynamic Callback Analysis</h2>
+										</div>
+									</header>
+									<img src="images/lambdaLifePhoto.png" alt="" align="left" style="height:10em;width:15em;margin:1em;"/>
+									<div class="more" style="text-align:left;font-size:80%;">When implementing an Android application the developer will write a series of classes that implement methods called by the Android framework.  These methods are used to communicate to the app what has happened to the phone, in response the app will communicate how it wants to respond by calling methods defined by the framework.  This continuing dialog allows an application to successfully and responsively interact with its surroundings.  However this dialog can be very foreign and come with a large number of constraints that make development difficult, especially when there is an ordering of callback invocations that the developer did not realize was possible.  Our research aims to create automated methods of finding places where this ordering goes wrong in existing Android applications by monitoring the runtime behavior and searching for possible erroneous executions.</div>
+									<footer>
+										<p><a href="assets/slides/Dynamic_Callback_Analysis_Slides.pdf">Slides</a></p>
+									</footer>
+								</article>
 							</div>
 
 							<div class="6u 12u(mobile)">
 								<article class="post">
 									<header>
 										<div class="title">
-											<h2><a href="#">Detection of Bugs in Android Apps via Dynamic Callback Analysis</a></h2>
+											<h2>Identifying Bug Communities with Qualitative Isomorphism in Control Data Flow Graphs
+											</h2>
 										</div>
 									</header>
-									<a href="images/lambdaLifePhoto.png" class="image featured"><img src="images/lambdaLifePhoto.png" alt="" /></a>
-									<div class="more">When implementing an Android application the developer will write a series of classes that implement methods called by the Android framework.  These methods are used to communicate to the app what has happened to the phone, in response the app will communicate how it wants to respond by calling methods defined by the framework.  This continuing dialog allows an application to successfully and responsively interact with its surroundings.  However this dialog can be very foreign and come with a large number of constraints that make development difficult, especially when there is an ordering of callback invocations that the developer did not realize was possible.  Our research aims to create automated methods of finding places where this ordering goes wrong in existing Android applications by monitoring the runtime behavior and searching for possible erroneous executions.</div>
+									<img src="images/lambdaLifePhoto.png" alt="" align="left" style="height:10em;width:15em;margin:1em;"/>
+									<div class="more" style="text-align:left;font-size:80%;">While most existing API mining techniques usually do not precisely consider the control and data flow in the program, this activity of our project explores a more enriched abstraction of API usage: we consider a representation of the control and data flow for a program, known as Abstract Control Data Flow Graph (ACDFG). For each program, we extract a set of ACDFG, each capturing a unique slice of the program corresponding to a specific API of interest (particularly, an Android framework API call) For each pair of programs, we compute an approximate isomorphism relations between their ACDFGs. This approximate isomorphism precisely characterizes how two programs are similar and provides also a similarity measure between programs. Using this isomorphism relation, we are developing techniques to identify the set of programs that use the API in a similarly fashion, thus enabling us to distinguish between normal and anomalous usages of an API.
+									</div>
 									<footer>
-										<p><a href="assets/slides/Dynamic_Callback_Analysis_Slides.pdf">Slides</a></p>
+										<p>Slides</p>
+									</footer>
+								</article>
+							</div>
+
+						</div>
+						<div class="row">
+							<div class="6u 12u(mobile)">
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2>Interactive application for information visualization</h2>
+										</div>
+									</header>
+									<img src="images/visualization.png" alt="" align="left" style="height:10em;width:15em;margin:1em;"/>
+									<div class="more" style="text-align:left;font-size:80%;">
+										Post data extraction from Android repositories in GitHub, we obtain huge amounts of app data; from developer commit messages, raw source codes to syntactic diffs of source codes. While much of these data are effectively machine accessible through curation by our Apache Solr servers, native query interfaces provided by Solr Admin are not entirely ideal for human interaction and understanding. To address this gap, our team is working on developing interactive support tools that augments existing search functionalities and visualization of graph-based results (e.g., program CDFGs). This includes the development of a mobile app that exercises these advance features. Simultaneously, we are developing an interactive tool for visualizing dynamic traces extracted from crowd-sourcing mobile analytic frameworks such as Firebase. As a whole, our work here provides advance visualization tools for future Android developers, enabling them to harness the power of communal knowledge buried in open-source software enclaves.
+									</div>
+									<footer>
+										<p>Slides</p>
+									</footer>
+								</article>
+							</div>
+
+							<div class="6u 12u(mobile)">
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2>Program Feature Extraction from Commit Data in Public Android Software Repositories
+											</h2>
+										</div>
+									</header>
+									<img src="images/build_farm.png" alt="" align="left" style="height:10em;width:15em;margin:1em;"/>
+									<div class="more" style="text-align:left;font-size:80%;">
+										In this activity of our project, we develop scalable cloud computing services that provide solutions to the frontlines of this project: extraction, processing and curation of data from repositories in public software enclaves, like GitHub. Particularly, our work here involves developing scalable means of discovering and extracting basic meta-data from commit histories (e.g., comment messages, parent-child relations), to syntactic information from raw source codes (e.g., bag of framework API calls/imports). The data extracted here will constitute the core fragment of our corpus in which other research activities of this project will use as inputs. By using state-of-the-art cluster compute systems (Apache Spark), full-text search services (Apache Solr) and machine-learning algorithms, we aim to develop an industrial strength relevant code search engine, that enable developers to submit their buggy code fragments and query for potential fixes hidden in the sea of data we extract.
+									</div>
+									<footer>
+										<p>Slides</p>
+									</footer>
+								</article>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="6u 12u(mobile)">
+								<article class="post">
+									<header>
+										<div class="title">
+											<h2>Fixr Android App Builder Farm</h2>
+										</div>
+									</header>
+									<img src="images/build_farm.png" alt="" align="left" style="height:10em;width:15em;margin:1em;"/>
+									<div class="more" style="text-align:left;font-size:80%;">Far too often enough, before we can fix the apps, we have to fix the build scripts. The use of build automation tools (e.g., Gradle, Maven, Ant) is prevalent on GitHub, yet so are bad practices in the usage of such tools. From hard-coded dependencies and build paths, to improper or missing build configurations, such bad practices hampers the buildability of the app, thus blocking any efforts in automated analysis of build artifacts (e.g., bytecodes, Android apks, etc..). Part of our team's current research and engineering efforts are dedicated to mitigating this problem. In particular, our team is working to improve the buildability of unsolicited GitHub Android repositories. We have developed an app building script that applies various heuristics that fix the most common problems in Gradle, Ant and Eclipse projects, without human intervention. We have also implemented a prototype cloud service that automates the building of Android GitHub repositories from our corpus, store build outputs/meta-data and facilitate querying and retrieve of such information.
+									</div>
+									<footer>
+										<p><a href="assets/slides/Fixr_App_Builder_Farm_Slides.pdf">Slides</a></p>
 									</footer>
 								</article>
 							</div>
@@ -183,7 +240,7 @@
 					</div>
 					<header>
 						<br><br>
-						<p>Members:</p>
+						<p>Members</p>
 					</header>
 
 					<div class="row">
@@ -219,7 +276,7 @@
 		$(document).ready(function() {
 
 			$(".more").shorten({
-				"showChars" : 200,
+				"showChars" : 270,
 				"moreText" : "Continue Reading",
 				"lessText" : "Collapse"
 			});

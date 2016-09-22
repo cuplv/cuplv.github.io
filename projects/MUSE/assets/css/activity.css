@@ -5,7 +5,7 @@
     padding: 3em 3em 1em 3em ;
     background: #ffffff;
     border: solid 1px rgba(160, 160, 160, 0.3);
-    margin: 0 0 3em 0;
+    margin: 3em 0 3em 0;
     position: relative;
 }
 
@@ -77,8 +77,8 @@
     -webkit-transition: -webkit-transform 0.2s ease-out;
     -ms-transition: -ms-transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
-    width:25em;
-    height:20em;
+    width:15em;
+    height:10em;
 }
 
 .post > a.image.featured:hover img {
