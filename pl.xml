@@ -6,6 +6,87 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.10.26" id="bwu-seminar-2016">
+      <news-snippet>
+        <ref table="person" key="bwu"/> visits October 28.
+      </news-snippet>
+      <news-detail>
+        <ref table="person" key="bwu"/> from Colorado School of Mines is
+        visiting us on October 28, 2016. He is giving a CUPLV Seminar entitled
+        "Compiler and Runtime Optimizations for GPU Memory Systems" at
+        3:00pm in KOBL 230 on Friday, October 28, 2016.
+      </news-detail>
+      <talk-announcement>
+        <speaker><ref table="person" key="bwu"/></speaker>
+        <affiliation>Colorado School of Mines</affiliation>
+        <when>10-28-2015 15:00</when>
+        <where>KOBL 230</where>
+        <title>Compiler and Runtime Optimizations for GPU Memory Systems</title>
+        <abstract>
+          <p>In recent year, we have seen a rapid rise of massive parallelism in
+          modern processors, exemplified by GPUs, APUs and MIC processors. The
+          emergence of massive parallelism in a single node brings growing
+          demands for efficient data accesses. Optimizing memory throughput is
+          hence critical for tapping into the full potential of the many-core
+          systems. In the first half of the talk, I will present some
+          theoretical and empirical results on optimizing memory coalescing for
+          GPUs. In the second half of the talk, I will present our framework to
+          automatically place data on GPUs for performance and portability.</p>
+        </abstract>
+        <bio>
+          <p><ref table="person" key="bwu"/> is an Assistant Professor in
+          the EECS department at Colorado School of Mines. He received his Ph.D.
+          degree in computer science from the College of William and Mary for
+          his dissertation on "Matching Non-Uniformity for Program Optimizations
+          on Heterogeneous Manycore Systems”. He received his M.S. degree in
+          computer science and B.S. degree in mathematics both from Central
+          South University in China. His research interests lie in the broad
+          field of compilers and programming systems, with an emphasis on
+          program optimizations for heterogeneous computing and emerging
+          architectures. Most of his research activities have centered around
+          data locality enhancement for heterogeneous computing systems.</p>
+        </bio>
+        <host><ref table="person" key="bec"/></host>
+      </talk-announcement>
+    </news>
+    <news date="2016.10.26" id="gfainekos-seminar-2016">
+      <news-snippet>
+        <ref table="person" key="gfainekos"/>
+        visits October 27.
+      </news-snippet>
+      <news-detail>
+        <ref table="person" key="gfainekos"/>
+        from Arizona State University is visiting us on October 27, 2016. He is giving a Computer Science Colloquium entitled "Beyond Requirements Falsification : Semi-Formal Methods and Tools for the Analysis of Cyber-Physical Systems" at 3:30pm in ECCR 265
+        on Thursday, October 27, 2016.
+      </news-detail>
+      <talk-announcement>
+        <speaker><ref table="person" key="gfainekos"/></speaker>
+        <affiliation>Arizona State University</affiliation>
+        <when>10-27-2016 15:30</when>
+        <where>ECCR 265</where>
+        <title>
+          Beyond Requirements Falsification: Semi-Formal Methods and Tools for the Analysis of Cyber-Physical Systems
+        </title>
+        <abstract>
+          <p>Correct-by-design synthesis methods for Cyber-Physical Systems (CPS) are still in their infancy for CPS with complex physical dynamics. For that reason, a combination of design theories for simpler systems and/or ad-hoc design approaches are
+            utilized. Hence, numerous design and implementation errors are discovered while CPS are operational in the field. Such errors can have catastrophic effects to human life and to the economy. Over the last few years, requirements guided falsification
+            methods have proven to be a practical approach to the verification problem of industrial size CPS. However, requirements falsification is just one component of the necessary tools for the development of safe and reliable CPS. In this talk, Fainekos
+            will provide an overview of his team's research in providing support for all the stages of the development for CPS, from formal requirements elicitation and mining to system conformance to on-line monitoring. Most of their methods have been
+            implemented in a Matlab (TM) toolbox called S-TaLiRo (System's TemporAl LogIc Robustness). Finally, in this talk, he will demonstrate that S-TaLiRo can provide answers to challenge problems from the automotive industry.</p>
+        </abstract>
+        <bio>
+          <p><ref table="person" key="gfainekos"/>
+            is an associate professor at the School of Computing, Informatics and Decision Systems Engineering (SCIDSE) at Arizona State University (ASU). He is director of the Cyber-Physical Systems (CPS) Lab and he is currently affiliated with the NSF I/UCR
+            Center for Embedded Systems (CES) at ASU. He received his PhD in Computer and Information Science in 2008 from the University of Pennsylvania, where he was affiliated with the GRASP laboratory. He holds a Diploma degree (BSc and MSc) in Mechanical
+            Engineering from the National Technical University of Athens and an MSc degree in Computer and Information Science from the University of Pennsylvania. Before joining ASU, he held a postdoctoral researcher position at NEC Laboratories America in the
+            System Analysis and Verification Group. He is currently working on Cyber-Physical Systems and robotics. In particular, his expertise is on formal methods, logic, artificial intelligence, optimization and control theory. His research has applications on
+            automotive systems, medical devices, autonomous (ground and aerial) robots and human-robot interaction (HRI). In 2013, Fainekos received the NSF CAREER award. He was also recipient of the SCIDSE Best Researcher Junior Faculty award for 2013 and of
+            the 2008 Frank Anger Memorial ACM SIGBED/SIGSOFT Student Award. Two of his conference papers have been nominated for student best paper awards.
+          </p>
+        </bio>
+      </talk-announcement>
+    </news>
+
     <news date="2016.10.26" id="phd-call-2016">
       <news-snippet>
         Call for Ph.D. applicants for Fall 2017.  Application deadline
@@ -5226,6 +5307,16 @@ an application example.</p>
     <person id="jaldrich">
       <name>Jonathan Aldrich</name>
       <url>http://www.cs.cmu.edu/~aldrich/</url>
+    </person>
+    <person id="gfainekos">
+      <name>Georgios Fainekos</name>
+      <face>pics/gfainekos.jpg</face>
+      <url>http://www.public.asu.edu/~gfaineko/</url>
+    </person>
+    <person id="bwu">
+      <name>Bo Wu</name>
+      <face>pics/bwu.png</face>
+      <url>https://inside.mines.edu/~bwu/</url>
     </person>
   </persons>
 
