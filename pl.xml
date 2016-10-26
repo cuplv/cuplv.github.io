@@ -2457,6 +2457,33 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="clumping-popl17">
+      <title>Semantic-Directed Clumping of Disjunctive Abstract States</title>
+      <authors>
+        <author person="hli" student="y"/>
+        <author person="fberenger"/>
+        <author person="bec"/>
+        <author person="rival"/>
+      </authors>
+      <howpub>
+        <proceedings event="popl17" />
+      </howpub>
+      <pages>13 pages</pages>
+      <year>2017</year>
+    </pub>
+    <pub id="vmf-gpce16">
+      <title>A Vision for Online Verification-Validation</title>
+      <authors>
+        <author person="hammer"/>
+        <author person="bec"/>
+        <author person="dvanhorn"/>
+      </authors>
+      <howpub>
+        <proceedings event="gpce16" />
+      </howpub>
+      <pages>12 pages</pages>
+      <year>2016</year>
+    </pub>
     <pub id="switched-systems-emsoft16">
       <title>Robust Controller Synthesis of Switched Systems Using Counterexample Guided Framework</title>
       <authors>
@@ -2607,21 +2634,36 @@ Well-founded Relations</title>
 	<p>Martingale theory yields a powerful set of tools that have recently been used to prove quantitative properties of stochastic systems such as stochastic safety and qualitative properties such as almost sure termination. In this paper, we examine proof techniques for establishing almost sure persistence and recurrence properties of infinite-state discrete time stochastic systems. A persistence property FG(P) specifies that almost all executions of the stochastic system eventually reach P and stay there forever. Likewise, a recurrence property GF(Q) specifies that a target set Q is visited infinitely often by almost all executions of the stochastic system. Our approach extends classic ideas on the use of Lyapunov-like functions to establish persistence and recurrence properties. Next, we extend known constraint-based invariant synthesis techniques to deduce the necessary supermartingale expressions to partly mechanize such proofs. We illustrate our techniques on a set of interesting examples.</p>
       </abstract>
     </pub>
-    <pub id="sets-lpar15">
+    <pub id="setr-lpar15">
       <title>Abstract Domains and Solvers for Sets Reasoning</title>
       <authors>
 	<author person="cox"/>
 	<author person="bec"/>
-	<author person="hli"/>
+	<author person="hli" student="y"/>
 	<author person="rival"/>
       </authors>
       <urls>
-	<!--<url name="pdf">papers/sets-lpar15.pdf</url>-->
+	      <url name="pdf">papers/setr-lpar15.pdf</url>
       </urls>
       <howpub>
-	<proceedings event="lpar15" />
+	      <proceedings event="lpar15" />
       </howpub>
+      <pages>356-371</pages>
+      <year>2015</year>
+      <ee>http://dx.doi.org/10.1007/978-3-662-48899-7_25</ee>
       <abstract>
+        <p>When constructing complex program analyses, it is often useful to
+        reason about not just individual values, but collections of values.
+        Symbolic set abstractions provide building blocks that can be used to
+        partition elements, relate partitions to other partitions, and determine
+        the provenance of multiple values, all without knowing any concrete
+        values. To address the simultaneous challenges of scalability and
+        precision, we formalize and implement an interface for symbolic set
+        abstractions and construct multiple abstract domains relying on both
+        specialized data structures and off-the-shelf theorem provers. We
+        develop techniques for lifting existing domains to improve performance
+        and precision. We evaluate these domains on real-world data structure
+        analysis problems.</p>
       </abstract>
     </pub>
     <pub id="controlfeasibility-oopsla15">
@@ -2637,6 +2679,10 @@ Well-founded Relations</title>
       <howpub>
 	<proceedings event="oopsla15" />
       </howpub>
+      <pages>163-182</pages>
+      <year>2015</year>
+      <booktitle>OOPSLA</booktitle>
+      <ee>http://doi.acm.org/10.1145/2814270.2814293</ee>
       <abstract>
 	<p>We present <em>jumping</em>, a form of selective control-flow abstraction useful for improving the scalability of goal-directed static analyses. Jumping is useful for analyzing programs with complex control-flow such as <em>event-driven</em> systems. In such systems, accounting for orderings between certain events is important for precision, yet analyzing the product graph of all possible event orderings is intractable. Jumping solves this problem by allowing the analysis to selectively abstract away control-flow between events irrelevant to a goal query while preserving information about the ordering of relevant events. We present a framework for designing sound jumping analyses and create an instantiation of the framework for performing precise inter-event analysis of Android applications. Our experimental evaluation showed that using jumping to augment a precise goal-directed analysis with inter-event reasoning enabled our analysis to prove 90--97\% of dereferences safe across our benchmarks.</p>
       </abstract>
@@ -2665,7 +2711,7 @@ Well-founded Relations</title>
     <pub id="sharing-sas15">
       <title>Shape Analysis for Unstructured Sharing</title>
       <authors>
-	<author person="hli"/>
+	<author person="hli" student="y"/>
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
@@ -2675,6 +2721,10 @@ Well-founded Relations</title>
       <howpub>
 	<proceedings event="sas15" />
       </howpub>
+      <pages>90-108</pages>
+      <year>2015</year>
+      <booktitle>SAS</booktitle>
+      <ee>http://dx.doi.org/10.1007/978-3-662-48288-9_6</ee>
       <abstract>
 	  <p>Shape analysis aims to infer precise structural properties of
   imperative memory states and has been applied heavily to verify
@@ -2748,6 +2798,9 @@ Well-founded Relations</title>
       <howpub>
 	<proceedings event="soap15" />
       </howpub>
+      <pages>19-25</pages>
+      <year>2015</year>
+      <ee>http://doi.acm.org/10.1145/2771284.2771288</ee>
       <abstract>
 	<p>We present an approach and tool for general-purpose modeling of Android for static analysis.  Our approach is to explicate the reflective bridge between the Android framework and an application to make the framework source amenable to static analysis.  Our Droidel tool does this by automatically generating application-specific stubs that summarize the reflective behavior for a particular app.  The result is a program with a single entry-point that can be processed by any existing Java analysis platform (e.g., Soot, WALA, Chord).  We compared call graphs constructed using Droidel to call graphs constructed using a state-of-the-art Android model and found that Droidel captures more concrete behaviors.
 </p>
@@ -2808,7 +2861,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
     <pub id="desynchronized-esop15">
       <title>Desynchronized Multi-State Abstractions for Open Programs in Dynamic Languages</title>
       <authors>
-	<author person="cox"/>
+	<author person="cox" student="y"/>
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
@@ -2818,6 +2871,9 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       <howpub>
 	<proceedings event="esop15" />
       </howpub>
+      <pages>356-371</pages>
+      <year>2015</year>
+      <ee>http://dx.doi.org/10.1007/978-3-662-48899-7_25</ee>
       <abstract>
 	<p>Dynamic language library developers face a challenging problem:
 	ensuring that their libraries will behave correctly for a wide variety
@@ -2867,7 +2923,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       </authors>
       <urls>
       </urls>
-      <pages></pages>
+      <pages>44-46</pages>
       <date>2015-02</date>
       <volume>58</volume>
       <number>2</number>
@@ -2917,7 +2973,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       <title>Construction of Abstract Domains for Heterogeneous Properties (Position Paper)</title>
       <authors>
 	<author person="rival"/>
-	<author person="toubhans"/>
+	<author person="toubhans" student="y"/>
 	<author person="bec"/>
       </authors>
       <howpub>
@@ -2945,7 +3001,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
     <pub id="hoo-sas14">
       <title>Automatic Analysis of Open Objects in Dynamic Language Programs</title>
       <authors>
-	<author person="cox"/>
+	<author person="cox" student="y"/>
 	<author person="bec"/>
 	<author person="rival"/>
       </authors>
@@ -3495,6 +3551,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       <pages>146-163</pages>
       <doi>10.1007/978-3-642-33125-1_12</doi>
       <ee>http://dx.doi.org/10.1007/978-3-642-33125-1_12</ee>
+      <date>2012</date>
       <howpub>
 	<proceedings event="sas12" />
       </howpub>
@@ -3524,6 +3581,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	    <number>CU-CS-1094-12</number>
 	    <institute>University of Colorado Boulder</institute>
 	    <url>papers/CU-CS-1094-12-reflective.pdf</url>
+      <pages>31 pages</pages>
 	 </tr>
       </note>
     </pub>
@@ -3551,8 +3609,10 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	  <number>CU-CS-1093-12</number>
           <institute>University of Colorado Boulder</institute>
 	  <url>papers/CU-CS-1093-12-enforcements.pdf</url>
+      <pages>18 pages</pages>
 	</tr>
       </note>
+      <date>2012</date>
       <abstract>
 	<p>A static analysis design is <em>sufficient</em> if it can
 	prove the property of interest with an acceptable number of
@@ -3789,6 +3849,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       <howpub>
 	<proceedings event="sas11" />
       </howpub>
+      <date>2011</date>
       <note>
 	<tr>
 	  <extendedtr />
@@ -4040,12 +4101,14 @@ an application example.</p>
       <howpub>
 	<proceedings event="vmcai11" />
       </howpub>
+      <date>2011</date>
       <note>
 	<tr>
 	  <extendedtr />
 	  <number>CU-CS-1076-10</number>
           <institute>University of Colorado Boulder</institute>
 	  <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1076-10.pdf</url>
+      <pages>23 pages</pages>
 	</tr>
       </note>
       <abstract>
@@ -4086,12 +4149,14 @@ an application example.</p>
       <howpub>
 	<proceedings event="pldi10" />
       </howpub>
+      <date>2010</date>
       <note>
 	<tr>
 	  <extendedtr />
 	  <number>CS-TR-4954</number>
           <institute>University of Maryland, College Park</institute>
 	  <url>http://hdl.handle.net/1903/10115</url>
+      <pages>19 pages</pages>
 	</tr>
       </note>
       <abstract>
@@ -5064,74 +5129,84 @@ an application example.</p>
       <name>Stefano Tonetta</name>
       <url>https://es-static.fbk.eu/people/tonetta/</url>
     </person>
+    <person id="fberenger">
+      <name>François Bérenger</name>
+    </person>
   </persons>
+
   <events>
     <series id="popl">
       <name>Principles of Programming Languages</name>
       <longPrefix>ACM SIGACT-SIGPLAN Symposium on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="popl17">
+        <date>2017-01</date>
+        <nth>Forty-Fourth</nth>
+        <url>http://conf.researchr.org/home/POPL-2017</url>
+        <acceptanceRate>23%</acceptanceRate>
+      </event>
       <event id="popl16">
-	<date>2016-01</date>
-	<nth>Forty-Third</nth>
-	<url>http://conf.researchr.org/home/POPL-2016</url>
+        <date>2016-01</date>
+        <nth>Forty-Third</nth>
+        <url>http://conf.researchr.org/home/POPL-2016</url>
       </event>
       <event id="popl15">
-	<date>2015-01</date>
-	<location>Mumbai, India</location>
-	<nth>Forty-Second</nth>
-	<url>http://popl.mpi-sws.org/2015/</url>
-	<acceptance>52/227</acceptance>
-	<acceptanceRate>22.9%</acceptanceRate>
+        <date>2015-01</date>
+        <location>Mumbai, India</location>
+        <nth>Forty-Second</nth>
+        <url>http://popl.mpi-sws.org/2015/</url>
+        <acceptance>52/227</acceptance>
+        <acceptanceRate>22.9%</acceptanceRate>
       </event>
       <event id="popl14">
-	<date>2014-01</date>
-	<location>San Diego, California, USA</location>
-	<nth>Forty-First</nth>
-	<url>http://popl.mpi-sws.org/2014/</url>
-	<acceptance>51/220</acceptance>
-	<acceptanceRate>23.2%</acceptanceRate>
-	<volume>49</volume>
-	<number>1</number>
+        <date>2014-01</date>
+        <location>San Diego, California, USA</location>
+        <nth>Forty-First</nth>
+        <url>http://popl.mpi-sws.org/2014/</url>
+        <acceptance>51/220</acceptance>
+        <acceptanceRate>23.2%</acceptanceRate>
+        <volume>49</volume>
+        <number>1</number>
       </event>
       <event id="popl13">
-	<date>2013-01</date>
-	<location>Rome, Italy</location>
-	<nth>Fortieth</nth>
-	<url>http://popl.mpi-sws.org/2013/</url>
+        <date>2013-01</date>
+        <location>Rome, Italy</location>
+        <nth>Fortieth</nth>
+        <url>http://popl.mpi-sws.org/2013/</url>
       </event>
       <event id="popl12">
-	<date>2012-01</date>
-	<location>Philadelphia, Pennsylvania, USA</location>
-	<nth>Thirty-Ninth</nth>
-	<url>http://www.cse.psu.edu/popl/12/</url>
-	<acceptance>44/205</acceptance>
-	<acceptanceRate>21.5%</acceptanceRate>
+        <date>2012-01</date>
+        <location>Philadelphia, Pennsylvania, USA</location>
+        <nth>Thirty-Ninth</nth>
+        <url>http://www.cse.psu.edu/popl/12/</url>
+        <acceptance>44/205</acceptance>
+        <acceptanceRate>21.5%</acceptanceRate>
       </event>
       <event id="popl11">
-	<date>2011-01</date>
-	<location>Austin, Texas, USA</location>
-	<nth>Thirty-Eighth</nth>
-	<url>http://www.cse.psu.edu/popl/11/</url>
-	<acceptance>49/209</acceptance>
-	<acceptanceRate>23.4%</acceptanceRate>
-	<volume>46</volume>
-	<number>1</number>
+        <date>2011-01</date>
+        <location>Austin, Texas, USA</location>
+        <nth>Thirty-Eighth</nth>
+        <url>http://www.cse.psu.edu/popl/11/</url>
+        <acceptance>49/209</acceptance>
+        <acceptanceRate>23.4%</acceptanceRate>
+        <volume>46</volume>
+        <number>1</number>
       </event>
       <event id="popl10">
-	<date>2010-01</date>
-	<location>Madrid, Spain</location>
-	<nth>Thirty-Seventh</nth>
-	<url>http://www.cse.psu.edu/popl/10/</url>
+        <date>2010-01</date>
+        <location>Madrid, Spain</location>
+        <nth>Thirty-Seventh</nth>
+        <url>http://www.cse.psu.edu/popl/10/</url>
       </event>
       <event id="popl08">
-	<date>2008-01</date>
-	<location>San Francisco, California, USA</location>
-	<nth>Thirty-Fifth</nth>
-	<url>http://www.cs.ucsd.edu/popl/08/</url>
-	<acceptance>35/212</acceptance>
-	<acceptanceRate>16.5%</acceptanceRate>
-	<volume>43</volume>
-	<number>1</number>
+        <date>2008-01</date>
+        <location>San Francisco, California, USA</location>
+        <nth>Thirty-Fifth</nth>
+        <url>http://www.cs.ucsd.edu/popl/08/</url>
+        <acceptance>35/212</acceptance>
+        <acceptanceRate>16.5%</acceptanceRate>
+        <volume>43</volume>
+        <number>1</number>
       </event>
     </series>
     <series id="pldi">
@@ -5270,29 +5345,30 @@ an application example.</p>
       </event>
     </series>
     <series id="esop">
-      <name>European Symposium on Programming</name>
-      <issue journal="lncs"/>
-      <event id="esop15">
-	<date>2015-04</date>
-	<location>London, United Kingdom</location>
-        <url>http://conf.researchr.org/home/esop-2015</url>
-	<acceptance>33/115</acceptance>
-	<acceptanceRate>28.7%</acceptanceRate>
-      </event>
-      <event id="esop11">
-	<date>2011-03</date>
-	<location>Saarbrücken, Germany</location>
-        <url>http://www.etaps.org/etaps-2011/esop</url>
-      </event>
-      <event id="esop10">
-	<date>2010-03</date>
-	<location>Paphos, Cyprus</location>
-	<nth>Nineteenth</nth>
-	<url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
-	<acceptance>30/121</acceptance>
-	<acceptanceRate>24.8%</acceptanceRate>
-	<volume>6012</volume>
-      </event>
+        <name>European Symposium on Programming</name>
+        <issue journal="lncs"/>
+        <event id="esop15">
+            <date>2015-04</date>
+            <location>London, United Kingdom</location>
+            <url>http://conf.researchr.org/home/esop-2015</url>
+            <acceptance>33/115</acceptance>
+            <acceptanceRate>28.7%</acceptanceRate>
+            <volume>9032</volume>
+        </event>
+        <event id="esop11">
+            <date>2011-03</date>
+            <location>Saarbrücken, Germany</location>
+            <url>http://www.etaps.org/etaps-2011/esop</url>
+        </event>
+        <event id="esop10">
+            <date>2010-03</date>
+            <location>Paphos, Cyprus</location>
+            <nth>Nineteenth</nth>
+            <url>http://research.microsoft.com/en-us/um/people/adg/esop2010/</url>
+            <acceptance>30/121</acceptance>
+            <acceptanceRate>24.8%</acceptanceRate>
+            <volume>6012</volume>
+        </event>
     </series>
     <series id="tacas">
       <name>Tools and Algorithms for the Construction and Analysis of Systems</name>
@@ -5339,6 +5415,7 @@ an application example.</p>
         <url>http://sas2015.inria.fr/</url>
         <acceptance>18/44</acceptance>
         <acceptanceRate>40.1%</acceptanceRate>
+        <volume>9291</volume>
       </event>
       <event id="sas14">
         <date>2014-09</date>
@@ -5431,6 +5508,7 @@ an application example.</p>
 	<url>http://vmcai11.cis.ksu.edu/</url>
 	<acceptance>24/71</acceptance>
 	<acceptanceRate>33.8%</acceptanceRate>
+  <volume>6538</volume>
       </event>
       <event id="vmcai06">
 	<date>2006-01</date>
@@ -5438,6 +5516,7 @@ an application example.</p>
 	<url>http://www.cs.utexas.edu/~vmcai06/</url>
 	<acceptance>28/58</acceptance>
 	<acceptanceRate>48.3%</acceptanceRate>
+  <volume>3855</volume>
       </event>
       <event id="vmcai05">
 	<date>2005-01</date>
@@ -5445,6 +5524,7 @@ an application example.</p>
 	<url>http://www.polytechnique.fr/vmcai05/</url>
 	<acceptance>27/92</acceptance>
 	<acceptanceRate>29.3%</acceptanceRate>
+  <volume>3385</volume>
       </event>
     </series>
     <series id="lics">
@@ -5689,6 +5769,7 @@ an application example.</p>
 	<url>http://www.polytechnique.fr/vmcai05/Aiool.html</url>
 	<acceptance>11/13</acceptance>
 	<acceptanceRate>84.6%</acceptanceRate>
+  <volume>131</volume>
       </event>
     </series>
     <series id="bioconcur" type="workshop">
@@ -5783,7 +5864,15 @@ an application example.</p>
     </series>
     <series id="gpce">
       <name>Generative Programming and Component Engineering</name>
-      <longPrefix>International Conference on</longPrefix>
+      <longPrefix>ACM SIGPLAN International Conference on</longPrefix>
+      <event id="gpce16">
+         <date>2016-10</date>
+         <location>Amsterdam, The Netherlands</location>
+         <nth>Fifteenth</nth>
+         <url>http://conf.researchr.org/home/gpce-2016</url>
+         <acceptance>20/53</acceptance>
+         <acceptanceRate>37.7%</acceptanceRate>
+      </event>
       <event id="gpce10">
          <date>2010-10</date>
          <location>Eindhoven, The Netherlands</location>
@@ -5824,7 +5913,7 @@ an application example.</p>
       <short>Electr Notes Theor Comput Sc</short>
     </journal>
     <journal id="cacm">
-      <name>Commnunications of the ACM (CACM)</name>
+      <name>Communications of the ACM (CACM)</name>
       <short>Commun. ACM</short>
     </journal>
     <journal id="sttt">
