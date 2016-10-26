@@ -756,7 +756,7 @@ describing and enforcing declarative policies for the flow of capabilities betwe
 	CUPLV faculty <ref table="person" key="bec"/>, <ref table="person" key="cernyp"/>, <ref table="person" key="srirams"/>
 	have been awarded a DARPA grant
       "<a href="http://www.darpa.mil/Our_Work/I2O/Programs/Mining_and_Understanding_Software_Enclaves_%28MUSE%29.aspx">MUSE: Mining and Understanding Bug Fixes to Address Application-Framework Protocol Defects</a>"
-	with collaborators <ref table="person" key="kanderson"/> and <ref table="person" key="yeh"/>.
+	with collaborators <ref table="person" key="kanderson"/> and <ref table="person" key="tyeh"/>.
       </news-detail>
     </news>
     <news date="2014.09.12" id="radhia-cousot-award-2014">
@@ -1108,7 +1108,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<ref table="person" key="givens"/>,
 	<ref table="person" key="chakarov"/>,
 	<ref table="person" key="srirams"/>, and
-	<ref table="person" key="yeh" />
+	<ref table="person" key="tyeh" />
 	have had their paper accepted for presentation
 	at <ref table="event" key="icse13"/>
 	(New and Emerging Results Track) in May.
@@ -2385,6 +2385,21 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </news-list>
 
   <projects>
+    <project id="fixr">
+        <name>Fixr</name>
+        <url>http:/plv.colorado.edu/projects/fixr</url>
+        <authors>
+            <author person="bec"/>
+            <author person="kanderson"/>
+            <author person="cernyp"/>
+            <author person="srirams"/>
+            <author person="tyeh"/>
+        </authors>
+        <title>Mining and Understanding Bug Fixes for App-Framework Protocol Defects</title>
+        <snippet>
+            <p>Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses.</p>
+        </snippet>
+    </project>
     <project id="droidel">
       <name>Droidel</name>
       <url>https://github.com/cuplv/droidel</url>
@@ -3078,7 +3093,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
 	<author person="ekowalczyk" student="y"/>
 	<author person="amemon"/>
 	<author person="bec"/>
-	<author person="yeh"/>
+	<author person="tyeh"/>
       </authors>
       <urls>
       </urls>
@@ -3427,7 +3442,7 @@ In this paper, we study the construction of such shape-numeric, static analyzers
 	<author person="givens"/>
 	<author person="chakarov"/>
 	<author person="srirams"/>
-	<author person="yeh"/>
+	<author person="tyeh"/>
       </authors>
       <urls>
 	<url name="pdf">papers/ui-icse-nier13.pdf</url>
@@ -4893,7 +4908,7 @@ an application example.</p>
       <name>P.S. Thiagarajan</name>
       <url>http://www.comp.nus.edu.sg/~thiagu/</url>
     </person>
-    <person id="yeh">
+    <person id="tyeh">
       <name>Tom Yeh</name>
       <url>http://www.tomyeh.info/</url>
     </person>
