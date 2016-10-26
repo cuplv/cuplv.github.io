@@ -6,6 +6,31 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2016.10.26" id="phd-call-2016">
+      <news-snippet>
+        Call for Ph.D. applicants for Fall 2017.  Application deadline
+        is December 15, 2016.
+      </news-snippet>
+      <news-detail>
+       Call for Ph.D. applicants for Fall 2016.  Application deadline is December 15,
+       2015. Check out our latest <a href="talks/openhouse15.pdf">recruiting talk</a>
+       from February 20, 2015.
+      </news-detail>
+      <news-page header="Ph.D. Positions">
+        <p>We are looking for enthusiastic students to join our diverse and
+        dynamic group in programming languages and verification.  Our group has
+        active projects in areas such as static and dynamic program analysis;
+        verification, debugging, and programmer productivity tools; program synthesis;
+        language-based security; type systems; language design; analysis of
+        hybrid and embedded systems.  We have a track record of publishing in
+        top venues, such as POPL and PLDI.  <a
+        href="http://www.colorado.edu/cs/graduates/admissions"> CS
+        Admissions</a> (deadline December 15, 2016) and <a
+        href="http://www.colorado.edu/ecee/graduate-program/admissions">ECEE
+        Admissions</a> (deadline January 15, 2016 but earlier for financial aid
+        consideration).</p>
+      </news-page>
+    </news>
     <news date="2016.10.13" id="paper-popl17">
       <news-snippet>
         Two papers with CUPLV authors accepted to <ref table="event" key="popl17"/>!
