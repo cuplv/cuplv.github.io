@@ -5236,6 +5236,7 @@ an application example.</p>
       <issue journal="sigplannot"/>
       <event id="popl17">
         <date>2017-01</date>
+        <location>Paris, France</location>
         <nth>Forty-Fourth</nth>
         <url>http://conf.researchr.org/home/POPL-2017</url>
         <acceptanceRate>23%</acceptanceRate>
