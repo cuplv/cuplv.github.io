@@ -6,6 +6,32 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2016.10.13" id="paper-popl17">
+      <news-snippet>
+        Two papers with CUPLV authors accepted to <ref table="event" key="popl17"/>!
+        [<ref table="pub" key="clumping-popl17" text="1"/>,
+        <ref table="pub" key="hazelnut-popl17" text="2"/>]
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="bec"/> and <ref table="person" key="hammer"/>
+        with collaborators
+        have had papers accepted for presentation at <ref table="event" key="popl17"/> in January (<ref table="pub"
+        key="clumping-popl17" mode="authors"/> and <ref table="pub"
+        key="hazelnut-clumping" mode="authors"/>).
+      </news-detail>
+    </news>
+    <news date="2016.08.26" id="paper-gpce16">
+      <news-snippet>
+        Paper by <ref table="pub" key="vmf-gpce16" mode="authors"/>
+        accepted to <ref table="event" key="gpce16"/>.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="bec"/> and
+        <ref table="person" key="hammer"/>
+        have had a paper "<ref table="pub" key="vmf-gpce16"/>"
+        accepted for presentation at <ref table="event" key="gpce16"/> in November.
+      </news-detail>
+    </news>
     <news date="2015.06.17" id="pldisrc16">
       <news-snippet>
         <ref table="person" key="bstein"/> awarded second place
@@ -2484,6 +2510,20 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <proceedings event="popl17" />
       </howpub>
       <pages>13 pages</pages>
+      <year>2017</year>
+    </pub>
+    <pub id="hazelnut-popl17">
+      <title>Hazelnut: A Bidirectionally Typed Structure Editor Calculus</title>
+      <authors>
+        <author person="comar"/>
+        <author person="ivoysey"/>
+        <author person="mhilton"/>
+        <author person="jaldrich"/>
+        <author person="hammer"/>
+      </authors>
+      <howpub>
+        <proceedings event="popl17" />
+      </howpub>
       <year>2017</year>
     </pub>
     <pub id="vmf-gpce16">
@@ -5146,6 +5186,20 @@ an application example.</p>
     </person>
     <person id="fberenger">
       <name>François Bérenger</name>
+    </person>
+    <person id="comar">
+      <name>Cyrus Omar</name>
+      <url>https://www.cs.cmu.edu/~comar/</url>
+    </person>
+    <person id="ivoysey">
+      <name>Ian Voysey</name>
+    </person>
+    <person id="mhilton">
+      <name>Michael Hilton</name>
+    </person>
+    <person id="jaldrich">
+      <name>Jonathan Aldrich</name>
+      <url>http://www.cs.cmu.edu/~aldrich/</url>
     </person>
   </persons>
 
