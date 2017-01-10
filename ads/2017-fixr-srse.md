@@ -1,3 +1,5 @@
+![CUPLV Logo](../pics/logo/cuplv-logo-72ppi_rectangle-gold-text.png)
+
 # Position: Student Research Software Engineer
 
 ## Job Description
