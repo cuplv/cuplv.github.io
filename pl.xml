@@ -6,6 +6,38 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+      <news date="2017.05.23" id="postdoc-call-2017-spring">
+        <news-snippet>
+  	Call for postdoc <a href="news.html#postdoc-call-2017">applicants</a> for Summer or Fall 2017.
+        </news-snippet>
+        <news-detail>
+  	There is a postdoctoral research associate position open with the opportunity to work with Profs. <ref table="person" key="cernyp"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="atrivedi"/> on program analysis.
+        </news-detail>
+        <news-page header="Postdoc Position">
+  	<p>
+  	<float img="pics/Preview_Winter_Panorama_CC141.jpg">
+  	  The majestic, snow-covered Flatirons is a breathtaking backdrop with Old Main at the University of Colorado Boulder in the foreground. (Photo by Casey A. Cass/University of Colorado)
+  	</float>
+  	The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for exceptional candidates for a postdoctoral research associate in the area of program analysis.</p>
+  <p>The ideal candidate has a background in the area of
+  programming languages and verification,  
+    as well as an enthusiasm for mentoring junior researchers.</p>
+  <p>
+    The postdoctoral researcher would collaborate with Profs. <ref table="person" key="cernyp"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="atrivedi"/>.
+    The researcher will have an opportunity to lead an ambitious project on
+program analysis for security. To apply, please send an email to <ref table="person" key="cernyp"/>
+with a CV and contact information for two or three references.</p>
+  	<p>Our group has active projects in areas such as the following:
+  <ul>
+    <li>program analysis</li>
+    <li>program synthesis</li>
+    <li>cyberphysical systems</li>
+  </ul>
+  	</p>
+  <p>The position is for one year, with a possible extension for additional years. Highly-qualified candidates may be considered for a research assistant professor position.  Teaching opportunities will be available. Compensation is highly competitive and commensurate with experience.</p>
+  <p>Boulder, located at the base of the Rocky Mountains, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and to a vibrant startup community. It is located 30 miles from downtown Denver.</p>
+    </news-page>
+    </news>  
     <news date="2016.12.22" id="paper-tacas17">
       <news-snippet>
         Paper by <ref table="pub" key="discriminator-tacas17" mode="authors"/>
@@ -5828,6 +5860,11 @@ an application example.</p>
     <series id="aplas">
       <name>Programming Languages and Systems</name>
       <longPrefix>Asian Symposium on</longPrefix>
+      <event id="aplas17">
+      	<date>2017-11</date>
+      	<location>Suzhou, China</location>
+      	<url>https://www-aplas.github.io/</url>
+      </event>
       <event id="aplas16">
 	<date>2016-11</date>
 	<location>Hanoi, Vietnam</location>
