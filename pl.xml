@@ -6,6 +6,28 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+      <news date="2017.06.21" id="pldisrc17">
+        <news-snippet>
+          <ref table="person" key="kheadley"/> awarded second place
+          at the <a href="http://pldi17.sigplan.org/track/pldi-2017-student-research-competition">PLDI Student Research Competition (SRC)</a>.
+        </news-snippet>
+        <news-detail>
+          Congratulations to <ref table="person" key="kheadley"/> for being awarded second place in the graduate student category
+        at the <a href="http://pldi17.sigplan.org/track/pldi-2017-student-research-competition">PLDI Student Research Competition (SRC)</a>
+        for his project, "Tuning Data and Control Structures for Incremental Computation"
+        </news-detail>
+      </news>
+      <news date="2017.06.21" id="pldisrc17">
+        <news-snippet>
+          <ref table="person" key="pzhang"/> awarded first place
+          at the <a href="http://pldi17.sigplan.org/track/pldi-2017-student-research-competition">PLDI Student Research Competition (SRC)</a>.
+        </news-snippet>
+        <news-detail>
+          Congratulations to <ref table="person" key="pzhang"/> for being awarded first place in the undergraduate student category
+        at the <a href="http://pldi17.sigplan.org/track/pldi-2017-student-research-competition">PLDI Student Research Competition (SRC)</a>
+        for his project, "Property-based Randomized Test Generation for Android Applications"
+        </news-detail>
+      </news>
       <news date="2017.05.23" id="postdoc-call-2017-spring">
         <news-snippet>
   	Call for postdoc <a href="news.html#postdoc-call-2017">applicants</a> for Summer or Fall 2017.
