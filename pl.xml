@@ -4930,6 +4930,11 @@ an application example.</p>
       <name>Max Russek</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="pzhang" group="bs">
+      <name>Peilun Zhang</name>
+      <face>pics/generic-male.png</face>
+      <url>http://peilun.org</url>
+    </person>
     <person id="vanderweit" group="bs-alumni">
       <name>Nicholas Vanderweit</name>
       <face>pics/vanderweit.jpg</face>
