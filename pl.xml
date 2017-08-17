@@ -2664,7 +2664,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="tacas17" />
       </howpub>
-      <pages>17 pages</pages>
+      <pages>21-37</pages>
       <year>2017</year>
     </pub>
     <pub id="clumping-popl17">
@@ -2678,7 +2678,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="popl17" />
       </howpub>
-      <pages>13 pages</pages>
+      <pages>32-45</pages>
       <year>2017</year>
     </pub>
     <pub id="hazelnut-popl17">
@@ -2705,7 +2705,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="gpce16" />
       </howpub>
-      <pages>12 pages</pages>
+      <pages>190-201</pages>
       <year>2016</year>
     </pub>
     <pub id="switched-systems-emsoft16">
@@ -5393,7 +5393,8 @@ an application example.</p>
         <location>Paris, France</location>
         <nth>Forty-Fourth</nth>
         <url>http://conf.researchr.org/home/POPL-2017</url>
-        <acceptanceRate>23%</acceptanceRate>
+        <acceptance>64/282</acceptance>
+        <acceptanceRate>22.7%</acceptanceRate>
       </event>
       <event id="popl16">
         <date>2016-01</date>
@@ -5629,6 +5630,9 @@ an application example.</p>
       	<location>Uppsala, Sweden</location>
       	<nth>Twenty-Third</nth>
       	<url>http://www.etaps.org/2017/tacas/</url>
+        <acceptance>48/167</acceptance>
+        <acceptanceRate>28.7%</acceptanceRate>
+        <volume>10206</volume>
       </event>
       <event id="tacas16">
 	<date>2016-04</date>
