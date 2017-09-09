@@ -6,6 +6,28 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+      <news date="2017.08.02" id="chimpcheck-onward17">
+        <news-snippet>
+          Paper by <ref table="pub" key="chimpcheck-onward17" mode="authors"/>
+          accepted to <ref table="event" key="onward17"/>.
+        </news-snippet>
+        <news-detail>
+          CUPLV authors
+                  <author person="elam"/>,
+                  <author person="pzhang"/>, and
+                  <author person="bec"/>.
+          have had a paper "<ref table="pub" key="chimpcheck-onward17"/>"
+          officially accepted for presentation at <ref table="event" key="onward17"/> in October.
+        </news-detail>
+      </news>
+      <news date="2017.06.22" id="bec-tenure">
+        <news-snippet>
+          <ref table="person" key="bec"/>
+          promoted to Associate Professor
+          and granted
+          <a href="https://connections.cu.edu/stories/tenure-list-june-2017">tenure</a>.
+        </news-snippet>
+      </news>
       <news date="2017.06.21" id="pldisrc17">
         <news-snippet>
           <ref table="person" key="kheadley"/> awarded second place
@@ -2674,6 +2696,43 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="chimpcheck-onward17">
+      <title>ChimpCheck: Property-Based Randomized Test Generation for Interactive Apps</title>
+      <authors>
+        <author person="elam"/>
+        <author person="pzhang" student="y"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="arXiv">https://arxiv.org/abs/1708.08613</url>
+        <url name="pdf">https://arxiv.org/pdf/1708.08613</url>
+      </urls>
+      <howpub>
+        <proceedings event="onward17" />
+      </howpub>
+      <year>2017</year>
+      <abstract>
+        <p>We consider the problem of generating <emph>relevant</emph> execution
+        traces to test rich interactive applications. Rich interactive applications,
+        such as apps on mobile platforms, are complex stateful and often distributed
+        systems where sufficiently exercising the app with user-interaction (UI)
+        event sequences to expose defects is both hard and time-consuming. In
+        particular, there is a fundamental tension between brute-force random UI
+        exercising tools, which are fully-automated but offer low relevance, and UI
+        test scripts, which are manual but offer high relevance. In this paper, we
+        consider a middle way---enabling a seamless fusion of scripted and randomized
+        UI testing. This fusion is prototyped in a testing tool called ChimpCheck for
+        programming, generating, and executing property-based randomized test cases
+        for Android apps. Our approach realizes this fusion by offering a high-level,
+        embedded domain-specific language for defining custom generators of simulated
+        user-interaction event sequences. What follows is a combinator library built
+        on industrial strength frameworks for property-based testing (ScalaCheck) and
+        Android testing (Android JUnit and Espresso) to implement property-based
+        randomized testing for Android development. Driven by real, reported issues
+        in open source Android apps, we show, through case studies, how ChimpCheck
+        enables expressing effective testing patterns in a compact manner.</p>
+      </abstract>
+    </pub>
     <pub id="discriminator-tacas17">
       <title>Discriminating Traces with Time</title>
       <authors>
@@ -4702,6 +4761,10 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~astr3586/</url>
       <face>pics/trivedi.jpg</face>
     </person>
+    <person id="elam" group="scientist">
+      <name>Edmund S.L. Lam</name>
+      <face>pics/elam.png</face>
+    </person>
     <person id="abensassi" group="postdoc-alumni">
       <name>Mohamed Amin Ben Sassi</name>
       <face>pics/aminbensassi.png</face>
@@ -5559,6 +5622,15 @@ an application example.</p>
 	<acceptanceRate>25.2%</acceptanceRate>
 	<volume>50</volume>
 	<number>10</number>
+      </event>
+    </series>
+    <series id="onward!">
+      <name>New Ideas, New Paradigms, and Reflections on Programming and Software</name>
+      <longPrefix>ACM Symposium on</longPrefix>
+      <event id="onward17">
+	      <date>2017-10</date>
+	      <location>Vancouver, British Columbia, Canada</location>
+	      <url>https://conf.researchr.org/home/onward-2017</url>
       </event>
     </series>
     <series id="cav">
