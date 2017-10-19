@@ -4779,7 +4779,7 @@ an application example.</p>
       <face>pics/smover.jpg</face>
       <url>http://www.sergiomover.eu/</url>
     </person>
-    <person id="yvoronin" group="postdoc">
+    <person id="yvoronin" group="postdoc-alumni">
       <name>Yuen-Lam Voronin</name>
       <url>http://www.cs.colorado.edu/~yuvo9296/</url>
       <face>pics/yvoronin.jpg</face>
@@ -4793,10 +4793,14 @@ an application example.</p>
       <url>http://cs.colorado.edu/~sabl4745</url>
       <face>pics/blackshear.jpg</face>
     </person>
-    <person id="chakarov" group="phd">
+    <person id="chakarov" group="phd-alumni">
      <name>Aleksandar Chakarov</name>
      <url>http://plv.colorado.edu/chakarov.html</url>
      <face>pics/chakarov.jpg</face>
+    </person>
+    <person id="ychou" group="phd">
+      <name>Yi Chou</name>
+      <face>pics/generic-female.png</face>
     </person>
     <person id="coughlin" group="phd-alumni">
       <name>Devin Coughlin</name>
@@ -4808,8 +4812,16 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
+    <person id="jculak" group="phd">
+      <name>Juraj Culak</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="mdooley" group="phd">
       <name>Michael Dooley</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="sdutta" group="phd">
+      <name>Souradeep Dutta</name>
       <face>pics/generic-male.png</face>
     </person>
     <person id="frohardt">
@@ -4825,6 +4837,10 @@ an application example.</p>
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="aguttman" group="phd">
+      <name>Andrew Guttman</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="kheadley" group="phd">
       <name>Kyle Headley</name>
       <url>http://kyleheadley.github.io/PHDWebsite/</url>
@@ -4837,6 +4853,14 @@ an application example.</p>
     <person id="ykim" group="phd">
       <name>Youngsung Kim</name>
       <face>pics/ykim.png</face>
+    </person>
+    <person id="tkushner" group="phd">
+      <name>Taisa Kushner</name>
+      <face>pics/generic-female.png</face>
+    </person>
+    <person id="nlewchenko" group="phd">
+      <name>Nick Lewchenko</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="tlu" group="phd">
       <name>Tianhan Lu</name>
@@ -4862,7 +4886,11 @@ an application example.</p>
       <url>http://research.microsoft.com/en-us/people/toddm/</url>
       <face>pics/mytkowicz.jpg</face>
     </person>
-    <person id="nelson">
+    <person id="mnarasimhamurthy" group="phd">
+      <name>Monal Narasimhamurthy</name>
+      <face>pics/generic-female.png</face>
+    </person>
+    <person id="nelson" group="phd-alumni">
       <name>Thomas Nelson</name>
       <face>pics/nelson.jpg</face>
     </person>
@@ -4885,6 +4913,10 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~benno/</url>
       <face>pics/stein.png</face>
     </person>
+    <person id="wtemple" group="phd">
+      <name>William Temple</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="vitousek">
       <name>Michael Vitousek</name>
       <face>pics/vitousek.jpg</face>
@@ -4893,11 +4925,15 @@ an application example.</p>
       <name>Chris Wailes</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="jwright" group="phd">
+      <name>Jared Wright</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="yanzhang" group="phd-alumni">
       <name>Yan Zhang</name>
       <face>pics/zhang.png</face>
     </person>
-    <person id="adityaz" group="phd">
+    <person id="adityaz" group="phd-alumni">
       <name>Aditya Zutshi</name>
       <face>pics/zutshi.jpg</face>
     </person>
@@ -4931,11 +4967,7 @@ an application example.</p>
       <name>Shashank Bharadwaj</name>
       <face>pics/bharadwaj.jpg</face>
     </person>
-    <person id="ychou" group="ms">
-      <name>Yi Chou</name>
-      <face>pics/generic-female.png</face>
-    </person>
-    <person id="rdiwakaran" group="ms">
+    <person id="rdiwakaran" group="ms-alumni">
       <name>Ram Das Diwakaran</name>
       <face>pics/rdiwakaran.jpg</face>
     </person>
@@ -4943,17 +4975,33 @@ an application example.</p>
       <name>Dimitrios Economou</name>
       <face>pics/deconomou.jpg</face>
     </person>
-    <person id="njagnik" group="ms">
+    <person id="njagnik" group="ms-alumni">
       <name>Nilesh Jagnik</name>
       <face>pics/njagnik.jpg</face>
     </person>
-    <person id="skumar" group="ms">
+    <person id="skumar" group="ms-alumni">
       <name>Suhas Akshar Kumar</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="aniket" group="ms">
+    <person id="aniket" group="ms-alumni">
       <name>Aniket Kumar Lata</name>
       <face>pics/aniket.jpg</face>
+    </person>
+    <person id="clin" group="ms-alumni">
+      <name>Chih-Wei Lin</name>
+      <face>pics/generic-female.png</face>
+    </person>
+    <person id="aphatak" group="ms">
+      <name>Aniruddha Phatak</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="arajeswari" group="ms-alumni">
+      <name>Athithyaa Panchapakesan Rajeswari</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="sramani" group="ms-alumni">
+      <name>Santhanakrishnan Ramani</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="vsingh" group="ms-alumni">
       <name>Vaibhav Singh</name>
@@ -4971,9 +5019,13 @@ an application example.</p>
       <name>Jonathan Turner</name>
       <face>pics/turner.jpg</face>
     </person>
-    <person id="avillani" group="ms">
+    <person id="avillani" group="ms-alumni">
       <name>Anna Villani</name>
       <face>pics/avillani.jpg</face>
+    </person>
+    <person id="hyoon" group="ms">
+      <name>Hansol Yoon</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="beal" group="bs-alumni">
       <name>Alex Beal</name>
@@ -4983,7 +5035,7 @@ an application example.</p>
       <name>Parker Evans</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="dfisher" group="bs">
+    <person id="dfisher" group="bs-alumni">
       <name>Dakota Fisher</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -4995,15 +5047,15 @@ an application example.</p>
       <name>Nathan Lapinksi</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="jlecavalier" group="bs">
+    <person id="jlecavalier" group="bs-alumni">
       <name>Jay Lecavlier</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="aokeson" group="bs">
+    <person id="aokeson" group="bs-alumni">
       <name>Alexandra Okeson</name>
       <face>pics/generic-female.png</face>
     </person>
-    <person id="rolsen" group="bs">
+    <person id="rolsen" group="bs-alumni">
       <name>Rhys Braginton Pettee Olsen</name>
       <face>pics/rolsen.jpg</face>
     </person>
@@ -5011,7 +5063,11 @@ an application example.</p>
       <name>Evan Roncevich</name>
       <face>pics/eroncevich.png</face>
     </person>
-    <person id="mrussek" group="bs">
+    <person id="croberts" group="bs">
+      <name>Chance Roberts</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="mrussek" group="bs-alumni">
       <name>Max Russek</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -5024,9 +5080,13 @@ an application example.</p>
       <name>Nicholas Vanderweit</name>
       <face>pics/vanderweit.jpg</face>
     </person>
-    <person id="tgrohens" group="gradintern">
+    <person id="tgrohens" group="gradintern-alumni">
       <name>Théotime Grohens</name>
       <face>pics/generic-male.png</face>
+    </person>
+    <person id="skeenan" group="ugintern">
+      <name>Sydney Keenan</name>
+      <face>pics/generic-female.png</face>
     </person>
     <person id="proux" group="visitor-alumni">
       <name>Pierre Roux</name>

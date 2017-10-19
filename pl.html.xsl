@@ -140,7 +140,7 @@ name="html" />
       </xsl:for-each>
 
       <xsl:if test="cv/persons/person[@group='bsms']">
-	    <h4>BS/BA+MS</h4>
+	    <h4>BS+MS</h4>
       </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='bsms']">
 	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
@@ -187,7 +187,7 @@ name="html" />
       <xsl:for-each select="cv/persons/person[@group='phd-alumni']">
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
-      <h4>BS/BA+MS</h4>
+      <h4>BS+MS</h4>
       <xsl:for-each select="cv/persons/person[@group='bsms-alumni']">
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
