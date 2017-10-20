@@ -64,7 +64,7 @@
   	</float>
   	The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for exceptional candidates for a postdoctoral research associate in the area of program analysis.</p>
   <p>The ideal candidate has a background in the area of
-  programming languages and verification,  
+  programming languages and verification,
     as well as an enthusiasm for mentoring junior researchers.</p>
   <p>
     The postdoctoral researcher would collaborate with Profs. <ref table="person" key="cernyp"/>, <ref table="person" key="bec"/>, <ref table="person" key="srirams"/>, and <ref table="person" key="atrivedi"/>.
@@ -81,7 +81,7 @@ with a CV and contact information for two or three references.</p>
   <p>The position is for one year, with a possible extension for additional years. Highly-qualified candidates may be considered for a research assistant professor position.  Teaching opportunities will be available. Compensation is highly competitive and commensurate with experience.</p>
   <p>Boulder, located at the base of the Rocky Mountains, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and to a vibrant startup community. It is located 30 miles from downtown Denver.</p>
     </news-page>
-    </news>  
+    </news>
     <news date="2016.12.22" id="paper-tacas17">
       <news-snippet>
         Paper by <ref table="pub" key="discriminator-tacas17" mode="authors"/>
@@ -4856,7 +4856,7 @@ an application example.</p>
     </person>
     <person id="tkushner" group="phd">
       <name>Taisa Kushner</name>
-      <face>pics/generic-female.png</face>
+      <face>pics/tkushner.png</face>
     </person>
     <person id="nlewchenko" group="phd">
       <name>Nick Lewchenko</name>
