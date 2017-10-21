@@ -4759,7 +4759,7 @@ an application example.</p>
     <person id="atrivedi" group="faculty">
       <name>Ashutosh Trivedi</name>
       <url>http://www.cs.colorado.edu/~astr3586/</url>
-      <face>pics/trivedi.jpg</face>
+      <face>pics/atrivedi.png</face>
     </person>
     <person id="elam" group="scientist">
       <name>Edmund S.L. Lam</name>
@@ -4818,7 +4818,7 @@ an application example.</p>
     </person>
     <person id="mdooley" group="phd">
       <name>Michael Dooley</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/mdooley.jpg</face>
     </person>
     <person id="sdutta" group="phd">
       <name>Souradeep Dutta</name>
@@ -4990,7 +4990,7 @@ an application example.</p>
     </person>
     <person id="clin" group="ms-alumni">
       <name>Chih-Wei Lin</name>
-      <face>pics/generic-female.png</face>
+      <face>pics/clin.jpg</face>
     </person>
     <person id="aphatak" group="ms">
       <name>Aniruddha Phatak</name>
@@ -4998,7 +4998,7 @@ an application example.</p>
     </person>
     <person id="arajeswari" group="ms-alumni">
       <name>Athithyaa Panchapakesan Rajeswari</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/athithyaa.jpg</face>
     </person>
     <person id="sramani" group="ms-alumni">
       <name>Santhanakrishnan Ramani</name>
