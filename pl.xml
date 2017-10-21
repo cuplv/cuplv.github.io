@@ -4800,7 +4800,7 @@ an application example.</p>
     </person>
     <person id="ychou" group="phd">
       <name>Yi Chou</name>
-      <face>pics/generic-female.png</face>
+      <face>pics/ychou.jpg</face>
     </person>
     <person id="coughlin" group="phd-alumni">
       <name>Devin Coughlin</name>
@@ -5074,7 +5074,7 @@ an application example.</p>
     </person>
     <person id="pzhang" group="bs">
       <name>Peilun Zhang</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/pzhang.jpg</face>
       <url>http://peilun.org</url>
     </person>
     <person id="vanderweit" group="bs-alumni">
