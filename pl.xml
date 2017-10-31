@@ -82,6 +82,17 @@ with a CV and contact information for two or three references.</p>
   <p>Boulder, located at the base of the Rocky Mountains, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and to a vibrant startup community. It is located 30 miles from downtown Denver.</p>
     </news-page>
     </news>
+    <news date="2017.04.28" id="paper-rss17">
+      <news-snippet>
+	Paper by <ref table="pub" key="clf-learning-rss17" mode="authors"/>
+	accepted to <ref table="event" key="rss17"/>.
+      </news-snippet>
+      <news-detail>
+	CUPLV authors <ref table="person" key="hravanbakhsh"/> and <ref table="person" key="srirams"/>
+	have had a paper "<ref table="pub" key="clf-learning-rss17"/>"
+	accepted for presentation at <ref table="event" key="rss17"/> in October.
+      </news-detail>
+    </news>
     <news date="2016.12.22" id="paper-tacas17">
       <news-snippet>
         Paper by <ref table="pub" key="discriminator-tacas17" mode="authors"/>
@@ -98,7 +109,7 @@ with a CV and contact information for two or three references.</p>
         accepted for presentation at <ref table="event" key="tacas17"/> in April.
       </news-detail>
     </news>
-    <news date="2015.10.26" id="bwu-seminar-2016">
+    <news date="2016.10.26" id="bwu-seminar-2016">
       <news-snippet>
         <ref table="person" key="bwu"/> visits October 28.
       </news-snippet>
@@ -2733,6 +2744,22 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         enables expressing effective testing patterns in a compact manner.</p>
       </abstract>
     </pub>
+    <pub id="clf-learning-rss17">
+      <title>Learning Lyapunov (Potential) Functions from Counterexamples and Demonstrations</title>
+      <authors>
+        <author person="hravanbakhsh"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/clf-learning-rss17.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="rss17" />
+      </howpub>
+      <abstract>
+        <p>We present a technique for learning control Lyapunov (potential) functions, which are used in turn to synthesize controllers for nonlinear dynamical systems. The learning framework uses a <em>demonstrator</em> that implements a black-box, untrusted strategy presumed to solve the problem of interest, a <em>learner</em> that poses finitely many queries to the demonstrator to infer a candidate function and a <em>verifier</em> that checks whether the current candidate is a valid control Lyapunov function. The overall learning framework is iterative, eliminating a set of candidates on each iteration using the counterexamples discovered by the verifier and the demonstrations over these counterexamples. We prove its convergence using ellipsoidal approximation techniques from convex optimization. We also implement this scheme using nonlinear MPC controllers to serve as demonstrators for a set of state and trajectory stabilization problems for nonlinear dynamical systems. Our approach is able to synthesize relatively simple polynomial control Lyapunov functions, and in that process replace the MPC using a guaranteed and computationally less expensive controller.</p>
+      </abstract>
+    </pub>  
     <pub id="discriminator-tacas17">
       <title>Discriminating Traces with Time</title>
       <authors>
@@ -6090,6 +6117,15 @@ an application example.</p>
         <date>2014-10</date>
         <url>http://emsoft.org/</url>
         <location>New Delhi, India</location>
+      </event>
+    </series>
+    <series id="rss">
+      <name>Robotics: Science and Systems</name>
+      <longPrefix></longPrefix>  
+      <event id="rss17">
+        <date>2017-06</date>
+        <location>Cambridge, Massachusetts, USA</location>
+        <url>http://rss2017.lids.mit.edu/</url>
       </event>
     </series>
     <series id="isola">
