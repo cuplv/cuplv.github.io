@@ -32,8 +32,10 @@
       <news-detail>
         CUPLV authors
         <ref table="person" key="sniari" />,
-        <ref table="person" key="cernyp" />, and
-        <ref table="person" key="bec" /> have had a paper "<ref table="pub" key="dpdebugger-aaai18" />" accepted for presentation at
+        <ref table="person" key="cernyp" />,
+        <ref table="person" key="bec" />, and
+        <ref table="person" key="atrivedi" />
+        have had a paper "<ref table="pub" key="dpdebugger-aaai18" />" accepted for presentation at
         <ref table="event" key="aaai18" /> in February.
       </news-detail>
     </news> 
