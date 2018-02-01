@@ -46,9 +46,9 @@
         </news-snippet>
         <news-detail>
           CUPLV authors
-                  <author person="elam"/>,
-                  <author person="pzhang"/>, and
-                  <author person="bec"/>.
+                  <ref table="person" key="elam"/>,
+                  <ref table="person" key="pzhang"/>, and
+                  <ref table="person" key="bec"/>
           have had a paper "<ref table="pub" key="chimpcheck-onward17"/>"
           officially accepted for presentation at <ref table="event" key="onward17"/> in October.
         </news-detail>
