@@ -6,7 +6,38 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
-      <news date="2017.08.02" id="chimpcheck-onward17">
+    <news date="2017.12.13" id="paper-icse18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="starling-icse18" mode="authors" /> accepted to
+        <ref table="event" key="icse18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="nlewchenko" />,
+        <ref table="person" key="smeier" />,
+        <ref table="person" key="smover" />,
+        <ref table="person" key="bec" />, and
+        <ref table="person" key="cernyp" /> with collaborators
+        have had a paper "<ref table="pub" key="starling-icse18" />" accepted for presentation at
+        <ref table="event" key="icse18" /> in May.
+      </news-detail>
+    </news> 
+    <news date="2017.11.28" id="paper-aaai18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="dpdebugger-aaai18" mode="authors" /> accepted to
+        <ref table="event" key="aaai18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="sniari" />,
+        <ref table="person" key="cernyp" />, and
+        <ref table="person" key="bec" /> have had a paper "<ref table="pub" key="dpdebugger-aaai18" />" accepted for presentation at
+        <ref table="event" key="aaai18" /> in February.
+      </news-detail>
+    </news> 
+    <news date="2017.08.02" id="chimpcheck-onward17">
         <news-snippet>
           Paper by <ref table="pub" key="chimpcheck-onward17" mode="authors"/>
           accepted to <ref table="event" key="onward17"/>.
@@ -2707,6 +2738,63 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="starling-icse18">
+      <title>Starling: Callback Typestates for Android Classes</title>
+      <authors>
+        <author person="aradhakrishna"/>
+        <author person="nlewchenko" student="y"/>
+        <author person="smeier" student="y"/>
+        <author person="smover"/>
+        <author person="bec"/>
+        <author person="cernyp"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="icse18" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="dpdebugger-aaai18">
+      <title>Differential Performance Debugging with Discriminant Regression Trees</title>
+      <authors>
+        <author person="sniari" student="y"/>
+        <author person="cernyp"/>
+        <author person="bec"/>
+        <author person="atrivedi"/>
+      </authors>
+      <urls>
+        <url name="arXiv">https://arxiv.org/abs/1711.04076</url>
+        <url name="pdf">https://arxiv.org/pdf/1711.04076</url>
+      </urls>
+      <howpub>
+        <proceedings event="aaai18" />
+      </howpub>
+      <abstract>
+        <p>Differential performance debugging is a technique to find performance
+        problems. It applies in situations where the performance of a program is
+        (unexpectedly) different for different classes of inputs. The task is to
+        explain the differences in asymptotic performance among various input
+        classes in terms of program internals. We propose a data-driven
+        technique based on <em>discriminant regression tree</em> (DRT) learning
+        problem where the goal is to discriminate among different classes of
+        inputs. We propose a new algorithm for DRT learning that first clusters
+        the data into functional clusters, capturing different asymptotic
+        performance classes, and then invokes off-the-shelf decision tree
+        learning algorithms to explain these clusters. We focus on linear
+        functional clusters and adapt classical clustering algorithms
+        (<em>K</em>-means and spectral) to produce them. For the
+        <em>K</em>-means algorithm, we generalize the notion of the cluster
+        centroid from a point to a linear function. We adapt spectral clustering
+        by defining a novel kernel function to capture the notion of "linear"
+        similarity between two data points. We evaluate our approach on
+        benchmarks consisting of Java programs where we are interested in
+        debugging performance. We show that our algorithm significantly
+        outperforms other well-known regression tree learning algorithms in
+        terms of running time and accuracy of classification.</p>
+      </abstract>
+    </pub>
     <pub id="chimpcheck-onward17">
       <title>ChimpCheck: Property-Based Randomized Test Generation for Interactive Apps</title>
       <authors>
@@ -5703,13 +5791,13 @@ an application example.</p>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
       <event id="oopsla15">
-	<date>2015-10</date>
-	<location>Pittsburgh, Pennsylvania, USA</location>
-	<url>http://2015.splashcon.org/</url>
-	<acceptance>53/210</acceptance>
-	<acceptanceRate>25.2%</acceptanceRate>
-	<volume>50</volume>
-	<number>10</number>
+    	<date>2015-10</date>
+    	<location>Pittsburgh, Pennsylvania, USA</location>
+    	<url>http://2015.splashcon.org/</url>
+    	<acceptance>53/210</acceptance>
+    	<acceptanceRate>25.2%</acceptanceRate>
+    	<volume>50</volume>
+    	<number>10</number>
       </event>
     </series>
     <series id="onward!">
@@ -5719,6 +5807,17 @@ an application example.</p>
 	      <date>2017-10</date>
 	      <location>Vancouver, British Columbia, Canada</location>
 	      <url>https://conf.researchr.org/home/onward-2017</url>
+        <acceptance>15/30</acceptance>
+        <acceptanceRate>50.0%</acceptanceRate>
+      </event>
+    </series>
+    <series id="asplos">
+      <name>Architectural Support for Programming Languages and Operating Systems</name>
+      <longPrefix>ACM International Conference on</longPrefix>
+      <event id="asplos18">
+	      <date>2018-03</date>
+	      <location>Williamsburg, Virginia, USA</location>
+	      <url>https://www.asplos2018.org/</url>
       </event>
     </series>
     <series id="cav">
@@ -5984,6 +6083,16 @@ an application example.</p>
 	<url>http://lii.rwth-aachen.de/lics/lics13/</url>
       </event>
     </series>
+    <series id="aaai">
+      <name>Artificial Intelligence</name>
+      <longPrefix>AAAI Conference on</longPrefix>
+      <event id="aaai18">
+        <date>2018-02</date>
+    	  <location>New Orleans, Louisiana, USA</location>
+    	  <nth>Thirty-Second</nth>
+    	  <url>https://aaai.org/Conferences/AAAI-18/</url>
+      </event>
+    </series>
     <series id="lpar">
       <name>Logic for Programming, Artificial Intelligence and Reasoning</name>
       <longPrefix>International Conference on</longPrefix>
@@ -6018,17 +6127,23 @@ an application example.</p>
 		<url>http://www.sigcse.org/sigcse2013/</url>
       </event>
     </series>
-    <series id="icse">
-      <name>Software Engineering</name>
-      <longPrefix>International Conference on</longPrefix>
-      <event id="icse13">
-	<date>2013-05</date>
-	<location>San Francisco, California, USA</location>
-	<nth>Thirty-Fifth</nth>
-	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
-      </event>
-    </series>
-    <series id="icse-nier">
+  <series id="icse">
+    <name>Software Engineering</name>
+    <longPrefix>International Conference on</longPrefix>
+    <event id="icse18">
+      <date>2018-05</date>
+      <location>Gothenburg, Sweden</location>
+      <nth>Fortieth</nth>
+      <url>https://www.icse2018.org/</url>
+    </event>
+    <event id="icse13">
+      <date>2013-05</date>
+      <location>San Francisco, California, USA</location>
+      <nth>Thirty-Fifth</nth>
+      <url>http://2013.icse-conferences.org/</url>
+    </event>
+  </series> 
+  <series id="icse-nier">
       <name>New and Emerging Results Track at ICSE</name>
       <event id="icse-nier13">
 	<date>2013-05</date>
