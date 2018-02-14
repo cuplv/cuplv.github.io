@@ -6,6 +6,11 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2015.02.14" id="phdvisit-2018">
+      <news-snippet>
+  	     Prospective Ph.D. students visit February 16. Welcome!
+      </news-snippet>
+    </news>
     <news date="2017.12.13" id="paper-icse18">
       <news-snippet>
         Paper by
@@ -2811,6 +2816,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="onward17" />
       </howpub>
+      <pages>58-77</pages>
       <year>2017</year>
       <abstract>
         <p>We consider the problem of generating <emph>relevant</emph> execution
