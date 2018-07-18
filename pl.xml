@@ -5246,6 +5246,7 @@ an application example.</p>
     <person id="nlewchenko" group="phd">
       <name>Nicholas V. Lewchenko</name>
       <face>pics/nlewchenko.jpg</face>
+      <url>https://www.octalsrc.org/research</url>
     </person>
     <person id="tlu" group="phd">
       <name>Tianhan Lu</name>
@@ -5313,6 +5314,7 @@ an application example.</p>
     <person id="jwright" group="phd">
       <name>Jared Wright</name>
       <face>pics/jwright.jpg</face>
+      <url>http://plv.colorado.edu/jwright</url>
     </person>
     <person id="yanzhang" group="phd-alumni">
       <name>Yan Zhang</name>
