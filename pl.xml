@@ -35,16 +35,16 @@
         <ref table="event" key="cmsb18" /> in September.
       </news-detail>
     </news>
-    <news date="2018.05.07" id="faculty-jmcclurg">
+    <news date="2018.05.07" id="faculty-mcclurg">
       <news-snippet>
         CUPLV PhD Student
-        <ref table="person" key="jmcclurg" />
+        <ref table="person" key="mcclurg" />
         accepts a faculty position 
         at <a href="http://www.cs.unm.edu/">UNM</a>.
       </news-snippet>
       <news-detail>
         CUPLV PhD Student
-        <ref table="person" key="jmcclurg" />
+        <ref table="person" key="mcclurg" />
         accepts a position as an assistant professor
         of comptuer science
         at the <a href="http://www.cs.unm.edu/">University of New Mexico</a>.
