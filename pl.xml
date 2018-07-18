@@ -55,7 +55,7 @@
       <news-snippet>
         Paper by
         <ref table="pub" key="biggroum-saner18" mode="authors"/>
-        win the IEEE TCSE Distinguished Paper Award at
+        wins the IEEE TCSE Distinguished Paper Award at
         <ref table="event" key="saner18" />.
       </news-snippet>
       <news-detail>
@@ -2826,26 +2826,42 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
             <author person="cernyp"/>
             <author person="srirams"/>
             <author person="tyeh"/>
+            <author person="elam"/>
+            <author person="smover"/>
+            <author person="aguttman"/>
+            <author person="nlewchenko"/>
+            <author person="smeier"/>
+            <author person="clin"/>
+            <author person="ksripada"/>
+            <author person="rolsen"/>
+            <author person="croberts"/>
+            <author person="mrussek"/>
+            <author person="pzhang"/>
         </authors>
         <title>Mining and Understanding Bug Fixes for App-Framework Protocol Defects</title>
         <snippet>
-            <p>Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses.</p>
+          <p>Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses.</p>
         </snippet>
+        <references>
+          <ref table="pub" key="biggroum-saner18" mode="abbrev" />
+          <ref table="pub" key="droidstar-icse18" mode="abbrev" />
+          <ref table="pub" key="chimpcheck-onward17" mode="abbrev" />
+        </references>
     </project>
     <project id="droidel">
       <name>Droidel</name>
       <url>https://github.com/cuplv/droidel</url>
       <authors>
-	<author person="blackshear"/>
-	<author person="agendreau"/>
-	<author person="bec"/>
+      	<author person="blackshear"/>
+      	<author person="agendreau"/>
+      	<author person="bec"/>
       </authors>
       <title>A Framework Model for Static Analysis of Android Applications</title>
       <snippet>
-	<p>A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code.</p>
+      	<p>A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code.</p>
       </snippet>
       <references>
-	<ref table="pub" key="droidel-soap15" mode="abbrev" />
+      	<ref table="pub" key="droidel-soap15" mode="abbrev" />
       </references>
     </project>
     <project id="quicgraphs">
@@ -5145,7 +5161,7 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~astr3586/</url>
       <face>pics/atrivedi.png</face>
     </person>
-    <person id="elam" group="scientist">
+    <person id="elam" group="scientist-alumni">
       <name>Edmund S.L. Lam</name>
       <face>pics/elam.png</face>
     </person>

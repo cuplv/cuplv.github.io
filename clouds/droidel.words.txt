@@ -1,9 +1,9 @@
 A Framework Model for Static Analysis of Android ApplicationsDroidel Droidel Droidel Droidel Droidel Droidel Droidel Droidel Droidel Droidel Droidel 
-	
-	
-	
+      	
+      	
+      	
           A Framework Model for Static Analysis of Android Applications 
-	A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code.
+      	A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code.
        A community-driven modeling of the Android framework for static analysis of Android applications. Droidel seeks to be a general purpose model for static analysis based on minimal explication of dynamism in the Android framework code. 
-	
+      	
        

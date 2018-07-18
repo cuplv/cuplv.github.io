@@ -122,11 +122,12 @@ name="html" />
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
 
-
+      <xsl:if test="cv/persons/person[@group='scientist']">
       <h3>Scientists</h3>
       <xsl:for-each select="cv/persons/person[@group='scientist']">
 	<div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
+      </xsl:if>
 
       <h3>Post-Docs</h3>
       <xsl:for-each select="cv/persons/person[@group='postdoc']">
@@ -141,10 +142,10 @@ name="html" />
 
       <xsl:if test="cv/persons/person[@group='bsms']">
 	    <h4>BS+MS</h4>
-      </xsl:if>
       <xsl:for-each select="cv/persons/person[@group='bsms']">
 	    <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
+      </xsl:if>
 
       <xsl:if test="cv/persons/person[@group='ms']">
 	    <h4>MS</h4>
@@ -178,6 +179,10 @@ name="html" />
       <h4>Faculty</h4>
       <xsl:for-each select="cv/persons/person[@group='faculty-alumni']">
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
+      </xsl:for-each>
+      <h3>Scientists</h3>
+      <xsl:for-each select="cv/persons/person[@group='scientist-alumni']">
+  <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
       <h4>Post-Docs</h4>
       <xsl:for-each select="cv/persons/person[@group='postdoc-alumni']">
