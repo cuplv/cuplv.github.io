@@ -35,6 +35,21 @@
         <ref table="event" key="cmsb18" /> in September.
       </news-detail>
     </news>
+    <news date="2018.05.07" id="faculty-jmcclurg">
+      <news-snippet>
+        CUPLV PhD Student
+        <ref table="person" key="jmcclurg" />
+        accepts a faculty position 
+        at <a href="http://www.cs.unm.edu/">UNM</a>.
+      </news-snippet>
+      <news-detail>
+        CUPLV PhD Student
+        <ref table="person" key="jmcclurg" />
+        accepts a position as an assistant professor
+        of comptuer science
+        at the <a href="http://www.cs.unm.edu/">University of New Mexico</a>.
+      </news-detail>
+    </news>
     <news date="2018.04.06" id="eceeaward-sniari">
       <news-snippet>
         CUPLV PhD Student
@@ -2828,15 +2843,6 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
             <author person="tyeh"/>
             <author person="elam"/>
             <author person="smover"/>
-            <author person="aguttman"/>
-            <author person="nlewchenko"/>
-            <author person="smeier"/>
-            <author person="clin"/>
-            <author person="ksripada"/>
-            <author person="rolsen"/>
-            <author person="croberts"/>
-            <author person="mrussek"/>
-            <author person="pzhang"/>
         </authors>
         <title>Mining and Understanding Bug Fixes for App-Framework Protocol Defects</title>
         <snippet>
@@ -3142,6 +3148,10 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="srirams"/>
         <author person="atrivedi"/>
       </authors>
+      <urls>
+        <url name="arXiv">https://arxiv.org/abs/1702.07103</url>
+        <url name="pdf">papers/discriminator-tacas17.pdf</url>
+      </urls>  
       <howpub>
         <proceedings event="tacas17" />
       </howpub>
@@ -3156,6 +3166,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="bec"/>
         <author person="rival"/>
       </authors>
+      <urls>
+        <url name="pdf">papers/clumping-popl17.pdf</url>
+      </urls>  
       <howpub>
         <proceedings event="popl17" />
       </howpub>
@@ -3171,6 +3184,9 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="jaldrich"/>
         <author person="hammer"/>
       </authors>
+      <urls>
+        <url name="pdf">papers/hazelnut-popl17.pdf</url>
+      </urls>  
       <howpub>
         <proceedings event="popl17" />
       </howpub>

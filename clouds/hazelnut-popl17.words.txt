@@ -5,5 +5,7 @@ Hazelnut: A Bidirectionally Typed Structure Editor Calculus          Hazelnut: A
         
         
             
+        papers/hazelnut-popl17.pdf
+       
         
         2017

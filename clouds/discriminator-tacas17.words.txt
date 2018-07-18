@@ -5,5 +5,8 @@ Discriminating Traces with Time          Discriminating Traces with Time
         
         
             
+        https://arxiv.org/abs/1702.07103
+        papers/discriminator-tacas17.pdf
+       
         
         21-37 2017
