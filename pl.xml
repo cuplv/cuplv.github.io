@@ -6,15 +6,142 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
-    <news date="2015.02.14" id="phdvisit-2018">
+    <news date="2018.07.03" id="paper-ase18">
       <news-snippet>
-  	     Prospective Ph.D. students visit February 16. Welcome!
+        Paper by
+        <ref table="pub" key="streams-ase18" mode="authors" /> accepted to
+        <ref table="event" key="ase18" />.
       </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="bstein" /> and
+        <ref table="person" key="bec" /> with collaborators
+        have had a paper "<ref table="pub" key="streams-ase18" />" accepted for presentation at
+        <ref table="event" key="ase18" /> in September.
+      </news-detail>
+    </news>
+    <news date="2018.06.19" id="paper-cmsb18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="robustmpc-cmsb18" mode="authors" /> accepted to
+        <ref table="event" key="cmsb18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="sdutta" />
+        <ref table="person" key="tkushner" />, and
+        <ref table="person" key="srirams" />
+        have had a paper "<ref table="pub" key="robustmpc-cmsb18" />" accepted for presentation at
+        <ref table="event" key="cmsb18" /> in September.
+      </news-detail>
+    </news>
+    <news date="2018.04.06" id="eceeaward-sniari">
+      <news-snippet>
+        CUPLV PhD Student
+        <ref table="person" key="sniari" />
+        wins the 2018 Gold Research Award from
+        <a href="http://ecee.colorado.edu/">ECEE</a>.
+      </news-snippet>
+      <news-page header="ECEE Research Award">
+        <p>
+        <float img="pics/niari-ecee-award-2018.jpg">
+          Saeid Tizpaz Niari with his award!
+        </float>
+        Congratulations, Saeid!
+        </p>
+      </news-page>
+    </news>     
+    <news date="2018.03.23" id="award-saner18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="biggroum-saner18" mode="authors"/>
+        win the IEEE TCSE Distinguished Paper Award at
+        <ref table="event" key="saner18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="smover" />,
+        <ref table="person" key="srirams" />,
+        <ref table="person" key="rolsen" />, and
+        <ref table="person" key="bec" />
+        win the IEEE TCSE Distinguished Paper Award at
+        <ref table="event" key="saner18" />
+        for "<ref table="pub" key="biggroum-saner18" />."
+      </news-detail>
+    </news>   
+    <news date="2018.03.22" id="award-nvc10">
+      <news-snippet>
+        CUPLV team came in 3rd in the R&amp;D track of <a href="https://www.colorado.edu/nvc/">NVC</a>10.
+      </news-snippet>
+      <news-detail>
+        CUPLV researchers
+        <ref table="person" key="smeier" /> and
+        <ref table="person" key="bec" /> with collaborators
+        came in 3rd in the R&amp;D track of
+        <a href="https://www.colorado.edu/nvc/">New Venture Challenge</a> 10, earning $1,000 for the venture.
+      </news-detail>
+      <news-page header="NVC10">
+        <p>
+        <float img="pics/meier-nvc10.jpg">
+          Lambda Leaf with their award!
+        </float>
+        Congratulations, Shawn!
+        </p>
+      </news-page>
+    </news>
+    <news date="2018.02.14" id="phdvisit-2018">
+      <news-snippet>
+         Prospective Ph.D. students visit February 16. Welcome!
+      </news-snippet>
+    </news>
+    <news date="2017.12.20" id="paper-hscc18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="almostsure-hscc18" mode="authors" /> accepted to
+        <ref table="event" key="hscc18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="fabio" /> and
+        <ref table="person" key="atrivedi" /> with collaborators
+        have had a paper "<ref table="pub" key="almostsure-hscc18" />" accepted for presentation at
+        <ref table="event" key="hscc18" /> in April.
+      </news-detail>
+    </news>
+    <news date="2017.12.19" id="paper-iccps18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="data-driven-models-iccps18" mode="authors" /> accepted to
+        <ref table="event" key="iccps18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="tkushner" /> and
+        <ref table="person" key="srirams" /> with collaborators
+        have had a paper "<ref table="pub" key="data-driven-models-iccps18" />" accepted for presentation at
+        <ref table="event" key="iccps18" /> in April.
+      </news-detail>
+    </news>
+    <news date="2017.12.17" id="paper-saner18">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="biggroum-saner18" mode="authors" /> accepted to
+        <ref table="event" key="saner18" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="smover" />,
+        <ref table="person" key="srirams" />,
+        <ref table="person" key="rolsen" />, and
+        <ref table="person" key="bec" />
+        have had a paper "<ref table="pub" key="biggroum-saner18" />" accepted for presentation at
+        <ref table="event" key="saner18" /> in March.
+      </news-detail>
     </news>
     <news date="2017.12.13" id="paper-icse18">
       <news-snippet>
         Paper by
-        <ref table="pub" key="starling-icse18" mode="authors" /> accepted to
+        <ref table="pub" key="droidstar-icse18" mode="authors" /> accepted to
         <ref table="event" key="icse18" />.
       </news-snippet>
       <news-detail>
@@ -24,10 +151,25 @@
         <ref table="person" key="smover" />,
         <ref table="person" key="bec" />, and
         <ref table="person" key="cernyp" /> with collaborators
-        have had a paper "<ref table="pub" key="starling-icse18" />" accepted for presentation at
+        have had a paper "<ref table="pub" key="droidstar-icse18" />" accepted for presentation at
         <ref table="event" key="icse18" /> in May.
       </news-detail>
-    </news> 
+    </news>
+    <news date="2017.12.11" id="award-emsoft17">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="compositional-emsoft17" mode="authors"/>
+        nominated for an ACM SIGBED EMSOFT Best Paper Award.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="xinchen"/>,
+        <ref table="person" key="smover"/>, and
+        <ref table="person" key="srirams"/>
+        nominated for an ACM SIGBED EMSOFT Best Paper Award
+        for "<ref table="pub" key="compositional-emsoft17"/>."
+      </news-detail>
+    </news>      
     <news date="2017.11.28" id="paper-aaai18">
       <news-snippet>
         Paper by
@@ -58,6 +200,23 @@
           officially accepted for presentation at <ref table="event" key="onward17"/> in October.
         </news-detail>
       </news>
+      <news date="2017.06.30" id="paper-emsoft17">
+        <news-snippet>
+          Paper by
+          <ref table="pub" key="compositional-emsoft17" mode="authors"/>
+          accepted to
+          <ref table="event" key="emsoft17"/>.
+        </news-snippet>
+        <news-detail>
+          CUPLV authors
+          <ref table="person" key="xinchen"/>,
+          <ref table="person" key="smover"/>, and
+          <ref table="person" key="srirams"/>
+          have had a paper "<ref table="pub" key="compositional-emsoft17"/>" accepted for presentation at
+          <ref table="event" key="emsoft17"/>
+          in October.
+        </news-detail>
+      </news>    
       <news date="2017.06.22" id="bec-tenure">
         <news-snippet>
           <ref table="person" key="bec"/>
@@ -2745,8 +2904,90 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
-    <pub id="starling-icse18">
-      <title>Starling: Callback Typestates for Android Classes</title>
+    <pub id="streams-ase18">
+      <title>Safe Stream-Based Programming with Refinement Types</title>
+      <authors>
+        <author person="bstein" student="y"/>
+        <author person="lclapp"/>
+        <author person="msridhar"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="ase18" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="robustmpc-cmsb18">
+      <title>Robust Data-Driven Control of Artificial Pancreas Systems using Neural Networks</title>
+      <authors>
+        <author person="sdutta" student="y"/>
+        <author person="tkushner" student="y"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/robustmpc-cmsb18.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="cmsb18" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="almostsure-hscc18">
+      <title>Almost-Sure Reachability in Stochastic Multi-Mode System</title>
+      <authors>
+        <author person="fabio"/>
+        <author person="btouri"/>
+        <author person="atrivedi"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="hscc18" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="data-driven-models-iccps18">
+      <title>A Data-Driven Approach to Artificial Pancreas Verification and Synthesis</title>
+      <authors>
+        <author person="tkushner" student="y"/>
+        <author person="dbortz"/>
+        <author person="dmaahs"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/data-driven-models-iccps18.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="iccps18" />
+      </howpub>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="biggroum-saner18">
+      <title>Mining Framework Usage Graphs from App Corpora</title>
+      <authors>
+        <author person="smover"/>
+        <author person="srirams"/>
+        <author person="rolsen" student="y"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/biggroum-saner18.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="saner18" />
+      </howpub>
+      <abstract>
+        <p>We investigate the problem of mining graph-based usage patterns for large, object-oriented frameworks like Android-revisiting previous approaches based on graph-based object usage models (groums). Groums are a promising approach to represent usage patterns for object-oriented libraries because they simultaneously describe control flow and data dependencies between methods of multiple interacting object types. However, this expressivity comes at a cost: mining groums requires solving a subgraph isomorphism problem that is well known to be expensive. This cost limits the applicability of groum mining to large API frameworks. In this paper, we employ groum mining to learn usage patterns for object-oriented frameworks from program corpora. The central challenge is to scale groum mining so that it is sensitive to usages horizontally across programs from arbitrarily many developers (as opposed to simply usages vertically within the program of a single developer). To address this challenge, we develop a novel groum mining algorithm that scales on a large corpus of programs. We first use frequent itemset mining to restrict the search for groums to smaller subsets of methods in the given corpus. Then, we pose the subgraph isomorphism as a SAT problem and apply efficient pre-processing algorithms to rule out fruitless comparisons ahead of time. Finally, we identify containment relationships between clusters of groums to characterize popular usage patterns in the corpus (as well as classify less popular patterns as possible anomalies). We find that our approach scales on a corpus of over five hundred open source Android applications, effectively mining obligatory and best-practice usage patterns.</p>
+      </abstract>
+    </pub>
+    <pub id="droidstar-icse18">
+      <title>DroidStar: Callback Typestates for Android Classes</title>
       <authors>
         <author person="aradhakrishna"/>
         <author person="nlewchenko" student="y"/>
@@ -2756,11 +2997,15 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="cernyp"/>
       </authors>
       <urls>
+        <url name="pdf">papers/droidstar-icse18.pdf</url>
       </urls>
       <howpub>
         <proceedings event="icse18" />
       </howpub>
       <abstract>
+        <p>Event-driven programming frameworks, such as Android, are based on components with asynchronous interfaces. The protocols for interacting with these components can often be described by finite-state machines we dub callback typestates. Callback typestates are akin to classical typestates, with the difference that their outputs (callbacks) are produced asynchronously. While useful, these specifications are not commonly available, because writing them is difficult and error-prone.</p>
+        <p>Our goal is to make the task of producing callback typestates significantly easier. We present a callback typestate assistant tool, DroidStar, that requires only limited user interaction to produce a callback typestate. Our approach is based on an active learning algorithm, L*. We improved the scalability of equivalence queries (a key component of L*), thus making active learning tractable on the Android system.</p>
+        <p>We use DroidStar to learn callback typestates for Android classes both for cases where one is already provided by the documentation, and for cases where the documentation is unclear. The results show that DROIDSTAR learns callback typestates accurately and efficiently. Moreover, in several cases, the synthesized callback typestates uncovered surprising and undocumented behaviors.</p>
       </abstract>
     </pub>
     <pub id="dpdebugger-aaai18">
@@ -2772,8 +3017,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="atrivedi"/>
       </authors>
       <urls>
+        <url name="pdf">papers/dpdebugger-aaai18.pdf</url>
         <url name="arXiv">https://arxiv.org/abs/1711.04076</url>
-        <url name="pdf">https://arxiv.org/pdf/1711.04076</url>
       </urls>
       <howpub>
         <proceedings event="aaai18" />
@@ -2810,8 +3055,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="bec"/>
       </authors>
       <urls>
+        <url name="pdf">papers/chimpcheck-onward17.pdf</url>
         <url name="arXiv">https://arxiv.org/abs/1708.08613</url>
-        <url name="pdf">https://arxiv.org/pdf/1708.08613</url>
       </urls>
       <howpub>
         <proceedings event="onward17" />
@@ -2838,6 +3083,22 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         randomized testing for Android development. Driven by real, reported issues
         in open source Android apps, we show, through case studies, how ChimpCheck
         enables expressing effective testing patterns in a compact manner.</p>
+      </abstract>
+    </pub>
+    <pub id="compositional-emsoft17">
+      <title>Compositional Relational Abstraction for Nonlinear Hybrid Systems</title>
+      <authors>
+        <author person="xinchen"/>
+        <author person="smover"/>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/compositional-emsoft17.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="emsoft17" />
+      </howpub>
+      <abstract>
       </abstract>
     </pub>
     <pub id="clf-learning-rss17">
@@ -5655,6 +5916,21 @@ an application example.</p>
       <face>pics/bwu.png</face>
       <url>https://inside.mines.edu/~bwu/</url>
     </person>
+    <person id="btouri">
+      <name>Behrouz Touri</name>
+      <url>http://eceweb.ucsd.edu/~btouri/</url>
+    </person>
+    <person id="dbortz">
+      <name>David Bortz</name>
+      <url>http://mathbio.colorado.edu/index.php/D_M_Bortz</url>
+    </person>
+    <person id="dmaahs">
+      <name>David Maahs</name>
+    </person>
+    <person id="lclapp">
+      <name>Lazaro Clapp</name>
+      <url>http://web.stanford.edu/~lazaro/</url>
+    </person>
   </persons>
 
   <events>
@@ -6135,40 +6411,60 @@ an application example.</p>
 		<url>http://www.sigcse.org/sigcse2013/</url>
       </event>
     </series>
-  <series id="icse">
-    <name>Software Engineering</name>
-    <longPrefix>International Conference on</longPrefix>
-    <event id="icse18">
-      <date>2018-05</date>
-      <location>Gothenburg, Sweden</location>
-      <nth>Fortieth</nth>
-      <url>https://www.icse2018.org/</url>
-    </event>
-    <event id="icse13">
-      <date>2013-05</date>
-      <location>San Francisco, California, USA</location>
-      <nth>Thirty-Fifth</nth>
-      <url>http://2013.icse-conferences.org/</url>
-    </event>
-  </series> 
-  <series id="icse-nier">
+    <series id="icse">
+      <name>Software Engineering</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="icse18">
+        <date>2018-05</date>
+        <location>Gothenburg, Sweden</location>
+        <nth>Fortieth</nth>
+        <url>https://www.icse2018.org/</url>
+      </event>
+      <event id="icse13">
+        <date>2013-05</date>
+        <location>San Francisco, California, USA</location>
+        <nth>Thirty-Fifth</nth>
+        <url>http://2013.icse-conferences.org/</url>
+      </event>
+    </series> 
+    <series id="icse-nier">
       <name>New and Emerging Results Track at ICSE</name>
       <event id="icse-nier13">
-	<date>2013-05</date>
-	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
-	<location>San Francisco, California, USA</location>
+      	<date>2013-05</date>
+      	<url>http://2013.icse-conferences.org/content/new-ideas-and-emerging-results-nier</url>
+      	<location>San Francisco, California, USA</location>
       </event>
     </series>
+    <series id="ase">
+      <name>Automated Software Engineering</name>
+      <longPrefix>IEEE/ACM International Conference on</longPrefix>
+      <event id="ase18">
+        <date>2018-09</date>
+        <location>Montpellier, France</location>
+        <nth>Thirty-Third</nth>
+        <url>http://www.ase2018.com/</url>
+      </event>
+    </series> 
     <series id="issta">
       <name>Software Testing and Analysis</name>
       <longPrefix>International Symposium on</longPrefix>
       <event id="issta12">
-	<date>2012-07</date>
-	<location>Minneapolis, Minnesota, USA</location>
-	<nth>Twenty-First</nth>
-	<url>http://crisys.cs.umn.edu/issta2012/</url>
-	<acceptance>31/108</acceptance>
-	<acceptanceRate>28.7%</acceptanceRate>
+      	<date>2012-07</date>
+      	<location>Minneapolis, Minnesota, USA</location>
+      	<nth>Twenty-First</nth>
+      	<url>http://crisys.cs.umn.edu/issta2012/</url>
+      	<acceptance>31/108</acceptance>
+      	<acceptanceRate>28.7%</acceptanceRate>
+      </event>
+    </series>
+    <series id="saner">
+      <name>Software Analysis, Evolution and Reengineering</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="saner18">
+        <date>2018-03</date>
+        <location>Campobasso, Italy</location>
+        <nth>Twenty-Fifth</nth>
+        <url>http://saner.unimol.it/</url>
       </event>
     </series>
     <series id="aplas">
@@ -6188,10 +6484,15 @@ an application example.</p>
     <series id="hscc">
       <name>Hybrid Systems: Computation and Control</name>
       <longPrefix>International Conference on</longPrefix>
+      <event id="hscc18">
+      	<date>2018-04</date>
+      	<location>Porto, Portugal</location>
+        <url>https://www.hscc2018.deib.polimi.it/</url>
+      </event>
       <event id="hscc16">
-	<date>2016-04</date>
-	<location>Vienna, Austria</location>
-	<url>http://www.cs.ox.ac.uk/conferences/hscc2016/</url>
+      	<date>2016-04</date>
+      	<location>Vienna, Austria</location>
+      	<url>http://www.cs.ox.ac.uk/conferences/hscc2016/</url>
       </event>
       <event id="hscc11">
 	<date>2011-04</date>
@@ -6199,13 +6500,31 @@ an application example.</p>
 	<url>http://hscc2011.cs.sunysb.edu/</url>
       </event>
     </series>
+    <series id="iccps">
+      <name>Cyber-Physical Systems</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="iccps18">
+        <date>2018-04</date>
+        <location>Porto, Portugal</location>
+        <url>http://iccps.acm.org/2018/</url>
+      </event>
+    </series>
     <series id="fmcad">
       <name>Formal Methods in Computer Aided Design</name>
       <longPrefix>International Conference on</longPrefix>
       <event id="fmcad11">
-	<date>2011-10</date>
-	<location>Austin, Texas, USA</location>
-	<url>http://www.cs.utexas.edu/~ragerdl/fmcad11/</url>
+      	<date>2011-10</date>
+      	<location>Austin, Texas, USA</location>
+      	<url>http://www.cs.utexas.edu/~ragerdl/fmcad11/</url>
+      </event>
+    </series>
+    <series id="cmsb">
+      <name>Computational Methods in Systems Biology</name>
+      <longPrefix>International Conference on</longPrefix>
+      <event id="cmsb18">
+        <date>2018-09</date>
+        <location>Brno, Czech Republic</location>
+        <url>https://cmsb2018.fi.muni.cz/</url>
       </event>
     </series>
     <series id="fmco">
@@ -6213,10 +6532,10 @@ an application example.</p>
       <longPrefix>International Symposium on</longPrefix>
       <issue journal="lncs"/>
       <event id="fmco05">
-	<date>2005</date>
-	<nth>Fourth</nth>
-	<url>http://fmco.liacs.nl/fmco05.html</url>
-	<volume>4111</volume>
+      	<date>2005</date>
+      	<nth>Fourth</nth>
+      	<url>http://fmco.liacs.nl/fmco05.html</url>
+      	<volume>4111</volume>
       </event>
     </series>
     <series id="chi">
@@ -6231,6 +6550,11 @@ an application example.</p>
     <series id="emsoft">
       <name>Embedded Software</name>
       <longPrefix>ACM SIGBED International Conference on</longPrefix>
+      <event id="emsoft17">
+        <date>2017-10</date>
+        <url>http://emsoft.org/</url>
+        <location>Torino, Italy</location>
+      </event>
       <event id="emsoft16">
         <date>2016-10</date>
         <url>http://emsoft.org/</url>
