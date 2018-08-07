@@ -2935,6 +2935,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="bec"/>
       </authors>
       <urls>
+        <url name="pdf">papers/streams-ase18.pdf</url>
       </urls>
       <howpub>
         <proceedings event="ase18" />
