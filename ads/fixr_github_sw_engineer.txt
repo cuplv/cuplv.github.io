@@ -1,0 +1,33 @@
+The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for candidates for a full-time research software engineer position that lasts until <TODO>.
+
+The research software engineer will work on a technology transfer task collaborating with professors Evan Chang (evan.chang@colorado.edu), Sriram Sankaranarayanan (srirams@colorado.edu), and Sergio Mover (sergio.mover@polytechnique.edu), and engineers from GitHub (github.com).
+
+The technology transfer project consists of re-engineering and extending the research prototype of BigGroum (https://github.com/cuplv/biggroum). BigGroum is a platform that mines software repositories to learn how to use API libraries, and then learned artifacts to help software developers, for example automatically suggesting code fixes.
+The final deliverable of the project is a new prototype of the tool that scale on large software repositories, is robust and extensible, and has more functionalities (e.g., supports the mining of software repositories containing multiple programming languages).
+
+
+The position is available immediately and will last until the <TODO>.
+
+We are looking for a motivated software engineer that is excited to learn and understand new algorithms and techniques, and further extend them be usable in a real, industrial setting. 
+The engineer will mainly work under the supervision of the CUPLV team at the University of Colorado Boulder and will frequently collaborate with GitHub's engineers.
+
+
+Responsibilities:
+  - Design the architecture of the new prototype, considering the new features and non-functional requirements (scalability, extensibility, robustness)
+  - Implement the prototype following best practices in software engineering (e.g., unit and integration testing, collaborative software development, ...)
+  - Plan the design and development activities, respect the planned deadlines, and periodically update on the current progress.
+
+
+Minimum qualifications:
+  - B.Sc. in computer science or equivalent
+  - Knowledge of the Java, Scala, C++, and Python (Scala or Java are compulsory, knowing the other languages is a plus)
+  - Experience in designing and implementing medium size or large size software systems
+  - Can plan its own activity and work independently to achieve a task
+  - Motivated and committed to achieve the project's goals
+
+
+Additional qualifications:
+  - Experience in working in an academic environment
+  - Knowledge (theoretical or practical) of programming language analysis or compiler
+  - Knowledge of machine learning and/or data mining
+
