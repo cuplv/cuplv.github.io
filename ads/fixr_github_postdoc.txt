@@ -1,0 +1,15 @@
+The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for exceptional candidates for a postdoctoral research associate working in the area of program analysis.
+
+The ideal candidate has a background in the area of programming languages and verification, and is interested in extending his research interests in machine learning.
+
+The postdoctoral research associate will collaborate with professors Evan Chang (http://www.cs.colorado.edu/~bec/), Sriram Sankaranarayanan (https://www.cs.colorado.edu/~srirams/), and Sergio Mover (http://www.lix.polytechnique.fr/Labo/Sergio.Mover/), and with engineers from GitHub, on the Fixr project (https://plv.colorado.edu/projects/fixr/). In the project, the postdoctoral research associate will contribute to develop new program repair approaches based on machine learning, and to the the technological transfer of the research prototype of BigGroum (https://github.com/cuplv/biggroum), a platform that mines software repositories to learn API usages.
+
+To apply, please send an email to Evan Chang (evan.chang@colorado.edu) with a CV and contact information for two or three references.
+Our group has active projects in areas such as the following:
+  - program analysis
+  - program synthesis
+  - cyberphysical systems
+The position is for one year, with a possible extension for additional years. Teaching opportunities will be available. Compensation is highly competitive and commensurate with experience.
+
+Boulder, located at the base of the Rocky Mountains, is consistently awarded top-rankings for health, education, and quality of life.  It is also home to a concentration of high-tech industry and to a vibrant start-up community. It is located 30 miles from downtown Denver.
+
