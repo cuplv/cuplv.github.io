@@ -5349,6 +5349,11 @@ an application example.</p>
       <face>pics/jwright.jpg</face>
       <url>http://plv.colorado.edu/jwright</url>
     </person>
+	<person id="dmoon" group="phd">
+      <name>David Moon</name>
+      <face>pics/moon.jpg</face>
+      <url>https://plv.colorado.edu/dmoon</url>
+    </person>
     <person id="yanzhang" group="phd-alumni">
       <name>Yan Zhang</name>
       <face>pics/zhang.png</face>
