@@ -1,52 +1,46 @@
 ![CUPLV Logo](../pics/logo/cuplv-logo-72ppi_rectangle-gold-text.png)
 
-# Position: Research Software Engineer
+# Position: StudentResearch Software Engineer
 
 ## Job Description
 
-The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for candidates for a full-time research software engineer position. This position presents a unique opportunity for bridging academic research with industrial application in collaboration with GitHub.
+The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for student research software engineers with strong interest and experience with full-stack, cloud-based web service development. In this role, you will work with faculty and researchers, taking on engineering challenges associated with the development of services that realizes large-scale analysis of open-sourced programs in public repositories like GitHub.
 
 The research software engineer will work on a technology transfer task collaborating with professors [Bor-Yuh Evan Chang], [Sriram Sankaranarayanan], and [Sergio Mover], as well as engineers from GitHub.
 
 The project consists of re-engineering and extending the research prototype of [BigGroum] to be available to real developers in GitHub. BigGroum is a platform that mines software repositories to learn how to use API libraries and then use the learned artifacts to help software developers by, for example, automatically suggesting code fixes. The final deliverable of the project is a new prototype of the tool that can be made available to open source developers, that scale on large software repositories, is robust and extensible, and has new functionalities (e.g., supports the mining of software repositories containing multiple programming languages).
 
-We are looking for a motivated software engineer that is excited to learn and understand new algorithms and techniques, and further extend them be usable in a real, industrial setting. The engineer will mainly work under the supervision of the CUPLV team at the University of Colorado Boulder.
+We are looking for motivated students that are excited to learn and understand new algorithms and techniques, and further extend them be usable in a real, industrial setting.
 
-The position is available immediately, will last at least until June 30, 2018, and eligible for the [employee tuition assistance benefit]. Compensation is competitive and commensurate with experience.
+The position is available immediately and for an undergraduate or graduate student and is part-time (for at least 10 hours per week, preferably at least 15). Pay rate will be competitive and depend on degree and experience.
 
 ### Responsibilities
 
-- Design the architecture of the new prototype, considering the new features and non-functional requirements (scalability, extensibility, robustness).
-- Implement the prototype following best practices in software engineering (e.g., unit and integration testing, collaborative software development).
-- Plan the design and development activities, respect the planned deadlines, and periodically update on the current progress.
+- Implement prototypes following best practices in software engineering (e.g., unit and integration testing, collaborative software development).
+- Respect the planned deadlines and periodically update on the current progress.
 
 ### Qualifications
 
 Please apply, if you possess the following:
 
-- B.Sc. in computer science or equivalent
-- Knowledge of at least one programming languages among Java, Scala, Python
-- Experience in designing and implementing medium to large-scale software systems
-- Can work independently to achieve a task
-- Motivated and committed to achieve the project's goals
+- Knowledge in functional and object-oriented programming.
+- Knowledge in scripting in Linux based systems.
+- Experience in developing web-services (front-end and/or back-end).
+- Experience in development in public repositories (e.g., GitHub, BitBucket).
+- Highly self-motivated and enjoys working with and communicate well with a diverse team.
 
 If you possess any of the following skills which we highly value, you will have an advantage:
 
-- Knowledge of other programming languages (e.g., C++, JavaScript)
+- Experience in Scala, Java, and Python programming.
 - Knowledge of software deployment tools (e.g., Docker)
-- Experience in working in an academic environment
 - Knowledge (theoretical or practical) in programming language tools, such as analyzers or compiler
 - Knowledge in machine learning and/or data mining
 
 ### How to Apply
 
-To apply, please send your resume or CV, the contact information for two or three references, a link to your GitHub profile, and the solution to the following interview exercise to Bor-Yuh Evan Chang [evan.chang@colorado.edu](mailto:evan.chang@colorado.edu) and Sergio Mover [sergio.mover@polytechnique.edu](mailto:sergio.mover@polytechnique.edu). You may pre-apply before completing the interview exercise by first submitting the other items.
+To apply, please send your resume or CV, the contact information for two or three references, a link to your GitHub profile, and the solution to the following interview exercise to Bor-Yuh Evan Chang [evan.chang@colorado.edu](mailto:evan.chang@colorado.edu) and Sergio Mover [sergio.mover@polytechnique.edu](mailto:sergio.mover@polytechnique.edu).
 
 Submissions received by Friday, January 4, 2019 will receive full consideration, but the position will remain open until filled.
-
-### About Boulder
-
-Boulder, located at the base of the Rocky Mountains, is consistently awarded top-rankings for health, education, and quality of life. It is also home to a concentration of high-tech industry and to a vibrant start-up community. It is located 30 miles from downtown Denver.
 
 ## Interview Exercise
 
