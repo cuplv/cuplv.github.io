@@ -6,6 +6,37 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2018.11.23" id="paper-vmcai19">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="bounding-vmcai19" mode="authors" /> accepted to
+        <ref table="event" key="vmcai19" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="tlu" />
+        <ref table="person" key="cernyp" />, and
+        <ref table="person" key="bec" />
+        <ref table="person" key="atrivedi" />
+        have had a paper "<ref table="pub" key="bounding-vmcai19" />" accepted for presentation at
+        <ref table="event" key="vmcai19" /> in January.
+      </news-detail>      
+    </news>
+    <news date="2018.10.23" id="slutz18">
+      <news-snippet>
+        CUPLV student <ref table="person" key="tkushner"/>
+        receives the 2018
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+      </news-snippet>
+    </news>
+    <news date="2018.08.01" id="catalyzecu18">
+      <news-snippet>
+        CUPLV student <ref table="person" key="smeier"/>
+        <a href="https://www.facebook.com/InnovateCUBldr/videos/2139011353088118/">pitched</a>
+        at 
+        <a href="https://www.colorado.edu/catalyzecu/2018-companies">Catalyze CU</a> Demo Day 2018.
+      </news-snippet>
+    </news>
     <news date="2018.07.03" id="paper-ase18">
       <news-snippet>
         Paper by
@@ -33,6 +64,22 @@
         <ref table="person" key="srirams" />
         have had a paper "<ref table="pub" key="robustmpc-cmsb18" />" accepted for presentation at
         <ref table="event" key="cmsb18" /> in September.
+      </news-detail>
+    </news>
+    <news date="2018.06.01" id="faculty-mover">
+      <news-snippet>
+        CUPLV Postdoctoral Scholar
+        <ref table="person" key="smover" />
+        accepts a faculty position 
+        at <a href="https://www.lix.polytechnique.fr/">École Polytechnique</a>.
+      </news-snippet>
+      <news-detail>
+        CUPLV Postdoctoral Scholar
+        <ref table="person" key="smover" />
+        accepts a position as a  
+        Gaspard Monge Assistant Professor
+        in Computer Science
+        at <a href="https://www.lix.polytechnique.fr/">École Polytechnique</a>.
       </news-detail>
     </news>
     <news date="2018.05.07" id="faculty-mcclurg">
@@ -2926,6 +2973,26 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="bounding-vmcai19">
+      <title>Type-directed Bounding of Collections in Reactive Programs</title>
+      <authors>
+        <author person="tlu" student="y"/>
+        <author person="cernyp"/>
+        <author person="bec"/>
+        <author person="atrivedi"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/bounding-vmcai19.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="vmcai19" />
+      </howpub>
+      <pages>275-296</pages>
+      <year>2019</year>
+      <abstract>
+        Our aim is to statically verify that in a given reactive program, the length of collection variables does not grow beyond a given bound. We propose a scalable type-based technique that checks that each collection variable has a given refinement type that specifies constraints about its length. A novel feature of our refinement types is that the refinements can refer to AST counters that track how many times an AST node has been executed. This feature enables type refinements to track limited flow-sensitive information. We generate verification conditions that ensure that the AST counters are used consistently, and that the types imply the given bound. The verification conditions are discharged by an off-the-shelf SMT solver. Experimental results demonstrate that our technique is scalable, and effective at verifying reactive programs with respect to requirements on length of collections.
+      </abstract>
+    </pub>
     <pub id="streams-ase18">
       <title>Safe Stream-Based Programming with Refinement Types</title>
       <authors>
@@ -2940,6 +3007,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="ase18" />
       </howpub>
+      <pages>565-576</pages>
+      <year>2018</year>
       <abstract>
       </abstract>
     </pub>
@@ -3005,9 +3074,14 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="saner18" />
       </howpub>
+      <pages>277-289</pages>
+      <year>2018</year>
       <abstract>
         <p>We investigate the problem of mining graph-based usage patterns for large, object-oriented frameworks like Android-revisiting previous approaches based on graph-based object usage models (groums). Groums are a promising approach to represent usage patterns for object-oriented libraries because they simultaneously describe control flow and data dependencies between methods of multiple interacting object types. However, this expressivity comes at a cost: mining groums requires solving a subgraph isomorphism problem that is well known to be expensive. This cost limits the applicability of groum mining to large API frameworks. In this paper, we employ groum mining to learn usage patterns for object-oriented frameworks from program corpora. The central challenge is to scale groum mining so that it is sensitive to usages horizontally across programs from arbitrarily many developers (as opposed to simply usages vertically within the program of a single developer). To address this challenge, we develop a novel groum mining algorithm that scales on a large corpus of programs. We first use frequent itemset mining to restrict the search for groums to smaller subsets of methods in the given corpus. Then, we pose the subgraph isomorphism as a SAT problem and apply efficient pre-processing algorithms to rule out fruitless comparisons ahead of time. Finally, we identify containment relationships between clusters of groums to characterize popular usage patterns in the corpus (as well as classify less popular patterns as possible anomalies). We find that our approach scales on a corpus of over five hundred open source Android applications, effectively mining obligatory and best-practice usage patterns.</p>
       </abstract>
+      <bibnote>
+        <b>IEEE TCSE Distinguished Paper Award</b>.
+      </bibnote>
     </pub>
     <pub id="droidstar-icse18">
       <title>DroidStar: Callback Typestates for Android Classes</title>
@@ -3025,6 +3099,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="icse18" />
       </howpub>
+      <pages>1160-1170</pages>
+      <year>2018</year>
       <abstract>
         <p>Event-driven programming frameworks, such as Android, are based on components with asynchronous interfaces. The protocols for interacting with these components can often be described by finite-state machines we dub callback typestates. Callback typestates are akin to classical typestates, with the difference that their outputs (callbacks) are produced asynchronously. While useful, these specifications are not commonly available, because writing them is difficult and error-prone.</p>
         <p>Our goal is to make the task of producing callback typestates significantly easier. We present a callback typestate assistant tool, DroidStar, that requires only limited user interaction to produce a callback typestate. Our approach is based on an active learning algorithm, L*. We improved the scalability of equivalence queries (a key component of L*), thus making active learning tractable on the Android system.</p>
@@ -3046,6 +3122,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="aaai18" />
       </howpub>
+      <pages>2468-2475</pages>
+      <year>2018</year>
       <abstract>
         <p>Differential performance debugging is a technique to find performance
         problems. It applies in situations where the performance of a program is
@@ -6335,11 +6413,20 @@ an application example.</p>
       <name>Verification, Model Checking, and Abstract Interpretation</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="vmcai19">
+        <date>2019-01</date>
+        <location>Cascais, Portugal</location>
+        <nth>Twentieth</nth>
+        <url>https://popl19.sigplan.org/track/VMCAI-2019</url>
+        <acceptance>27/67</acceptance>
+        <acceptanceRate>43.5%</acceptanceRate>
+        <volume>11388</volume>
+      </event>
       <event id="vmcai16">
-	<date>2016-01</date>
-	<location>St. Petersburg, Florida, USA</location>
-	<nth>Seventeenth</nth>
-	<url>http://conf.researchr.org/home/VMCAI-2016</url>
+        <date>2016-01</date>
+	      <location>St. Petersburg, Florida, USA</location>
+        <nth>Seventeenth</nth>
+        <url>http://conf.researchr.org/home/VMCAI-2016</url>
       </event>
       <event id="vmcai14">
 	<date>2014-01</date>
@@ -6415,6 +6502,8 @@ an application example.</p>
     	  <location>New Orleans, Louisiana, USA</location>
     	  <nth>Thirty-Second</nth>
     	  <url>https://aaai.org/Conferences/AAAI-18/</url>
+        <acceptance>933/over 3800</acceptance>
+        <acceptanceRate>24.6%</acceptanceRate>
       </event>
     </series>
     <series id="lpar">
@@ -6459,6 +6548,8 @@ an application example.</p>
         <location>Gothenburg, Sweden</location>
         <nth>Fortieth</nth>
         <url>https://www.icse2018.org/</url>
+        <acceptance>105/502</acceptance>
+        <acceptanceRate>20.9%</acceptanceRate>
       </event>
       <event id="icse13">
         <date>2013-05</date>
@@ -6483,6 +6574,8 @@ an application example.</p>
         <location>Montpellier, France</location>
         <nth>Thirty-Third</nth>
         <url>http://www.ase2018.com/</url>
+        <acceptance>64/315</acceptance>
+        <acceptanceRate>20.3%</acceptanceRate>
       </event>
     </series> 
     <series id="issta">
@@ -6505,6 +6598,8 @@ an application example.</p>
         <location>Campobasso, Italy</location>
         <nth>Twenty-Fifth</nth>
         <url>http://saner.unimol.it/</url>
+        <acceptance>39/146</acceptance>
+        <acceptanceRate>26.7%</acceptanceRate>
       </event>
     </series>
     <series id="aplas">
