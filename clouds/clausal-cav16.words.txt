@@ -1,10 +1,10 @@
 Proving Parameterized Systems Safe by Generalizing Clausal Proofs of
 Small Instances          Proving Parameterized Systems Safe by Generalizing Clausal Proofs of
 Small Instances 
-        
-        
-         
-        
-       
-        
-       
+				
+				
+			   
+				
+			 
+				
+			 

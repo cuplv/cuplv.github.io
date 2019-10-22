@@ -1,23 +1,23 @@
 Refuting Heap Rechability (Extended Abstract)
 	Precise heap reachability information is a prerequisite for many
-  static verification clients. However, the typical scenario is that
-  the available heap information, computed by say an up-front
-  points-to analysis, is not precise enough for the client of
-  interest. This imprecise heap information in turn leads to a deluge
-  of false alarms for the tool user to triage. Our position is to
-  approach the false alarm problem not just by improving the up-front
-  analysis but by also employing after-the-fact, goal-directed
-  refutation analyses that yield targeted precision
-  improvements. We have investigated refutation analysis in the
-  context of detecting statically a class of Android memory leaks. For
-  this client, we have found the necessity for an overall analysis
-  capable of path-sensitive reasoning interprocedurally and with
-  strong updates---a level of precision difficult to achieve globally
-  in an up-front manner. Instead, our approach uses a
-  refutation analysis that mixes highly precise, goal-directed
-  reasoning with facts derived from the up-front analysis
-  to prove alarms false and thus enabling effective and sound
-  filtering of the overall list of alarms.
+	static verification clients. However, the typical scenario is that
+	the available heap information, computed by say an up-front
+	points-to analysis, is not precise enough for the client of
+	interest. This imprecise heap information in turn leads to a deluge
+	of false alarms for the tool user to triage. Our position is to
+	approach the false alarm problem not just by improving the up-front
+	analysis but by also employing after-the-fact, goal-directed
+	refutation analyses that yield targeted precision
+	improvements. We have investigated refutation analysis in the
+	context of detecting statically a class of Android memory leaks. For
+	this client, we have found the necessity for an overall analysis
+	capable of path-sensitive reasoning interprocedurally and with
+	strong updates---a level of precision difficult to achieve globally
+	in an up-front manner. Instead, our approach uses a
+	refutation analysis that mixes highly precise, goal-directed
+	reasoning with facts derived from the up-front analysis
+	to prove alarms false and thus enabling effective and sound
+	filtering of the overall list of alarms.
 
 
-      
+			

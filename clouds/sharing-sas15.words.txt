@@ -1,19 +1,19 @@
 Shape Analysis for Unstructured Sharing
-	  Shape analysis aims to infer precise structural properties of
-  imperative memory states and has been applied heavily to verify
-  safety properties on imperative code over pointer-based data
-  structures. Recent advances in shape analysis based on separation
-  logic has leveraged summarization predicates that describe unbounded
-  heap regions like lists or trees using inductive
-  definitions. Unfortunately, data structures with unstructured
-    sharing, such as graphs, are challenging to describe and reason
-  about in such frameworks.
-  In particular, when the sharing is unstructured, it cannot be described
-  inductively in a local manner.
-  In this paper, we propose a global
-  abstraction of sharing based on set-valued variables that when
-  integrated with inductive definitions enables the specification and
-  shape analysis of structures with unstructured sharing.
+		Shape analysis aims to infer precise structural properties of
+	imperative memory states and has been applied heavily to verify
+	safety properties on imperative code over pointer-based data
+	structures. Recent advances in shape analysis based on separation
+	logic has leveraged summarization predicates that describe unbounded
+	heap regions like lists or trees using inductive
+	definitions. Unfortunately, data structures with unstructured
+		sharing, such as graphs, are challenging to describe and reason
+	about in such frameworks.
+	In particular, when the sharing is unstructured, it cannot be described
+	inductively in a local manner.
+	In this paper, we propose a global
+	abstraction of sharing based on set-valued variables that when
+	integrated with inductive definitions enables the specification and
+	shape analysis of structures with unstructured sharing.
 
 
-      
+			

@@ -1,7 +1,7 @@
 Reduced Product Combination of Abstract Domains for Shapes
 	Real-world data structures are often enhanced with additional
 	pointers capturing alternative paths through a basic inductive skeleton
-        (e.g., back pointers, head pointers). From the static analysis point of view,
+				(e.g., back pointers, head pointers). From the static analysis point of view,
 	we must obtain several interlocking shape invariants. At the same time, it is
 	well understood in abstract interpretation design that supporting a separation
 	of concerns is critically important to designing powerful static analyses.
@@ -21,4 +21,4 @@ Reduced Product Combination of Abstract Domains for Shapes
 	that hold simultaneously.
 
 
-      
+			

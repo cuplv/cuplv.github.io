@@ -1,13 +1,13 @@
 Infinite-state Liveness-to-Safety via Implicit Abstraction and
 Well-founded Relations          Infinite-state Liveness-to-Safety via Implicit Abstraction and
 Well-founded Relations 
-        
-        
-        
-        
-        
-            
-        
-       
-        
-       
+				
+				
+				
+				
+				
+			      
+				
+			 
+				
+			 

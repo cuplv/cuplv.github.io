@@ -2,4 +2,4 @@ Automatic Analysis of Open Objects in Dynamic Language Programs
 	In dynamic languages, objects are open—they support iteration over and dynamic addition/deletion of their attributes. Open objects, because they have an unbounded number of attributes, are difficult to abstract without a priori knowledge of all or nearly all of the attributes and thus pose a significant challenge for precise static analysis. To address this challenge, we present the HOO (Heap with Open Objects) abstraction that can precisely represent and infer properties about open-object-manipulating programs without any knowledge of specific attributes.  It achieves this by building upon a relational abstract domain for sets that is used to reason about partitions of object attributes.  An implementation of the resulting static analysis is used to verify specifications for dynamic language framework code that makes extensive use of open objects, thus demonstrating the effectiveness of this approach.
 
 
-      
+			

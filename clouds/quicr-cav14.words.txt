@@ -2,4 +2,4 @@ QUICr: A Reusable Library for Parametric Abstraction of Sets and Numbers
 	This paper introduces QUICr, an abstract domain combinator library that lifts any domain for numbers into an efficient domain for numbers and sets of numbers.  As a library, it is useful for inferring relational data invariants in programs that manipulate data structures.  As a testbed, it allows easy extension of widening and join heuristics, enabling adaptations to new and varied applications.  In this paper we present the architecture of the library, guidelines on how to select heuristics, and an example instantiation of the library using the Apron library to verify set-manipulating programs.
 
 
-      
+			

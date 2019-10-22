@@ -1,0 +1,104 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    Automatically generated. Do not edit directly!
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         				ECOOP 2019
+         			:
+         	Lifestate: Event-Driven Protocols and Callback Control Flow  |  CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="lsidebarfloat">
+            <div id="lsidebar"></div>
+         </div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
+         <div id="banner">
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="visiting.html">Visiting</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Lifestate: Event-Driven Protocols and Callback Control Flow</div>
+               <div xmlns="" class="subtitle">
+                  				<a href="https://2019.ecoop.org/">ECOOP 2019</a>
+                  			
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-icon"><a href="papers/verivita-ecoop19.pdf" onClick="_gaq.push(['_trackPageview', '/papers/verivita-ecoop19.pdf']);"><img src="clouds/verivita-ecoop19.words.png" class="icon"></a></div>
+               <div class="item-block">
+                  <div class="item-date">2019</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/verivita-ecoop19.html">detail</a></li>
+                     <li><a href="papers/verivita-ecoop19.pdf" onClick="_gaq.push(['_trackPageview', '/papers/verivita-ecoop19.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Lifestate: Event-Driven Protocols and Callback Control Flow</div>
+                  <div class="hanging"><a href="http://www.cs.colorado.edu/~shme8881/">Shawn Meier</a>, <a href="http://www.sergiomover.eu/">Sergio Mover</a>,  and <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a></div>
+                  <div class="hanging">
+                     				<a href="https://2019.ecoop.org/">ECOOP 2019</a>:
+                     European Conference on Object-Oriented Programming
+                     			
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            				Developing interactive applications (apps) against event-driven software frameworks such as Android is notoriously difficult.
+            To create apps that behave as expected, developers must follow complex and often implicit asynchronous programming protocols.
+            Such protocols intertwine the proper registering of callbacks to receive control from the framework with appropriate application-programming
+            interface (API) calls that in turn affect the set of possible future callbacks. An app violates the protocol when, for example,
+            it calls a particular API method in a state of the framework where such a call is invalid. What makes automated reasoning
+            hard in this domain is largely what makes programming apps against such frameworks hard: the specification of the protocol
+            is unclear, and the control flow is complex, asynchronous, and higher-order. In this paper, we tackle the problem of specifying
+            and modeling event-driven application-programming protocols. In particular, we formalize a core meta-model that captures the
+            dialogue between event-driven frameworks and application callbacks. Based on this meta-model, we define a language called
+            lifestate that permits precise and formal descriptions of application-programming protocols and the callback control ﬂow imposed
+            by the event-driven framework. Lifestate uniﬁes modeling what app callbacks can expect of the framework with specifying rules
+            the app must respect when calling into the framework. In this way, we eﬀectively combine lifecycle constraints and typestate
+            rules. To evaluate the effectiveness of lifestate modeling, we provide a dynamic verification algorithm that takes as input
+            a trace of execution of an app and a lifestate protocol specification to either produce a trace witnessing a protocol violation
+            or a proof that no such trace is realizable.
+            			
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{ECOOP = "European Conference on Object-Oriented Programming (ECOOP)"}
+@inproceedings{verivita-ecoop19,
+  author = {Shawn Meier and Sergio Mover and Bor-Yuh Evan Chang},
+  title = {Lifestate: Event-Driven Protocols and Callback Control Flow},
+  booktitle = ECOOP,
+  year = {2019},
+  pages = {},
+  
+}
+</pre></div>
+      </div>
+   </body>
+</html>

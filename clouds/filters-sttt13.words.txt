@@ -1,7 +1,7 @@
 A Bit Too Precise? Verification of Quantized Digital Filters
 	Fixed point digital filters are simple yet ubiquitous components of a
 	wide variety of digital processing and control systems. Common errors
-        in fixed point filters include arithmetic round-off (truncation) errors,
+				in fixed point filters include arithmetic round-off (truncation) errors,
 	overflows and the presence of limit cycles. These errors can potentially
 	compromise the correctness of the system as a whole. Traditionally digital
 	filters have been verified using a combination of design techniques from control
@@ -23,4 +23,4 @@ A Bit Too Precise? Verification of Quantized Digital Filters
 	correctness of fixed point digital filter implementations.
 
 
-      
+			

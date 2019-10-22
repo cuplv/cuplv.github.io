@@ -3,4 +3,4 @@ Modular Construction of Shape-Numeric Analyzers
 In this paper, we study the construction of such shape-numeric, static analyzers. We set up an abstract interpretation framework that allows us to reason about simultaneous shape-numeric properties by combining shape and numeric abstractions into a modular, expressive abstract domain.  Such a modular structure is highly desirable to make its formalization and implementation easier to do and get correct. To achieve this, we choose a concrete semantics that can be abstracted step-by-step, while preserving a high level of expressiveness.  The structure of abstract operations (i.e., transfer, join, and comparison) follows the structure of this semantics.  The advantage of this construction is to divide the analyzer in modules and functors that implement abstractions of distinct features.
 
 
-      
+			

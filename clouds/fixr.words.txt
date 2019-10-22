@@ -1,15 +1,15 @@
 Mining and Understanding Bug Fixes for App-Framework Protocol DefectsFixr Fixr Fixr Fixr Fixr Fixr Fixr Fixr Fixr Fixr Fixr 
-            
-            
-            
-            
-            
-            
-            
-                Mining and Understanding Bug Fixes for App-Framework Protocol Defects 
-          Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses.
-         Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses. 
-          
-          
-          
-           
+						
+						
+						
+						
+						
+						
+						
+				        Mining and Understanding Bug Fixes for App-Framework Protocol Defects 
+					Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses.
+				 Developing program analysis, probabilistic inference, program synthesis, social data mining, and big-data engineering tools to cooperative repair Android framework protocol misuses. 
+					
+					
+					
+				   

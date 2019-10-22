@@ -1,12 +1,12 @@
 Modular Checking of Almost-Everywhere InvariantsFissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis Fissile Type Analysis 
 		
 		
-         Modular Checking of Almost-Everywhere Invariants 
+			   Modular Checking of Almost-Everywhere Invariants 
 	A static analysis tool for C and Objective-C that verifies
 	invariants that hold almost everywhere, including the safety of
 	reflective method calls.
-       A static analysis tool for C and Objective-C that verifies
+			 A static analysis tool for C and Objective-C that verifies
 	invariants that hold almost everywhere, including the safety of
 	reflective method calls. 
 	
-       
+			 

@@ -1,2 +1,2 @@
 Exploring the Internal State of User Interfaces by Combining Computer Vision Techniques with Grammatical Inference
-      
+			
