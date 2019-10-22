@@ -118,8 +118,8 @@
 			<news-detail>
 				CUPLV authors
 				<ref table="person" key="tlu" />
-				<ref table="person" key="cernyp" />, and
-				<ref table="person" key="bec" />
+				<ref table="person" key="cernyp" />,
+				<ref table="person" key="bec" />, and
 				<ref table="person" key="atrivedi" />
 				have had a paper "<ref table="pub" key="bounding-vmcai19" />" accepted for presentation at
 				<ref table="event" key="vmcai19" /> in January.
