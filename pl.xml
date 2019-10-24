@@ -3079,8 +3079,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 		<pub id="tajsvr-oopsla19">
 			<title>Static Analysis with Demand-Driven Value Refinement</title>
 			<authors>
-				<author person="bnielsen" student="y"/>
 				<author person="bstein" student="y"/>
+				<author person="bnielsen" student="y"/>
 				<author person="bec"/>
 				<author person="amoeller"/>
 			</authors>
