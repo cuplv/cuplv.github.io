@@ -11,3 +11,5 @@
  * `git add` *all* changed files: `pl.xml`, any added assets, and all generated HTML.
  * `git commit` your changes (with a good commit message!) and `git push origin HEAD` them up to Github.
  * Your changes will be visible at `plv.colorado.edu` within a few minutes!
+
+Some more detailed instructions are available on the [old PLV website](https://sites.google.com/site/cuprolangs/accessing-resources#TOC-Editing-the-PLV-Website) -- log into your @colorado.edu google account to access.  Disregard any `svn` instructions and replace by their `git` equivalents.
