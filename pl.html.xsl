@@ -246,11 +246,15 @@ name="html" />
       <xsl:apply-templates select="cv/persons/person[@group='faculty']" mode="detail" />
       <div class="clearer" />
 
+      <xsl:if test="cv/persons/person[@group='scientist']">
       <h2>Scientists</h2>
+      </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='scientist']" mode="detail" />
       <div class="clearer" />
 
+      <xsl:if test="cv/persons/person[@group='postdoc']">
       <h2>Post-Docs</h2>
+      </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='postdoc']" mode="detail" />
       <div class="clearer" />
 
@@ -260,19 +264,19 @@ name="html" />
       <div class="clearer" />
 
       <xsl:if test="cv/persons/person[@group='bsms']">
-  <h3>BS/BA+MS</h3>
+      <h3>BS/BA+MS</h3>
       </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='bsms']" mode="detail" />
       <div class="clearer" />
 
       <xsl:if test="cv/persons/person[@group='ms']">
-  <h3>MS</h3>
+      <h3>MS</h3>
       </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='ms']" mode="detail" />
       <div class="clearer" />
 
       <xsl:if test="cv/persons/person[@group='bs']">
-  <h3>BS/BA</h3>
+      <h3>BS/BA</h3>
       </xsl:if>
       <xsl:apply-templates select="cv/persons/person[@group='bs']" mode="detail" />
       <div class="clearer" />
@@ -280,6 +284,14 @@ name="html" />
       <h2>Alumni</h2>
       <h3>Faculty</h3>
       <xsl:apply-templates select="cv/persons/person[@group='faculty-alumni']" mode="detail" />
+      <div class="clearer" />
+
+      <h2>Scientists</h2>
+      <xsl:apply-templates select="cv/persons/person[@group='scientist-alumni']" mode="detail" />
+      <div class="clearer" />
+
+      <h2>Post-Docs</h2>
+      <xsl:apply-templates select="cv/persons/person[@group='postdoc-alumni']" mode="detail" />
       <div class="clearer" />
 
       <h3>PhD</h3>
