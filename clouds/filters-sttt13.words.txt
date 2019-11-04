@@ -1,26 +1,26 @@
 A Bit Too Precise? Verification of Quantized Digital Filters
-	Fixed point digital filters are simple yet ubiquitous components of a
-	wide variety of digital processing and control systems. Common errors
-				in fixed point filters include arithmetic round-off (truncation) errors,
-	overflows and the presence of limit cycles. These errors can potentially
-	compromise the correctness of the system as a whole. Traditionally digital
-	filters have been verified using a combination of design techniques from control
-	theory and extensive testing. In this paper, we examine the use of formal
-	verification techniques as part of the design flow for fixed point digital
-	filters. We study two classes of verification techniques involving bit-precise
-	analysis and real-valued error approximations, respectively. We empirically
-	evaluate several variants of these two fundamental approaches for verifying
-	fixed-point implementations of digital filters. We design our comparison to
-	reveal the best possible approach towards verifying real-world designs of
-	infinite impulse response (IIR) digital filters. Our study compares the
-	strengths and weaknesses of different verification techniques for digital
-	filters and suggests efficient approaches using modern
-	satisfiability-modulo-theories solvers (SMT) and hardware model checkers. This
-	manuscript extends our previous work evaluating bounded verification, where a
-	limited number of iterations of the system are explored, with unbounded
-	verification, where an unlimited number of iterations of the system are
-	considered. Doing so allows us to evaluate techniques that can prove the
-	correctness of fixed point digital filter implementations.
+  Fixed point digital filters are simple yet ubiquitous components of a
+  wide variety of digital processing and control systems. Common errors
+        in fixed point filters include arithmetic round-off (truncation) errors,
+  overflows and the presence of limit cycles. These errors can potentially
+  compromise the correctness of the system as a whole. Traditionally digital
+  filters have been verified using a combination of design techniques from control
+  theory and extensive testing. In this paper, we examine the use of formal
+  verification techniques as part of the design flow for fixed point digital
+  filters. We study two classes of verification techniques involving bit-precise
+  analysis and real-valued error approximations, respectively. We empirically
+  evaluate several variants of these two fundamental approaches for verifying
+  fixed-point implementations of digital filters. We design our comparison to
+  reveal the best possible approach towards verifying real-world designs of
+  infinite impulse response (IIR) digital filters. Our study compares the
+  strengths and weaknesses of different verification techniques for digital
+  filters and suggests efficient approaches using modern
+  satisfiability-modulo-theories solvers (SMT) and hardware model checkers. This
+  manuscript extends our previous work evaluating bounded verification, where a
+  limited number of iterations of the system are explored, with unbounded
+  verification, where an unlimited number of iterations of the system are
+  considered. Doing so allows us to evaluate techniques that can prove the
+  correctness of fixed point digital filter implementations.
 
 
-			
+      

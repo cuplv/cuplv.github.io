@@ -1,16 +1,16 @@
 Abstract Domains and Solvers for Sets Reasoning
-				When constructing complex program analyses, it is often useful to
-				reason about not just individual values, but collections of values.
-				Symbolic set abstractions provide building blocks that can be used to
-				partition elements, relate partitions to other partitions, and determine
-				the provenance of multiple values, all without knowing any concrete
-				values. To address the simultaneous challenges of scalability and
-				precision, we formalize and implement an interface for symbolic set
-				abstractions and construct multiple abstract domains relying on both
-				specialized data structures and off-the-shelf theorem provers. We
-				develop techniques for lifting existing domains to improve performance
-				and precision. We evaluate these domains on real-world data structure
-				analysis problems.
+        When constructing complex program analyses, it is often useful to
+        reason about not just individual values, but collections of values.
+        Symbolic set abstractions provide building blocks that can be used to
+        partition elements, relate partitions to other partitions, and determine
+        the provenance of multiple values, all without knowing any concrete
+        values. To address the simultaneous challenges of scalability and
+        precision, we formalize and implement an interface for symbolic set
+        abstractions and construct multiple abstract domains relying on both
+        specialized data structures and off-the-shelf theorem provers. We
+        develop techniques for lifting existing domains to improve performance
+        and precision. We evaluate these domains on real-world data structure
+        analysis problems.
 
 
-			
+      

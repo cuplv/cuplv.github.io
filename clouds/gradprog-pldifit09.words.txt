@@ -1,9 +1,9 @@
 Gradual Programming: Bridging the Semantic Gap (Position Paper)          Gradual Programming: Bridging the Semantic Gap (Position Paper) 
-	
-	
-	
-			    
-	http://www.cs.colorado.edu/~bec/papers/pldifit09-gradprog.pdf
-			 2 pages 
-	
-			 
+  
+  
+  
+          
+  http://www.cs.colorado.edu/~bec/papers/pldifit09-gradprog.pdf
+       2 pages 
+  
+       

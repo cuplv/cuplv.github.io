@@ -1,22 +1,22 @@
 Invariant Generation for Parametrized Systems using Self-Reflection
-				We examine the problem of inferring invariants for
-				parametrized systems. Parametrized systems are concurrent
-				systems consisting of an a priori unbounded number of process
-				instances running the same program. Such systems are commonly
-				encountered in many situations including device drivers,
-				distributed systems, and robotic swarms. In this paper we
-				describe a technique that enables leveraging off-the-shelf
-				invariant generators designed for sequential programs to infer
-				invariants of parametrized systems. The central challenge in
-				invariant inference for parametrized systems is that näıvely
-				exploding the transition system with all interleavings is not
-				just impractical but impossible. In our approach, the key
-				enabler is the notion of a reﬂective abstraction that we prove
-				has an important correspondence with inductive
-				invariants. This correspondence naturally gives rise to an
-				iterative invariant generation procedure that alternates
-				between computing candidate invariants and creating reﬂective
-				abstractions.
+        We examine the problem of inferring invariants for
+        parametrized systems. Parametrized systems are concurrent
+        systems consisting of an a priori unbounded number of process
+        instances running the same program. Such systems are commonly
+        encountered in many situations including device drivers,
+        distributed systems, and robotic swarms. In this paper we
+        describe a technique that enables leveraging off-the-shelf
+        invariant generators designed for sequential programs to infer
+        invariants of parametrized systems. The central challenge in
+        invariant inference for parametrized systems is that näıvely
+        exploding the transition system with all interleavings is not
+        just impractical but impossible. In our approach, the key
+        enabler is the notion of a reﬂective abstraction that we prove
+        has an important correspondence with inductive
+        invariants. This correspondence naturally gives rise to an
+        iterative invariant generation procedure that alternates
+        between computing candidate invariants and creating reﬂective
+        abstractions.
 
 
-			
+      

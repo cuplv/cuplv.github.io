@@ -11,4 +11,4 @@ software. We present the architecture of S-TaLiRo and its working on
 an application example.
 
 
-		
+    

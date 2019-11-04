@@ -1,26 +1,26 @@
 The Flow-Insensitive Precision of Andersen's Analysis in Practice
-	We present techniques for determining the precision gap
-	between Andersen's points-to analysis and precise
-	flow-insensitive points-to analysis in practice.  While
-	previous work has shown that such a gap may exist, no
-	efficient algorithm for precise flow-insensitive analysis is
-	known, making measurement of the gap on real-world programs
-	difficult.  We give an algorithm for precise flow-insensitive
-	analysis of programs with finite memory, based on a novel
-	technique for refining any points-to analysis with a search
-	for flow-insensitive witnesses.  We give a compact symbolic
-	encoding of the technique that enables computing the search
-	using a tuned SAT solver.  We also present extensions of the
-	algorithm that enable computing lower and upper bounds on the
-	precision gap in the presence of dynamic memory allocation. In
-	our experimental evaluation over a suite of small- to
-	medium-sized C programs, we never observed a precision gap
-	between Andersen's analysis and the precise analysis. In other
-	words, Andersen's analysis computed a precise flow-insensitive
-	result for all of our benchmarks.  Hence, we conclude that
-	while better algorithms for the precise flow-insensitive
-	analysis are still of theoretical interest, their practical
-	impact for C programs is likely to be negligible.
+  We present techniques for determining the precision gap
+  between Andersen's points-to analysis and precise
+  flow-insensitive points-to analysis in practice.  While
+  previous work has shown that such a gap may exist, no
+  efficient algorithm for precise flow-insensitive analysis is
+  known, making measurement of the gap on real-world programs
+  difficult.  We give an algorithm for precise flow-insensitive
+  analysis of programs with finite memory, based on a novel
+  technique for refining any points-to analysis with a search
+  for flow-insensitive witnesses.  We give a compact symbolic
+  encoding of the technique that enables computing the search
+  using a tuned SAT solver.  We also present extensions of the
+  algorithm that enable computing lower and upper bounds on the
+  precision gap in the presence of dynamic memory allocation. In
+  our experimental evaluation over a suite of small- to
+  medium-sized C programs, we never observed a precision gap
+  between Andersen's analysis and the precise analysis. In other
+  words, Andersen's analysis computed a precise flow-insensitive
+  result for all of our benchmarks.  Hence, we conclude that
+  while better algorithms for the precise flow-insensitive
+  analysis are still of theoretical interest, their practical
+  impact for C programs is likely to be negligible.
 
 
-			
+      

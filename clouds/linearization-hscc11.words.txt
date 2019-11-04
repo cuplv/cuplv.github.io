@@ -1,26 +1,26 @@
  Automatic Abstraction of Non-Linear Systems Using Change of Variables Transformations 
        We present abstraction techniques that transform a given non-linear
-	dynamical system into a linear system, such that, invariant
-	properties of the resulting linear abstraction can be used to infer
-	invariants for the original system. The abstraction techniques rely
-	on a change of bases transformation that associates each state
-	variable of the abstract system with a function involving the state
-	variables of the original system. We present conditions under which
-	a given change of basis transformation for a non-linear system can
-	define an abstraction. 
+  dynamical system into a linear system, such that, invariant
+  properties of the resulting linear abstraction can be used to infer
+  invariants for the original system. The abstraction techniques rely
+  on a change of bases transformation that associates each state
+  variable of the abstract system with a function involving the state
+  variables of the original system. We present conditions under which
+  a given change of basis transformation for a non-linear system can
+  define an abstraction. 
 
 
 
   Furthermore, we present a technique to discover, given a non-linear
-	system, if a change of bases transformation involving degree-bounded
-	polynomials yielding a linear system abstraction exists. If so, our
-	technique yields the resulting abstract linear system, as well. This
-	approach is further extended to search for a change of bases
-	transformation that abstracts a given non-linear system into a
-	system of linear differential inclusions.  Our techniques enable the
-	use of analysis techniques for linear systems to infer invariants
-	for non-linear systems. We present preliminary evidence of the
-	practical feasibility of our ideas using a prototype implementation. 
+  system, if a change of bases transformation involving degree-bounded
+  polynomials yielding a linear system abstraction exists. If so, our
+  technique yields the resulting abstract linear system, as well. This
+  approach is further extended to search for a change of bases
+  transformation that abstracts a given non-linear system into a
+  system of linear differential inclusions.  Our techniques enable the
+  use of analysis techniques for linear systems to infer invariants
+  for non-linear systems. We present preliminary evidence of the
+  practical feasibility of our ideas using a prototype implementation. 
 
 
-		
+    

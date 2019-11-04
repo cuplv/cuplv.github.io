@@ -8,8 +8,8 @@
    <head>
       <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
       <title>
-         	PLDI 2010
-         			:
+         PLDI 2010
+         :
          	Mixing Type Checking and Symbolic Execution  |  CUPLV
       </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
 	  (function(w) { var p = w.onload;
@@ -49,8 +49,8 @@
             <div id="header">
                <div xmlns="" class="small-title">Mixing Type Checking and Symbolic Execution</div>
                <div xmlns="" class="subtitle">
-                  	<a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>
-                  			
+                  <a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>
+                  
                </div>
             </div>
             <h4 xmlns="">Reference</h4>
@@ -66,52 +66,52 @@
                   <div class="item-header hanging">Mixing Type Checking and Symbolic Execution</div>
                   <div class="hanging"><a href="http://www.cs.umd.edu/~khooyp/">Khoo Yit Phang</a>, <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a>,  and <a href="http://www.cs.umd.edu/~jfoster/">Jeffrey S. Foster</a></div>
                   <div class="hanging">
-                     	<a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>:
+                     <a href="http://www.cs.stanford.edu/pldi10/">PLDI 2010</a>:
                      ACM SIGPLAN Conference on Programming Language Design and Implementation
-                     			
+                     
                   </div>
                   <div class="item-note">
-                     	
+                     
                      Extended Version:
                      
                      Technical Report
                      <a href="http://hdl.handle.net/1903/10115">(CS-TR-4954)</a>
-                     			
+                     
                   </div>
                </div>
             </div>
             <h4 xmlns="">Abstract</h4>
-            	
+            
             <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">Static analysis designers must carefully balance precision
-               	and efficiency.  In our experience, many static analysis tools
-               	are built around an elegant, core algorithm, but that
-               	algorithm is then extensively tweaked to add just enough
-               	precision for the coding idioms seen in practice, without
-               	sacrificing too much efficiency.  There are several downsides
-               	to adding precision in this way: the tool's implementation
-               	becomes much more complicated; it can be hard for an end-user
-               	to interpret the tool's results; and as software systems vary
-               	tremendously in their coding styles, it may require
-               	significant algorithmic engineering to enhance a tool to
-               	perform well in a particular software domain.
+               and efficiency.  In our experience, many static analysis tools
+               are built around an elegant, core algorithm, but that
+               algorithm is then extensively tweaked to add just enough
+               precision for the coding idioms seen in practice, without
+               sacrificing too much efficiency.  There are several downsides
+               to adding precision in this way: the tool's implementation
+               becomes much more complicated; it can be hard for an end-user
+               to interpret the tool's results; and as software systems vary
+               tremendously in their coding styles, it may require
+               significant algorithmic engineering to enhance a tool to
+               perform well in a particular software domain.
             </p>
-            	
+            
             <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">In this paper, we present Mix, a novel system that mixes
-               	type checking and symbolic execution.  The key aspect of our
-               	approach is that these analyses are applied independently on
-               	disjoint parts of the program, in an off-the-shelf manner.  At
-               	the boundaries between nested type checked and symbolically
-               	executed code regions, we use special mix rules to communicate
-               	information between the off-the-shelf systems.  The resulting
-               	mixture is a provably sound analysis that is more precise than
-               	type checking alone and more efficient than exclusive symbolic
-               	execution.  In addition, we also describe a prototype
-               	implementation, <span class="fmt-tool">Mixy</span>, for C.  Mixy
-               	checks for potential null dereferences by mixing a
-               	null/non-null type qualifier inference system with a symbolic
-               	executor.
+               type checking and symbolic execution.  The key aspect of our
+               approach is that these analyses are applied independently on
+               disjoint parts of the program, in an off-the-shelf manner.  At
+               the boundaries between nested type checked and symbolically
+               executed code regions, we use special mix rules to communicate
+               information between the off-the-shelf systems.  The resulting
+               mixture is a provably sound analysis that is more precise than
+               type checking alone and more efficient than exclusive symbolic
+               execution.  In addition, we also describe a prototype
+               implementation, <span class="fmt-tool">Mixy</span>, for C.  Mixy
+               checks for potential null dereferences by mixing a
+               null/non-null type qualifier inference system with a symbolic
+               executor.
             </p>
-            			
+            
             <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
 @string{PLDI = "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"}
 @inproceedings{mix-pldi10,

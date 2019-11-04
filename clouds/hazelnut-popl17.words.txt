@@ -1,11 +1,11 @@
 Hazelnut: A Bidirectionally Typed Structure Editor Calculus          Hazelnut: A Bidirectionally Typed Structure Editor Calculus 
-				
-				
-				
-				
-				
-			      
-				papers/hazelnut-popl17.pdf
-			 
-				
-			  2017
+        
+        
+        
+        
+        
+            
+        papers/hazelnut-popl17.pdf
+       
+        
+        2017
