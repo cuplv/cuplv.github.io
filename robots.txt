@@ -1,2 +1,3 @@
 User-agent: *
+Disallow: /projects/fixr/assets/slides/
 Disallow: /projects/MUSE/assets/slides/
