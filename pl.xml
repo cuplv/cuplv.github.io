@@ -5485,858 +5485,903 @@ an application example.</p>
     </pub>
   </publications>
 
-  <persons>
-    <person id="cernyp" group="faculty">
-      <name>Pavol Černý</name>
-      <url>http://ecee.colorado.edu/pavol/</url>
-      <face>pics/cerny.jpg</face>
-    </person>
-    <person id="bec" group="faculty">
-      <name>Bor-Yuh Evan Chang</name>
-      <url>http://www.cs.colorado.edu/~bec/</url>
-      <face>pics/chang.jpg</face>
-    </person>
-    <person id="diwan" group="faculty-alumni">
-      <name>Amer Diwan</name>
-      <url>http://www.cs.colorado.edu/~diwan/</url>
-      <face>pics/diwan.jpg</face>
-    </person>
-    <person id="grunwald" group="faculty">
-      <name>Dirk Grunwald</name>
-      <url>http://systems.cs.colorado.edu/people/faculty/dirk-grunwald/</url>
-      <face>pics/grunwald.jpg</face>
-    </person>
-    <person id="hammer" group="faculty-alumni">
-      <name>Matthew A. Hammer</name>
-      <url>http://matthewhammer.org</url>
-      <face>pics/hammer.png</face>
-    </person>
-    <person id="srirams" group="faculty">
-      <name>Sriram Sankaranarayanan</name>
-      <url>http://www.cs.colorado.edu/~srirams/</url>
-      <face>pics/sankaranarayanan.jpg</face>
-    </person>
-    <person id="siek" group="faculty-alumni">
-      <name>Jeremy G. Siek</name>
-      <url>http://ecee.colorado.edu/~siek/</url>
-      <face>pics/siek.jpg</face>
-    </person>
-    <person id="fabio" group="faculty">
-      <name>Fabio Somenzi</name>
-      <url>http://vlsi.colorado.edu/~fabio/</url>
-      <face>pics/somenzi.jpg</face>
-    </person>
-    <person id="atrivedi" group="faculty">
-      <name>Ashutosh Trivedi</name>
-      <url>http://www.cs.colorado.edu/~astr3586/</url>
-      <face>pics/atrivedi.png</face>
-    </person>
-    <person id="elam" group="scientist-alumni">
-      <name>Edmund S.L. Lam</name>
-      <face>pics/elam.png</face>
-    </person>
-    <person id="abensassi" group="postdoc-alumni">
-      <name>Mohamed Amin Ben Sassi</name>
-      <face>pics/aminbensassi.png</face>
-    </person>
-    <person id="xinchen" group="postdoc-alumni">
-      <name>Xin Chen</name>
-      <face>pics/xinchen.jpg</face>
-      <url>https://www.cs.colorado.edu/~xich8622/</url>
-    </person>
-    <person id="smover" group="postdoc-alumni">
-      <name>Sergio Mover</name>
-      <face>pics/smover.jpg</face>
-      <url>http://www.sergiomover.eu/</url>
-    </person>
-    <person id="yvoronin" group="postdoc-alumni">
-      <name>Yuen-Lam Voronin</name>
-      <url>http://www.cs.colorado.edu/~yuvo9296/</url>
-      <face>pics/yvoronin.jpg</face>
-    </person>
-    <person id="belter" group="phd-alumni">
-      <name>Geoffrey Belter</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="blackshear" group="phd-alumni">
-      <name>Sam Blackshear</name>
-      <url>http://cs.colorado.edu/~sabl4745</url>
-      <face>pics/blackshear.jpg</face>
-    </person>
-    <person id="chakarov" group="phd-alumni">
-     <name>Aleksandar Chakarov</name>
-     <url>http://plv.colorado.edu/chakarov.html</url>
-     <face>pics/chakarov.jpg</face>
-    </person>
-    <person id="ychou" group="phd">
-      <name>Chou Yi</name>
-      <face>pics/ychou.jpg</face>
-    </person>
-    <person id="coughlin" group="phd-alumni">
-      <name>Devin Coughlin</name>
-      <face>pics/coughlin.jpg</face>
-      <url>http://www.cs.colorado.edu/~coughlid</url>
-    </person>
-    <person id="cox" group="phd-alumni">
-      <name>Arlen Cox</name>
-      <url>http://eces.colorado.edu/~coxaj/</url>
-      <face>pics/cox.jpg</face>
-    </person>
-    <person id="jculak" group="phd">
-      <name>Juraj Culak</name>
-      <face>pics/jculak.png</face>
-    </person>
-    <person id="mdooley" group="phd">
-      <name>Michael Dooley</name>
-      <face>pics/mdooley.jpg</face>
-    </person>
-    <person id="sdutta" group="phd">
-      <name>Souradeep Dutta</name>
-      <face>pics/sdutta.png</face>
-      <url>https://sites.google.com/site/duttasouradeep39/</url>
-    </person>
-    <person id="frohardt">
-      <name>Robert Frohardt</name>
-      <url>http://www.cs.colorado.edu/~frohardt/</url>
-    </person>
-    <person id="agendreau">
-      <name>Alexandra Gendreau</name>
-      <url>http://www.cs.colorado.edu/~alge6158/</url>
-      <face>pics/gendreau.jpg</face>
-    </person>
-    <person id="gottschlich" group="phd-alumni">
-      <name>Justin E. Gottschlich</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="aguttman" group="phd">
-      <name>Andrew Guttman</name>
-      <face>pics/aguttman.png</face>
-    </person>
-    <person id="kheadley" group="phd">
-      <name>Kyle Headley</name>
-      <url>http://kyleheadley.github.io/PHDWebsite/</url>
-      <face>pics/headley.jpg</face>
-    </person>
-    <person id="karlin" group="phd-alumni">
-      <name>Ian Karlin</name>
-      <face>pics/karlin.jpg</face>
-    </person>
-    <person id="ykim" group="phd">
-      <name>Youngsung Kim</name>
-      <face>pics/ykim.png</face>
-    </person>
-    <person id="tkushner" group="phd">
-      <name>Taisa Kushner</name>
-      <face>pics/tkushner.png</face>
-    </person>
-    <person id="nlewchenko" group="phd">
-      <name>Nicholas V. Lewchenko</name>
-      <face>pics/nlewchenko.jpg</face>
-      <url>https://www.octalsrc.org/research</url>
-    </person>
-    <person id="tlu" group="phd">
-      <name>Tianhan Lu</name>
-      <url>https://plv.colorado.edu/tianhan/</url>
-      <face>pics/tianhan.jpg</face>
-    </person>
-    <person id="mcclurg" group="phd-alumni">
-      <name>Jedidiah McClurg</name>
-      <url>http://www.jrmcclurg.com/</url>
-      <face>pics/mcclurg.jpg</face>
-    </person>
-    <person id="smeier" group="phd">
-      <name>Shawn Meier</name>
-      <url>http://www.cs.colorado.edu/~shme8881/</url>
-      <face>pics/meier.jpg</face>
-    </person>
-    <person id="miao" group="phd-alumni">
-      <name>Weiyu Miao</name>
-      <face>pics/miao.jpg</face>
-    </person>
-    <person id="dmoon" group="phd">
-      <name>David Moon</name>
-      <face>pics/moon.jpg</face>
-      <url>https://plv.colorado.edu/dmoon</url>
-    </person>
-    <person id="toddm" group="phd-alumni">
-      <name>Todd Mytkowicz</name>
-      <url>http://research.microsoft.com/en-us/people/toddm/</url>
-      <face>pics/mytkowicz.jpg</face>
-    </person>
-    <person id="mnarasimhamurthy" group="phd">
-      <name>Monal Narasimhamurthy</name>
-      <face>pics/mnarasimhamurthy.jpg</face>
-    </person>
-    <person id="nelson" group="phd-alumni">
-      <name>Thomas Nelson</name>
-      <face>pics/nelson.jpg</face>
-    </person>
-    <person id="sniari" group="phd">
-      <url>https://sites.google.com/a/colorado.edu/saeid-tizpaz-niari/</url>
-      <name>Saeid Tizpaz Niari</name>
-      <face>pics/tizpaz.jpg</face>
-    </person>
-    <person id="hravanbakhsh" group="phd-alumni">
-      <name>Hadi Ravanbakhsh</name>
-      <face>pics/ravanbakhsh.png</face>
-    </person>
-    <person id="creichen" group="phd-alumni">
-      <name>Christoph Reichenbach</name>
-      <url>http://www.cs.umass.edu/~creichen/</url>
-      <face>pics/reichenbach.png</face>
-    </person>
-    <person id="bstein" group="phd">
-      <name>Benno Stein</name>
-      <url>http://plv.colorado.edu/benno</url>
-      <face>pics/stein.png</face>
-    </person>
-    <person id="wtemple" group="phd">
-      <name>William Temple</name>
-      <face>pics/wtemple.jpg</face>
-    </person>
-    <person id="vitousek">
-      <name>Michael Vitousek</name>
-      <face>pics/vitousek.jpg</face>
-    </person>
-    <person id="wailes">
-      <name>Chris Wailes</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="jwright" group="phd">
-      <name>Jared Wright</name>
-      <face>pics/jwright.jpg</face>
-      <url>http://plv.colorado.edu/jwright</url>
-    </person>
-    <person id="hyoon" group="phd">
-      <name>Hansol Yoon</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="yanzhang" group="phd-alumni">
-      <name>Yan Zhang</name>
-      <face>pics/zhang.png</face>
-    </person>
-    <person id="adityaz" group="phd-alumni">
-      <name>Aditya Zutshi</name>
-      <face>pics/zutshi.jpg</face>
-    </person>
-    <person id="rholland" group="bsms-alumni">
-      <name>Ross Holland</name>
-      <face>pics/rholland.jpg</face>
-    </person>
-    <person id="khowell" group="bsms-alumni">
-      <name>Kyle Howell</name>
-      <face>pics/khowell.jpg</face>
-    </person>
-    <person id="quan" group="bsms-alumni">
-      <name>Kira Quan</name>
-      <face>pics/quan.jpg</face>
-    </person>
-    <person id="silkensen" group="bsms-alumni">
-      <name>Erik Silkensen</name>
-      <url>http://csel.cs.colorado.edu/~silkense</url>
-      <face>pics/silkensen.jpg</face>
-    </person>
-    <person id="agrawal" group="ms-alumni">
-      <name>Neelam Agrawal</name>
-      <face>pics/generic-female.png</face>
-    </person>
-    <person id="bennett" group="ms-alumni">
-      <name>Huck Bennett</name>
-      <url>http://csel.cs.colorado.edu/~bennethd</url>
-      <face>pics/bennett.jpg</face>
-    </person>
-    <person id="bharadwaj" group="ms-alumni">
-      <name>Shashank Bharadwaj</name>
-      <face>pics/bharadwaj.jpg</face>
-    </person>
-    <person id="rdiwakaran" group="ms-alumni">
-      <name>Ram Das Diwakaran</name>
-      <face>pics/rdiwakaran.jpg</face>
-    </person>
-    <person id="deconomou" group="ms">
-      <name>Dimitrios Economou</name>
-      <face>pics/deconomou.jpg</face>
-    </person>
-    <person id="njagnik" group="ms-alumni">
-      <name>Nilesh Jagnik</name>
-      <face>pics/njagnik.jpg</face>
-    </person>
-    <person id="skumar" group="ms-alumni">
-      <name>Suhas Akshar Kumar</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="aniket" group="ms-alumni">
-      <name>Aniket Kumar Lata</name>
-      <face>pics/aniket.jpg</face>
-    </person>
-    <person id="clin" group="ms-alumni">
-      <name>Chih-Wei Lin</name>
-      <face>pics/clin.jpg</face>
-    </person>
-    <person id="aphatak" group="ms">
-      <name>Aniruddha Phatak</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="arajeswari" group="ms-alumni">
-      <name>Athithyaa Panchapakesan Rajeswari</name>
-      <face>pics/athithyaa.jpg</face>
-    </person>
-    <person id="sramani" group="ms-alumni">
-      <name>Santhanakrishnan Ramani</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="vsingh" group="ms-alumni">
-      <name>Vaibhav Singh</name>
-      <face>pics/vsingh.jpg</face>
-    </person>
-    <person id="ksripada" group="ms-alumni">
-      <name>Krishna Chaitanya Sripada</name>
-      <face>pics/ksripada.jpg</face>
-    </person>
-    <person id="tsai" group="ms-alumni">
-      <name>Yi-Fan Tsai</name>
-      <face>pics/tsai.jpg</face>
-    </person>
-    <person id="turner" group="ms-alumni">
-      <name>Jonathan Turner</name>
-      <face>pics/turner.jpg</face>
-    </person>
-    <person id="avillani" group="ms-alumni">
-      <name>Anna Villani</name>
-      <face>pics/avillani.jpg</face>
-    </person>
-    <person id="beal" group="bs-alumni">
-      <name>Alex Beal</name>
-      <face>pics/beal.png</face>
-    </person>
-    <person id="pevans" group="bs-alumni">
-      <name>Parker Evans</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="dfisher" group="bs-alumni">
-      <name>Dakota Fisher</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="agaonkar" group="bs">
-      <name>Akash Gaonkar</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="givens" group="bs-alumni">
-      <name>Paul Givens</name>
-      <face>pics/pgivens.jpg</face>
-    </person>
-    <person id="lapinski" group="bs-alumni">
-      <name>Nathan Lapinksi</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="jlecavalier" group="bs-alumni">
-      <name>Jay Lecavlier</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="aokeson" group="bs-alumni">
-      <name>Alexandra Okeson</name>
-      <face>pics/generic-female.png</face>
-    </person>
-    <person id="rolsen" group="bs-alumni">
-      <name>Rhys Braginton Pettee Olsen</name>
-      <face>pics/rolsen.jpg</face>
-    </person>
-    <person id="eroncevich" group="bs-alumni">
-      <name>Evan Roncevich</name>
-      <face>pics/eroncevich.png</face>
-    </person>
-    <person id="croberts" group="bs">
-      <name>Chance Roberts</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="mrussek" group="bs-alumni">
-      <name>Max Russek</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="pzhang" group="bs">
-      <name>Peilun Zhang</name>
-      <face>pics/pzhang.jpg</face>
-      <url>http://peilun.org</url>
-    </person>
-    <person id="vanderweit" group="bs-alumni">
-      <name>Nicholas Vanderweit</name>
-      <face>pics/vanderweit.jpg</face>
-    </person>
-    <person id="tgrohens" group="gradintern-alumni">
-      <name>Théotime Grohens</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="skeenan" group="ugintern">
-      <name>Sydney Keenan</name>
-      <face>pics/generic-female.png</face>
-    </person>
-    <person id="proux" group="visitor-alumni">
-      <name>Pierre Roux</name>
-      <face>pics/proux.jpg</face>
-      <url>http://perso.ens-lyon.fr/pierre.roux/</url>
-    </person>
-    <person id="vachharajani">
-      <name>Manish Vachharajani</name>
-      <url>http://ecee.colorado.edu/~manishv/</url>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="blomstedt">
-      <name>Joseph Blomstedt</name>
-      <face>pics/generic-male.png</face>
-    </person>
-    <person id="arbrad">
-      <name>Aaron R. Bradley</name>
-      <url>http://ece.colorado.edu/~bradleya/</url>
-    </person>
-    <person id="msridhar">
-      <name>Manu Sridharan</name>
-      <url>http://manu.sridharan.net</url>
-      <face>pics/sridharan.jpg</face>
-    </person>
-    <person id="berdine">
-      <name>Josh Berdine</name>
-      <url>http://research.microsoft.com/en-us/people/jjb</url>
-    </person>
-    <person id="ishtiaq">
-      <name>Samin Ishtiaq</name>
-      <url>http://research.microsoft.com/en-us/people/sishtiaq</url>
-    </person>
-    <person id="jessup">
-      <name>E.R. Jessup</name>
-      <url>http://www.cs.colorado.edu/~jessup/</url>
-    </person>
-    <person id="khooyp">
-      <name>Khoo Yit Phang</name>
-      <url>http://www.cs.umd.edu/~khooyp/</url>
-    </person>
-    <person id="jfoster">
-      <name>Jeffrey S. Foster</name>
-      <url>http://www.cs.umd.edu/~jfoster/</url>
-    </person>
-    <person id="laviron">
-      <name>Vincent Laviron</name>
-    </person>
-    <person id="rival">
-      <name>Xavier Rival</name>
-      <url>http://www.di.ens.fr/~rival/</url>
-    </person>
-    <person id="toubhans">
-      <name>Antoine Toubhans</name>
-      <url>http://www.di.ens.fr/~toubhans/</url>
-    </person>
-    <person id="atiwari">
-      <name>Ashish Tiwari</name>
-      <url>http://csl.sri.com/~tiwari/</url>
-    </person>
-    <person id="colonm">
-      <name>Michael Colon</name>
-    </person>
-    <person id="fp">
-      <name>Frank Pfenning</name>
-      <url>http://www.cs.cmu.edu/~fp/</url>
-    </person>
-    <person id="astump">
-      <name>Aaron Stump</name>
-      <url>http://www.cs.uiowa.edu/~astump/</url>
-    </person>
-    <person id="cesar">
-      <name>César Sánchez</name>
-      <url>http://software.imdea.org/~cesar/</url>
-    </person>
-    <person id="asanchez">
-      <name>Alejandro Sánchez</name>
-      <url>http://software.imdea.org/people/alejandro.sanchez/index.html</url>
-    </person>
-    <person id="swarat">
-      <name>Swarat Chaudhuri</name>
-      <url>http://www.cse.psu.edu/~swarat/</url>
-    </person>
-    <person id="putot">
-      <name>Sylvie Putot</name>
-      <url>http://www.lix.polytechnique.fr/Labo/Sylvie.Putot/</url>
-    </person>
-    <person id="goubault">
-      <name>Eric Goubault</name>
-      <url>http://www.lix.polytechnique.fr/~goubault/</url>
-    </person>
-    <person id="bycook">
-      <name>Byron Cook</name>
-      <url>http://research.microsoft.com/en-us/people/bycook/</url>
-    </person>
-    <person id="wintersteiger">
-      <name>Christoph Wintersteiger</name>
-      <url>http://research.microsoft.com/en-us/people/cwinter</url>
-    </person>
-    <person id="chaowang">
-      <name>Chao Wang</name>
-      <url>http://www.nec-labs.com/~chaowang/</url>
-    </person>
-    <person id="ivancic">
-      <name>Franjo Ivančić</name>
-      <url>http://www.nec-labs.com/~ivancic/</url>
-      <face>pics/ivancic.jpg</face>
-    </person>
-    <person id="burtscher">
-      <name>Martin Burtscher</name>
-      <url>http://www.cs.txstate.edu/~mb92/</url>
-    </person>
-    <person id="bradchen">
-      <name>Brad Chen</name>
-      <url>http://research.google.com/pubs/author37895.html</url>
-    </person>
-    <person id="bodik">
-      <name>Rastislav Bodik</name>
-      <url>http://www.cs.berkeley.edu/~bodik/</url>
-    </person>
-    <person id="bcpierce">
-      <name>Benjamin C. Pierce</name>
-      <url>http://www.cis.upenn.edu/~bcpierce/</url>
-    </person>
-    <person id="birkedal">
-      <name>Lars Birkedal</name>
-      <url>http://www.itu.dk/~birkedal/</url>
-    </person>
-    <person id="mstrout">
-      <name>Michelle Mills Strout</name>
-      <url>http://www.cs.colostate.edu/~mstrout/</url>
-    </person>
-    <person id="ssuryana">
-      <name>Siddharth Suryanarayanan</name>
-      <url>http://www.engr.colostate.edu/~ssuryana/</url>
-    </person>
-    <person id="fainekosg">
-      <name>Georgios Fainekos</name>
-      <url>http://www.public.asu.edu/~gfaineko/</url>
-    </person>
-    <person id="yeshwanta">
-      <name>Yashwant Annapureddy</name>
-    </person>
-    <person id="liuche">
-      <name>Che Liu</name>
-    </person>
-    <person id="amal">
-      <name>Amal Ahmed</name>
-      <url>https://www.cs.indiana.edu/~amal/</url>
-    </person>
-    <person id="robby">
-      <name>Robert Bruce Findler</name>
-      <url>http://www.eecs.northwestern.edu/~robby/</url>
-    </person>
-    <person id="wadler">
-      <name>Philip Wadler</name>
-      <url>http://homepages.inf.ed.ac.uk/wadler/</url>
-    </person>
-    <person id="sweeney">
-      <name>Peter F. Sweeney</name>
-      <url>https://researcher.ibm.com/researcher/view.php?person=us-pfs</url>
-    </person>
-    <person id="hauswirth">
-      <name>Matthias Hauswirth</name>
-      <url>http://www.inf.usi.ch/faculty/hauswirth/</url>
-    </person>
-    <person id="hassanz">
-      <name>Zyad Hassan</name>
-      <url>http://eces.colorado.edu/~hassanz/</url>
-    </person>
-    <person id="schramme">
-      <name>Peter Schrammel</name>
-      <url>http://pop-art.inrialpes.fr/people/schramme/</url>
-    </person>
-    <person id="bjeannet">
-      <name>Bertrand Jeannet</name>
-      <url>http://pop-art.inrialpes.fr/~bjeannet/</url>
-    </person>
-    <person id="thiagu">
-      <name>P.S. Thiagarajan</name>
-      <url>http://www.comp.nus.edu.sg/~thiagu/</url>
-    </person>
-    <person id="tyeh">
-      <name>Tom Yeh</name>
-      <url>http://www.tomyeh.info/</url>
-    </person>
-    <person id="slahiri">
-      <name>Shuvendu Lahiri</name>
-      <url>http://research.microsoft.com/~shuvendu/</url>
-    </person>
-    <person id="sarnat">
-      <name>Jeffrey Sarnat</name>
-      <face>pics/sarnat.jpg</face>
-    </person>
-    <person id="sumitg">
-      <name>Sumit Gulwani</name>
-      <url>http://research.microsoft.com/~sumitg/</url>
-    </person>
-    <person id="tah">
-      <name>Thomas A. Henzinger</name>
-      <url>http://pub.ist.ac.at/~tah/</url>
-    </person>
-    <person id="erikaabraham">
-      <name>Erika Abraham</name>
-    </person>
-    <person id="aradhakrishna">
-      <name>Arjun Radhakrishna</name>
-      <url>http://www.seas.upenn.edu/~arjunrad/</url>
-    </person>
-    <person id="ttarrach">
-      <name>Thorsten Tarrach</name>
-      <url>http://pub.ist.ac.at/~ttarrach/</url>
-    </person>
-    <person id="sumitjha">
-      <name>Sumit K. Jha</name>
-      <url>http://www.eecs.ucf.edu/~jha/</url>
-    </person>
-    <person id="bolz">
-      <name>Carl Friedrich Bolz</name>
-      <url>http://cfbolz.de/</url>
-    </person>
-    <person id="vardi">
-      <name>Moshe Vardi</name>
-      <url>http://www.rice.edu/~vardi</url>
-    </person>
-    <person id="gcastagna">
-      <name>Giuseppe Castagna</name>
-    </person>
-    <person id="hjboehm">
-      <name>Hans-Juergen Boehm</name>
-    </person>
-    <person id="cflanagan">
-      <name>Cormac Flanagan</name>
-    </person>
-    <person id="rgiacobazzi">
-      <name>Roberto Giacobazzi</name>
-    </person>
-    <person id="imastroeni">
-      <name>Isabella Mastroeni</name>
-    </person>
-    <person id="ekowalczyk">
-      <name>Emily Kowalczyk</name>
-    </person>
-    <person id="amemon">
-      <name>Atif Memon</name>
-    </person>
-    <person id="kalharbi">
-      <name>Khalid Alharbi</name>
-    </person>
-    <person id="kmcmillan">
-      <name>Kenneth L. McMillan</name>
-      <url>http://www.kenmcmil.com/</url>
-    </person>
-    <person id="flogozzo">
-      <name>Francesco Logozzo</name>
-      <url>http://research.microsoft.com/en-us/people/logozzo/</url>
-    </person>
-    <person id="mfahndrich">
-      <name>Manuel Fähndrich</name>
-    </person>
-    <person id="eschkufza">
-      <name>Eric Schkufza</name>
-      <url>http://cs.stanford.edu/people/eschkufz/</url>
-      <face>pics/eschkufza.jpg</face>
-    </person>
-    <person id="cdimoulas">
-      <name>Christos Dimoulas</name>
-      <url>http://people.seas.harvard.edu/~chrdimo/</url>
-      <face>pics/cdimoulas.jpg</face>
-    </person>
-    <person id="jdeshmukh">
-      <name>Jyotirmoy V. Deshmukh</name>
-      <url>http://www.cs.utexas.edu/~deshmukh/</url>
-    </person>
-    <person id="jkapinski">
-      <name>James Kapinski</name>
-    </person>
-    <person id="nnarodytska">
-      <name>Nina Narodytska</name>
-      <url>http://www.cse.unsw.edu.au/~ninan/</url>
-      <face>pics/nnarodytska.jpg</face>
-    </person>
-    <person id="lryzhyk">
-      <name>Leonid Ryzhyk</name>
-      <url>http://www.cs.cmu.edu/~ryzhyk/</url>
-      <face>pics/lryzhyk.jpg</face>
-    </person>
-    <person id="lkovacs">
-      <name>Laura Kovács</name>
-      <url>http://www.cse.chalmers.se/~laurako/</url>
-    </person>
-    <person id="jzwirchmayr">
-      <name>Jakob Zwirchmayr</name>
-    </person>
-    <person id="hojjat">
-      <name>Hossein Hojjat</name>
-      <url>http://www.cs.cornell.edu/~hojjat/</url>
-    </person>
-    <person id="jnfoster">
-      <name>Nate Foster</name>
-      <url>http://www.cs.cornell.edu/~jnfoster/</url>
-    </person>
-    <person id="jdennis">
-      <name>John Dennis</name>
-      <url>http://www.cisl.ucar.edu/staff/dennis.html</url>
-    </person>
-    <person id="ralur">
-      <name>Rajeev Alur</name>
-      <url>https://www.cis.upenn.edu/~alur/</url>
-    </person>
-    <person id="eclarke">
-      <name>Edmund M. Clarke</name>
-      <url>http://www.cs.cmu.edu/~emc/</url>
-    </person>
-    <person id="rsamanta">
-      <name>Roopsha Samanta</name>
-      <url>http://pub.ist.ac.at/~rsamanta/</url>
-    </person>
-    <person id="mnaik">
-      <name>Mayur Naik</name>
-      <url>http://pag.gatech.edu/naik/</url>
-      <face>pics/mnaik.jpg</face>
-    </person>
-    <person id="kanderson">
-      <name>Kenneth M. Anderson</name>
-      <url>http://www.cs.colorado.edu/~kena/</url>
-    </person>
-    <person id="jblack">
-      <name>John Black</name>
-      <url>http://www.cs.colorado.edu/~jrblack/</url>
-    </person>
-    <person id="idillig">
-      <name>Işıl Dillig</name>
-      <url>http://www.cs.utexas.edu/~isil/</url>
-    </person>
-    <person id="mheule">
-      <name>Marijn J. H. Heule</name>
-      <url>http://www.cs.utexas.edu/~marijn/</url>
-    </person>
-    <person id="hsipma">
-      <name>Henny Sipma</name>
-    </person>
-    <person id="hli">
-      <name>Huisong Li</name>
-    </person>
-    <person id="jdunfield">
-      <name>Joshua Dunfield</name>
-      <url>http://www.cs.ubc.ca/~joshdunf/</url>
-    </person>
-    <person id="nlabich">
-      <name>Nicholas Labich</name>
-    </person>
-    <person id="mhicks">
-      <name>Michael Hicks</name>
-      <url>http://www.cs.umd.edu/~mwh/</url>
-    </person>
-    <person id="dvanhorn">
-      <name>David Van Horn</name>
-      <url>https://www.cs.umd.edu/~dvanhorn/</url>
-    </person>
-    <person id="tball">
-      <name>Thomas Ball</name>
-      <face>pics/tball.jpg</face>
-      <url>http://research.microsoft.com/en-us/people/tball/</url>
-    </person>
-    <person id="blivshits">
-      <name>Benjamin Livshits</name>
-      <url>http://research.microsoft.com/en-us/um/people/livshits/</url>
-    </person>
-    <person id="ysmaragdakis">
-      <name>Yannis Smaragdakis</name>
-      <url>https://yanniss.github.io/</url>
-    </person>
-    <person id="olhotak">
-      <name>Ondřej Lhoták</name>
-      <url>https://plg.uwaterloo.ca/~olhotak/</url>
-    </person>
-    <person id="jamaral">
-      <name>J. Nelson Amaral</name>
-      <url>https://webdocs.cs.ualberta.ca/~amaral/</url>
-    </person>
-    <person id="sguyer">
-      <name>Samuel Z. Guyer</name>
-      <url>http://www.cs.tufts.edu/~sguyer/</url>
-    </person>
-    <person id="ukhedker">
-      <name>Uday P. Khedker</name>
-      <url>https://www.cse.iitb.ac.in/~uday/</url>
-    </person>
-    <person id="amoeller">
-      <name>Anders Møller</name>
-      <url>https://cs.au.dk/~amoeller/</url>
-    </person>
-    <person id="dvardoulakis">
-      <name>Dimitrios Vardoulakis</name>
-      <url>http://dimvar.github.io/</url>
-    </person>
-    <person id="xjin">
-      <name>Xiaoqing Jin</name>
-    </person>
-    <person id="obouissou">
-      <name>Olivier Bouissou</name>
-    </person>
-    <person id="jdaniel">
-      <name>Jakub Daniel</name>
-    </person>
-    <person id="acimatti">
-      <name>Alessandro Cimatti</name>
-      <url>https://es-static.fbk.eu/people/cimatti/</url>
-    </person>
-    <person id="agriggio">
-      <name>Alberto Griggio</name>
-      <url>https://es-static.fbk.eu/people/griggio/</url>
-    </person>
-    <person id="stonetta">
-      <name>Stefano Tonetta</name>
-      <url>https://es-static.fbk.eu/people/tonetta/</url>
-    </person>
-    <person id="fberenger">
-      <name>François Bérenger</name>
-    </person>
-    <person id="comar">
-      <name>Cyrus Omar</name>
-      <url>https://www.cs.cmu.edu/~comar/</url>
-    </person>
-    <person id="ivoysey">
-      <name>Ian Voysey</name>
-    </person>
-    <person id="mhilton">
-      <name>Michael Hilton</name>
-    </person>
-    <person id="jaldrich">
-      <name>Jonathan Aldrich</name>
-      <url>http://www.cs.cmu.edu/~aldrich/</url>
-    </person>
-    <person id="gfainekos">
-      <name>Georgios Fainekos</name>
-      <face>pics/gfainekos.jpg</face>
-      <url>http://www.public.asu.edu/~gfaineko/</url>
-    </person>
-    <person id="bwu">
-      <name>Bo Wu</name>
-      <face>pics/bwu.png</face>
-      <url>https://inside.mines.edu/~bwu/</url>
-    </person>
-    <person id="btouri">
-      <name>Behrouz Touri</name>
-      <url>http://eceweb.ucsd.edu/~btouri/</url>
-    </person>
-    <person id="dbortz">
-      <name>David Bortz</name>
-      <url>http://mathbio.colorado.edu/index.php/D_M_Bortz</url>
-    </person>
-    <person id="dmaahs">
-      <name>David Maahs</name>
-    </person>
-    <person id="lclapp">
-      <name>Lazaro Clapp</name>
-      <url>http://web.stanford.edu/~lazaro/</url>
-    </person>
+
+	<persons>
+		<person id="cernyp" group="faculty-alumni">
+			<name>Pavol Černý</name>
+			<url>http://ecee.colorado.edu/pavol/</url>
+			<face>pics/cerny.jpg</face>
+		</person>
+		<person id="bec" group="faculty">
+			<name>Bor-Yuh Evan Chang</name>
+			<url>http://www.cs.colorado.edu/~bec/</url>
+			<face>pics/chang.jpg</face>
+		</person>
+		<person id="diwan" group="faculty-alumni">
+			<name>Amer Diwan</name>
+			<url>http://www.cs.colorado.edu/~diwan/</url>
+			<face>pics/diwan.jpg</face>
+		</person>
+		<person id="grunwald" group="faculty">
+			<name>Dirk Grunwald</name>
+			<url>http://systems.cs.colorado.edu/people/faculty/dirk-grunwald/</url>
+			<face>pics/grunwald.jpg</face>
+		</person>
+		<person id="hammer" group="faculty-alumni">
+			<name>Matthew A. Hammer</name>
+			<url>http://matthewhammer.org</url>
+			<face>pics/hammer.png</face>
+		</person>
+		<person id="srirams" group="faculty">
+			<name>Sriram Sankaranarayanan</name>
+			<url>http://www.cs.colorado.edu/~srirams/</url>
+			<face>pics/sankaranarayanan.jpg</face>
+		</person>
+		<person id="siek" group="faculty-alumni">
+			<name>Jeremy G. Siek</name>
+			<url>http://ecee.colorado.edu/~siek/</url>
+			<face>pics/siek.jpg</face>
+		</person>
+		<person id="fabio" group="faculty">
+			<name>Fabio Somenzi</name>
+			<url>http://vlsi.colorado.edu/~fabio/</url>
+			<face>pics/somenzi.jpg</face>
+		</person>
+		<person id="atrivedi" group="faculty">
+			<name>Ashutosh Trivedi</name>
+			<url>http://www.cs.colorado.edu/~astr3586/</url>
+			<face>pics/atrivedi.png</face>
+		</person>
+		<person id="gkaki" group="faculty">
+			<name>Gowtham Kaki</name>
+			<url>https://gowthamk.github.io/</url>
+		</person>
+		<person id="mzamani" group="faculty">
+			<name>Majid Zamani</name>
+			<url>https://sites.google.com/site/zamani1362/home</url>
+		</person>
+		<person id="bshapiro" group="faculty">
+			<name>Ben Shapiro</name>
+			<url>http://benshapi.ro/</url>
+		</person>
+		<person id="ddig" group="faculty">
+			<name>Danny Dig</name>
+			<url>https://danny.cs.colorado.edu/</url>
+		</person>
+		<person id="elam" group="scientist-alumni">
+			<name>Edmund S.L. Lam</name>
+			<face>pics/elam.png</face>
+		</person>
+		<person id="abensassi" group="postdoc-alumni">
+			<name>Mohamed Amin Ben Sassi</name>
+			<face>pics/aminbensassi.png</face>
+		</person>
+		<person id="xinchen" group="postdoc-alumni">
+			<name>Xin Chen</name>
+			<face>pics/xinchen.jpg</face>
+			<url>https://www.cs.colorado.edu/~xich8622/</url>
+		</person>
+		<person id="smover" group="postdoc-alumni">
+			<name>Sergio Mover</name>
+			<face>pics/smover.jpg</face>
+			<url>http://www.sergiomover.eu/</url>
+		</person>
+		<person id="yvoronin" group="postdoc-alumni">
+			<name>Yuen-Lam Voronin</name>
+			<url>http://www.cs.colorado.edu/~yuvo9296/</url>
+			<face>pics/yvoronin.jpg</face>
+		</person>
+		<person id="belter" group="phd-alumni">
+			<name>Geoffrey Belter</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="blackshear" group="phd-alumni">
+			<name>Sam Blackshear</name>
+			<url>http://cs.colorado.edu/~sabl4745</url>
+			<face>pics/blackshear.jpg</face>
+		</person>
+		<person id="chakarov" group="phd-alumni">
+		 <name>Aleksandar Chakarov</name>
+		 <url>http://plv.colorado.edu/chakarov.html</url>
+		 <face>pics/chakarov.jpg</face>
+		</person>
+		<person id="ychou" group="phd">
+			<name>Chou Yi</name>
+			<face>pics/ychou.jpg</face>
+		</person>
+		<person id="coughlin" group="phd-alumni">
+			<name>Devin Coughlin</name>
+			<face>pics/coughlin.jpg</face>
+			<url>http://www.cs.colorado.edu/~coughlid</url>
+		</person>
+		<person id="cox" group="phd-alumni">
+			<name>Arlen Cox</name>
+			<url>http://eces.colorado.edu/~coxaj/</url>
+			<face>pics/cox.jpg</face>
+		</person>
+		<person id="jculak" group="phd">
+			<name>Juraj Culak</name>
+			<face>pics/jculak.png</face>
+		</person>
+		<person id="mdooley" group="phd-alumni">
+			<name>Michael Dooley</name>
+			<face>pics/mdooley.jpg</face>
+		</person>
+		<person id="sdutta" group="phd-alumni">
+			<name>Souradeep Dutta</name>
+			<face>pics/sdutta.png</face>
+			<url>https://sites.google.com/site/duttasouradeep39/</url>
+		</person>
+		<person id="frohardt">
+			<name>Robert Frohardt</name>
+			<url>http://www.cs.colorado.edu/~frohardt/</url>
+		</person>
+		<person id="agendreau">
+			<name>Alexandra Gendreau</name>
+			<url>http://www.cs.colorado.edu/~alge6158/</url>
+			<face>pics/gendreau.jpg</face>
+		</person>
+		<person id="gottschlich" group="phd-alumni">
+			<name>Justin E. Gottschlich</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="aguttman" group="ms-alumni">
+			<name>Andrew Guttman</name>
+			<face>pics/aguttman.png</face>
+		</person>
+		<person id="kheadley" group="ms-alumni">
+			<name>Kyle Headley</name>
+			<url>http://kyleheadley.github.io/PHDWebsite/</url>
+			<face>pics/headley.jpg</face>
+		</person>
+		<person id="karlin" group="phd-alumni">
+			<name>Ian Karlin</name>
+			<face>pics/karlin.jpg</face>
+		</person>
+		<person id="ykim" group="ms-alumni">
+			<name>Youngsung Kim</name>
+			<face>pics/ykim.png</face>
+		</person>
+		<person id="tkushner" group="phd-alumni">
+			<name>Taisa Kushner</name>
+			<face>pics/tkushner.png</face>
+		</person>
+		<person id="nlewchenko" group="phd">
+			<name>Nicholas V. Lewchenko</name>
+			<face>pics/nlewchenko.jpg</face>
+			<url>https://www.octalsrc.org/research</url>
+		</person>
+		<person id="tlu" group="phd">
+			<name>Tianhan Lu</name>
+			<url>https://plv.colorado.edu/tianhan/</url>
+			<face>pics/tianhan.jpg</face>
+		</person>
+		<person id="mcclurg" group="phd-alumni">
+			<name>Jedidiah McClurg</name>
+			<url>http://www.jrmcclurg.com/</url>
+			<face>pics/mcclurg.jpg</face>
+		</person>
+		<person id="smeier" group="phd">
+			<name>Shawn Meier</name>
+			<url>http://www.cs.colorado.edu/~shme8881/</url>
+			<face>pics/meier.jpg</face>
+		</person>
+		<person id="miao" group="phd-alumni">
+			<name>Weiyu Miao</name>
+			<face>pics/miao.jpg</face>
+		</person>
+		<person id="dmoon" group="ms-alumni">
+			<name>David Moon</name>
+			<face>pics/moon.jpg</face>
+			<url>https://plv.colorado.edu/dmoon</url>
+		</person>
+		<person id="toddm" group="phd-alumni">
+			<name>Todd Mytkowicz</name>
+			<url>http://research.microsoft.com/en-us/people/toddm/</url>
+			<face>pics/mytkowicz.jpg</face>
+		</person>
+		<person id="mnarasimhamurthy" group="phd">
+			<name>Monal Narasimhamurthy</name>
+			<face>pics/mnarasimhamurthy.jpg</face>
+		</person>
+		<person id="nelson" group="phd-alumni">
+			<name>Thomas Nelson</name>
+			<face>pics/nelson.jpg</face>
+		</person>
+		<person id="sniari" group="phd-alumni">
+			<url>https://sites.google.com/a/colorado.edu/saeid-tizpaz-niari/</url>
+			<name>Saeid Tizpaz Niari</name>
+			<face>pics/tizpaz.jpg</face>
+		</person>
+		<person id="hravanbakhsh" group="phd-alumni">
+			<name>Hadi Ravanbakhsh</name>
+			<face>pics/ravanbakhsh.png</face>
+		</person>
+		<person id="creichen" group="phd-alumni">
+			<name>Christoph Reichenbach</name>
+			<url>http://www.cs.umass.edu/~creichen/</url>
+			<face>pics/reichenbach.png</face>
+		</person>
+		<person id="bstein" group="phd">
+			<name>Benno Stein</name>
+			<url>http://plv.colorado.edu/benno</url>
+			<face>pics/stein.png</face>
+		</person>
+		<person id="wtemple" group="ms-alumni">
+			<name>William Temple</name>
+			<face>pics/wtemple.jpg</face>
+		</person>
+		<person id="vitousek">
+			<name>Michael Vitousek</name>
+			<face>pics/vitousek.jpg</face>
+		</person>
+		<person id="wailes">
+			<name>Chris Wailes</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="jwright" group="ms-alumni">
+			<name>Jared Wright</name>
+			<face>pics/jwright.jpg</face>
+			<url>http://plv.colorado.edu/jwright</url>
+		</person>
+		<person id="hyoon" group="phd">
+			<name>Hansol Yoon</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="yanzhang" group="phd-alumni">
+			<name>Yan Zhang</name>
+			<face>pics/zhang.png</face>
+		</person>
+		<person id="adityaz" group="phd-alumni">
+			<name>Aditya Zutshi</name>
+			<face>pics/zutshi.jpg</face>
+		</person>
+		<person id="tdohmen" group="phd">
+			<name>Taylor Dohmen</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="jmartin" group="phd">
+			<name>Jack Martin</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="jkomp" group="phd">
+			<name>John Komp</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="Mateo Perez" group="phd">
+			<name>Mateo Perez</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="emillican" group="bs">
+			<name>Emily Millican</name>
+			<face>pics/generic-female.png</face>
+		</person>
+		<person id="rholland" group="bsms-alumni">
+			<name>Ross Holland</name>
+			<face>pics/rholland.jpg</face>
+		</person>
+		<person id="khowell" group="bsms-alumni">
+			<name>Kyle Howell</name>
+			<face>pics/khowell.jpg</face>
+		</person>
+		<person id="quan" group="bsms-alumni">
+			<name>Kira Quan</name>
+			<face>pics/quan.jpg</face>
+		</person>
+		<person id="silkensen" group="bsms-alumni">
+			<name>Erik Silkensen</name>
+			<url>http://csel.cs.colorado.edu/~silkense</url>
+			<face>pics/silkensen.jpg</face>
+		</person>
+		<person id="agrawal" group="ms-alumni">
+			<name>Neelam Agrawal</name>
+			<face>pics/generic-female.png</face>
+		</person>
+		<person id="bennett" group="ms-alumni">
+			<name>Huck Bennett</name>
+			<url>http://csel.cs.colorado.edu/~bennethd</url>
+			<face>pics/bennett.jpg</face>
+		</person>
+		<person id="bharadwaj" group="ms-alumni">
+			<name>Shashank Bharadwaj</name>
+			<face>pics/bharadwaj.jpg</face>
+		</person>
+		<person id="rdiwakaran" group="ms-alumni">
+			<name>Ram Das Diwakaran</name>
+			<face>pics/rdiwakaran.jpg</face>
+		</person>
+		<person id="deconomou" group="ms-alumni">
+			<name>Dimitrios Economou</name>
+			<face>pics/deconomou.jpg</face>
+		</person>
+		<person id="njagnik" group="ms-alumni">
+			<name>Nilesh Jagnik</name>
+			<face>pics/njagnik.jpg</face>
+		</person>
+		<person id="skumar" group="ms-alumni">
+			<name>Suhas Akshar Kumar</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="aniket" group="ms-alumni">
+			<name>Aniket Kumar Lata</name>
+			<face>pics/aniket.jpg</face>
+		</person>
+		<person id="clin" group="ms-alumni">
+			<name>Chih-Wei Lin</name>
+			<face>pics/clin.jpg</face>
+		</person>
+		<person id="aphatak" group="ms-alumni">
+			<name>Aniruddha Phatak</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="arajeswari" group="ms-alumni">
+			<name>Athithyaa Panchapakesan Rajeswari</name>
+			<face>pics/athithyaa.jpg</face>
+		</person>
+		<person id="sramani" group="ms-alumni">
+			<name>Santhanakrishnan Ramani</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="vsingh" group="ms-alumni">
+			<name>Vaibhav Singh</name>
+			<face>pics/vsingh.jpg</face>
+		</person>
+		<person id="ksripada" group="ms-alumni">
+			<name>Krishna Chaitanya Sripada</name>
+			<face>pics/ksripada.jpg</face>
+		</person>
+		<person id="tsai" group="ms-alumni">
+			<name>Yi-Fan Tsai</name>
+			<face>pics/tsai.jpg</face>
+		</person>
+		<person id="turner" group="ms-alumni">
+			<name>Jonathan Turner</name>
+			<face>pics/turner.jpg</face>
+		</person>
+		<person id="avillani" group="ms-alumni">
+			<name>Anna Villani</name>
+			<face>pics/avillani.jpg</face>
+		</person>
+		<person id="beal" group="bs-alumni">
+			<name>Alex Beal</name>
+			<face>pics/beal.png</face>
+		</person>
+		<person id="pevans" group="bs-alumni">
+			<name>Parker Evans</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="dfisher" group="bs-alumni">
+			<name>Dakota Fisher</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="agaonkar" group="bs-alumni">
+			<name>Akash Gaonkar</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="givens" group="bs-alumni">
+			<name>Paul Givens</name>
+			<face>pics/pgivens.jpg</face>
+		</person>
+		<person id="lapinski" group="bs-alumni">
+			<name>Nathan Lapinksi</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="jlecavalier" group="bs-alumni">
+			<name>Jay Lecavlier</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="aokeson" group="bs-alumni">
+			<name>Alexandra Okeson</name>
+			<face>pics/generic-female.png</face>
+		</person>
+		<person id="rolsen" group="bs-alumni">
+			<name>Rhys Braginton Pettee Olsen</name>
+			<face>pics/rolsen.jpg</face>
+		</person>
+		<person id="eroncevich" group="bs-alumni">
+			<name>Evan Roncevich</name>
+			<face>pics/eroncevich.png</face>
+		</person>
+		<person id="croberts" group="bs-alumni">
+			<name>Chance Roberts</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="mrussek" group="bs-alumni">
+			<name>Max Russek</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="pzhang" group="bs-alumni">
+			<name>Peilun Zhang</name>
+			<face>pics/pzhang.jpg</face>
+			<url>http://peilun.org</url>
+		</person>
+		<person id="vanderweit" group="bs-alumni">
+			<name>Nicholas Vanderweit</name>
+			<face>pics/vanderweit.jpg</face>
+		</person>
+		<person id="tgrohens" group="gradintern-alumni">
+			<name>Théotime Grohens</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="skeenan" group="ugintern">
+			<name>Sydney Keenan</name>
+			<face>pics/generic-female.png</face>
+		</person>
+		<person id="proux" group="visitor-alumni">
+			<name>Pierre Roux</name>
+			<face>pics/proux.jpg</face>
+			<url>http://perso.ens-lyon.fr/pierre.roux/</url>
+		</person>
+		<person id="vachharajani">
+			<name>Manish Vachharajani</name>
+			<url>http://ecee.colorado.edu/~manishv/</url>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="blomstedt">
+			<name>Joseph Blomstedt</name>
+			<face>pics/generic-male.png</face>
+		</person>
+		<person id="arbrad">
+			<name>Aaron R. Bradley</name>
+			<url>http://ece.colorado.edu/~bradleya/</url>
+		</person>
+		<person id="msridhar">
+			<name>Manu Sridharan</name>
+			<url>http://manu.sridharan.net</url>
+			<face>pics/sridharan.jpg</face>
+		</person>
+		<person id="berdine">
+			<name>Josh Berdine</name>
+			<url>http://research.microsoft.com/en-us/people/jjb</url>
+		</person>
+		<person id="ishtiaq">
+			<name>Samin Ishtiaq</name>
+			<url>http://research.microsoft.com/en-us/people/sishtiaq</url>
+		</person>
+		<person id="jessup">
+			<name>E.R. Jessup</name>
+			<url>http://www.cs.colorado.edu/~jessup/</url>
+		</person>
+		<person id="khooyp">
+			<name>Khoo Yit Phang</name>
+			<url>http://www.cs.umd.edu/~khooyp/</url>
+		</person>
+		<person id="jfoster">
+			<name>Jeffrey S. Foster</name>
+			<url>http://www.cs.umd.edu/~jfoster/</url>
+		</person>
+		<person id="laviron">
+			<name>Vincent Laviron</name>
+		</person>
+		<person id="rival">
+			<name>Xavier Rival</name>
+			<url>http://www.di.ens.fr/~rival/</url>
+		</person>
+		<person id="toubhans">
+			<name>Antoine Toubhans</name>
+			<url>http://www.di.ens.fr/~toubhans/</url>
+		</person>
+		<person id="atiwari">
+			<name>Ashish Tiwari</name>
+			<url>http://csl.sri.com/~tiwari/</url>
+		</person>
+		<person id="colonm">
+			<name>Michael Colon</name>
+		</person>
+		<person id="fp">
+			<name>Frank Pfenning</name>
+			<url>http://www.cs.cmu.edu/~fp/</url>
+		</person>
+		<person id="astump">
+			<name>Aaron Stump</name>
+			<url>http://www.cs.uiowa.edu/~astump/</url>
+		</person>
+		<person id="cesar">
+			<name>César Sánchez</name>
+			<url>http://software.imdea.org/~cesar/</url>
+		</person>
+		<person id="asanchez">
+			<name>Alejandro Sánchez</name>
+			<url>http://software.imdea.org/people/alejandro.sanchez/index.html</url>
+		</person>
+		<person id="swarat">
+			<name>Swarat Chaudhuri</name>
+			<url>http://www.cse.psu.edu/~swarat/</url>
+		</person>
+		<person id="putot">
+			<name>Sylvie Putot</name>
+			<url>http://www.lix.polytechnique.fr/Labo/Sylvie.Putot/</url>
+		</person>
+		<person id="goubault">
+			<name>Eric Goubault</name>
+			<url>http://www.lix.polytechnique.fr/~goubault/</url>
+		</person>
+		<person id="bycook">
+			<name>Byron Cook</name>
+			<url>http://research.microsoft.com/en-us/people/bycook/</url>
+		</person>
+		<person id="wintersteiger">
+			<name>Christoph Wintersteiger</name>
+			<url>http://research.microsoft.com/en-us/people/cwinter</url>
+		</person>
+		<person id="chaowang">
+			<name>Chao Wang</name>
+			<url>http://www.nec-labs.com/~chaowang/</url>
+		</person>
+		<person id="ivancic">
+			<name>Franjo Ivančić</name>
+			<url>http://www.nec-labs.com/~ivancic/</url>
+			<face>pics/ivancic.jpg</face>
+		</person>
+		<person id="burtscher">
+			<name>Martin Burtscher</name>
+			<url>http://www.cs.txstate.edu/~mb92/</url>
+		</person>
+		<person id="bradchen">
+			<name>Brad Chen</name>
+			<url>http://research.google.com/pubs/author37895.html</url>
+		</person>
+		<person id="bodik">
+			<name>Rastislav Bodik</name>
+			<url>http://www.cs.berkeley.edu/~bodik/</url>
+		</person>
+		<person id="bcpierce">
+			<name>Benjamin C. Pierce</name>
+			<url>http://www.cis.upenn.edu/~bcpierce/</url>
+		</person>
+		<person id="birkedal">
+			<name>Lars Birkedal</name>
+			<url>http://www.itu.dk/~birkedal/</url>
+		</person>
+		<person id="mstrout">
+			<name>Michelle Mills Strout</name>
+			<url>http://www.cs.colostate.edu/~mstrout/</url>
+		</person>
+		<person id="ssuryana">
+			<name>Siddharth Suryanarayanan</name>
+			<url>http://www.engr.colostate.edu/~ssuryana/</url>
+		</person>
+		<person id="fainekosg">
+			<name>Georgios Fainekos</name>
+			<url>http://www.public.asu.edu/~gfaineko/</url>
+		</person>
+		<person id="yeshwanta">
+			<name>Yashwant Annapureddy</name>
+		</person>
+		<person id="liuche">
+			<name>Che Liu</name>
+		</person>
+		<person id="amal">
+			<name>Amal Ahmed</name>
+			<url>https://www.cs.indiana.edu/~amal/</url>
+		</person>
+		<person id="robby">
+			<name>Robert Bruce Findler</name>
+			<url>http://www.eecs.northwestern.edu/~robby/</url>
+		</person>
+		<person id="wadler">
+			<name>Philip Wadler</name>
+			<url>http://homepages.inf.ed.ac.uk/wadler/</url>
+		</person>
+		<person id="sweeney">
+			<name>Peter F. Sweeney</name>
+			<url>https://researcher.ibm.com/researcher/view.php?person=us-pfs</url>
+		</person>
+		<person id="hauswirth">
+			<name>Matthias Hauswirth</name>
+			<url>http://www.inf.usi.ch/faculty/hauswirth/</url>
+		</person>
+		<person id="hassanz">
+			<name>Zyad Hassan</name>
+			<url>http://eces.colorado.edu/~hassanz/</url>
+		</person>
+		<person id="schramme">
+			<name>Peter Schrammel</name>
+			<url>http://pop-art.inrialpes.fr/people/schramme/</url>
+		</person>
+		<person id="bjeannet">
+			<name>Bertrand Jeannet</name>
+			<url>http://pop-art.inrialpes.fr/~bjeannet/</url>
+		</person>
+		<person id="thiagu">
+			<name>P.S. Thiagarajan</name>
+			<url>http://www.comp.nus.edu.sg/~thiagu/</url>
+		</person>
+		<person id="tyeh">
+			<name>Tom Yeh</name>
+			<url>http://www.tomyeh.info/</url>
+		</person>
+		<person id="slahiri">
+			<name>Shuvendu Lahiri</name>
+			<url>http://research.microsoft.com/~shuvendu/</url>
+		</person>
+		<person id="sarnat">
+			<name>Jeffrey Sarnat</name>
+			<face>pics/sarnat.jpg</face>
+		</person>
+		<person id="sumitg">
+			<name>Sumit Gulwani</name>
+			<url>http://research.microsoft.com/~sumitg/</url>
+		</person>
+		<person id="tah">
+			<name>Thomas A. Henzinger</name>
+			<url>http://pub.ist.ac.at/~tah/</url>
+		</person>
+		<person id="erikaabraham">
+			<name>Erika Abraham</name>
+		</person>
+		<person id="aradhakrishna">
+			<name>Arjun Radhakrishna</name>
+			<url>http://www.seas.upenn.edu/~arjunrad/</url>
+		</person>
+		<person id="ttarrach">
+			<name>Thorsten Tarrach</name>
+			<url>http://pub.ist.ac.at/~ttarrach/</url>
+		</person>
+		<person id="sumitjha">
+			<name>Sumit K. Jha</name>
+			<url>http://www.eecs.ucf.edu/~jha/</url>
+		</person>
+		<person id="bolz">
+			<name>Carl Friedrich Bolz</name>
+			<url>http://cfbolz.de/</url>
+		</person>
+		<person id="vardi">
+			<name>Moshe Vardi</name>
+			<url>http://www.rice.edu/~vardi</url>
+		</person>
+		<person id="gcastagna">
+			<name>Giuseppe Castagna</name>
+		</person>
+		<person id="hjboehm">
+			<name>Hans-Juergen Boehm</name>
+		</person>
+		<person id="cflanagan">
+			<name>Cormac Flanagan</name>
+		</person>
+		<person id="rgiacobazzi">
+			<name>Roberto Giacobazzi</name>
+		</person>
+		<person id="imastroeni">
+			<name>Isabella Mastroeni</name>
+		</person>
+		<person id="ekowalczyk">
+			<name>Emily Kowalczyk</name>
+		</person>
+		<person id="amemon">
+			<name>Atif Memon</name>
+		</person>
+		<person id="kalharbi">
+			<name>Khalid Alharbi</name>
+		</person>
+		<person id="kmcmillan">
+			<name>Kenneth L. McMillan</name>
+			<url>http://www.kenmcmil.com/</url>
+		</person>
+		<person id="flogozzo">
+			<name>Francesco Logozzo</name>
+			<url>http://research.microsoft.com/en-us/people/logozzo/</url>
+		</person>
+		<person id="mfahndrich">
+			<name>Manuel Fähndrich</name>
+		</person>
+		<person id="eschkufza">
+			<name>Eric Schkufza</name>
+			<url>http://cs.stanford.edu/people/eschkufz/</url>
+			<face>pics/eschkufza.jpg</face>
+		</person>
+		<person id="cdimoulas">
+			<name>Christos Dimoulas</name>
+			<url>http://people.seas.harvard.edu/~chrdimo/</url>
+			<face>pics/cdimoulas.jpg</face>
+		</person>
+		<person id="jdeshmukh">
+			<name>Jyotirmoy V. Deshmukh</name>
+			<url>http://www.cs.utexas.edu/~deshmukh/</url>
+		</person>
+		<person id="jkapinski">
+			<name>James Kapinski</name>
+		</person>
+		<person id="nnarodytska">
+			<name>Nina Narodytska</name>
+			<url>http://www.cse.unsw.edu.au/~ninan/</url>
+			<face>pics/nnarodytska.jpg</face>
+		</person>
+		<person id="lryzhyk">
+			<name>Leonid Ryzhyk</name>
+			<url>http://www.cs.cmu.edu/~ryzhyk/</url>
+			<face>pics/lryzhyk.jpg</face>
+		</person>
+		<person id="lkovacs">
+			<name>Laura Kovács</name>
+			<url>http://www.cse.chalmers.se/~laurako/</url>
+		</person>
+		<person id="jzwirchmayr">
+			<name>Jakob Zwirchmayr</name>
+		</person>
+		<person id="hojjat">
+			<name>Hossein Hojjat</name>
+			<url>http://www.cs.cornell.edu/~hojjat/</url>
+		</person>
+		<person id="jnfoster">
+			<name>Nate Foster</name>
+			<url>http://www.cs.cornell.edu/~jnfoster/</url>
+		</person>
+		<person id="jdennis">
+			<name>John Dennis</name>
+			<url>http://www.cisl.ucar.edu/staff/dennis.html</url>
+		</person>
+		<person id="ralur">
+			<name>Rajeev Alur</name>
+			<url>https://www.cis.upenn.edu/~alur/</url>
+		</person>
+		<person id="eclarke">
+			<name>Edmund M. Clarke</name>
+			<url>http://www.cs.cmu.edu/~emc/</url>
+		</person>
+		<person id="rsamanta">
+			<name>Roopsha Samanta</name>
+			<url>http://pub.ist.ac.at/~rsamanta/</url>
+		</person>
+		<person id="mnaik">
+			<name>Mayur Naik</name>
+			<url>http://pag.gatech.edu/naik/</url>
+			<face>pics/mnaik.jpg</face>
+		</person>
+		<person id="kanderson">
+			<name>Kenneth M. Anderson</name>
+			<url>http://www.cs.colorado.edu/~kena/</url>
+		</person>
+		<person id="jblack">
+			<name>John Black</name>
+			<url>http://www.cs.colorado.edu/~jrblack/</url>
+		</person>
+		<person id="idillig">
+			<name>Işıl Dillig</name>
+			<url>http://www.cs.utexas.edu/~isil/</url>
+		</person>
+		<person id="mheule">
+			<name>Marijn J. H. Heule</name>
+			<url>http://www.cs.utexas.edu/~marijn/</url>
+		</person>
+		<person id="hsipma">
+			<name>Henny Sipma</name>
+		</person>
+		<person id="hli">
+			<name>Huisong Li</name>
+		</person>
+		<person id="jdunfield">
+			<name>Joshua Dunfield</name>
+			<url>http://www.cs.ubc.ca/~joshdunf/</url>
+		</person>
+		<person id="nlabich">
+			<name>Nicholas Labich</name>
+		</person>
+		<person id="mhicks">
+			<name>Michael Hicks</name>
+			<url>http://www.cs.umd.edu/~mwh/</url>
+		</person>
+		<person id="dvanhorn">
+			<name>David Van Horn</name>
+			<url>https://www.cs.umd.edu/~dvanhorn/</url>
+		</person>
+		<person id="tball">
+			<name>Thomas Ball</name>
+			<face>pics/tball.jpg</face>
+			<url>http://research.microsoft.com/en-us/people/tball/</url>
+		</person>
+		<person id="blivshits">
+			<name>Benjamin Livshits</name>
+			<url>http://research.microsoft.com/en-us/um/people/livshits/</url>
+		</person>
+		<person id="ysmaragdakis">
+			<name>Yannis Smaragdakis</name>
+			<url>https://yanniss.github.io/</url>
+		</person>
+		<person id="olhotak">
+			<name>Ondřej Lhoták</name>
+			<url>https://plg.uwaterloo.ca/~olhotak/</url>
+		</person>
+		<person id="jamaral">
+			<name>J. Nelson Amaral</name>
+			<url>https://webdocs.cs.ualberta.ca/~amaral/</url>
+		</person>
+		<person id="sguyer">
+			<name>Samuel Z. Guyer</name>
+			<url>http://www.cs.tufts.edu/~sguyer/</url>
+		</person>
+		<person id="ukhedker">
+			<name>Uday P. Khedker</name>
+			<url>https://www.cse.iitb.ac.in/~uday/</url>
+		</person>
+		<person id="amoeller">
+			<name>Anders Møller</name>
+			<url>https://cs.au.dk/~amoeller/</url>
+		</person>
+		<person id="dvardoulakis">
+			<name>Dimitrios Vardoulakis</name>
+			<url>http://dimvar.github.io/</url>
+		</person>
+		<person id="xjin">
+			<name>Xiaoqing Jin</name>
+		</person>
+		<person id="obouissou">
+			<name>Olivier Bouissou</name>
+		</person>
+		<person id="jdaniel">
+			<name>Jakub Daniel</name>
+		</person>
+		<person id="acimatti">
+			<name>Alessandro Cimatti</name>
+			<url>https://es-static.fbk.eu/people/cimatti/</url>
+		</person>
+		<person id="agriggio">
+			<name>Alberto Griggio</name>
+			<url>https://es-static.fbk.eu/people/griggio/</url>
+		</person>
+		<person id="stonetta">
+			<name>Stefano Tonetta</name>
+			<url>https://es-static.fbk.eu/people/tonetta/</url>
+		</person>
+		<person id="fberenger">
+			<name>François Bérenger</name>
+		</person>
+		<person id="comar">
+			<name>Cyrus Omar</name>
+			<url>https://www.cs.cmu.edu/~comar/</url>
+		</person>
+		<person id="ivoysey">
+			<name>Ian Voysey</name>
+		</person>
+		<person id="mhilton">
+			<name>Michael Hilton</name>
+		</person>
+		<person id="jaldrich">
+			<name>Jonathan Aldrich</name>
+			<url>http://www.cs.cmu.edu/~aldrich/</url>
+		</person>
+		<person id="gfainekos">
+			<name>Georgios Fainekos</name>
+			<face>pics/gfainekos.jpg</face>
+			<url>http://www.public.asu.edu/~gfaineko/</url>
+		</person>
+		<person id="bwu">
+			<name>Bo Wu</name>
+			<face>pics/bwu.png</face>
+			<url>https://inside.mines.edu/~bwu/</url>
+		</person>
+		<person id="btouri">
+			<name>Behrouz Touri</name>
+			<url>http://eceweb.ucsd.edu/~btouri/</url>
+		</person>
+		<person id="dbortz">
+			<name>David Bortz</name>
+			<url>http://mathbio.colorado.edu/index.php/D_M_Bortz</url>
+		</person>
+		<person id="dmaahs">
+			<name>David Maahs</name>
+		</person>
+		<person id="lclapp">
+			<name>Lazaro Clapp</name>
+			<url>http://web.stanford.edu/~lazaro/</url>
+		</person>
     <person id="bnielsen">
-      <name>Benjamin Barslev Nielsen</name>
-      <url></url>
-    </person>
-    <person id="efrew">
-      <name>Eric Frew</name>
-      <url></url>
-    </person>
-  </persons>
+			<name>Benjamin Barslev Nielsen</name>
+			<url></url>
+		</person>
+		<person id="efrew">
+			<name>Eric Frew</name>
+			<url></url>
+		</person>
+		<person id="nshanmuganathan" group="ms">
+		        <name>Nagarajan Shanmuganathan</name>
+			<face>pics/generic-male.png</face>
+                </person>
+		<person id="vmurali" group="ms">
+		        <name>Vishnu Murali</name>
+			<face>pics/generic-male.png</face>
+                </person>
+	</persons>
 
   <events>
     <series id="popl">
