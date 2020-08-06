@@ -5535,18 +5535,22 @@ an application example.</p>
 		<person id="gkaki" group="faculty">
 			<name>Gowtham Kaki</name>
 			<url>https://gowthamk.github.io/</url>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="mzamani" group="faculty">
 			<name>Majid Zamani</name>
 			<url>https://sites.google.com/site/zamani1362/home</url>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="bshapiro" group="faculty">
 			<name>Ben Shapiro</name>
 			<url>http://benshapi.ro/</url>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="ddig" group="faculty">
 			<name>Danny Dig</name>
 			<url>https://danny.cs.colorado.edu/</url>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="elam" group="scientist-alumni">
 			<name>Edmund S.L. Lam</name>
