@@ -5748,7 +5748,8 @@ an application example.</p>
 		</person>
 		<person id="hyoon" group="phd">
 			<name>Hansol Yoon</name>
-			<face>pics/generic-male.png</face>
+			<face>pics/hyoon.png</face>
+                        <url>https://hansolyoon.github.io/</url>
 		</person>
 		<person id="yanzhang" group="phd-alumni">
 			<name>Yan Zhang</name>
