@@ -5497,6 +5497,11 @@ an application example.</p>
 			<url>http://www.cs.colorado.edu/~bec/</url>
 			<face>pics/chang.jpg</face>
 		</person>
+		<person id="ddig" group="faculty">
+			<name>Danny Dig</name>
+			<url>https://danny.cs.colorado.edu/</url>
+			<face>pics/generic-male.png</face>
+		</person>
 		<person id="diwan" group="faculty-alumni">
 			<name>Amer Diwan</name>
 			<url>http://www.cs.colorado.edu/~diwan/</url>
@@ -5507,6 +5512,11 @@ an application example.</p>
 			<url>http://systems.cs.colorado.edu/people/faculty/dirk-grunwald/</url>
 			<face>pics/grunwald.jpg</face>
 		</person>
+		<person id="gkaki" group="faculty">
+			<name>Gowtham Kaki</name>
+			<url>https://gowthamk.github.io/</url>
+			<face>pics/generic-male.png</face>
+		</person>
 		<person id="hammer" group="faculty-alumni">
 			<name>Matthew A. Hammer</name>
 			<url>http://matthewhammer.org</url>
@@ -5516,6 +5526,11 @@ an application example.</p>
 			<name>Sriram Sankaranarayanan</name>
 			<url>http://www.cs.colorado.edu/~srirams/</url>
 			<face>pics/sankaranarayanan.jpg</face>
+		</person>
+		<person id="bshapiro" group="faculty">
+			<name>Ben Shapiro</name>
+			<url>http://benshapi.ro/</url>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="siek" group="faculty-alumni">
 			<name>Jeremy G. Siek</name>
@@ -5532,25 +5547,10 @@ an application example.</p>
 			<url>http://www.cs.colorado.edu/~astr3586/</url>
 			<face>pics/atrivedi.png</face>
 		</person>
-		<person id="gkaki" group="faculty">
-			<name>Gowtham Kaki</name>
-			<url>https://gowthamk.github.io/</url>
-			<face>pics/generic-male.png</face>
-		</person>
 		<person id="mzamani" group="faculty">
 			<name>Majid Zamani</name>
 			<url>https://sites.google.com/site/zamani1362/home</url>
 			<face>pics/mzamani.png</face>
-		</person>
-		<person id="bshapiro" group="faculty">
-			<name>Ben Shapiro</name>
-			<url>http://benshapi.ro/</url>
-			<face>pics/generic-male.png</face>
-		</person>
-		<person id="ddig" group="faculty">
-			<name>Danny Dig</name>
-			<url>https://danny.cs.colorado.edu/</url>
-			<face>pics/generic-male.png</face>
 		</person>
 		<person id="elam" group="scientist-alumni">
 			<name>Edmund S.L. Lam</name>
@@ -5607,6 +5607,11 @@ an application example.</p>
 			<name>Juraj Culak</name>
 			<face>pics/jculak.png</face>
 		</person>
+		<person id="tdohmen" group="phd">
+			<name>Taylor Dohmen</name>
+			<face>pics/generic-male.png</face>
+		</person>
+
 		<person id="mdooley" group="phd-alumni">
 			<name>Michael Dooley</name>
 			<face>pics/mdooley.jpg</face>
@@ -5646,6 +5651,11 @@ an application example.</p>
 			<name>Youngsung Kim</name>
 			<face>pics/ykim.png</face>
 		</person>
+		<person id="jkomp" group="phd">
+			<name>John Komp</name>
+			<face>pics/generic-male.png</face>
+		</person>
+
 		<person id="tkushner" group="phd-alumni">
 			<name>Taisa Kushner</name>
 			<face>pics/tkushner.png</face>
@@ -5659,6 +5669,10 @@ an application example.</p>
 			<name>Tianhan Lu</name>
 			<url>https://plv.colorado.edu/tianhan/</url>
 			<face>pics/tianhan.jpg</face>
+		</person>
+		<person id="jmartin" group="phd">
+			<name>Jack Martin</name>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="mcclurg" group="phd-alumni">
 			<name>Jedidiah McClurg</name>
@@ -5696,6 +5710,10 @@ an application example.</p>
 			<url>https://sites.google.com/a/colorado.edu/saeid-tizpaz-niari/</url>
 			<name>Saeid Tizpaz Niari</name>
 			<face>pics/tizpaz.jpg</face>
+		</person>
+		<person id="Mateo Perez" group="phd">
+			<name>Mateo Perez</name>
+			<face>pics/generic-male.png</face>
 		</person>
 		<person id="hravanbakhsh" group="phd-alumni">
 			<name>Hadi Ravanbakhsh</name>
@@ -5739,22 +5757,6 @@ an application example.</p>
 		<person id="adityaz" group="phd-alumni">
 			<name>Aditya Zutshi</name>
 			<face>pics/zutshi.jpg</face>
-		</person>
-		<person id="tdohmen" group="phd">
-			<name>Taylor Dohmen</name>
-			<face>pics/generic-male.png</face>
-		</person>
-		<person id="jmartin" group="phd">
-			<name>Jack Martin</name>
-			<face>pics/generic-male.png</face>
-		</person>
-		<person id="jkomp" group="phd">
-			<name>John Komp</name>
-			<face>pics/generic-male.png</face>
-		</person>
-		<person id="Mateo Perez" group="phd">
-			<name>Mateo Perez</name>
-			<face>pics/generic-male.png</face>
 		</person>
 		<person id="emillican" group="bs">
 			<name>Emily Millican</name>
@@ -5814,6 +5816,10 @@ an application example.</p>
 			<name>Chih-Wei Lin</name>
 			<face>pics/clin.jpg</face>
 		</person>
+		<person id="vmurali" group="ms">
+		        <name>Vishnu Murali</name>
+			<face>pics/generic-male.png</face>
+                </person>
 		<person id="aphatak" group="ms-alumni">
 			<name>Aniruddha Phatak</name>
 			<face>pics/generic-male.png</face>
@@ -5830,6 +5836,11 @@ an application example.</p>
 			<name>Vaibhav Singh</name>
 			<face>pics/vsingh.jpg</face>
 		</person>
+		<person id="nshanmuganathan" group="ms">
+		        <name>Nagarajan Shanmuganathan</name>
+			<face>pics/generic-male.png</face>
+                </person>
+
 		<person id="ksripada" group="ms-alumni">
 			<name>Krishna Chaitanya Sripada</name>
 			<face>pics/ksripada.jpg</face>
@@ -6377,14 +6388,6 @@ an application example.</p>
 			<name>Eric Frew</name>
 			<url></url>
 		</person>
-		<person id="nshanmuganathan" group="ms">
-		        <name>Nagarajan Shanmuganathan</name>
-			<face>pics/generic-male.png</face>
-                </person>
-		<person id="vmurali" group="ms">
-		        <name>Vishnu Murali</name>
-			<face>pics/generic-male.png</face>
-                </person>
 	</persons>
 
   <events>
