@@ -75,14 +75,12 @@ name="html" />
     </header>
     <content>
       <xsl:apply-templates select="cv/news-list" mode="display-recent" />
-      <div class="contentbox" style="width: 48%; float:right; height: 12ex;">
-        <a href="http://www.colorado.edu/cs/apply/graduate-admissions"><b>Ph.D. Positions</b></a>.
-        We are looking for strong students to join our diverse and dynamic group in programming languages and verification. Application deadline is December 15, 2019 (or November 15, 2019 to potentially waive application fees).
-      </div>
-      <div class="contentbox" style="width: 48%; height: 12ex;">
-        <a href="news.html#faculty-2019"><b>Faculty Positions</b></a>.
-        We are hiring for a tenure-track position in <em>trustworthy software</em>, as well as for instructor positions.
-        Application deadline for the tenure-track position is December 1, 2019.
+      <div class="contentbox" style="width: 99%; float:right; height: 6ex;">
+	<a
+	href="http://www.colorado.edu/cs/apply/graduate-admissions"><b>Ph.D. Positions</b></a>.
+	We are looking for strong students to join our diverse and
+	dynamic group in programming languages and verification.
+	Application deadline is December 15, 2020.
       </div>
  <!--
    <div class="contentbox" style="width: 48%; height: 12ex;">
@@ -133,10 +131,12 @@ name="html" />
       </xsl:for-each>
       </xsl:if>
 
+      <xsl:if test="cv/persons/person[@group='postdoc']">
       <h3>Post-Docs</h3>
       <xsl:for-each select="cv/persons/person[@group='postdoc']">
   <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
+      </xsl:if>
 
       <h3>Students</h3>
       <h4>PhD</h4>
