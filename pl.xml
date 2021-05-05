@@ -3122,6 +3122,26 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="dai-pldi21">
+      <title>Demanded Abstract Interpretation</title>
+      <authors>
+	<author person="bstein" student="y"/>
+	<author person="bec"/>
+	<author person="msridhar"/>
+      </authors>
+      <urls>
+	<url name="pdf">papers/dai-pldi21.pdf</url>
+      </urls>
+      <howpub>
+	<proceedings event="pldi21" />
+      </howpub>
+      <pages></pages>
+      <year>2021</year>
+      <abstract>
+	<p>We consider the problem of making expressive static analyzers interactive. Formal static analysis is seeing increasingly widespread adoption as a tool for verification and bug-finding, but even with powerful cloud infrastructure it can take minutes or hours to get batch analysis results after a code change. While existing techniques offer some demand-driven or incremental aspects for certain classes of analysis, the fundamental challenge we tackle is doing both for arbitrary abstract interpreters. </p>
+	<p>Our technique, demanded abstract interpretation, lifts program syntax and analysis state to a dynamically evolving graph structure, in which program edits, client-issued queries, and evaluation of abstract semantics are all treated uniformly. The key difficulty addressed by our approach is the application of general incremental computation techniques to the complex, cyclic dependency structure induced by abstract interpretation of loops with widening operators. We prove that desirable abstract interpretation meta-properties, including soundness and termination, are preserved in our approach, and that demanded analysis results are equal to those computed by a batch abstract interpretation. Experimental results suggest promise for a prototype demanded abstract interpretation framework: by combining incremental and demand-driven techniques, our framework consistently delivers analysis results at interactive speeds, answering 95% of queries within 1.2 seconds.</p>
+      </abstract>
+    </pub>
     <pub id="tajsvr-oopsla19">
       <title>Static Analysis with Demand-Driven Value Refinement</title>
       <authors>
@@ -6474,6 +6494,10 @@ an application example.</p>
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="pldi21">
+        <date>2021-06</date>
+        <location>Virtual</location>
+      </event>
       <event id="pldi20">
         <date>2020-06</date>
         <location>London, UK</location>
