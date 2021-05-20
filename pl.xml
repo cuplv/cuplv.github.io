@@ -3142,6 +3142,33 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
 	<p>Our technique, demanded abstract interpretation, lifts program syntax and analysis state to a dynamically evolving graph structure, in which program edits, client-issued queries, and evaluation of abstract semantics are all treated uniformly. The key difficulty addressed by our approach is the application of general incremental computation techniques to the complex, cyclic dependency structure induced by abstract interpretation of loops with widening operators. We prove that desirable abstract interpretation meta-properties, including soundness and termination, are preserved in our approach, and that demanded analysis results are equal to those computed by a batch abstract interpretation. Experimental results suggest promise for a prototype demanded abstract interpretation framework: by combining incremental and demand-driven techniques, our framework consistently delivers analysis results at interactive speeds, answering 95% of queries within 1.2 seconds.</p>
       </abstract>
     </pub>
+    <pub id="shapeanalysis-fnt20">
+      <title>Shape Analysis</title>
+      <authors>
+        <author person="bec"/>
+        <author person="cdragoi"/>
+        <author person="rmanevich"/>
+        <author person="nrinetzky"/>
+        <author person="rival"/>
+      </authors>
+      <urls>
+      </urls>
+      <pages>1-158</pages>
+      <date>2020-10</date>
+      <volume>6</volume>
+      <number>1-2</number>
+      <doi>10.1561/2500000037</doi>
+      <ee>http://dx.doi.org/10.1561/2500000037</ee>
+      <howpub>
+        <issue journal="ftpl" />
+      </howpub>
+      <abstract>
+        <p>The computation of semantic information about the behavior of pointer-manipulating programs has been a long standing issue, attacked with diverse and numerous techniques and tools for over 50 years. As usual in automatic verification of infinite-state programs, properties of interest are not computable. Thus, static analyses can only be conservative, leading different analyses to make different tradeoffs between the intricacies of the properties they detect, the precision of their inference procedure and analysis, and the scalability of the analysis.</p>
+        <p>In this context,shape analyses focus on inferring highly complex properties of heap-manipulating programs. These programs utilize data structures which are implemented using an unbounded number of dynamically- (heap-) allocated memory cells interconnected via mutable pointer-links. Because shape analyses have to reason about data structures whose size is not bounded by a fixed, known value, they cannot track explicitly the particular properties of every concrete memory cell which the program uses, as done, e.g., by analysis of variable-manipulating non-recursive programs. Instead, shape analysessummarize memory regions by letting one piece of abstract information, calledsummary predicate, describe several concrete cells. The need to cope with data structures of unbounded sizes is a challenge shape analyses share with static analyzers of array-manipulating programs. However, while the size of an array may change in different executions, its layout (i.e., its dimensions and the way its contents are spread over the memory) is fixed. In contrast, the layout of a pointer-linked data structure, colloquially referred to as itsshape, may evolve dynamically during the program execution and a memory cell can be part of different data structures at different points in time. As a result, shape analyses need to let the denotation of summary predicates in terms of the constituents and layouts of the memory regions which they represent evolve during the analysis as well.</p>
+        <p>In this survey, we consider that shape analyses are characterized and defined by the presence of summary predicates describing a set of concrete memory cells that varies during the course of the analysis. We use this characterization as a means for distinguishing shape analyses as a particular class of pointer analyses. We show that many “standard” pointer analyses do not fit the aforementioned description, while many analyses relying on very different mathematical foundations, e.g., shape graphs, three-valued logic, and separation logic, do.</p>
+        <p>The ambition of this survey is to provide a comprehensive introduction to the field of shape analysis, and to present the foundation of this topic, in a single document that is accessible to readers who are not familiar with it. To do so, we characterize the essence of shape analysis compared to more classical pointer analyses. We supply the intuition underlying the abstractions commonly used in shape analysis and the algorithms that allow to statically compute intricate semantic properties. Then, we cover the main families of shape analysis abstraction and algorithms, highlight the similarities between them, and also characterize the main differences between the most common approaches. Last, we review a few other static analysis works (such as array abstractions, dictionary abstractions and interprocedural analyses) that were influenced by the ideas of shape analysis, so as to demonstrate the impact of the field.</p>
+      </abstract>
+    </pub>
     <pub id="tajsvr-oopsla19">
       <title>Static Analysis with Demand-Driven Value Refinement</title>
       <authors>
@@ -3155,9 +3182,10 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="artifact">https://www.brics.dk/TAJS/VR/</url>
       </urls>
       <howpub>
-        <proceedings event="oopsla19" />
+        <issue journal="pacmpl" event="oopsla19" />
+        <!--<proceedings event="oopsla19" />-->
       </howpub>
-      <pages></pages>
+      <pages>140:1-140:29</pages>
       <year>2019</year>
       <abstract>
         <p>Static analysis tools for JavaScript must strike a delicate balance, achieving the level of precision required by the most complex features of target programs without incurring prohibitively high analysis time. For example, reasoning about dynamic property accesses sometimes requires precise relational information connecting the object, the dynamically-computed property name, and the property value. Even a minor precision loss at such critical program locations can result in a proliferation of spurious dataflow that renders the analysis results useless.</p>
@@ -3262,7 +3290,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="ecoop19" />
       </howpub>
-      <pages></pages>
+      <pages>1:1-1:29</pages>
       <year>2019</year>
       <abstract>
         Developing interactive applications (apps) against event-driven software frameworks such as Android is notoriously difficult. To create apps that behave as expected, developers must follow complex and often implicit asynchronous programming protocols. Such protocols intertwine the proper registering of callbacks to receive control from the framework with appropriate application-programming interface (API) calls that in turn affect the set of possible future callbacks. An app violates the protocol when, for example, it calls a particular API method in a state of the framework where such a call is invalid. What makes automated reasoning hard in this domain is largely what makes programming apps against such frameworks hard: the specification of the protocol is unclear, and the control flow is complex, asynchronous, and higher-order. In this paper, we tackle the problem of specifying and modeling event-driven application-programming protocols. In particular, we formalize a core meta-model that captures the dialogue between event-driven frameworks and application callbacks. Based on this meta-model, we define a language called lifestate that permits precise and formal descriptions of application-programming protocols and the callback control ﬂow imposed by the event-driven framework. Lifestate uniﬁes modeling what app callbacks can expect of the framework with specifying rules the app must respect when calling into the framework. In this way, we eﬀectively combine lifecycle constraints and typestate rules. To evaluate the effectiveness of lifestate modeling, we provide a dynamic verification algorithm that takes as input a trace of execution of an app and a lifestate protocol specification to either produce a trace witnessing a protocol violation or a proof that no such trace is realizable.
@@ -6405,6 +6433,18 @@ an application example.</p>
       <name>Eric Frew</name>
       <url></url>
     </person>
+    <person id="cdragoi">
+      <name>Cezara Drăgoi</name>
+      <url></url>
+    </person>
+    <person id="rmanevich">
+      <name>Roman Manevich</name>
+      <url></url>
+    </person>
+    <person id="nrinetzky">
+      <name>Noam Rinetzky</name>
+      <url></url>
+    </person>
   </persons>
 
   <events>
@@ -6500,7 +6540,6 @@ an application example.</p>
       </event>
       <event id="pldi20">
         <date>2020-06</date>
-        <location>London, UK</location>
       </event>
       <event id="pldi17">
         <date>2017-06</date>
@@ -6561,11 +6600,15 @@ an application example.</p>
     <series id="oopsla">
       <name>Object Oriented Programming Systems Languages and Applications</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
-      <issue journal="sigplannot"/>
       <event id="oopsla19">
         <date>2019-10</date>
         <location>Athens, Greece</location>
         <url>http://2019.splashcon.org/</url>
+        <acceptance>73/201</acceptance>
+        <!--<acceptanceRate>36.3%</acceptanceRate>-->
+        <volume>3</volume>
+        <number>OOPSLA</number>
+        <issue journal="pacmpl"/>
       </event>
       <event id="oopsla15">
         <date>2015-10</date>
@@ -6575,6 +6618,7 @@ an application example.</p>
         <acceptanceRate>25.2%</acceptanceRate>
         <volume>50</volume>
         <number>10</number>
+        <issue journal="sigplannot"/>
       </event>
     </series>
     <series id="icfp">
@@ -6610,6 +6654,11 @@ an application example.</p>
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="cav21">
+        <date>2021-07</date>
+        <location>Los Angeles, California, USA</location>
+        <url>http://i-cav.org/2021/</url>
+      </event>
       <event id="cav19">
         <date>2019-07</date>
         <location>New York City, New York, USA</location>
@@ -6654,12 +6703,15 @@ an application example.</p>
     <series id="ecoop">
       <name>Object-Oriented Programming</name>
       <longPrefix>European Conference on</longPrefix>
-      <issue journal="lncs"/>
       <event id="ecoop19">
         <date>2019-07</date>
         <location>London, UK</location>
         <nth>Thirty-First</nth>
         <url>https://2019.ecoop.org/</url>
+        <acceptance>19/60</acceptance>
+        <acceptanceRate>31.7%</acceptanceRate>
+        <volume>134</volume>
+        <issue journal="lipics"/>
       </event>
       <event id="ecoop17">
         <date>2017-06</date>
@@ -6676,6 +6728,7 @@ an application example.</p>
         <editors>
           <author person="gcastagna"/>
         </editors>
+        <issue journal="lncs"/>
       </event>
     </series>
     <series id="esop">
@@ -6745,6 +6798,11 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas20">
+        <date>2020-11</date>
+        <nth>Twenty-Seventh</nth>
+        <url>https://conf.researchr.org/home/sas-2020</url>
+      </event>
       <event id="sas19">
         <date>2019-10</date>
         <location>Porto, Portugal</location>
@@ -7363,6 +7421,10 @@ an application example.</p>
   </events>
 
   <journals>
+    <journal id="pacmpl">
+      <name>Proceedings of the ACM on Programming Languages</name>
+      <short>PACMPL</short>
+    </journal>
     <journal id="sigplannot">
       <name>ACM SIGPLAN Notices</name>
       <short>ACM SIGPLAN Notices</short>
@@ -7371,6 +7433,10 @@ an application example.</p>
       <name>Lecture Notes in Computer Science</name>
       <short>Lect Notes Comput Sc</short>
     </journal>
+    <journal id="lipics">
+      <name>Leibniz International Proceedings in Informatics</name>
+      <short>LIPIcs</short>
+    </journal>
     <journal id="entcs">
       <name>Electronic Notes in Theoretical Computer Science</name>
       <short>Electr Notes Theor Comput Sc</short>
@@ -7378,6 +7444,10 @@ an application example.</p>
     <journal id="cacm">
       <name>Communications of the ACM (CACM)</name>
       <short>Commun. ACM</short>
+    </journal>
+    <journal id="ftpl">
+      <name>Foundations and Trends in Programming Languages (FTPL)</name>
+      <short>Foundations and Trends in Programming Languages</short>
     </journal>
     <journal id="sttt">
       <name>International Journal on Software Tools for Technology Transfer (STTT)</name>
