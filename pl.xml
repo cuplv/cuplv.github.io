@@ -6,6 +6,35 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2021.07.05" id="paper-sas21">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="brbo-sas21" mode="authors" /> accepted to
+        <ref table="event" key="sas21" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="tlu" />,
+        <ref table="person" key="bec" />, and
+        <ref table="person" key="atrivedi" />,
+        have had a paper "<ref table="pub" key="brbo-sas21" />" accepted for presentation at
+        <ref table="event" key="sas21" /> in October.
+      </news-detail>
+    </news>
+    <news date="2021.02.25" id="paper-pldi21">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="dai-pldi21" mode="authors" /> accepted to
+        <ref table="event" key="pldi21" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="bstein" /> and
+        <ref table="person" key="bec" /> with collaborators
+        have had a paper "<ref table="pub" key="dai-pldi21" />" accepted for presentation at
+        <ref table="event" key="pldi21" /> in June.
+      </news-detail>
+    </news>
     <news date="2019.11.01" id="faculty-2019">
       <news-snippet>
         <a href="news.html#faculty-2019">Tenure-track and instructor openings</a> in <a href="https://www.colorado.edu/cs/">CS</a>.
@@ -3122,24 +3151,43 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
-    <pub id="dai-pldi21">
-      <title>Demanded Abstract Interpretation</title>
+    <pub id="brbo-sas21">
+      <title>Selectively-Amortized Resource Bounding</title>
       <authors>
-	<author person="bstein" student="y"/>
-	<author person="bec"/>
-	<author person="msridhar"/>
+        <author person="tlu" student="y"/>
+        <author person="bec"/>
+        <author person="atrivedi"/>
       </authors>
       <urls>
-	<url name="pdf">papers/dai-pldi21.pdf</url>
+        <url name="pdf">papers/brbo-sas21.pdf</url>
       </urls>
       <howpub>
-	<proceedings event="pldi21" />
+        <proceedings event="sas21" />
       </howpub>
       <pages></pages>
       <year>2021</year>
       <abstract>
-	<p>We consider the problem of making expressive static analyzers interactive. Formal static analysis is seeing increasingly widespread adoption as a tool for verification and bug-finding, but even with powerful cloud infrastructure it can take minutes or hours to get batch analysis results after a code change. While existing techniques offer some demand-driven or incremental aspects for certain classes of analysis, the fundamental challenge we tackle is doing both for arbitrary abstract interpreters. </p>
-	<p>Our technique, demanded abstract interpretation, lifts program syntax and analysis state to a dynamically evolving graph structure, in which program edits, client-issued queries, and evaluation of abstract semantics are all treated uniformly. The key difficulty addressed by our approach is the application of general incremental computation techniques to the complex, cyclic dependency structure induced by abstract interpretation of loops with widening operators. We prove that desirable abstract interpretation meta-properties, including soundness and termination, are preserved in our approach, and that demanded analysis results are equal to those computed by a batch abstract interpretation. Experimental results suggest promise for a prototype demanded abstract interpretation framework: by combining incremental and demand-driven techniques, our framework consistently delivers analysis results at interactive speeds, answering 95% of queries within 1.2 seconds.</p>
+        <p>We consider the problem of automatically proving resource bounds. That is, we study how to prove that an integer-valued resource variable is bounded by a given program expression. Automatic resource-bound analysis has recently received significant attention because of a number of important applications (e.g., detecting performance bugs, preventing algorithmic-complexity attacks, identifying side-channel vulnerabilities), where the focus has often been on developing precise amortized reasoning techniques to infer the most exact resource usage. While such innovations remain critical, we observe that fully precise amortization is not always necessary to prove a bound of interest. And in fact, by amortizing <em>selectively</em>, the needed supporting invariants can be simpler, making the invariant inference task more feasible and predictable. We present a framework for selectively-amortized analysis that mixes worst-case and amortized reasoning via a property decomposition and a program transformation. We show that proving bounds in any such decomposition yields a sound resource bound in the original program, and we give an algorithm for selecting a reasonable decomposition.</p>
+      </abstract>
+    </pub>
+    <pub id="dai-pldi21">
+      <title>Demanded Abstract Interpretation</title>
+      <authors>
+        <author person="bstein" student="y"/>
+        <author person="bec"/>
+        <author person="msridhar"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/dai-pldi21.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="pldi21" />
+      </howpub>
+      <pages></pages>
+      <year>2021</year>
+      <abstract>
+        <p>We consider the problem of making expressive static analyzers interactive. Formal static analysis is seeing increasingly widespread adoption as a tool for verification and bug-finding, but even with powerful cloud infrastructure it can take minutes or hours to get batch analysis results after a code change. While existing techniques offer some demand-driven or incremental aspects for certain classes of analysis, the fundamental challenge we tackle is doing both for arbitrary abstract interpreters. </p>
+        <p>Our technique, demanded abstract interpretation, lifts program syntax and analysis state to a dynamically evolving graph structure, in which program edits, client-issued queries, and evaluation of abstract semantics are all treated uniformly. The key difficulty addressed by our approach is the application of general incremental computation techniques to the complex, cyclic dependency structure induced by abstract interpretation of loops with widening operators. We prove that desirable abstract interpretation meta-properties, including soundness and termination, are preserved in our approach, and that demanded analysis results are equal to those computed by a batch abstract interpretation. Experimental results suggest promise for a prototype demanded abstract interpretation framework: by combining incremental and demand-driven techniques, our framework consistently delivers analysis results at interactive speeds, answering 95% of queries within 1.2 seconds.</p>
       </abstract>
     </pub>
     <pub id="shapeanalysis-fnt20">
@@ -6537,9 +6585,11 @@ an application example.</p>
       <event id="pldi21">
         <date>2021-06</date>
         <location>Virtual</location>
+        <url>https://conf.researchr.org/home/pldi-2021</url>
       </event>
       <event id="pldi20">
         <date>2020-06</date>
+        <location>Virtual</location>
       </event>
       <event id="pldi17">
         <date>2017-06</date>
@@ -6798,6 +6848,12 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas21">
+        <date>2021-10</date>
+        <location>Chicago, Illinois, USA</location>
+        <nth>Twenty-Eighth</nth>
+        <url>https://conf.researchr.org/home/sas-2021</url>
+      </event>
       <event id="sas20">
         <date>2020-11</date>
         <nth>Twenty-Seventh</nth>
