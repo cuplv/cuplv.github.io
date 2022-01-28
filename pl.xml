@@ -21,6 +21,21 @@
         <ref table="event" key="sas21" /> in October.
       </news-detail>
     </news>
+    <news date="2021.04.18" id="paper-cav21">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="bmdp-cav21" mode="authors" /> accepted to
+        <ref table="event" key="cav21" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="mperez" />,
+        <ref table="person" key="fabio" />, and
+        <ref table="person" key="atrivedi" /> with collaborators,
+        have had a paper "<ref table="pub" key="bmdp-cav21" />" accepted for presentation at
+        <ref table="event" key="cav21" /> in July.
+      </news-detail>
+    </news>
     <news date="2021.02.25" id="paper-pldi21">
       <news-snippet>
         Paper by
@@ -3165,6 +3180,28 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <proceedings event="sas21" />
       </howpub>
       <pages></pages>
+      <year>2021</year>
+      <abstract>
+        <p>We consider the problem of automatically proving resource bounds. That is, we study how to prove that an integer-valued resource variable is bounded by a given program expression. Automatic resource-bound analysis has recently received significant attention because of a number of important applications (e.g., detecting performance bugs, preventing algorithmic-complexity attacks, identifying side-channel vulnerabilities), where the focus has often been on developing precise amortized reasoning techniques to infer the most exact resource usage. While such innovations remain critical, we observe that fully precise amortization is not always necessary to prove a bound of interest. And in fact, by amortizing <em>selectively</em>, the needed supporting invariants can be simpler, making the invariant inference task more feasible and predictable. We present a framework for selectively-amortized analysis that mixes worst-case and amortized reasoning via a property decomposition and a program transformation. We show that proving bounds in any such decomposition yields a sound resource bound in the original program, and we give an algorithm for selecting a reasonable decomposition.</p>
+      </abstract>
+    </pub>
+    <pub id="bmdp-cav21">
+      <title>Model-Free Reinforcement Learning for Branching Markov Decision Processes.</title>
+      <authors>
+        <author person="ehahn"/>
+        <author person="mperez"/>
+        <author person="sschewe"/>
+        <author person="fabio"/>
+        <author person="atrivedi"/>
+        <author person="dwojtczak"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/bmdp-cav21.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="cav21" />
+      </howpub>
+      <pages>651-673</pages>
       <year>2021</year>
       <abstract>
         <p>We consider the problem of automatically proving resource bounds. That is, we study how to prove that an integer-valued resource variable is bounded by a given program expression. Automatic resource-bound analysis has recently received significant attention because of a number of important applications (e.g., detecting performance bugs, preventing algorithmic-complexity attacks, identifying side-channel vulnerabilities), where the focus has often been on developing precise amortized reasoning techniques to infer the most exact resource usage. While such innovations remain critical, we observe that fully precise amortization is not always necessary to prove a bound of interest. And in fact, by amortizing <em>selectively</em>, the needed supporting invariants can be simpler, making the invariant inference task more feasible and predictable. We present a framework for selectively-amortized analysis that mixes worst-case and amortized reasoning via a property decomposition and a program transformation. We show that proving bounds in any such decomposition yields a sound resource bound in the original program, and we give an algorithm for selecting a reasonable decomposition.</p>
@@ -6727,7 +6764,7 @@ an application example.</p>
       <issue journal="lncs"/>
       <event id="cav21">
         <date>2021-07</date>
-        <location>Los Angeles, California, USA</location>
+        <location>Virtual</location>
         <url>http://i-cav.org/2021/</url>
       </event>
       <event id="cav19">
