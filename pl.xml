@@ -6481,6 +6481,26 @@ an application example.</p>
       <name>Eric Frew</name>
       <url>https://www.colorado.edu/faculty/frew/</url>
     </person>
+    <person id="cdragoi">
+      <name>Cezara Drăgoi</name>
+      <url>https://www.di.ens.fr/~cezarad/</url>
+    </person>
+    <person id="rmanevich">
+      <name>Roman Manevich</name>
+      <url>https://sites.google.com/view/roman-manevich</url>
+    </person>
+    <person id="nrinetzky">
+      <name>Noam Rinetzky</name>
+      <url>https://www.cs.tau.ac.il/~maon/</url>
+    </person>
+    <person id="ehahn">
+      <name>Ernst Moritz Hahn</name>
+    </person>
+    <person id="sschewe">
+      <name>Sven Schewe</name>
+    </person>
+    <person id="dwojtczak">
+      <name>Dominik Wojtczak</name>
     </person>
     <person id="cdragoi">
       <name>Cezara Drăgoi</name>
