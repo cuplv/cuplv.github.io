@@ -6,6 +6,32 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2021.10.13" id="sas-cousot-award-2021">
+      <news-snippet>
+        <ref table="person" key="tlu"/> wins
+        the Radhia Cousot Young Researcher Best Paper Award
+        at <ref table="event" key="sas21"/>.
+      </news-snippet>
+      <news-detail>
+        <ref table="person" key="tlu"/>
+        wins
+        the Radhia Cousot Young Researcher Best Paper Award
+        at <ref table="event" key="sas21"/>
+        for his paper
+        "<ref table="pub" key="brbo-sas21"/>"
+        co-authored with
+        <ref table="person" key="bec"/>
+        and
+        <ref table="person" key="atrivedi"/>.
+      </news-detail>
+    </news>
+    <news date="2021.09.29" id="slutz21">
+      <news-snippet>
+        CUPLV student <ref table="person" key="bstein"/>
+        receives the 2021
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+      </news-snippet>
+    </news>
     <news date="2021.07.05" id="paper-sas21">
       <news-snippet>
         Paper by
@@ -30,7 +56,7 @@
       <news-detail>
         CUPLV authors
         <ref table="person" key="mperez" />,
-        <ref table="person" key="fabio" />, and
+        <ref table="person" key="somenzi" />, and
         <ref table="person" key="atrivedi" /> with collaborators,
         have had a paper "<ref table="pub" key="bmdp-cav21" />" accepted for presentation at
         <ref table="event" key="cav21" /> in July.
@@ -1203,6 +1229,13 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
   key="soundiness-cacm15" mode="authors"/>).
       </news-detail>
     </news>
+    <news date="2015.01.28" id="slutz15">
+      <news-snippet>
+        CUPLV student <ref table="person" key="blackshear"/>
+        receives the 2015
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+      </news-snippet>
+    </news>
     <news date="2014.12.16" id="paper-esop15">
       <news-snippet>
   Two papers with CUPLV authors accepted to <ref table="event" key="esop15"/>!
@@ -1647,6 +1680,14 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   <ref table="person" key="coughlin"/> presenting "<ref table="pub" key="fissile-popl14" mode="title"/>" at
   <ref table="event" key="popl14"/> today.
       </news-detail>
+    </news>
+    <news date="2013.12.01" id="slutz13">
+      <news-snippet>
+        CUPLV graduate student <ref table="person" key="chakarov"/>
+        and undergraduate student <ref table="person" key="givens"/>
+        receive the 2013
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+      </news-snippet>
     </news>
     <news date="2013.10.01" id="papers-popl14">
       <news-snippet>
@@ -5858,7 +5899,7 @@ an application example.</p>
       <name>Saeid Tizpaz Niari</name>
       <face>pics/tizpaz.jpg</face>
     </person>
-    <person id="Mateo Perez" group="phd">
+    <person id="mperez" group="phd">
       <name>Mateo Perez</name>
       <face>pics/generic-male.png</face>
     </person>
