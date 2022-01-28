@@ -50,6 +50,22 @@
         <ref table="event" key="pldi21" /> in June.
       </news-detail>
     </news>
+    <news date="2020.11.12" id="paper-fnt20">
+      <news-snippet>
+        Survey article
+        "<ref table="pub" key="shapeanalysis-fnt20"/>"
+        by
+        <ref table="pub" key="shapeanalysis-fnt20" mode="authors"/> 
+        published in
+        <ref table="journal" key="fnt" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV author
+        <ref table="person" key="bec" /> with collaborators
+        have had a survery paper "<ref table="pub" key="shapeanalysis-fnt20" />" published in
+        <ref table="journal" key="fnt" />.
+      </news-detail>
+    </news>
     <news date="2019.11.01" id="faculty-2019">
       <news-snippet>
         <a href="news.html#faculty-2019">Tenure-track and instructor openings</a> in <a href="https://www.colorado.edu/cs/">CS</a>.
@@ -3237,6 +3253,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="rival"/>
       </authors>
       <urls>
+	      <url name="pdf">papers/shapeanalysis-fnt20.pdf</url>
       </urls>
       <pages>1-158</pages>
       <date>2020-10</date>
@@ -3249,7 +3266,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       </howpub>
       <abstract>
         <p>The computation of semantic information about the behavior of pointer-manipulating programs has been a long standing issue, attacked with diverse and numerous techniques and tools for over 50 years. As usual in automatic verification of infinite-state programs, properties of interest are not computable. Thus, static analyses can only be conservative, leading different analyses to make different tradeoffs between the intricacies of the properties they detect, the precision of their inference procedure and analysis, and the scalability of the analysis.</p>
-        <p>In this context,shape analyses focus on inferring highly complex properties of heap-manipulating programs. These programs utilize data structures which are implemented using an unbounded number of dynamically- (heap-) allocated memory cells interconnected via mutable pointer-links. Because shape analyses have to reason about data structures whose size is not bounded by a fixed, known value, they cannot track explicitly the particular properties of every concrete memory cell which the program uses, as done, e.g., by analysis of variable-manipulating non-recursive programs. Instead, shape analysessummarize memory regions by letting one piece of abstract information, calledsummary predicate, describe several concrete cells. The need to cope with data structures of unbounded sizes is a challenge shape analyses share with static analyzers of array-manipulating programs. However, while the size of an array may change in different executions, its layout (i.e., its dimensions and the way its contents are spread over the memory) is fixed. In contrast, the layout of a pointer-linked data structure, colloquially referred to as itsshape, may evolve dynamically during the program execution and a memory cell can be part of different data structures at different points in time. As a result, shape analyses need to let the denotation of summary predicates in terms of the constituents and layouts of the memory regions which they represent evolve during the analysis as well.</p>
+        <p>In this context, shape analyses focus on inferring highly complex properties of heap-manipulating programs. These programs utilize data structures which are implemented using an unbounded number of dynamically- (heap-) allocated memory cells interconnected via mutable pointer-links. Because shape analyses have to reason about data structures whose size is not bounded by a fixed, known value, they cannot track explicitly the particular properties of every concrete memory cell which the program uses, as done, e.g., by analysis of variable-manipulating non-recursive programs. Instead, shape analyses summarize memory regions by letting one piece of abstract information, called summary predicate, describe several concrete cells. The need to cope with data structures of unbounded sizes is a challenge shape analyses share with static analyzers of array-manipulating programs. However, while the size of an array may change in different executions, its layout (i.e., its dimensions and the way its contents are spread over the memory) is fixed. In contrast, the layout of a pointer-linked data structure, colloquially referred to as its shape, may evolve dynamically during the program execution and a memory cell can be part of different data structures at different points in time. As a result, shape analyses need to let the denotation of summary predicates in terms of the constituents and layouts of the memory regions which they represent evolve during the analysis as well.</p>
         <p>In this survey, we consider that shape analyses are characterized and defined by the presence of summary predicates describing a set of concrete memory cells that varies during the course of the analysis. We use this characterization as a means for distinguishing shape analyses as a particular class of pointer analyses. We show that many “standard” pointer analyses do not fit the aforementioned description, while many analyses relying on very different mathematical foundations, e.g., shape graphs, three-valued logic, and separation logic, do.</p>
         <p>The ambition of this survey is to provide a comprehensive introduction to the field of shape analysis, and to present the foundation of this topic, in a single document that is accessible to readers who are not familiar with it. To do so, we characterize the essence of shape analysis compared to more classical pointer analyses. We supply the intuition underlying the abstractions commonly used in shape analysis and the algorithms that allow to statically compute intricate semantic properties. Then, we cover the main families of shape analysis abstraction and algorithms, highlight the similarities between them, and also characterize the main differences between the most common approaches. Last, we review a few other static analysis works (such as array abstractions, dictionary abstractions and interprocedural analyses) that were influenced by the ideas of shape analysis, so as to demonstrate the impact of the field.</p>
       </abstract>
@@ -7570,6 +7587,10 @@ an application example.</p>
     <journal id="eptcs">
       <name>Electronic Proceedings in Theoretical Computer Science</name>
       <short>Electr P in Theor Comput Sc</short>
+    </journal>
+    <journal id="fnt">
+      <name>Foundations and Trends in Programming Languages</name>
+      <short>Found. Trends Program. Lang.</short>
     </journal>
   </journals>
 </cv>
