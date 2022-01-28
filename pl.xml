@@ -56,7 +56,7 @@
       <news-detail>
         CUPLV authors
         <ref table="person" key="mperez" />,
-        <ref table="person" key="somenzi" />, and
+        <ref table="person" key="fabio" />, and
         <ref table="person" key="atrivedi" /> with collaborators,
         have had a paper "<ref table="pub" key="bmdp-cav21" />" accepted for presentation at
         <ref table="event" key="cav21" /> in July.
