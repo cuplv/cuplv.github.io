@@ -8,7 +8,7 @@
   <news-list>
     <news date="2021.10.13" id="sas-cousot-award-2021">
       <news-snippet>
-        <ref table="person" key="tlu"/> wins
+        CUPLV student <ref table="person" key="tlu"/> wins
         the Radhia Cousot Young Researcher Best Paper Award
         at <ref table="event" key="sas21"/>.
       </news-snippet>
