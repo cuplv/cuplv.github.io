@@ -5955,9 +5955,10 @@ an application example.</p>
       <face>pics/sdutta.png</face>
       <url>https://sites.google.com/site/duttasouradeep39/</url>
     </person>
-    <person id="dflores" group="phd">
+    <person id="deflores" group="phd">
       <name>David Flores</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/flores.jpg</face>
+      <url>https://plv.colorado.edu/deflores</url>
     </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>
