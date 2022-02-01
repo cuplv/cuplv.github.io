@@ -184,9 +184,9 @@ name="html" />
       <xsl:for-each select="cv/persons/person[@group='faculty-alumni']">
         <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
-      <h3>Scientists</h3>
+      <h4>Scientists</h4>
       <xsl:for-each select="cv/persons/person[@group='scientist-alumni']">
-  <div><xsl:apply-templates select="." mode="with-small-face"/></div>
+        <div><xsl:apply-templates select="." mode="with-small-face"/></div>
       </xsl:for-each>
       <h4>Post-Docs</h4>
       <xsl:for-each select="cv/persons/person[@group='postdoc-alumni']">
