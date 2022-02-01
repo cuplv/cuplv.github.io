@@ -3326,7 +3326,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <doi>10.1561/2500000037</doi>
       <ee>http://dx.doi.org/10.1561/2500000037</ee>
       <howpub>
-        <issue journal="ftpl" />
+        <issue journal="fntpl" />
       </howpub>
       <abstract>
         <p>The computation of semantic information about the behavior of pointer-manipulating programs has been a long standing issue, attacked with diverse and numerous techniques and tools for over 50 years. As usual in automatic verification of infinite-state programs, properties of interest are not computable. Thus, static analyses can only be conservative, leading different analyses to make different tradeoffs between the intricacies of the properties they detect, the precision of their inference procedure and analysis, and the scalability of the analysis.</p>
