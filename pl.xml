@@ -6,6 +6,25 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2021.11.01" id="phd-call-2021">
+      <news-snippet>
+        Call for Ph.D. applicants for Fall 2022.  Application deadline
+        is December 15, 2021.
+      </news-snippet>
+      <news-page header="Ph.D. Positions">
+        <p>We are looking for enthusiastic students to join our diverse and
+        dynamic group in programming languages and verification.  Our group has
+        active projects in areas such as static and dynamic program analysis;
+        verification, debugging, and programmer productivity tools; program synthesis;
+        language-based security; type systems; language design; analysis of
+        hybrid and embedded systems.  We have a track record of publishing in
+        top venues, such as POPL, PLDI, and CAV.  <a
+        href="https://www.colorado.edu/cs/apply/graduate-admissions"> CS
+        Admissions</a> and <a
+        href="http://www.colorado.edu/ecee/graduate-program/admissions">ECEE
+        Admissions</a> (deadline December 15, 2021).</p>
+      </news-page>
+    </news>
     <news date="2021.10.13" id="sas-cousot-award-2021">
       <news-snippet>
         CUPLV student <ref table="person" key="tlu"/> wins
@@ -99,6 +118,25 @@
         <ref table="journal" key="fntpl" />.
       </news-detail>
     </news>
+    <news date="2020.11.01" id="phd-call-2020">
+      <news-snippet>
+        Call for Ph.D. applicants for Fall 2021.  Application deadline
+        is December 15, 2020.
+      </news-snippet>
+      <news-page header="Ph.D. Positions">
+        <p>We are looking for enthusiastic students to join our diverse and
+        dynamic group in programming languages and verification.  Our group has
+        active projects in areas such as static and dynamic program analysis;
+        verification, debugging, and programmer productivity tools; program synthesis;
+        language-based security; type systems; language design; analysis of
+        hybrid and embedded systems.  We have a track record of publishing in
+        top venues, such as POPL, PLDI, and CAV.  <a
+        href="https://www.colorado.edu/cs/apply/graduate-admissions"> CS
+        Admissions</a> and <a
+        href="http://www.colorado.edu/ecee/graduate-program/admissions">ECEE
+        Admissions</a> (deadline December 15, 2020).</p>
+      </news-page>
+    </news>
     <news date="2020.04.05" id="paper-cav20">
       <news-snippet>
         Four papers with CUPLV authors accepted to <ref table="event" key="cav20"/>
@@ -152,7 +190,7 @@
     </news>
     <news date="2019.11.01" id="phd-call-2019">
       <news-snippet>
-        Call for Ph.D. applicants for Fall 2019.  Application deadline
+        Call for Ph.D. applicants for Fall 2020.  Application deadline
         is December 15, 2019.
       </news-snippet>
       <news-page header="Ph.D. Positions">
@@ -5886,7 +5924,7 @@ an application example.</p>
       <url>http://plv.colorado.edu/chakarov.html</url>
       <face>pics/chakarov.jpg</face>
     </person>
-    <person id="ychou" group="phd">
+    <person id="ychou" group="phd-alumni">
       <name>Chou Yi</name>
       <face>pics/ychou.jpg</face>
     </person>
@@ -5900,7 +5938,7 @@ an application example.</p>
       <url>http://eces.colorado.edu/~coxaj/</url>
       <face>pics/cox.jpg</face>
     </person>
-    <person id="jculak" group="phd">
+    <person id="jculak">
       <name>Juraj Culak</name>
       <face>pics/jculak.png</face>
     </person>
@@ -5930,11 +5968,7 @@ an application example.</p>
       <name>Justin E. Gottschlich</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="aguttman" group="ms-alumni">
-      <name>Andrew Guttman</name>
-      <face>pics/aguttman.png</face>
-    </person>
-    <person id="kheadley" group="ms-alumni">
+    <person id="kheadley">
       <name>Kyle Headley</name>
       <url>http://kyleheadley.github.io/PHDWebsite/</url>
       <face>pics/headley.jpg</face>
@@ -5943,7 +5977,7 @@ an application example.</p>
       <name>Ian Karlin</name>
       <face>pics/karlin.jpg</face>
     </person>
-    <person id="ykim" group="ms-alumni">
+    <person id="ykim">
       <name>Youngsung Kim</name>
       <face>pics/ykim.png</face>
     </person>
@@ -5965,7 +5999,7 @@ an application example.</p>
       <url>https://plv.colorado.edu/tianhan/</url>
       <face>pics/tianhan.jpg</face>
     </person>
-    <person id="jmartin" group="phd">
+    <person id="jmartin">
       <name>Jack Martin</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -5983,7 +6017,11 @@ an application example.</p>
       <name>Weiyu Miao</name>
       <face>pics/miao.jpg</face>
     </person>
-    <person id="dmoon" group="ms-alumni">
+    <person id="vmurali" group="phd">
+      <name>Vishnu Murali</name>
+      <face>pics/generic-male.png</face>
+    </person>
+    <person id="dmoon">
       <name>David Moon</name>
       <face>pics/moon.jpg</face>
       <url>https://plv.colorado.edu/dmoon</url>
@@ -6024,7 +6062,7 @@ an application example.</p>
       <url>http://plv.colorado.edu/benno</url>
       <face>pics/stein.png</face>
     </person>
-    <person id="wtemple" group="ms-alumni">
+    <person id="wtemple">
       <name>William Temple</name>
       <face>pics/wtemple.jpg</face>
     </person>
@@ -6036,7 +6074,7 @@ an application example.</p>
       <name>Chris Wailes</name>
       <face>pics/generic-male.png</face>
     </person>
-    <person id="jwright" group="ms-alumni">
+    <person id="jwright">
       <name>Jared Wright</name>
       <face>pics/jwright.jpg</face>
       <url>http://plv.colorado.edu/jwright</url>
@@ -6096,6 +6134,10 @@ an application example.</p>
       <name>Dimitrios Economou</name>
       <face>pics/deconomou.jpg</face>
     </person>
+    <person id="aguttman" group="ms-alumni">
+      <name>Andrew Guttman</name>
+      <face>pics/aguttman.png</face>
+    </person>
     <person id="njagnik" group="ms-alumni">
       <name>Nilesh Jagnik</name>
       <face>pics/njagnik.jpg</face>
@@ -6111,10 +6153,6 @@ an application example.</p>
     <person id="clin" group="ms-alumni">
       <name>Chih-Wei Lin</name>
       <face>pics/clin.jpg</face>
-    </person>
-    <person id="vmurali" group="ms">
-      <name>Vishnu Murali</name>
-      <face>pics/generic-male.png</face>
     </person>
     <person id="aphatak" group="ms-alumni">
       <name>Aniruddha Phatak</name>
