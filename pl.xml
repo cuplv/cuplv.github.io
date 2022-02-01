@@ -6837,6 +6837,11 @@ an application example.</p>
         <location>Virtual</location>
         <url>http://i-cav.org/2021/</url>
       </event>
+      <event id="cav20">
+        <date>2020-07</date>
+        <location>Virtual</location>
+        <url>http://i-cav.org/2020/</url>
+      </event>
       <event id="cav19">
         <date>2019-07</date>
         <location>New York City, New York, USA</location>
