@@ -7325,11 +7325,17 @@ an application example.</p>
     <series id="vstte">
       <name>Verified Software: Theories, Tools, and Experiments</name>
       <longPrefix>IFIP Working Conference on</longPrefix>
+      <event id="vstte20">
+        <date>2020-07</date>
+        <location>Virtual</location>
+        <nth>Twelfth</nth>
+        <url>https://sri-csl.github.io/VSTTE20/</url>
+      </event>
       <event id="vstte15">
-  <date>2015-07</date>
-  <location>San Francisco, California, USA</location>
-  <nth>Seventh</nth>
-  <url>https://sites.google.com/site/vstte2015/</url>
+        <date>2015-07</date>
+        <location>San Francisco, California, USA</location>
+        <nth>Seventh</nth>
+        <url>https://sites.google.com/site/vstte2015/</url>
       </event>
     </series>
     <series id="sigcse">
