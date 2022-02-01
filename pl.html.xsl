@@ -80,7 +80,7 @@ name="html" />
 	href="http://www.colorado.edu/cs/apply/graduate-admissions"><b>Ph.D. Positions</b></a>.
 	We are looking for strong students to join our diverse and
 	dynamic group in programming languages and verification.
-	Application deadline is December 15, 2020.
+	Application deadline is December 15, <xsl:value-of select="year-from-date(current-date())"/>.
       </div>
  <!--
    <div class="contentbox" style="width: 48%; height: 12ex;">
