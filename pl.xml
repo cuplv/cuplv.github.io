@@ -83,13 +83,13 @@
         by
         <ref table="pub" key="shapeanalysis-fnt20" mode="authors"/> 
         published in
-        <ref table="journal" key="fnt" />.
+        <ref table="journal" key="fntpl" />.
       </news-snippet>
       <news-detail>
         CUPLV author
         <ref table="person" key="bec" /> with collaborators
         have had a survery paper "<ref table="pub" key="shapeanalysis-fnt20" />" published in
-        <ref table="journal" key="fnt" />.
+        <ref table="journal" key="fntpl" />.
       </news-detail>
     </news>
     <news date="2019.11.01" id="faculty-2019">
@@ -3236,7 +3236,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="sas21" />
       </howpub>
-      <pages></pages>
+      <pages>286-307</pages>
       <year>2021</year>
       <abstract>
         <p>We consider the problem of automatically proving resource bounds. That is, we study how to prove that an integer-valued resource variable is bounded by a given program expression. Automatic resource-bound analysis has recently received significant attention because of a number of important applications (e.g., detecting performance bugs, preventing algorithmic-complexity attacks, identifying side-channel vulnerabilities), where the focus has often been on developing precise amortized reasoning techniques to infer the most exact resource usage. While such innovations remain critical, we observe that fully precise amortization is not always necessary to prove a bound of interest. And in fact, by amortizing <em>selectively</em>, the needed supporting invariants can be simpler, making the invariant inference task more feasible and predictable. We present a framework for selectively-amortized analysis that mixes worst-case and amortized reasoning via a property decomposition and a program transformation. We show that proving bounds in any such decomposition yields a sound resource bound in the original program, and we give an algorithm for selecting a reasonable decomposition.</p>
@@ -3277,7 +3277,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="pldi21" />
       </howpub>
-      <pages></pages>
+      <pages>282-295</pages>
       <year>2021</year>
       <abstract>
         <p>We consider the problem of making expressive static analyzers interactive. Formal static analysis is seeing increasingly widespread adoption as a tool for verification and bug-finding, but even with powerful cloud infrastructure it can take minutes or hours to get batch analysis results after a code change. While existing techniques offer some demand-driven or incremental aspects for certain classes of analysis, the fundamental challenge we tackle is doing both for arbitrary abstract interpreters. </p>
@@ -3325,8 +3325,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="artifact">https://www.brics.dk/TAJS/VR/</url>
       </urls>
       <howpub>
+        <proceedings event="oopsla19" />
         <issue journal="pacmpl" event="oopsla19" />
-        <!--<proceedings event="oopsla19" />-->
       </howpub>
       <pages>140:1-140:29</pages>
       <year>2019</year>
@@ -7617,9 +7617,9 @@ an application example.</p>
       <name>Communications of the ACM (CACM)</name>
       <short>Commun. ACM</short>
     </journal>
-    <journal id="ftpl">
-      <name>Foundations and Trends in Programming Languages (FTPL)</name>
-      <short>Foundations and Trends in Programming Languages</short>
+    <journal id="fntpl">
+      <name>Foundations and Trends in Programming Languages (FnTPL)</name>
+      <short>Found. Trends Program. Lang.</short>
     </journal>
     <journal id="sttt">
       <name>International Journal on Software Tools for Technology Transfer (STTT)</name>
@@ -7628,10 +7628,6 @@ an application example.</p>
     <journal id="eptcs">
       <name>Electronic Proceedings in Theoretical Computer Science</name>
       <short>Electr P in Theor Comput Sc</short>
-    </journal>
-    <journal id="fnt">
-      <name>Foundations and Trends in Programming Languages</name>
-      <short>Found. Trends Program. Lang.</short>
     </journal>
   </journals>
 </cv>
