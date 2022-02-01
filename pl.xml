@@ -6698,6 +6698,11 @@ an application example.</p>
       <name>Programming Language Design and Implementation</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
       <issue journal="sigplannot"/>
+      <event id="pldi22">
+        <date>2022-06</date>
+        <location>San Diego, California, USA</location>
+        <url>https://pldi22.sigplan.org/</url>
+      </event>
       <event id="pldi21">
         <date>2021-06</date>
         <location>Virtual</location>
