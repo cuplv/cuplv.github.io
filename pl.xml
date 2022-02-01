@@ -5955,6 +5955,10 @@ an application example.</p>
       <face>pics/sdutta.png</face>
       <url>https://sites.google.com/site/duttasouradeep39/</url>
     </person>
+    <person id="dflores" group="phd">
+      <name>David Flores</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
@@ -5993,6 +5997,10 @@ an application example.</p>
       <name>Nicholas V. Lewchenko</name>
       <face>pics/nlewchenko.jpg</face>
       <url>https://www.octalsrc.org/research</url>
+    </person>
+    <person id="klinvill" group="phd">
+      <name>Kirby Linvill</name>
+      <face>pics/klinvill.jpg</face>
     </person>
     <person id="tlu" group="phd">
       <name>Tianhan Lu</name>
