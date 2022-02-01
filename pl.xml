@@ -92,6 +92,29 @@
         <ref table="journal" key="fntpl" />.
       </news-detail>
     </news>
+    <news date="2020.04.05" id="paper-cav20">
+      <news-snippet>
+        Four papers with CUPLV authors accepted to <ref table="event" key="cav20"/>
+        [<ref table="pub" key="reachability-cav20" text="1"/>,
+        <ref table="pub" key="unboundedtime-cav20" text="2"/>,
+        <ref table="pub" key="pirk-cav20" text="3"/>,
+        <ref table="pub" key="amytiss-cav20" text="4"/>].
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="srirams"/>
+        and
+        <ref table="person" key="mzamani"/>
+        with collaborators
+        have had papers accepted for presentation at
+        <ref table="event" key="cav20"/> in July
+        (<ref table="pub" key="reachability-cav20" mode="authors"/>,
+        <ref table="pub" key="unboundedtime-cav20" mode="authors"/>,
+        <ref table="pub" key="pirk-cav20" mode="authors"/>,
+        and
+        <ref table="pub" key="amytiss-cav20" mode="authors"/>).
+      </news-detail>
+    </news>
     <news date="2019.11.01" id="faculty-2019">
       <news-snippet>
         <a href="news.html#faculty-2019">Tenure-track and instructor openings</a> in <a href="https://www.colorado.edu/cs/">CS</a>.
@@ -3310,6 +3333,76 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <p>In this context, shape analyses focus on inferring highly complex properties of heap-manipulating programs. These programs utilize data structures which are implemented using an unbounded number of dynamically- (heap-) allocated memory cells interconnected via mutable pointer-links. Because shape analyses have to reason about data structures whose size is not bounded by a fixed, known value, they cannot track explicitly the particular properties of every concrete memory cell which the program uses, as done, e.g., by analysis of variable-manipulating non-recursive programs. Instead, shape analyses summarize memory regions by letting one piece of abstract information, called summary predicate, describe several concrete cells. The need to cope with data structures of unbounded sizes is a challenge shape analyses share with static analyzers of array-manipulating programs. However, while the size of an array may change in different executions, its layout (i.e., its dimensions and the way its contents are spread over the memory) is fixed. In contrast, the layout of a pointer-linked data structure, colloquially referred to as its shape, may evolve dynamically during the program execution and a memory cell can be part of different data structures at different points in time. As a result, shape analyses need to let the denotation of summary predicates in terms of the constituents and layouts of the memory regions which they represent evolve during the analysis as well.</p>
         <p>In this survey, we consider that shape analyses are characterized and defined by the presence of summary predicates describing a set of concrete memory cells that varies during the course of the analysis. We use this characterization as a means for distinguishing shape analyses as a particular class of pointer analyses. We show that many “standard” pointer analyses do not fit the aforementioned description, while many analyses relying on very different mathematical foundations, e.g., shape graphs, three-valued logic, and separation logic, do.</p>
         <p>The ambition of this survey is to provide a comprehensive introduction to the field of shape analysis, and to present the foundation of this topic, in a single document that is accessible to readers who are not familiar with it. To do so, we characterize the essence of shape analysis compared to more classical pointer analyses. We supply the intuition underlying the abstractions commonly used in shape analysis and the algorithms that allow to statically compute intricate semantic properties. Then, we cover the main families of shape analysis abstraction and algorithms, highlight the similarities between them, and also characterize the main differences between the most common approaches. Last, we review a few other static analysis works (such as array abstractions, dictionary abstractions and interprocedural analyses) that were influenced by the ideas of shape analysis, so as to demonstrate the impact of the field.</p>
+      </abstract>
+    </pub>
+    <pub id="reachability-cav20">
+      <title>Reachability Analysis using Message Passing over Tree Decompositions</title>
+      <authors>
+        <author person="srirams"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="cav20" />
+      </howpub>
+      <year>2020</year>
+      <abstract>
+        <p>In this paper, we study efficient approaches to reachability analysis for discrete-time nonlinear dynamical systems when the dependencies among the variables of the system have low treewidth. Reachability analysis over nonlinear dynamical systems asks if a given set of target states can be reached starting from an initial set of states. This is solved by computing conservative over approximations of the reachable set using abstract domains to represent these approximations. However, most approaches must tradeoff the level of conservatism against the cost of performing analysis, especially when the number of system variables increases. This makes reachability analysis challenging for nonlinear systems with a large number of state variables. Our approach works by constructing a dependency graph among the variables of the system. The tree decomposition of this graph builds a tree wherein each node of the tree is labeled with subsets of the state-variables of the system. Furthermore, the tree decomposition satisfies important structural properties. Using the tree decomposition, our approach abstracts a set of states of the high dimensional system into a tree of sets of lower dimensional projections of this state. We derive various interesting properties of this abstract domain, including conditions under which the original high dimensional set can be fully recovered from its low dimensional projections. Next, we use ideas from message passing developed originally for belief propagation over Bayesian networks to perform reachability analysis over the full statespace in an efficient manner. We illustrate our approach on some interesting nonlinear systems with low treewidth to demonstrate the advantages of our approach.</p>
+      </abstract>
+    </pub>
+    <pub id="unboundedtime-cav20">
+      <title>Unbounded-Time Safety Verification of Stochastic Differential Dynamics</title>
+      <authors>
+        <author person="sfeng"/>
+        <author person="mchen"/>
+        <author person="bxue"/>
+        <author person="srirams"/>
+        <author person="nzhan"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="cav20" />
+      </howpub>
+      <year>2020</year>
+      <abstract>
+        <p>In this paper, we propose a method for bounding the probability that a stochastic differential equation (SDE) system violates a safety specification over the infinite time horizon. SDEs are mathematical models of stochastic processes that capture how states evolve continuously in time. They are widely used in numerous applications such as engineered systems (e.g., modeling how pedestrians move in an intersection), computational finance (e.g., modeling stock option prices), and ecological processes (e.g., population change over time). Previously the safety verification problem has been tackled over finite and infinite time horizons using a diverse set of approaches. The approach in this paper attempts to connect the two views by first identifying a finite time bound, beyond which the probability of a safety violation can be bounded by a negligibly small number. This is achieved by discovering an exponential barrier certificate that proves exponentially converging bounds on the probability of safety violations over time. Once the finite time interval is found, a finite-time verification approach is used to bound the probability of violation over this interval. We demonstrate our approach over a collection of interesting examples from the literature, wherein our approach can be used to find tight bounds on the violation probability of safety properties over the infinite time horizon.</p>
+      </abstract>
+    </pub>
+    <pub id="pirk-cav20">
+      <title>PIRK: Scalable Interval Reachability Analysis for High-Dimensional Nonlinear Systems</title>
+      <authors>
+        <author person="adevonport"/>
+        <author person="mkhaled"/>
+        <author person="marcak"/>
+        <author person="mzamani"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="cav20" />
+      </howpub>
+      <year>2020</year>
+      <abstract>
+        <p>Reachability analysis is a critical tool for the formal verification of dynamical systems and the synthesis of controllers for them. Due to their computational complexity, many reachability analysis methods are restricted to systems with relatively small dimensions. One significant reason for such limitation is that those approaches, and their implementations, are not designed to leverage parallelism. They use algorithms that are designed to run serially within one compute unit and they can not utilize widely-available high-performance computing (HPC) platforms such as many-core CPUs, GPUs and Cloud-computing services. This paper presents PIRK, a tool to efficiently compute reachable sets for general nonlinear systems of extremely high dimensions. PIRK can utilize HPC platforms for computing reachable sets for general high-dimensional non-linear systems. PIRK has been tested on several systems, with state dimensions up to 4 billion. The scalability of PIRK’s parallel implementations is found to be highly favorable.</p>
+      </abstract>
+    </pub>
+    <pub id="amytiss-cav20">
+      <title>AMYTISS: Parallelized Automated Controller Synthesis for Large-Scale Stochastic Systems</title>
+      <authors>
+        <author person="alavaei"/>
+        <author person="mkhaled"/>
+        <author person="ssoudjani"/>
+        <author person="mzamani"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="cav20" />
+      </howpub>
+      <year>2020</year>
+      <abstract>
+        <p>Large-scale stochastic systems have recently received significant attentions due to their broad applications in various safety-critical systems such as traffic networks and self-driving cars. In this paper, we propose a software tool, called AMYTISS, implemented in C++/OpenCL, for designing correct-by-construction controllers for large-scale discrete-time stochastic systems. This tool is employed to (i) build finite Markov decision processes (MDPs) as finite abstractions of given original systems, and (ii) synthesize controllers for the constructed finite MDPs satisfying bounded-time safety and reach-avoid specifications. In AMYTISS, scalable parallel algorithms are designed such that they support parallel execution within CPUs, GPUs and hardware accelerators (HWAs). Unlike all existing tools for stochastic systems, AMYTISS can utilize high-performance computing (HPC) platforms and cloud-computing services to mitigate the effects of the state-explosion problem, which is always present in analyzing large-scale stochastic systems. We benchmark AMYTISS against the most recent tools in the literature using several physical case studies including robot examples, room temperature and road traffic networks. We also apply our algorithms to a 3-dimensional autonomous vehicle and 7-dimensional nonlinear model of a BMW 320i car by synthesizing an autonomous parking controller.</p>
       </abstract>
     </pub>
     <pub id="tajsvr-oopsla19">
@@ -6597,13 +6690,33 @@ an application example.</p>
     <person id="dwojtczak">
       <name>Dominik Wojtczak</name>
     </person>
-    <person id="cdragoi">
-      <name>Cezara Drăgoi</name>
-      <url></url>
+    <person id="sfeng">
+      <name>Shenghua Feng</name>
     </person>
-    <person id="rmanevich">
-      <name>Roman Manevich</name>
-      <url></url>
+    <person id="mchen">
+      <name>Mingshuai Chen</name>
+    </person>
+    <person id="bxue">
+      <name>Bai Xue</name>
+    </person>
+    <person id="nzhan">
+      <name>Naijun Zhan</name>
+    </person>
+    <person id="adevonport">
+      <name>Alex Devonport</name>
+    </person>
+    <person id="mkhaled">
+      <name>Mahmoud Khaled</name>
+    </person>
+    <person id="marcak">
+      <name>Murat Arcak</name>
+    </person>
+    <person id="alavaei">
+      <name>Abolfazi Lavaei</name>
+    </person>
+    <person id="ssoudjani">
+      <name>Sadegh Soudjani</name>
+      <url>http://homepages.cs.ncl.ac.uk/sadegh.soudjani/</url>
     </person>
     <person id="nrinetzky">
       <name>Noam Rinetzky</name>
