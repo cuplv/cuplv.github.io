@@ -29,7 +29,7 @@
       <news-snippet>
         CUPLV student <ref table="person" key="bstein"/>
         receives the 2021
-        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Student Excellence Award</a>.
       </news-snippet>
     </news>
     <news date="2021.07.05" id="paper-sas21">
@@ -46,6 +46,13 @@
         have had a paper "<ref table="pub" key="brbo-sas21" />" accepted for presentation at
         <ref table="event" key="sas21" /> in October.
       </news-detail>
+    </news>
+    <news date="2021.04.19" id="deptresearchaward21">
+      <news-snippet>
+        CUPLV student <ref table="person" key="bstein"/>
+        receives the 2020-2021
+        <a href="https://www.colorado.edu/cs/news-events/student-awards#outstanding_research-939">CU CS Outstanding Research Award</a>.
+      </news-snippet>
     </news>
     <news date="2021.04.18" id="paper-cav21">
       <news-snippet>
@@ -285,7 +292,7 @@
       <news-snippet>
         CUPLV student <ref table="person" key="tkushner"/>
         receives the 2018
-        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Student Excellence Award</a>.
       </news-snippet>
     </news>
     <news date="2018.08.01" id="catalyzecu18">
@@ -1256,7 +1263,7 @@ The University of Colorado is an Equal Opportunity Employer committed to buildin
       <news-snippet>
         CUPLV student <ref table="person" key="blackshear"/>
         receives the 2015
-        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Student Excellence Award</a>.
       </news-snippet>
     </news>
     <news date="2014.12.16" id="paper-esop15">
@@ -1647,6 +1654,13 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   key="sepdom-sas14" mode="authors"/>).
       </news-detail>
     </news>
+    <news date="2014.04.21" id="deptresearchaward14">
+      <news-snippet>
+        CUPLV student <ref table="person" key="blackshear"/>
+        receives the 2013-2014
+        <a href="https://www.colorado.edu/cs/news-events/student-awards#outstanding_research-939">CU CS Outstanding Research Award</a>.
+      </news-snippet>
+    </news>
     <news date="2014.04.18" id="paper-cav14">
       <news-snippet>
   Paper by <ref table="pub" key="quicr-cav14" mode="authors"/>
@@ -1709,7 +1723,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         CUPLV graduate student <ref table="person" key="chakarov"/>
         and undergraduate student <ref table="person" key="givens"/>
         receive the 2013
-        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Award</a>.
+        <a href="https://www.colorado.edu/cs/current-students/student-awards">Ralph J. Slutz Student Excellence Award</a>.
       </news-snippet>
     </news>
     <news date="2013.10.01" id="papers-popl14">
@@ -3418,8 +3432,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="artifact">https://www.brics.dk/TAJS/VR/</url>
       </urls>
       <howpub>
-        <proceedings event="oopsla19" />
         <issue journal="pacmpl" event="oopsla19" />
+        <!--<proceedings event="oopsla19" />-->
       </howpub>
       <pages>140:1-140:29</pages>
       <year>2019</year>
