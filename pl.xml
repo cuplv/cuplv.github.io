@@ -6707,6 +6707,8 @@ an application example.</p>
         <date>2021-06</date>
         <location>Virtual</location>
         <url>https://conf.researchr.org/home/pldi-2021</url>
+        <acceptance>87/320</acceptance>
+        <acceptanceRate>27.2%</acceptanceRate>
       </event>
       <event id="pldi20">
         <date>2020-06</date>
