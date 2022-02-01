@@ -6891,7 +6891,7 @@ an application example.</p>
         <location>Athens, Greece</location>
         <url>http://2019.splashcon.org/</url>
         <acceptance>73/201</acceptance>
-        <!--<acceptanceRate>36.3%</acceptanceRate>-->
+        <acceptanceRate>36.3%</acceptanceRate>
         <volume>3</volume>
         <number>OOPSLA</number>
         <issue journal="pacmpl"/>
