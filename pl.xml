@@ -6921,6 +6921,15 @@ an application example.</p>
         <issue journal="sigplannot"/>
       </event>
     </series>
+    <series id="splash">
+      <name>Systems, Programming, Languages and Applications: Software for Humanity</name>
+      <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="splash22">
+        <date>2022-11</date>
+        <location>Auckland, New Zealand</location>
+        <url>https://2022.splashcon.org/</url>
+      </event>
+    </series>
     <series id="icfp">
       <name>Functional Programming</name>
       <longPrefix>ACM SIGPLAN International Conference on</longPrefix>
