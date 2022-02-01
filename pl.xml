@@ -6986,6 +6986,9 @@ an application example.</p>
         <location>Chicago, Illinois, USA</location>
         <nth>Twenty-Eighth</nth>
         <url>https://conf.researchr.org/home/sas-2021</url>
+        <acceptance>18/33</acceptance>
+        <acceptanceRate>54.5%</acceptanceRate>
+        <volume>12913</volume>
       </event>
       <event id="sas20">
         <date>2020-11</date>
