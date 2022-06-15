@@ -6,6 +6,19 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2022.02.25" id="paper-pldi22">
+      <news-snippet>
+        Two papers with CUPLV authors (conditionally) accepted to <ref table="event" key="pldi22"/>!
+        [<ref table="pub" key="runtimeassisted-pldi22" text="1"/>,
+        <ref table="pub" key="antipotentials-pldi22" text="2"/>]
+      </news-snippet>
+      <news-detail>
+        CUPLV authors <ref table="person" key="gkaki"/>, <ref table="person" key="prahladan"/>, and <ref table="person" key="nlewchenko"/>
+        have had papers accepted for presentation at <ref table="event" key="pldi22"/> in June (<ref table="pub"
+        key="runtimeassisted-pldi22" mode="authors"/> and <ref table="pub"
+        key="antipotentials-pldi22" mode="authors"/>).
+      </news-detail>
+    </news>
     <news date="2021.11.01" id="phd-call-2021">
       <news-snippet>
         Call for Ph.D. applicants for Fall 2022.  Application deadline
@@ -3298,6 +3311,45 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="runtimeassisted-pldi22">
+      <title>RunTime-assisted convergence in replicated data types</title>
+      <authors>
+        <author person="gkaki"/>
+        <author person="pprahladan"/>
+        <author person="nlewchenko"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/runtimeassisted-pldi22.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="pldi22" />
+      </howpub>
+      <pages>364-378</pages>
+      <year>2022</year>
+      <abstract>
+        <p>We propose a runtime-assisted approach to enforce convergence in distributed executions of replicated data types. The key distinguishing aspect of our approach is that it guarantees convergence unconditionally – without requiring data type operations to satisfy algebraic laws such as commutativity and idempotence. Consequently, programmers are no longer obligated to prove convergence on a per-type basis. Moreover, our approach lets sequential data types be reused in a distributed setting by extending their implementations rather than refactoring them. The novel component of our approach is a distributed runtime that orchestrates well-formed executions that are guaranteed to converge. Despite the utilization of a runtime, our approach comes at no additional cost of latency and availability. Instead, we introduce a novel tradeoff against a metric called staleness, which roughly corresponds to the time taken for replicas to converge. We implement our approach in a system called Quark and conduct a thorough evaluation of its tradeoffs.</p>
+      </abstract>
+    </pub>
+    <pub id="antipotentials-pldi22">
+      <title>Differential Cost Analysis with Simultaneous Potentials and Anti-potentials</title>
+      <authors>
+        <author person="dzikelic" student="y"/>
+        <author person="bec"/>
+        <author person="pln"/>
+        <author person="frai"/>
+      </authors>
+      <urls>
+        <url name="pdf">papers/antipotentials-pldi22.pdf</url>
+      </urls>
+      <howpub>
+        <proceedings event="pldi22" />
+      </howpub>
+      <pages>442-457</pages>
+      <year>2022</year>
+      <abstract>
+        <p>We present a novel approach to differential cost analysis that, given a program revision, attempts to statically bound the difference in resource usage, or cost, between the two program versions. Differential cost analysis is particularly interesting because of the many compelling applications for it, such as detecting resource-use regressions at code-review time or proving the absence of certain side-channel vulnerabilities. One prior approach to differential cost analysis is to apply relational reasoning that conceptually constructs a product program on which one can over-approximate the difference in costs between the two program versions. However, a significant challenge in any relational approach is effectively aligning the program versions to get precise results. In this paper, our key insight is that we can avoid the need for and the limitations of program alignment if, instead, we bound the difference of two cost-bound summaries rather than directly bounding the concrete cost difference. In particular, our method computes a threshold value for the maximal difference in cost between two program versions simultaneously using two kinds of cost-bound summaries—a potential function that evaluates to an upper bound for the cost incurred in the first program and an anti-potential function that evaluates to a lower bound for the cost incurred in the second. Our method has a number of desirable properties: it can be fully automated, it allows optimizing the threshold value on relative cost, it is suitable for programs that are not syntactically similar, and it supports non-determinism. We have evaluated an implementation of our approach on a number of program pairs collected from the literature, and we find that our method computes tight threshold values on relative cost in most examples.</p>
+      </abstract>
+    </pub>
     <pub id="brbo-sas21">
       <title>Selectively-Amortized Resource Bounding</title>
       <authors>
@@ -6057,6 +6109,10 @@ an application example.</p>
       <name>Mateo Perez</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="pprahladan" group="phd">
+      <name>Prasanth Prahladan</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="hravanbakhsh" group="phd-alumni">
       <name>Hadi Ravanbakhsh</name>
       <face>pics/ravanbakhsh.png</face>
@@ -6783,6 +6839,16 @@ an application example.</p>
       <name>Bardh Hoxha</name>
       <url>https://www.bhoxha.com/</url>
     </person>
+    <person id="dzikelic">
+      <name>Ðorđe Žikelić</name>
+    </person>
+    <person id="pln">
+      <name>Pauline Bolignano</name>
+    </person>
+    <person id="frai">
+      <name>Franco Raimondi</name>
+      <url>https://www.rmnd.net/</url>
+    </person>
   </persons>
 
   <events>
@@ -6876,6 +6942,8 @@ an application example.</p>
         <date>2022-06</date>
         <location>San Diego, California, USA</location>
         <url>https://pldi22.sigplan.org/</url>
+        <acceptance>68/326</acceptance>
+        <acceptanceRate>20.9%</acceptanceRate>
       </event>
       <event id="pldi21">
         <date>2021-06</date>

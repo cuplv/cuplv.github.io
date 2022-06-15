@@ -1,0 +1,106 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    Automatically generated. Do not edit directly!
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         PLDI 2022
+         :
+         	Differential Cost Analysis with Simultaneous Potentials and Anti-potentials  |  CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="lsidebarfloat">
+            <div id="lsidebar"></div>
+         </div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
+         <div id="banner">
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="visiting.html">Visiting</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Differential Cost Analysis with Simultaneous Potentials and Anti-potentials</div>
+               <div xmlns="" class="subtitle">
+                  <a href="https://pldi22.sigplan.org/">PLDI 2022</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-icon"><a href="papers/antipotentials-pldi22.pdf" onClick="_gaq.push(['_trackPageview', '/papers/antipotentials-pldi22.pdf']);"><img src="clouds/antipotentials-pldi22.words.png" class="icon"></a></div>
+               <div class="item-block">
+                  <div class="item-date">2022</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/antipotentials-pldi22.html">detail</a></li>
+                     <li><a href="papers/antipotentials-pldi22.pdf" onClick="_gaq.push(['_trackPageview', '/papers/antipotentials-pldi22.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Differential Cost Analysis with Simultaneous Potentials and Anti-potentials</div>
+                  <div class="hanging">Ðorđe Žikelić, <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a>, Pauline Bolignano,  and <a href="https://www.rmnd.net/">Franco Raimondi</a></div>
+                  <div class="hanging">
+                     <a href="https://pldi22.sigplan.org/">PLDI 2022</a>:
+                     ACM SIGPLAN Conference on Programming Language Design and Implementation
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">We present a novel approach to differential cost analysis that, given a program revision, attempts to statically bound the
+               difference in resource usage, or cost, between the two program versions. Differential cost analysis is particularly interesting
+               because of the many compelling applications for it, such as detecting resource-use regressions at code-review time or proving
+               the absence of certain side-channel vulnerabilities. One prior approach to differential cost analysis is to apply relational
+               reasoning that conceptually constructs a product program on which one can over-approximate the difference in costs between
+               the two program versions. However, a significant challenge in any relational approach is effectively aligning the program
+               versions to get precise results. In this paper, our key insight is that we can avoid the need for and the limitations of program
+               alignment if, instead, we bound the difference of two cost-bound summaries rather than directly bounding the concrete cost
+               difference. In particular, our method computes a threshold value for the maximal difference in cost between two program versions
+               simultaneously using two kinds of cost-bound summaries—a potential function that evaluates to an upper bound for the cost
+               incurred in the first program and an anti-potential function that evaluates to a lower bound for the cost incurred in the
+               second. Our method has a number of desirable properties: it can be fully automated, it allows optimizing the threshold value
+               on relative cost, it is suitable for programs that are not syntactically similar, and it supports non-determinism. We have
+               evaluated an implementation of our approach on a number of program pairs collected from the literature, and we find that our
+               method computes tight threshold values on relative cost in most examples.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{PLDI = "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"}
+@inproceedings{antipotentials-pldi22,
+  author = {Ðorđe Žikelić and Bor-Yuh Evan Chang and Pauline Bolignano and Franco Raimondi},
+  title = {Differential Cost Analysis with Simultaneous Potentials and Anti-potentials},
+  booktitle = PLDI,
+  year = {2022},
+  pages = {442-457},
+  
+}
+</pre></div>
+      </div>
+   </body>
+</html>
