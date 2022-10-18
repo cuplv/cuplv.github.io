@@ -6012,6 +6012,11 @@ an application example.</p>
       <face>pics/flores.jpg</face>
       <url>https://plv.colorado.edu/deflores</url>
     </person>
+    <person id="cfontenot" group="phd">
+      <name>Christian Fontenot</name>
+      <face>pics/cfontenot.jpg</face>
+      <url>https://chfont.github.io</url>
+    </person>
     <person id="frohardt">
       <name>Robert Frohardt</name>
       <url>http://www.cs.colorado.edu/~frohardt/</url>
