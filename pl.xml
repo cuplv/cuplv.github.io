@@ -6059,6 +6059,7 @@ an application example.</p>
     <person id="klinvill" group="phd">
       <name>Kirby Linvill</name>
       <face>pics/klinvill.jpg</face>
+      <url>https://kirby.linvill.net</url>
     </person>
     <person id="tlu" group="phd">
       <name>Tianhan Lu</name>
