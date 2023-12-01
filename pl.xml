@@ -6,6 +6,62 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2023.11.01" id="phd-call-2023">
+      <news-snippet>
+        Call for Ph.D. applicants for Fall 2024.  Application deadline
+        is December 15, 2023.
+      </news-snippet>
+      <news-page header="Ph.D. Positions">
+        <p>We are looking for enthusiastic students to join our diverse and
+        dynamic group in programming languages and verification.  Our group has
+        active projects in areas such as static and dynamic program analysis;
+        verification, debugging, and programmer productivity tools; program synthesis;
+        language-based security; type systems; language design; analysis of
+        hybrid and embedded systems.  We have a track record of publishing in
+        top venues, such as POPL, PLDI, and CAV.  <a
+        href="https://www.colorado.edu/cs/apply/graduate-admissions"> CS
+        Admissions</a> and <a
+        href="http://www.colorado.edu/ecee/graduate-program/admissions">ECEE
+        Admissions</a> (deadline December 15, 2023).</p>
+      </news-page>
+    </news>
+    <news date="2023.07.01" id="paper-oopsla23">
+      <news-snippet>
+        Two papers with CUPLV authors accepted to <ref table="event" key="oopsla23"/>!
+        [<ref table="pub" key="historia-oopsla23" text="1"/>,
+        <ref table="pub" key="indistinguishability-oopsla23" text="2"/>]
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <author person="smeier"/>,
+        <author person="klinvill"/>,
+        <author person="smover"/>,
+        <author person="gkaki"/>, and
+        <author person="bec"/>
+        have had papers accepted for presentation at <ref table="event" key="oopsla23"/> in October (<ref table="pub"
+        key="historia-oopsla23" mode="authors"/> and <ref table="pub"
+        key="indistinguishability-oopsla" mode="authors"/>).
+      </news-detail>
+    </news>
+    <news date="2022.11.01" id="phd-call-2022">
+      <news-snippet>
+        Call for Ph.D. applicants for Fall 2023.  Application deadline
+        is December 15, 2022.
+      </news-snippet>
+      <news-page header="Ph.D. Positions">
+        <p>We are looking for enthusiastic students to join our diverse and
+        dynamic group in programming languages and verification.  Our group has
+        active projects in areas such as static and dynamic program analysis;
+        verification, debugging, and programmer productivity tools; program synthesis;
+        language-based security; type systems; language design; analysis of
+        hybrid and embedded systems.  We have a track record of publishing in
+        top venues, such as POPL, PLDI, and CAV.  <a
+        href="https://www.colorado.edu/cs/apply/graduate-admissions"> CS
+        Admissions</a> and <a
+        href="http://www.colorado.edu/ecee/graduate-program/admissions">ECEE
+        Admissions</a> (deadline December 15, 2022).</p>
+      </news-page>
+    </news>
     <news date="2022.02.25" id="paper-pldi22">
       <news-snippet>
         Two papers with CUPLV authors (conditionally) accepted to <ref table="event" key="pldi22"/>!
@@ -3311,6 +3367,66 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="historia-oopsla23">
+      <title>Historia: Refuting Callback Reachability with Message-History Logics</title>
+      <authors>
+        <author person="smeier"/>
+        <author person="smover"/>
+        <author person="gkaki"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1145/3622865</url>
+      </urls>
+      <howpub>
+        <proceedings event="oopsla23" />
+      </howpub>
+      <pages>1905-1934</pages>
+      <year>2023</year>
+      <abstract>
+        <p>This paper considers the callback reachability problem — determining if a callback can be called by an event-driven framework in an unexpected state. Event-driven programming frameworks are pervasive for creating user-interactive applications (apps) on just about every modern platform. Control flow between callbacks is determined by the framework and largely opaque to the programmer. This opacity of the callback control flow not only causes difficulty for the programmer but is also difficult for those developing static analysis. Previous static analysis techniques address this opacity either by assuming an arbitrary framework implementation or attempting to eagerly specify all possible callback control flow, but this is either too coarse to prove properties requiring callback-ordering constraints or too burdensome and tricky to get right. Instead, we present a middle way where the callback control flow can be gradually refined in a targeted manner to prove assertions of interest. The key insight to get this middle way is by reasoning about the history of method invocations at the boundary between app and framework code — enabling a decoupling of the specification of callback control flow from the analysis of app code. We call the sequence of such boundary-method invocations message histories and develop message-history logics to do this reasoning. In particular, we define the notion of an application-only transition system with boundary transitions, a message-history program logic for programs with such transitions, and a temporal specification logic for capturing callback control flow in a targeted and compositional manner. Then to utilize the logics in a goal-directed verifier, we define a way to combine after-the-fact an assertion about message histories with a specification of callback control flow. We implemented a prototype message history-based verifier called Historia and provide evidence that our approach is uniquely capable of distinguishing between buggy and fixed versions on challenging examples drawn from real-world issues and that our targeted specification approach enables proving the absence of multi-callback bug patterns in real-world open-source Android apps.</p>
+      </abstract>
+    </pub>
+    <pub id="indistinguishability-oopsla23">
+      <title>Verifying Indistinguishability of Privacy-Preserving Protocols</title>
+      <authors>
+        <author person="klinvill"/>
+        <author person="gkaki"/>
+        <author person="ewustrow"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1145/3622849</url>
+      </urls>
+      <howpub>
+        <proceedings event="oopsla23" />
+      </howpub>
+      <pages>1442-1469</pages>
+      <year>2023</year>
+      <abstract>
+        <p>Internet users rely on the protocols they use to protect their private
+          information including their identity and the websites they visit. Formal
+          verification of these protocols can detect subtle bugs that compromise these
+          protections at design time, but is a challenging task as it involves
+          probabilistic reasoning about random sampling, cryptographic primitives, and
+          concurrent execution. Existing approaches either reason about symbolic
+          models of the protocols that sacrifice precision for automation, or reason
+          about more precise computational models that are harder to automate and
+          require cryptographic expertise. In this paper we propose a novel approach
+          to verifying privacy-preserving protocols that is more precise than symbolic
+          models yet more accessible than computational models. Our approach permits
+          <i>direct-style</i> proofs of privacy, as opposed to indirect game-based
+          proofs in computational models, by formalizing privacy as
+          <i>indistinguishability</i> of possible network traces induced by a
+          protocol. We ease automation by leveraging insights from the distributed
+          systems verification community to create sound synchronous models of
+          concurrent protocols. Our verification framework is implemented in F* as a
+          library we call Waldo. We describe two large case studies of using Waldo
+          to verify indistinguishability; one on the <i>Encrypted Client Hello</i>
+          (ECH) extension of the TLS protocol and another on a <i>Private
+          Information Retrieval</i> (PIR) protocol. We uncover subtle flaws in the TLS
+          ECH specification that were missed by other models.</p>
+      </abstract>
+    </pub>
     <pub id="runtimeassisted-pldi22">
       <title>RunTime-assisted convergence in replicated data types</title>
       <authors>
@@ -6855,6 +6971,10 @@ an application example.</p>
       <name>Franco Raimondi</name>
       <url>https://www.rmnd.net/</url>
     </person>
+    <person id="ewustrow">
+      <name>Eric Wustrow</name>
+      <url>https://ericw.us/trow/</url>
+    </person>
   </persons>
 
   <events>
@@ -7021,6 +7141,14 @@ an application example.</p>
     <series id="oopsla">
       <name>Object Oriented Programming Systems Languages and Applications</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="oopsla23">
+        <date>2023-10</date>
+        <location>Cascais, Portugal</location>
+        <url>http://2023.splashcon.org/</url>
+        <volume>7</volume>
+        <number>OOPSLA2</number>
+        <issue journal="pacmpl"/>
+      </event>
       <event id="oopsla19">
         <date>2019-10</date>
         <location>Athens, Greece</location>

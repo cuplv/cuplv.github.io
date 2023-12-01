@@ -1,0 +1,110 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    Automatically generated. Do not edit directly!
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         OOPSLA 2023
+         :
+         	Historia: Refuting Callback Reachability with Message-History Logics  |  CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="lsidebarfloat">
+            <div id="lsidebar"></div>
+         </div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
+         <div id="banner">
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="visiting.html">Visiting</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Historia: Refuting Callback Reachability with Message-History Logics</div>
+               <div xmlns="" class="subtitle">
+                  <a href="http://2023.splashcon.org/">OOPSLA 2023</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-icon"><a href="https://doi.org/10.1145/3622865"><img src="clouds/historia-oopsla23.words.png" class="icon"></a></div>
+               <div class="item-block">
+                  <div class="item-date">2023</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/historia-oopsla23.html">detail</a></li>
+                     <li><a href="https://doi.org/10.1145/3622865">doi</a></li>
+                     <li><a href="papers/historia-oopsla23.pdf" onClick="_gaq.push(['_trackPageview', '/papers/historia-oopsla23.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Historia: Refuting Callback Reachability with Message-History Logics</div>
+                  <div class="hanging"><a href="http://www.cs.colorado.edu/~shme8881/">Shawn Meier</a>, <a href="http://www.sergiomover.eu/">Sergio Mover</a>, <a href="https://gowthamk.github.io/">Gowtham Kaki</a>,  and <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a></div>
+                  <div class="hanging">
+                     <a href="http://2023.splashcon.org/">OOPSLA 2023</a>:
+                     ACM SIGPLAN Conference on Object Oriented Programming Systems Languages and Applications
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">This paper considers the callback reachability problem — determining if a callback can be called by an event-driven framework
+               in an unexpected state. Event-driven programming frameworks are pervasive for creating user-interactive applications (apps)
+               on just about every modern platform. Control flow between callbacks is determined by the framework and largely opaque to the
+               programmer. This opacity of the callback control flow not only causes difficulty for the programmer but is also difficult
+               for those developing static analysis. Previous static analysis techniques address this opacity either by assuming an arbitrary
+               framework implementation or attempting to eagerly specify all possible callback control flow, but this is either too coarse
+               to prove properties requiring callback-ordering constraints or too burdensome and tricky to get right. Instead, we present
+               a middle way where the callback control flow can be gradually refined in a targeted manner to prove assertions of interest.
+               The key insight to get this middle way is by reasoning about the history of method invocations at the boundary between app
+               and framework code — enabling a decoupling of the specification of callback control flow from the analysis of app code. We
+               call the sequence of such boundary-method invocations message histories and develop message-history logics to do this reasoning.
+               In particular, we define the notion of an application-only transition system with boundary transitions, a message-history
+               program logic for programs with such transitions, and a temporal specification logic for capturing callback control flow in
+               a targeted and compositional manner. Then to utilize the logics in a goal-directed verifier, we define a way to combine after-the-fact
+               an assertion about message histories with a specification of callback control flow. We implemented a prototype message history-based
+               verifier called Historia and provide evidence that our approach is uniquely capable of distinguishing between buggy and fixed
+               versions on challenging examples drawn from real-world issues and that our targeted specification approach enables proving
+               the absence of multi-callback bug patterns in real-world open-source Android apps.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{OOPSLA = "ACM SIGPLAN Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA)"}
+@inproceedings{historia-oopsla23,
+  author = {Shawn Meier and Sergio Mover and Gowtham Kaki and Bor-Yuh Evan Chang},
+  title = {Historia: Refuting Callback Reachability with Message-History Logics},
+  booktitle = OOPSLA,
+  year = {2023},
+  pages = {1905-1934},
+  
+}
+</pre></div>
+      </div>
+   </body>
+</html>
