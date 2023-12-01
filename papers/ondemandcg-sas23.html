@@ -1,0 +1,106 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    Automatically generated. Do not edit directly!
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         SAS 2023
+         :
+         	Lifting On-Demand Analysis to Higher-Order Languages  |  CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="lsidebarfloat">
+            <div id="lsidebar"></div>
+         </div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
+         <div id="banner">
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="visiting.html">Visiting</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Lifting On-Demand Analysis to Higher-Order Languages</div>
+               <div xmlns="" class="subtitle">
+                  <a href="https://conf.researchr.org/home/sas-2023">SAS 2023</a>
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-icon"><a href="https://doi.org/10.1007/978-3-031-44245-2_21"><img src="clouds/ondemandcg-sas23.words.png" class="icon"></a></div>
+               <div class="item-block">
+                  <div class="item-date">2023</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/ondemandcg-sas23.html">detail</a></li>
+                     <li><a href="https://doi.org/10.1007/978-3-031-44245-2_21">doi</a></li>
+                  </ul>
+                  <div class="item-header hanging">Lifting On-Demand Analysis to Higher-Order Languages</div>
+                  <div class="hanging"><a href="https://schoepe.org/~daniel/">Daniel Schoepe</a>, David Seekatz, <a href="https://istoilkovska.github.io/">Ilina Stoilkovska</a>, <a href="https://sstucki.github.io/">Sandro Stucki</a>, Daniel Tattersall, Pauline Bolignano, <a href="https://www.rmnd.net/">Franco Raimondi</a>,  and <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a></div>
+                  <div class="hanging">
+                     <a href="https://conf.researchr.org/home/sas-2023">SAS 2023</a>:
+                     International Static Analysis Symposium
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">In this paper, we present an approach to lift on-demand analysis to higher-order languages. Specifically, our approach bootstraps
+               an on-demand call graph construction by leveraging a pair of on-demand data flow analyses. Static analysis is increasingly
+               applied to find subtle bugs or prove deep properties in large, industrial code bases. To effectively do this at scale, analyzers
+               need to both resolve function calls in a precise manner (i.e., construct a precise call graph) and examine only the relevant
+               portion of the program (i.e., be on-demand). A strawman strategy to this problem is to use fast, approximate, whole-program
+               call graph construction algorithms. However, this strategy is generally not adequate for modern languages like JavaScript
+               that rely heavily on higher-order features, such as callbacks and closures, where scalable approximations often introduce
+               unacceptable imprecision. This strategy also limits increasingly sophisticated on-demand analyses, which scale by analyzing
+               only parts of a program as needed: the scalability advantages of an on-demand analysis may be thwarted by the need to construct
+               a whole-program call graph. The key insight of this paper is that existing on-demand data flow analyses can themselves be
+               applied in a black-box manner to construct call graphs on demand. We propose a soundness condition for the existing on-demand
+               analyses with respect to partial call graphs, formalize our algorithm as an abstract domain combinator, and prove it sound
+               in Isabelle/HOL. Furthermore, we evaluate a prototype implementation of the resulting on-demand call graph construction algorithm
+               for a subset of JavaScript (using the Synchronized Push-Down Systems framework as the underlying data flow analysis) on benchmarks
+               making heavy use of higher-order functions.
+            </p>
+            
+            <h4 xmlns="">BibTeX</h4><pre xmlns="" class="sh_bib">
+@string{SAS = "International Static Analysis Symposium (SAS)"}
+@inproceedings{ondemandcg-sas23,
+  author = {Daniel Schoepe and David Seekatz and Ilina Stoilkovska and Sandro Stucki and Daniel Tattersall and Pauline Bolignano and Franco Raimondi and Bor-Yuh Evan Chang},
+  title = {Lifting On-Demand Analysis to Higher-Order Languages},
+  booktitle = SAS,
+  year = {2023},
+  pages = {460-484},
+  
+}
+</pre></div>
+      </div>
+   </body>
+</html>

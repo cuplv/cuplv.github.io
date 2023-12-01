@@ -40,7 +40,20 @@
         <author person="bec"/>
         have had papers accepted for presentation at <ref table="event" key="oopsla23"/> in October (<ref table="pub"
         key="historia-oopsla23" mode="authors"/> and <ref table="pub"
-        key="indistinguishability-oopsla" mode="authors"/>).
+        key="indistinguishability-oopsla23" mode="authors"/>).
+      </news-detail>
+    </news>
+    <news date="2023.06.29" id="paper-sas23">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="ondemandcg-sas23" mode="authors" /> accepted to
+        <ref table="event" key="sas23" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV author
+        <ref table="person" key="bec" /> with collaborators
+        has had a paper "<ref table="pub" key="ondemandcg-sas23" />" accepted for presentation at
+        <ref table="event" key="sas23" /> in October.
       </news-detail>
     </news>
     <news date="2022.11.01" id="phd-call-2022">
@@ -69,7 +82,7 @@
         <ref table="pub" key="antipotentials-pldi22" text="2"/>]
       </news-snippet>
       <news-detail>
-        CUPLV authors <ref table="person" key="gkaki"/>, <ref table="person" key="prahladan"/>, and <ref table="person" key="nlewchenko"/>
+        CUPLV authors <ref table="person" key="gkaki"/>, <ref table="person" key="pprahladan"/>, and <ref table="person" key="nlewchenko"/>
         have had papers accepted for presentation at <ref table="event" key="pldi22"/> in June (<ref table="pub"
         key="runtimeassisted-pldi22" mode="authors"/> and <ref table="pub"
         key="antipotentials-pldi22" mode="authors"/>).
@@ -3425,6 +3438,30 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
           (ECH) extension of the TLS protocol and another on a <i>Private
           Information Retrieval</i> (PIR) protocol. We uncover subtle flaws in the TLS
           ECH specification that were missed by other models.</p>
+      </abstract>
+    </pub>
+    <pub id="ondemandcg-sas23">
+      <title>Lifting On-Demand Analysis to Higher-Order Languages</title>
+      <authors>
+        <author person="schoeped"/>
+        <author person="dseekatz" student="y"/>
+        <author person="ilinas"/>
+        <author person="sastucki"/>
+        <author person="dtattersall"/>
+        <author person="pln"/>
+        <author person="frai"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1007/978-3-031-44245-2_21</url>
+      </urls>
+      <howpub>
+        <proceedings event="sas23" />
+      </howpub>
+      <pages>460-484</pages>
+      <year>2023</year>
+      <abstract>
+        <p>In this paper, we present an approach to lift on-demand analysis to higher-order languages. Specifically, our approach bootstraps an on-demand call graph construction by leveraging a pair of on-demand data flow analyses. Static analysis is increasingly applied to find subtle bugs or prove deep properties in large, industrial code bases. To effectively do this at scale, analyzers need to both resolve function calls in a precise manner (i.e., construct a precise call graph) and examine only the relevant portion of the program (i.e., be on-demand). A strawman strategy to this problem is to use fast, approximate, whole-program call graph construction algorithms. However, this strategy is generally not adequate for modern languages like JavaScript that rely heavily on higher-order features, such as callbacks and closures, where scalable approximations often introduce unacceptable imprecision. This strategy also limits increasingly sophisticated on-demand analyses, which scale by analyzing only parts of a program as needed: the scalability advantages of an on-demand analysis may be thwarted by the need to construct a whole-program call graph. The key insight of this paper is that existing on-demand data flow analyses can themselves be applied in a black-box manner to construct call graphs on demand. We propose a soundness condition for the existing on-demand analyses with respect to partial call graphs, formalize our algorithm as an abstract domain combinator, and prove it sound in Isabelle/HOL. Furthermore, we evaluate a prototype implementation of the resulting on-demand call graph construction algorithm for a subset of JavaScript (using the Synchronized Push-Down Systems framework as the underlying data flow analysis) on benchmarks making heavy use of higher-order functions.</p>
       </abstract>
     </pub>
     <pub id="runtimeassisted-pldi22">
@@ -6975,6 +7012,24 @@ an application example.</p>
       <name>Eric Wustrow</name>
       <url>https://ericw.us/trow/</url>
     </person>
+    <person id="schoeped">
+      <name>Daniel Schoepe</name>
+      <url>https://schoepe.org/~daniel/</url>
+    </person>
+    <person id="dseekatz">
+      <name>David Seekatz</name>
+    </person>
+    <person id="ilinas">
+      <name>Ilina Stoilkovska</name>
+      <url>https://istoilkovska.github.io/</url>
+    </person>
+    <person id="sastucki">
+      <name>Sandro Stucki</name>
+      <url>https://sstucki.github.io/</url>
+    </person>
+    <person id="dtattersall">
+      <name>Daniel Tattersall</name>
+    </person>
   </persons>
 
   <events>
@@ -7366,6 +7421,12 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas23">
+        <date>2023-10</date>
+        <location>Cascais, Portugal</location>
+        <nth>Thirtieth</nth>
+        <url>https://conf.researchr.org/home/sas-2023</url>
+      </event>
       <event id="sas21">
         <date>2021-10</date>
         <location>Chicago, Illinois, USA</location>
