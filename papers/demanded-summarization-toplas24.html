@@ -1,0 +1,99 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+    Automatically generated. Do not edit directly!
+  -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <title>
+         TOPLAS46(1)
+         :
+         	Interactive Abstract Interpretation with Demanded Summarization  |  CUPLV
+      </title><script xmlns="" type="text/javascript" src="lib/sh_main.min.js"></script><script xmlns="" type="text/javascript" src="lib/sh_bib.js"></script><link xmlns="" href="lib/sh_style.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+	  (function(w) { var p = w.onload;
+	     w.onload = function() {
+	       sh_highlightDocument(); if (p != undefined){ p(); }
+	     };
+	  })(window)
+	</script><base xmlns="" href="http://pl.cs.colorado.edu/">
+      <link xmlns="" href="pl.css" rel="stylesheet" type="text/css"><script xmlns="" type="text/javascript">
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-25127606-1']);
+     _gaq.push(['_trackPageview']);
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+   </script></head>
+   <body>
+      <div id="container">
+         <div id="lsidebarfloat">
+            <div id="lsidebar"></div>
+         </div>
+         <div id="rsidebarfloat">
+            <div id="rsidebar"></div>
+         </div>
+         <div id="banner">
+            <ul xmlns="">
+               <li><a href=".">Welcome</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="people.html">People</a></li>
+               <li><a href="papers.html">Papers</a></li>
+               <li><a href="projects.html">Projects</a></li>
+               <li><a href="visiting.html">Visiting</a></li>
+            </ul><img xmlns="" src="pics/banner.jpg" height="50"></div>
+         <div id="content">
+            <div id="header">
+               <div xmlns="" class="small-title">Interactive Abstract Interpretation with Demanded Summarization</div>
+               <div xmlns="" class="subtitle">
+                  TOPLAS46(1)
+                  
+               </div>
+            </div>
+            <h4 xmlns="">Reference</h4>
+            <div xmlns="" class="item">
+               <div class="item-icon"><a href="https://doi.org/10.1145/3648441"><img src="clouds/demanded-summarization-toplas24.words.png" class="icon"></a></div>
+               <div class="item-block">
+                  <div class="item-date">2024</div>
+                  <ul class="hlinks">
+                     <li><a href="papers/demanded-summarization-toplas24.html">detail</a></li>
+                     <li><a href="https://doi.org/10.1145/3648441">doi</a></li>
+                     <li><a href="papers/demanded-summarization-toplas24.pdf" onClick="_gaq.push(['_trackPageview', '/papers/demanded-summarization-toplas24.pdf']);">pdf</a></li>
+                  </ul>
+                  <div class="item-header hanging">Interactive Abstract Interpretation with Demanded Summarization</div>
+                  <div class="hanging"><a href="http://plv.colorado.edu/benno">Benno Stein</a>, <a href="http://www.cs.colorado.edu/~bec/">Bor-Yuh Evan Chang</a>,  and <a href="http://manu.sridharan.net">Manu Sridharan</a></div>
+                  <div class="hanging">
+                     
+                     ACM Transactions on Programming Languages and Systems (TOPLAS)
+                     ACM Trans. Program. Lang. Syst.
+                     
+                     
+                  </div>
+               </div>
+            </div>
+            <h4 xmlns="">Abstract</h4>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">We consider the problem of making expressive, interactive static analyzers compositional. Such a technique could help bring
+               the power of server-based static analyses to integrated development environments (IDEs), updating their results live as the
+               code is modified. Compositionality is key for this scenario, as it enables reuse of already-computed analysis results for
+               unmodified code. Previous techniques for interactive static analysis either lack compositionality, cannot express arbitrary
+               abstract domains, or are not from-scratch consistent.
+            </p>
+            
+            <p xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="">We present demanded summarization, the first algorithm for incremental compositional analysis in arbitrary abstract domains
+               which guarantees from-scratch consistency. Our approach analyzes individual procedures using a recent technique for demanded
+               analysis, computing summaries on demand for procedure calls. A dynamically-updated summary dependency graph enables precise
+               result invalidation after program edits, and the algorithm is carefully designed to guarantee from-scratch-consistent results
+               after edits, even in the presence of recursion and in arbitrary abstract domains. We formalize our technique and prove soundness,
+               termination, and from-scratch consistency. An experimental evaluation of a prototype implementation on synthetic and real-world
+               program edits provides evidence for the feasibility of this theoretical framework, showing potential for major performance
+               benefits over non-demanded compositional analyses.
+            </p>
+            
+         </div>
+      </div>
+   </body>
+</html>

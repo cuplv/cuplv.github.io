@@ -1,0 +1,8 @@
+Interactive Abstract Interpretation with Demanded Summarization
+        We consider the problem of making expressive, interactive static analyzers compositional. Such a technique could help bring the power of server-based static analyses to integrated development environments (IDEs), updating their results live as the code is modified. Compositionality is key for this scenario, as it enables reuse of already-computed analysis results for unmodified code. Previous techniques for interactive static analysis either lack compositionality, cannot express arbitrary abstract domains, or are not from-scratch consistent.
+
+
+        We present demanded summarization, the first algorithm for incremental compositional analysis in arbitrary abstract domains which guarantees from-scratch consistency. Our approach analyzes individual procedures using a recent technique for demanded analysis, computing summaries on demand for procedure calls. A dynamically-updated summary dependency graph enables precise result invalidation after program edits, and the algorithm is carefully designed to guarantee from-scratch-consistent results after edits, even in the presence of recursion and in arbitrary abstract domains. We formalize our technique and prove soundness, termination, and from-scratch consistency. An experimental evaluation of a prototype implementation on synthetic and real-world program edits provides evidence for the feasibility of this theoretical framework, showing potential for major performance benefits over non-demanded compositional analyses.
+
+
+      

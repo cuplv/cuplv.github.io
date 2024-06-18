@@ -6,6 +6,19 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2024.01.19" id="paper-toplas24">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="demanded-summarization-toplas24" mode="authors" /> published in
+        <ref table="journal" key="toplas" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="bstein" /> and <ref table="person" key="bec" /> with collaborators
+        has had a paper "<ref table="pub" key="demanded-summarization-toplas24" />" published in
+        <ref table="journal" key="toplas" />
+      </news-detail>
+    </news>
     <news date="2023.11.01" id="phd-call-2023">
       <news-snippet>
         Call for Ph.D. applicants for Fall 2024.  Application deadline
@@ -3380,6 +3393,31 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="demanded-summarization-toplas24">
+      <title>Interactive Abstract Interpretation with Demanded Summarization</title>
+      <authors>
+        <author person="bstein"/>
+        <author person="bec"/>
+        <author person="msridhar"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1145/3648441</url>
+        <url name="pdf">papers/demanded-summarization-toplas24.pdf</url>
+      </urls>
+      <pages>4:1-4:40</pages>
+      <date>2024</date>
+      <volume>46</volume>
+      <number>1</number>
+      <doi>10.1145/3648441</doi>
+      <ee>https://doi.org/10.1145/3648441</ee>
+      <howpub>
+        <issue journal="toplas" />
+      </howpub>
+      <abstract>
+        <p>We consider the problem of making expressive, interactive static analyzers compositional. Such a technique could help bring the power of server-based static analyses to integrated development environments (IDEs), updating their results live as the code is modified. Compositionality is key for this scenario, as it enables reuse of already-computed analysis results for unmodified code. Previous techniques for interactive static analysis either lack compositionality, cannot express arbitrary abstract domains, or are not from-scratch consistent.</p>
+        <p>We present demanded summarization, the first algorithm for incremental compositional analysis in arbitrary abstract domains which guarantees from-scratch consistency. Our approach analyzes individual procedures using a recent technique for demanded analysis, computing summaries on demand for procedure calls. A dynamically-updated summary dependency graph enables precise result invalidation after program edits, and the algorithm is carefully designed to guarantee from-scratch-consistent results after edits, even in the presence of recursion and in arbitrary abstract domains. We formalize our technique and prove soundness, termination, and from-scratch consistency. An experimental evaluation of a prototype implementation on synthetic and real-world program edits provides evidence for the feasibility of this theoretical framework, showing potential for major performance benefits over non-demanded compositional analyses.</p>
+      </abstract>
+    </pub>
     <pub id="historia-oopsla23">
       <title>Historia: Refuting Callback Reachability with Message-History Logics</title>
       <authors>
@@ -8094,6 +8132,10 @@ an application example.</p>
     <journal id="cacm">
       <name>Communications of the ACM (CACM)</name>
       <short>Commun. ACM</short>
+    </journal>
+    <journal id="toplas">
+      <name>ACM Transactions on Programming Languages and Systems (TOPLAS)</name>
+      <short>ACM Trans. Program. Lang. Syst.</short>
     </journal>
     <journal id="fntpl">
       <name>Foundations and Trends in Programming Languages (FnTPL)</name>
