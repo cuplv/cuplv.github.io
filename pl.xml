@@ -7235,6 +7235,12 @@ an application example.</p>
     <series id="oopsla">
       <name>Object Oriented Programming Systems Languages and Applications</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="oopsla24">
+        <date>2024-10</date>
+        <location>Pasadena, California, USA</location>
+        <url>https://2024.splashcon.org/track/splash-2024-oopsla</url>
+        <issue journal="pacmpl"/>
+      </event>
       <event id="oopsla23">
         <date>2023-10</date>
         <location>Cascais, Portugal</location>
@@ -7269,6 +7275,11 @@ an application example.</p>
     <series id="splash">
       <name>Systems, Programming, Languages and Applications: Software for Humanity</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="splash23">
+        <date>2023-10</date>
+        <location>Cascais, Portugal</location>
+        <url>https://2023.splashcon.org/</url>
+      </event>
       <event id="splash22">
         <date>2022-11</date>
         <location>Auckland, New Zealand</location>
@@ -7308,6 +7319,16 @@ an application example.</p>
       <name>Computer Aided Verification</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="cav24">
+        <date>2024-07</date>
+        <location>Montreal, Canada</location>
+        <url>http://i-cav.org/2023/</url>
+      </event>
+      <event id="cav23">
+        <date>2023-07</date>
+        <location>Paris, France</location>
+        <url>http://i-cav.org/2023/</url>
+      </event>
       <event id="cav22">
         <date>2022-07</date>
         <location>Haifa, Israel</location>
@@ -7559,6 +7580,11 @@ an application example.</p>
       <name>Verification, Model Checking, and Abstract Interpretation</name>
       <longPrefix>International Conference on</longPrefix>
       <issue journal="lncs"/>
+      <event id="vmcai23">
+        <date>2023-01</date>
+        <location>Boston, Massachusetts, USA</location>
+        <url>https://popl23.sigplan.org/home/VMCAI-2023</url>
+      </event>
       <event id="vmcai19">
         <date>2019-01</date>
         <location>Cascais, Portugal</location>
