@@ -16,7 +16,7 @@
         CUPLV authors
         <ref table="person" key="bstein" /> and <ref table="person" key="bec" /> with collaborators
         has had a paper "<ref table="pub" key="demanded-summarization-toplas24" />" published in
-        <ref table="journal" key="toplas" />
+        <ref table="journal" key="toplas" />.
       </news-detail>
     </news>
     <news date="2023.11.01" id="phd-call-2023">
