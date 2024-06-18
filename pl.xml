@@ -3411,7 +3411,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3622849</url>
       </urls>
       <howpub>
-        <proceedings event="oopsla23" />
+        <issue journal="pacmpl" event="oopsla23" />
+        <!-- <proceedings event="oopsla23" /> -->
       </howpub>
       <pages>1442-1469</pages>
       <year>2023</year>
@@ -7200,6 +7201,8 @@ an application example.</p>
         <date>2023-10</date>
         <location>Cascais, Portugal</location>
         <url>http://2023.splashcon.org/</url>
+        <acceptance>79/211</acceptance>
+        <acceptanceRate>37.4%</acceptanceRate>
         <volume>7</volume>
         <number>OOPSLA2</number>
         <issue journal="pacmpl"/>
@@ -7426,6 +7429,9 @@ an application example.</p>
         <location>Cascais, Portugal</location>
         <nth>Thirtieth</nth>
         <url>https://conf.researchr.org/home/sas-2023</url>
+        <acceptance>19/39</acceptance> <!-- 20/40 all papers -->
+        <acceptanceRate>50.0%</acceptanceRate>
+        <volume>14284</volume>
       </event>
       <event id="sas21">
         <date>2021-10</date>
