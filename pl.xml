@@ -6290,6 +6290,11 @@ an application example.</p>
       <url>http://research.microsoft.com/en-us/people/toddm/</url>
       <face>pics/mytkowicz.jpg</face>
     </person>
+    <person id="cknagesh" group="phd">
+      <name>Chandra Kanth Nagesh</name>
+      <url>https://ck090.github.io/</url>
+      <face>pics/cknagesh.jpeg</face>
+    </person>
     <person id="mnarasimhamurthy" group="phd">
       <name>Monal Narasimhamurthy</name>
       <face>pics/mnarasimhamurthy.jpg</face>
@@ -6310,6 +6315,11 @@ an application example.</p>
     <person id="pprahladan" group="phd">
       <name>Prasanth Prahladan</name>
       <face>pics/generic-male.png</face>
+    </person>
+    <person id="rwajid" group="phd">
+      <name>Rameez Wajid</name>
+      <url>https://rameezw.github.io/</url>
+      <face>pics/rwajid.jpeg</face>
     </person>
     <person id="hravanbakhsh" group="phd-alumni">
       <name>Hadi Ravanbakhsh</name>
