@@ -6186,7 +6186,7 @@ an application example.</p>
       <name>Juraj Culak</name>
       <face>pics/jculak.png</face>
     </person>
-    <person id="tdohmen" group="phd">
+    <person id="tdohmen" group="phd-alumni">
       <name>Taylor Dohmen</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -6199,7 +6199,7 @@ an application example.</p>
       <face>pics/sdutta.png</face>
       <url>https://sites.google.com/site/duttasouradeep39/</url>
     </person>
-    <person id="deflores" group="phd">
+    <person id="deflores" group="phd-alumni">
       <name>David Flores</name>
       <face>pics/flores.jpg</face>
       <url>https://plv.colorado.edu/deflores</url>
@@ -6235,7 +6235,7 @@ an application example.</p>
       <name>Youngsung Kim</name>
       <face>pics/ykim.png</face>
     </person>
-    <person id="jkomp" group="phd">
+    <person id="jkomp" group="phd-alumni">
       <name>John Komp</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -6253,7 +6253,7 @@ an application example.</p>
       <face>pics/klinvill.jpg</face>
       <url>https://kirby.linvill.net</url>
     </person>
-    <person id="tlu" group="phd">
+    <person id="tlu" group="phd-alumni">
       <name>Tianhan Lu</name>
       <url>https://plv.colorado.edu/tianhan/</url>
       <face>pics/tianhan.jpg</face>
@@ -6267,7 +6267,7 @@ an application example.</p>
       <url>http://www.jrmcclurg.com/</url>
       <face>pics/mcclurg.jpg</face>
     </person>
-    <person id="smeier" group="phd">
+    <person id="smeier" group="phd-alumni">
       <name>Shawn Meier</name>
       <url>http://plv.colorado.edu/shawn/</url>
       <face>pics/meier.jpg</face>
@@ -6276,7 +6276,7 @@ an application example.</p>
       <name>Weiyu Miao</name>
       <face>pics/miao.jpg</face>
     </person>
-    <person id="vmurali" group="phd">
+    <person id="vmurali" group="postdoc">
       <name>Vishnu Murali</name>
       <face>pics/generic-male.png</face>
     </person>
@@ -6295,7 +6295,7 @@ an application example.</p>
       <url>https://ck090.github.io/</url>
       <face>pics/cknagesh.jpeg</face>
     </person>
-    <person id="mnarasimhamurthy" group="phd">
+    <person id="mnarasimhamurthy" group="phd-alumni">
       <name>Monal Narasimhamurthy</name>
       <face>pics/mnarasimhamurthy.jpg</face>
     </person>
@@ -6308,7 +6308,7 @@ an application example.</p>
       <name>Saeid Tizpaz Niari</name>
       <face>pics/tizpaz.jpg</face>
     </person>
-    <person id="mperez" group="phd">
+    <person id="mperez" group="phd-alumni">
       <name>Mateo Perez</name>
       <face>pics/generic-male.png</face>
     </person>
