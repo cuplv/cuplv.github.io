@@ -6,6 +6,36 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2024.04.21" id="paper-ecoop25">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="taming-ecoop25" mode="authors" /> published in
+        <ref table="event" key="ecoop25" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV author
+        <ref table="person" key="bec" /> with collaborators
+        have had a paper
+        "<ref table="pub" key="taming-ecoop25"/>"
+        accepted for presentation at <ref table="event" key="ecoop25"/> in June-July.
+      </news-detail>
+    </news>
+    <news date="2024.12.18" id="paper-oopsla25">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="bolt-oopsla25" mode="authors" /> published in
+        <ref table="event" key="oopsla25" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="nlewchenko" />,
+        <ref table="person" key="gkaki" />,
+        and <ref table="person" key="bec" />
+        have had a paper
+        "<ref table="pub" key="bolt-oopsla25"/>"
+        accepted for presentation at <ref table="event" key="oopsla25"/> in October.
+      </news-detail>
+    </news>
     <news date="2024.01.19" id="paper-toplas24">
       <news-snippet>
         Paper by
@@ -3393,6 +3423,46 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="taming-ecoop25">
+      <title>Taming and Dissecting Recursions through Interprocedural Weak
+  Topological Ordering</title>
+      <authors>
+        <author person="jyang"/>
+        <author person="xcheng"/>
+        <author person="bec"/>
+        <author person="xluo"/>
+        <author person="ysui"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1145/3720502</url>
+      </urls>
+      <howpub>
+        <proceedings event="ecoop25" />
+      </howpub>
+      <pages></pages>
+      <year>2025</year>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="bolt-oopsla25">
+      <title>Bolt-On Strong Consistency: Specification, Implementation, and Verification</title>
+      <authors>
+        <author person="nlewchenko"/>
+        <author person="gkaki"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.1145/3720502</url>
+      </urls>
+      <howpub>
+        <proceedings event="oopsla25" />
+      </howpub>
+      <pages>1604-1631</pages>
+      <year>2025</year>
+      <abstract>
+        <p>Strongly-consistent replicated data stores are a popular foundation for many kinds of online services, but their implementations are very complex. Strong replication is not available under network partitions, and so achieving a functional degree of fault-tolerance requires correctly implementing consensus algorithms like Raft and Paxos. These algorithms are notoriously difficult to reason about, and many data stores implement custom variations to support unique performance tradeoffs, presenting an opportunity for automated verification tools. Unfortunately, existing tools that have been applied to distributed consensus demand too much developer effort, a problem stemming from the low-level programming model in which consensus and strong replication are implemented—asynchronous message passing—which thwarts decidable automation by exposing the details of asynchronous communication. In this paper, we consider the implementation and automated verification of strong replication systems as applications of weak replicated data stores. Weak stores, being available under partition, are a suitable foundation for performant distributed applications. Crucially, they abstract asynchronous communication and allow us to derive local-scope conditions for the verification of consensus safety. To evaluate this approach, we have developed a verified-programming framework for the weak replicated state model, called Super-V. This framework enables SMT-based verification based on local-scope artifacts called stable update preconditions, replacing standard-practice global inductive invariants. We have used our approach to implement and verify a strong replication system based on an adaptation of the Raft consensus algorithm.</p>
+      </abstract>
+    </pub>
     <pub id="demanded-summarization-toplas24">
       <title>Interactive Abstract Interpretation with Demanded Summarization</title>
       <authors>
@@ -7079,6 +7149,19 @@ an application example.</p>
     <person id="dtattersall">
       <name>Daniel Tattersall</name>
     </person>
+    <person id="jyang">
+      <name>Jiawei Yang</name>
+    </person>
+    <person id="xcheng">
+      <name>Xiao Cheng</name>
+    </person>
+    <person id="xluo">
+      <name>Xiapu Luo</name>
+    </person>
+    <person id="ysui">
+      <name>Yulei Sui</name>
+      <url>https://yuleisui.github.io/</url>
+    </person>
   </persons>
 
   <events>
@@ -7245,6 +7328,12 @@ an application example.</p>
     <series id="oopsla">
       <name>Object Oriented Programming Systems Languages and Applications</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="oopsla25">
+        <date>2025-10</date>
+        <location>Singapore</location>
+        <url>https://2025.splashcon.org/track/splash-2025-oopsla</url>
+        <issue journal="pacmpl"/>
+      </event>
       <event id="oopsla24">
         <date>2024-10</date>
         <location>Pasadena, California, USA</location>
@@ -7398,6 +7487,13 @@ an application example.</p>
     <series id="ecoop">
       <name>Object-Oriented Programming</name>
       <longPrefix>European Conference on</longPrefix>
+      <event id="ecoop25">
+        <date>2025-07</date>
+        <location>Bergen, Norway</location>
+        <nth>Thirty-Seventh</nth>
+        <url>https://2025.ecoop.org/</url>
+        <issue journal="lipics"/>
+      </event>
       <event id="ecoop19">
         <date>2019-07</date>
         <location>London, UK</location>
