@@ -1,3 +1,2 @@
-Taming and Dissecting Recursions through Interprocedural Weak
-  Topological Ordering
+Taming and Dissecting Recursions through Interprocedural Weak Topological Ordering
       
