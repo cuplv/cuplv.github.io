@@ -8,7 +8,7 @@
   <news-list>
     <news date="2025.11.25" id="paper-pepm26">
       <news-snippet>
-        Short paper "<ref table="pub" key="towards-cumulative-abstract-semantics-via-handlers-pepm26-short"/>"
+        Paper "<ref table="pub" key="towards-cumulative-abstract-semantics-via-handlers-pepm26-short"/>"
         being presented at <ref table="event" key="pepm26"/>.
       </news-snippet>
       <news-detail>
