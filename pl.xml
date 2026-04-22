@@ -3501,7 +3501,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <urls>
       </urls>
       <howpub>
-        <proceedings event="oopsla26r1" />
+        <issue journal="pacmpl" event="oopsla26r1" />
       </howpub>
       <pages></pages>
       <year>2026</year>
