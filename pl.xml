@@ -6,7 +6,22 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
-    <news date="2024.04.21" id="paper-ecoop25">
+    <news date="2025.11.25" id="paper-pepm26">
+      <news-snippet>
+        Paper "<ref table="pub" key="towards-cumulative-abstract-semantics-via-handlers-pepm26-short"/>"
+        being presented at <ref table="event" key="pepm26"/>.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="clueker" />,
+        <ref table="person" key="afox" />,
+        and <ref table="person" key="bec" />
+        have had a short paper
+        "<ref table="pub" key="towards-cumulative-abstract-semantics-via-handlers-pepm26-short"/>"
+        accepted for presentation at <ref table="event" key="pepm26"/> in January.
+      </news-detail>
+    </news>
+    <news date="2025.04.21" id="paper-ecoop25">
       <news-snippet>
         Paper by
         <ref table="pub" key="taming-ecoop25" mode="authors" /> published in
@@ -3423,11 +3438,29 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
-    <pub id="taming-ecoop25">
-      <title>Taming and Dissecting Recursions through Interprocedural Weak
-  Topological Ordering</title>
+    <pub id="towards-cumulative-abstract-semantics-via-handlers-pepm26-short">
+      <title>Towards Cumulative Abstract Semantics via Handlers (Short Paper)</title>
       <authors>
-        <author person="jyang"/>
+        <author person="clueker" student="y"/>
+        <author person="afox" student="y"/>
+        <author person="bec"/>
+      </authors>
+      <urls>
+        <url name="doi">https://doi.org/10.48550/arXiv.2512.10861</url>
+      </urls>
+      <howpub>
+        <proceedings event="pepm26" />
+      </howpub>
+      <pages>5 pages</pages>
+      <year>2026</year>
+      <abstract>
+       We consider the problem of modularizing control flow in a generic abstract interpretation framework. A generic abstract interpretation framework is not truly flexible if it does not allow interpreting with different path- and flow-sensitivities, by going forwards or backwards, and over- or under-approximately. Most interpreters inherently intertwine syntax and semantics, making the implementation antagonistic to modularity. Current approaches to modular designs require the use of complex data structures (e.g., monad transformers), providing modularity but often proving unwieldy (e.g., lifts). We observe that leveraging scoped effects within an interpreter facilitates the accumulation of semantic fragments against a fixed syntax. In this paper, we define <emph>cumulative abstract semantics</emph>, illustrating the potential for creating multiple dynamic evaluators and static analyses from one interpreter. This modularity is achieved by grouping effects into two categories: syntax <emph>elimination</emph> and domain-semantic <emph>introduction</emph> handlers. Our contribution shows the benefits of using effects as an instrument for designing a clean, elegant, and modular abstract interpretation framework.
+      </abstract>
+    </pub>
+    <pub id="taming-ecoop25">
+      <title>Taming and Dissecting Recursions through Interprocedural Weak Topological Ordering</title>
+      <authors>
+        <author person="jyang" student="y"/>
         <author person="xcheng"/>
         <author person="bec"/>
         <author person="xluo"/>
@@ -3439,7 +3472,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="ecoop25" />
       </howpub>
-      <pages></pages>
+      <pages>34:1-34:31</pages>
       <year>2025</year>
       <abstract>
       </abstract>
@@ -3447,7 +3480,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
     <pub id="bolt-oopsla25">
       <title>Bolt-On Strong Consistency: Specification, Implementation, and Verification</title>
       <authors>
-        <author person="nlewchenko"/>
+        <author person="nlewchenko" student="y"/>
         <author person="gkaki"/>
         <author person="bec"/>
       </authors>
@@ -3455,7 +3488,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3720502</url>
       </urls>
       <howpub>
-        <proceedings event="oopsla25" />
+        <issue journal="pacmpl" event="oopsla25" />
+        <!-- <proceedings event="oopsla25" /> -->
       </howpub>
       <pages>1604-1631</pages>
       <year>2025</year>
@@ -3466,7 +3500,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
     <pub id="demanded-summarization-toplas24">
       <title>Interactive Abstract Interpretation with Demanded Summarization</title>
       <authors>
-        <author person="bstein"/>
+        <author person="bstein" student="y"/>
         <author person="bec"/>
         <author person="msridhar"/>
       </authors>
@@ -3491,7 +3525,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
     <pub id="historia-oopsla23">
       <title>Historia: Refuting Callback Reachability with Message-History Logics</title>
       <authors>
-        <author person="smeier"/>
+        <author person="smeier" student="y"/>
         <author person="smover"/>
         <author person="gkaki"/>
         <author person="bec"/>
@@ -3500,7 +3534,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3622865</url>
       </urls>
       <howpub>
-        <proceedings event="oopsla23" />
+        <issue journal="pacmpl" event="oopsla23" />
+        <!-- <proceedings event="oopsla23" /> -->
       </howpub>
       <pages>1905-1934</pages>
       <year>2023</year>
@@ -6269,7 +6304,7 @@ an application example.</p>
       <face>pics/sdutta.png</face>
       <url>https://sites.google.com/site/duttasouradeep39/</url>
     </person>
-    <person id="deflores" group="phd-alumni">
+    <person id="deflores">
       <name>David Flores</name>
       <face>pics/flores.jpg</face>
       <url>https://plv.colorado.edu/deflores</url>
@@ -6317,6 +6352,10 @@ an application example.</p>
       <name>Nicholas V. Lewchenko</name>
       <face>pics/nlewchenko.jpg</face>
       <url>https://www.octalsrc.org/research</url>
+    </person>
+    <person id="clueker" group="phd">
+      <name>Cade Lueker</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="klinvill" group="phd">
       <name>Kirby Linvill</name>
@@ -6435,10 +6474,6 @@ an application example.</p>
       <name>Aditya Zutshi</name>
       <face>pics/zutshi.jpg</face>
     </person>
-    <person id="emillican" group="bs">
-      <name>Emily Millican</name>
-      <face>pics/generic-female.png</face>
-    </person>
     <person id="rholland" group="bsms-alumni">
       <name>Ross Holland</name>
       <face>pics/rholland.jpg</face>
@@ -6545,6 +6580,10 @@ an application example.</p>
       <name>Dakota Fisher</name>
       <face>pics/generic-male.png</face>
     </person>
+    <person id="afox" group="bs">
+      <name>Andrew Fox</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="agaonkar" group="bs-alumni">
       <name>Akash Gaonkar</name>
       <face>pics/generic-male.png</face>
@@ -6560,6 +6599,10 @@ an application example.</p>
     <person id="jlecavalier" group="bs-alumni">
       <name>Jay Lecavlier</name>
       <face>pics/generic-male.png</face>
+    </person>
+    <person id="emillican" group="bs-alumni">
+      <name>Emily Millican</name>
+      <face>pics/generic-female.png</face>
     </person>
     <person id="aokeson" group="bs-alumni">
       <name>Alexandra Okeson</name>
@@ -7328,10 +7371,26 @@ an application example.</p>
     <series id="oopsla">
       <name>Object Oriented Programming Systems Languages and Applications</name>
       <longPrefix>ACM SIGPLAN Conference on</longPrefix>
+      <event id="oopsla26r1">
+        <!--
+        2026-10 conference date
+        -->
+        <date>2026-04</date> <!-- published date for Round 1 -->
+        <location>Oakland, California, USA</location>
+        <url>https://2026.splashcon.org/track/splash-2026-oopsla</url>
+        <issue journal="pacmpl"/>
+      </event>
       <event id="oopsla25">
-        <date>2025-10</date>
+        <!--
+        2025-10 conference date
+        -->
+        <date>2025-04</date> <!-- published date for Round 1 -->
         <location>Singapore</location>
         <url>https://2025.splashcon.org/track/splash-2025-oopsla</url>
+        <acceptance>64/151 (Round 1)</acceptance>
+        <acceptanceRate>42.4%</acceptanceRate>
+        <volume>9</volume>
+        <number>OOPSLA1</number>
         <issue journal="pacmpl"/>
       </event>
       <event id="oopsla24">
@@ -7492,6 +7551,9 @@ an application example.</p>
         <location>Bergen, Norway</location>
         <nth>Thirty-Seventh</nth>
         <url>https://2025.ecoop.org/</url>
+        <acceptance>42/102</acceptance>
+        <acceptanceRate>41.2%</acceptanceRate>
+        <volume>333</volume>
         <issue journal="lipics"/>
       </event>
       <event id="ecoop19">
@@ -8073,9 +8135,24 @@ an application example.</p>
         <url>https://sites.google.com/site/paste2011/</url>
       </event>
     </series>
+    <series id="pepm" type="workshop">
+      <name>Partial Evaluation and Program Manipulation</name>
+      <longPrefix>ACM SIGPLAN Workshop on</longPrefix>
+      <event id="pepm26">
+        <date>2026-01</date>
+        <url>https://popl26.sigplan.org/home/pepm-2026</url>
+        <location>Rennes, France</location>
+      </event>
+    </series>
     <series id="soap" type="workshop">
       <name>State of the Art in Program Analysis</name>
       <longPrefix>ACM SIGPLAN Workshop on</longPrefix>
+      <event id="soap26">
+        <date>2015-26</date>
+        <nth>Fifteenth</nth>
+        <url>https://pldi26.sigplan.org/home/SOAP-2026</url>
+        <location>Boulder, Colorado, USA</location>
+      </event>
       <event id="soap15">
         <date>2015-06</date>
         <nth>Fourth</nth>
