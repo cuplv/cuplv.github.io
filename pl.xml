@@ -6,6 +6,23 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2026.02.17" id="paper-oopsla26r1">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="effectively-propositional-higher-order-functional-programming-oopsla26" mode="authors" /> published in
+        <ref table="event" key="oopsla26r1" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="nlewchenko" />,
+        <ref table="person" key="kkim" />,
+        <ref table="person" key="bec" />
+        and <ref table="person" key="gkaki" />,
+        have had a paper
+        "<ref table="pub" key="effectively-propositional-higher-order-functional-programming-oopsla26"/>"
+        accepted for presentation at <ref table="event" key="oopsla26"/> in October.
+      </news-detail>
+    </news>
     <news date="2025.11.25" id="paper-pepm26">
       <news-snippet>
         Paper "<ref table="pub" key="towards-cumulative-abstract-semantics-via-handlers-pepm26-short"/>"
@@ -3438,6 +3455,24 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+   <pub id="effectively-propositional-higher-order-functional-programming-oopsla26">
+      <title>Effectively Propositional Higher-Order Functional Programming</title>
+      <authors>
+        <author person="nlewchenko" student="y"/>
+        <author person="kkim" student="y"/>
+        <author person="bec"/>
+        <author person="gkaki"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="oopsla26r1" />
+      </howpub>
+      <pages></pages>
+      <year>2026</year>
+      <abstract>
+      </abstract>
+    </pub>
     <pub id="towards-cumulative-abstract-semantics-via-handlers-pepm26-short">
       <title>Towards Cumulative Abstract Semantics via Handlers (Short Paper)</title>
       <authors>
@@ -6335,6 +6370,10 @@ an application example.</p>
     <person id="karlin" group="phd-alumni">
       <name>Ian Karlin</name>
       <face>pics/karlin.jpg</face>
+    </person>
+    <person id="kkim" group="phd">
+      <name>Kunha Kim</name>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="ykim">
       <name>Youngsung Kim</name>
