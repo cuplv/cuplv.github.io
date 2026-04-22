@@ -6,6 +6,23 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2026.04.15" id="paper-soap">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="ravencheck-soap26" mode="authors" /> published in
+        <ref table="event" key="soap26" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV authors
+        <ref table="person" key="kkim" />,
+        <ref table="person" key="nlewchenko" />,
+        <ref table="person" key="bec" />
+        and <ref table="person" key="gkaki" />,
+        have had a paper
+        "<ref table="pub" key="ravencheck-soap26"/>"
+        accepted for presentation at <ref table="event" key="soap26"/> in June.
+      </news-detail>
+    </news>
     <news date="2026.02.17" id="paper-oopsla26r1">
       <news-snippet>
         Paper by
@@ -3455,7 +3472,25 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
-   <pub id="effectively-propositional-higher-order-functional-programming-oopsla26">
+    <pub id="ravencheck-soap26">
+      <title>Ravencheck: Effectively-Propositional Reasoning for Rust</title>
+      <authors>
+        <author person="kkim" student="y"/>
+        <author person="nlewchenko" student="y"/>
+        <author person="bec"/>
+        <author person="gkaki"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="soap26" />
+      </howpub>
+      <pages></pages>
+      <year>2026</year>
+      <abstract>
+      </abstract>
+    </pub>
+    <pub id="effectively-propositional-higher-order-functional-programming-oopsla26">
       <title>Effectively Propositional Higher-Order Functional Programming</title>
       <authors>
         <author person="nlewchenko" student="y"/>
@@ -6371,6 +6406,10 @@ an application example.</p>
       <name>Ian Karlin</name>
       <face>pics/karlin.jpg</face>
     </person>
+    <person id="kkim" group="phd">
+      <name>Kunha Kim</name>
+      <face>pics/generic-male.png</face>
+    </person>
     <person id="ykim">
       <name>Youngsung Kim</name>
       <face>pics/ykim.png</face>
@@ -8182,6 +8221,12 @@ an application example.</p>
     <series id="soap" type="workshop">
       <name>State of the Art in Program Analysis</name>
       <longPrefix>ACM SIGPLAN Workshop on</longPrefix>
+      <event id="soap26">
+        <date>2015-26</date>
+        <nth>Fifteenth</nth>
+        <url>https://pldi26.sigplan.org/home/SOAP-2026</url>
+        <location>Boulder, Colorado, USA</location>
+      </event>
       <event id="soap15">
         <date>2015-06</date>
         <nth>Fourth</nth>
