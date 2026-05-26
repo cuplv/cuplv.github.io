@@ -8,7 +8,7 @@ Modern software systems --- whether they are web, mobile, distributed, or AI-dri
 
 The Programming Languages and Verification Group at the University of Colorado Boulder (CUPLV) is looking for student research assistants with strong interest and experience with programming language semantics and program verification algorithms.
 
-The research software engineer will work with professor [Bor-Yuh Evan Chang].
+The research assistant will work with professor [Bor-Yuh Evan Chang].
 
 The position is available immediately and for an undergraduate or graduate student and is part-time (for at least 10 hours per week, preferably at least 15). Pay rate will be competitive (from $16.82 to $38.70 per hour) and depend on degree and experience.
 
