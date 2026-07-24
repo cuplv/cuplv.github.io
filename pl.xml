@@ -6,6 +6,21 @@
 
 <cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cvx/cvx.xsd">
   <news-list>
+    <news date="2026.07.04" id="paper-sas">
+      <news-snippet>
+        Paper by
+        <ref table="pub" key="limits-of-proof-sharing-sas26" mode="authors" /> published in
+        <ref table="event" key="sas26" />.
+      </news-snippet>
+      <news-detail>
+        CUPLV author
+        <ref table="person" key="bec" />
+        with collaborators
+        has had a paper
+        "<ref table="pub" key="limits-of-proof-sharing-sas26"/>"
+        accepted for presentation at <ref table="event" key="sas26"/> in October.
+      </news-detail>
+    </news>
     <news date="2026.04.15" id="paper-soap">
       <news-snippet>
         Paper by
@@ -3472,6 +3487,26 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
   </projects>
 
   <publications>
+    <pub id="limits-of-proof-sharing-sas26">
+      <title>Uncovering the Limits of Proof Sharing for Neural Networks</title>
+      <authors>
+        <author person="kdas" student="y"/>
+        <author person="sugare"/>
+        <author person="smisailovic"/>
+        <author person="gsingh"/>
+        <author person="msridhar"/>
+      </authors>
+      <urls>
+      </urls>
+      <howpub>
+        <proceedings event="sas26" />
+      </howpub>
+      <pages></pages>
+      <year>2026</year>
+      <abstract>
+        <p>Robustness verification of neural networks is increasingly important, due to their use in many critical domains. In certain scenarios, proof sharing has been shown to accelerate incomplete verification techniques by reusing intermediate-layer abstract states, or <em>templates</em>, across queries. However, questions remain as to the robustness of template-based acceleration across varying network architectures, properties, datasets, and training methods. In this work, we perform a systematic study of the effectiveness of template-based acceleration and its limits. Our study shows that template subsumption rates can vary widely across scenarios. We present a novel metric of <em>jointly stable neurons</em> to explain this variation, showing that in some cases template-based techniques are very unlikely to provide any speedup. Then, we present FastCert, a novel technique for <em>automatically</em> distributing templates across neural network layers to increase performance impact, eschewing templates entirely if they are unlikely to produce a speedup. Across a large set of verification tasks, FastCert achieved an average speedup of 1.3x compared to an extant template-based reuse technique.</p>
+      </abstract>
+    </pub>
     <pub id="ravencheck-soap26">
       <title>Ravencheck: Effectively-Propositional Reasoning for Rust</title>
       <authors>
@@ -6281,7 +6316,7 @@ an application example.</p>
       <url>http://www.cs.colorado.edu/~srirams/</url>
       <face>pics/sankaranarayanan.jpg</face>
     </person>
-    <person id="bshapiro" group="faculty">
+    <person id="bshapiro" group="faculty-alumni">
       <name>Ben Shapiro</name>
       <url>http://benshapi.ro/</url>
       <face>pics/generic-male.png</face>
@@ -7279,6 +7314,22 @@ an application example.</p>
       <name>Yulei Sui</name>
       <url>https://yuleisui.github.io/</url>
     </person>
+    <person id="kdas">
+      <name>Kanak Das</name>
+      <url>https://kanakdas.me/</url>
+    </person>
+    <person id="shugare">
+      <name>Shubham Ugare</name>
+      <url>https://shubhamugare.github.io/</url>
+    </person>
+    <person id="smisailovic">
+      <name>Sasa Misailovic</name>
+      <url>http://misailo.cs.illinois.edu/</url>
+    </person>
+    <person id="gsingh">
+      <name>Gagandeep Singh</name>
+      <url>https://ggndpsngh.github.io/</url>
+    </person>
   </persons>
 
   <events>
@@ -7725,6 +7776,14 @@ an application example.</p>
       <name>Static Analysis Symposium</name>
       <longPrefix>International</longPrefix>
       <issue journal="lncs"/>
+      <event id="sas26">
+        <date>2026-10</date>
+        <location>Oakland, California, USA</location>
+        <nth>Thirty-Third</nth>
+        <url>https://conf.researchr.org/home/splash-issta-2026/sas-2026</url>
+        <acceptance>20/43</acceptance> <!-- 20/40 all papers -->
+        <acceptanceRate>46.5%</acceptanceRate>
+      </event>
       <event id="sas23">
         <date>2023-10</date>
         <location>Cascais, Portugal</location>
