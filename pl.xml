@@ -3492,6 +3492,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <authors>
         <author person="kdas" student="y"/>
         <author person="sugare"/>
+        <author person="bec"/>
         <author person="smisailovic"/>
         <author person="gsingh"/>
         <author person="msridhar"/>
@@ -3501,7 +3502,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <proceedings event="sas26" />
       </howpub>
-      <pages></pages>
+      <pages>35 pages</pages>
       <year>2026</year>
       <abstract>
         <p>Robustness verification of neural networks is increasingly important, due to their use in many critical domains. In certain scenarios, proof sharing has been shown to accelerate incomplete verification techniques by reusing intermediate-layer abstract states, or <em>templates</em>, across queries. However, questions remain as to the robustness of template-based acceleration across varying network architectures, properties, datasets, and training methods. In this work, we perform a systematic study of the effectiveness of template-based acceleration and its limits. Our study shows that template subsumption rates can vary widely across scenarios. We present a novel metric of <em>jointly stable neurons</em> to explain this variation, showing that in some cases template-based techniques are very unlikely to provide any speedup. Then, we present FastCert, a novel technique for <em>automatically</em> distributing templates across neural network layers to increase performance impact, eschewing templates entirely if they are unlikely to produce a speedup. Across a large set of verification tasks, FastCert achieved an average speedup of 1.3x compared to an extant template-based reuse technique.</p>
