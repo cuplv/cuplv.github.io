@@ -3595,6 +3595,13 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <abstract>
        We consider the problem of modularizing control flow in a generic abstract interpretation framework. A generic abstract interpretation framework is not truly flexible if it does not allow interpreting with different path- and flow-sensitivities, by going forwards or backwards, and over- or under-approximately. Most interpreters inherently intertwine syntax and semantics, making the implementation antagonistic to modularity. Current approaches to modular designs require the use of complex data structures (e.g., monad transformers), providing modularity but often proving unwieldy (e.g., lifts). We observe that leveraging scoped effects within an interpreter facilitates the accumulation of semantic fragments against a fixed syntax. In this paper, we define <emph>cumulative abstract semantics</emph>, illustrating the potential for creating multiple dynamic evaluators and static analyses from one interpreter. This modularity is achieved by grouping effects into two categories: syntax <emph>elimination</emph> and domain-semantic <emph>introduction</emph> handlers. Our contribution shows the benefits of using effects as an instrument for designing a clean, elegant, and modular abstract interpretation framework.
       </abstract>
+      <tr>
+        <number>arXiv:2512.10861</number>
+        <institute>University of Colorado Boulder</institute>
+        <url>https://arxiv.org/abs/2512.10861</url>
+        <pages>5 pages</pages>
+      </tr>
+      <bibnote><span>Technical Report arXiv:2512.10861</span></bibnote>
     </pub>
     <pub id="taming-ecoop25">
       <title>Taming and Dissecting Recursions through Interprocedural Weak Topological Ordering</title>
