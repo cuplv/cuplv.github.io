@@ -6501,13 +6501,14 @@ an application example.</p>
       <name>Taisa Kushner</name>
       <face>pics/tkushner.png</face>
     </person>
-    <person id="nlewchenko" group="phd">
+    <person id="nlewchenko" group="phd-alumni">
       <name>Nicholas V. Lewchenko</name>
       <face>pics/nlewchenko.jpg</face>
       <url>https://www.octalsrc.org/research</url>
     </person>
     <person id="clueker" group="phd">
       <name>Cade Lueker</name>
+      <url>https://cademichael.github.io/</url>
       <face>pics/generic-male.png</face>
     </person>
     <person id="klinvill" group="phd">
@@ -6570,6 +6571,10 @@ an application example.</p>
       <name>Saeid Tizpaz Niari</name>
       <face>pics/tizpaz.jpg</face>
     </person>
+    <person id="mparikh" group="phd">
+      <name>Manasvi Parikh</name>
+      <face>pics/generic-female.png</face>
+    </person>
     <person id="mperez" group="phd-alumni">
       <name>Mateo Perez</name>
       <face>pics/generic-male.png</face>
@@ -6591,6 +6596,11 @@ an application example.</p>
       <name>Christoph Reichenbach</name>
       <url>http://www.cs.umass.edu/~creichen/</url>
       <face>pics/reichenbach.png</face>
+    </person>
+    <person id="jrizkalla" group="phd">
+      <name>John Rizkalla</name>
+      <url>https://johnrizkalla.com</url>
+      <face>pics/generic-male.png</face>
     </person>
     <person id="bstein" group="phd-alumni">
       <name>Benno Stein</name>
@@ -6735,7 +6745,7 @@ an application example.</p>
     </person>
     <person id="afox" group="bs">
       <name>Andrew Fox</name>
-      <face>pics/generic-male.png</face>
+      <face>pics/AFox.png</face>
     </person>
     <person id="agaonkar" group="bs-alumni">
       <name>Akash Gaonkar</name>
