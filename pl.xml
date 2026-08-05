@@ -99,11 +99,11 @@
         accepted for presentation at <ref table="event" key="ecoop25"/> in June-July.
       </news-detail>
     </news>
-    <news date="2024.12.18" id="paper-oopsla25">
+    <news date="2024.12.18" id="paper-oopsla25r1">
       <news-snippet>
         Paper by
-        <ref table="pub" key="bolt-oopsla25" mode="authors" /> published in
-        <ref table="event" key="oopsla25" />.
+        <ref table="pub" key="bolt-oopsla25r1" mode="authors" /> published in
+        <ref table="event" key="oopsla25r1" />.
       </news-snippet>
       <news-detail>
         CUPLV authors
@@ -111,8 +111,8 @@
         <ref table="person" key="gkaki" />,
         and <ref table="person" key="bec" />
         have had a paper
-        "<ref table="pub" key="bolt-oopsla25"/>"
-        accepted for presentation at <ref table="event" key="oopsla25"/> in October.
+        "<ref table="pub" key="bolt-oopsla25r1"/>"
+        accepted for presentation at <ref table="event" key="oopsla25r1"/> in October.
       </news-detail>
     </news>
     <news date="2024.01.19" id="paper-toplas24">
@@ -147,11 +147,11 @@
         Admissions</a> (deadline December 15, 2023).</p>
       </news-page>
     </news>
-    <news date="2023.07.01" id="paper-oopsla23">
+    <news date="2023.07.01" id="paper-oopsla23r2">
       <news-snippet>
-        Two papers with CUPLV authors accepted to <ref table="event" key="oopsla23"/>!
-        [<ref table="pub" key="historia-oopsla23" text="1"/>,
-        <ref table="pub" key="indistinguishability-oopsla23" text="2"/>]
+        Two papers with CUPLV authors accepted to <ref table="event" key="oopsla23r2"/>!
+        [<ref table="pub" key="historia-oopsla23r2" text="1"/>,
+        <ref table="pub" key="indistinguishability-oopsla23r2" text="2"/>]
       </news-snippet>
       <news-detail>
         CUPLV authors
@@ -160,9 +160,9 @@
         <author person="smover"/>,
         <author person="gkaki"/>, and
         <author person="bec"/>
-        have had papers accepted for presentation at <ref table="event" key="oopsla23"/> in October (<ref table="pub"
-        key="historia-oopsla23" mode="authors"/> and <ref table="pub"
-        key="indistinguishability-oopsla23" mode="authors"/>).
+        have had papers accepted for presentation at <ref table="event" key="oopsla23r2"/> in October (<ref table="pub"
+        key="historia-oopsla23r2" mode="authors"/> and <ref table="pub"
+        key="indistinguishability-oopsla23r2" mode="authors"/>).
       </news-detail>
     </news>
     <news date="2023.06.29" id="paper-sas23">
@@ -3571,9 +3571,10 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <howpub>
         <issue journal="pacmpl" event="oopsla26r1" />
       </howpub>
-      <pages></pages>
+      <pages>1627-1653</pages>
       <year>2026</year>
       <abstract>
+        <p>Decidable automation is a key feature of program verification tools, which makes them easier for non-expert developers to use and understand. Unfortunately, decidable fragments of logic are very restrictive, and not ideal for the expression of idiomatic programs. The decidable <em>Extended EPR</em> fragment, combined with an encoding technique called <em>relational abstraction</em>, has seen wide use for its ability to handle both quantifiers and uninterpreted functions. However, the complexity of the relational abstraction encoding, combined with its inherent incompleteness, still poses a significant obstacle to non-experts.</p>
       </abstract>
     </pub>
     <pub id="towards-cumulative-abstract-semantics-via-handlers-pepm26-short">
@@ -3615,7 +3616,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
       <abstract>
       </abstract>
     </pub>
-    <pub id="bolt-oopsla25">
+    <pub id="bolt-oopsla25r1">
       <title>Bolt-On Strong Consistency: Specification, Implementation, and Verification</title>
       <authors>
         <author person="nlewchenko" student="y"/>
@@ -3626,8 +3627,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3720502</url>
       </urls>
       <howpub>
-        <issue journal="pacmpl" event="oopsla25" />
-        <!-- <proceedings event="oopsla25" /> -->
+        <issue journal="pacmpl" event="oopsla25r1" />
+        <!-- <proceedings event="oopsla25r1" /> -->
       </howpub>
       <pages>1604-1631</pages>
       <year>2025</year>
@@ -3660,7 +3661,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <p>We present demanded summarization, the first algorithm for incremental compositional analysis in arbitrary abstract domains which guarantees from-scratch consistency. Our approach analyzes individual procedures using a recent technique for demanded analysis, computing summaries on demand for procedure calls. A dynamically-updated summary dependency graph enables precise result invalidation after program edits, and the algorithm is carefully designed to guarantee from-scratch-consistent results after edits, even in the presence of recursion and in arbitrary abstract domains. We formalize our technique and prove soundness, termination, and from-scratch consistency. An experimental evaluation of a prototype implementation on synthetic and real-world program edits provides evidence for the feasibility of this theoretical framework, showing potential for major performance benefits over non-demanded compositional analyses.</p>
       </abstract>
     </pub>
-    <pub id="historia-oopsla23">
+    <pub id="historia-oopsla23r2">
       <title>Historia: Refuting Callback Reachability with Message-History Logics</title>
       <authors>
         <author person="smeier" student="y"/>
@@ -3672,8 +3673,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3622865</url>
       </urls>
       <howpub>
-        <issue journal="pacmpl" event="oopsla23" />
-        <!-- <proceedings event="oopsla23" /> -->
+        <issue journal="pacmpl" event="oopsla23r2" />
+        <!-- <proceedings event="oopsla23r2" /> -->
       </howpub>
       <pages>1905-1934</pages>
       <year>2023</year>
@@ -3681,7 +3682,7 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <p>This paper considers the callback reachability problem — determining if a callback can be called by an event-driven framework in an unexpected state. Event-driven programming frameworks are pervasive for creating user-interactive applications (apps) on just about every modern platform. Control flow between callbacks is determined by the framework and largely opaque to the programmer. This opacity of the callback control flow not only causes difficulty for the programmer but is also difficult for those developing static analysis. Previous static analysis techniques address this opacity either by assuming an arbitrary framework implementation or attempting to eagerly specify all possible callback control flow, but this is either too coarse to prove properties requiring callback-ordering constraints or too burdensome and tricky to get right. Instead, we present a middle way where the callback control flow can be gradually refined in a targeted manner to prove assertions of interest. The key insight to get this middle way is by reasoning about the history of method invocations at the boundary between app and framework code — enabling a decoupling of the specification of callback control flow from the analysis of app code. We call the sequence of such boundary-method invocations message histories and develop message-history logics to do this reasoning. In particular, we define the notion of an application-only transition system with boundary transitions, a message-history program logic for programs with such transitions, and a temporal specification logic for capturing callback control flow in a targeted and compositional manner. Then to utilize the logics in a goal-directed verifier, we define a way to combine after-the-fact an assertion about message histories with a specification of callback control flow. We implemented a prototype message history-based verifier called Historia and provide evidence that our approach is uniquely capable of distinguishing between buggy and fixed versions on challenging examples drawn from real-world issues and that our targeted specification approach enables proving the absence of multi-callback bug patterns in real-world open-source Android apps.</p>
       </abstract>
     </pub>
-    <pub id="indistinguishability-oopsla23">
+    <pub id="indistinguishability-oopsla23r2">
       <title>Verifying Indistinguishability of Privacy-Preserving Protocols</title>
       <authors>
         <author person="klinvill"/>
@@ -3692,8 +3693,8 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <url name="doi">https://doi.org/10.1145/3622849</url>
       </urls>
       <howpub>
-        <issue journal="pacmpl" event="oopsla23" />
-        <!-- <proceedings event="oopsla23" /> -->
+        <issue journal="pacmpl" event="oopsla23r2" />
+        <!-- <proceedings event="oopsla23r2" /> -->
       </howpub>
       <pages>1442-1469</pages>
       <year>2023</year>
@@ -7546,16 +7547,20 @@ an application example.</p>
         <date>2026-04</date> <!-- published date for Round 1 -->
         <location>Oakland, California, USA</location>
         <url>https://2026.splashcon.org/track/splash-2026-oopsla</url>
+        <acceptance>75/227</acceptance>
+        <acceptanceRate>33.0%</acceptanceRate>
+        <volume>10</volume>
+        <number>OOPSLA1</number>
         <issue journal="pacmpl"/>
       </event>
-      <event id="oopsla25">
+      <event id="oopsla25r1">
         <!--
         2025-10 conference date
         -->
         <date>2025-04</date> <!-- published date for Round 1 -->
         <location>Singapore</location>
         <url>https://2025.splashcon.org/track/splash-2025-oopsla</url>
-        <acceptance>64/151 (Round 1)</acceptance>
+        <acceptance>64/151</acceptance>
         <acceptanceRate>42.4%</acceptanceRate>
         <volume>9</volume>
         <number>OOPSLA1</number>
@@ -7567,7 +7572,7 @@ an application example.</p>
         <url>https://2024.splashcon.org/track/splash-2024-oopsla</url>
         <issue journal="pacmpl"/>
       </event>
-      <event id="oopsla23">
+      <event id="oopsla23r2">
         <date>2023-10</date>
         <location>Cascais, Portugal</location>
         <url>http://2023.splashcon.org/</url>
