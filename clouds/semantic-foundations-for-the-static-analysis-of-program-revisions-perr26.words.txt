@@ -1,0 +1,5 @@
+Semantic Foundations for the Static Analysis of Program Revisions
+         Software development is a process of gradually modifying program behavior; thus, most programs are revisions of other programs. Developers informally reason about a revision in terms of which behaviors are removed, added, or preserved. We formalize these notions by providing a collecting semantics for program revisions, parameterized by a user-specified state correspondence, which classifies reachable states as “removed”, “added”, or “related”. Intuitively, reasoning about added and removed states requires showing that some reachable state in one program has no corresponding state in the other. Therefore, proving safety properties over removed and added states requires an underapproximation of one program and an overapproximation of the other. Existing relational Hoare-style program logics provide limited support for reasoning about this class of properties. To address this gap, we present a system for proving safety properties of “added”, “removed”, and “related” states that combines over- and underapproximating program logics.
+
+
+      
