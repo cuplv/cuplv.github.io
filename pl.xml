@@ -3523,7 +3523,6 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <p>Robustness verification of neural networks is increasingly important, due to their use in many critical domains. In certain scenarios, proof sharing has been shown to accelerate incomplete verification techniques by reusing intermediate-layer abstract states, or <em>templates</em>, across queries. However, questions remain as to the robustness of template-based acceleration across varying network architectures, properties, datasets, and training methods. In this work, we perform a systematic study of the effectiveness of template-based acceleration and its limits. Our study shows that template subsumption rates can vary widely across scenarios. We present a novel metric of <em>jointly stable neurons</em> to explain this variation, showing that in some cases template-based techniques are very unlikely to provide any speedup. Then, we present FastCert, a novel technique for <em>automatically</em> distributing templates across neural network layers to increase performance impact, eschewing templates entirely if they are unlikely to produce a speedup. Across a large set of verification tasks, FastCert achieved an average speedup of 1.3x compared to an extant template-based reuse technique.</p>
       </abstract>
     </pub>
-<<<<<<< HEAD
     <pub id="semantic-foundations-for-static-analysis-of-program-revisions-perr26">
       <title>Semantic Foundations for the Static Analysis of Program Revisions</title>
       <authors>
@@ -3541,8 +3540,6 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
          <p>Software development is a process of gradually modifying program behavior; thus, most programs are revisions of other programs. Developers informally reason about a revision in terms of which behaviors are removed, added, or preserved. We formalize these notions by providing a collecting semantics for program revisions, parameterized by a user-specified state correspondence, which classifies reachable states as “removed”, “added”, or “related”. Intuitively, reasoning about added and removed states requires showing that some reachable state in one program has no corresponding state in the other. Therefore, proving safety properties over removed and added states requires an underapproximation of one program and an overapproximation of the other. Existing relational Hoare-style program logics provide limited support for reasoning about this class of properties. To address this gap, we present a system for proving safety properties of “added”, “removed”, and “related” states that combines over- and underapproximating program logics.</p>
       </abstract>
     </pub>
-=======
->>>>>>> master
     <pub id="ravencheck-soap26">
       <title>Ravencheck: Effectively-Propositional Reasoning for Rust</title>
       <authors>
