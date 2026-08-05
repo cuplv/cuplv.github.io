@@ -1,2 +1,5 @@
 Effectively Propositional Higher-Order Functional Programming
+        Decidable automation is a key feature of program verification tools, which makes them easier for non-expert developers to use and understand. Unfortunately, decidable fragments of logic are very restrictive, and not ideal for the expression of idiomatic programs. The decidable Extended EPR fragment, combined with an encoding technique called relational abstraction, has seen wide use for its ability to handle both quantifiers and uninterpreted functions. However, the complexity of the relational abstraction encoding, combined with its inherent incompleteness, still poses a significant obstacle to non-experts.
+
+
       
