@@ -21,11 +21,7 @@
         accepted for presentation at <ref table="event" key="sas26"/> in October.
       </news-detail>
     </news>
-<<<<<<< HEAD
-    <news date="2026.05.28" id="paper-perr">
-=======
     <news date="2026.05.28" id="paper-perr26">
->>>>>>> master
       <news-snippet>
         Paper by
         <ref table="pub" key="semantic-foundations-for-the-static-analysis-of-program-revisions-perr26" mode="authors" /> published in
@@ -40,11 +36,7 @@
         accepted for presentation at <ref table="event" key="perr26"/> in July.
       </news-detail>
     </news>
-<<<<<<< HEAD
-    <news date="2026.04.15" id="paper-soap">
-=======
     <news date="2026.04.15" id="paper-soap26">
->>>>>>> master
       <news-snippet>
         Paper by
         <ref table="pub" key="ravencheck-soap26" mode="authors" /> published in
@@ -7387,11 +7379,7 @@ an application example.</p>
       <name>Kanak Das</name>
       <url>https://kanakdas.me/</url>
     </person>
-<<<<<<< HEAD
-    <person id="shugare">
-=======
     <person id="sugare">
->>>>>>> master
       <name>Shubham Ugare</name>
       <url>https://shubhamugare.github.io/</url>
     </person>
