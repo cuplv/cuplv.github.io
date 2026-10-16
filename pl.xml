@@ -3513,11 +3513,12 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="msridhar"/>
       </authors>
       <urls>
+        <url name="doi">https://doi.org/10.1007/978-3-032-40374-2_13</url>
       </urls>
       <howpub>
         <proceedings event="sas26" />
       </howpub>
-      <pages>35 pages</pages>
+      <pages>383-417</pages>
       <year>2026</year>
       <abstract>
         <p>Robustness verification of neural networks is increasingly important, due to their use in many critical domains. In certain scenarios, proof sharing has been shown to accelerate incomplete verification techniques by reusing intermediate-layer abstract states, or <em>templates</em>, across queries. However, questions remain as to the robustness of template-based acceleration across varying network architectures, properties, datasets, and training methods. In this work, we perform a systematic study of the effectiveness of template-based acceleration and its limits. Our study shows that template subsumption rates can vary widely across scenarios. We present a novel metric of <em>jointly stable neurons</em> to explain this variation, showing that in some cases template-based techniques are very unlikely to provide any speedup. Then, we present FastCert, a novel technique for <em>automatically</em> distributing templates across neural network layers to increase performance impact, eschewing templates entirely if they are unlikely to produce a speedup. Across a large set of verification tasks, FastCert achieved an average speedup of 1.3x compared to an extant template-based reuse technique.</p>
@@ -3549,11 +3550,12 @@ Boulder, located at the base of the Rocky Mountain foothills, is consistently aw
         <author person="gkaki"/>
       </authors>
       <urls>
+        <url name="doi">https://doi.org/10.1145/3814987.3814991</url>
       </urls>
       <howpub>
         <proceedings event="soap26" />
       </howpub>
-      <pages></pages>
+      <pages>8-14</pages>
       <year>2026</year>
       <abstract>
       </abstract>
@@ -4883,7 +4885,7 @@ that our tool scales to updates involving over one-thousand nodes.</p>
       <pages>489-492</pages>
       <doi>10.1007/978-3-662-45231-8_40</doi>
       <ee>http://dx.doi.org/10.1007/978-3-662-45231-8_40</ee>
-      <bibnote><span>Refereed invited contribution.</span></bibnote>
+      <bibnote><b>Invited contribution</b>.</bibnote>
     </pub>
     <pub id="expectation-sas14">
       <title>Expectation Invariants for Probabilistic Program Loops as Fixed Points</title>
@@ -5097,20 +5099,20 @@ that our tool scales to updates involving over one-thousand nodes.</p>
     <pub id="shapenumeric-sairp13" type="workshop">
       <title>Modular Construction of Shape-Numeric Analyzers</title>
       <authors>
-  <author person="bec"/>
-  <author person="rival"/>
+        <author person="bec"/>
+        <author person="rival"/>
       </authors>
       <urls>
-  <url name="pdf">papers/shapenumeric-sairp13.pdf</url>
+        <url name="pdf">papers/shapenumeric-sairp13.pdf</url>
       </urls>
       <howpub>
-  <proceedings event="sairp13" />
+        <proceedings event="sairp13" />
       </howpub>
+      <pages>25 pages</pages>
       <abstract>
-  <p>The aim of static analysis is to infer invariants about programs that are precise enough to establish semantic properties, such as the absence of run-time errors. Broadly speaking, there are two major branches of static analysis for imperative programs.  Pointer and <em>shape</em> analyses focus on inferring properties of pointers, dynamically-allocated memory, and recursive data structures, while <em>numeric</em> analyses seek to derive invariants on numeric values. Although simultaneous inference of shape-numeric invariants is often needed, this case is especially challenging and is not particularly well explored.  Notably, simultaneous shape-numeric inference raises complex issues in the design of the static analyzer itself.
-In this paper, we study the construction of such shape-numeric, static analyzers. We set up an abstract interpretation framework that allows us to reason about simultaneous shape-numeric properties by combining shape and numeric abstractions into a modular, expressive abstract domain.  Such a modular structure is highly desirable to make its formalization and implementation easier to do and get correct. To achieve this, we choose a concrete semantics that can be abstracted step-by-step, while preserving a high level of expressiveness.  The structure of abstract operations (i.e., transfer, join, and comparison) follows the structure of this semantics.  The advantage of this construction is to divide the analyzer in modules and functors that implement abstractions of distinct features.</p>
+        <p>The aim of static analysis is to infer invariants about programs that are precise enough to establish semantic properties, such as the absence of run-time errors. Broadly speaking, there are two major branches of static analysis for imperative programs.  Pointer and <em>shape</em> analyses focus on inferring properties of pointers, dynamically-allocated memory, and recursive data structures, while <em>numeric</em> analyses seek to derive invariants on numeric values. Although simultaneous inference of shape-numeric invariants is often needed, this case is especially challenging and is not particularly well explored.  Notably, simultaneous shape-numeric inference raises complex issues in the design of the static analyzer itself. In this paper, we study the construction of such shape-numeric, static analyzers. We set up an abstract interpretation framework that allows us to reason about simultaneous shape-numeric properties by combining shape and numeric abstractions into a modular, expressive abstract domain.  Such a modular structure is highly desirable to make its formalization and implementation easier to do and get correct. To achieve this, we choose a concrete semantics that can be abstracted step-by-step, while preserving a high level of expressiveness.  The structure of abstract operations (i.e., transfer, join, and comparison) follows the structure of this semantics.  The advantage of this construction is to divide the analyzer in modules and functors that implement abstractions of distinct features.</p>
       </abstract>
-      <bibnote><span>Refereed invited contribution.</span></bibnote>
+      <bibnote><b>Invited contribution</b>.</bibnote>
     </pub>
     <pub id="concursyn-cav13">
       <title>Efficient Synthesis for Concurrency using Semantics-Preserving Transformations</title>
@@ -5756,12 +5758,13 @@ In this paper, we study the construction of such shape-numeric, static analyzers
       </howpub>
       <date>2011</date>
       <note>
-  <tr>
-    <extendedtr />
-    <number>CU-CS-1083-11</number>
-          <institute>University of Colorado Boulder</institute>
-    <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1083-11-ptaprecision.pdf</url>
-  </tr>
+        <tr>
+        <extendedtr />
+        <number>CU-CS-1083-11</number>
+        <institute>University of Colorado Boulder</institute>
+        <url>http://www.cs.colorado.edu/~bec/papers/CU-CS-1083-11-ptaprecision.pdf</url>
+        <pages>29 pages</pages>
+        </tr>
       </note>
       <abstract>
   <p>We present techniques for determining the precision gap
@@ -7842,6 +7845,7 @@ an application example.</p>
         <url>https://conf.researchr.org/home/splash-issta-2026/sas-2026</url>
         <acceptance>20/43</acceptance> <!-- 20/40 all papers -->
         <acceptanceRate>46.5%</acceptanceRate>
+        <volume>16977</volume>
       </event>
       <event id="sas23">
         <date>2023-10</date>
